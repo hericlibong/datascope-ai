@@ -13,10 +13,12 @@ from users.models import Feedback
 
 
 class IsOwner(permissions.BasePermission):
-    """Autorise l’accès aux objets appartenant à l’utilisateur courant."""
-
     def has_object_permission(self, request, view, obj):
+        # Pour les analyses, l’auteur est sur l’article lié
+        if hasattr(obj, "article"):
+            return obj.article.user == request.user
         return obj.user == request.user
+
 
 
 # ---------- Article ----------
