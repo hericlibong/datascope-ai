@@ -1,4 +1,4 @@
-![Backend tests](https://github.com/hericlibong/<REPO>/actions/workflows/ci.yml/badge.svg)
+![Backend tests](https://github.com/hericlibong/datascope-ai/actions/workflows/ci.yml/badge.svg)
 
 
 # 📊 DataScope AI

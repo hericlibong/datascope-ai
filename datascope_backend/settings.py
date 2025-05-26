@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',  # To using later
     'rest_framework_simplejwt',
+    'ai_engine',
 ]
 
 REST_FRAMEWORK = {
