@@ -1,3 +1,6 @@
+![Backend tests](https://github.com/hericlibong/<REPO>/actions/workflows/ci.yml/badge.svg)
+
+
 # 📊 DataScope AI
 
 **DataScope AI** is the next-generation version of the original *Datascope* MVP — reimagined as a full-featured, modular platform to assist journalists in identifying the data potential of textual content through intelligent automation and guided analysis.
