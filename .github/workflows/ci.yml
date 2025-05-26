@@ -8,6 +8,7 @@ jobs:
 
     env:
       USE_SQLITE_FOR_TESTS: "true"     # base in-memory, pas de Postgres
+      SECRET_KEY: "dummy-secret-for-ci"   # ← ajouté
       PYTHONWARNINGS: "ignore::RuntimeWarning"
 
     steps:
