@@ -3,6 +3,7 @@ from ai_engine.utils import token_len
 from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
 from ai_engine.schemas import AnalysisPackage
+from ai_engine.scoring import compute_score
 
 MAX_TOKENS = 8_000
 
@@ -35,7 +36,8 @@ def run(article_text: str) -> tuple[AnalysisPackage, str, int]:
     extraction_result = extraction.run(article_text)
 
     # 3. scoring
-    score = _score(extraction_result)
+    score = compute_score(extraction_result, article_text, model=ai_engine.OPENAI_MODEL)
+
 
     # 4. angles
     angle_result = angles.run(article_text)
