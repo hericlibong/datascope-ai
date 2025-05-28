@@ -14,3 +14,17 @@ class ExtractionResult(BaseModel):
     locations: List[str]
     dates: List[str]              # idéalement YYYY-MM-DD ou ISO partial
     numbers: List[NumberEntity]
+
+# --- déjà présent au-dessus ---
+class Angle(BaseModel):
+    title: str = Field(..., description="Titre court (≤80 car.)")
+    rationale: str = Field(..., description="1-2 phrases expliquant l’angle")
+
+class AngleResult(BaseModel):
+    language: str
+    angles: List[Angle]
+
+class AnalysisPackage(BaseModel):
+    extraction: ExtractionResult
+    angles: AngleResult
+

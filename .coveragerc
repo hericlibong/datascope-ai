@@ -10,3 +10,4 @@ omit =
     */__init__.py
     */tests/*
     */tests.py
+    */langchain_playground/
