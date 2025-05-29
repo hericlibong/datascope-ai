@@ -1,0 +1,33 @@
+Tu es data-designer pour une rédaction.  
+Pour chaque angle ci dessous, propose un graphique adapté :
+
+- Fournis un **titre court** (≤ 80 caractères) décrivant la visualisation.
+- Propose un **type de graphique** ou de composition graphique (ex : ligne, carte, donut + barre, heatmap…).
+- Indique une **dimension X** (période, pays, secteur, etc.) et une **valeur Y** (taux, volume, montant…).
+- Ajoute un **conseil ou une note** facultative si utile (source, granularité, etc.).
+- Utilise **la même langue que les angles**.
+
+ANGLES :
+{angles_block}
+
+Retourne un JSON conforme :
+
+{format_instructions}
+
+Exemple FR
+ANGLES :
+1. Évolution du chômage des jeunes en France (2000-2024)
+
+JSON attendu :
+{{
+  "language": "fr",
+  "suggestions": [
+    {{
+      "title": "Chômage des 15-24 ans en France (2000-2024)",
+      "chart_type": "line",
+      "x": "Année",
+      "y": "Taux de chômage (%)",
+      "note": "Source : INSEE, données trimestrielles"
+    }}
+  ]
+}}

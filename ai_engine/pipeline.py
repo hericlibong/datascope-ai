@@ -4,6 +4,8 @@ from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
 from ai_engine.schemas import AnalysisPackage
 from ai_engine.scoring import compute_score
+from ai_engine.chains import keywords
+from ai_engine.chains import viz
 
 MAX_TOKENS = 8_000
 
@@ -38,11 +40,16 @@ def run(article_text: str) -> tuple[AnalysisPackage, str, int]:
     # 3. scoring
     score = compute_score(extraction_result, article_text, model=ai_engine.OPENAI_MODEL)
 
-
     # 4. angles
     angle_result = angles.run(article_text)
 
-    # 5. packaging (JSON consolidé + markdown)
+    # 5. keywors for datasets
+    keywords_result = keywords.run(angle_result)
+
+    # 6 vizulisations
+    viz_result = viz.run(angle_result)
+
+    # 7. packaging (JSON consolidé + markdown)
     packaged, markdown = package(extraction_result, angle_result)
 
     return packaged, markdown, score

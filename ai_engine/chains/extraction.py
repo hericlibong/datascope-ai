@@ -7,6 +7,7 @@ from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
 from langchain.schema.runnable import Runnable
 from ai_engine.schemas import ExtractionResult
+from ai_engine.retries import llm_retry
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,10 +29,13 @@ def _build_chain(model_name: str = "gpt-4o-mini") -> Runnable:
         },
     )
 
-    chat = ChatOpenAI(model=ai_engine.OPENAI_MODEL, temperature=0, openai_api_key=ai_engine.OPENAI_API_KEY)
+    chat = ChatOpenAI(model=ai_engine.OPENAI_MODEL, 
+                      temperature=0, 
+                      timeout=40,
+                      openai_api_key=ai_engine.OPENAI_API_KEY)
     return prompt | chat | parser
 
-
+@llm_retry
 def run(article: str, *, model_name: str = "gpt-4o-mini") -> ExtractionResult:
     """Exécute la chaîne et renvoie l’objet ExtractionResult."""
     chain = _build_chain(model_name)   # récup. depuis cache si déjà construit

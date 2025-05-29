@@ -28,3 +28,24 @@ class AnalysisPackage(BaseModel):
     extraction: ExtractionResult
     angles: AngleResult
 
+class KeywordSet(BaseModel):
+    angle_title: str
+    keywords: List[str]  # exactement 5
+
+class KeywordsResult(BaseModel):
+    language: str
+    sets: List[KeywordSet]  # 1 par angle d’entrée
+
+class VizSuggestion(BaseModel):
+    title: str
+    chart_type: str  # line, bar, pie, choropleth, table
+    x: str
+    y: str
+    note: Optional[str] = None
+
+class VizResult(BaseModel):
+    language: str
+    suggestions: List[VizSuggestion]
+
+
+

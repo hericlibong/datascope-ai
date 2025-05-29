@@ -1,0 +1,27 @@
+Tu es un assistant open-data. Pour chaque angle éditorial ci-dessous,
+génère exactement 5 mots-clés (1-3 mots chacun) qui permettront de
+trouver des jeux de données sur des portails open-data.
+
+LANGUE DE SORTIE : même langue que l’angle.
+
+ANGLES :
+{angles_block}
+
+Retourne un JSON conforme aux instructions suivantes :
+
+{format_instructions}
+
+Exemple FR
+ANGLES :
+1. Impact économique des centrales nucléaires en France
+
+JSON attendu :
+{{
+  "language": "fr",
+  "sets": [
+    {{
+      "angle_title": "Impact économique des centrales nucléaires en France",
+      "keywords": ["énergie nucléaire", "emploi nucléaire", "production électricité", "coût kWh", "mix énergétique"]
+    }}
+  ]
+}}
