@@ -6,6 +6,7 @@ from ai_engine.schemas import AnalysisPackage
 from ai_engine.scoring import compute_score
 from ai_engine.chains import keywords
 from ai_engine.chains import viz
+from ai_engine.memory import get_memory
 
 MAX_TOKENS = 8_000
 
@@ -21,7 +22,7 @@ def _score(extr) -> int:
     return min(raw, 100)
 
 
-def run(article_text: str) -> tuple[AnalysisPackage, str, int]:
+def run(article_text: str, user_id: str = "anon") -> tuple[AnalysisPackage, str, int]:
     """
     Orchestration complète, sans LCEL :
     - validation longueur
@@ -31,25 +32,25 @@ def run(article_text: str) -> tuple[AnalysisPackage, str, int]:
     - packaging (JSON + markdown)
     Retourne : (package_json, markdown, score)
     """
-    # 1. validation
     _validate(article_text)
 
-    # 2. extraction
     extraction_result = extraction.run(article_text)
-
-    # 3. scoring
     score = compute_score(extraction_result, article_text, model=ai_engine.OPENAI_MODEL)
-
-    # 4. angles
     angle_result = angles.run(article_text)
-
-    # 5. keywors for datasets
     keywords_result = keywords.run(angle_result)
-
-    # 6 vizulisations
     viz_result = viz.run(angle_result)
 
-    # 7. packaging (JSON consolidé + markdown)
     packaged, markdown = package(extraction_result, angle_result)
 
+    memory = get_memory(user_id)
+    memory.save_context(
+        {"article": article_text},
+        {
+            "extraction": extraction_result.model_dump(),
+            "angles": angle_result,
+            "score": score,
+        }
+    )
+
     return packaged, markdown, score
+

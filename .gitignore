@@ -10,6 +10,7 @@ dist/
 build/
 db.sqlite3
 langchain_playground/
+ai_engine/benchmarks/
 
 
 
