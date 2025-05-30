@@ -37,20 +37,29 @@ def run(article_text: str, user_id: str = "anon") -> tuple[AnalysisPackage, str,
     extraction_result = extraction.run(article_text)
     score = compute_score(extraction_result, article_text, model=ai_engine.OPENAI_MODEL)
     angle_result = angles.run(article_text)
+
+    # TODO : exposer keywords_result et viz_result dans AnalysisPackage quand validé
+
     keywords_result = keywords.run(angle_result)
     viz_result = viz.run(angle_result)
 
     packaged, markdown = package(extraction_result, angle_result)
 
     memory = get_memory(user_id)
+    # memory.save_context(
+    #     {"article": article_text},
+    #     {
+    #         "extraction": extraction_result.model_dump(),
+    #         "angles": angle_result,
+    #         "score": score,
+    #     }
+    # )
+    output_text = f"[score={score}] Angles: {[a.title for a in angle_result.angles]}"
+
     memory.save_context(
         {"article": article_text},
-        {
-            "extraction": extraction_result.model_dump(),
-            "angles": angle_result,
-            "score": score,
-        }
-    )
+        {"summary": output_text}
+)
 
     return packaged, markdown, score
 

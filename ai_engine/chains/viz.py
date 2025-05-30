@@ -21,11 +21,18 @@ def run(angle_result: AngleResult) -> VizResult:
 
     angles_block = "\n".join(f"{i}. {a.title}" for i, a in enumerate(angle_result.angles, 1))
 
+    # prompt = PromptTemplate.from_template(
+    #     _tmpl(),
+    #     input_variables=["angles_block"],
+    #     partial_variables={"format_instructions": parser.get_format_instructions()},
+    # )
     prompt = PromptTemplate.from_template(
-        _tmpl(),
-        input_variables=["angles_block"],
-        partial_variables={"format_instructions": parser.get_format_instructions()},
-    )
+    _tmpl(),
+    partial_variables={
+        "format_instructions": parser.get_format_instructions(),
+    }
+)
+
 
     chat = ChatOpenAI(
         model=ai_engine.OPENAI_MODEL,

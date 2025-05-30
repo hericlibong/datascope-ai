@@ -24,13 +24,19 @@ def run(angle_result: AngleResult) -> KeywordsResult:
         for idx, a in enumerate(angle_result.angles, 1)
     )
 
+    # prompt = PromptTemplate.from_template(
+    #     _tmpl(),
+    #     partial_variables={
+    #         "format_instructions": parser.get_format_instructions(),
+    #     },
+    #     input_variables=["angles_block"],
+    # )
     prompt = PromptTemplate.from_template(
-        _tmpl(),
-        partial_variables={
-            "format_instructions": parser.get_format_instructions(),
-        },
-        input_variables=["angles_block"],
-    )
+    _tmpl(),
+    partial_variables={
+        "format_instructions": parser.get_format_instructions(),
+    }
+)
 
     chat = ChatOpenAI(
         model=ai_engine.OPENAI_MODEL,
