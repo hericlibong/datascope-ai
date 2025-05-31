@@ -2,6 +2,16 @@
 from typing import List, Optional
 from pydantic import BaseModel, Field
 
+
+class DatasetSuggestion(BaseModel):
+    title: str
+    description: str | None = None
+    source_name: str                  # "data.gouv.fr", "eurostat", etc.
+    source_url: str                  # lien vers le dataset
+    formats: list[str] = []
+    organization: str | None = None
+    license: str | None = None
+
 class NumberEntity(BaseModel):
     raw: str = Field(..., description="Nombre tel qu'il apparaît dans le texte")
     value: Optional[float] = Field(None, description="Valeur numérique normalisée si possible")
