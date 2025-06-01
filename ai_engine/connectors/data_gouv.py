@@ -18,44 +18,45 @@ from ai_engine.schemas import DatasetSuggestion
 from ai_engine.connectors.cache_utils import cache_response
 from ai_engine.connectors.helpers import sanitize_keyword
 from ai_engine.connectors.richness import richness_score   # ← score Richesse
+from ai_engine.connectors.format_utils import get_format
 
 BASE_URL = "https://www.data.gouv.fr/api/1"
 VALID_FORMATS = {"csv","xls","xlsx","json","geojson","xml","shp","zip","pdf"}
 
-# ------------------------------------------------------------------ #
-# utilitaire format                                                  #
-# ------------------------------------------------------------------ #
-def get_format(resource: dict | None) -> Optional[str]:
-    """Déduit « csv », « json », … à partir du dict ressource."""
-    if not resource:
-        return None
+# # ------------------------------------------------------------------ #
+# # utilitaire format                                                  #
+# # ------------------------------------------------------------------ #
+# def get_format(resource: dict | None) -> Optional[str]:
+#     """Déduit « csv », « json », … à partir du dict ressource."""
+#     if not resource:
+#         return None
 
-    # 1. Champ format explicite
-    raw_fmt = resource.get("format")
-    if isinstance(raw_fmt, str) and raw_fmt.strip():
-        fmt = raw_fmt.strip().lower()
-        if fmt in VALID_FORMATS:
-            return fmt
+#     # 1. Champ format explicite
+#     raw_fmt = resource.get("format")
+#     if isinstance(raw_fmt, str) and raw_fmt.strip():
+#         fmt = raw_fmt.strip().lower()
+#         if fmt in VALID_FORMATS:
+#             return fmt
 
-    # 2. Mime-type
-    mime = (resource.get("mime") or resource.get("mimetype") or "")
-    if isinstance(mime, str) and mime:
-        mime = mime.lower()
-        for token in VALID_FORMATS:
-            if token in mime:
-                return token
+#     # 2. Mime-type
+#     mime = (resource.get("mime") or resource.get("mimetype") or "")
+#     if isinstance(mime, str) and mime:
+#         mime = mime.lower()
+#         for token in VALID_FORMATS:
+#             if token in mime:
+#                 return token
 
-    # 3. Extension de l’URL
-    url = resource.get("url") or resource.get("path") or ""
-    if isinstance(url, str) and url:
-        ext = Path(url.split("?", 1)[0]).suffix.lower().lstrip(".")
-        if ext == "zip":                      # ex : fichier.geojson.zip
-            inner = re.search(r"\.(\w+)\.zip$", url, re.I)
-            ext = inner.group(1).lower() if inner else ext
-        if ext in VALID_FORMATS:
-            return ext
+#     # 3. Extension de l’URL
+#     url = resource.get("url") or resource.get("path") or ""
+#     if isinstance(url, str) and url:
+#         ext = Path(url.split("?", 1)[0]).suffix.lower().lstrip(".")
+#         if ext == "zip":                      # ex : fichier.geojson.zip
+#             inner = re.search(r"\.(\w+)\.zip$", url, re.I)
+#             ext = inner.group(1).lower() if inner else ext
+#         if ext in VALID_FORMATS:
+#             return ext
 
-    return None
+#     return None
 
 # ------------------------------------------------------------------ #
 # Modèle brut Data.gouv                                              #
