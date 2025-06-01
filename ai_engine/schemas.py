@@ -11,6 +11,8 @@ class DatasetSuggestion(BaseModel):
     formats: list[str] = []
     organization: str | None = None
     license: str | None = None
+    last_modified: str | None = None    # ← nouveau
+    richness: int = 0
 
 class NumberEntity(BaseModel):
     raw: str = Field(..., description="Nombre tel qu'il apparaît dans le texte")

@@ -46,14 +46,7 @@ def run(article_text: str, user_id: str = "anon") -> tuple[AnalysisPackage, str,
     packaged, markdown = package(extraction_result, angle_result)
 
     memory = get_memory(user_id)
-    # memory.save_context(
-    #     {"article": article_text},
-    #     {
-    #         "extraction": extraction_result.model_dump(),
-    #         "angles": angle_result,
-    #         "score": score,
-    #     }
-    # )
+    
     output_text = f"[score={score}] Angles: {[a.title for a in angle_result.angles]}"
 
     memory.save_context(
