@@ -1,102 +1,117 @@
 """
-Connecteur Data.gouv
---------------------
-– recherche paginée
-– mapping vers le schéma interne
-– calcul du score de richesse
+Connecteur Data.gouv (France)
+-----------------------------
+– Conforme à ConnectorInterface
+– Recherche paginée avec fallback minimum
+– Conversion vers DatasetSuggestion
 """
+
 from __future__ import annotations
 
-import re, time, requests
-from pathlib import Path
-from typing import Iterator, Optional
+import time
+from typing import Iterator, List, Optional
 
-from pydantic import BaseModel, Field
+import requests
+from pydantic import BaseModel
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-from ai_engine.schemas import DatasetSuggestion
-from ai_engine.connectors.cache_utils import cache_response
+from ai_engine.connectors.interface import ConnectorInterface
 from ai_engine.connectors.helpers import sanitize_keyword
-from ai_engine.connectors.richness import richness_score   # ← score Richesse
 from ai_engine.connectors.format_utils import get_format
+from ai_engine.connectors.richness import richness_score
+from ai_engine.schemas import DatasetSuggestion
 
 BASE_URL = "https://www.data.gouv.fr/api/1"
-VALID_FORMATS = {"csv","xls","xlsx","json","geojson","xml","shp","zip","pdf"}
+VALID_FORMATS = {"csv", "xls", "xlsx", "json", "geojson", "xml", "shp", "zip", "pdf"}
 
 # ------------------------------------------------------------------ #
 # Modèle brut Data.gouv                                              #
 # ------------------------------------------------------------------ #
-class DGDataset(BaseModel):
+class FRDataset(BaseModel):
     id: str
     title: str
-    description: str | None = None
-    url: str = Field(alias="page")              # page HTML officielle
-    organization: str | None = None
-    formats: list[str] = []
-    license: str | None = None                  # ← ajouté
-    last_modified: str | None = None            # ← ajouté (ISO-8601)
-
-
-# ------------------------------------------------------------------ #
-# GET with retry                                                     #
-# ------------------------------------------------------------------ #
-@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=4))
-def _get(path: str, params: dict) -> dict:
-    r = requests.get(f"{BASE_URL}{path}", params=params, timeout=10)
-    r.raise_for_status()
-    return r.json()
+    description: Optional[str] = None
+    url: str
+    organization: Optional[str] = None
+    formats: List[str] = []
+    license: Optional[str] = None
+    last_modified: Optional[str] = None
 
 # ------------------------------------------------------------------ #
-# Recherche paginée                                                  #
+# Client conforme à ConnectorInterface                               #
 # ------------------------------------------------------------------ #
-@cache_response(ttl_seconds=3600)
-def search(keyword: str, page_size: int = 20) -> Iterator[DGDataset]:
-    """Itère sur tous les jeux répondant au mot-clé `keyword`."""
-    keyword = sanitize_keyword(keyword)
-    page = 1
+class DataGouvClient(ConnectorInterface):
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(1, 1, 4))
+    def _get(self, path: str, params: dict) -> dict:
+        r = requests.get(f"{BASE_URL}{path}", params=params, timeout=10)
+        r.raise_for_status()
+        return r.json()
 
-    while True:
-        data = _get("/datasets", {"q": keyword, "page": page, "page_size": page_size})
+    def search(self, keyword: str, page_size: int = 10) -> Iterator[FRDataset]:
+        keyword = sanitize_keyword(keyword)
+        page = 1
+        max_results = 2  # ← sécurité temporaire, évite de tout renvoyer
 
-        for j in data["data"]:
-            # formats uniques en filtrant les None
-            formats = []
-            for res in j.get("resources",[]):
-                fmt = get_format(res, valid_set=VALID_FORMATS)
-                if fmt:
-                    formats.append(fmt)
-            formats = list(set(formats))
+        yielded = 0
+        while yielded < max_results:
+            data = self._get("/datasets", {"q": keyword, "page": page, "page_size": page_size})
+            results = data.get("data", [])
+            if not results:
+                break
 
-            yield DGDataset(
-                id            = j["id"],
-                title         = j["title"],
-                description   = j.get("slug"),
-                page          = j["page"],
-                organization  = (j.get("organization") or {}).get("name"),
-                formats       = formats,
-                license       = j.get("license"),
-                last_modified = j.get("metadata_modified")
-                                  or j.get("modified") or j.get("last_modified"),
-            )
+            for raw in results:
+                # Récupération des formats valides
+                fmt_list = [
+                    f for r in raw.get("resources", [])
+                    if (f := get_format(r, VALID_FORMATS))
+                ]
+                if not fmt_list:
+                    continue
 
-        if not data["next_page"]:
-            break
-        page += 1
-        time.sleep(0.2)          # micro-pause pour ne pas spammer l’API
+                org_raw = raw.get("organization")
+                org_name = org_raw.get("name") or org_raw.get("title") if isinstance(org_raw, dict) else None
+
+                license_ = raw.get("license")
+                if isinstance(license_, dict):
+                    license_ = license_.get("title") or license_.get("id")
+
+                yield FRDataset(
+                    id=raw["id"],
+                    title=raw["title"],
+                    description=raw.get("slug"),
+                    url=raw["page"],
+                    organization=org_name,
+                    formats=list(set(fmt_list)),
+                    license=license_,
+                    last_modified=raw.get("metadata_modified")
+                        or raw.get("modified")
+                        or raw.get("last_modified"),
+                )
+                yielded += 1
+                if yielded >= max_results:
+                    break
+
+            if not data.get("next_page"):
+                break
+
+            page += 1
+            time.sleep(0.2)
+
+    def fr_to_suggestion(self, ds: FRDataset) -> DatasetSuggestion:
+        sugg = DatasetSuggestion(
+            title=ds.title,
+            description=ds.description,
+            source_name="data.gouv.fr",
+            source_url=ds.url,
+            formats=ds.formats,
+            organization=ds.organization,
+            license=ds.license,
+            last_modified=ds.last_modified,
+        )
+        sugg.richness = richness_score(sugg)
+        return sugg
 
 # ------------------------------------------------------------------ #
-# Mapping vers le schéma interne                                     #
+# Exports                                                            #
 # ------------------------------------------------------------------ #
-def dg_to_suggestion(dataset: DGDataset) -> DatasetSuggestion:
-    sugg = DatasetSuggestion(
-        title         = dataset.title,
-        description   = dataset.description,
-        source_name   = "data.gouv.fr",
-        source_url    = dataset.url,
-        formats       = dataset.formats,
-        organization  = dataset.organization,
-        license       = dataset.license,
-        last_modified = dataset.last_modified,
-    )
-    sugg.richness = richness_score(sugg)
-    return sugg
+__all__ = ["FRDataset", "DataGouvClient"]
