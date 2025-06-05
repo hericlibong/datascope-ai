@@ -2,9 +2,12 @@ import pytest
 
 from ai_engine.connectors.data_gov import DataGovClient
 from ai_engine.connectors.data_gouv import DataGouvClient
+from ai_engine.connectors.data_canada import CanadaGovClient
+from ai_engine.connectors.hdx_data import HdxClient
+from ai_engine.connectors.data_uk import UKGovClient
 from ai_engine.schemas import DatasetSuggestion
 
-clients = [DataGovClient(), DataGouvClient()]
+clients = [DataGovClient(), DataGouvClient(), CanadaGovClient(), HdxClient(), UKGovClient()]
 
 @pytest.mark.integration
 def test_connectors_implement_interface():
