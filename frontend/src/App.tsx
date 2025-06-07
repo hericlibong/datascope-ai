@@ -1,29 +1,21 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "@/pages/Home";
+import About from "@/pages/About";
+import { Layout } from "@/components/Layout";
 
-function App() {
+export default function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-blue-100">
-      <Card className="w-full max-w-sm">
-        <CardHeader>
-          <CardTitle>Bienvenue sur DataScope</CardTitle>
-          <CardDescription>
-            Ceci est un exemple de carte Shadcn UI.<br />
-            Tu peux la personnaliser à volonté.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p>
-            Ajoute ici n'importe quel contenu : texte, formulaire, infos, etc.<br />
-            <strong>C'est le composant CardContent !</strong>
-          </p>
-        </CardContent>
-        <CardFooter>
-          <Button>Découvrir</Button>
-        </CardFooter>
-      </Card>
-    </div>
+    <Router>
+      <Layout>
+        <nav className="mb-4 flex gap-6">
+          <Link to="/" className="text-blue-800 font-semibold">Accueil</Link>
+          <Link to="/about" className="text-blue-800 font-semibold">À propos</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
-
-export default App;
