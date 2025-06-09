@@ -1,6 +1,9 @@
 from rest_framework import viewsets, generics, permissions
 from rest_framework.response import Response
 from rest_framework import status
+from rest_framework.views import APIView
+from rest_framework.parsers import MultiPartParser, FormParser
+from django.utils.timezone import now
 
 from .models import Article, Analysis
 from .serializers import (
@@ -53,6 +56,38 @@ class AnalysisViewSet(viewsets.ReadOnlyModelViewSet):
         if self.action == "retrieve":
             return AnalysisDetailSerializer
         return AnalysisSerializer
+    
+
+class ArticleAnalyzeAPIView(APIView):
+    permission_classes = [permissions.IsAuthenticated]
+    parser_classes = [MultiPartParser, FormParser]
+
+    def post(self, request):
+        content = request.data.get("text")
+        file = request.data.get("file")
+
+        if not content and not file:
+            return Response({"error": "Aucun contenu fourni."}, status=status.HTTP_400_BAD_REQUEST)
+
+        article = Article.objects.create(
+            user=request.user,
+            content=content if content else file.read().decode("utf-8"),
+            submitted_at=now()
+        )
+
+        # En vrai, logique NLP ici...
+        analysis = Analysis.objects.create(
+            article=article,
+            summary="Résumé généré automatiquement",
+            score=0.8,  # valeur fictive
+        )
+
+        return Response({
+            "message": "Analyse réussie",
+            "article_id": article.id,
+            "analysis_id": analysis.id
+        }, status=status.HTTP_201_CREATED)
+
 
 
 # ---------- History ----------
@@ -65,3 +100,5 @@ class HistoryAPIView(generics.ListAPIView):
 
     def get_queryset(self):
         return Analysis.objects.filter(article__user=self.request.user).order_by("-created_at")
+    
+
