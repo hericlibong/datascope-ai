@@ -66,8 +66,21 @@ class ArticleAnalyzeAPIView(APIView):
         content = request.data.get("text")
         file = request.data.get("file")
 
+        # -- Contrôles de validation sans messages explicites --
         if not content and not file:
-            return Response({"error": "Aucun contenu fourni."}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"error_code": "empty_input"}, status=status.HTTP_400_BAD_REQUEST)
+
+        if file:
+            allowed_extensions = [".txt", ".md"]
+            if not any(file.name.endswith(ext) for ext in allowed_extensions):
+                return Response({"error_code": "invalid_file_type"}, status=status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
+
+            if file.size > 2_000_000:  # 2 Mo
+                return Response({"error_code": "file_too_large"}, status=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE)
+
+        if content and len(content) < 10:
+            return Response({"error_code": "text_too_short"}, status=status.HTTP_400_BAD_REQUEST)
+        
 
         article = Article.objects.create(
             user=request.user,
