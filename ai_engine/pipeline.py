@@ -35,7 +35,8 @@ def run(article_text: str, user_id: str = "anon") -> tuple[AnalysisPackage, str,
     _validate(article_text)
 
     extraction_result = extraction.run(article_text)
-    score = compute_score(extraction_result, article_text, model=ai_engine.OPENAI_MODEL)
+    score_100 = compute_score(extraction_result, article_text, model=ai_engine.OPENAI_MODEL)
+    score = round(score_100 / 10, 1)
     angle_result = angles.run(article_text)
 
     # TODO : exposer keywords_result et viz_result dans AnalysisPackage quand validé

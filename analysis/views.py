@@ -14,6 +14,12 @@ from .serializers import (
 from users.serializers import FeedbackSerializer
 from users.models import Feedback
 
+from ai_engine.pipeline import run as run_pipeline
+from analysis.models import Entity, Angle, DatasetSuggestion
+
+
+
+
 
 class IsOwner(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
@@ -74,13 +80,11 @@ class ArticleAnalyzeAPIView(APIView):
             allowed_extensions = [".txt", ".md"]
             if not any(file.name.endswith(ext) for ext in allowed_extensions):
                 return Response({"error_code": "invalid_file_type"}, status=status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
-
             if file.size > 2_000_000:  # 2 Mo
                 return Response({"error_code": "file_too_large"}, status=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE)
 
         if content and len(content) < 10:
             return Response({"error_code": "text_too_short"}, status=status.HTTP_400_BAD_REQUEST)
-        
 
         article = Article.objects.create(
             user=request.user,
@@ -88,12 +92,69 @@ class ArticleAnalyzeAPIView(APIView):
             submitted_at=now()
         )
 
-        # En vrai, logique NLP ici...
+        # Appel du moteur IA (LangChain)
+        packaged, markdown, score = run_pipeline(article.content, user_id=str(request.user.id))
+
+        # Création de l’analyse avec score réel (summary = markdown de run_pipeline)
         analysis = Analysis.objects.create(
             article=article,
-            summary="Résumé généré automatiquement",
-            score=0.8,  # valeur fictive
+            summary=markdown,
+            score=score,
+            # profile_label = "",  # Mets à jour si ce champ existe ou retire-le sinon
         )
+
+        # Sauvegarde des entités extraites
+        # ExtractionResult: persons, organizations, locations, dates, numbers
+        # ExtractionResult: persons, organizations, locations, dates, numbers
+
+        for person in packaged.extraction.persons:
+            Entity.objects.create(
+                analysis=analysis,
+                type="PER",    # 👈 Respecte le code
+                value=person,
+                context=None,
+            )
+        for org in packaged.extraction.organizations:
+            Entity.objects.create(
+                analysis=analysis,
+                type="ORG",
+                value=org,
+                context=None,
+            )
+        for loc in packaged.extraction.locations:
+            Entity.objects.create(
+                analysis=analysis,
+                type="LOC",
+                value=loc,
+                context=None,
+            )
+        for date in packaged.extraction.dates:
+            Entity.objects.create(
+                analysis=analysis,
+                type="DATE",
+                value=date,
+                context=None,
+            )
+        for num in packaged.extraction.numbers:
+            Entity.objects.create(
+                analysis=analysis,
+                type="NUM",
+                value=str(num.value) if hasattr(num, "value") else str(num),
+                context=None,
+            )
+
+
+        # Sauvegarde des angles (champs: title, rationale)
+        for idx, ang in enumerate(packaged.angles.angles):
+            Angle.objects.create(
+                analysis=analysis,
+                title=ang.title,
+                description=ang.rationale,
+                order=idx
+            )
+
+        # Pas de visualizations ni datasets à ce stade dans ton schéma actuel.
+        # (ajoute ces boucles quand tu les auras dans le schéma AnalysisPackage)
 
         return Response({
             "message": "Analyse réussie",
