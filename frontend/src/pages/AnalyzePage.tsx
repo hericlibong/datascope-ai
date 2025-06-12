@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { Button } from "@/components/ui/button"
 import { DataficationScoreCard } from "@/components/results/DataficationScoreCard"
+import { EntitiesSummaryCard } from "@/components/results/EntitiesSummaryCard"
 
 export default function AnalyzePage() {
   // État des champs du formulaire
@@ -181,6 +182,13 @@ export default function AnalyzePage() {
             profileLabel={result.profile_label}
             language={language}
           />
+
+          {/* → Affiche les entités extraites */}
+        <EntitiesSummaryCard
+          extraction={result.extraction}
+          strongVerbs={result.strong_verbs ?? []}
+          language={language}
+/>
 
           {/* Autres composants à venir ici */}
           {result?.entities && Array.isArray(result.entities) && result.entities.length > 0 && (

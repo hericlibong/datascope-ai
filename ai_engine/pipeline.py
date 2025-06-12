@@ -35,8 +35,8 @@ def run(article_text: str, user_id: str = "anon") -> tuple[AnalysisPackage, str,
     _validate(article_text)
 
     extraction_result = extraction.run(article_text)
-    score_100 = compute_score(extraction_result, article_text, model=ai_engine.OPENAI_MODEL)
-    score = round(score_100 / 10, 1)
+    score_10 = compute_score(extraction_result, article_text, model=ai_engine.OPENAI_MODEL)
+    score_10 = round(score_10, 1)
     angle_result = angles.run(article_text)
 
     # TODO : exposer keywords_result et viz_result dans AnalysisPackage quand validé
@@ -48,12 +48,12 @@ def run(article_text: str, user_id: str = "anon") -> tuple[AnalysisPackage, str,
 
     memory = get_memory(user_id)
     
-    output_text = f"[score={score}] Angles: {[a.title for a in angle_result.angles]}"
+    output_text = f"[score={score_10}] Angles: {[a.title for a in angle_result.angles]}"
 
     memory.save_context(
         {"article": article_text},
         {"summary": output_text}
 )
 
-    return packaged, markdown, score
+    return packaged, markdown, score_10
 
