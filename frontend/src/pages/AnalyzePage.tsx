@@ -6,6 +6,7 @@ import { Switch } from "@/components/ui/switch"
 import { Button } from "@/components/ui/button"
 import { DataficationScoreCard } from "@/components/results/DataficationScoreCard"
 import { EntitiesSummaryCard } from "@/components/results/EntitiesSummaryCard"
+import { EditorialAnglesCard } from "@/components/results/EditorialAnglesCard"
 
 export default function AnalyzePage() {
   // État des champs du formulaire
@@ -190,6 +191,10 @@ export default function AnalyzePage() {
     language={language}
   />
     )}
+  {/* → Affiche les angles éditoriaux */}
+  {result?.angles && result.angles.length > 0 && (
+  <EditorialAnglesCard angles={result.angles} language={language} />
+  )}
 
 
           {/* Autres composants à venir ici */}
