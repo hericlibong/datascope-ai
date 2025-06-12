@@ -184,11 +184,13 @@ export default function AnalyzePage() {
           />
 
           {/* → Affiche les entités extraites */}
-        <EntitiesSummaryCard
-          extraction={result.extraction}
-          strongVerbs={result.strong_verbs ?? []}
-          language={language}
-/>
+          {result?.entities && (
+  <EntitiesSummaryCard
+    entities={result.entities}
+    language={language}
+  />
+    )}
+
 
           {/* Autres composants à venir ici */}
           {result?.entities && Array.isArray(result.entities) && result.entities.length > 0 && (
