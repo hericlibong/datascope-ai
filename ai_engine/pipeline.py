@@ -55,5 +55,5 @@ def run(article_text: str, user_id: str = "anon") -> tuple[AnalysisPackage, str,
         {"summary": output_text}
 )
 
-    return packaged, markdown, score_10
+    return packaged, markdown, score_10, keywords_result
 

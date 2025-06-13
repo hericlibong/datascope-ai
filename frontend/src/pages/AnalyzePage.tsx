@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button"
 import { DataficationScoreCard } from "@/components/results/DataficationScoreCard"
 import { EntitiesSummaryCard } from "@/components/results/EntitiesSummaryCard"
 import { EditorialAnglesCard } from "@/components/results/EditorialAnglesCard"
+import { DatasetSuggestionsCard } from "@/components/results/DatasetSuggestionsCard"
+
 
 export default function AnalyzePage() {
   // État des champs du formulaire
@@ -194,7 +196,12 @@ export default function AnalyzePage() {
   {/* → Affiche les angles éditoriaux */}
   {result?.angles && result.angles.length > 0 && (
   <EditorialAnglesCard angles={result.angles} language={language} />
+  
   )}
+ 
+ <DatasetSuggestionsCard datasets={result.datasets} language={result.language} />
+
+  
 
 
           {/* Autres composants à venir ici */}

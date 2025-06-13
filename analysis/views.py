@@ -93,7 +93,7 @@ class ArticleAnalyzeAPIView(APIView):
         )
 
         # Appel du moteur IA (LangChain)
-        packaged, markdown, score = run_pipeline(article.content, user_id=str(request.user.id))
+        packaged, markdown, score, keywords_result = run_pipeline(article.content, user_id=str(request.user.id))
 
         # Création de l’analyse avec score réel (summary = markdown de run_pipeline)
         analysis = Analysis.objects.create(
@@ -103,9 +103,7 @@ class ArticleAnalyzeAPIView(APIView):
             # profile_label = "",  # Mets à jour si ce champ existe ou retire-le sinon
         )
 
-        # Sauvegarde des entités extraites
-        # ExtractionResult: persons, organizations, locations, dates, numbers
-        # ExtractionResult: persons, organizations, locations, dates, numbers
+
 
         for person in packaged.extraction.persons:
             Entity.objects.create(
@@ -156,10 +154,16 @@ class ArticleAnalyzeAPIView(APIView):
         # Pas de visualizations ni datasets à ce stade dans ton schéma actuel.
         # (ajoute ces boucles quand tu les auras dans le schéma AnalysisPackage)
 
+        datasets = [
+            {"title": d.angle_title} for d in keywords_result.sets
+        ] if 'keywords_result' in locals() else []
+
+
         return Response({
             "message": "Analyse réussie",
             "article_id": article.id,
-            "analysis_id": analysis.id
+            "analysis_id": analysis.id,
+            "datasets": datasets
         }, status=status.HTTP_201_CREATED)
 
 
