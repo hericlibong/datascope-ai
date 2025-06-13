@@ -1,3 +1,4 @@
+// frontend/src/components/results/DatasetSuggestionsCard.tsx
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -10,9 +11,6 @@ type Dataset = {
   source_name: string
   source_url: string
   formats: string[]
-  organization?: string
-  license?: string
-  last_modified?: string
   richness: number
 }
 
@@ -23,31 +21,29 @@ type Props = {
 
 export function DatasetSuggestionsCard({ datasets, language }: Props) {
   const [open, setOpen] = useState(true)
-
   const toggleOpen = () => setOpen(!open)
+
+  if (!datasets || datasets.length === 0) return null
 
   const label = language === "fr" ? "Suggestions de jeux de données" : "Suggested Datasets"
   const sourceLabel = language === "fr" ? "Source" : "Source"
   const formatLabel = language === "fr" ? "Formats" : "Formats"
   const richnessLabel = language === "fr" ? "Richesse" : "Richness"
-  const linkLabel = language === "fr" ? "Voir" : "View"
-
-  if (!datasets || datasets.length === 0) return null
+  const linkLabel = language === "fr" ? "Ouvrir" : "Open"
 
   return (
     <Card>
       <CardContent className="p-4 space-y-4">
-      <div className="flex items-center justify-between">
-        <Button
+        <div className="flex items-center justify-between">
+          <Button
             variant="ghost"
             className="text-xl font-semibold flex items-center px-0 hover:bg-transparent"
             onClick={toggleOpen}
-        >
+          >
             {open ? <ChevronDown className="mr-2" /> : <ChevronRight className="mr-2" />}
             {label}
-        </Button>
+          </Button>
         </div>
-
 
         {open && (
           <div className="overflow-x-auto">
