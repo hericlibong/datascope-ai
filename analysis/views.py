@@ -21,6 +21,7 @@ from analysis.models import Entity, Angle, DatasetSuggestion
 
 
 
+
 class IsOwner(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
         # Pour les analyses, l’auteur est sur l’article lié
@@ -93,7 +94,10 @@ class ArticleAnalyzeAPIView(APIView):
         )
 
         # Appel du moteur IA (LangChain)
-        packaged, markdown, score, keywords_result = run_pipeline(article.content, user_id=str(request.user.id))
+        packaged, markdown, score, datasets = run_pipeline(
+                article.content, user_id=str(request.user.id)
+            )
+
 
         # Création de l’analyse avec score réel (summary = markdown de run_pipeline)
         analysis = Analysis.objects.create(
@@ -142,6 +146,10 @@ class ArticleAnalyzeAPIView(APIView):
             )
 
 
+        
+
+
+
         # Sauvegarde des angles (champs: title, rationale)
         for idx, ang in enumerate(packaged.angles.angles):
             Angle.objects.create(
@@ -151,20 +159,29 @@ class ArticleAnalyzeAPIView(APIView):
                 order=idx
             )
 
-        # Pas de visualizations ni datasets à ce stade dans ton schéma actuel.
-        # (ajoute ces boucles quand tu les auras dans le schéma AnalysisPackage)
+        
 
-        datasets = [
-            {"title": d.angle_title} for d in keywords_result.sets
-        ] if 'keywords_result' in locals() else []
-
-
-        return Response({
-            "message": "Analyse réussie",
-            "article_id": article.id,
-            "analysis_id": analysis.id,
-            "datasets": datasets
-        }, status=status.HTTP_201_CREATED)
+            return Response({
+                "message": "Analyse réussie",
+                "article_id": article.id,
+                "analysis_id": analysis.id,
+                "datasets": [
+            {
+                "title": d.title,
+                "description": d.description,
+                "source_name": d.source_name,
+                "source_url": d.source_url,
+                "formats": d.formats,
+                "license": d.license,
+                "organization": d.organization,
+                "last_modified": d.last_modified,
+                "richness": d.richness,
+            }
+            for d in datasets
+            ]
+                
+                
+            }, status=status.HTTP_201_CREATED)
 
 
 

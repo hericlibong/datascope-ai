@@ -196,10 +196,11 @@ export default function AnalyzePage() {
   {/* → Affiche les angles éditoriaux */}
   {result?.angles && result.angles.length > 0 && (
   <EditorialAnglesCard angles={result.angles} language={language} />
+ 
   
   )}
  
- <DatasetSuggestionsCard datasets={result.datasets} language={result.language} />
+ <DatasetSuggestionsCard datasets={result.connectors_results} language={result.language} />
  
 
 
