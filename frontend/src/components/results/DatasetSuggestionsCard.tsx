@@ -1,96 +1,129 @@
-// frontend/src/components/results/DatasetSuggestionsCard.tsx
-import { useState } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { ChevronDown, ChevronRight } from "lucide-react"
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Globe } from "lucide-react";
 
-type Dataset = {
-  title: string
-  description?: string
-  source_name: string
-  source_url: string
-  formats: string[]
-  richness: number
+// -------------------------------
+// Types
+// -------------------------------
+export interface DatasetSuggestion {
+  id?: number;
+  title: string;
+  description?: string | null;
+  source_name?: string | null;
+  source_url?: string | null;
+  formats?: string[] | null;
+  organization?: string | null;
+  license?: string | null;
+  last_modified?: string | null;
+  richness?: number | null;
+  found_by?: string | null;
 }
 
-type Props = {
-  datasets: Dataset[]
-  language: "en" | "fr"
+interface Props {
+  datasets: DatasetSuggestion[] | undefined;
+  language: "en" | "fr";
 }
 
+// -------------------------------
+// Helpers
+// -------------------------------
+const t = (lang: "en" | "fr", en: string, fr: string) => (lang === "fr" ? fr : en);
+
+// -------------------------------
+// Main component (named export + default)  
+// -------------------------------
 export function DatasetSuggestionsCard({ datasets, language }: Props) {
-  const [open, setOpen] = useState(true)
-  const toggleOpen = () => setOpen(!open)
-
-  if (!datasets || datasets.length === 0) return null
-
-  const label = language === "fr" ? "Suggestions de jeux de données" : "Suggested Datasets"
-  const sourceLabel = language === "fr" ? "Source" : "Source"
-  const formatLabel = language === "fr" ? "Formats" : "Formats"
-  const richnessLabel = language === "fr" ? "Richesse" : "Richness"
-  const linkLabel = language === "fr" ? "Ouvrir" : "Open"
+  if (!Array.isArray(datasets) || datasets.length === 0) return null;
 
   return (
-    <Card>
-      <CardContent className="p-4 space-y-4">
-        <div className="flex items-center justify-between">
-          <Button
-            variant="ghost"
-            className="text-xl font-semibold flex items-center px-0 hover:bg-transparent"
-            onClick={toggleOpen}
-          >
-            {open ? <ChevronDown className="mr-2" /> : <ChevronRight className="mr-2" />}
-            {label}
-          </Button>
-        </div>
+    <Card className="shadow-md rounded-2xl">
+      <CardContent className="p-6 space-y-4">
+        {/* Title */}
+        <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+          <Globe className="size-5" />
+          {t(language, "Suggested Datasets", "Jeux de données suggérés")}
+        </h3>
 
-        {open && (
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm border-separate border-spacing-y-1">
-              <thead>
-                <tr className="text-left">
-                  <th className="p-2">{language === "fr" ? "Titre" : "Title"}</th>
-                  <th className="p-2">{sourceLabel}</th>
-                  <th className="p-2">{formatLabel}</th>
-                  <th className="p-2">{richnessLabel}</th>
-                  <th className="p-2">{language === "fr" ? "Lien" : "Link"}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {datasets.map((ds, idx) => (
-                  <tr key={idx} className="bg-muted rounded">
-                    <td className="p-2">{ds.title}</td>
-                    <td className="p-2">{ds.source_name}</td>
-                    <td className="p-2">
-                      {ds.formats.map((fmt, i) => (
-                        <Badge key={i} variant="outline" className="mr-1 mb-1">
-                          {fmt.toUpperCase()}
-                        </Badge>
+        {/* Accordion list */}
+        <Accordion type="multiple" className="w-full space-y-2">
+          {datasets.map((ds, idx) => (
+            <AccordionItem key={idx} value={String(idx)} className="border rounded-lg">
+              <AccordionTrigger className="px-4 py-2 font-medium text-left">
+                {ds.title || t(language, "Untitled dataset", "Jeu sans titre")}
+              </AccordionTrigger>
+
+              <AccordionContent className="px-4 pb-4 space-y-2 text-sm">
+                <div className="flex flex-col gap-1">
+                  {ds.found_by && (
+                    <InfoLine label={t(language, "Found by", "Trouvé par")} value={ds.found_by} />
+                  )}
+                  {ds.source_name && (
+                    <InfoLine label={t(language, "Source", "Source")} value={ds.source_name} />
+                  )}
+                  {ds.source_url && (
+                    <InfoLine
+                      label="URL"
+                      value={
+                        <a
+                          href={ds.source_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 underline break-all"
+                        >
+                          {ds.source_url}
+                        </a>
+                      }
+                    />
+                  )}
+                  {Array.isArray(ds.formats) && ds.formats.length > 0 && (
+                    <div className="flex flex-wrap gap-1">
+                      <span className="font-medium mr-1">{t(language, "Formats:", "Formats :")}</span>
+                      {ds.formats.map((f) => (
+                        <Badge key={f}>{f}</Badge>
                       ))}
-                    </td>
-                    <td className="p-2">
-                      <Badge variant="secondary" className="rounded-full px-2 py-1 bg-blue-600 text-white">
-                        {ds.richness}/100
-                      </Badge>
-                    </td>
-                    <td className="p-2">
-                      <a
-                        href={ds.source_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 underline"
-                      >
-                        {linkLabel}
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
+                    </div>
+                  )}
+                  {ds.organization && (
+                    <InfoLine label={t(language, "Organization", "Organisation")} value={ds.organization} />
+                  )}
+                  {ds.license && <InfoLine label="License" value={ds.license} />}
+                  {ds.last_modified && (
+                    <InfoLine label={t(language, "Last modified", "Modifié le")} value={ds.last_modified} />
+                  )}
+                  {typeof ds.richness === "number" && (
+                    <InfoLine label={t(language, "Richness", "Richesse")} value={ds.richness.toFixed(0)} />
+                  )}
+                  {ds.description && (
+                    <div>
+                      <span className="font-medium mr-1">{t(language, "Description:", "Description :")}</span>
+                      <span>{ds.description}</span>
+                    </div>
+                  )}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </CardContent>
     </Card>
-  )
+  );
+}
+
+export default DatasetSuggestionsCard;
+
+// -------------------------------
+// Sub‑component for label/value
+// -------------------------------
+interface InfoProps {
+  label: string;
+  value: React.ReactNode;
+}
+function InfoLine({ label, value }: InfoProps) {
+  return (
+    <div className="flex gap-1">
+      <span className="font-medium">{label}:</span>
+      <span className="break-all">{value}</span>
+    </div>
+  );
 }

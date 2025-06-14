@@ -1,102 +1,98 @@
-import { useState, useId } from "react"
-import { Textarea } from "@/components/ui/textarea"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Switch } from "@/components/ui/switch"
-import { Button } from "@/components/ui/button"
-import { DataficationScoreCard } from "@/components/results/DataficationScoreCard"
-import { EntitiesSummaryCard } from "@/components/results/EntitiesSummaryCard"
-import { EditorialAnglesCard } from "@/components/results/EditorialAnglesCard"
-import { DatasetSuggestionsCard } from "@/components/results/DatasetSuggestionsCard"
+import { useState, useId } from "react";
+import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
+import { Button } from "@/components/ui/button";
+import { DataficationScoreCard } from "@/components/results/DataficationScoreCard";
+import { EntitiesSummaryCard } from "@/components/results/EntitiesSummaryCard";
+import { EditorialAnglesCard } from "@/components/results/EditorialAnglesCard";
+import { DatasetSuggestionsCard } from "@/components/results/DatasetSuggestionsCard";
 
+// Base URL configurable via .env (VITE_API_URL) avec fallback localhost
+const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 
 export default function AnalyzePage() {
-  // État des champs du formulaire
-  const [text, setText] = useState("")
-  const [file, setFile] = useState<File | null>(null)
-  const [language, setLanguage] = useState<"en" | "fr">("en")
+  /* ---------------------- état formulaire ---------------------- */
+  const [text, setText] = useState("");
+  const [file, setFile] = useState<File | null>(null);
+  const [language, setLanguage] = useState<"en" | "fr">("en");
 
-  // État de l’interface utilisateur
-  const [loading, setLoading] = useState(false)
-  const [result, setResult] = useState<any>(null)
-  const [errorMessage, setErrorMessage] = useState<string | null>(null)
+  /* ------------------- état interface & résultat --------------- */
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<any>(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const langSwitchId = useId();
 
-  const langSwitchId = useId()
-
+  /* ---------------------- gestion soumission ------------------- */
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setLoading(true)
-    setErrorMessage(null)
-    setResult(null)
-  
+    e.preventDefault();
+    setLoading(true);
+    setErrorMessage(null);
+    setResult(null);
+
     if (!text && !file) {
-      setLoading(false)
+      setLoading(false);
       setErrorMessage(
         language === "fr"
           ? "Veuillez entrer un texte ou charger un fichier."
           : "Please enter text or upload a file."
-      )
-      return
+      );
+      return;
     }
-  
-    const formData = new FormData()
-    formData.append("language", language)
-    if (text) formData.append("text", text)
-    if (file) formData.append("file", file)
-  
+
+    const formData = new FormData();
+    formData.append("language", language);
+    if (text) formData.append("text", text);
+    if (file) formData.append("file", file);
+
     try {
-      const token = localStorage.getItem("access_token")
-  
-      // 🔁 Étape 1 : on envoie le texte ou fichier
-      const response = await fetch("http://localhost:8000/api/analysis/", {
+      /* ------------------ 1/ création de l'analyse ------------------ */
+      const token = localStorage.getItem("access_token");
+      const createRes = await fetch(`${API_URL}/api/analysis/`, {
         method: "POST",
-        headers: {
-          Authorization: `Bearer ${token || ""}`,
-        },
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
         body: formData,
-      })
-  
-      if (!response.ok) {
-        const detail = await response.json().catch(() => ({}))
-        setErrorMessage(detail?.error ?? `Erreur API : ${response.status}`)
-        return
+      });
+
+      if (!createRes.ok) {
+        const detail = await createRes.json().catch(() => ({}));
+        setErrorMessage(detail?.error ?? `API error (${createRes.status})`);
+        return;
       }
-  
-      const data = await response.json() // { message, article_id, analysis_id }
-  
-      // 🔁 Étape 2 : on récupère les résultats complets de l’analyse
-      const resultResponse = await fetch(`http://localhost:8000/api/analysis/${data.analysis_id}/`, {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token || ""}`,
-        },
-      })
-  
-      if (!resultResponse.ok) {
+
+      const { analysis_id } = await createRes.json();
+
+      /* ---------------- 2/ récupération du résultat complet --------- */
+      const resultRes = await fetch(`${API_URL}/api/analysis/${analysis_id}/`, {
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
+      });
+
+      if (!resultRes.ok) {
         setErrorMessage(
           language === "fr"
             ? "Impossible de récupérer les résultats de l’analyse."
             : "Unable to retrieve analysis results."
-        )
-        return
+        );
+        return;
       }
-  
-      const fullResult = await resultResponse.json()
-      setResult(fullResult)
-      console.log("Résultat complet :", fullResult)
+
+      const fullResult = await resultRes.json();
+      setResult(fullResult);
     } catch (err) {
+      /* Erreur réseau réelle (CORS, offline, etc.) */
+      console.error(err);
       setErrorMessage(
         language === "fr"
           ? "Erreur réseau : impossible de contacter l’API."
           : "Network error: could not reach the API."
-      )
+      );
     } finally {
-      setLoading(false)
+      setLoading(false);
     }
-  }
-  
-  
+  };
 
+  /* ----------------------------- rendu ----------------------------- */
   return (
     <div className="max-w-2xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">
@@ -110,13 +106,17 @@ export default function AnalyzePage() {
           <Label htmlFor={langSwitchId}>
             {language === "fr" ? "Langue" : "Language"}
           </Label>
-          <span role="img" aria-label="anglais">🇬🇧</span>
+          <span role="img" aria-label="anglais">
+            🇬🇧
+          </span>
           <Switch
             id={langSwitchId}
             checked={language === "fr"}
             onCheckedChange={(v) => setLanguage(v ? "fr" : "en")}
           />
-          <span role="img" aria-label="français">🇫🇷</span>
+          <span role="img" aria-label="français">
+            🇫🇷
+          </span>
           <span className="text-xs text-gray-500 ml-2">
             {language === "fr" ? "Français" : "English"}
           </span>
@@ -124,7 +124,9 @@ export default function AnalyzePage() {
 
         {/* Champ texte */}
         <div>
-          <Label htmlFor="text">{language === "fr" ? "Texte" : "Text"}</Label>
+          <Label htmlFor="text">
+            {language === "fr" ? "Texte" : "Text"}
+          </Label>
           <Textarea
             id="text"
             value={text}
@@ -148,7 +150,7 @@ export default function AnalyzePage() {
             type="file"
             accept=".txt,.md"
             onChange={(e) => {
-              if (e.target.files) setFile(e.target.files[0])
+              if (e.target.files) setFile(e.target.files[0]);
             }}
           />
         </div>
@@ -167,77 +169,56 @@ export default function AnalyzePage() {
               ? "Analyse en cours…"
               : "Analyzing…"
             : language === "fr"
-              ? "Analyser"
-              : "Analyze"}
+            ? "Analyser"
+            : "Analyze"}
         </Button>
       </form>
 
-      {/* === Affichage des résultats === */}
-      {result?.score !== undefined &&(
+      {/* === Résultats === */}
+      {result?.score !== undefined && (
         <div className="mt-8 space-y-6">
           <h2 className="text-xl font-semibold">
             {language === "fr" ? "Résultats" : "Results"}
           </h2>
 
-          {/* → Affiche le score de datafication */}
+          {/* Score de datafication */}
           <DataficationScoreCard
             score={result.score}
             profileLabel={result.profile_label}
             language={language}
           />
 
-          {/* → Affiche les entités extraites */}
-          {result?.entities && (
-  <EntitiesSummaryCard
-    entities={result.entities}
-    language={language}
-  />
-    )}
-  {/* → Affiche les angles éditoriaux */}
-  {result?.angles && result.angles.length > 0 && (
-  <EditorialAnglesCard angles={result.angles} language={language} />
- 
-  
-  )}
- 
- <DatasetSuggestionsCard datasets={result.connectors_results} language={result.language} />
- 
+          {/* Entités */}
+          {Array.isArray(result.entities) && result.entities.length > 0 && (
+            <EntitiesSummaryCard entities={result.entities} language={language} />
+          )}
+
+          {/* Angles éditoriaux */}
+          {Array.isArray(result.angles) && result.angles.length > 0 && (
+            <EditorialAnglesCard angles={result.angles} language={language} />
+          )}
+
+          {/* Datasets */}
+        { /* Array.isArray(result.datasets) && result.datasets.length > 0 && ( 
+            <DatasetSuggestionsCard datasets={result.datasets} language={language} />
+          )*/}
+
+          {result?.datasets && result.datasets.length > 0 && (
+            <DatasetSuggestionsCard datasets={result.datasets} language={language} />
+          )}
 
 
-  
-
-
-          {/* Autres composants à venir ici */}
-          {result?.entities && Array.isArray(result.entities) && result.entities.length > 0 && (
-  <div className="mt-6">
-    <h3 className="text-lg font-semibold mb-2">
-      {language === "fr" ? "Entités extraites" : "Extracted Entities"}
-    </h3>
-    <div className="bg-gray-50 border p-4 rounded text-sm whitespace-pre-wrap">
-      <pre>{JSON.stringify(result.entities, null, 2)}</pre>
-    </div>
-  </div>
-  
-)}
-{/* Debug temporaire : affichage brut du résultat */}
-{result && (
-  <div className="mt-8 bg-gray-100 border border-gray-300 p-4 rounded text-sm text-gray-700">
-    <h3 className="text-md font-semibold mb-2">
-      {language === "fr" ? "Résultat complet brut (debug)" : "Raw Result (debug)"}
-    </h3>
-    <pre className="whitespace-pre-wrap overflow-x-auto text-xs">
-      {JSON.stringify(result, null, 2)}
-    </pre>
-  </div>
-)}
-
-
+          {/* Debug brut */}
+          <div className="mt-8 bg-gray-100 border border-gray-300 p-4 rounded text-sm text-gray-700">
+            <h3 className="text-md font-semibold mb-2">
+              {language === "fr" ? "Résultat complet brut (debug)" : "Raw Result (debug)"}
+            </h3>
+            <pre className="whitespace-pre-wrap overflow-x-auto text-xs">
+              {JSON.stringify(result, null, 2)}
+            </pre>
+          </div>
         </div>
       )}
-      
     </div>
-  )
+  );
 }
-
-
-  

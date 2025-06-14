@@ -21,7 +21,6 @@ from analysis.models import Entity, Angle, DatasetSuggestion
 
 
 
-
 class IsOwner(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
         # Pour les analyses, l’auteur est sur l’article lié
@@ -93,26 +92,27 @@ class ArticleAnalyzeAPIView(APIView):
             submitted_at=now()
         )
 
-        # Appel du moteur IA (LangChain)
-        packaged, markdown, score, datasets = run_pipeline(
-                article.content, user_id=str(request.user.id)
-            )
-
+        # Appel du moteur IA (LangChain / pipeline)
+        (
+            packaged,
+            markdown,
+            score,
+            _keywords_result,  # on ignore pour l'instant
+            datasets,
+        ) = run_pipeline(article.content, user_id=str(request.user.id))
 
         # Création de l’analyse avec score réel (summary = markdown de run_pipeline)
         analysis = Analysis.objects.create(
             article=article,
             summary=markdown,
             score=score,
-            # profile_label = "",  # Mets à jour si ce champ existe ou retire-le sinon
         )
 
-
-
+        # --------- ENTITIES ---------
         for person in packaged.extraction.persons:
             Entity.objects.create(
                 analysis=analysis,
-                type="PER",    # 👈 Respecte le code
+                type="PER",
                 value=person,
                 context=None,
             )
@@ -145,44 +145,52 @@ class ArticleAnalyzeAPIView(APIView):
                 context=None,
             )
 
-
-        
-
-
-
-        # Sauvegarde des angles (champs: title, rationale)
+        # --------- ANGLES ---------
         for idx, ang in enumerate(packaged.angles.angles):
             Angle.objects.create(
                 analysis=analysis,
                 title=ang.title,
                 description=ang.rationale,
-                order=idx
+                order=idx,
             )
 
-        
+        # --------- DATASETS — création en base -------------------------
+        # NOUVEAU : on persiste chaque jeu de données trouvé par les connecteurs
+        for ds in datasets:
+            DatasetSuggestion.objects.create(
+                analysis=analysis,
+                title=ds.title,
+                description=ds.description or "",
+                link=ds.source_url,      # champ "link" du modèle
+                source=ds.source_name,   # ex. "data.gov.uk"
+                found_by="CONNECTOR",    # distinguera plus tard les suggestions LLM
+            )
 
-            return Response({
-                "message": "Analyse réussie",
-                "article_id": article.id,
-                "analysis_id": analysis.id,
-                "datasets": [
-            {
-                "title": d.title,
-                "description": d.description,
-                "source_name": d.source_name,
-                "source_url": d.source_url,
-                "formats": d.formats,
-                "license": d.license,
-                "organization": d.organization,
-                "last_modified": d.last_modified,
-                "richness": d.richness,
-            }
-            for d in datasets
-            ]
-                
-                
-            }, status=status.HTTP_201_CREATED)
 
+        # --------- DATASETS (pas stockés en DB pour l'instant) ---------
+        response_payload = {
+            "message": "Analyse réussie",
+            "article_id": article.id,
+            "analysis_id": analysis.id,
+            "datasets": [
+                
+                {
+                    "title": d.title,
+                    "description": d.description,
+                    "source_name": d.source_name,
+                    "source_url": d.source_url,
+                    "formats": d.formats,
+                    "license": d.license,
+                    "organization": d.organization,
+                    "last_modified": d.last_modified,
+                    "richness": d.richness,
+                }
+                
+                for d in datasets
+            ],
+        }
+
+        return Response(response_payload, status=status.HTTP_201_CREATED)
 
 
 # ---------- History ----------
@@ -195,5 +203,3 @@ class HistoryAPIView(generics.ListAPIView):
 
     def get_queryset(self):
         return Analysis.objects.filter(article__user=self.request.user).order_by("-created_at")
-    
-
