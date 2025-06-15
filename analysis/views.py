@@ -158,13 +158,19 @@ class ArticleAnalyzeAPIView(APIView):
         # NOUVEAU : on persiste chaque jeu de données trouvé par les connecteurs
         for ds in datasets:
             DatasetSuggestion.objects.create(
-                analysis=analysis,
-                title=ds.title,
-                description=ds.description or "",
-                link=ds.source_url,      # champ "link" du modèle
-                source=ds.source_name,   # ex. "data.gov.uk"
-                found_by="CONNECTOR",    # distinguera plus tard les suggestions LLM
+                analysis       = analysis,
+                title          = ds.title,
+                description    = ds.description or "",
+                link           = ds.source_url,    # 🔁 nom légèrement différent
+                source         = ds.source_name,
+                found_by       = "CONNECTOR",
+                formats        = ds.formats,
+                organisation   = getattr(ds, "organization", None),
+                licence        = ds.license,
+                last_modified  = ds.last_modified or "",
+                richness       = ds.richness or 0,
             )
+
 
 
         # --------- DATASETS (pas stockés en DB pour l'instant) ---------

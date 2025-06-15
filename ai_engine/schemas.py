@@ -55,6 +55,16 @@ class VizSuggestion(BaseModel):
     y: str
     note: Optional[str] = None
 
+class LlmDataset(BaseModel):
+    title: str
+    description: str
+    link: str
+    source: str   # portail ou organisme
+
+class LlmDatasetsResult(BaseModel):
+    datasets: list[LlmDataset]
+
+
 class VizResult(BaseModel):
     language: str
     suggestions: List[VizSuggestion]

@@ -1,6 +1,7 @@
 # analysis/models.py
 from django.db import models
 from django.conf import settings
+from django.contrib.postgres.fields import ArrayField
 
 
 def article_upload_to(instance, filename):
@@ -161,6 +162,11 @@ class DatasetSuggestion(models.Model):
     link = models.URLField()
     source = models.CharField(max_length=20)
     found_by = models.CharField(max_length=10, choices=SOURCE_TYPES)
+    formats = ArrayField(models.CharField(max_length=10), default=list)
+    organisation = models.CharField(max_length=255, blank=True, null=True)
+    licence = models.CharField(max_length=255, blank=True, null=True)
+    last_modified = models.CharField(max_length=50, blank=True)
+    richness = models.PositiveSmallIntegerField(default=0)
 
     def __str__(self):
         return self.title

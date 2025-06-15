@@ -37,7 +37,19 @@ class AngleSerializer(serializers.ModelSerializer):
 class DatasetSuggestionSerializer(serializers.ModelSerializer):
     class Meta:
         model = DatasetSuggestion
-        fields = ("id", "title", "description", "link", "source", "found_by")
+        fields = (
+            "id",
+            "title",
+            "description",
+            "link",
+            "source",
+            "found_by",
+            "formats",        # 🆕
+            "organisation",   # 🆕  orthographe FR / DB
+            "licence",        # 🆕
+            "last_modified",  # 🆕
+            "richness",       # 🆕
+        )
 
 
 # ---------- article & analysis ----------

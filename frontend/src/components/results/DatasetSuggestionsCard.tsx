@@ -11,9 +11,12 @@ export interface DatasetSuggestion {
   title: string;
   description?: string | null;
   source_name?: string | null;
+  link?: string | null;
   source_url?: string | null;
   formats?: string[] | null;
+  organisation?: string | null;
   organization?: string | null;
+  licence?: string | null;
   license?: string | null;
   last_modified?: string | null;
   richness?: number | null;
@@ -31,10 +34,14 @@ interface Props {
 const t = (lang: "en" | "fr", en: string, fr: string) => (lang === "fr" ? fr : en);
 
 // -------------------------------
-// Main component (named export + default)  
+// Main component (named export + default)
 // -------------------------------
 export function DatasetSuggestionsCard({ datasets, language }: Props) {
   if (!Array.isArray(datasets) || datasets.length === 0) return null;
+
+  const MAX_LEN = 600;
+  const truncate = (txt: string) =>
+    txt.length > MAX_LEN ? txt.slice(0, MAX_LEN).replace(/\s+\S*$/, "") + "…" : txt;
 
   return (
     <Card className="shadow-md rounded-2xl">
@@ -55,50 +62,77 @@ export function DatasetSuggestionsCard({ datasets, language }: Props) {
 
               <AccordionContent className="px-4 pb-4 space-y-2 text-sm">
                 <div className="flex flex-col gap-1">
+                  {/* FOUND BY */}
                   {ds.found_by && (
                     <InfoLine label={t(language, "Found by", "Trouvé par")} value={ds.found_by} />
                   )}
+
+                  {/* SOURCE NAME */}
                   {ds.source_name && (
                     <InfoLine label={t(language, "Source", "Source")} value={ds.source_name} />
                   )}
-                  {ds.source_url && (
+
+                  {/* URL */}
+                  {(ds.source_url ?? ds.link) && (
                     <InfoLine
                       label="URL"
                       value={
                         <a
-                          href={ds.source_url}
+                          href={ds.source_url ?? ds.link ?? "#"}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 underline break-all"
+                          className="text-blue-600 hover:underline break-all"
                         >
-                          {ds.source_url}
+                          {ds.source_url ?? ds.link}
                         </a>
                       }
                     />
                   )}
+
+                  {/* FORMATS */}
                   {Array.isArray(ds.formats) && ds.formats.length > 0 && (
-                    <div className="flex flex-wrap gap-1">
+                    <div className="flex flex-wrap gap-1 items-center">
                       <span className="font-medium mr-1">{t(language, "Formats:", "Formats :")}</span>
                       {ds.formats.map((f) => (
                         <Badge key={f}>{f}</Badge>
                       ))}
                     </div>
                   )}
-                  {ds.organization && (
-                    <InfoLine label={t(language, "Organization", "Organisation")} value={ds.organization} />
+
+                  {/* ORGANISATION */}
+                  {(ds.organisation ?? ds.organization) && (
+                    <InfoLine
+                      label={t(language, "Organization", "Organisation")}
+                      value={ds.organisation ?? ds.organization}
+                    />
                   )}
-                  {ds.license && <InfoLine label="License" value={ds.license} />}
+
+                  {/* LICENCE */}
+                  {(ds.licence ?? ds.license) && (
+                    <InfoLine label="License" value={ds.licence ?? ds.license} />
+                  )}
+
+                  {/* LAST MODIFIED */}
                   {ds.last_modified && (
-                    <InfoLine label={t(language, "Last modified", "Modifié le")} value={ds.last_modified} />
+                    <InfoLine
+                      label={t(language, "Last modified", "Modifié le")}
+                      value={ds.last_modified}
+                    />
                   )}
+
+                  {/* RICHNESS */}
                   {typeof ds.richness === "number" && (
-                    <InfoLine label={t(language, "Richness", "Richesse")} value={ds.richness.toFixed(0)} />
+                    <InfoLine
+                      label={t(language, "Richness", "Richesse")}
+                      value={ds.richness.toFixed(0)}
+                    />
                   )}
+
+                  {/* DESCRIPTION */}
                   {ds.description && (
-                    <div>
-                      <span className="font-medium mr-1">{t(language, "Description:", "Description :")}</span>
-                      <span>{ds.description}</span>
-                    </div>
+                    <p className="text-sm whitespace-pre-line mt-1">
+                      {truncate(ds.description)}
+                    </p>
                   )}
                 </div>
               </AccordionContent>
