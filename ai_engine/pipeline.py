@@ -144,21 +144,23 @@ def run_connectors(
 
 
 # ------------------------------------------------------------------
-def _llm_to_ds(item: LLMSourceSuggestion) -> DatasetSuggestion:
-    """Convertit une LLMSourceSuggestion en DatasetSuggestion (found_by='LLM')."""
+def _llm_to_ds(item: LLMSourceSuggestion, *, angle_idx: int) -> DatasetSuggestion:
+    """Convertit une LLMSourceSuggestion en DatasetSuggestion standardisé."""
     return DatasetSuggestion(
-        title=item.title,
-        description=item.description,
-        source_name=item.source,
-        source_url=item.link,
-        found_by="LLM",
-        formats=[],            # pas renseigné par LLM
-        organisation=None,
-        licence=None,
-        last_modified="",
-        richness=0,
+        title        = item.title,
+        description  = item.description,
+        source_name  = item.source,
+        source_url   = item.link,          # <-- champ correct
+        found_by     = "LLM",
+        angle_idx    = angle_idx,          # marquage de l’angle parent
+        formats      = [],
+        organization = None,
+        license      = None,
+        last_modified= "",
+        richness     = 0,
     )
 # ------------------------------------------------------------------
+
 
 def run(
     article_text: str,
@@ -194,22 +196,25 @@ def run(
     # -- 5. Datasets via connecteurs (liste par angle) ----------------------
     connectors_sets = run_connectors(keywords_per_angle)
 
-    # -- 6. Sources LLM par angle -------------------------------------------
+    # 6. Sources LLM par angle  ------------------------------
     llm_sources_sets = llm_sources.run(angle_result)
 
-    # -- 7. Suggestions de visus (si ta fonction renvoie par angle) ---------
-    viz_sets = viz.run(angle_result)      # doit renvoyer list[list[VizSuggestion]]
+    # 7. Suggestions de visus  -------------------------------
+    viz_sets = viz.run(angle_result)
 
-    # -- 8. Fusion et construction AngleResources ---------------------------
+    # 8. Fusion et construction AngleResources ---------------
     angle_resources: list[AngleResources] = []
     for idx, angle in enumerate(angle_result.angles):
-        # sécurités cas où certaines listes seraient plus courtes
         kw_set   = keywords_per_angle[idx] if idx < len(keywords_per_angle) else None
         conn_ds  = connectors_sets[idx]    if idx < len(connectors_sets)    else []
-        llm_ds   = llm_sources_sets[idx]   if idx < len(llm_sources_sets)   else []
-        viz_list = viz_sets[idx]           if idx < len(viz_sets)           else []
 
-        # déduplication basique LLM vs connecteur (URL)
+        # ---- conversion LLM -> DatasetSuggestion
+        llm_raw   = llm_sources_sets[idx]  if idx < len(llm_sources_sets)   else []
+        llm_ds    = [_llm_to_ds(obj, angle_idx=idx) for obj in llm_raw]
+
+        viz_list  = viz_sets[idx]          if idx < len(viz_sets)           else []
+
+        # ---- fusion + déduplication (URL) ------------------
         seen_urls = {d.source_url for d in conn_ds}
         merged_ds = conn_ds[:]
         for ds in llm_ds:
@@ -228,8 +233,7 @@ def run(
                 visualizations = viz_list,
             )
         )
-        print(f"[DEBUG] Angle {idx} → {len(merged_ds)} datasets, "
-              f"{len(llm_ds)} sources, {len(viz_list)} visu")
+
 
     # -- 9. Packaging « historique » (extraction + angles) -------------------
     packaged, markdown = package(extraction_result, angle_result)
