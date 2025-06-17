@@ -1,6 +1,6 @@
 # ai_engine/schemas.py
 from typing import List, Optional
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, HttpUrl
 
 
 class DatasetSuggestion(BaseModel):
@@ -13,6 +13,8 @@ class DatasetSuggestion(BaseModel):
     license: str | None = None
     last_modified: str | None = None    # ← nouveau
     richness: int = 0
+    found_by: str | None = None        # "LLM" or "CONNECTOR"
+    angle_idx: int  
 
 class NumberEntity(BaseModel):
     raw: str = Field(..., description="Nombre tel qu'il apparaît dans le texte")
@@ -55,19 +57,31 @@ class VizSuggestion(BaseModel):
     y: str
     note: Optional[str] = None
 
-class LlmDataset(BaseModel):
+class VizResult(BaseModel):
+    language: str
+    suggestions: List[VizSuggestion]
+
+class LLMSourceSuggestion(BaseModel):
     title: str
     description: str
     link: str
     source: str   # portail ou organisme
+    angle_idx: int 
 
-class LlmDatasetsResult(BaseModel):
-    datasets: list[LlmDataset]
+class LLMSourceSuggestionList(BaseModel):
+    datasets: list[LLMSourceSuggestion]
+
+class AngleResources(BaseModel):
+    index: int
+    title: str
+    description: str
+    keywords: List[str]
+    datasets: List[DatasetSuggestion]
+    sources: List[LLMSourceSuggestion]
+    visualizations: List[VizSuggestion]
 
 
-class VizResult(BaseModel):
-    language: str
-    suggestions: List[VizSuggestion]
+
 
 
 

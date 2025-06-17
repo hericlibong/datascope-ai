@@ -62,3 +62,72 @@ Voici les mêmes tableaux **avec les labels GitHub directement intégrés**, pr�
 ---
 
 Souhaites-tu que je t’exporte tout cela en `.md` prêt à déposer dans ton dépôt GitHub ou ton gestionnaire de tâches ?
+
+
+### 📑 Chapitre – Issue #3.3.4 : « Fusion des suggestions LLM / connecteurs & champ `found_by` manquant »
+
+---
+
+#### 1. Situation avant correction
+
+| Élément                                            | État initial                                                                                                                        | Conséquence                                                                      |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| **Pipeline** (`ai_engine/pipeline.py`)             | – Fusionne les datasets des connecteurs avec ceux générés par le LLM.  <br>– Appelle `_llm_to_ds()` qui renseigne `found_by="LLM"`. | OK côté pipeline.                                                                |
+| **Schéma Pydantic** (`ai_engine/schemas.py`)       | `DatasetSuggestion` **ne contenait pas** de champ `found_by`.                                                                       | L’attribut était ignoré → inaccessible plus tard.                                |
+| **Vue Django** (`analysis/views.py`)               | Lors du `DatasetSuggestion.objects.create(...)`, on faisait `found_by = ds.found_by`.                                               | Levait `AttributeError: 'DatasetSuggestion' object has no attribute 'found_by'`. |
+| **Base PostgreSQL** (`analysis_datasetsuggestion`) | La colonne `found_by` existait (VARCHAR 10).                                                                                        | Valeur jamais renseignée → incohérence.                                          |
+
+---
+
+#### 2. Fichiers modifiés
+
+| Fichier                 | Lignes clés                                                                         |                                              |
+| ----------------------- | ----------------------------------------------------------------------------------- | -------------------------------------------- |
+| `ai_engine/schemas.py`  | Ajout du champ :<br>\`\`\`python<br>found\_by: str                                  | None = None  # "LLM" / "CONNECTOR"<br>\`\`\` |
+| `ai_engine/pipeline.py` | Dans `run_connectors()` :<br>`python<br>suggestion.found_by = "CONNECTOR"<br>`      |                                              |
+| `analysis/views.py`     | Lors de la création ORM :<br>`python<br>found_by = ds.found_by or "CONNECTOR",<br>` |                                              |
+
+---
+
+#### 3. Étapes de résolution détaillées
+
+1. **Détection de l’erreur**
+
+   * Traceback 500 : `AttributeError: 'DatasetSuggestion' object has no attribute 'found_by'`.
+
+2. **Ajout du champ manquant**
+
+   * Extension du schéma `DatasetSuggestion` pour inclure `found_by`.
+   * Aucun impact DB : c’est côté Pydantic uniquement.
+
+3. **Valorisation systématique**
+
+   * Dans `_llm_to_ds()` : `found_by="LLM"` inchangé.
+   * Dans `run_connectors()` : attribution explicite `"CONNECTOR"` à chaque suggestion issue d’un connecteur.
+
+4. **Persistance fiable**
+
+   * Vue Django : on lit maintenant `ds.found_by` (toujours présent) et on met une valeur par défaut de secours.
+
+5. **Tests**
+
+   * POST `/api/analysis/` ⇒ JSON renvoie les deux types :
+
+     ```json
+     { "found_by": "LLM",        ... }
+     { "found_by": "CONNECTOR", ... }
+     ```
+   * Insertion en base vérifiée (champ non-nul, ≤ 10 car.).
+
+---
+
+#### 4. Résultat
+
+* Plus aucune erreur 500.
+* Les suggestions LLM sont correctement taguées et différenciables côté front-end.
+* Préparation pour un futur filtrage ou affichage par provenance.
+
+---
+
+> **Prochaine étape** : finaliser l’affichage card-front (badges “AI” / “API”) puis passer à l’implémentation des visualisations (#3.3.5).
+

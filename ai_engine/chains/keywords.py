@@ -34,7 +34,7 @@ def run(angle_result: AngleResult) -> KeywordsResult:
 
     chat = ChatOpenAI(
         model=ai_engine.OPENAI_MODEL,
-        temperature=0.3,
+        temperature=0.9,
         timeout=40,
         openai_api_key=ai_engine.OPENAI_API_KEY,
     )

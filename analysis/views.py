@@ -163,7 +163,7 @@ class ArticleAnalyzeAPIView(APIView):
                 description    = ds.description or "",
                 link           = ds.source_url,    # 🔁 nom légèrement différent
                 source         = ds.source_name,
-                found_by       = "CONNECTOR",
+                found_by       = ds.found_by,
                 formats        = ds.formats,
                 organisation   = getattr(ds, "organization", None),
                 licence        = ds.license,

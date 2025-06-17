@@ -3,9 +3,9 @@ import inspect
 from ai_engine.utils import token_len
 from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
-from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult
+from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult, LLMSourceSuggestion, LLMSourceSuggestionList
 from ai_engine.scoring import compute_score
-from ai_engine.chains import keywords, viz
+from ai_engine.chains import keywords, viz, llm_sources
 from ai_engine.memory import get_memory
 
 from ai_engine.connectors.data_gouv import DataGouvClient
@@ -119,6 +119,7 @@ def run_connectors(
 
                     suggestions.append(suggestion)
                     seen_urls.add(suggestion.source_url)
+                    suggestion.found_by = "CONNECTOR"
 
                     # Limite globale
                     if len(suggestions) >= max_total:
@@ -126,6 +127,24 @@ def run_connectors(
                         return suggestions
 
     return suggestions
+
+
+# ------------------------------------------------------------------
+def _llm_to_ds(item: LLMSourceSuggestion) -> DatasetSuggestion:
+    """Convertit une LLMSourceSuggestion en DatasetSuggestion (found_by='LLM')."""
+    return DatasetSuggestion(
+        title=item.title,
+        description=item.description,
+        source_name=item.source,
+        source_url=item.link,
+        found_by="LLM",
+        formats=[],            # pas renseigné par LLM
+        organisation=None,
+        licence=None,
+        last_modified="",
+        richness=0,
+    )
+# ------------------------------------------------------------------
 
 
 
@@ -155,8 +174,22 @@ def run(
     keywords_result = keywords.run(angle_result)
     print("[DEBUG] keywords_result =", keywords_result.sets[0].keywords[:5])
 
+    # 4bis. Suggestions LLM (portails / bases ouvertes)
+    llm_suggestions_raw = llm_sources.run(angle_result)           # list[LLMSourceSuggestion]
+    llm_datasets = [_llm_to_ds(item) for item in llm_suggestions_raw]
+
+
     # 5. Datasets via connecteurs
-    datasets = run_connectors(keywords_result)
+    connector_datasets = run_connectors(keywords_result)
+
+    # 6. Fusion (connecteurs + LLM) avec déduplication
+    seen = {d.source_url for d in connector_datasets}
+    datasets = connector_datasets[:]
+    for ds in llm_datasets:
+        if ds.source_url not in seen:
+            datasets.append(ds)
+            seen.add(ds.source_url)
+
 
     # 6. Visualisation (placeholder)
     _ = viz.run(angle_result)

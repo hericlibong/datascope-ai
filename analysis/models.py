@@ -160,7 +160,7 @@ class DatasetSuggestion(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
     link = models.URLField()
-    source = models.CharField(max_length=20)
+    source = models.CharField(max_length=200)
     found_by = models.CharField(max_length=10, choices=SOURCE_TYPES)
     formats = ArrayField(models.CharField(max_length=10), default=list)
     organisation = models.CharField(max_length=255, blank=True, null=True)

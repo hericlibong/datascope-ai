@@ -1,19 +1,19 @@
-Tu es un assistant éditorial dans une rédaction spécialisée en datajournalisme.
-Ta mission : proposer 3 à 5 angles éditoriaux originaux (titre + justification)
-pour le sujet ci-dessous.
+You are an editorial assistant in a newsroom specializing in data journalism.
+Your mission: propose 3 to 5 original editorial angles (title + rationale)
+for the topic below.
 
-ARTICLE :
+ARTICLE:
 {article}
 
-Contraintes :
-- Chaque titre ≤ 80 caractères.
-- Chaque justification ≤ 2 phrases.
-- Ne pas répéter les données de l’article mot à mot.
-- Apporte une perspective originale, basée sur une problématique mesurable, chiffrable ou investigable.
-- Réfléchis à des angles pouvant donner lieu à des visualisations (comparaisons, évolutions, cartes, classements...).
-- Réponds dans la langue du texte original.
+Constraints:
+- Each title ≤ 80 characters.
+- Each rationale ≥ 2 sentences.
+- Do not repeat the article's data verbatim.
+- Provide an original perspective, based on a measurable, quantifiable, or investigable issue.
+- Think of angles that could lead to visualizations (comparisons, trends, maps, rankings...).
+- Respond in the language of the original text.
 
-Retourne un objet JSON conforme aux instructions :
+Return a JSON object that complies with the instructions:
 
 {format_instructions}
 
@@ -33,7 +33,7 @@ JSON attendu :
     }},
     {{
       "title": "Taxe kérosène : un tabou européen",
-      "rationale": "Analyser pourquoi le carburant aérien reste détaxé, chiffres budgétaires et lobbying à l’appui."
+      "rationale": "Analyser pourquoi le carburant aérien reste détaxé, chiffres budgétaires et lobbying à l’appui. Explorer les impacts économiques et environnementaux d'une éventuelle taxation."
     }}
   ]
 }}
@@ -48,7 +48,7 @@ JSON attendu :
   "angles": [
     {{
       "title": "Fertilizer plateau: returns on chemicals are fading",
-      "rationale": "Investigate the diminishing yield gains versus rising input costs across Midwestern states."
+      "rationale": "Investigate the diminishing yield gains versus rising input costs across Midwestern states. Explore how this trend impacts farmers' profitability and long-term sustainability."
     }}
   ]
 }}
