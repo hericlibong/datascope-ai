@@ -14,7 +14,7 @@ class DatasetSuggestion(BaseModel):
     last_modified: str | None = None    # ← nouveau
     richness: int = 0
     found_by: str | None = None        # "LLM" or "CONNECTOR"
-    angle_idx: int  
+    angle_idx: int | None = None       # ← nouveau 
 
 class NumberEntity(BaseModel):
     raw: str = Field(..., description="Nombre tel qu'il apparaît dans le texte")

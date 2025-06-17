@@ -99,3 +99,34 @@ class AnalysisDetailSerializer(AnalysisSerializer):
 
     class Meta(AnalysisSerializer.Meta):
         fields = AnalysisSerializer.Meta.fields + ("entities", "angles", "datasets")
+
+# ---------- ressources par angle (backend v2) ----------
+# 1) suggestions de portails / bases (LLM)
+class LLMSuggestionSerializer(serializers.Serializer):
+    title       = serializers.CharField()
+    description = serializers.CharField()
+    link        = serializers.URLField()
+    source      = serializers.CharField()
+
+
+# 2) suggestions de visus (LLM)
+class VizSuggestionSerializer(serializers.Serializer):
+    title       = serializers.CharField()
+    chart_type  = serializers.CharField()
+    x           = serializers.CharField()
+    y           = serializers.CharField()
+    note        = serializers.CharField(allow_null=True, required=False)
+
+
+# 3) agrégateur final : tout ce qui concerne UN angle
+class AngleResourcesSerializer(serializers.Serializer):
+    index          = serializers.IntegerField()
+    title          = serializers.CharField()
+    description    = serializers.CharField()
+    keywords       = serializers.ListField(child=serializers.CharField())
+    datasets       = DatasetSuggestionSerializer(many=True)
+    sources        = LLMSuggestionSerializer(many=True)
+    visualizations = VizSuggestionSerializer(many=True)
+
+      
+    

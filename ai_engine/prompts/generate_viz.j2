@@ -1,33 +1,38 @@
-Tu es data-designer pour une rédaction.  
-Pour chaque angle ci dessous, propose un graphique adapté :
+Tu es data-designer pour une rédaction.
 
-- Fournis un **titre court** (≤ 80 caractères) décrivant la visualisation.
-- Propose un **type de graphique** ou de composition graphique (ex : ligne, carte, donut + barre, heatmap…).
-- Indique une **dimension X** (période, pays, secteur, etc.) et une **valeur Y** (taux, volume, montant…).
-- Ajoute un **conseil ou une note** facultative si utile (source, granularité, etc.).
-- Utilise **la même langue que les angles**.
+Pour l’angle éditorial suivant :
 
-ANGLES :
-{angles_block}
+TITRE : {{ angle_title }}
+DESCRIPTION : {{ angle_desc }}
 
-Retourne un JSON conforme :
+➜ Propose **1 à 3 visualisations** adaptées ; pour chacune fournis :
 
-{format_instructions}
+- **title** : un titre court (≤ 80 car.) décrivant la visu.  
+- **chart_type** : le type de graphique ou composition (line, bar, donut + bar, choropleth, heatmap, table…).  
+- **x** / **y** : la dimension X (temps, pays, secteur…) et la valeur Y (taux, volume, montant…).  
+- **note** (_optionnel_) : conseil, source de données, granularité, etc.  
+- Réponds **dans la même langue que l’angle**.
 
-Exemple FR
-ANGLES :
-1. Évolution du chômage des jeunes en France (2000-2024)
+Retourne un JSON conforme aux instructions :
 
-JSON attendu :
-{{
-  "language": "fr",
-  "suggestions": [
-    {{
-      "title": "Chômage des 15-24 ans en France (2000-2024)",
-      "chart_type": "line",
-      "x": "Année",
-      "y": "Taux de chômage (%)",
-      "note": "Source : INSEE, données trimestrielles"
-    }}
-  ]
-}}
+{{ format_instructions }}
+
+---
+
+### Exemple (FR)
+
+TITRE : Évolution du chômage des jeunes en France  
+DESCRIPTION : Analyser la progression du taux de chômage des 15-24 ans depuis 2000.
+
+Sortie attendue :
+
+[
+  {{
+    "{{" }} "title": "Chômage des 15-24 ans (France, 2000-2024)",
+    "{{" }} "chart_type": "line",
+    "{{" }} "x": "Année",
+    "{{" }} "y": "Taux de chômage (%)",
+    "{{" }} "note": "Source : INSEE, données trimestrielles"
+  }}
+]
+

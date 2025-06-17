@@ -1,65 +1,85 @@
-# Import du module Path depuis pathlib pour gérer les chemins de fichiers
+# ai_engine/chains/llm_sources.py
 from pathlib import Path
-# Import du décorateur lru_cache depuis functools pour mettre en cache les résultats de fonctions
 from functools import lru_cache
-# Import du module ai_engine personnalisé
 import ai_engine
-# Import du modèle de chat OpenAI depuis le package langchain_openai
+
 from langchain_openai import ChatOpenAI
-# Import de la classe PromptTemplate depuis le package langchain.prompts pour créer des templates de prompts
 from langchain.prompts import PromptTemplate
-# Import du parser de sortie Pydantic depuis langchain.output_parsers pour parser les réponses
 from langchain.output_parsers import PydanticOutputParser
 
-from ai_engine.schemas import AngleResult, LLMSourceSuggestion, LLMSourceSuggestionList
+from ai_engine.schemas import (
+    AngleResult,
+    LLMSourceSuggestion,
+    LLMSourceSuggestionList,   # conteneur Pydantic (déjà existant)
+)
 from ai_engine.retries import llm_retry
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+# --------------------------------------------------------------------------- #
+# Constantes
+# --------------------------------------------------------------------------- #
+BASE_DIR   = Path(__file__).resolve().parent.parent
 PROMPT_PATH = BASE_DIR / "prompts" / "generate_llm_datasources.j2"
 
 
 @lru_cache
 def _tmpl() -> str:
+    """Charge le prompt Jinja2 en cache (lecture disque une seule fois)."""
     return PROMPT_PATH.read_text(encoding="utf-8")
 
-# ------------------------------------------------------------------
+# --------------------------------------------------------------------------- #
+# Fonction principale : une liste PAR angle
+# --------------------------------------------------------------------------- #
 @llm_retry
-def run(angle_result: AngleResult) -> list[LLMSourceSuggestion]:
+def run(angle_result: AngleResult) -> list[list[LLMSourceSuggestion]]:
     """
-    Retourne une liste de LLMSourceSuggestion (et jamais de tuples/dicts).
-    """
-    parser = PydanticOutputParser(pydantic_object=LLMSourceSuggestionList)
+    Pour chaque angle éditorial, interroge le LLM et renvoie
+    une liste de suggestions (LLMSourceSuggestion) **marquées angle_idx**.
 
-    prompt = PromptTemplate.from_template(
+    Retour :
+        [
+            [LLMSourceSuggestion, ...],   # angle_idx = 0
+            [LLMSourceSuggestion, ...],   # angle_idx = 1
+            ...
+        ]
+    """
+    parser  = PydanticOutputParser(pydantic_object=LLMSourceSuggestionList)
+    prompt_tmpl = PromptTemplate.from_template(
         _tmpl(),
         partial_variables={"format_instructions": parser.get_format_instructions()},
     )
 
     chat = ChatOpenAI(
         model=ai_engine.OPENAI_MODEL,
-        temperature=0.7,
+        temperature=0.4,
         timeout=40,
         openai_api_key=ai_engine.OPENAI_API_KEY,
     )
 
-    chain = prompt | chat | parser
-    suggestions: list[LLMSourceSuggestion] = []
+    chain = prompt_tmpl | chat | parser
+    sources_per_angle: list[list[LLMSourceSuggestion]] = []
 
-    for angle in angle_result.angles:
-        parsed = chain.invoke({
-            "angle_title": angle.title,
-            "angle_desc": angle.rationale,
-        })
+    for idx, angle in enumerate(angle_result.angles):
+        parsed = chain.invoke(
+            {
+                "angle_title": angle.title,
+                "angle_desc": angle.rationale,
+            }
+        )
 
-        # --- récupère la liste quel que soit le conteneur -------------
-        if hasattr(parsed, "__root__"):          # ancien schéma
-            suggestions.extend(parsed.__root__)
-        elif hasattr(parsed, "datasets"):        # schéma actuel
-            suggestions.extend(parsed.datasets)
-        elif isinstance(parsed, list):           # LLM renvoie déjà une liste
-            suggestions.extend(parsed)
-        else:                                    # cas improbable : un seul objet
-            suggestions.append(parsed)
+        # ------------- normalisation en liste -------------------------
+        if hasattr(parsed, "datasets"):         # schéma actuel
+            suggestions = parsed.datasets
+        elif hasattr(parsed, "__root__"):       # ancien schéma éventuel
+            suggestions = parsed.__root__
+        elif isinstance(parsed, list):
+            suggestions = parsed
+        else:
+            suggestions = [parsed]              # fallback improbable
 
+        # ------------- marquer l’angle parent ------------------------
+        for s in suggestions:
+            s.angle_idx = idx
 
-    return suggestions
+        sources_per_angle.append(suggestions)
+
+    return sources_per_angle

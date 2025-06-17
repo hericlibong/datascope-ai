@@ -1,38 +1,36 @@
-from pathlib import Path, PurePath
+# ai_engine/chains/viz.py
+from pathlib import Path
 from functools import lru_cache
 import ai_engine
 
 from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
-from ai_engine.schemas import AngleResult, VizResult
+
+from ai_engine.schemas import AngleResult, VizResult, VizSuggestion
 from ai_engine.retries import llm_retry
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR   = Path(__file__).resolve().parent.parent
 PROMPT_PATH = BASE_DIR / "prompts" / "generate_viz.j2"
+
 
 @lru_cache
 def _tmpl() -> str:
     return PROMPT_PATH.read_text(encoding="utf-8")
 
+
 @llm_retry
-def run(angle_result: AngleResult) -> VizResult:
+def run(angle_result: AngleResult) -> list[list[VizSuggestion]]:
+    """
+    Retourne une liste de listes : une entrée par angle,
+    contenant les VizSuggestion correspondantes.
+    """
     parser = PydanticOutputParser(pydantic_object=VizResult)
 
-    angles_block = "\n".join(f"{i}. {a.title}" for i, a in enumerate(angle_result.angles, 1))
-
-    # prompt = PromptTemplate.from_template(
-    #     _tmpl(),
-    #     input_variables=["angles_block"],
-    #     partial_variables={"format_instructions": parser.get_format_instructions()},
-    # )
     prompt = PromptTemplate.from_template(
-    _tmpl(),
-    partial_variables={
-        "format_instructions": parser.get_format_instructions(),
-    }
-)
-
+        _tmpl(),
+        partial_variables={"format_instructions": parser.get_format_instructions()},
+    )
 
     chat = ChatOpenAI(
         model=ai_engine.OPENAI_MODEL,
@@ -42,4 +40,16 @@ def run(angle_result: AngleResult) -> VizResult:
     )
 
     chain = prompt | chat | parser
-    return chain.invoke({"angles_block": angles_block})
+
+    viz_per_angle: list[list[VizSuggestion]] = []
+
+    for angle in angle_result.angles:
+        parsed: VizResult = chain.invoke(
+            {
+                "angle_title": angle.title,
+                "angle_desc": angle.rationale or "",
+            }
+        )
+        viz_per_angle.append(parsed.suggestions)
+
+    return viz_per_angle

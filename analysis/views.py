@@ -10,14 +10,13 @@ from .serializers import (
     ArticleSerializer,
     AnalysisSerializer,
     AnalysisDetailSerializer,
+    AngleResourcesSerializer
 )
 from users.serializers import FeedbackSerializer
 from users.models import Feedback
 
 from ai_engine.pipeline import run as run_pipeline
 from analysis.models import Entity, Angle, DatasetSuggestion
-
-
 
 
 
@@ -70,17 +69,16 @@ class ArticleAnalyzeAPIView(APIView):
 
     def post(self, request):
         content = request.data.get("text")
-        file = request.data.get("file")
+        file    = request.data.get("file")
 
-        # -- Contrôles de validation sans messages explicites --
+        # --- contrôles minimalistes ---
         if not content and not file:
             return Response({"error_code": "empty_input"}, status=status.HTTP_400_BAD_REQUEST)
 
         if file:
-            allowed_extensions = [".txt", ".md"]
-            if not any(file.name.endswith(ext) for ext in allowed_extensions):
+            if not any(file.name.endswith(ext) for ext in (".txt", ".md")):
                 return Response({"error_code": "invalid_file_type"}, status=status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
-            if file.size > 2_000_000:  # 2 Mo
+            if file.size > 2_000_000:
                 return Response({"error_code": "file_too_large"}, status=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE)
 
         if content and len(content) < 10:
@@ -92,111 +90,79 @@ class ArticleAnalyzeAPIView(APIView):
             submitted_at=now()
         )
 
-        # Appel du moteur IA (LangChain / pipeline)
+        # ------------------------------------------------------------------
+        # 1. Appel du pipeline (nouvelle signature)
+        # ------------------------------------------------------------------
         (
-            packaged,
-            markdown,
-            score,
-            _keywords_result,  # on ignore pour l'instant
-            datasets,
+            packaged,           # Extraction + angles (Pydantic)
+            markdown,           # Résumé markdown
+            score,              # Score final (0-10)
+            angle_resources,    # 🆕  list[AngleResources]
         ) = run_pipeline(article.content, user_id=str(request.user.id))
 
-        # Création de l’analyse avec score réel (summary = markdown de run_pipeline)
+        # ------------------------------------------------------------------
+        # 2. Persistance de l’analyse
+        # ------------------------------------------------------------------
         analysis = Analysis.objects.create(
-            article=article,
-            summary=markdown,
-            score=score,
+            article = article,
+            summary = markdown,
+            score   = score,
         )
 
-        # --------- ENTITIES ---------
+        # --------- ENTITIES (idem avant) -------------------
         for person in packaged.extraction.persons:
-            Entity.objects.create(
-                analysis=analysis,
-                type="PER",
-                value=person,
-                context=None,
-            )
+            Entity.objects.create(analysis=analysis, type="PER",  value=person)
         for org in packaged.extraction.organizations:
-            Entity.objects.create(
-                analysis=analysis,
-                type="ORG",
-                value=org,
-                context=None,
-            )
+            Entity.objects.create(analysis=analysis, type="ORG",  value=org)
         for loc in packaged.extraction.locations:
-            Entity.objects.create(
-                analysis=analysis,
-                type="LOC",
-                value=loc,
-                context=None,
-            )
+            Entity.objects.create(analysis=analysis, type="LOC",  value=loc)
         for date in packaged.extraction.dates:
-            Entity.objects.create(
-                analysis=analysis,
-                type="DATE",
-                value=date,
-                context=None,
-            )
+            Entity.objects.create(analysis=analysis, type="DATE", value=date)
         for num in packaged.extraction.numbers:
             Entity.objects.create(
-                analysis=analysis,
-                type="NUM",
-                value=str(num.value) if hasattr(num, "value") else str(num),
-                context=None,
+                analysis=analysis, type="NUM",
+                value=str(getattr(num, "value", num))
             )
 
-        # --------- ANGLES ---------
+        # --------- ANGLES (idem avant) ----------------------
         for idx, ang in enumerate(packaged.angles.angles):
             Angle.objects.create(
-                analysis=analysis,
-                title=ang.title,
-                description=ang.rationale,
-                order=idx,
+                analysis   = analysis,
+                title      = ang.title,
+                description= ang.rationale,
+                order      = idx,
             )
 
-        # --------- DATASETS — création en base -------------------------
-        # NOUVEAU : on persiste chaque jeu de données trouvé par les connecteurs
-        for ds in datasets:
-            DatasetSuggestion.objects.create(
-                analysis       = analysis,
-                title          = ds.title,
-                description    = ds.description or "",
-                link           = ds.source_url,    # 🔁 nom légèrement différent
-                source         = ds.source_name,
-                found_by       = ds.found_by,
-                formats        = ds.formats,
-                organisation   = getattr(ds, "organization", None),
-                licence        = ds.license,
-                last_modified  = ds.last_modified or "",
-                richness       = ds.richness or 0,
-            )
+        # --------- DATASETS : on parcourt chaque angle --------------------
+        created_count = 0
+        for ar in angle_resources:
+            for ds in ar.datasets:
+                DatasetSuggestion.objects.create(
+                    analysis       = analysis,
+                    title          = ds.title,
+                    description    = ds.description or "",
+                    link           = ds.source_url,
+                    source         = ds.source_name,
+                    found_by       = ds.found_by,
+                    formats        = ds.formats,
+                    organisation   = getattr(ds, "organization", None),
+                    licence        = ds.license,
+                    last_modified  = ds.last_modified or "",
+                    richness       = ds.richness or 0,
+                )
+                created_count += 1
+        print(f"[DEBUG] {created_count} DatasetSuggestion rows saved")
 
-
-
-        # --------- DATASETS (pas stockés en DB pour l'instant) ---------
-        response_payload = {
-            "message": "Analyse réussie",
-            "article_id": article.id,
-            "analysis_id": analysis.id,
-            "datasets": [
-                
-                {
-                    "title": d.title,
-                    "description": d.description,
-                    "source_name": d.source_name,
-                    "source_url": d.source_url,
-                    "formats": d.formats,
-                    "license": d.license,
-                    "organization": d.organization,
-                    "last_modified": d.last_modified,
-                    "richness": d.richness,
-                }
-                
-                for d in datasets
-            ],
+        # --------- RÉPONSE JSON ------------------------------------------
+        payload = {
+            "message"        : "Analyse réussie",
+            "article_id"     : article.id,
+            "analysis_id"    : analysis.id,
+            "angles_resources": AngleResourcesSerializer(
+                angle_resources, many=True
+            ).data,
         }
-
-        return Response(response_payload, status=status.HTTP_201_CREATED)
+        return Response(payload, status=status.HTTP_201_CREATED)
 
 
 # ---------- History ----------

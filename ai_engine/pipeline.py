@@ -3,7 +3,7 @@ import inspect
 from ai_engine.utils import token_len
 from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
-from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult, LLMSourceSuggestion, LLMSourceSuggestionList
+from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult, LLMSourceSuggestion, AngleResources
 from ai_engine.scoring import compute_score
 from ai_engine.chains import keywords, viz, llm_sources
 from ai_engine.memory import get_memory
@@ -28,13 +28,17 @@ def _score(extr) -> int:
 
 
 def run_connectors(
-    keywords_result: KeywordsResult,
+    keywords_per_angle: list[KeywordsResult],
     max_per_keyword: int = 2,
-    max_total: int = 25,
-) -> list[DatasetSuggestion]:
+    max_total_per_angle: int = 10,
+) -> list[list[DatasetSuggestion]]:
     """
-    Interroge les connecteurs open-data et renvoie des `DatasetSuggestion` normalisés,
-    en loggant chaque étape pour diagnostiquer les conversions et les déduplications.
+    Interroge les connecteurs open-data pour CHAQUE angle et renvoie
+    une liste de listes alignée sur l’ordre des angles.
+
+    Chaque DatasetSuggestion sort avec :
+        • found_by  = "CONNECTOR"
+        • angle_idx = index de l’angle parent
     """
 
     connectors = [
@@ -45,88 +49,98 @@ def run_connectors(
         HdxClient(),
     ]
 
-    seen_urls: set[str] = set()
-    suggestions: list[DatasetSuggestion] = []
+    all_angles: list[list[DatasetSuggestion]] = []
 
-    for kw_set in keywords_result.sets:
-        for keyword in kw_set.keywords:
-            for connector in connectors:
-                sig = inspect.signature(connector.search).parameters
-                try:
-                    if "max_results" in sig:
-                        raw_results = connector.search(
-                            keyword, max_results=max_per_keyword
-                        )
-                    elif "page_size" in sig:
-                        raw_results = connector.search(
-                            keyword, page_size=max_per_keyword
-                        )
-                    else:
-                        raw_results = connector.search(keyword)
-                except Exception as e:
-                    print(f"[{connector.__class__.__name__}] ERREUR réseau : {e!r}")
-                    continue
+    # ---------------- boucle sur les angles ---------------------------- #
+    for idx, kw_result in enumerate(keywords_per_angle):
+        print(f"\n=== [ANGLE {idx}] {kw_result.sets[0].angle_title} ===")  # 🖨️ début angle
+        seen_urls: set[str] = set()
+        angle_suggestions: list[DatasetSuggestion] = []
 
-                for raw_ds in raw_results:
-                    # --- LOG 1 : objet brut reçu ------------------------------------
-                    print(
-                        f"[{connector.__class__.__name__}] RAW → {type(raw_ds).__name__}"
-                    )
+        # ---> boucle sur les 5 mots-clés proposés pour CET angle
+        for kw_set in kw_result.sets:                       # (normalement 1 set)
+            for keyword in kw_set.keywords:                 # les 5 mots-clés
+                print(f"→ keyword='{keyword}'")
 
-                    # ---------------------------------------------------------------
-                    # Conversion vers DatasetSuggestion
-                    suggestion: DatasetSuggestion | None = None
+                # ----> boucle sur chaque connecteur
+                for connector in connectors:
+                    sig = inspect.signature(connector.search).parameters
+                    print(f"   ↳ {connector.__class__.__name__}.search … ", end="")
 
-                    # 1/ Méthode canonique
-                    if hasattr(connector, "to_suggestion"):
-                        try:
-                            suggestion = connector.to_suggestion(raw_ds)
-                        except Exception as conv_err:
-                            print("   ↳ échec to_suggestion :", conv_err)
-
-                    # 2/ Méthodes héritées / spécifiques
-                    if suggestion is None:
-                        for fn in (
-                            "us_to_suggestion",
-                            "fr_to_suggestion",
-                            "ca_to_suggestion",
-                            "uk_to_suggestion",
-                            "hdx_to_suggestion",
-                        ):
-                            if hasattr(connector, fn):
-                                try:
-                                    suggestion = getattr(connector, fn)(raw_ds)
-                                except Exception as conv_err:
-                                    print(f"   ↳ échec {fn} :", conv_err)
-                                    suggestion = None
-                                break
-
-                    # 3/ Cas où l’objet brut est déjà du bon type
-                    if suggestion is None and isinstance(raw_ds, DatasetSuggestion):
-                        suggestion = raw_ds
-
-                    # --- LOG 2 : résultat de la conversion -------------------------
-                    if suggestion is None:
-                        print("   ⚠️  ignoré (pas convertible)")
+                    try:
+                        if "max_results" in sig:
+                            raw_results = connector.search(keyword, max_results=max_per_keyword)
+                        elif "page_size" in sig:
+                            raw_results = connector.search(keyword, page_size=max_per_keyword)
+                        else:
+                            raw_results = connector.search(keyword)
+                    except Exception as e:
+                        print(f"ERREUR : {e!r}")
                         continue
                     else:
-                        print("   ✅ OK →", suggestion.title[:60])
+                        print("ok")   # appel réussi
 
-                    # Déduplication
-                    if suggestion.source_url in seen_urls:
-                        print("   ⏩ doublon, ignoré")
-                        continue
+                    for raw_ds in raw_results:
+                        # ---------- conversion vers DatasetSuggestion -------------------------------------
+                        suggestion: DatasetSuggestion | None = None
 
-                    suggestions.append(suggestion)
-                    seen_urls.add(suggestion.source_url)
-                    suggestion.found_by = "CONNECTOR"
+                        if hasattr(connector, "to_suggestion"):
+                            try:
+                                suggestion = connector.to_suggestion(raw_ds)
+                            except Exception as err:
+                                print("      ⚠️  to_suggestion KO :", err)
 
-                    # Limite globale
-                    if len(suggestions) >= max_total:
-                        print("## Limite max_total atteinte — retour anticipé ##")
-                        return suggestions
+                        if suggestion is None:
+                            for fn in (
+                                "us_to_suggestion",
+                                "fr_to_suggestion",
+                                "ca_to_suggestion",
+                                "uk_to_suggestion",
+                                "hdx_to_suggestion",
+                            ):
+                                
+                                if hasattr(connector, fn):
+                                    try:
+                                        suggestion = getattr(connector, fn)(raw_ds)
+                                    except Exception as conv_err:
+                                        print(f"      ↳ échec {fn} : {conv_err!r}")  # ⬅️ log détaillé
+                                        suggestion = None
+                                    break
 
-    return suggestions
+                        if suggestion is None and isinstance(raw_ds, DatasetSuggestion):
+                            suggestion = raw_ds
+
+                        if suggestion is None:
+                            print("      ⚠️  ignoré (non convertible)")
+                            continue
+
+                        if suggestion.source_url in seen_urls:
+                            print("      ⏩ doublon")
+                            continue
+
+                        # ---------- marquage et stockage ---------------------------
+                        suggestion.found_by  = "CONNECTOR"
+                        suggestion.angle_idx = idx
+
+                        angle_suggestions.append(suggestion)
+                        seen_urls.add(suggestion.source_url)
+
+                        print(f"      ✅ ajouté : {suggestion.title[:60]}")
+
+                        if len(angle_suggestions) >= max_total_per_angle:
+                            print("      🔘 limite par angle atteinte")
+                            break
+
+                    if len(angle_suggestions) >= max_total_per_angle:
+                        break
+                if len(angle_suggestions) >= max_total_per_angle:
+                    break
+
+        print(f"→ total datasets angle {idx} : {len(angle_suggestions)}")
+        all_angles.append(angle_suggestions)
+
+    return all_angles
+
 
 
 # ------------------------------------------------------------------
@@ -146,60 +160,85 @@ def _llm_to_ds(item: LLMSourceSuggestion) -> DatasetSuggestion:
     )
 # ------------------------------------------------------------------
 
-
-
 def run(
     article_text: str,
     user_id: str = "anon",
 ) -> tuple[
-    AnalysisPackage, str, float, KeywordsResult, list[DatasetSuggestion]
+    AnalysisPackage,        # extraction + angles « brut »
+    str,                    # markdown
+    float,                  # score_10
+    list[AngleResources],   # ressources détaillées par angle
 ]:
-    """Pipeline principal DataScope."""
+    """Orchestre l’ensemble du workflow DataScope et regroupe les ressources
+    par angle éditorial dans des objets `AngleResources`."""
 
+    # -- validation longueur -------------------------------------------------
     _validate(article_text)
 
-    # 1. Extraction
+    # -- 1. Extraction -------------------------------------------------------
     extraction_result = extraction.run(article_text)
 
-    # 2. Scoring
-    score_10 = compute_score(
-        extraction_result, article_text, model=ai_engine.OPENAI_MODEL
+    # -- 2. Scoring ----------------------------------------------------------
+    score_10 = round(
+        compute_score(extraction_result, article_text, model=ai_engine.OPENAI_MODEL),
+        1,
     )
-    score_10 = round(score_10, 1)
 
-    # 3. Angles
+    # -- 3. Angles -----------------------------------------------------------
     angle_result = angles.run(article_text)
+    print(f"[DEBUG] {len(angle_result.angles)} angles générés")
 
-    # 4. Keywords
-    keywords_result = keywords.run(angle_result)
-    print("[DEBUG] keywords_result =", keywords_result.sets[0].keywords[:5])
+    # -- 4. Keywords (liste alignée) ----------------------------------------
+    keywords_per_angle = keywords.run(angle_result)
 
-    # 4bis. Suggestions LLM (portails / bases ouvertes)
-    llm_suggestions_raw = llm_sources.run(angle_result)           # list[LLMSourceSuggestion]
-    llm_datasets = [_llm_to_ds(item) for item in llm_suggestions_raw]
+    # -- 5. Datasets via connecteurs (liste par angle) ----------------------
+    connectors_sets = run_connectors(keywords_per_angle)
 
+    # -- 6. Sources LLM par angle -------------------------------------------
+    llm_sources_sets = llm_sources.run(angle_result)
 
-    # 5. Datasets via connecteurs
-    connector_datasets = run_connectors(keywords_result)
+    # -- 7. Suggestions de visus (si ta fonction renvoie par angle) ---------
+    viz_sets = viz.run(angle_result)      # doit renvoyer list[list[VizSuggestion]]
 
-    # 6. Fusion (connecteurs + LLM) avec déduplication
-    seen = {d.source_url for d in connector_datasets}
-    datasets = connector_datasets[:]
-    for ds in llm_datasets:
-        if ds.source_url not in seen:
-            datasets.append(ds)
-            seen.add(ds.source_url)
+    # -- 8. Fusion et construction AngleResources ---------------------------
+    angle_resources: list[AngleResources] = []
+    for idx, angle in enumerate(angle_result.angles):
+        # sécurités cas où certaines listes seraient plus courtes
+        kw_set   = keywords_per_angle[idx] if idx < len(keywords_per_angle) else None
+        conn_ds  = connectors_sets[idx]    if idx < len(connectors_sets)    else []
+        llm_ds   = llm_sources_sets[idx]   if idx < len(llm_sources_sets)   else []
+        viz_list = viz_sets[idx]           if idx < len(viz_sets)           else []
 
+        # déduplication basique LLM vs connecteur (URL)
+        seen_urls = {d.source_url for d in conn_ds}
+        merged_ds = conn_ds[:]
+        for ds in llm_ds:
+            if ds.source_url not in seen_urls:
+                merged_ds.append(ds)
+                seen_urls.add(ds.source_url)
 
-    # 6. Visualisation (placeholder)
-    _ = viz.run(angle_result)
+        angle_resources.append(
+            AngleResources(
+                index          = idx,
+                title          = angle.title,
+                description    = angle.rationale,
+                keywords       = kw_set.sets[0].keywords if kw_set else [],
+                datasets       = merged_ds,
+                sources        = llm_ds,
+                visualizations = viz_list,
+            )
+        )
+        print(f"[DEBUG] Angle {idx} → {len(merged_ds)} datasets, "
+              f"{len(llm_ds)} sources, {len(viz_list)} visu")
 
-    # 7. Packaging
+    # -- 9. Packaging « historique » (extraction + angles) -------------------
     packaged, markdown = package(extraction_result, angle_result)
 
-    # 8. Mémorisation utilisateur
-    memory = get_memory(user_id)
-    output_text = f"[score={score_10}] Angles: {[a.title for a in angle_result.angles]}"
-    memory.save_context({"article": article_text}, {"summary": output_text})
+    # -- 10. Mémoire utilisateur --------------------------------------------
+    get_memory(user_id).save_context(
+        {"article": article_text},
+        {"summary": f"[score={score_10}] Angles: {[a.title for a in angle_result.angles]}"},
+    )
 
-    return packaged, markdown, score_10, keywords_result, datasets
+    return packaged, markdown, score_10, angle_resources
+
