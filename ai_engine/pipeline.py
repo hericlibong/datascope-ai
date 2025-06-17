@@ -209,7 +209,10 @@ def run(
         conn_ds  = connectors_sets[idx]    if idx < len(connectors_sets)    else []
 
         # ---- conversion LLM -> DatasetSuggestion
-        llm_raw   = llm_sources_sets[idx]  if idx < len(llm_sources_sets)   else []
+        # llm_raw   = llm_sources_sets[idx]  if idx < len(llm_sources_sets)   else []
+        llm_raw   = (
+            llm_sources_sets[idx] if idx < len(llm_sources_sets) else []
+        )
         llm_ds    = [_llm_to_ds(obj, angle_idx=idx) for obj in llm_raw]
 
         viz_list  = viz_sets[idx]          if idx < len(viz_sets)           else []
@@ -229,7 +232,8 @@ def run(
                 description    = angle.rationale,
                 keywords       = kw_set.sets[0].keywords if kw_set else [],
                 datasets       = merged_ds,
-                sources        = llm_ds,
+                # sources        = llm_ds,
+                sources        = llm_raw,
                 visualizations = viz_list,
             )
         )
