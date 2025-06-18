@@ -7,7 +7,9 @@ class DatasetSuggestion(BaseModel):
     title: str
     description: str | None = None
     source_name: str                  # "data.gouv.fr", "eurostat", etc.
+    source : str = Field(alias="source_name")
     source_url: str                  # lien vers le dataset
+    link: str = Field(alias="source_url") 
     formats: list[str] = []
     organization: str | None = None
     license: str | None = None

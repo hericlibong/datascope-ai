@@ -30,7 +30,7 @@ def _score(extr) -> int:
 def run_connectors(
     keywords_per_angle: list[KeywordsResult],
     max_per_keyword: int = 2,
-    max_total_per_angle: int = 10,
+    max_total_per_angle: int = 5,
 ) -> list[list[DatasetSuggestion]]:
     """
     Interroge les connecteurs open-data pour CHAQUE angle et renvoie
@@ -193,6 +193,7 @@ def run(
     # -- 4. Keywords (liste alignée) ----------------------------------------
     keywords_per_angle = keywords.run(angle_result)
 
+    angle_resources: list[AngleResources] = []
     # -- 5. Datasets via connecteurs (liste par angle) ----------------------
     connectors_sets = run_connectors(keywords_per_angle)
 
@@ -203,7 +204,7 @@ def run(
     viz_sets = viz.run(angle_result)
 
     # 8. Fusion et construction AngleResources ---------------
-    angle_resources: list[AngleResources] = []
+    # angle_resources: list[AngleResources] = []
     for idx, angle in enumerate(angle_result.angles):
         kw_set   = keywords_per_angle[idx] if idx < len(keywords_per_angle) else None
         conn_ds  = connectors_sets[idx]    if idx < len(connectors_sets)    else []

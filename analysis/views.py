@@ -141,7 +141,7 @@ class ArticleAnalyzeAPIView(APIView):
                     analysis       = analysis,
                     title          = ds.title,
                     description    = ds.description or "",
-                    link           = ds.source_url,
+                    link            =ds.source_url or ds.link,
                     source         = ds.source_name,
                     found_by       = ds.found_by,
                     formats        = ds.formats,
