@@ -199,9 +199,11 @@ export default function AnalyzePage() {
           />
 
           {/* une carte par angle */}
-          {result.angle_resources?.map((angle: AngleResources) => (
+          {/* compatibilité : angles_resources (back) ou angle_resources (front) */}
+        {(result.angle_resources ?? result.angle_resources)?.map(
+          (angle: AngleResources) => (
             <AngleCard key={angle.index} angle={angle} language={language} />
-          ))}
+        ))}
 
           {/* bloc debug optionnel */}
           <details className="bg-gray-100 border border-gray-300 p-4 rounded text-xs">
