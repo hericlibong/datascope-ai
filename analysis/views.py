@@ -158,7 +158,7 @@ class ArticleAnalyzeAPIView(APIView):
             "message"        : "Analyse réussie",
             "article_id"     : article.id,
             "analysis_id"    : analysis.id,
-            "angles_resources": AngleResourcesSerializer(
+            "angle_resources": AngleResourcesSerializer(
                 angle_resources, many=True
             ).data,
         }

@@ -1,170 +1,126 @@
-/* -------------------------------------------------------------------------- */
-/*  AngleCard.tsx – 1 carte = 1 angle                                         */
-/* -------------------------------------------------------------------------- */
-
-import React from "react";
-
-/* shadcn/ui */
-import { Card, CardContent }            from "@/components/ui/card";
-import { Accordion,
-         AccordionItem,
-         AccordionTrigger,
-         AccordionContent }             from "@/components/ui/accordion";
-import { Badge }                        from "@/components/ui/badge";
-
-/* icônes lucide-react */
-import { Lightbulb, Globe, BarChart }   from "lucide-react";
-
-/* types partagés */
-import type {
-  AngleResources,
-  DatasetSuggestion,
-  LLMSourceSuggestion,
-  VizSuggestion,
-} from "@/types/analysis";
-
-/* -------------------------------------------------------------------------- */
-/*  Helpers locaux                                                            */
-/* -------------------------------------------------------------------------- */
-
-/** trad rapide EN/FR (à affiner plus tard) */
-const t = (lang: "en" | "fr", en: string, fr: string) =>
-  lang === "fr" ? fr : en;
-
-/** affiche une liste de badges formats, keywords, etc. */
-function Badges({ items }: { items: string[] }) {
-  if (!items || items.length === 0) return null;
-  return (
-    <div className="flex flex-wrap gap-1">
-      {items.map((txt) => (
-        <Badge key={txt}>{txt}</Badge>
-      ))}
-    </div>
-  );
-}
-
-/** ligne clé / valeur */
-function InfoLine({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <div className="flex gap-1 text-sm">
-      <span className="font-medium">{label}:</span>
-      <span className="break-all">{children}</span>
-    </div>
-  );
-}
-
-/* -------------------------------------------------------------------------- */
-/*  Sous-cartes : Datasets, Sources LLM, Visus                                */
-/* -------------------------------------------------------------------------- */
-
-function DatasetList({ list, lang }: { list: DatasetSuggestion[]; lang: "en"|"fr" }) {
-  if (!Array.isArray(list) || list.length === 0) return null;
-
-  return (
-    <section className="space-y-2">
-      <h4 className="flex items-center gap-1 font-semibold">
-        <Globe className="size-4" />
-        {t(lang, "Datasets (connectors)", "Jeux de données (connecteurs)")}
-      </h4>
-
-      <Accordion type="multiple" className="w-full space-y-1">
-        {list.map((ds, i) => (
-          <AccordionItem key={i} value={String(i)} className="border rounded">
-            <AccordionTrigger className="px-3 py-1 text-left">{ds.title}</AccordionTrigger>
-            <AccordionContent className="px-4 pb-3 space-y-1">
-              {ds.description && <p className="text-sm whitespace-pre-line">{ds.description}</p>}
-              <InfoLine label="URL">
-                <a href={ds.source_url} target="_blank" className="text-blue-600 hover:underline">
-                  {ds.source_url}
-                </a>
-              </InfoLine>
-              <InfoLine label={t(lang,"Source","Source")}>{ds.source_name}</InfoLine>
-              {ds.organization && <InfoLine label={t(lang,"Org.","Org.")}>{ds.organization}</InfoLine>}
-              {ds.formats?.length && <Badges items={ds.formats} />}
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
-    </section>
-  );
-}
-
-function SourceList({ list, lang }: { list: LLMSourceSuggestion[]; lang:"en"|"fr" }) {
-  if (!Array.isArray(list) || list.length === 0) return null;
-
-  return (
-    <section className="space-y-2">
-      <h4 className="flex items-center gap-1 font-semibold">
-        <Lightbulb className="size-4" />
-        {t(lang, "Open-data portals (LLM)", "Portails open-data (LLM)")}
-      </h4>
-
-      {list.map((src, i) => (
-        <div key={i} className="border rounded p-3 space-y-1">
-          <a href={src.link} target="_blank" className="font-medium text-blue-700 hover:underline">
-            {src.title}
-          </a>
-          <p className="text-sm">{src.description}</p>
-          <InfoLine label={t(lang,"Provider","Fournisseur")}>{src.source}</InfoLine>
-        </div>
-      ))}
-    </section>
-  );
-}
-
-function VizList({ list, lang }: { list: VizSuggestion[]; lang:"en"|"fr" }) {
-  if (!Array.isArray(list) || list.length === 0) return null;
-
-  return (
-    <section className="space-y-2">
-      <h4 className="flex items-center gap-1 font-semibold">
-        <BarChart className="size-4" />
-        {t(lang, "Visual ideas", "Idées de visu")}
-      </h4>
-
-      {list.map((v, i) => (
-        <div key={i} className="border rounded p-3 space-y-1 text-sm">
-          <p className="font-medium">{v.title}</p>
-          <InfoLine label="Type">{v.chart_type}</InfoLine>
-          <InfoLine label="X">{v.x}</InfoLine>
-          <InfoLine label="Y">{v.y}</InfoLine>
-          {v.note && <InfoLine label={t(lang,"Note","Note")}>{v.note}</InfoLine>}
-        </div>
-      ))}
-    </section>
-  );
-}
-
-/* -------------------------------------------------------------------------- */
-/*  Composant principal                                                       */
-/* -------------------------------------------------------------------------- */
+// src/components/results/AngleCard.tsx
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Badge }   from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Globe }   from "lucide-react";
+import type { AngleResources } from "@/types/analysis";
 
 interface Props {
-  angle: AngleResources;          // données d’un angle
-  language?: "en" | "fr";         // UI lang (défaut = angleResources)
+  angle: AngleResources;
+  language: "en" | "fr";
 }
 
-const AngleCard: React.FC<Props> = ({ angle, language }) => {
-  const lang = language ?? ("en" as "en" | "fr");
+// petit helper de traduction
+const t = (lang: "en" | "fr", en: string, fr: string) => (lang === "fr" ? fr : en);
+
+export default function AngleCard({ angle, language }: Props) {
+  console.log("[AngleCard] props.angle =", angle);   // ← log important
+
+  // Sécurisation de tous les tableaux
+  const datasets = Array.isArray(angle.datasets) ? angle.datasets : [];
+  const sources = Array.isArray(angle.sources) ? angle.sources : [];
+  const visualizations = Array.isArray(angle.visualizations) ? angle.visualizations : [];
 
   return (
-    <Card className="shadow-lg rounded-2xl">
-      <CardContent className="p-6 space-y-5">
-        {/* Titre + description ------------------------------------------------ */}
-        <div className="space-y-1">
-          <h3 className="text-xl font-bold">{angle.title}</h3>
-          <p className="text-sm text-gray-700 whitespace-pre-line">{angle.description}</p>
+    <Card className="shadow rounded-2xl mb-6">
+      <CardContent className="p-5 space-y-4">
+        {/* --- Titre / description de l’angle --- */}
+        <h3 className="text-lg font-semibold">{angle.title}</h3>
+        <p className="text-sm text-gray-700 whitespace-pre-wrap">
+          {angle.description}
+        </p>
 
-          <Badges items={angle.keywords} />
-        </div>
+        {/* ========= DATASETS (connecteur + LLM) ========= */}
+        {datasets.length > 0 && (
+          <>
+            <h4 className="font-medium mt-2 mb-1 flex items-center gap-1">
+              <Globe className="size-4" />
+              {t(language, "Datasets", "Jeux de données")}
+            </h4>
+            <Accordion type="multiple" className="w-full">
+              {datasets.map((ds, i) => {
+                const href = (ds as any).link ?? ds.source_url ?? "#";
+                return (
+                  <AccordionItem key={i} value={String(i)} className="border rounded my-1">
+                    <AccordionTrigger className="px-3 py-2 font-medium text-left">
+                      {ds.title || t(language, "Untitled dataset", "Jeu sans titre")}
+                    </AccordionTrigger>
+                    <AccordionContent className="px-4 pb-4 space-y-2 text-sm">
+                      <p className="whitespace-pre-wrap">{ds.description || "—"}</p>
+                      <div className="flex flex-col gap-1">
+                        <Info label={t(language, "Found by", "Trouvé par")} value={ds.found_by} />
+                        <Info label={t(language, "Source",   "Source")}     value={ds.source_name} />
+                        {/* lien cliquable */}
+                        <div className="flex gap-1">
+                          <span className="font-medium">{t(language, "Link", "Lien")}:</span>
+                          <a href={href} target="_blank" rel="noopener noreferrer"
+                             className="text-blue-600 hover:underline break-all">
+                            {href}
+                          </a>
+                        </div>
+                        {/* formats */}
+                        {ds.formats?.length > 0 && (
+                          <div className="flex flex-wrap gap-1 items-center">
+                            <span className="font-medium mr-1">Formats:</span>
+                            {ds.formats.map((f:string)=> <Badge key={f}>{f}</Badge>)}
+                          </div>
+                        )}
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                );
+              })}
+            </Accordion>
+          </>
+        )}
 
-        {/* Sections ---------------------------------------------------------- */}
-        <DatasetList list={angle.datasets} lang={lang} />
-        <SourceList  list={angle.sources}  lang={lang} />
-        <VizList     list={angle.visualizations} lang={lang} />
+        {/* ========= SOURCES LLM ========= */}
+        {sources.length > 0 && (
+          <>
+            <h4 className="font-medium mt-4 mb-1">
+              {t(language, "Additional open-data portals", "Autres portails open-data")}
+            </h4>
+            <ul className="list-disc list-inside space-y-1">
+              {sources.map((s, idx)=>(
+                <li key={idx}>
+                  <a href={s.link} target="_blank" rel="noopener noreferrer"
+                     className="text-blue-600 hover:underline">
+                    {s.title}
+                  </a>
+                  {s.description && <> — <span className="text-xs">{s.description}</span></>}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        {/* ========= VISUALISATIONS ========= */}
+        {visualizations.length > 0 && (
+          <>
+            <h4 className="font-medium mt-4 mb-1">
+              {t(language, "Possible visualizations", "Visualisations possibles")}
+            </h4>
+            <ul className="list-square list-inside space-y-1">
+              {visualizations.map((v, idx)=>(
+                <li key={idx}>
+                  <strong>{v.chart_type}</strong> – {v.title}
+                  {v.note && <> ({v.note})</>}
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
       </CardContent>
     </Card>
   );
-};
+}
 
-export default AngleCard;
+function Info({ label, value }: {label:string; value:any}) {
+  if (!value) return null;
+  return (
+    <div className="flex gap-1">
+      <span className="font-medium">{label}:</span>
+      <span className="break-all">{value}</span>
+    </div>
+  );
+}
