@@ -66,6 +66,10 @@ class Analysis(models.Model):
         auto_now_add=True,
         help_text="Date and time when the analysis was generated"
     )
+    angle_resources = models.JSONField(
+        default=list, blank=True,
+        help_text="JSON object containing the angle resources"
+    )
 
     class Meta:
         ordering = ("-created_at",)

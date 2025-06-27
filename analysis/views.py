@@ -107,6 +107,7 @@ class ArticleAnalyzeAPIView(APIView):
             article = article,
             summary = markdown,
             score   = score,
+            angle_resources = AngleResourcesSerializer(angle_resources, many=True).data
         )
 
         # --------- ENTITIES (idem avant) -------------------

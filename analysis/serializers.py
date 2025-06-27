@@ -85,9 +85,10 @@ class ArticleSerializer(serializers.ModelSerializer):
 
 
 class AnalysisSerializer(serializers.ModelSerializer):
+    angle_resources = serializers.JSONField(read_only=True)
     class Meta:
         model = Analysis
-        fields = ("id", "article", "score", "profile_label", "summary", "created_at")
+        fields = ("id", "article", "score", "profile_label", "summary", "created_at", "angle_resources")
         read_only_fields = ("created_at",)
 
 
