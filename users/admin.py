@@ -26,6 +26,7 @@ class FeedbackAdmin(admin.ModelAdmin):
         "angles",
         "sources",
         "reusability",
+        "message",
         "submitted_at",
     )
     list_filter = (

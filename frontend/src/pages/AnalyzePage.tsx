@@ -7,9 +7,12 @@ import { Switch }    from "@/components/ui/switch";
 import { Button }    from "@/components/ui/button";
 
 import { DataficationScoreCard } from "@/components/results/DataficationScoreCard";
+import { EntitiesSummaryCard }   from "@/components/results/EntitiesSummaryCard";
 import AngleCard                 from "@/components/results/AngleCard";
+import { FeedbackForm } from "@/components/results/FeedbackForm";
 
 import type { AngleResources }   from "@/types/analysis";
+
 
 /* URL API (.env ➜ VITE_API_URL) */
 const API_URL =
@@ -95,6 +98,11 @@ export default function AnalyzePage() {
     }
   };
 
+  if (result) {
+    console.log("AnalyzePage: result =", result);
+    console.log("AnalyzePage: result.analysis_id =", result.analysis_id);
+  }
+
   /* ---------------- rendu -------------- */
   return (
     <div className="max-w-2xl mx-auto p-6 space-y-8">
@@ -174,6 +182,14 @@ export default function AnalyzePage() {
             language={language}
           />
 
+          {/* --- 2. Résumé des entités détectées --- */}
+    <EntitiesSummaryCard
+      entities={result.entities ?? []}
+      language={language}
+    />
+
+
+
           {/* cartes angle */}
           {(() => {
             /* compatibilité double clé */
@@ -187,6 +203,12 @@ export default function AnalyzePage() {
               <AngleCard key={angle.index} angle={angle} language={language} />
             ));
           })()}
+
+          {/* --- 4. Feedback utilisateur sur l’analyse --- */}
+    
+          <FeedbackForm analysisId={result.id} language={language} />
+
+
         </div>
       )}
     </div>

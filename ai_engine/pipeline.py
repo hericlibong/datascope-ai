@@ -42,7 +42,7 @@ def run_connectors(
     """
 
     connectors = [
-        # DataGouvClient(),
+        DataGouvClient(),
         DataGovClient(),
         CanadaGovClient(),
         UKGovClient(),
