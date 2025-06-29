@@ -5,6 +5,11 @@ export default function Home() {
   return (
     <div className="w-full text-center space-y-6 mt-10">
       <h2 className="text-2xl font-bold">Analyse ton article avec DataScope</h2>
+      
+      {/* lien vers le signup */}
+      <Link to="/signup"> 
+      <Button className="mt-4">Créer un compte</Button>
+      </Link>
 
       {/* Bouton vers l’analyse */}
       <Link to="/analyze">
