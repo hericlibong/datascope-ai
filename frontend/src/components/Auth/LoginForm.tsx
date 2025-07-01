@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { login } from '../../api/auth';
 
-export default function LoginForm({ onSuccess }: { onSuccess?: (tokens: any) => void }) {
+export default function LoginForm({ onSuccess }: { onSuccess?: () => void }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -12,9 +12,9 @@ export default function LoginForm({ onSuccess }: { onSuccess?: (tokens: any) => 
     setError(null);
     setLoading(true);
     try {
-      const tokens = await login({ username, password });
+      await login({ username, password }); // Token stocké automatiquement
       setLoading(false);
-      if (onSuccess) onSuccess(tokens); // On pourra stocker le token plus tard ici
+      if (onSuccess) onSuccess();
     } catch (err: any) {
       setError(err.message);
       setLoading(false);

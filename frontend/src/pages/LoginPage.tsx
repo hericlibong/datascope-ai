@@ -1,11 +1,12 @@
 import LoginForm from '../components/Auth/LoginForm';
+import { useNavigate } from 'react-router-dom';
 
 export default function LoginPage() {
-  // Pour l’instant, on n’utilise pas encore le token mais on peut l’afficher/logguer
-  const handleSuccess = (tokens: any) => {
-    // À compléter plus tard : stockage du token et redirection
-    console.log('Connexion réussie, tokens JWT :', tokens);
-    // Redirection/stockage du token viendra dans l’étape suivante
+  const navigate = useNavigate();
+
+  const handleSuccess = () => {
+    // Ici on peut rediriger directement car les tokens sont déjà stockés par login()
+    navigate('/');
   };
 
   return (
