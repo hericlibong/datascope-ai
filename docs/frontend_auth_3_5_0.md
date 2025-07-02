@@ -148,7 +148,63 @@ Assurer la persistance de la session utilisateur en stockant les tokens JWT dans
 
 ---
 
+## ✅ #3.5.3 – Protection des routes & affichage de l’historique utilisateur
+
+### 🎯 Objectif
+Garantir que seules les personnes connectées (avec un token JWT valide) peuvent accéder aux pages sensibles de l’application (analyse, feedback, historique…).  
+Permettre aussi à chaque utilisateur de consulter l’historique de ses analyses.
+
+---
+
+### 📁 Fichiers ajoutés/modifiés
+
+#### 1. `components/Auth/PrivateRoute.tsx`
+- Nouveau composant qui protège les routes :  
+  - Vérifie la présence d’un token JWT (dans `localStorage`)
+  - Si token absent : redirection automatique vers `/login`
+  - Sinon : rendu de la page protégée (`Outlet`)
+
+#### 2. `App.tsx` (routing)
+- Intégration du composant `PrivateRoute` dans le router principal.
+- Bloc `<Route element={<PrivateRoute />}>` englobant toutes les routes “sensibles” :  
+  - `/analyze` (page analyse)
+  - `/history` (page historique)
+  - `/analyze/:id` (détail analyse)
+  - (prévu : `/feedback`, etc.)
+
+#### 3. `api/history.ts`
+- Fonction `getUserHistory()` pour appeler `/api/history/` (JWT obligatoire).
+
+#### 4. `pages/HistoryPage.tsx`
+- Affichage de l’historique des analyses utilisateur connecté (score, date, lien détail).
+- Message si aucune analyse n’est présente.
+
+#### 5. `pages/AnalyzeDetailPage.tsx`
+- Détail d’une analyse accessible via `/analyze/:id`, protégé par JWT.
+
+---
+
+### ✅ Résultat obtenu
+- Toute tentative d’accès à une page protégée sans token → **redirection automatique vers `/login`**.
+- Accès normal si authentifié.
+- Rendu conditionnel de toutes les pages sensibles : analyse, historique, détail d’analyse, feedback…
+- L’historique utilisateur est bien affiché (liste ou message si vide).
+
+---
+
+### 📝 À améliorer plus tard
+- Affichage convivial des détails (cartes, résumé, feedbacks…)
+- Titre court ou résumé à la place de l’ID seul
+- Refonte graphique des pages historiques/détails
+- Ajout d’autres routes protégées au besoin
+
+---
+
 ### 🔜 Étape suivante
-Création du composant `PrivateRoute` pour protéger l’accès aux pages sensibles (analyse, historique…) et renforcer la sécurité de l’interface.
+Bloc **#3.5.4** :  
+Ajout d’un menu utilisateur (username visible) et bouton de déconnexion (logout).
+
+
+
 
 

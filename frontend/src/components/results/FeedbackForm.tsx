@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from "@/components/ui/tooltip";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
+import { envoyerFeedback } from "@/api/feedback";
 
 type FeedbackFormProps = {
   analysisId: number;
@@ -55,27 +56,24 @@ export function FeedbackForm({ analysisId, language }: FeedbackFormProps) {
     e.preventDefault();
     setLoading(true);
     setError("");
-    const token = localStorage.getItem("access_token"); // Récupère le token
     try {
-      const res = await fetch("http://localhost:8000/api/feedbacks/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          ...(token ? { "Authorization": `Bearer ${token}` } : {}),
-        },
-        body: JSON.stringify({
-          analysis: analysisId,
-          relevance,
-          angles,
-          sources,
-          reusability,
-          message,
-        }),
+      await envoyerFeedback({
+        analysis: analysisId,
+        relevance,
+        angles,
+        sources,
+        reusability,
+        message: message,
       });
-      if (!res.ok) throw new Error();
       setSuccess(true);
-    } catch {
-      setError(labels.error);
+      setMessage(""); // Reset du champ commentaire
+      setRelevance(0);
+      setAngles(0);
+      setSources(0);
+      setReusability(0);
+      setTimeout(() => setSuccess(false), 3000); // Masquer le message après 3s
+    } catch (err: any) {
+      setError(err?.message || labels.error);
     } finally {
       setLoading(false);
     }

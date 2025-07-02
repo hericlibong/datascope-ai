@@ -19,6 +19,11 @@ export default function Home() {
           <div className="text-green-700 font-bold">
             Connecté en tant que <span className="underline">{username}</span>
           </div>
+          <Link to="/history" className="ml-4 text-blue-700 underline">
+          Mon historique
+            </Link>
+
+
           <Button
             onClick={handleLogout}
             className="mt-2 bg-red-600 hover:bg-red-700"
