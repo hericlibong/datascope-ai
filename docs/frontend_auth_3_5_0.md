@@ -148,7 +148,7 @@ Assurer la persistance de la session utilisateur en stockant les tokens JWT dans
 
 ---
 
-## ✅ #3.5.3 – Protection des routes & affichage de l’historique utilisateur
+## ✅ #3.5.3 – Route Protection & User History Display
 
 ### 🎯 Objectif
 Garantir que seules les personnes connectées (avec un token JWT valide) peuvent accéder aux pages sensibles de l’application (analyse, feedback, historique…).  
