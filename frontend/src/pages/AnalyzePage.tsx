@@ -1,18 +1,15 @@
-import { useState, useId } from "react";
-import { Textarea }  from "@/components/ui/textarea";
-import { Input }     from "@/components/ui/input";
-import { Label }     from "@/components/ui/label";
-import { Switch }    from "@/components/ui/switch";
-import { Button }    from "@/components/ui/button";
-
+import { useState } from "react";
+import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
 import { DataficationScoreCard } from "@/components/results/DataficationScoreCard";
-import { EntitiesSummaryCard }   from "@/components/results/EntitiesSummaryCard";
-import AngleCard                 from "@/components/results/AngleCard";
+import { EntitiesSummaryCard } from "@/components/results/EntitiesSummaryCard";
+import AngleCard from "@/components/results/AngleCard";
 import { FeedbackForm } from "@/components/results/FeedbackForm";
-
-import type { AngleResources }   from "@/types/analysis";
-
-import { getAccessToken } from "@/api/auth";  // Ajout : pour toujours utiliser la bonne clé
+import type { AngleResources } from "@/types/analysis";
+import { getAccessToken } from "@/api/auth";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const API_URL =
   import.meta.env.VITE_API_URL !== undefined
@@ -20,15 +17,14 @@ const API_URL =
     : "http://localhost:8000";
 
 export default function AnalyzePage() {
-  const [text,     setText]     = useState("");
-  const [file,     setFile]     = useState<File | null>(null);
-  const [language, setLanguage] = useState<"en" | "fr">("en");
+  const { language } = useLanguage();
 
-  const [loading,      setLoading]      = useState(false);
-  const [result,       setResult]       = useState<any>(null);
+  const [text, setText] = useState("");
+  const [file, setFile] = useState<File | null>(null);
+
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState<any>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
-
-  const langSwitchId = useId();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -52,7 +48,6 @@ export default function AnalyzePage() {
     if (file) formData.append("file", file);
 
     try {
-      // -- Ajout : header Authorization correct
       const accessToken = getAccessToken();
       if (!accessToken) {
         setErrorMessage(
@@ -116,27 +111,11 @@ export default function AnalyzePage() {
     }
   };
 
-  /* ---------------- rendu -------------- */
   return (
     <div className="max-w-2xl mx-auto p-6 space-y-8">
       {/* *************** FORMULAIRE *************** */}
       <form onSubmit={handleSubmit} className="space-y-5">
-        {/* langue */}
-        <div className="flex items-center gap-4">
-          <Label htmlFor={langSwitchId}>{language === "fr" ? "Langue" : "Language"}</Label>
-          <span role="img" aria-label="anglais">🇬🇧</span>
-          <Switch
-            id={langSwitchId}
-            checked={language === "fr"}
-            onCheckedChange={(v) => setLanguage(v ? "fr" : "en")}
-          />
-          <span role="img" aria-label="français">🇫🇷</span>
-          <span className="text-xs text-gray-500 ml-2">
-            {language === "fr" ? "Français" : "English"}
-          </span>
-        </div>
-
-        {/* texte */}
+        {/* plus de switch local ici ! */}
         <div>
           <Label htmlFor="text">{language === "fr" ? "Texte" : "Text"}</Label>
           <Textarea
@@ -152,7 +131,6 @@ export default function AnalyzePage() {
           />
         </div>
 
-        {/* fichier */}
         <div>
           <Label htmlFor="file">
             {language === "fr" ? "ou chargez un fichier" : "or upload a file"}
@@ -167,7 +145,6 @@ export default function AnalyzePage() {
           />
         </div>
 
-        {/* erreur */}
         {errorMessage && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded">
             {errorMessage}
@@ -185,7 +162,6 @@ export default function AnalyzePage() {
         </Button>
       </form>
 
-      {/* *************** RÉSULTATS *************** */}
       {result && (
         <div className="space-y-6">
           <DataficationScoreCard

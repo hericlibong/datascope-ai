@@ -1,11 +1,37 @@
 import React, { useState } from 'react';
 import { login } from '../../api/auth';
 
-export default function LoginForm({ onSuccess }: { onSuccess?: () => void }) {
+type LoginFormProps = {
+  onSuccess?: () => void;
+  language: "en" | "fr";
+};
+
+const TEXTS = {
+  en: {
+    title: "Login",
+    username: "Username",
+    password: "Password",
+    error: "Invalid credentials",
+    loading: "Logging in…",
+    submit: "Login"
+  },
+  fr: {
+    title: "Connexion",
+    username: "Nom d’utilisateur",
+    password: "Mot de passe",
+    error: "Identifiants invalides",
+    loading: "Connexion en cours…",
+    submit: "Se connecter"
+  }
+};
+
+export default function LoginForm({ onSuccess, language }: LoginFormProps) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+
+  const t = TEXTS[language];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,10 +49,10 @@ export default function LoginForm({ onSuccess }: { onSuccess?: () => void }) {
 
   return (
     <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6 bg-white shadow rounded-xl space-y-4">
-      <h2 className="text-2xl font-bold text-center">Connexion</h2>
+      <h2 className="text-2xl font-bold text-center">{t.title}</h2>
       <input
         type="text"
-        placeholder="Nom d’utilisateur"
+        placeholder={t.username}
         value={username}
         onChange={e => setUsername(e.target.value)}
         required
@@ -34,7 +60,7 @@ export default function LoginForm({ onSuccess }: { onSuccess?: () => void }) {
       />
       <input
         type="password"
-        placeholder="Mot de passe"
+        placeholder={t.password}
         value={password}
         onChange={e => setPassword(e.target.value)}
         required
@@ -46,7 +72,7 @@ export default function LoginForm({ onSuccess }: { onSuccess?: () => void }) {
         disabled={loading}
         className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
       >
-        {loading ? "Connexion en cours…" : "Se connecter"}
+        {loading ? t.loading : t.submit}
       </button>
     </form>
   );

@@ -1,6 +1,6 @@
 import { getUsername, clearTokens } from "@/api/auth";
 import { Link, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useLanguage } from "@/contexts/LanguageContext"; // Ajout du hook
 
 const LANGS = {
   en: {
@@ -32,17 +32,10 @@ const LANGS = {
 export default function MainMenu() {
   const username = getUsername();
   const navigate = useNavigate();
-  const [language, setLanguage] = useState<string>("en");
-
-  useEffect(() => {
-    const lang = localStorage.getItem("lang") || "en";
-    setLanguage(lang);
-  }, []);
+  const { language, setLanguage } = useLanguage(); // Utilisation du contexte
 
   function switchLanguage() {
-    const newLang = language === "en" ? "fr" : "en";
-    setLanguage(newLang);
-    localStorage.setItem("lang", newLang);
+    setLanguage(language === "en" ? "fr" : "en");
   }
 
   const t = LANGS[language as "en" | "fr"];
