@@ -10,6 +10,7 @@ import { FeedbackForm } from "@/components/results/FeedbackForm";
 import type { AngleResources } from "@/types/analysis";
 import { getAccessToken } from "@/api/auth";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { detectLang } from "@/utils/langDetect";
 
 const API_URL =
   import.meta.env.VITE_API_URL !== undefined
@@ -31,7 +32,7 @@ export default function AnalyzePage() {
     setLoading(true);
     setErrorMessage(null);
     setResult(null);
-
+  
     if (!text && !file) {
       setLoading(false);
       setErrorMessage(
@@ -41,12 +42,76 @@ export default function AnalyzePage() {
       );
       return;
     }
+  
+    let contentToAnalyze = text || "";
+  
+    if (file && !text) {
+      try {
+        contentToAnalyze = await new Promise<string>((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = (event) => resolve(event.target?.result as string);
+          reader.onerror = (err) => reject(err);
+          reader.readAsText(file);
+        });
+      } catch (err) {
+        setErrorMessage(
+          language === "fr"
+            ? "Erreur de lecture du fichier. Veuillez réessayer."
+            : "Error reading the file. Please try again."
+        );
+        setLoading(false);
+        return;
+      }
+    }
 
+    // Compte le nombre de mots du texte
+    function countWords(str: string) {
+      return (str.trim().split(/\s+/).filter(Boolean).length);
+    }
+
+    const wordCount = countWords(contentToAnalyze);
+
+    if (wordCount < 220) {
+      setErrorMessage(
+        language === "fr"
+          ? `Le texte est trop court (${wordCount} mots). Merci de fournir un texte d'au moins 220 mots.`
+          : `Text is too short (${wordCount} words). Please provide at least 220 words.`
+      );
+      setLoading(false);
+      return;
+    }
+  
+    const detectedLang = detectLang(contentToAnalyze);
+  
+    // Gestion plus stricte et fiable des erreurs
+    if (detectedLang !== language) {
+      if (detectedLang === "latin") {
+        setErrorMessage(
+          language === "fr"
+            ? "Le texte semble être du Lorem Ipsum (latin). Veuillez fournir un texte valide en français."
+            : "The text appears to be Lorem Ipsum (Latin). Please provide a valid English text."
+        );
+      } else if (detectedLang === "other") {
+        setErrorMessage(
+          language === "fr"
+            ? "Impossible de détecter clairement la langue du texte. Veuillez fournir un texte lisible en français."
+            : "Unable to clearly detect the language. Please provide a readable English text."
+        );
+      } else {
+        setErrorMessage(
+          language === "fr"
+            ? "Le texte n'est pas en français. Merci de saisir un texte en français."
+            : "The text is not in English. Please enter a text in English."
+        );
+      }
+      setLoading(false);
+      return;
+    }
+  
     const formData = new FormData();
     formData.append("language", language);
-    if (text) formData.append("text", text);
-    if (file) formData.append("file", file);
-
+    formData.append("text", contentToAnalyze);
+  
     try {
       const accessToken = getAccessToken();
       if (!accessToken) {
@@ -58,39 +123,26 @@ export default function AnalyzePage() {
         setLoading(false);
         return;
       }
-
+  
       const create = await fetch(`${API_URL}/api/analysis/`, {
         method: "POST",
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-        },
+        headers: { Authorization: `Bearer ${accessToken}` },
         body: formData,
       });
-
-      if (create.status === 401) {
-        setErrorMessage(
-          language === "fr"
-            ? "Session expirée, veuillez vous reconnecter."
-            : "Session expired, please log in again."
-        );
-        setLoading(false);
-        return;
-      }
-
+  
       if (!create.ok) {
         const detail = await create.json().catch(() => ({}));
         setErrorMessage(detail?.error ?? `API error (${create.status})`);
         setLoading(false);
         return;
       }
-
+  
       const { analysis_id } = await create.json();
-
+  
       const res = await fetch(`${API_URL}/api/analysis/${analysis_id}/`, {
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-        },
+        headers: { Authorization: `Bearer ${accessToken}` },
       });
+  
       if (!res.ok) {
         setErrorMessage(
           language === "fr"
@@ -100,16 +152,19 @@ export default function AnalyzePage() {
         setLoading(false);
         return;
       }
-
+  
       const full = await res.json();
       setResult(full);
+  
     } catch (err: any) {
-      console.error(err);
       setErrorMessage(err?.message ?? "Network error");
     } finally {
       setLoading(false);
     }
   };
+  
+  
+  
 
   return (
     <div className="max-w-2xl mx-auto p-6 space-y-8">
