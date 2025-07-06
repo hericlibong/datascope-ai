@@ -9,10 +9,10 @@ type LayoutProps = {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-secondary/30">
       {/* Header */}
-      <header className="w-full bg-white shadow py-4 px-6 mb-4 flex flex-col items-center">
-        <h1 className="text-xl font-bold text-blue-800 mb-2">DataScope</h1>
+      <header className="w-full bg-card shadow py-4 px-6 mb-4 flex flex-col items-center border-b">
+        <h1 className="text-xl font-semibold text-primary mb-2">DataScope AI</h1>
         <MainMenu />
       </header>
       {/* Main Content */}
@@ -20,8 +20,8 @@ export function Layout({ children }: LayoutProps) {
         {children}
       </main>
       {/* Footer */}
-      <footer className="w-full bg-white shadow py-2 px-6 mt-4 text-sm text-gray-500 text-center">
-        © 2025 DataScope
+      <footer className="w-full bg-card shadow py-2 px-6 mt-4 text-sm text-muted-foreground text-center border-t">
+        © 2025 DataScope AI
       </footer>
     </div>
   );

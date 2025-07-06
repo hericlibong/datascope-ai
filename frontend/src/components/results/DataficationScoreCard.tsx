@@ -22,10 +22,10 @@ function getTranslatedLabel(score: number, language: "en" | "fr"): string {
 }
 
 function getBadgeColor(score: number): string {
-  if (score < 4) return "bg-red-500"
-  if (score < 6) return "bg-yellow-500"
-  if (score < 8) return "bg-green-500"
-  return "bg-emerald-600"
+  if (score < 4) return "bg-destructive"
+  if (score < 6) return "bg-warning"
+  if (score < 8) return "bg-success"
+  return "bg-primary"
 }
 
 function getEditorialComment(score: number, language: "en" | "fr"): string {
@@ -49,13 +49,13 @@ export function DataficationScoreCard({ score, language }: Props) {
   const comment = getEditorialComment(score, language)
 
   return (
-    <div className="rounded-lg border p-4 shadow-md bg-white space-y-2">
-      <h2 className="text-md font-semibold mb-1">
+    <div className="rounded-lg border p-4 shadow-md bg-card space-y-2">
+      <h2 className="text-md font-semibold mb-1 text-card-foreground">
         {language === "fr" ? "📈 Score de datafication" : "📈 Datafication Score"}
       </h2>
 
       <div className="flex items-center gap-3">
-        <span className="text-2xl font-bold">{score.toFixed(1)} / 10</span>
+        <span className="text-2xl font-bold text-card-foreground">{score.toFixed(1)} / 10</span>
         <Badge className={`${badgeColor} text-white text-sm`}>
           {translatedLabel}
         </Badge>
