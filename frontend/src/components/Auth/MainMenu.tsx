@@ -46,37 +46,85 @@ export default function MainMenu() {
   }
 
   return (
-    <nav className="flex flex-wrap gap-4 justify-center items-center mb-2">
-      <Link to="/" className="text-blue-600 hover:underline">{t.home}</Link>
-      <Link to="/about" className="text-blue-600 hover:underline">{t.about}</Link>
-      <button
-        onClick={switchLanguage}
-        className="ml-2 flex items-center px-2 py-1 rounded border border-gray-300 bg-white"
-        title={language === "en" ? "Passer en français" : "Switch to English"}
-        aria-label={language === "en" ? "Passer en français" : "Switch to English"}
-      >
-        <span className="text-lg mr-1">{t.flag}</span>
-        <span className="text-xs">{language === "en" ? "FR" : "EN"}</span>
-      </button>
-      {!username && (
-        <>
-          <Link to="/signup" className="bg-green-600 text-white rounded px-3 py-1 hover:bg-green-700">{t.signup}</Link>
-          <Link to="/login" className="text-blue-600 hover:underline">{t.login}</Link>
-        </>
-      )}
-      {username && (
-        <>
-          <Link to="/analyze" className="text-blue-600 hover:underline">{t.analyze}</Link>
-          <Link to="/history" className="text-blue-600 hover:underline">{t.history}</Link>
-          <span className="font-semibold text-green-700 ml-2">({username})</span>
-          <button
-            onClick={handleLogout}
-            className="bg-red-600 text-white rounded px-3 py-1 ml-2 hover:bg-red-700"
+    <nav className="flex items-center gap-6">
+      {/* Main navigation */}
+      <div className="flex items-center gap-4">
+        <Link 
+          to="/" 
+          className="text-foreground hover:text-primary transition-colors font-medium"
+        >
+          {t.home}
+        </Link>
+        {username && (
+          <>
+            <Link 
+              to="/analyze" 
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              {t.analyze}
+            </Link>
+            <Link 
+              to="/history" 
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              {t.history}
+            </Link>
+          </>
+        )}
+        {!username && (
+          <Link 
+            to="/about" 
+            className="text-foreground hover:text-primary transition-colors font-medium"
           >
-            {t.logout}
-          </button>
-        </>
-      )}
+            {t.about}
+          </Link>
+        )}
+      </div>
+
+      {/* User actions */}
+      <div className="flex items-center gap-3 border-l border-border pl-6">
+        {/* Language switcher */}
+        <button
+          onClick={switchLanguage}
+          className="flex items-center px-2 py-1 rounded border border-border bg-background hover:bg-accent transition-colors"
+          title={language === "en" ? "Passer en français" : "Switch to English"}
+          aria-label={language === "en" ? "Passer en français" : "Switch to English"}
+        >
+          <span className="text-sm mr-1">{t.flag}</span>
+          <span className="text-xs">{language === "en" ? "FR" : "EN"}</span>
+        </button>
+
+        {!username && (
+          <>
+            <Link 
+              to="/login" 
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              {t.login}
+            </Link>
+            <Link 
+              to="/signup" 
+              className="bg-primary text-primary-foreground hover:bg-primary/90 px-3 py-2 rounded-md transition-colors font-medium"
+            >
+              {t.signup}
+            </Link>
+          </>
+        )}
+        
+        {username && (
+          <div className="flex items-center gap-3">
+            <span className="text-sm text-muted-foreground">
+              {t.welcome} <span className="font-semibold text-foreground">{username}</span>
+            </span>
+            <button
+              onClick={handleLogout}
+              className="bg-destructive text-destructive-foreground hover:bg-destructive/90 px-3 py-2 rounded-md transition-colors font-medium text-sm"
+            >
+              {t.logout}
+            </button>
+          </div>
+        )}
+      </div>
     </nav>
   );
 }
