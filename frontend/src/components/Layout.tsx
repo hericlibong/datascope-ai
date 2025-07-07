@@ -9,19 +9,32 @@ type LayoutProps = {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-background">
       {/* Header */}
-      <header className="w-full bg-white shadow py-4 px-6 mb-4 flex flex-col items-center">
-        <h1 className="text-xl font-bold text-blue-800 mb-2">DataScope</h1>
-        <MainMenu />
+      <header className="w-full bg-card border-b border-border">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center">
+            <h1 className="text-2xl font-bold text-foreground">DataScope</h1>
+          </div>
+          
+          {/* Navigation & User Menu */}
+          <MainMenu />
+        </div>
       </header>
+      
       {/* Main Content */}
-      <main className="flex-1 flex flex-col items-center justify-center px-6">
+      <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-8">
         {children}
       </main>
-      {/* Footer */}
-      <footer className="w-full bg-white shadow py-2 px-6 mt-4 text-sm text-gray-500 text-center">
-        © 2025 DataScope
+      
+      {/* Footer - minimal */}
+      <footer className="border-t border-border bg-muted/30">
+        <div className="max-w-7xl mx-auto px-6 py-4">
+          <p className="text-sm text-muted-foreground text-center">
+            © 2025 DataScope
+          </p>
+        </div>
       </footer>
     </div>
   );
