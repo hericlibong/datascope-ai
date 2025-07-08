@@ -32,7 +32,7 @@ const LANGS = {
 export default function MainMenu() {
   const username = getUsername();
   const navigate = useNavigate();
-  const { language, setLanguage } = useLanguage(); // Utilisation du contexte
+  const { language, setLanguage } = useLanguage();
 
   function switchLanguage() {
     setLanguage(language === "en" ? "fr" : "en");
@@ -47,23 +47,28 @@ export default function MainMenu() {
 
   return (
     <nav className="flex flex-wrap gap-4 justify-center items-center mb-2">
-      <Link to="/" className="text-blue-600 hover:underline">{t.home}</Link>
-      <Link to="/about" className="text-blue-600 hover:underline">{t.about}</Link>
-      <button
-        onClick={switchLanguage}
-        className="ml-2 flex items-center px-2 py-1 rounded border border-gray-300 bg-white"
-        title={language === "en" ? "Passer en français" : "Switch to English"}
-        aria-label={language === "en" ? "Passer en français" : "Switch to English"}
-      >
-        <span className="text-lg mr-1">{t.flag}</span>
-        <span className="text-xs">{language === "en" ? "FR" : "EN"}</span>
-      </button>
+      {/* Version utilisateur NON connecté */}
       {!username && (
         <>
-          <Link to="/signup" className="bg-green-600 text-white rounded px-3 py-1 hover:bg-green-700">{t.signup}</Link>
-          <Link to="/login" className="text-blue-600 hover:underline">{t.login}</Link>
+          <Link to="/about" className="text-blue-600 hover:underline">
+            {t.about}
+          </Link>
+          <button
+            onClick={switchLanguage}
+            className="ml-2 flex items-center px-2 py-1 rounded border border-gray-300 bg-white"
+            title={language === "en" ? "Passer en français" : "Switch to English"}
+            aria-label={language === "en" ? "Passer en français" : "Switch to English"}
+          >
+            <span className="text-lg mr-1">{t.flag}</span>
+            <span className="text-xs">{language === "en" ? "FR" : "EN"}</span>
+          </button>
+          <Link to="/login" className="text-blue-600 hover:underline font-semibold">
+            {/* On force le label en anglais pour cohérence visuelle */}
+            {language === "fr" ? "Sign in" : "Sign in"}
+          </Link>
         </>
       )}
+      {/* Version utilisateur connecté */}
       {username && (
         <>
           <Link to="/analyze" className="text-blue-600 hover:underline">{t.analyze}</Link>
