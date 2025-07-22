@@ -1,5 +1,7 @@
 // src/api/auth.ts
 
+
+
 // Récupère le token d’accès depuis localStorage
 export function getAccessToken() {
     return localStorage.getItem('accessToken');
@@ -77,9 +79,10 @@ export async function authFetch(input: RequestInfo, init?: RequestInit) {
   const response = await fetch(input, { ...init, headers });
   if (response.status === 401) {
     clearTokens();
-    window.location.href = '/login';
+    window.location.href = '/login?expired=1&t=' + Date.now(); // <-- Ajoute le timestamp comme suggéré
     return Promise.reject(new Error("Session expirée, veuillez vous reconnecter"));
   }
   return response;
 }
+
 

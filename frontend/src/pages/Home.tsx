@@ -1,12 +1,16 @@
 // src/pages/Home.tsx
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { getUsername } from "@/api/auth";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import SignupForm from "@/components/Auth/SignupForm";
 
 export default function Home() {
   const { language } = useLanguage();
   const username = getUsername();
+  const [open, setOpen] = useState(false);
 
   return (
     <section className="w-full flex flex-col items-center justify-center py-16 px-4 bg-gray-50 min-h-[70vh]">
@@ -15,27 +19,44 @@ export default function Home() {
           <>
             <h1 className="text-4xl font-extrabold text-blue-700 leading-tight">
               {language === "fr"
-                ? "DataScope, l’IA au service du journalisme de données"
-                : "DataScope: AI-powered data-journalism"}
+                ? "DataScope, l’IA au service du journalisme"
+                : "DataScope: AI-powered journalism"}
             </h1>
             <p className="text-lg text-gray-600">
               {language === "fr"
                 ? "Analyse et enrichis tes articles grâce à l’intelligence artificielle et à la data visualisation. Découvre de nouveaux angles et sources en un clic."
                 : "Analyze and enrich your articles with AI and dataviz. Discover new editorial angles and sources in one click."}
             </p>
-            <Link to="/signup">
-              <Button size="lg" className="mt-6 px-8 py-3 text-lg font-semibold">
-                {language === "fr" ? "Commencer" : "Get Started"}
-              </Button>
-            </Link>
-            <div className="mt-2 text-gray-500">
-              {language === "fr"
-                ? "Déjà inscrit ? "
-                : "Already registered? "}
-              <Link to="/login" className="text-blue-600 hover:underline font-semibold">
-                {language === "fr" ? "Connexion" : "Sign in"}
-              </Link>
-            </div>
+
+            {/* --- Ouvre la modal au clic --- */}
+            <Dialog open={open} onOpenChange={setOpen}>
+              <DialogTrigger asChild>
+                <Button size="lg" className="mt-6 px-8 py-3 text-lg font-semibold">
+                  {language === "fr" ? "Commencer" : "Get Started"}
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-lg mx-auto">
+                <SignupForm
+                  onSuccess={() => {
+                    setOpen(false);
+                  }}
+                  language={language}
+                />
+                {/* Mention en dessous du form */}
+                <div className="mt-4 text-center text-gray-500">
+                  {language === "fr"
+                    ? "Déjà inscrit ? "
+                    : "Already registered? "}
+                  <Link
+                    to="/login"
+                    className="text-blue-600 hover:underline font-semibold"
+                    onClick={() => setOpen(false)}
+                  >
+                    {language === "fr" ? "Connexion" : "Sign in"}
+                  </Link>
+                </div>
+              </DialogContent>
+            </Dialog>
           </>
         ) : (
           <>

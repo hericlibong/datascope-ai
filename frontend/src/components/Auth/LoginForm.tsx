@@ -4,6 +4,7 @@ import { login } from '../../api/auth';
 type LoginFormProps = {
   onSuccess?: () => void;
   language: "en" | "fr";
+  message?: string | null;
 };
 
 const TEXTS = {
@@ -25,7 +26,7 @@ const TEXTS = {
   }
 };
 
-export default function LoginForm({ onSuccess, language }: LoginFormProps) {
+export default function LoginForm({ onSuccess, language, message }: LoginFormProps) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
@@ -50,6 +51,9 @@ export default function LoginForm({ onSuccess, language }: LoginFormProps) {
   return (
     <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6 bg-white shadow rounded-xl space-y-4">
       <h2 className="text-2xl font-bold text-center">{t.title}</h2>
+      {message && (
+        <div className="text-blue-600 text-center">{message}</div>
+      )}
       <input
         type="text"
         placeholder={t.username}

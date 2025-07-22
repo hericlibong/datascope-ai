@@ -32,7 +32,7 @@ export default function AnalyzePage() {
     setLoading(true);
     setErrorMessage(null);
     setResult(null);
-  
+
     if (!text && !file) {
       setLoading(false);
       setErrorMessage(
@@ -42,9 +42,9 @@ export default function AnalyzePage() {
       );
       return;
     }
-  
+
     let contentToAnalyze = text || "";
-  
+
     if (file && !text) {
       try {
         contentToAnalyze = await new Promise<string>((resolve, reject) => {
@@ -64,7 +64,6 @@ export default function AnalyzePage() {
       }
     }
 
-    // Compte le nombre de mots du texte
     function countWords(str: string) {
       return (str.trim().split(/\s+/).filter(Boolean).length);
     }
@@ -80,10 +79,9 @@ export default function AnalyzePage() {
       setLoading(false);
       return;
     }
-  
+
     const detectedLang = detectLang(contentToAnalyze);
-  
-    // Gestion plus stricte et fiable des erreurs
+
     if (detectedLang !== language) {
       if (detectedLang === "latin") {
         setErrorMessage(
@@ -107,11 +105,11 @@ export default function AnalyzePage() {
       setLoading(false);
       return;
     }
-  
+
     const formData = new FormData();
     formData.append("language", language);
     formData.append("text", contentToAnalyze);
-  
+
     try {
       const accessToken = getAccessToken();
       if (!accessToken) {
@@ -123,26 +121,46 @@ export default function AnalyzePage() {
         setLoading(false);
         return;
       }
-  
+
       const create = await fetch(`${API_URL}/api/analysis/`, {
         method: "POST",
         headers: { Authorization: `Bearer ${accessToken}` },
         body: formData,
       });
-  
+
+      if (create.status === 401) {
+        setErrorMessage(
+          language === "fr"
+            ? "Votre session a expiré, merci de vous reconnecter."
+            : "Your session has expired, please log in again."
+        );
+        setLoading(false);
+        return;
+      }
+
       if (!create.ok) {
         const detail = await create.json().catch(() => ({}));
         setErrorMessage(detail?.error ?? `API error (${create.status})`);
         setLoading(false);
         return;
       }
-  
+
       const { analysis_id } = await create.json();
-  
+
       const res = await fetch(`${API_URL}/api/analysis/${analysis_id}/`, {
         headers: { Authorization: `Bearer ${accessToken}` },
       });
-  
+
+      if (res.status === 401) {
+        setErrorMessage(
+          language === "fr"
+            ? "Votre session a expiré, merci de vous reconnecter."
+            : "Your session has expired, please log in again."
+        );
+        setLoading(false);
+        return;
+      }
+
       if (!res.ok) {
         setErrorMessage(
           language === "fr"
@@ -152,37 +170,53 @@ export default function AnalyzePage() {
         setLoading(false);
         return;
       }
-  
+
       const full = await res.json();
       setResult(full);
-  
+
     } catch (err: any) {
       setErrorMessage(err?.message ?? "Network error");
     } finally {
       setLoading(false);
     }
   };
-  
-  
-  
 
   return (
-    <div className="max-w-2xl mx-auto p-6 space-y-8">
-      {/* *************** FORMULAIRE *************** */}
-      <form onSubmit={handleSubmit} className="space-y-5">
-        {/* plus de switch local ici ! */}
-        <div>
-          <Label htmlFor="text">{language === "fr" ? "Texte" : "Text"}</Label>
+    <div className="max-w-4xl mx-auto p-6 space-y-8 w-full">
+      {/* FORMULAIRE */}
+      <form onSubmit={handleSubmit} className="space-y-5 w-full">
+        <div className="w-full">
+          <Label htmlFor="text" className="flex items-center gap-2 font-semibold text-lg mb-2">
+            <span>📝</span>
+            {language === "fr" ? "Texte à analyser" : "Text to analyze"}
+          </Label>
           <Textarea
             id="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder={
               language === "fr"
-                ? "Collez ou saisissez votre texte…"
-                : "Paste or type your text…"
+                ? "Collez ou saisissez ici votre article ou texte à analyser…"
+                : "Paste or type here your article or text to analyze…"
             }
-            className="min-h-[120px]"
+            className="
+              w-full
+              min-w-0
+              max-w-none
+              min-h-[180px]
+              bg-white
+              border-2 border-gray-200
+              focus:border-blue-600
+              focus:ring-2 focus:ring-blue-200
+              rounded-xl
+              px-5 py-4
+              shadow-md
+              text-base
+              transition
+              placeholder:text-gray-400
+              resize-vertical
+              outline-none
+            "
           />
         </div>
 
@@ -201,8 +235,16 @@ export default function AnalyzePage() {
         </div>
 
         {errorMessage && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded">
-            {errorMessage}
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded flex flex-col items-center gap-2">
+            <span>{errorMessage}</span>
+            {(errorMessage.includes("expiré") || errorMessage.includes("expired")) && (
+              <a
+                href="/login"
+                className="inline-block mt-1 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+              >
+                {language === "fr" ? "Se reconnecter" : "Sign in"}
+              </a>
+            )}
           </div>
         )}
 
@@ -217,8 +259,25 @@ export default function AnalyzePage() {
         </Button>
       </form>
 
+      {result?.article?.content && (
+  <div className="bg-white rounded-xl shadow p-6 mb-4 border border-gray-200">
+    <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
+      <span className="text-blue-600">📝</span>
+      {language === "fr" ? "Texte analysé" : "Analyzed text"}
+    </h3>
+    <div className="prose max-w-none text-gray-800 whitespace-pre-line text-base">
+      {result.article.content}
+    </div>
+  </div>
+)}
+
+
       {result && (
         <div className="space-y-6">
+
+          {/* Résumé IA de l'article */}
+    
+
           <DataficationScoreCard
             score={result.score}
             profileLabel={result.profile_label ?? ""}

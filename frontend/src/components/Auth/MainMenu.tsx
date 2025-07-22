@@ -1,44 +1,47 @@
 import { getUsername, clearTokens } from "@/api/auth";
 import { Link, useNavigate } from "react-router-dom";
-import { useLanguage } from "@/contexts/LanguageContext"; // Ajout du hook
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+} from "@/components/ui/dropdown-menu";
 
 const LANGS = {
   en: {
-    home: "Home",
     about: "About",
-    signup: "Sign up",
-    login: "Login",
+    signin: "Sign in",
     analyze: "New analysis",
     history: "My history",
     logout: "Logout",
-    welcome: "Connected as",
     flag: "🇬🇧",
     switch: "fr"
   },
   fr: {
-    home: "Accueil",
     about: "À propos",
-    signup: "S’enregistrer",
-    login: "Connexion",
+    signin: "Connexion",
     analyze: "Nouvelle analyse",
     history: "Mon historique",
     logout: "Déconnexion",
-    welcome: "Connecté en tant que",
     flag: "🇫🇷",
     switch: "en"
   }
 };
 
+// ...
 export default function MainMenu() {
   const username = getUsername();
   const navigate = useNavigate();
   const { language, setLanguage } = useLanguage();
+  const t = LANGS[language as "en" | "fr"];
 
   function switchLanguage() {
     setLanguage(language === "en" ? "fr" : "en");
   }
-
-  const t = LANGS[language as "en" | "fr"];
 
   function handleLogout() {
     clearTokens();
@@ -47,12 +50,10 @@ export default function MainMenu() {
 
   return (
     <nav className="flex flex-wrap gap-4 justify-center items-center mb-2">
-      {/* Version utilisateur NON connecté */}
+      {/* NON connecté : About | Switch langue | Sign in */}
       {!username && (
         <>
-          <Link to="/about" className="text-blue-600 hover:underline">
-            {t.about}
-          </Link>
+          <Link to="/about" className="text-blue-600 hover:underline">{t.about}</Link>
           <button
             onClick={switchLanguage}
             className="ml-2 flex items-center px-2 py-1 rounded border border-gray-300 bg-white"
@@ -63,25 +64,47 @@ export default function MainMenu() {
             <span className="text-xs">{language === "en" ? "FR" : "EN"}</span>
           </button>
           <Link to="/login" className="text-blue-600 hover:underline font-semibold">
-            {/* On force le label en anglais pour cohérence visuelle */}
-            {language === "fr" ? "Sign in" : "Sign in"}
+            {language === "fr" ? "Connexion" : "Sign in"}
           </Link>
         </>
       )}
-      {/* Version utilisateur connecté */}
+
+      {/* CONNECTÉ : menu utilisateur (plus de switch langue) */}
       {username && (
         <>
-          <Link to="/analyze" className="text-blue-600 hover:underline">{t.analyze}</Link>
-          <Link to="/history" className="text-blue-600 hover:underline">{t.history}</Link>
-          <span className="font-semibold text-green-700 ml-2">({username})</span>
-          <button
-            onClick={handleLogout}
-            className="bg-red-600 text-white rounded px-3 py-1 ml-2 hover:bg-red-700"
-          >
-            {t.logout}
-          </button>
+          <Link to="/about" className="text-blue-600 hover:underline">{t.about}</Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="flex items-center gap-2 px-3 py-1 rounded bg-white border border-gray-200 hover:bg-gray-50 focus:outline-none">
+                <Avatar className="h-8 w-8">
+                  <AvatarFallback>{username.charAt(0).toUpperCase()}</AvatarFallback>
+                </Avatar>
+                <span className="font-semibold text-gray-700 max-w-[120px] truncate">{username}</span>
+                <svg width="16" height="16" fill="none" viewBox="0 0 20 20"><path d="M5 8l5 5 5-5" stroke="#888" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-48">
+              <DropdownMenuLabel>
+                <div className="flex flex-col">
+                  <span className="font-medium">{username}</span>
+                </div>
+              </DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild>
+                <Link to="/analyze">{t.analyze}</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/history">{t.history}</Link>
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem onClick={handleLogout} className="text-red-600 cursor-pointer">
+                {t.logout}
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </>
       )}
     </nav>
   );
 }
+
