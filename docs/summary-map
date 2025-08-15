@@ -1,0 +1,79 @@
+datascope_backend/
+├── settings.py
+│   ├── decouple
+│   ├── pathlib
+│   └── django
+├── urls.py
+│   ├── django.urls
+│   ├── django.contrib
+│   ├── api.urls
+│   ├── analysis.urls
+│   └── users.urls
+├── asgi.py, wsgi.py
+│   └── django.core
+
+ai_engine/
+├── __init__.py
+│   ├── decouple
+│   ├── langchain_community.cache
+│   └── langchain.globals
+├── apps.py, admin.py, models.py
+│   └── django
+├── pipeline.py
+│   ├── ai_engine.utils
+│   ├── ai_engine.chains
+│   ├── ai_engine.formatter
+│   ├── ai_engine.schemas
+│   ├── ai_engine.scoring
+│   ├── ai_engine.memory
+│   └── ai_engine.connectors.*
+├── formatter.py, scoring.py, schemas.py, utils.py
+│   ├── ai_engine.schemas
+│   ├── ai_engine.utils
+│   └── pydantic, tiktoken, typing
+├── connectors/
+│   ├── requests, pydantic, tenacity
+│   ├── ai_engine.schemas
+│   └── ai_engine.connectors.*
+├── memory/, chains/
+│   └── ai_engine.*
+
+analysis/
+├── models.py, admin.py, apps.py
+│   └── django
+├── serializers.py
+│   ├── rest_framework
+│   └── analysis.models
+├── views.py
+│   ├── rest_framework
+│   ├── analysis.models, serializers
+│   ├── users.serializers, users.models
+│   └── ai_engine.pipeline
+├── urls.py
+│   ├── django.urls
+│   └── analysis.views
+
+api/
+├── models.py, admin.py, apps.py
+│   └── django
+├── views.py
+│   └── django.shortcuts
+├── urls.py
+│   ├── django.urls
+│   ├── rest_framework.routers
+│   ├── analysis.views
+│   └── users.views
+│   └── rest_framework_simplejwt.views
+
+users/
+├── models.py, admin.py, apps.py
+│   └── django
+├── serializers.py
+│   ├── rest_framework
+│   └── users.models
+├── views.py
+│   ├── rest_framework
+│   ├── users.serializers, users.models
+│   └── django
+├── urls.py
+│   └── django.urls

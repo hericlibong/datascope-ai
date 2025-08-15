@@ -1,0 +1,256 @@
+# Carte du projet Datascope_AI
+
+## Arborescence
+```
+- ./
+    - generate_summary.py
+    - manage.py
+    - conftest.py
+    - .cache/
+    - docs/
+    - api/
+        - __init__.py
+        - models.py
+        - urls.py
+        - tests.py
+        - admin.py
+        - apps.py
+        - views.py
+        - tests/
+            - test_analysis.py
+            - test_admin_permission.py
+            - conftest.py
+            - test_articles.py
+            - test_auth.py
+            - test_feedbacks.py
+    - .github/
+        - workflows/
+    - datascope_backend/
+        - __init__.py
+        - asgi.py
+        - settings.py
+        - urls.py
+        - wsgi.py
+    - users/
+        - __init__.py
+        - serializers.py
+        - models.py
+        - urls.py
+        - permissions.py
+        - tests.py
+        - admin.py
+        - apps.py
+        - views.py
+        - tests/
+            - test_user_model.py
+            - test_feedback_serializer.py
+    - ai_engine/
+        - formatter.py
+        - __init__.py
+        - scoring.py
+        - models.py
+        - services.py
+        - pipeline.py
+        - schemas.py
+        - tasks.py
+        - utils.py
+        - tests.py
+        - admin.py
+        - tracing.py
+        - retries.py
+        - apps.py
+        - views.py
+        - prompts/
+        - tests/
+            - test_cache.py
+            - test_interface.py
+            - test_keywords.py
+            - test_get_format.py
+            - test_retry.py
+            - test_richness.py
+            - test_angles.py
+            - test_data_gov_client.py
+            - test_extraction.py
+            - test_viz.py
+            - test_scoring.py
+            - test_data_canada_client.py
+            - test_data_gouv_client.py
+            - test_formatter.py
+            - .cache/
+        - memory/
+            - __init__.py
+            - conversation.py
+        - benchmarks/
+            - make_embeddings.py
+            - benchmark_vector_stores.py
+        - chains/
+            - __init__.py
+            - extraction.py
+            - keywords.py
+            - llm_sources.py
+            - angles.py
+            - viz.py
+        - connectors/
+            - data_gov.py
+            - __init__.py
+            - format_utils.py
+            - hdx_data.py
+            - world_bank.py
+            - data_gouv.py
+            - hdx_climate.py
+            - richness.py
+            - eurostat.py
+            - cache_utils.py
+            - data_canada.py
+            - data_uk.py
+            - helpers.py
+            - interface.py
+    - frontend/
+        - tailwind.config.js
+        - postcss.config.js
+        - eslint.config.js
+        - public/
+        - src/
+            - utils/
+            - components/
+                - results/
+                - Auth/
+                - ui/
+            - api/
+            - types/
+            - lib/
+            - assets/
+            - contexts/
+            - pages/
+    - langchain_playground/
+        - test_eurostat_debug.py
+        - test_pipeline_debug.py
+        - test_data_gov_suggestion.py
+        - test_hdx_climate_client.py
+        - test_data_hdx_client.py
+        - test_extraction_chain.py
+        - test_data_gov_client.py
+        - test_angle_chain.py
+        - test_world_bank_client.py
+        - test_package_preview.py
+        - test_data_gouv_debug.py
+        - test_prompt_render.py
+        - test_data_canada_client.py
+        - test_data_gouv_client.py
+        - test_data_gouv_suggestion.py
+        - test_fallback_demo.py
+        - test_data_uk_client.py
+    - analysis/
+        - __init__.py
+        - serializers.py
+        - models.py
+        - urls.py
+        - tests.py
+        - admin.py
+        - apps.py
+        - views.py
+        - tests/
+            - test_article_model.py
+    - .pytest_cache/
+        - v/
+            - cache/
+```
+
+## Dépendances principales
+- **./generate_summary.py** : os, re
+- **./manage.py** : os, sys
+- **./conftest.py** : django.contrib.auth, pytest
+- **./api/models.py** : django.db
+- **./api/urls.py** : analysis.views, django.urls, rest_framework.routers, rest_framework_simplejwt.views, users.views
+- **./api/tests.py** : django.test
+- **./api/admin.py** : django.contrib
+- **./api/apps.py** : django.apps
+- **./api/views.py** : django.shortcuts
+- **./api/tests/test_analysis.py** : analysis.models, django.contrib.auth, pytest, rest_framework
+- **./api/tests/test_admin_permission.py** : django.contrib.auth, pytest, rest_framework, rest_framework.response, rest_framework.test, rest_framework.views, users.permissions
+- **./api/tests/conftest.py** : django.contrib.auth, pytest, rest_framework.test
+- **./api/tests/test_articles.py** : django.contrib.auth, pytest, rest_framework
+- **./api/tests/test_auth.py** : pytest, rest_framework
+- **./api/tests/test_feedbacks.py** : analysis.models, django.contrib.auth, pytest, rest_framework
+- **./datascope_backend/asgi.py** : django.core.asgi, os
+- **./datascope_backend/settings.py** : datetime, decouple, os, pathlib
+- **./datascope_backend/urls.py** : django.contrib, django.urls
+- **./datascope_backend/wsgi.py** : django.core.wsgi, os
+- **./users/serializers.py** : .models, django.contrib.auth.password_validation, rest_framework
+- **./users/models.py** : django.conf, django.contrib.auth.models, django.db, django.db.models.signals, django.dispatch
+- **./users/urls.py** : django.urls
+- **./users/permissions.py** : rest_framework
+- **./users/tests.py** : django.test
+- **./users/admin.py** : .models, django.contrib, django.contrib.auth.admin
+- **./users/apps.py** : django.apps
+- **./users/views.py** : .models, .serializers, rest_framework
+- **./users/tests/test_user_model.py** : django.contrib.auth, pytest, users.models
+- **./users/tests/test_feedback_serializer.py** : analysis.models, django.contrib.auth, pytest, types, users.serializers
+- **./ai_engine/formatter.py** : ai_engine.schemas
+- **./ai_engine/__init__.py** : decouple, langchain.globals, langchain_community.cache, pathlib
+- **./ai_engine/scoring.py** : ai_engine.schemas, ai_engine.utils
+- **./ai_engine/models.py** : django.db
+- **./ai_engine/pipeline.py** : ai_engine, ai_engine.chains, ai_engine.connectors.data_canada, ai_engine.connectors.data_gouv, ai_engine.connectors.data_gov, ai_engine.connectors.data_uk, ai_engine.connectors.hdx_data, ai_engine.formatter, ai_engine.memory, ai_engine.schemas, ai_engine.scoring, ai_engine.utils, inspect
+- **./ai_engine/schemas.py** : pydantic, typing
+- **./ai_engine/utils.py** : typing
+- **./ai_engine/tests.py** : django.test
+- **./ai_engine/admin.py** : django.contrib
+- **./ai_engine/retries.py** : functools, logging, os, tenacity
+- **./ai_engine/apps.py** : django.apps
+- **./ai_engine/views.py** : django.shortcuts
+- **./ai_engine/tests/test_interface.py** : ai_engine.connectors.data_canada, ai_engine.connectors.data_gouv, ai_engine.connectors.data_gov, ai_engine.connectors.data_uk, ai_engine.connectors.hdx_data, ai_engine.schemas, pytest
+- **./ai_engine/tests/test_keywords.py** : ai_engine.chains.keywords, ai_engine.schemas, pytest
+- **./ai_engine/tests/test_get_format.py** : ai_engine.connectors.format_utils
+- **./ai_engine/tests/test_retry.py** : ai_engine.retries, pytest
+- **./ai_engine/tests/test_richness.py** : ai_engine.connectors.richness, ai_engine.schemas, datetime
+- **./ai_engine/tests/test_angles.py** : ai_engine.chains.angles, ai_engine.schemas, pytest
+- **./ai_engine/tests/test_data_gov_client.py** : ai_engine.connectors.data_gov, ai_engine.schemas, pytest
+- **./ai_engine/tests/test_extraction.py** : ai_engine.chains.extraction, ai_engine.schemas, pydantic, pytest
+- **./ai_engine/tests/test_viz.py** : ai_engine.chains.viz, ai_engine.schemas
+- **./ai_engine/tests/test_scoring.py** : ai_engine.schemas, ai_engine.scoring
+- **./ai_engine/tests/test_data_canada_client.py** : ai_engine.connectors.data_canada, ai_engine.schemas, pytest
+- **./ai_engine/tests/test_data_gouv_client.py** : ai_engine.connectors.data_gouv, ai_engine.schemas, pytest
+- **./ai_engine/tests/test_formatter.py** : ai_engine.formatter, ai_engine.schemas
+- **./ai_engine/memory/__init__.py** : .conversation
+- **./ai_engine/memory/conversation.py** : collections, langchain.memory, langchain_community.chat_message_histories, langchain_core._api.deprecation, warnings
+- **./ai_engine/benchmarks/make_embeddings.py** : numpy
+- **./ai_engine/benchmarks/benchmark_vector_stores.py** : collections, numpy, pathlib
+- **./ai_engine/chains/extraction.py** : ai_engine, ai_engine.retries, ai_engine.schemas, functools, langchain.output_parsers, langchain.prompts, langchain.schema.runnable, langchain_openai, pathlib
+- **./ai_engine/chains/keywords.py** : ai_engine, ai_engine.retries, ai_engine.schemas, functools, langchain.output_parsers, langchain.prompts, langchain_openai, pathlib
+- **./ai_engine/chains/llm_sources.py** : ai_engine, ai_engine.retries, ai_engine.schemas, functools, langchain.output_parsers, langchain.prompts, langchain_openai, pathlib
+- **./ai_engine/chains/angles.py** : ai_engine, ai_engine.retries, ai_engine.schemas, functools, langchain.output_parsers, langchain.prompts, langchain.schema.runnable, langchain_openai, pathlib
+- **./ai_engine/chains/viz.py** : ai_engine, ai_engine.retries, ai_engine.schemas, functools, langchain.output_parsers, langchain.prompts, langchain_openai, pathlib
+- **./ai_engine/connectors/data_gov.py** : __future__, ai_engine.connectors.format_utils, ai_engine.connectors.helpers, ai_engine.connectors.interface, ai_engine.connectors.richness, ai_engine.schemas, functools, pydantic, requests, tenacity, time, typing
+- **./ai_engine/connectors/format_utils.py** : __future__, pathlib, re, typing
+- **./ai_engine/connectors/hdx_data.py** : __future__, ai_engine.connectors.format_utils, ai_engine.connectors.helpers, ai_engine.connectors.interface, ai_engine.connectors.richness, ai_engine.schemas, pydantic, requests, tenacity, time, typing
+- **./ai_engine/connectors/world_bank.py** : __future__, ai_engine.connectors.format_utils, ai_engine.connectors.helpers, ai_engine.connectors.interface, ai_engine.connectors.richness, ai_engine.schemas, pydantic, requests, tenacity, time, typing
+- **./ai_engine/connectors/data_gouv.py** : __future__, ai_engine.connectors.format_utils, ai_engine.connectors.helpers, ai_engine.connectors.interface, ai_engine.connectors.richness, ai_engine.schemas, pydantic, requests, tenacity, time, typing
+- **./ai_engine/connectors/hdx_climate.py** : __future__, ai_engine.connectors.format_utils, ai_engine.connectors.helpers, ai_engine.connectors.interface, ai_engine.connectors.richness, ai_engine.schemas, pydantic, requests, tenacity, time, typing
+- **./ai_engine/connectors/richness.py** : __future__, ai_engine.schemas, datetime, typing
+- **./ai_engine/connectors/eurostat.py** : pydantic, requests, tenacity, typing
+- **./ai_engine/connectors/cache_utils.py** : collections.abc, diskcache, os, pickle
+- **./ai_engine/connectors/data_canada.py** : __future__, ai_engine.connectors.format_utils, ai_engine.connectors.helpers, ai_engine.connectors.interface, ai_engine.connectors.richness, ai_engine.schemas, pydantic, requests, tenacity, time, typing
+- **./ai_engine/connectors/data_uk.py** : __future__, ai_engine.connectors.format_utils, ai_engine.connectors.helpers, ai_engine.connectors.interface, ai_engine.connectors.richness, ai_engine.schemas, pydantic, requests, tenacity, time, typing
+- **./ai_engine/connectors/helpers.py** : re, unicodedata
+- **./ai_engine/connectors/interface.py** : __future__, ai_engine.schemas, typing
+- **./langchain_playground/test_pipeline_debug.py** : ai_engine.pipeline
+- **./langchain_playground/test_hdx_climate_client.py** : ai_engine.connectors.hdx_climate
+- **./langchain_playground/test_data_hdx_client.py** : ai_engine.connectors.hdx_data
+- **./langchain_playground/test_extraction_chain.py** : ai_engine.chains.extraction
+- **./langchain_playground/test_data_gov_client.py** : ai_engine.connectors.data_gov
+- **./langchain_playground/test_angle_chain.py** : ai_engine.chains.angles
+- **./langchain_playground/test_world_bank_client.py** : ai_engine.connectors.world_bank
+- **./langchain_playground/test_package_preview.py** : ai_engine.chains.angles, ai_engine.chains.extraction, ai_engine.formatter
+- **./langchain_playground/test_data_gouv_debug.py** : ai_engine.connectors.data_gouv
+- **./langchain_playground/test_data_canada_client.py** : ai_engine.connectors.data_canada
+- **./langchain_playground/test_data_gouv_client.py** : ai_engine.connectors.data_gouv
+- **./langchain_playground/test_data_gouv_suggestion.py** : ai_engine.connectors
+- **./langchain_playground/test_data_uk_client.py** : ai_engine.connectors.data_uk
+- **./analysis/serializers.py** : .models, rest_framework
+- **./analysis/models.py** : django.conf, django.contrib.postgres.fields, django.db
+- **./analysis/urls.py** : .views, django.urls
+- **./analysis/tests.py** : django.test
+- **./analysis/admin.py** : .models, django.contrib
+- **./analysis/apps.py** : django.apps
+- **./analysis/views.py** : .models, .serializers, ai_engine.pipeline, analysis.models, django.utils.timezone, rest_framework, rest_framework.parsers, rest_framework.response, rest_framework.views, users.models, users.serializers
+- **./analysis/tests/test_article_model.py** : analysis.serializers, django.contrib.auth, pytest, rest_framework.exceptions, types
