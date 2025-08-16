@@ -41,29 +41,29 @@ export function EntitiesSummaryCard({ entities, language }: Props) {
   ]
 
   return (
-    <Card>
-      <CardContent className="p-4 space-y-4">
-      <h2 className="text-xl font-semibold flex items-center justify-between">
+    <Card className="rounded-2xl border-white/10 bg-white/5 backdrop-blur-sm">
+      <CardContent className="p-6 space-y-4">
+      <h2 className="text-xl font-semibold flex items-center justify-between text-white">
         {language === "fr" ? "Résumé des entités détectées" : "Summary of Detected Entities"}
-        <Badge variant="outline" className="ml-2 text-xs bg-slate-100 text-gray-700">
+        <Badge variant="outline" className="ml-2 text-xs border-white/20 bg-white/10 text-slate-300">
             {entities.length} {language === "fr" ? "au total" : "total"}
         </Badge>
         </h2>
         <table className="w-full text-sm border-separate border-spacing-y-1">
           <thead>
             <tr className="text-left">
-              <th className="p-2">{language === "fr" ? "Type d'entité" : "Entity Type"}</th>
-              <th className="p-2">{language === "fr" ? "Nombre" : "Count"}</th>
+              <th className="p-2 text-slate-300">{language === "fr" ? "Type d'entité" : "Entity Type"}</th>
+              <th className="p-2 text-slate-300">{language === "fr" ? "Nombre" : "Count"}</th>
             </tr>
           </thead>
           <tbody>
             {rows.map((row, i) => (
-              <tr key={i} className="bg-muted rounded">
-                <td className="p-2">{row.label}</td>
+              <tr key={i} className="bg-white/5 rounded">
+                <td className="p-2 text-slate-200">{row.label}</td>
                 <td className="p-2">
                   <Badge
                     variant="secondary"
-                    className={`rounded-full px-2 py-1 text-white ${row.value > 0 ? "bg-pink-500" : "bg-gray-400"}`}
+                    className={`rounded-full px-2 py-1 text-white ${row.value > 0 ? "bg-pink-500" : "bg-gray-600"}`}
                   >
                     {row.value}
                   </Badge>

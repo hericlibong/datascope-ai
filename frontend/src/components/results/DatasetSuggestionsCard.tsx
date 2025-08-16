@@ -44,10 +44,10 @@ export function DatasetSuggestionsCard({ datasets, language }: Props) {
     txt.length > MAX_LEN ? txt.slice(0, MAX_LEN).replace(/\s+\S*$/, "") + "…" : txt;
 
   return (
-    <Card className="shadow-md rounded-2xl">
+    <Card className="shadow-md rounded-2xl border-white/10 bg-white/5 backdrop-blur-sm">
       <CardContent className="p-6 space-y-4">
         {/* Title */}
-        <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+        <h3 className="text-lg font-semibold mb-2 flex items-center gap-2 text-white">
           <Globe className="size-5" />
           {t(language, "Suggested Datasets", "Jeux de données suggérés")}
         </h3>
@@ -55,8 +55,8 @@ export function DatasetSuggestionsCard({ datasets, language }: Props) {
         {/* Accordion list */}
         <Accordion type="multiple" className="w-full space-y-2">
           {datasets.map((ds, idx) => (
-            <AccordionItem key={idx} value={String(idx)} className="border rounded-lg">
-              <AccordionTrigger className="px-4 py-2 font-medium text-left">
+            <AccordionItem key={idx} value={String(idx)} className="border border-white/10 rounded-lg bg-white/5">
+              <AccordionTrigger className="px-4 py-2 font-medium text-left text-white hover:no-underline">
                 {ds.title || t(language, "Untitled dataset", "Jeu sans titre")}
               </AccordionTrigger>
 
@@ -81,7 +81,7 @@ export function DatasetSuggestionsCard({ datasets, language }: Props) {
                           href={ds.source_url ?? ds.link ?? "#"}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 hover:underline break-all"
+                          className="text-indigo-400 hover:text-indigo-300 hover:underline break-all"
                         >
                           {ds.source_url ?? ds.link}
                         </a>
@@ -92,9 +92,9 @@ export function DatasetSuggestionsCard({ datasets, language }: Props) {
                   {/* FORMATS */}
                   {Array.isArray(ds.formats) && ds.formats.length > 0 && (
                     <div className="flex flex-wrap gap-1 items-center">
-                      <span className="font-medium mr-1">{t(language, "Formats:", "Formats :")}</span>
+                      <span className="font-medium mr-1 text-slate-300">{t(language, "Formats:", "Formats :")}</span>
                       {ds.formats.map((f) => (
-                        <Badge key={f}>{f}</Badge>
+                        <Badge key={f} className="bg-white/10 text-slate-200 border-white/20">{f}</Badge>
                       ))}
                     </div>
                   )}
@@ -130,7 +130,7 @@ export function DatasetSuggestionsCard({ datasets, language }: Props) {
 
                   {/* DESCRIPTION */}
                   {ds.description && (
-                    <p className="text-sm whitespace-pre-line mt-1">
+                    <p className="text-sm whitespace-pre-line mt-1 text-slate-300">
                       {truncate(ds.description)}
                     </p>
                   )}
@@ -156,8 +156,8 @@ interface InfoProps {
 function InfoLine({ label, value }: InfoProps) {
   return (
     <div className="flex gap-1">
-      <span className="font-medium">{label}:</span>
-      <span className="break-all">{value}</span>
+      <span className="font-medium text-slate-300">{label}:</span>
+      <span className="break-all text-slate-200">{value}</span>
     </div>
   );
 }
