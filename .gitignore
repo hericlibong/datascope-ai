@@ -11,6 +11,10 @@ build/
 db.sqlite3
 langchain_playground/
 ai_engine/benchmarks/
-
-
-
+.well-known
+scripts/backlog_api.py
+scripts/backlog_enriched.json
+scripts/export_backlog.py
+scripts/gpt_backlog.py
+scripts/get_projects.py
+scripts/json_to_md.py
