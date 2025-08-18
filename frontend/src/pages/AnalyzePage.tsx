@@ -65,7 +65,7 @@ export default function AnalyzePage() {
     }
 
     function countWords(str: string) {
-      return (str.trim().split(/\s+/).filter(Boolean).length);
+      return str.trim().split(/\s+/).filter(Boolean).length;
     }
 
     const wordCount = countWords(contentToAnalyze);
@@ -173,7 +173,6 @@ export default function AnalyzePage() {
 
       const full = await res.json();
       setResult(full);
-
     } catch (err: any) {
       setErrorMessage(err?.message ?? "Network error");
     } finally {
@@ -182,121 +181,178 @@ export default function AnalyzePage() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-8 w-full">
-      {/* FORMULAIRE */}
-      <form onSubmit={handleSubmit} className="space-y-5 w-full">
-        <div className="w-full">
-          <Label htmlFor="text" className="flex items-center gap-2 font-semibold text-lg mb-2">
-            <span>📝</span>
-            {language === "fr" ? "Texte à analyser" : "Text to analyze"}
-          </Label>
-          <Textarea
-            id="text"
-            value={text}
-            onChange={(e) => setText(e.target.value)}
-            placeholder={
-              language === "fr"
-                ? "Collez ou saisissez ici votre article ou texte à analyser…"
-                : "Paste or type here your article or text to analyze…"
-            }
-            className="
-              w-full
-              min-w-0
-              max-w-none
-              min-h-[180px]
-              bg-white
-              border-2 border-gray-200
-              focus:border-blue-600
-              focus:ring-2 focus:ring-blue-200
-              rounded-xl
-              px-5 py-4
-              shadow-md
-              text-base
-              transition
-              placeholder:text-gray-400
-              resize-vertical
-              outline-none
-            "
-          />
-        </div>
-
-        <div>
-          <Label htmlFor="file">
-            {language === "fr" ? "ou chargez un fichier" : "or upload a file"}
-          </Label>
-          <Input
-            id="file"
-            type="file"
-            accept=".txt,.md"
-            onChange={(e) => {
-              if (e.target.files?.[0]) setFile(e.target.files[0]);
-            }}
-          />
-        </div>
-
-        {errorMessage && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded flex flex-col items-center gap-2">
-            <span>{errorMessage}</span>
-            {(errorMessage.includes("expiré") || errorMessage.includes("expired")) && (
-              <a
-                href="/login"
-                className="inline-block mt-1 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-              >
-                {language === "fr" ? "Se reconnecter" : "Sign in"}
-              </a>
-            )}
+    <div className="min-h-screen bg-slate-950 text-white">
+      <div className="mx-auto w-full max-w-4xl px-4 py-10 space-y-8">
+        {/* EN-TÊTE */}
+        <header>
+          <div className="text-xs uppercase tracking-widest text-white/60">
+            {language === "fr" ? "Analyse" : "Analysis"}
           </div>
+          <h1 className="text-2xl font-semibold">
+            {language === "fr" ? "Lancer une nouvelle analyse" : "Start a new analysis"}
+          </h1>
+          <p className="mt-2 text-sm text-white/80">
+            {language === "fr"
+              ? "Collez votre texte ou chargez un fichier. Résultats présentés dans une mise en page claire."
+              : "Paste your text or upload a file. Results are presented in a clean layout."}
+          </p>
+        </header>
+
+        {/* FORMULAIRE */}
+        <form onSubmit={handleSubmit} className="space-y-5 w-full">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+            <div className="space-y-4">
+              <div className="w-full">
+                <Label htmlFor="text" className="flex items-center gap-2 font-medium mb-2">
+                  <span>📝</span>
+                  {language === "fr" ? "Texte à analyser" : "Text to analyze"}
+                </Label>
+                <Textarea
+                  id="text"
+                  value={text}
+                  onChange={(e) => setText(e.target.value)}
+                  placeholder={
+                    language === "fr"
+                      ? "Collez ou saisissez ici votre article ou texte à analyser…"
+                      : "Paste or type here your article or text to analyze…"
+                  }
+                  className="w-full min-h-[160px] rounded-xl bg-white/5 text-white placeholder:text-white/40 border border-white/10 focus:ring-2 focus:ring-white/30 focus:border-white/20"
+                />
+              </div>
+
+              <div>
+                <Label htmlFor="file" className="font-medium">
+                  {language === "fr" ? "Ou chargez un fichier" : "Or upload a file"}
+                </Label>
+                <Input
+                  id="file"
+                  type="file"
+                  accept=".txt,.md"
+                  onChange={(e) => {
+                    if (e.target.files?.[0]) setFile(e.target.files[0]);
+                  }}
+                  className="mt-1 border-white/10 bg-white/5 text-white placeholder:text-white/40"
+                />
+              </div>
+
+              {errorMessage && (
+                <div className="rounded-xl border border-red-400/30 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+                  <div>{errorMessage}</div>
+                  {(errorMessage.includes("expiré") || errorMessage.includes("expired")) && (
+                    <a
+                      href="/login"
+                      className="mt-2 inline-block rounded-lg bg-white/10 px-3 py-1 text-white underline-offset-2 hover:underline"
+                    >
+                      {language === "fr" ? "Se reconnecter" : "Sign in"}
+                    </a>
+                  )}
+                </div>
+              )}
+
+              <div className="pt-2">
+                <Button type="submit" disabled={loading}>
+                  {loading
+                    ? language === "fr"
+                      ? "Analyse en cours…"
+                      : "Analyzing…"
+                    : language === "fr"
+                    ? "Analyser"
+                    : "Analyze"}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        {/* TEXTE ANALYSÉ (si présent) */}
+        {result?.article?.content && (
+          <section className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+            <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+              <span className="text-white/70">📝</span>
+              {language === "fr" ? "Texte analysé" : "Analyzed text"}
+            </h3>
+            <div className="prose prose-invert max-w-none whitespace-pre-line text-white/90">
+              {result.article.content}
+            </div>
+          </section>
         )}
 
-        <Button type="submit" disabled={loading}>
-          {loading
-            ? language === "fr"
-              ? "Analyse en cours…"
-              : "Analyzing…"
-            : language === "fr"
-            ? "Analyser"
-            : "Analyze"}
-        </Button>
-      </form>
+        {/* RÉSULTATS — mise en page claire */}
+        {result && (
+          <section className="space-y-8">
+            {/* Bandeau Overview (Score + label) */}
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <div className="text-xs uppercase tracking-widest text-white/60">
+                    {language === "fr" ? "Aperçu" : "Overview"}
+                  </div>
+                  <h2 className="text-xl font-semibold">
+                    {language === "fr" ? "Résultats de l’analyse" : "Analysis results"}
+                  </h2>
+                  <p className="mt-2 text-sm text-white/80">
+                    {language === "fr"
+                      ? "Résumé des principaux enseignements : angles, entités, jeux de données et feedback."
+                      : "Summary of key insights: angles, entities, datasets and feedback."}
+                  </p>
+                </div>
+                <div className="md:justify-self-end">
+                  <DataficationScoreCard
+                    score={result.score}
+                    profileLabel={result.profile_label ?? ""}
+                    language={language}
+                  />
+                </div>
+              </div>
+            </div>
 
-      {result?.article?.content && (
-  <div className="bg-white rounded-xl shadow p-6 mb-4 border border-gray-200">
-    <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-      <span className="text-blue-600">📝</span>
-      {language === "fr" ? "Texte analysé" : "Analyzed text"}
-    </h3>
-    <div className="prose max-w-none text-gray-800 whitespace-pre-line text-base">
-      {result.article.content}
-    </div>
-  </div>
-)}
+            {/* Entités */}
+            <section>
+              <header className="mb-3">
+                <div className="text-xs uppercase tracking-widest text-white/60">
+                  {language === "fr" ? "Analyse" : "Analysis"}
+                </div>
+                <h3 className="text-xl font-semibold">
+                  {language === "fr" ? "Entités & Thèmes" : "Entities & Themes"}
+                </h3>
+              </header>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <EntitiesSummaryCard entities={result.entities ?? []} language={language} />
+              </div>
+            </section>
 
+            {/* Angles (grille 2 colonnes) */}
+            <section>
+              <header className="mb-3">
+                <div className="text-xs uppercase tracking-widest text-white/60">Édito</div>
+                <h3 className="text-xl font-semibold">
+                  {language === "fr" ? "Angles éditoriaux" : "Editorial angles"}
+                </h3>
+              </header>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {(() => {
+                  const angles: AngleResources[] | undefined =
+                    result.angle_resources ?? result.angles_resources;
+                  return angles?.map((angle) => (
+                    <AngleCard key={angle.index} angle={angle} language={language} />
+                  ));
+                })()}
+              </div>
+            </section>
 
-      {result && (
-        <div className="space-y-6">
-
-          {/* Résumé IA de l'article */}
-    
-
-          <DataficationScoreCard
-            score={result.score}
-            profileLabel={result.profile_label ?? ""}
-            language={language}
-          />
-          <EntitiesSummaryCard
-            entities={result.entities ?? []}
-            language={language}
-          />
-          {(() => {
-            const angles: AngleResources[] | undefined =
-              result.angle_resources ?? result.angles_resources;
-            return angles?.map((angle) => (
-              <AngleCard key={angle.index} angle={angle} language={language} />
-            ));
-          })()}
-          <FeedbackForm analysisId={result.id} language={language} />
-        </div>
-      )}
+            {/* Feedback */}
+            <section>
+              <header className="mb-3">
+                <div className="text-xs uppercase tracking-widest text-white/60">Qualité</div>
+                <h3 className="text-xl font-semibold">Feedback</h3>
+              </header>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <FeedbackForm analysisId={result.id} language={language} />
+              </div>
+            </section>
+          </section>
+        )}
+      </div>
     </div>
   );
 }
