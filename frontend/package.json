@@ -24,6 +24,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "frame": "^1.0.0-alpha.2",
+    "framer-motion": "^12.23.12",
     "franc-min": "^6.2.0",
     "lucide-react": "^0.513.0",
     "motion": "^12.23.12",
