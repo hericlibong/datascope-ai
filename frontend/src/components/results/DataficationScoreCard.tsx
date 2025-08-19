@@ -49,19 +49,19 @@ export function DataficationScoreCard({ score, language }: Props) {
   const comment = getEditorialComment(score, language)
 
   return (
-    <div className="rounded-lg border p-4 shadow-md bg-white space-y-2">
-      <h2 className="text-md font-semibold mb-1">
+    <div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 shadow-md space-y-2">
+      <h2 className="text-md font-semibold mb-1 text-white">
         {language === "fr" ? "📈 Score de datafication" : "📈 Datafication Score"}
       </h2>
 
       <div className="flex items-center gap-3">
-        <span className="text-2xl font-bold">{score.toFixed(1)} / 10</span>
+        <span className="text-2xl font-bold text-white">{score.toFixed(1)} / 10</span>
         <Badge className={`${badgeColor} text-white text-sm`}>
           {translatedLabel}
         </Badge>
       </div>
 
-      <div className="text-sm text-muted-foreground">
+      <div className="text-sm text-slate-300">
         {comment}
       </div>
     </div>

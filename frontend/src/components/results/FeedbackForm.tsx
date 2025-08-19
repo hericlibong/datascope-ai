@@ -81,18 +81,18 @@ export function FeedbackForm({ analysisId, language }: FeedbackFormProps) {
 
   if (success)
     return (
-      <div className="p-4 bg-green-50 border border-green-300 rounded text-green-800 text-center">
+      <div className="p-4 bg-green-500/10 border border-green-500/20 rounded text-green-400 text-center">
         {labels.success}
       </div>
     );
 
   return (
     <Accordion type="single" collapsible className="w-full mt-4">
-      <AccordionItem value="feedback">
-        <AccordionTrigger>
+      <AccordionItem value="feedback" className="border border-white/10 rounded-lg bg-white/5">
+        <AccordionTrigger className="px-4 text-white hover:no-underline">
           <span>{labels.title}</span>
         </AccordionTrigger>
-        <AccordionContent>
+        <AccordionContent className="px-4 pb-4">
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Critères d'évaluation */}
             <div className="space-y-3">
@@ -120,11 +120,11 @@ export function FeedbackForm({ analysisId, language }: FeedbackFormProps) {
             {/* Champ commentaire */}
             <div>
               <div className="flex items-center gap-2">
-                <Label htmlFor="feedback-comment">{labels.comment}</Label>
+                <Label htmlFor="feedback-comment" className="text-slate-300">{labels.comment}</Label>
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <span className="ml-1 cursor-pointer text-gray-400">🛈</span>
+                      <span className="ml-1 cursor-pointer text-slate-400">🛈</span>
                     </TooltipTrigger>
                     <TooltipContent>
                       <span>{labels.commentTip}</span>
@@ -137,15 +137,19 @@ export function FeedbackForm({ analysisId, language }: FeedbackFormProps) {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder={labels.commentTip}
-                className="min-h-[60px]"
+                className="min-h-[60px] bg-white/5 border-white/20 text-white placeholder:text-slate-400"
               />
             </div>
             {error && (
-              <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-2 rounded">
+              <div className="bg-red-500/10 border border-red-500/20 text-red-400 px-4 py-2 rounded">
                 {error}
               </div>
             )}
-            <Button type="submit" disabled={loading || !oneSelected([relevance, angles, sources, reusability])}>
+            <Button 
+              type="submit" 
+              disabled={loading || !oneSelected([relevance, angles, sources, reusability])}
+              className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white"
+            >
               {loading ? "..." : labels.send}
             </Button>
           </form>
@@ -164,14 +168,14 @@ type CriterionProps = {
 function Criterion({ label, value, onChange }: CriterionProps) {
   return (
     <div className="flex items-center gap-4">
-      <Label className="min-w-[160px]">{label}</Label>
+      <Label className="min-w-[160px] text-slate-300">{label}</Label>
       <Rating
         value={value}
         onChange={onChange}
         style={{ maxWidth: 110 }}
         isRequired
       />
-      {value > 0 && <span className="text-xs text-gray-500">{value}/5</span>}
+      {value > 0 && <span className="text-xs text-slate-400">{value}/5</span>}
     </div>
   );
 }
