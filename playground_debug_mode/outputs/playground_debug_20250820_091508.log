@@ -1,0 +1,4 @@
+2025-08-20 09:15:08,086 - playground_debug - INFO - [92m✅ Clé API OpenAI configurée | key_length=5[0m
+2025-08-20 09:15:08,087 - playground_debug - ERROR - [91m❌ Module ai_engine non disponible | Error: No module named 'decouple'[0m
+2025-08-20 09:15:08,088 - playground_debug - ERROR - [91m❌ LangChain non disponible | Error: No module named 'langchain'[0m
+2025-08-20 09:15:08,088 - playground_debug - INFO - [92m✅ Dossier outputs disponible | path=/home/runner/work/datascope-ai/datascope-ai/playground_debug_mode/outputs[0m
