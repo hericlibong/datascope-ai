@@ -32,6 +32,7 @@ def test_fr_extraction_ok(monkeypatch):
       "persons": ["Emmanuel Macron"],
       "organizations": [],
       "locations": ["Strasbourg"],
+      "themes": ["politique", "gouvernement"],
       "dates": ["2024-03-12"],
       "numbers": []
     }
@@ -40,6 +41,7 @@ def test_fr_extraction_ok(monkeypatch):
     result = extraction.run("dummy")
     assert result.language == "fr"
     assert "Emmanuel Macron" in result.persons
+    assert "politique" in result.themes
 
 
 def test_en_extraction_ok(monkeypatch):
@@ -49,6 +51,7 @@ def test_en_extraction_ok(monkeypatch):
       "persons": ["Joe Biden"],
       "organizations": ["NASA"],
       "locations": [],
+      "themes": ["space", "science"],
       "dates": ["2024-07-04"],
       "numbers": []
     }
@@ -58,6 +61,7 @@ def test_en_extraction_ok(monkeypatch):
     assert result.language == "en"
     assert "Joe Biden" in result.persons
     assert "NASA" in result.organizations
+    assert "space" in result.themes
 
 
 def test_empty_article(monkeypatch):
@@ -67,6 +71,7 @@ def test_empty_article(monkeypatch):
       "persons": [],
       "organizations": [],
       "locations": [],
+      "themes": [],
       "dates": [],
       "numbers": []
     }
@@ -75,7 +80,7 @@ def test_empty_article(monkeypatch):
     result = extraction.run("")
     # toutes les listes doivent être vides
     assert all(len(getattr(result, field)) == 0
-               for field in ["persons", "organizations", "locations", "dates", "numbers"])
+               for field in ["persons", "organizations", "locations", "themes", "dates", "numbers"])
 
 
 def test_too_long_article(monkeypatch):
@@ -91,3 +96,25 @@ def test_too_long_article(monkeypatch):
 
     with pytest.raises(ValueError):
         extraction.run(long_text)
+
+
+def test_theme_extraction(monkeypatch):
+    """Test that theme extraction works correctly."""
+    fake_json = """
+    {
+      "language": "fr",
+      "persons": [],
+      "organizations": ["OMS"],
+      "locations": ["Paris"],
+      "themes": ["santé", "épidémiologie", "vaccination"],
+      "dates": ["2024-01-15"],
+      "numbers": []
+    }
+    """
+    patch_chain(monkeypatch, fake_json)
+    result = extraction.run("Article sur la santé publique et vaccination à Paris")
+    assert result.language == "fr"
+    assert len(result.themes) == 3
+    assert "santé" in result.themes
+    assert "épidémiologie" in result.themes
+    assert "vaccination" in result.themes

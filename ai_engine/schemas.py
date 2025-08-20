@@ -28,6 +28,7 @@ class ExtractionResult(BaseModel):
     persons: List[str]
     organizations: List[str]
     locations: List[str]
+    themes: List[str]             # thèmes/sujets principaux de l'article
     dates: List[str]              # idéalement YYYY-MM-DD ou ISO partial
     numbers: List[NumberEntity]
 
