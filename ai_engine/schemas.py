@@ -68,10 +68,24 @@ class LLMSourceSuggestion(BaseModel):
     description: str
     link: str
     source: str   # portail ou organisme
-    angle_idx: int 
+    angle_idx: int
+
+class VerifiedSource(BaseModel):
+    title: str = Field(..., description="Titre de la source")
+    description: str = Field(..., description="Description de la source")
+    link: str = Field(..., description="URL de la source")
+    source: str = Field(..., description="Nom de l'organisme/publication")
+    source_type: str = Field(..., description="Type: 'report', 'article', 'study', 'documentation', 'official'")
+    credibility_score: int = Field(default=5, ge=1, le=10, description="Score de crédibilité (1-10)")
+    publication_date: Optional[str] = Field(None, description="Date de publication si disponible")
+    language: str = Field(default="fr", description="Langue de la source")
+    angle_idx: int = Field(..., description="Index de l'angle éditorial associé") 
 
 class LLMSourceSuggestionList(BaseModel):
     datasets: list[LLMSourceSuggestion]
+
+class VerifiedSourceList(BaseModel):
+    sources: list[VerifiedSource]
 
 class AngleResources(BaseModel):
     index: int
@@ -80,6 +94,7 @@ class AngleResources(BaseModel):
     keywords: List[str]
     datasets: List[DatasetSuggestion]
     sources: List[LLMSourceSuggestion]
+    verified_sources: List[VerifiedSource] = []
     visualizations: List[VizSuggestion]
 
 
