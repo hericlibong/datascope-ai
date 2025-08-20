@@ -419,18 +419,9 @@ export default function AnalyzePage() {
 
             {/* ENTITÉS */}
             <section>
-              <header className="mb-3">
-                <div className="text-[11px] uppercase tracking-widest text-white/60">
-                  {language === "fr" ? "Analyse" : "Analysis"}
-                </div>
-                <h3 className="text-xl font-semibold">
-                  {language === "fr" ? "Entités & Thèmes" : "Entities & Themes"}
-                </h3>
-              </header>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <EntitiesSummaryCard entities={result?.entities ?? []} language={language} />
-              </div>
-            </section>
+            <EntitiesSummaryCard entities={result?.entities ?? []} language={language} />
+          </section>
+
 
             {/* ANGLES — grille 2 colonnes */}
             <section>
