@@ -181,21 +181,21 @@ def test_coherence_recommendations():
         locations=["Paris"],
         dates=[],
         numbers=[],
-        themes=["santé"]
+        themes=["santé", "médecine"]
     )
     
-    # Angle totalement incohérent
+    # Angle totalement incohérent (sport en Australie vs santé à Paris)
     angles = [
         AngleResources(
             index=0,
-            title="Agriculture en Amazonie",
-            description="Déforestation",
-            keywords=["agriculture", "amazonie"],
+            title="Sports aquatiques australiens",
+            description="Compétitions de surf",
+            keywords=["sport", "surf"],
             datasets=[
                 DatasetSuggestion(
-                    title="Biodiversité Brésil",
-                    description="Espèces amazoniennes",
-                    source_name="example.org",
+                    title="Météorologie marine Océanie",
+                    description="Conditions météo côtes australiennes",
+                    source_name="weather.au",
                     source_url="http://example.com"
                 )
             ],
@@ -206,7 +206,7 @@ def test_coherence_recommendations():
     
     coherence = analyze_article_coherence(extraction, angles)
     
-    # Score faible attendu
+    # Score faible attendu car aucune correspondance thématique ni géographique
     assert coherence.overall_score < 0.5
     
     # Recommandations générées
