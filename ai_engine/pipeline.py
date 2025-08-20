@@ -5,6 +5,7 @@ from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
 from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult, LLMSourceSuggestion, AngleResources
 from ai_engine.scoring import compute_score
+from ai_engine.angle_dataset_scoring import compute_angle_dataset_match_score, should_filter_dataset
 from ai_engine.chains import keywords, viz, llm_sources
 from ai_engine.memory import get_memory
 
@@ -226,13 +227,36 @@ def run(
                 merged_ds.append(ds)
                 seen_urls.add(ds.source_url)
 
+        # ---- calcul des scores de correspondance angle-dataset ------------------
+        angle_keywords = kw_set.sets[0].keywords if kw_set else []
+        scored_ds = []
+        
+        for ds in merged_ds:
+            # Calculer le score de correspondance avec l'angle
+            match_score = compute_angle_dataset_match_score(
+                angle=angle,
+                dataset=ds,
+                keywords=angle_keywords
+            )
+            
+            # Mettre à jour le dataset avec le score
+            ds.match_score = match_score
+            
+            # Filtrer les datasets avec un score trop faible (optionnel)
+            # Pour l'instant, on garde tous les datasets mais on ajoute le score
+            if not should_filter_dataset(match_score, threshold=0.1):  # Seuil très bas pour commencer
+                scored_ds.append(ds)
+        
+        # Trier par score de correspondance décroissant
+        scored_ds.sort(key=lambda d: d.match_score, reverse=True)
+
         angle_resources.append(
             AngleResources(
                 index          = idx,
                 title          = angle.title,
                 description    = angle.rationale,
                 keywords       = kw_set.sets[0].keywords if kw_set else [],
-                datasets       = merged_ds,
+                datasets       = scored_ds,  # Utiliser les datasets scorés et triés
                 # sources        = llm_ds,
                 sources        = llm_raw,
                 visualizations = viz_list,
