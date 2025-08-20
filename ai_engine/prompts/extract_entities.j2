@@ -7,6 +7,7 @@ Instructions :
 - Extrais uniquement les entités présentes dans le texte.
 - Ne complète rien. Ne réinvente pas. Ne traduis pas.
 - Réponds dans la langue du texte original.
+- Pour les thèmes, identifie les sujets principaux abordés dans l'article (ex: "santé publique", "économie", "environnement").
 
 Retourne un objet JSON conforme aux instructions suivantes :
 
@@ -33,6 +34,7 @@ JSON attendu :
     {{
       "raw": "15 km", "value": 15, "unit": "km"
     }}
-  ]
+  ],
+  "themes": ["emploi", "transports", "démographie"]
 }}
 
