@@ -18,3 +18,12 @@ scripts/export_backlog.py
 scripts/gpt_backlog.py
 scripts/get_projects.py
 scripts/json_to_md.py
+
+# Tests and coverage
+.coverage
+.pytest_cache/
+*.cover
+htmlcov/
+
+# Temporary demo files
+/tmp/test_location_demo.py
