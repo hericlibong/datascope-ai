@@ -7,6 +7,7 @@ from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult
 from ai_engine.scoring import compute_score
 from ai_engine.chains import keywords, viz, llm_sources
 from ai_engine.memory import get_memory
+from ai_engine.coherence import coherence_engine
 
 from ai_engine.connectors.data_gouv import DataGouvClient
 from ai_engine.connectors.data_gov import DataGovClient
@@ -161,6 +162,48 @@ def _llm_to_ds(item: LLMSourceSuggestion, *, angle_idx: int) -> DatasetSuggestio
     )
 # ------------------------------------------------------------------
 
+def _apply_coherence_scoring_and_validation(
+    datasets: list[DatasetSuggestion], 
+    angle, 
+    keywords: list[str] = None
+) -> list[DatasetSuggestion]:
+    """
+    Applique le scoring de cohérence et la validation aux datasets.
+    Implémente la stratégie de fallback pour les datasets incohérents (#4.3.3).
+    """
+    validated_datasets = []
+    
+    for dataset in datasets:
+        # Calcul du score de cohérence (#4.3.1)
+        coherence_score = coherence_engine.compute_angle_dataset_score(
+            angle, dataset, keywords
+        )
+        
+        # Mise à jour du dataset avec les informations de cohérence
+        dataset.coherence_score = coherence_score.score
+        dataset.coherence_issues = coherence_score.issues
+        
+        # Validation du lien pour datasets LLM (#4.3.3)
+        if dataset.found_by == "LLM":
+            is_valid, error_msg = coherence_engine.validate_dataset_link(dataset)
+            if not is_valid:
+                dataset.coherence_issues.append(f"Lien inaccessible: {error_msg}")
+                print(f"      ⚠️  Dataset LLM avec lien cassé: {dataset.title[:50]} ({error_msg})")
+            
+        # Stratégie de fallback: on garde le dataset mais on marque les problèmes
+        # Les datasets avec de trop gros problèmes seront filtrés côté UI
+        validated_datasets.append(dataset)
+        
+        # Log des scores pour debug
+        if coherence_score.score < 0.3:
+            print(f"      ⚠️  Score cohérence faible ({coherence_score.score:.2f}): {dataset.title[:50]}")
+        elif coherence_score.score > 0.7:
+            print(f"      ✅ Score cohérence élevé ({coherence_score.score:.2f}): {dataset.title[:50]}")
+    
+    return validated_datasets
+
+# ------------------------------------------------------------------
+
 
 def run(
     article_text: str,
@@ -226,13 +269,19 @@ def run(
                 merged_ds.append(ds)
                 seen_urls.add(ds.source_url)
 
+        # ---- Application du scoring de cohérence (#4.3.1) ------------------
+        angle_keywords = kw_set.sets[0].keywords if kw_set else []
+        scored_and_validated_ds = _apply_coherence_scoring_and_validation(
+            merged_ds, angle, angle_keywords
+        )
+
         angle_resources.append(
             AngleResources(
                 index          = idx,
                 title          = angle.title,
                 description    = angle.rationale,
-                keywords       = kw_set.sets[0].keywords if kw_set else [],
-                datasets       = merged_ds,
+                keywords       = angle_keywords,
+                datasets       = scored_and_validated_ds,
                 # sources        = llm_ds,
                 sources        = llm_raw,
                 visualizations = viz_list,
