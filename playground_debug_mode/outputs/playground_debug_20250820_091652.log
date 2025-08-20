@@ -1,4 +1,0 @@
-2025-08-20 09:16:53,624 - playground_debug - INFO - [94m🔍 Démarrage des tests d'extraction[0m
-2025-08-20 09:16:53,624 - playground_debug - INFO - [96m📊 Configuration | model=gpt-4o-mini | max_tokens=8000[0m
-2025-08-20 09:16:53,624 - playground_debug - INFO - [94m🔍 Début de test_extraction_with_sample[0m
-2025-08-20 09:16:53,628 - playground_debug - ERROR - [91m❌ Erreur dans test_extraction_with_sample | Error: HTTPSConnectionPool(host='openaipublic.blob.core.windows.net', port=443): Max retries exceeded with url: /encodings/o200k_base.tiktoken (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f8c1bca0b00>: Failed to resolve 'openaipublic.blob.core.windows.net' ([Errno -5] No address associated with hostname)")) | duration_s=0.00[0m

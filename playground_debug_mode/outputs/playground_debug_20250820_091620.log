@@ -1,4 +1,0 @@
-2025-08-20 09:16:20,138 - playground_debug - INFO - [92m✅ Clé API OpenAI configurée | key_length=5[0m
-2025-08-20 09:16:20,947 - playground_debug - INFO - [92m✅ Module ai_engine disponible[0m
-2025-08-20 09:16:20,947 - playground_debug - INFO - [92m✅ LangChain disponible | version=0.3.25[0m
-2025-08-20 09:16:20,947 - playground_debug - INFO - [92m✅ Dossier outputs disponible | path=/home/runner/work/datascope-ai/datascope-ai/playground_debug_mode/outputs[0m

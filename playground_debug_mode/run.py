@@ -63,6 +63,18 @@ def run_pipeline_tests():
         return False
 
 
+def run_demo():
+    """Lance la démonstration sans réseau"""
+    debug_logger.info("🚀 Lancement de la démonstration...")
+    try:
+        from playground_debug_mode.demo import main as demo_main
+        demo_main()
+        return True
+    except Exception as e:
+        debug_logger.error("Erreur lors de la démonstration", error=e)
+        return False
+
+
 def run_all_tests():
     """Lance tous les tests dans l'ordre"""
     debug_logger.separator("🧪 Exécution complète - Playground Debug Mode", "=", 100)
@@ -162,6 +174,7 @@ Exemples d'utilisation:
   python run.py --connectors       # Tests de connecteurs seulement
   python run.py --pipeline         # Tests de pipeline seulement
   python run.py --check            # Vérification de l'environnement
+  python run.py --demo             # Démonstration sans réseau
         """
     )
     
@@ -177,6 +190,8 @@ Exemples d'utilisation:
                        help="Lance les tests du pipeline complet")
     parser.add_argument("--check", action="store_true",
                        help="Vérifie l'environnement de développement")
+    parser.add_argument("--demo", action="store_true",
+                       help="Lance une démonstration sans réseau")
     
     args = parser.parse_args()
     
@@ -188,6 +203,11 @@ Exemples d'utilisation:
     # Vérification de l'environnement si demandée
     if args.check:
         check_environment()
+        return
+    
+    # Démonstration si demandée
+    if args.demo:
+        run_demo()
         return
     
     # Lancement des tests selon les arguments

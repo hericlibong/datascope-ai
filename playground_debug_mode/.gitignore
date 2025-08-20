@@ -1,0 +1,27 @@
+# Cache et fichiers temporaires
+.cache/
+*.db
+
+# Logs de debug
+outputs/*.log
+
+# Résultats JSON générés
+outputs/*.json
+outputs/*.md
+
+# Fichiers Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
