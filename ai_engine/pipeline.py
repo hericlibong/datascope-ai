@@ -1,5 +1,6 @@
 import ai_engine
 import inspect
+from typing import Optional, List
 from ai_engine.utils import token_len
 from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
@@ -31,6 +32,7 @@ def run_connectors(
     keywords_per_angle: list[KeywordsResult],
     max_per_keyword: int = 2,
     max_total_per_angle: int = 5,
+    locations: Optional[List[str]] = None,
 ) -> list[list[DatasetSuggestion]]:
     """
     Interroge les connecteurs open-data pour CHAQUE angle et renvoie
@@ -69,11 +71,11 @@ def run_connectors(
 
                     try:
                         if "max_results" in sig:
-                            raw_results = connector.search(keyword, max_results=max_per_keyword)
+                            raw_results = connector.search(keyword, max_results=max_per_keyword, locations=locations)
                         elif "page_size" in sig:
-                            raw_results = connector.search(keyword, page_size=max_per_keyword)
+                            raw_results = connector.search(keyword, page_size=max_per_keyword, locations=locations)
                         else:
-                            raw_results = connector.search(keyword)
+                            raw_results = connector.search(keyword, locations=locations)
                     except Exception as e:
                         print(f"ERREUR : {e!r}")
                         continue
@@ -195,7 +197,8 @@ def run(
 
     angle_resources: list[AngleResources] = []
     # -- 5. Datasets via connecteurs (liste par angle) ----------------------
-    connectors_sets = run_connectors(keywords_per_angle)
+    # Pass extracted locations to prioritize geographically relevant datasets
+    connectors_sets = run_connectors(keywords_per_angle, locations=extraction_result.locations)
 
     # 6. Sources LLM par angle  ------------------------------
     llm_sources_sets = llm_sources.run(angle_result)

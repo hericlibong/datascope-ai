@@ -47,7 +47,7 @@ class CanadaGovClient(ConnectorInterface):
         r.raise_for_status()
         return r.json()
 
-    def search(self, keyword: str, page_size: int = 10) -> Iterator[CADataset]:
+    def search(self, keyword: str, *, page_size: int = 10, locations: Optional[List[str]] = None) -> Iterator[CADataset]:
         keyword = sanitize_keyword(keyword)
         page = 0
         max_results = 2  # ← temporaire

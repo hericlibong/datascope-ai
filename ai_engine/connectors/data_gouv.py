@@ -19,6 +19,10 @@ from ai_engine.connectors.interface import ConnectorInterface
 from ai_engine.connectors.helpers import sanitize_keyword
 from ai_engine.connectors.format_utils import get_format
 from ai_engine.connectors.richness import richness_score
+from ai_engine.connectors.location_utils import (
+    enhance_query_with_locations, 
+    filter_and_sort_by_location_relevance
+)
 from ai_engine.schemas import DatasetSuggestion
 
 BASE_URL = "https://www.data.gouv.fr/api/1"
@@ -47,18 +51,23 @@ class DataGouvClient(ConnectorInterface):
         r.raise_for_status()
         return r.json()
 
-    def search(self, keyword: str, page_size: int = 10) -> Iterator[FRDataset]:
-        keyword = sanitize_keyword(keyword)
+    def search(self, keyword: str, *, page_size: int = 10, locations: Optional[List[str]] = None) -> Iterator[FRDataset]:
+        # Enhance query with location information if available
+        enhanced_keyword = enhance_query_with_locations(keyword, locations)
+        enhanced_keyword = sanitize_keyword(enhanced_keyword)
+        
         page = 1
         max_results = 2  # ← sécurité temporaire, évite de tout renvoyer
+        all_datasets = []  # Collect datasets for location-based sorting
 
         yielded = 0
         while yielded < max_results:
-            data = self._get("/datasets", {"q": keyword, "page": page, "page_size": page_size})
+            data = self._get("/datasets", {"q": enhanced_keyword, "page": page, "page_size": page_size})
             results = data.get("data", [])
             if not results:
                 break
 
+            page_datasets = []
             for raw in results:
                 # Récupération des formats valides
                 fmt_list = [
@@ -75,7 +84,7 @@ class DataGouvClient(ConnectorInterface):
                 if isinstance(license_, dict):
                     license_ = license_.get("title") or license_.get("id")
 
-                yield FRDataset(
+                dataset = FRDataset(
                     id=raw["id"],
                     title=raw["title"],
                     description=raw.get("slug"),
@@ -87,11 +96,20 @@ class DataGouvClient(ConnectorInterface):
                         or raw.get("modified")
                         or raw.get("last_modified"),
                 )
-                yielded += 1
+                page_datasets.append(dataset)
+
+            # Apply location-based sorting to this page
+            if locations:
+                page_datasets = filter_and_sort_by_location_relevance(page_datasets, locations)
+            
+            # Yield datasets up to max_results
+            for dataset in page_datasets:
                 if yielded >= max_results:
                     break
+                yield dataset
+                yielded += 1
 
-            if not data.get("next_page"):
+            if not data.get("next_page") or yielded >= max_results:
                 break
 
             page += 1

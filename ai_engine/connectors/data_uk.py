@@ -18,6 +18,10 @@ from ai_engine.connectors.interface import ConnectorInterface
 from ai_engine.connectors.helpers import sanitize_keyword
 from ai_engine.connectors.format_utils import get_format
 from ai_engine.connectors.richness import richness_score
+from ai_engine.connectors.location_utils import (
+    enhance_query_with_locations, 
+    filter_and_sort_by_location_relevance
+)
 from ai_engine.schemas import DatasetSuggestion
 
 BASE_URL = "https://data.gov.uk"
@@ -46,8 +50,10 @@ class UKGovClient(ConnectorInterface):
         r.raise_for_status()
         return r.json()
 
-    def search(self, keyword: str, page_size: int = 10) -> Iterator[UKDataset]:
-        keyword = sanitize_keyword(keyword)
+    def search(self, keyword: str, *, page_size: int = 10, locations: Optional[List[str]] = None) -> Iterator[UKDataset]:
+        # Enhance query with location information if available
+        enhanced_keyword = enhance_query_with_locations(keyword, locations)
+        enhanced_keyword = sanitize_keyword(enhanced_keyword)
         page = 0
         max_results = 2  # ← temporaire
 
@@ -55,13 +61,14 @@ class UKGovClient(ConnectorInterface):
         while yielded < max_results:
             data = self._get(
                 "/api/3/action/package_search",
-                {"q": keyword, "rows": page_size, "start": page * page_size}
+                {"q": enhanced_keyword, "rows": page_size, "start": page * page_size}
             )
 
             results = data.get("result", {}).get("results", [])
             if not results:
                 break
 
+            page_datasets = []
             for raw in results:
                 fmt_list = [
                     f for r in raw.get("resources", [])
@@ -73,7 +80,7 @@ class UKGovClient(ConnectorInterface):
                 org_raw = raw.get("organization")
                 org_name = org_raw.get("title") if isinstance(org_raw, dict) else None
 
-                yield UKDataset(
+                dataset = UKDataset(
                     id=raw["id"],
                     title=raw.get("title"),
                     description=raw.get("notes"),
@@ -83,9 +90,18 @@ class UKGovClient(ConnectorInterface):
                     license=raw.get("license_title"),
                     last_modified=raw.get("metadata_modified")
                 )
-                yielded += 1
+                page_datasets.append(dataset)
+
+            # Apply location-based sorting to this page
+            if locations:
+                page_datasets = filter_and_sort_by_location_relevance(page_datasets, locations)
+            
+            # Yield datasets up to max_results
+            for dataset in page_datasets:
                 if yielded >= max_results:
                     break
+                yield dataset
+                yielded += 1
 
             page += 1
             time.sleep(0.2)
