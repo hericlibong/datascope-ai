@@ -17,6 +17,7 @@ class DatasetSuggestion(BaseModel):
     richness: int = 0
     found_by: str | None = None        # "LLM" or "CONNECTOR"
     angle_idx: int | None = None       # ← nouveau 
+    tags: list[str] = []               # ← nouveau field for mapping 
 
 class NumberEntity(BaseModel):
     raw: str = Field(..., description="Nombre tel qu'il apparaît dans le texte")
@@ -35,6 +36,7 @@ class ExtractionResult(BaseModel):
 class Angle(BaseModel):
     title: str = Field(..., description="Titre court (≤80 car.)")
     rationale: str = Field(..., description="1-2 phrases expliquant l’angle")
+    topic: str | None = Field(None, description="Topic/theme for dataset mapping")
 
 class AngleResult(BaseModel):
     language: str
