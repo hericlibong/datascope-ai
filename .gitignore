@@ -18,3 +18,7 @@ scripts/export_backlog.py
 scripts/gpt_backlog.py
 scripts/get_projects.py
 scripts/json_to_md.py
+
+# Playground debug mode - ignore logs and output
+playground_debug_mode/logs/
+playground_debug_mode/output/
