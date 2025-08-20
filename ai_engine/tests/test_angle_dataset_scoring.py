@@ -5,6 +5,8 @@ from ai_engine.angle_dataset_scoring import (
     compute_angle_dataset_match_score,
     should_filter_dataset,
     get_match_quality_label,
+    get_match_quality_alert,
+    filter_datasets_by_quality,
     _compute_word_overlap_score,
     _compute_keywords_score,
     _compute_thematic_score
@@ -90,6 +92,56 @@ def test_get_match_quality_label():
     assert get_match_quality_label(0.7) == "Bonne"
     assert get_match_quality_label(0.5) == "Moyenne"
     assert get_match_quality_label(0.1) == "Faible"
+
+
+def test_get_match_quality_alert():
+    """Test des alertes de qualité."""
+    alert_excellent = get_match_quality_alert(0.9)
+    assert alert_excellent["level"] == "success"
+    assert "✅" in alert_excellent["icon"]
+    
+    alert_moderate = get_match_quality_alert(0.5)
+    assert alert_moderate["level"] == "warning"
+    assert "⚠️" in alert_moderate["icon"]
+    
+    alert_poor = get_match_quality_alert(0.1)
+    assert alert_poor["level"] == "danger"
+    assert "❌" in alert_poor["icon"]
+
+
+def test_filter_datasets_by_quality():
+    """Test du filtrage des datasets par qualité."""
+    datasets = [
+        DatasetSuggestion(
+            title="Dataset 1", 
+            source_name="test", 
+            source_url="http://test1.com",
+            match_score=0.8
+        ),
+        DatasetSuggestion(
+            title="Dataset 2", 
+            source_name="test", 
+            source_url="http://test2.com",
+            match_score=0.5
+        ),
+        DatasetSuggestion(
+            title="Dataset 3", 
+            source_name="test", 
+            source_url="http://test3.com",
+            match_score=0.1
+        )
+    ]
+    
+    # Test filtrage par score minimum
+    kept, filtered = filter_datasets_by_quality(datasets, min_score=0.3)
+    assert len(kept) == 2  # Datasets avec score >= 0.3
+    assert len(filtered) == 1  # Dataset avec score < 0.3
+    assert kept[0].match_score == 0.8  # Trié par score décroissant
+    
+    # Test limitation du nombre
+    kept_limited, filtered_limited = filter_datasets_by_quality(datasets, min_score=0.0, max_datasets=2)
+    assert len(kept_limited) == 2
+    assert len(filtered_limited) == 1
 
 
 def test_edge_cases():

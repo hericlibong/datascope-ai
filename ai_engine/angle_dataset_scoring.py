@@ -155,3 +155,65 @@ def get_match_quality_label(match_score: float) -> str:
         return "Moyenne"
     else:
         return "Faible"
+
+
+def get_match_quality_alert(match_score: float) -> dict:
+    """
+    Retourne des informations d'alerte basées sur le score de correspondance.
+    
+    Args:
+        match_score: Score de correspondance (0-1)
+        
+    Returns:
+        Dictionnaire avec level ('success', 'warning', 'danger') et message
+    """
+    if match_score >= 0.7:
+        return {
+            "level": "success",
+            "message": "Excellente correspondance avec l'angle éditorial",
+            "icon": "✅"
+        }
+    elif match_score >= 0.4:
+        return {
+            "level": "warning", 
+            "message": "Correspondance modérée - vérifiez la pertinence",
+            "icon": "⚠️"
+        }
+    else:
+        return {
+            "level": "danger",
+            "message": "Faible correspondance - dataset possiblement non pertinent",
+            "icon": "❌"
+        }
+
+
+def filter_datasets_by_quality(
+    datasets: List[DatasetSuggestion], 
+    min_score: float = 0.2,
+    max_datasets: int = None
+) -> tuple[List[DatasetSuggestion], List[DatasetSuggestion]]:
+    """
+    Filtre les datasets par qualité de correspondance.
+    
+    Args:
+        datasets: Liste des datasets à filtrer
+        min_score: Score minimum pour conserver un dataset
+        max_datasets: Nombre maximum de datasets à conserver (optionnel)
+        
+    Returns:
+        Tuple (datasets_conservés, datasets_filtrés)
+    """
+    # Trier par score décroissant
+    sorted_datasets = sorted(datasets, key=lambda d: d.match_score, reverse=True)
+    
+    # Filtrer par score minimum
+    kept_datasets = [ds for ds in sorted_datasets if ds.match_score >= min_score]
+    filtered_datasets = [ds for ds in sorted_datasets if ds.match_score < min_score]
+    
+    # Limiter le nombre si spécifié
+    if max_datasets and len(kept_datasets) > max_datasets:
+        additional_filtered = kept_datasets[max_datasets:]
+        filtered_datasets.extend(additional_filtered)
+        kept_datasets = kept_datasets[:max_datasets]
+    
+    return kept_datasets, filtered_datasets
