@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from analysis.views import ArticleViewSet, AnalysisViewSet, HistoryAPIView
@@ -16,3 +17,10 @@ urlpatterns = [
     path("history/", HistoryAPIView.as_view(), name="analysis-history"),
     path("", include(router.urls)),
 ]
+
+# --- Playground namespace (uniquement si activé)
+if getattr(settings, "PLAYGROUND_DEBUG_MODE", False):
+    urlpatterns += [
+        path("playground/", include("api.playground_urls")),
+    ]
+

@@ -1,0 +1,9 @@
+{'status': 401, 'payload_out_size': 105}
+{'status': 401, 'payload_out_size': 105}
+{'status': 401, 'payload_out_size': 105}
+{'path': '/api/playground/history/', 'method': 'GET', 'user': None, 'meta': {'section': 'history/get'}, 'payload_in_size': 2}
+{'status': 200, 'payload_out_size': 59}
+{'path': '/api/playground/history/?debug=1', 'method': 'GET', 'user': None, 'meta': {'section': 'history/get'}, 'payload_in_size': 2}
+{'status': 200, 'payload_out_size': 97}
+{'path': '/api/playground/history/', 'method': 'GET', 'user': None, 'meta': {'section': 'history/get'}, 'payload_in_size': 2}
+{'status': 200, 'payload_out_size': 59}

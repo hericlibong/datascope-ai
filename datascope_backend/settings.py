@@ -173,3 +173,28 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "users.User"
+
+# --- Playground flag
+PLAYGROUND_DEBUG_MODE = os.getenv("PLAYGROUND_DEBUG_MODE", "0") in ("1", "true", "True")
+
+# --- Logging dédié playground
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {"class": "logging.StreamHandler"},
+        "playground_file": {
+            "class": "logging.FileHandler",
+            "filename": os.path.join(BASE_DIR, "playground.log"),
+            "mode": "a",
+        },
+    },
+    "loggers": {
+        "playground": {
+            "handlers": ["console", "playground_file"],
+            "level": "DEBUG",
+            "propagate": False,
+        },
+    },
+}
+
