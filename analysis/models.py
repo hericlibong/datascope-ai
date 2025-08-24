@@ -117,6 +117,12 @@ class Angle(models.Model):
     )
     title = models.CharField(max_length=255)
     description = models.TextField()
+    topic = models.CharField(
+        max_length=100, 
+        blank=True, 
+        null=True,
+        help_text="Topic/theme for mapping to dataset tags"
+    )
     order = models.PositiveIntegerField(default=0, help_text="Display order")
 
     class Meta:
@@ -171,6 +177,12 @@ class DatasetSuggestion(models.Model):
     licence = models.CharField(max_length=255, blank=True, null=True)
     last_modified = models.CharField(max_length=50, blank=True)
     richness = models.PositiveSmallIntegerField(default=0)
+    tags = ArrayField(
+        models.CharField(max_length=50), 
+        default=list, 
+        blank=True,
+        help_text="Tags for mapping to angle topics"
+    )
 
     def __str__(self):
         return self.title

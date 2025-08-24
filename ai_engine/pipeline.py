@@ -7,6 +7,7 @@ from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult
 from ai_engine.scoring import compute_score
 from ai_engine.chains import keywords, viz, llm_sources
 from ai_engine.memory import get_memory
+from ai_engine.mapping import suggest_topic_for_angle, generate_tags_for_dataset, filter_datasets_by_topic
 
 from ai_engine.connectors.data_gouv import DataGouvClient
 from ai_engine.connectors.data_gov import DataGovClient
@@ -146,6 +147,8 @@ def run_connectors(
 # ------------------------------------------------------------------
 def _llm_to_ds(item: LLMSourceSuggestion, *, angle_idx: int) -> DatasetSuggestion:
     """Convertit une LLMSourceSuggestion en DatasetSuggestion standardisé."""
+    # Generate tags based on dataset content
+    tags = generate_tags_for_dataset(item.title, item.description, item.source)
     return DatasetSuggestion(
         title        = item.title,
         description  = item.description,
@@ -158,6 +161,7 @@ def _llm_to_ds(item: LLMSourceSuggestion, *, angle_idx: int) -> DatasetSuggestio
         license      = None,
         last_modified= "",
         richness     = 0,
+        tags         = tags,               # <-- nouveau: tags générés
     )
 # ------------------------------------------------------------------
 

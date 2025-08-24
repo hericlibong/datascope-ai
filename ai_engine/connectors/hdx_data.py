@@ -19,6 +19,7 @@ from ai_engine.connectors.helpers import sanitize_keyword
 from ai_engine.connectors.format_utils import get_format
 from ai_engine.connectors.richness import richness_score
 from ai_engine.schemas import DatasetSuggestion
+from ai_engine.mapping import generate_tags_for_dataset
 
 BASE_URL = "https://data.humdata.org"
 VALID_FORMATS = {"csv", "xls", "xlsx", "json", "geojson", "xml", "zip", "pdf"}
@@ -91,6 +92,9 @@ class HdxClient(ConnectorInterface):
             time.sleep(0.2)
 
     def hdx_to_suggestion(self, ds: HdxDataset) -> DatasetSuggestion:
+        # Generate tags based on dataset content
+        tags = generate_tags_for_dataset(ds.title, ds.description, "data.humdata.org")
+        
         sugg = DatasetSuggestion(
             title=ds.title,
             description=ds.description,
@@ -100,6 +104,7 @@ class HdxClient(ConnectorInterface):
             organization=ds.organization,
             license=ds.license,
             last_modified=ds.last_modified,
+            tags=tags,  # Add generated tags
         )
         sugg.richness = richness_score(sugg)
         return sugg
