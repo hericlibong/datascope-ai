@@ -40,7 +40,7 @@ monnaie commune de tout le pipeline IA.
 
 from __future__ import annotations
 
-from typing import Iterator, Protocol
+from typing import Iterator, Protocol, Optional, List
 
 from ai_engine.schemas import DatasetSuggestion
 
@@ -51,11 +51,12 @@ class ConnectorInterface(Protocol):
 
     Méthodes
     --------
-    search(keyword, *, page_size=10) -> Iterator[DatasetSuggestion]
+    search(keyword, *, page_size=10, locations=None) -> Iterator[DatasetSuggestion]
         Recherche paginée de jeux de données pour un mot-clé.
 
-        * `keyword`  : chaîne interrogée (déjà « nettoyée » ou libre).
-        * `page_size`: taille de page souhaitée (implémentation-dépendant).
+        * `keyword`   : chaîne interrogée (déjà « nettoyée » ou libre).
+        * `page_size` : taille de page souhaitée (implémentation-dépendant).
+        * `locations` : liste optionnelle de lieux pour prioriser les résultats.
         * renvoie un itérateur (ou générateur) de `DatasetSuggestion`.
 
     Toute classe possédant **au moins** cette signature est considérée comme
@@ -69,4 +70,5 @@ class ConnectorInterface(Protocol):
         keyword: str,
         *,
         page_size: int = 10,
+        locations: Optional[List[str]] = None,
     ) -> Iterator[DatasetSuggestion]: ...

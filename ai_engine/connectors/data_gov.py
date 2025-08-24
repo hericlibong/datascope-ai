@@ -75,7 +75,7 @@ class DataGovClient(ConnectorInterface):
         return self._get("/package_show", {"id": pkg_id})["result"]
 
     # ----------- API publique --------------------------------------------- #
-    def search(self, keyword: str, *, page_size: int = DEFAULT_PAGE_SIZE, max_results: Optional[int] = None,) -> Iterator[USDataset]:
+    def search(self, keyword: str, *, page_size: int = DEFAULT_PAGE_SIZE, max_results: Optional[int] = None, locations: Optional[List[str]] = None) -> Iterator[USDataset]:
         """
         Générateur de USDataset.
 
