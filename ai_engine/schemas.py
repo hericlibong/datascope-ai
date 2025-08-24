@@ -16,7 +16,9 @@ class DatasetSuggestion(BaseModel):
     last_modified: str | None = None    # ← nouveau
     richness: int = 0
     found_by: str | None = None        # "LLM" or "CONNECTOR"
-    angle_idx: int | None = None       # ← nouveau 
+    angle_idx: int | None = None       # ← nouveau
+    coherence_score: float | None = None  # Score de cohérence angle ↔ dataset (0.0-1.0)
+    coherence_issues: list[str] = []      # Problèmes de cohérence détectés 
 
 class NumberEntity(BaseModel):
     raw: str = Field(..., description="Nombre tel qu'il apparaît dans le texte")
