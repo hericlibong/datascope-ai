@@ -33,13 +33,15 @@ def test_fr_extraction_ok(monkeypatch):
       "organizations": [],
       "locations": ["Strasbourg"],
       "dates": ["2024-03-12"],
-      "numbers": []
+      "numbers": [],
+      "themes": ["politique"]
     }
     """
     patch_chain(monkeypatch, fake_json)
     result = extraction.run("dummy")
     assert result.language == "fr"
     assert "Emmanuel Macron" in result.persons
+    assert hasattr(result, 'themes')
 
 
 def test_en_extraction_ok(monkeypatch):
@@ -50,7 +52,8 @@ def test_en_extraction_ok(monkeypatch):
       "organizations": ["NASA"],
       "locations": [],
       "dates": ["2024-07-04"],
-      "numbers": []
+      "numbers": [],
+      "themes": ["space", "technology"]
     }
     """
     patch_chain(monkeypatch, fake_json)
@@ -58,6 +61,7 @@ def test_en_extraction_ok(monkeypatch):
     assert result.language == "en"
     assert "Joe Biden" in result.persons
     assert "NASA" in result.organizations
+    assert len(result.themes) >= 1
 
 
 def test_empty_article(monkeypatch):
@@ -68,14 +72,15 @@ def test_empty_article(monkeypatch):
       "organizations": [],
       "locations": [],
       "dates": [],
-      "numbers": []
+      "numbers": [],
+      "themes": []
     }
     """
     patch_chain(monkeypatch, fake_json)
     result = extraction.run("")
     # toutes les listes doivent être vides
     assert all(len(getattr(result, field)) == 0
-               for field in ["persons", "organizations", "locations", "dates", "numbers"])
+               for field in ["persons", "organizations", "locations", "dates", "numbers", "themes"])
 
 
 def test_too_long_article(monkeypatch):

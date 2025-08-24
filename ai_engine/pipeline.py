@@ -3,10 +3,12 @@ import inspect
 from ai_engine.utils import token_len
 from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
-from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult, LLMSourceSuggestion, AngleResources
+from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult, LLMSourceSuggestion, AngleResources, AnalysisCoherence
 from ai_engine.scoring import compute_score
 from ai_engine.chains import keywords, viz, llm_sources
 from ai_engine.memory import get_memory
+from ai_engine.coherence import analyze_article_coherence
+from ai_engine.connectors.geo_filtering import enhance_connector_search
 
 from ai_engine.connectors.data_gouv import DataGouvClient
 from ai_engine.connectors.data_gov import DataGovClient
@@ -29,6 +31,7 @@ def _score(extr) -> int:
 
 def run_connectors(
     keywords_per_angle: list[KeywordsResult],
+    extracted_locations: list[str] = None,  # Nouveau paramètre pour le geo-filtering
     max_per_keyword: int = 2,
     max_total_per_angle: int = 5,
 ) -> list[list[DatasetSuggestion]]:
@@ -68,12 +71,19 @@ def run_connectors(
                     print(f"   ↳ {connector.__class__.__name__}.search … ", end="")
 
                     try:
-                        if "max_results" in sig:
-                            raw_results = connector.search(keyword, max_results=max_per_keyword)
-                        elif "page_size" in sig:
-                            raw_results = connector.search(keyword, page_size=max_per_keyword)
+                        # Utilise le geo-filtering si des lieux sont identifiés
+                        if extracted_locations:
+                            raw_results = enhance_connector_search(
+                                connector, keyword, extracted_locations, page_size=max_per_keyword
+                            )
                         else:
-                            raw_results = connector.search(keyword)
+                            # Comportement standard
+                            if "max_results" in sig:
+                                raw_results = connector.search(keyword, max_results=max_per_keyword)
+                            elif "page_size" in sig:
+                                raw_results = connector.search(keyword, page_size=max_per_keyword)
+                            else:
+                                raw_results = connector.search(keyword)
                     except Exception as e:
                         print(f"ERREUR : {e!r}")
                         continue
@@ -170,6 +180,7 @@ def run(
     str,                    # markdown
     float,                  # score_10
     list[AngleResources],   # ressources détaillées par angle
+    AnalysisCoherence,      # analyse de cohérence
 ]:
     """Orchestre l’ensemble du workflow DataScope et regroupe les ressources
     par angle éditorial dans des objets `AngleResources`."""
@@ -195,7 +206,7 @@ def run(
 
     angle_resources: list[AngleResources] = []
     # -- 5. Datasets via connecteurs (liste par angle) ----------------------
-    connectors_sets = run_connectors(keywords_per_angle)
+    connectors_sets = run_connectors(keywords_per_angle, extraction_result.locations)
 
     # 6. Sources LLM par angle  ------------------------------
     llm_sources_sets = llm_sources.run(angle_result)
@@ -243,11 +254,18 @@ def run(
     # -- 9. Packaging « historique » (extraction + angles) -------------------
     packaged, markdown = package(extraction_result, angle_result)
 
-    # -- 10. Mémoire utilisateur --------------------------------------------
+    # -- 10. Analyse de cohérence -------------------------------------------
+    coherence_analysis = analyze_article_coherence(
+        extraction_result, 
+        angle_resources,
+        article_id=f"user_{user_id}_{len(angle_result.angles)}angles"
+    )
+
+    # -- 11. Mémoire utilisateur --------------------------------------------
     get_memory(user_id).save_context(
         {"article": article_text},
         {"summary": f"[score={score_10}] Angles: {[a.title for a in angle_result.angles]}"},
     )
 
-    return packaged, markdown, score_10, angle_resources
+    return packaged, markdown, score_10, angle_resources, coherence_analysis
 

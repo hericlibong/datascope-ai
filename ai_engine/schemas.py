@@ -30,6 +30,7 @@ class ExtractionResult(BaseModel):
     locations: List[str]
     dates: List[str]              # idéalement YYYY-MM-DD ou ISO partial
     numbers: List[NumberEntity]
+    themes: List[str] = []        # thèmes/sujets principaux de l'article
 
 # --- déjà présent au-dessus ---
 class Angle(BaseModel):
@@ -81,6 +82,25 @@ class AngleResources(BaseModel):
     datasets: List[DatasetSuggestion]
     sources: List[LLMSourceSuggestion]
     visualizations: List[VizSuggestion]
+
+
+class CoherenceMetrics(BaseModel):
+    """Mesures de cohérence entre angles éditoriaux et suggestions de données."""
+    angle_index: int
+    angle_title: str
+    location_match_score: float = Field(..., description="Score de correspondance géographique (0-1)")
+    theme_match_score: float = Field(..., description="Score de correspondance thématique (0-1)")
+    overall_coherence: float = Field(..., description="Score de cohérence globale (0-1)")
+    dataset_count: int = Field(..., description="Nombre de datasets suggérés")
+    
+class AnalysisCoherence(BaseModel):
+    """Analyse de cohérence globale pour un article."""
+    article_id: str | None = None
+    overall_score: float = Field(..., description="Score de cohérence global (0-1)")
+    angle_metrics: List[CoherenceMetrics]
+    dominant_location: str | None = Field(None, description="Lieu principal identifié")
+    dominant_themes: List[str] = Field(default_factory=list, description="Thèmes dominants")
+    recommendations: List[str] = Field(default_factory=list, description="Recommandations d'amélioration")
 
 
 
