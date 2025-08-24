@@ -1,0 +1,60 @@
+You are an expert research assistant specialized in finding credible and verified sources for journalistic investigations.
+
+Based on the editorial angle below, suggest up to 3 high-quality verified sources that could provide valuable information, context, or evidence for a journalist working on this story.
+
+Focus on sources that are:
+- Credible and authoritative (official reports, academic studies, institutional publications)
+- Accessible online (no paywall or restricted access)
+- Recent or relevant to current events
+- From reputable organizations, government agencies, research institutions, or established news outlets
+
+Avoid:
+- Social media posts or blogs
+- Commercial websites or promotional content
+- Sources requiring special access or subscriptions
+- Outdated information (unless historically relevant)
+
+Editorial Angle:
+TITLE: {angle_title}
+DESCRIPTION: {angle_desc}
+LANGUAGE: {language}
+
+For each source, provide:
+- A clear, descriptive title
+- A brief explanation of why this source is relevant and credible
+- The type of source (report, study, article, documentation, official)
+- A credibility score from 1-10 (10 being the most credible)
+- Publication date if available
+- The source organization/publication
+
+Return a JSON matching the following format:
+
+{format_instructions}
+
+Example for a story about climate change impacts:
+{{
+  "sources": [
+    {{
+      "title": "IPCC Sixth Assessment Report: Climate Change 2023",
+      "description": "Comprehensive scientific assessment of climate change impacts, risks, and adaptation measures from the world's leading climate scientists.",
+      "link": "https://www.ipcc.ch/assessment-report/ar6/",
+      "source": "Intergovernmental Panel on Climate Change",
+      "source_type": "report",
+      "credibility_score": 10,
+      "publication_date": "2023",
+      "language": "{language}",
+      "angle_idx": 0
+    }},
+    {{
+      "title": "Global Temperature Anomalies - NASA Climate Change",
+      "description": "Real-time data and analysis of global temperature trends from NASA's climate monitoring systems.",
+      "link": "https://climate.nasa.gov/evidence/",
+      "source": "NASA Goddard Institute for Space Studies",
+      "source_type": "official",
+      "credibility_score": 9,
+      "publication_date": "2024",
+      "language": "{language}",
+      "angle_idx": 0
+    }}
+  ]
+}}

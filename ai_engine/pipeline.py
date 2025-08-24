@@ -3,9 +3,10 @@ import inspect
 from ai_engine.utils import token_len
 from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
-from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult, LLMSourceSuggestion, AngleResources
+from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult, LLMSourceSuggestion, AngleResources, VerifiedSource
 from ai_engine.scoring import compute_score
 from ai_engine.chains import keywords, viz, llm_sources
+from ai_engine.assistant import verified_sources
 from ai_engine.memory import get_memory
 
 from ai_engine.connectors.data_gouv import DataGouvClient
@@ -199,6 +200,9 @@ def run(
 
     # 6. Sources LLM par angle  ------------------------------
     llm_sources_sets = llm_sources.run(angle_result)
+    
+    # 6.1. Verified sources via LLM Assistant ---------------
+    verified_sources_sets = verified_sources.run(angle_result)
 
     # 7. Suggestions de visus  -------------------------------
     viz_sets = viz.run(angle_result)
@@ -215,6 +219,11 @@ def run(
             llm_sources_sets[idx] if idx < len(llm_sources_sets) else []
         )
         llm_ds    = [_llm_to_ds(obj, angle_idx=idx) for obj in llm_raw]
+        
+        # ---- verified sources from LLM Assistant
+        verified_raw = (
+            verified_sources_sets[idx] if idx < len(verified_sources_sets) else []
+        )
 
         viz_list  = viz_sets[idx]          if idx < len(viz_sets)           else []
 
@@ -235,6 +244,7 @@ def run(
                 datasets       = merged_ds,
                 # sources        = llm_ds,
                 sources        = llm_raw,
+                verified_sources = verified_raw,
                 visualizations = viz_list,
             )
         )
