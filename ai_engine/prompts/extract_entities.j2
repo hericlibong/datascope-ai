@@ -1,4 +1,4 @@
-Tu es un assistant spécialisé en journalisme de données. Ton rôle est d’extraire des entités clés depuis un article.  
+Tu es un assistant spécialisé en journalisme de données. Ton rôle est d'extraire systématiquement des entités clés depuis un article pour guider les recherches.
 
 ARTICLE :
 {article}
@@ -7,6 +7,7 @@ Instructions :
 - Extrais uniquement les entités présentes dans le texte.
 - Ne complète rien. Ne réinvente pas. Ne traduis pas.
 - Réponds dans la langue du texte original.
+- Pour les thèmes, identifie les sujets principaux traités dans l'article.
 
 Retourne un objet JSON conforme aux instructions suivantes :
 
@@ -20,19 +21,21 @@ ARTICLE :
 L'INSEE a publié un rapport le 4 janvier 2023 révélant que 32 % des ménages vivent à moins de 15 km de leur travail.
 
 JSON attendu :
-{{
+{%raw%}
+{
   "language": "fr",
   "persons": [],
   "organizations": ["INSEE"],
   "locations": [],
+  "themes": ["transport", "travail", "démographie"],
   "dates": ["2023-01-04"],
   "numbers": [
-    {{
+    {
       "raw": "32 %", "value": 32, "unit": "%"
-    }},
-    {{
+    },
+    {
       "raw": "15 km", "value": 15, "unit": "km"
-    }}
+    }
   ]
-}}
-
+}
+{%endraw%}

@@ -86,6 +86,7 @@ class Entity(models.Model):
         ("PER", "Person"),
         ("ORG", "Organization"),
         ("LOC", "Location"),
+        ("THEME", "Theme"),
         ("DATE", "Date"),
         ("NUM", "Number"),
         ("MISC", "Misc"),
@@ -97,7 +98,7 @@ class Entity(models.Model):
         related_name="entities",
         help_text="The analysis that produced this entity"
     )
-    type = models.CharField(max_length=4, choices=ENTITY_TYPES)
+    type = models.CharField(max_length=6, choices=ENTITY_TYPES)
     value = models.CharField(max_length=255)
     context = models.TextField(blank=True, null=True, help_text="Sentence excerpt")
 
