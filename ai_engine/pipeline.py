@@ -5,6 +5,7 @@ from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
 from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult, LLMSourceSuggestion, AngleResources
 from ai_engine.scoring import compute_score
+from ai_engine.angle_dataset_scoring import compute_angle_dataset_match_score, filter_datasets_by_quality
 from ai_engine.chains import keywords, viz, llm_sources
 from ai_engine.memory import get_memory
 
@@ -226,13 +227,48 @@ def run(
                 merged_ds.append(ds)
                 seen_urls.add(ds.source_url)
 
+        # ---- calcul des scores de correspondance angle-dataset ------------------
+        angle_keywords = kw_set.sets[0].keywords if kw_set else []
+        scored_ds = []
+        
+        for ds in merged_ds:
+            # Calculer le score de correspondance avec l'angle
+            match_score = compute_angle_dataset_match_score(
+                angle=angle,
+                dataset=ds,
+                keywords=angle_keywords
+            )
+            
+            # Mettre à jour le dataset avec le score
+            ds.match_score = match_score
+            scored_ds.append(ds)
+        
+        # Appliquer le filtrage par qualité avec un seuil configurable
+        # On peut ajuster ces paramètres selon les besoins
+        MIN_MATCH_SCORE = 0.1  # Seuil très permissif pour commencer
+        MAX_DATASETS_PER_ANGLE = 10  # Limite raisonnable par angle
+        
+        kept_datasets, filtered_datasets = filter_datasets_by_quality(
+            scored_ds, 
+            min_score=MIN_MATCH_SCORE,
+            max_datasets=MAX_DATASETS_PER_ANGLE
+        )
+        
+        # Log des datasets filtrés pour information
+        if filtered_datasets:
+            print(f"      📊 Angle {idx}: {len(kept_datasets)} datasets conservés, {len(filtered_datasets)} filtrés")
+            for ds in filtered_datasets[:3]:  # Afficher les 3 premiers filtrés
+                print(f"         ❌ {ds.title} (score: {ds.match_score:.2f})")
+        
+        final_datasets = kept_datasets
+
         angle_resources.append(
             AngleResources(
                 index          = idx,
                 title          = angle.title,
                 description    = angle.rationale,
                 keywords       = kw_set.sets[0].keywords if kw_set else [],
-                datasets       = merged_ds,
+                datasets       = final_datasets,  # Utiliser les datasets filtrés et triés
                 # sources        = llm_ds,
                 sources        = llm_raw,
                 visualizations = viz_list,

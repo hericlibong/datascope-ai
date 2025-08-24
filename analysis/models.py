@@ -171,6 +171,10 @@ class DatasetSuggestion(models.Model):
     licence = models.CharField(max_length=255, blank=True, null=True)
     last_modified = models.CharField(max_length=50, blank=True)
     richness = models.PositiveSmallIntegerField(default=0)
+    match_score = models.FloatField(
+        default=0.0,
+        help_text="Score de correspondance avec l'angle éditorial (0.0-1.0)"
+    )
 
     def __str__(self):
         return self.title
