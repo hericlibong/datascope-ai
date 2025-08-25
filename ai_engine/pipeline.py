@@ -7,6 +7,7 @@ from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult
 from ai_engine.scoring import compute_score
 from ai_engine.chains import keywords, viz, llm_sources
 from ai_engine.memory import get_memory
+from ai_engine.url_validator import validate_url, ValidationStatus
 
 from ai_engine.connectors.data_gouv import DataGouvClient
 from ai_engine.connectors.data_gov import DataGovClient
@@ -145,19 +146,28 @@ def run_connectors(
 
 # ------------------------------------------------------------------
 def _llm_to_ds(item: LLMSourceSuggestion, *, angle_idx: int) -> DatasetSuggestion:
-    """Convertit une LLMSourceSuggestion en DatasetSuggestion standardisé."""
+    """Convertit une LLMSourceSuggestion en DatasetSuggestion standardisé avec validation d'URL."""
+    # Valider l'URL avant de créer le DatasetSuggestion
+    validation_result = validate_url(item.link)
+    
+    # Déterminer l'URL finale (après redirections éventuelles)
+    final_url = validation_result.final_url or item.link
+    
     return DatasetSuggestion(
         title        = item.title,
         description  = item.description,
         source_name  = item.source,
-        source_url   = item.link,          # <-- champ correct
+        source_url   = final_url,          # Utiliser l'URL finale validée
         found_by     = "LLM",
-        angle_idx    = angle_idx,          # marquage de l’angle parent
+        angle_idx    = angle_idx,          # marquage de l'angle parent
         formats      = [],
         organization = None,
         license      = None,
         last_modified= "",
         richness     = 0,
+        url_validation_status = validation_result.status.value,
+        url_validation_error = validation_result.error_message,
+        final_url = final_url if validation_result.final_url != item.link else None,
     )
 # ------------------------------------------------------------------
 
