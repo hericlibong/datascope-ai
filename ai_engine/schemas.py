@@ -16,7 +16,10 @@ class DatasetSuggestion(BaseModel):
     last_modified: str | None = None    # ← nouveau
     richness: int = 0
     found_by: str | None = None        # "LLM" or "CONNECTOR"
-    angle_idx: int | None = None       # ← nouveau 
+    angle_idx: int | None = None       # ← nouveau
+    url_validation_status: str | None = None  # URL validation status
+    url_validation_error: str | None = None   # URL validation error message
+    final_url: str | None = None              # Final URL after redirects 
 
 class NumberEntity(BaseModel):
     raw: str = Field(..., description="Nombre tel qu'il apparaît dans le texte")
