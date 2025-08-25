@@ -1,0 +1,1630 @@
+{
+  "id": 196,
+  "article": {
+    "id": 261,
+    "title": "How HISD’s Sunrise Centers are helping underserved students HOUSTON –",
+    "content": "How HISD’s Sunrise Centers are helping underserved students\n\nHOUSTON – For many parents back to school can be a financial burden. Last school year the Houston Independent School District announced it was eliminating its wraparound services department, which helped families struggling to provide basic necessities to their children.\n\n“[I was] worried, as were other parents in my situation; how are they going to do it?” said Maria Reynoso, who has a son in high school in HISD. “Economically everything’s getting high, but our paycheck is still the same amount.”\n\n2 Investigates met Reynoso at HISD’s Sunrise Center set-up inside Mission Milby on Broadway in southeast Houston. She was picking up school supplies and clothes for her son.\n\nSEE ALSO: Kinder Institute uses research to help HISD improve Sunrise Centers\n\nReynoso said the cost of ensuring her son has what he needs for school means making tough choices.\n\n“I’m still trying to see if I’m not going to get evicted from my apartment,” said Reynoso.\n\n“So, the choice is get everything your teenager needs or pay rent?” asked 2 investigates Robert Arnold.\n\n“Yes, for me it’s get everything I need for school or pay rent?” said Reynoso.\n\nIn prior years, HISD’s wraparound services department would help struggling families connect with support services so their children could go to class and learn. Budget constraints and dwindling enrollment forced HISD to shutter this department.\n\nHowever, the district opened seven Sunrise Centers in the fall of 2023. HISD partnered with the Houston Education Research Consortium (HERC), which is part of Rice University’s Kinder Institute, to determine where the Centers should be located and what services should be offered.\n\n\nThe centers offer food, clothes, educational support, healthcare, mental health support, help with transportation and a variety of other services.\n\nRice’s data shows 80-percent of HISD students are economically disadvantaged. HISD opened an eighth center this month at Marian Community Center on South Gessner in southwest Houston.\n\n“We know that when kids aren’t well, or if they’re not being serviced with food or clothes, sometimes that adds to truancy, that they don’t go to school. So, this is a way to help that, support that, and then get the attendance up as well,” said HISD superintendent Mike Miles.\n\nHISD’s data shows in the first year of operation the Centers served 30,900 families, and Rice’s data shows those who went to a Center showed a 33-percent improvement in attendance or behavior.\n\nOne of the differences between the centers and the now shuttered wraparound services department is they are in the community and families can walk-in without an appointment.\n\n“It was hard to get an appointment at the school and up here you can just walk in, and then they can see you right there and then instead of trying to get an appointment,” said Reynoso.\n\nRice researchers point out it is easier to measure effectiveness at the Centers since student needs are in one place. Prior to the Centers, students and their families would go to a school and get a referral for support at different locations.\n\nThe Centers were set-up within existing community centers like Mission Milby, the YMCA or City of Houston facility. According to Rice, HISD is hoping to eventually expand to 12 Centers to reach all underserved communities identified by HERC.\n\n“They do ask what school do your kids go to? And they, the people, that’s their work for HISD, so they know how to help you and what you’re needing for that certain grade,” said Reynoso.\n\nHere are the locations of the HISD Sunrise Centers",
+    "file": null,
+    "language": "en",
+    "submitted_at": "2025-08-23T01:33:36.298738+02:00"
+  },
+  "score": 7.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : en\n- **Personnes** : Maria Reynoso, Robert Arnold, Mike Miles\n- **Organisations** : Houston Independent School District, 2 Investigates, Mission Milby, Kinder Institute, Houston Education Research Consortium, Rice University, YMCA, City of Houston\n- **Lieux** : HOUSTON, HISD, Mission Milby, Broadway, southeast Houston, Marian Community Center, South Gessner, southwest Houston\n- **Dates** : 2023\n- **Valeurs numériques** : 80-percent (80.0 %), eighth, 30,900 (30900.0 None), 33-percent (33.0 %), seven (7.0 None), 12 (12.0 None)\n\n## Suggestions d’angles\n\n### 1. Mapping Sunrise: Visualizing HISD's Community Impact\nCreate a geographic visualization of the Sunrise Centers in relation to underserved communities. Highlight the accessibility improvements and potential gaps in service coverage.\n\n### 2. From Wraparound to Sunrise: A New Era in Student Support\nAnalyze the transition from HISD's wraparound services to the Sunrise Centers and their differing approaches. Evaluate how these changes have quantitatively impacted student attendance and behavior.\n\n### 3. The Economics of Education: Cost-Saving Strategies for HISD Families\nExamine how Sunrise Centers are alleviating financial burdens on families by providing essential services. Compare cost savings against local economic data to understand their broader economic impact.\n\n### 4. Attendance and Behavior: Measuring Sunrise Centers' Success\nDelve into the statistical improvements in attendance and behavior among students utilizing the centers. Explore the metrics used to evaluate these improvements and their implications for educational outcomes.\n\n### 5. A Community-Driven Approach: The Role of Local Centers in Education\nInvestigate how integrating educational support within community hubs affects student and family engagement. Use case studies to illustrate the effectiveness of community-centered educational models.\n",
+  "created_at": "2025-08-23T01:35:05.959584+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Mapping Sunrise: Visualizing HISD's Community Impact",
+      "description": "Create a geographic visualization of the Sunrise Centers in relation to underserved communities. Highlight the accessibility improvements and potential gaps in service coverage.",
+      "keywords": [
+        "HISD impact",
+        "community mapping",
+        "education data",
+        "Houston schools",
+        "visualization tools"
+      ],
+      "datasets": [
+        {
+          "title": "IPCC AR4, AR5, and AR6 20-, 100-, and 500-year GWPs",
+          "description": "The International Panel for Climate Change (IPCC) produces regular Assessment Reports that provide global warming potentials (GWPs) for greenhouse gases (GHG) in the context of multiple time horizons including 20, 100, and 500 years. The GWPs (in kg CO2-equivalent per kg GHG) can be multiplied by kg GHGs emitted for use in estimating CO2-equivalent (CO2e) impacts of GHGs emitted. In the context of life cycle assessment (LCA) , the GWPs can be used as characterization factors in of the life cycle impact assessment. This dataset provides 20- (GWP-20), 100- (GWP-100) and 500-year (GWP-500) GWPs from the 4th (AR4), 6th (AR6) IPCC assessment reports, and 20- (GWP-20) and 100-year (GWP-100) GWPs from the 5th (AR5) report (AR5 provided no 500 yr GWPs). Datasets are provided in simple tables in Excel, in the openLCA JSON-LD format compliant with the U.S. Federal LCA Commons standards, and in Apache parquet format for the most efficient import into applications or scripts using languages like Python and R. The names for GHGs are from the Federal LCA Elementary Flow List (FEDEFL) v1.2, which are names preferred for this GHGs in the USEPA's Substance Registry Service. These datasets were created using the LCIA Formatter v1.1.1 (https://github.com/USEPA/LCIAformatter).  The GWP values are provided in these formats for convenient use; the values have not been altered from the values reported in the Assessment Reports. \nPython code used to produce the data is available in a github gist under the supporting data links along with dataset metadata from the LCIA formatter.\n",
+          "link": "https://catalog.data.gov/dataset/ipcc-ar4-ar5-and-ar6-20-100-and-500-year-gwps",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls",
+            "zip",
+            "parquet"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-12-30T07:39:58.555179",
+          "richness": 60
+        },
+        {
+          "title": "Pittsburgh American Community Survey 2015 - Miscellaneous Data",
+          "description": "Miscellaneous Reports from the 2015 American Community Survey Report",
+          "link": "https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-01-24T18:11:53.465881",
+          "richness": 40
+        },
+        {
+          "title": "Algorithmic Impact Assessment",
+          "description": "The Algorithmic Impact Assessment (AIA) is a mandatory risk assessment tool intended to support the Treasury Board’s Directive on Automated Decision-Making. The tool is a questionnaire that determines the impact level of an automated decision-system. It is composed of risk and mitigation questions. Assessment scores are based on many factors including systems design, algorithm, decision type, impact and data.\r\n\r\nThe AIA was developed based on best practices in consultation with both internal and external stakeholders. It was developed in the open, and is available to the public for sharing and re-use under an open license. Its [source code repository](https://github.com/canada-ca/aia-eia-js) is publicly available.",
+          "link": "https://open.canada.ca/data/en/dataset/5423054a-093c-4239-85be-fa0b36ae0b2e",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-11-21T01:26:00.981426",
+          "richness": 50
+        },
+        {
+          "title": "Impacts or expected impacts of challenges related to donations, fourth quarter of 2023",
+          "description": "Impacts or expected impacts of challenges related to donations, by North American Industry Classification System (NAICS), business employment size, type of business, business activity and majority ownership, fourth quarter of 2023.<br>",
+          "link": "https://open.canada.ca/data/en/dataset/6fe8dae4-d327-4b00-900f-d7d4f5e2330a",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-11-27T14:53:49.910718",
+          "richness": 50
+        },
+        {
+          "title": "Passport impact indicators",
+          "description": "Impact indicators on passport applications that were processed within target by Her Majesty's Passport Office.",
+          "link": "https://data.gov.uk/dataset/passport-impact-indicators",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2014-01-02T12:31:14.290532",
+          "richness": 40
+        },
+        {
+          "title": "Houston GIS Open Data Portal",
+          "description": "Access geographic data related to Houston's infrastructure, demographics, and community resources.",
+          "link": "https://cohgis-mycity.opendata.arcgis.com/",
+          "source": "City of Houston",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "U.S. Census Bureau - American Community Survey",
+          "description": "Provides detailed demographic, social, economic, and housing data for communities, useful for identifying underserved areas.",
+          "link": "https://www.census.gov/programs-surveys/acs",
+          "source": "U.S. Census Bureau",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "HISD School Finder",
+          "description": "Interactive map and data on Houston Independent School District's schools, including Sunrise Centers locations.",
+          "link": "https://www.houstonisd.org/schoolfinder",
+          "source": "Houston Independent School District",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "Houston GIS Open Data Portal",
+          "description": "Access geographic data related to Houston's infrastructure, demographics, and community resources.",
+          "link": "https://cohgis-mycity.opendata.arcgis.com/",
+          "source": "City of Houston"
+        },
+        {
+          "title": "U.S. Census Bureau - American Community Survey",
+          "description": "Provides detailed demographic, social, economic, and housing data for communities, useful for identifying underserved areas.",
+          "link": "https://www.census.gov/programs-surveys/acs",
+          "source": "U.S. Census Bureau"
+        },
+        {
+          "title": "HISD School Finder",
+          "description": "Interactive map and data on Houston Independent School District's schools, including Sunrise Centers locations.",
+          "link": "https://www.houstonisd.org/schoolfinder",
+          "source": "Houston Independent School District"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Répartition géographique des Sunrise Centers",
+          "chart_type": "choropleth",
+          "x": "Zones géographiques",
+          "y": "Nombre de Sunrise Centers",
+          "note": "Utiliser des données SIG pour représenter les centres sur une carte."
+        },
+        {
+          "title": "Accessibilité des Sunrise Centers par communauté",
+          "chart_type": "heatmap",
+          "x": "Communautés",
+          "y": "Distance moyenne aux Sunrise Centers",
+          "note": "Les données de distance peuvent être calculées à partir des adresses des centres et des communautés."
+        },
+        {
+          "title": "Comparaison des services offerts et des besoins communautaires",
+          "chart_type": "bar",
+          "x": "Types de services",
+          "y": "Niveau de besoin vs. offre",
+          "note": "Comparer les services disponibles dans les Sunrise Centers avec les besoins déclarés par les communautés."
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "From Wraparound to Sunrise: A New Era in Student Support",
+      "description": "Analyze the transition from HISD's wraparound services to the Sunrise Centers and their differing approaches. Evaluate how these changes have quantitatively impacted student attendance and behavior.",
+      "keywords": [
+        "student support",
+        "wraparound services",
+        "educational programs",
+        "mental health",
+        "community engagement"
+      ],
+      "datasets": [
+        {
+          "title": "Supply Chain Greenhouse Gas Emission Factors v1.3 by NAICS-6",
+          "description": "The datasets comprise greenhouse gas (GHG) emission factors (Factors) for 1,016 U.S. commodities as defined by the 2017 version of the North American Industry Classification System (NAICS). The Factors are based on GHG data for 2022. Factors are given for all NAICS-defined commodities at the 6-digit level except for electricity, government, and households. Each record consists of three factor types as in the previous releases: Supply Chain Emissions without Margins (SEF), Margins of Supply Chain Emissions (MEF), and Supply Chain Emissions with Margins (SEF+MEF). One set of Factors provides kg carbon dioxide equivalents (CO2e) per 2022 U.S. dollar (USD) for all GHGs combined using 100-yr global warming potentials from IPCC 5th report (AR5) to calculate the equivalents. In this dataset there is one SEF, MEF and SEF+MEF per commodity. The other dataset of Factors provides kg of each unique GHG emitted per 2022 dollar per commodity without the CO2e calculation. The dollar in the denominator of all factors uses purchaser prices. See the supporting file 'Aboutv1.3SupplyChainGHGEmissionFactors.docx' for complete documentation of this dataset. ",
+          "link": "https://catalog.data.gov/dataset/supply-chain-greenhouse-gas-emission-factors-v1-3-by-naics-6",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-07-10T18:42:30.962320",
+          "richness": 45
+        },
+        {
+          "title": "Supply Chain Greenhouse Gas Emission Factors v1.2 by NAICS-6",
+          "description": "The datasets are comprised of greenhouse gas (GHG) emission factors (Factors) for 1,016 U.S. commodities as defined by the 2017 version of the North American Industry Classification System (NAICS). The Factors are based on GHG data representing 2019. Factors are given for all NAICS-defined commodities at the 6-digit level except for electricity, government, and households. Each record consists of three factor types as in the previous releases: Supply Chain Emissions without Margins (SEF), Margins of Supply Chain Emissions (MEF), and Supply Chain Emissions with Margins (SEF+MEF). One set of Factors (SupplyChainGHGEmissionFactors_v1.2_NAICS_CO2e_USD2021.csv) provides kg carbon dioxide equivalents (CO2e) per USD for all GHGs combined using 100 yr global warming potentials from the 4th IPPC Assessment report to calculate the equivalents. In this dataset there is one SEF, MEF and SEF+MEF per commodity. The other dataset of Factors (SupplyChainGHGEmissionFactors_v1.2_NAICS_byGHG_USD2021.csv) provides kg of each unique GHG emitted per dollar per commodity without the CO2e calculation. The dollar (USD) in the denominator of all factors uses purchaser prices in 2021 USD.  See the supporting file 'Aboutthe2019v1.2SupplyChainGHGEmissionFactors.pdf' for complete documentation of this dataset.",
+          "link": "https://catalog.data.gov/dataset/supply-chain-greenhouse-gas-emission-factors-v1-2-by-naics-6",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-04-20T20:43:47.426365",
+          "richness": 40
+        },
+        {
+          "title": "Student response to questions regarding their parents' support about school, by sex, age group and selected countries",
+          "description": "This table contains 2610 series, with data for years 1994 - 1998 (not all combinations necessarily have data for all years), and was last released on 2007-01-29.  This table contains data described by the following dimensions (Not all combinations are available): Geography (29 items: Austria; Belgium (French speaking);Canada; Belgium (Flemish speaking) ...), Sex (2 items: Males; Females ...), Age groups (3 items: 11 years;13 years;15 years ...), Parental support (3 items: If I have problems at school; my parent(s) are ready to help; My parent(s) encourage me to do well at school; My parent(s) are willing to come to the school to talk to teachers ...), Frequency (5 items: Never; Sometimes; Often; Rarely ...).",
+          "link": "https://open.canada.ca/data/en/dataset/46e8e7ba-54a1-4149-aaa4-e128b2c60057",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-01-17T22:24:20.308325",
+          "richness": 45
+        },
+        {
+          "title": "Fact Sheet - Child Support",
+          "description": "This Fact Sheet provides general information about child support under the Divorce Act.",
+          "link": "https://open.canada.ca/data/en/dataset/95ef5c38-ecbc-4317-9046-aa72d614b7b1",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-05-17T21:26:07.461934",
+          "richness": 35
+        },
+        {
+          "title": "Student visitors",
+          "description": "Research into the student visitors route which allows people to visit the UK for up to six months to undertake a short course of study. The research investigates who is using this growing short-term study route, and if they are using it as intended by analysing samples of non visa nationals, successful applicants for a student visit visa and unsuccessful applicants for a student visit visa.",
+          "link": "https://data.gov.uk/dataset/student-visas",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2013-12-19T10:28:47.285969",
+          "richness": 35
+        },
+        {
+          "title": "Texas Education Agency - Student Attendance Reports",
+          "description": "Provides detailed reports on student attendance across Texas, useful for examining trends in HISD.",
+          "link": "https://tea.texas.gov/reports-and-data/student-data/student-attendance",
+          "source": "Texas Education Agency",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "HISD Wraparound Services Data",
+          "description": "Data on the implementation and outcomes of wraparound services in HISD, including student behavior metrics.",
+          "link": "https://www.houstonisd.org/wraparound",
+          "source": "Houston Independent School District",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "National Center for Education Statistics - School Safety and Discipline",
+          "description": "National data on student behavior and discipline, which can help compare trends before and after the transition.",
+          "link": "https://nces.ed.gov/programs/crime/",
+          "source": "National Center for Education Statistics",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "Texas Education Agency - Student Attendance Reports",
+          "description": "Provides detailed reports on student attendance across Texas, useful for examining trends in HISD.",
+          "link": "https://tea.texas.gov/reports-and-data/student-data/student-attendance",
+          "source": "Texas Education Agency"
+        },
+        {
+          "title": "HISD Wraparound Services Data",
+          "description": "Data on the implementation and outcomes of wraparound services in HISD, including student behavior metrics.",
+          "link": "https://www.houstonisd.org/wraparound",
+          "source": "Houston Independent School District"
+        },
+        {
+          "title": "National Center for Education Statistics - School Safety and Discipline",
+          "description": "National data on student behavior and discipline, which can help compare trends before and after the transition.",
+          "link": "https://nces.ed.gov/programs/crime/",
+          "source": "National Center for Education Statistics"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Impact sur la fréquentation des élèves avant/après Sunrise",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Taux de fréquentation (%)",
+          "note": "Comparer les données de fréquentation avant et après l'introduction des Sunrise Centers."
+        },
+        {
+          "title": "Comparaison du comportement des élèves : Wraparound vs Sunrise",
+          "chart_type": "bar",
+          "x": "Type de service",
+          "y": "Incidents de comportement (nombre)",
+          "note": "Données collectées sur les incidents disciplinaires annuels par type de service."
+        },
+        {
+          "title": "Évolution des services Wraparound et Sunrise",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Type de service",
+          "note": "Visualisation de l'évolution des services offerts et de leur adoption par année."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "The Economics of Education: Cost-Saving Strategies for HISD Families",
+      "description": "Examine how Sunrise Centers are alleviating financial burdens on families by providing essential services. Compare cost savings against local economic data to understand their broader economic impact.",
+      "keywords": [
+        "education costs",
+        "HISD budget",
+        "school funding",
+        "family savings",
+        "education expenses"
+      ],
+      "datasets": [
+        {
+          "title": "Fruit and Vegetable Prices",
+          "description": "How much do fruits and vegetables cost? ERS estimated average prices for 153 commonly consumed fresh and processed fruits and vegetables.",
+          "link": "https://catalog.data.gov/dataset/fruit-and-vegetable-prices",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-04-21T20:41:29.599892",
+          "richness": 55
+        },
+        {
+          "title": "2017-18 Harassment or Bullying Civil Rights Data Collection",
+          "description": "This set of Excel files contains data on students reported as harassed or bullied or disciplined for harassment or bullying on the basis of sex, race, or disability category for all states. Each file contains three spreadsheets: total students, male students, and female students.",
+          "link": "https://catalog.data.gov/dataset/2017-18-harassment-or-bullying-civil-rights-data-collection",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-10-25T13:10:30.174558",
+          "richness": 50
+        },
+        {
+          "title": "Education Costs as per the Public Accounts of Canada",
+          "description": "At the end of each fiscal year, government-wide financial information is published in the Public Accounts. This dataset, based on the Volume 3 of the Public Accounts, provides details of education costs incurred in the given fiscal year. For the purpose of this statement, an education cost represents the cost of any long-term education activity. That activity is any training or development given to a Government employee and conducted at an educational institution outside of the Public Service that amounted or will amount to a total of 65 working days or more over a maximum period of three (3) years, or that involved or will involve total expenditures in excess of $25,000 (including salary). This dataset is from the Public Accounts of Canada and is not the official record of information. The official version of records can be found on the Receiver General website for the most recent fiscal year and the Library and Archives website for historical years.",
+          "link": "https://open.canada.ca/data/en/dataset/f2f51625-148b-40b7-8a4c-140c285e4d70",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-01-21T06:21:11.525557",
+          "richness": 55
+        },
+        {
+          "title": "Total water costs in manufacturing industries, by water cost component and industry",
+          "description": "<p>Total water costs for the manufacturing industries, by water cost component, for Canada, provinces, territories or drainage regions. The unit of measure is thousands of dollars.\n</p>\n",
+          "link": "https://open.canada.ca/data/en/dataset/172f70ec-cf22-4aec-a94e-6e3061791b9e",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-03-18T13:51:01.474796",
+          "richness": 50
+        },
+        {
+          "title": "Translation Costs",
+          "description": "This dataset contains details of all translation and interpreting costs incurred by Blaby District Council for each financial year since 2011/12. It will be updated on an annual basis.",
+          "link": "https://data.gov.uk/dataset/translation-costs",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2019-04-08T15:32:20.927151",
+          "richness": 40
+        },
+        {
+          "title": "National Center for Education Statistics (NCES)",
+          "description": "Provides comprehensive data on U.S. education, including financial statistics and cost-saving strategies.",
+          "link": "https://nces.ed.gov/",
+          "source": "NCES",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "U.S. Census Bureau - Education Finance Data",
+          "description": "Offers detailed financial data on education spending, enabling analysis of cost savings for families.",
+          "link": "https://www.census.gov/programs-surveys/school-finances.html",
+          "source": "U.S. Census Bureau",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "Texas Education Agency (TEA) - Financial Reports",
+          "description": "Contains financial reports and data specific to Texas, useful for analyzing local economic impacts.",
+          "link": "https://tea.texas.gov/finance-and-grants/financial-compliance/financial-accountability",
+          "source": "Texas Education Agency",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "National Center for Education Statistics (NCES)",
+          "description": "Provides comprehensive data on U.S. education, including financial statistics and cost-saving strategies.",
+          "link": "https://nces.ed.gov/",
+          "source": "NCES"
+        },
+        {
+          "title": "U.S. Census Bureau - Education Finance Data",
+          "description": "Offers detailed financial data on education spending, enabling analysis of cost savings for families.",
+          "link": "https://www.census.gov/programs-surveys/school-finances.html",
+          "source": "U.S. Census Bureau"
+        },
+        {
+          "title": "Texas Education Agency (TEA) - Financial Reports",
+          "description": "Contains financial reports and data specific to Texas, useful for analyzing local economic impacts.",
+          "link": "https://tea.texas.gov/finance-and-grants/financial-compliance/financial-accountability",
+          "source": "Texas Education Agency"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Cost Savings from Sunrise Centers vs Local Averages",
+          "chart_type": "bar",
+          "x": "Service Type",
+          "y": "Cost Savings ($)",
+          "note": "Compare average cost savings per service provided by Sunrise Centers against local market rates. Source: Local economic data and Sunrise Centers reports."
+        },
+        {
+          "title": "Financial Impact of Sunrise Centers on HISD Families",
+          "chart_type": "donut + bar",
+          "x": "Family Income Bracket",
+          "y": "Percentage of Income Saved (%)",
+          "note": "Visualize the proportion of income saved by different family income brackets due to services provided by Sunrise Centers. Source: HISD family income data and service usage reports."
+        },
+        {
+          "title": "Broader Economic Impact of Sunrise Centers",
+          "chart_type": "heatmap",
+          "x": "Year",
+          "y": "Economic Indicator",
+          "note": "Analyze how the presence of Sunrise Centers correlates with changes in local economic indicators over time. Source: Local economic data and Sunrise Centers activity reports."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Attendance and Behavior: Measuring Sunrise Centers' Success",
+      "description": "Delve into the statistical improvements in attendance and behavior among students utilizing the centers. Explore the metrics used to evaluate these improvements and their implications for educational outcomes.",
+      "keywords": [
+        "student attendance",
+        "behavior metrics",
+        "Sunrise Centers",
+        "educational outcomes",
+        "program evaluation"
+      ],
+      "datasets": [
+        {
+          "title": "2017-18 Harassment or Bullying Civil Rights Data Collection",
+          "description": "This set of Excel files contains data on students reported as harassed or bullied or disciplined for harassment or bullying on the basis of sex, race, or disability category for all states. Each file contains three spreadsheets: total students, male students, and female students.",
+          "link": "https://catalog.data.gov/dataset/2017-18-harassment-or-bullying-civil-rights-data-collection",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-10-25T13:10:30.174558",
+          "richness": 50
+        },
+        {
+          "title": "Civil Rights Data Collection (CRDC) for the 2017-18 school year",
+          "description": "The Civil Rights Data Collection, 2017-18 (CRDC 2017-18) is part of the Civil Rights Data Collection (CRDC) program; program data are available beginning with the 2000 collection at https://civilrightsdata.ed.gov/data. CRDC 2017-18 is a cross-sectional survey that collects data on key education and civil rights issues in the nation's public schools, which include student enrollment and educational programs and services, disaggregated by race/ethnicity, sex, limited English proficiency, and disability. LEAs submit administrative records about schools in the district. CRDC 2017-18 is a universe survey. Key statistics produced from CRDC 2017-18 can provide information about critical civil rights issues as well as contextual information on the state of civil rights in the nation, including enrollment demographics, advanced placement, school discipline, and special education services.",
+          "link": "https://catalog.data.gov/dataset/civil-rights-data-collection-crdc-for-the-2017-18-school-year",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-10-25T13:09:32.101440",
+          "richness": 45
+        },
+        {
+          "title": "Population, aged 15 to 29, non-students and students by type of institution attended, age and labour force status",
+          "description": "Distribution of the population aged 15 to 29, non-students and students by type of institution attended, by age and labour force status, Canada. This table is included in Section E: Transitions and outcomes: Transitions to the labour market, of the Pan Canadian Education Indicators Program (PCEIP). PCEIP draws from a wide variety of data sources to provide information on the school-age population, elementary, secondary and postsecondary education, transitions, and labour market outcomes. The program presents indicators for all of Canada, the provinces, the territories, as well as selected international comparisons and comparisons over time. PCEIP is an ongoing initiative of the Canadian Education Statistics Council, a partnership between Statistics Canada and the Council of Ministers of Education, Canada that provides a set of statistical measures on education systems in Canada.",
+          "link": "https://open.canada.ca/data/en/dataset/22e7f72f-94ce-42dd-bbc9-d6137e073052",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-10-24T13:51:21.170170",
+          "richness": 55
+        },
+        {
+          "title": "Proportion of students who are working, aged 15 to 29, by age and type of institution attended",
+          "description": "Proportion of students aged 15 to 29 who were also working, by age and type of institution attended, Canada. This table is included in Section E: Transitions and outcomes: Transitions to the labour market of the Pan Canadian Education Indicators Program (PCEIP). PCEIP draws from a wide variety of data sources to provide information on the school-age population, elementary, secondary and postsecondary education, transitions, and labour market outcomes. The program presents indicators for all of Canada, the provinces, the territories, as well as selected international comparisons and comparisons over time. PCEIP is an ongoing initiative of the Canadian Education Statistics Council, a partnership between Statistics Canada and the Council of Ministers of Education, Canada that provides a set of statistical measures on education systems in Canada.",
+          "link": "https://open.canada.ca/data/en/dataset/a7d9b059-bf05-457e-95a6-fdb09b059f92",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-10-24T13:51:20.252109",
+          "richness": 55
+        },
+        {
+          "title": "Breeze attendances",
+          "description": "Breeze offers events and information for children and young people under the age of 19.\n\nPlease note\n-----------\n\n*   Unfortunately 2010 data is not available. It is also acknowledged that there is missing information in some of the datasets.",
+          "link": "https://data.gov.uk/dataset/breeze-attendances",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2021-08-04T16:56:54.826784",
+          "richness": 40
+        },
+        {
+          "title": "National Center for Education Statistics (NCES)",
+          "description": "Comprehensive data on U.S. education, including student attendance and behavior metrics.",
+          "link": "https://nces.ed.gov/",
+          "source": "NCES",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "UNESCO Institute for Statistics (UIS)",
+          "description": "Global education statistics, including indicators on student attendance and educational outcomes.",
+          "link": "http://uis.unesco.org/",
+          "source": "UNESCO",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "OECD Education Statistics",
+          "description": "Data on educational performance and outcomes, including metrics on student behavior and attendance.",
+          "link": "https://www.oecd.org/education/database.htm",
+          "source": "OECD",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "National Center for Education Statistics (NCES)",
+          "description": "Comprehensive data on U.S. education, including student attendance and behavior metrics.",
+          "link": "https://nces.ed.gov/",
+          "source": "NCES"
+        },
+        {
+          "title": "UNESCO Institute for Statistics (UIS)",
+          "description": "Global education statistics, including indicators on student attendance and educational outcomes.",
+          "link": "http://uis.unesco.org/",
+          "source": "UNESCO"
+        },
+        {
+          "title": "OECD Education Statistics",
+          "description": "Data on educational performance and outcomes, including metrics on student behavior and attendance.",
+          "link": "https://www.oecd.org/education/database.htm",
+          "source": "OECD"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Amélioration de la fréquentation des Sunrise Centers",
+          "chart_type": "line",
+          "x": "Mois",
+          "y": "Taux de fréquentation (%)",
+          "note": "Source : Données internes des Sunrise Centers, mises à jour mensuellement"
+        },
+        {
+          "title": "Comportement des étudiants avant et après l'utilisation des centres",
+          "chart_type": "bar",
+          "x": "Catégorie de comportement",
+          "y": "Nombre d'incidents",
+          "note": "Comparaison des incidents avant et après l'inscription aux Sunrise Centers"
+        },
+        {
+          "title": "Corrélation entre fréquentation et résultats scolaires",
+          "chart_type": "scatter",
+          "x": "Taux de fréquentation (%)",
+          "y": "Amélioration des résultats scolaires (%)",
+          "note": "Analyse des résultats scolaires en fonction de la fréquentation des Sunrise Centers"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "A Community-Driven Approach: The Role of Local Centers in Education",
+      "description": "Investigate how integrating educational support within community hubs affects student and family engagement. Use case studies to illustrate the effectiveness of community-centered educational models.",
+      "keywords": [
+        "community education",
+        "local learning centers",
+        "educational programs",
+        "community involvement",
+        "local education impact"
+      ],
+      "datasets": [
+        {
+          "title": "Warehouse and Retail Sales",
+          "description": "This dataset contains a list of sales and movement data by item and department appended monthly.\r\nUpdate Frequency : Monthly",
+          "link": "https://catalog.data.gov/dataset/warehouse-and-retail-sales",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json",
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-08-11T16:50:49.074245",
+          "richness": 85
+        },
+        {
+          "title": "Residential Construction Permits by County",
+          "description": "This dataset contains data on permits for residential construction collected in the Census Bureau's Building Permits Survey. Data is aggregated to the County level. Data is only for final permits, not preliminary permits. Final permit data is published in May of the following year. Annual data are available from 1980 through the most recent reporting year, and may also contain imputed values. This dataset is part of the State of the Cities Data Systems (SOCDS).",
+          "link": "https://catalog.data.gov/dataset/residential-construction-permits-by-county",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-03-01T02:04:53.232411",
+          "richness": 40
+        },
+        {
+          "title": "Forest-Reliant Communities, 1996 - Education Index",
+          "description": "The education index is a measure of the proportion of the population 15 years of age and over who have post-secondary qualifications compared to the Canadian proportion meeting the same criteria. The index values are generally lower than the Canadian average. The median value is 0.78, and 88% of the communities have a value of less than 1.00 which is the Canadian norm. The values tend to be higher in Western Canada, especially in the southern part of British Columbia, and also in the larger communities with a population of 5000 or greater.",
+          "link": "https://open.canada.ca/data/en/dataset/db357a80-8893-11e0-ae97-6cf049291510",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2022-03-14T19:44:29.517957",
+          "richness": 35
+        },
+        {
+          "title": "Nunavut Communities",
+          "description": "Nunavut’s 26 000 inhabitants live in 28 communities widely scattered across 2 million square kilometres. All communities are accessible by air and by sea. The Inuit have occupied the region for thousands of years and form almost 85 percent of the current population. Their language, Inuktitut is spoken by 80 per cent of the population. Nunavut's society is the youngest in Canada, with half the population under 21.",
+          "link": "https://open.canada.ca/data/en/dataset/e71d1dcf-8893-11e0-bdba-6cf049291510",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2022-03-14T19:41:03.618357",
+          "richness": 35
+        },
+        {
+          "title": "Children, Education and Communities – Temporary Staffing Figures",
+          "description": "Temporary staffing figures for City of York Council directorate Children, Education and Communities.\r\n\r\nDetails shown are the costs and the FTE (full time equivalent) for each month by each specific department including the roles of the temporary staff and also the supplier who they are employed by.\r\n\r\nThe details are for each year starting at the financial year of 2010/11.\r\n\r\nAny negative figures are due to accrual reversals (matching invoices may be processed in future months), credit note from the supplier when an invoice is incorrect or a recode of the charge to another department within City of York Council.\r\n",
+          "link": "https://data.gov.uk/dataset/cses-temporary-staffing-figures",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-01-27T09:02:20.546223",
+          "richness": 50
+        },
+        {
+          "title": "National Center for Education Statistics (NCES)",
+          "description": "Comprehensive data on U.S. education including community-based educational initiatives and student engagement metrics.",
+          "link": "https://nces.ed.gov/",
+          "source": "NCES",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "OECD Education Statistics",
+          "description": "International data on education systems, including community involvement and family engagement in education.",
+          "link": "https://www.oecd.org/education/database.htm",
+          "source": "OECD",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "UNESCO Institute for Statistics (UIS)",
+          "description": "Global education data focusing on community-driven educational models and their impact on student outcomes.",
+          "link": "http://uis.unesco.org/",
+          "source": "UNESCO",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "National Center for Education Statistics (NCES)",
+          "description": "Comprehensive data on U.S. education including community-based educational initiatives and student engagement metrics.",
+          "link": "https://nces.ed.gov/",
+          "source": "NCES"
+        },
+        {
+          "title": "OECD Education Statistics",
+          "description": "International data on education systems, including community involvement and family engagement in education.",
+          "link": "https://www.oecd.org/education/database.htm",
+          "source": "OECD"
+        },
+        {
+          "title": "UNESCO Institute for Statistics (UIS)",
+          "description": "Global education data focusing on community-driven educational models and their impact on student outcomes.",
+          "link": "http://uis.unesco.org/",
+          "source": "UNESCO"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Impact des centres communautaires sur l'engagement familial",
+          "chart_type": "bar",
+          "x": "Type de centre communautaire",
+          "y": "Niveau d'engagement familial (%)",
+          "note": "Comparer différents types de centres communautaires; source : études de cas locales"
+        },
+        {
+          "title": "Participation des élèves aux programmes éducatifs communautaires",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de participants",
+          "note": "Données annuelles sur la participation; source : rapports des centres communautaires"
+        },
+        {
+          "title": "Satisfaction des familles vis-à-vis des centres éducatifs locaux",
+          "chart_type": "donut",
+          "x": "Niveau de satisfaction",
+          "y": "Pourcentage de familles",
+          "note": "Enquête menée auprès des familles participant aux programmes; source : sondage interne"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5165,
+      "type": "PER",
+      "value": "Maria Reynoso",
+      "context": null
+    },
+    {
+      "id": 5166,
+      "type": "PER",
+      "value": "Robert Arnold",
+      "context": null
+    },
+    {
+      "id": 5167,
+      "type": "PER",
+      "value": "Mike Miles",
+      "context": null
+    },
+    {
+      "id": 5168,
+      "type": "ORG",
+      "value": "Houston Independent School District",
+      "context": null
+    },
+    {
+      "id": 5169,
+      "type": "ORG",
+      "value": "2 Investigates",
+      "context": null
+    },
+    {
+      "id": 5170,
+      "type": "ORG",
+      "value": "Mission Milby",
+      "context": null
+    },
+    {
+      "id": 5171,
+      "type": "ORG",
+      "value": "Kinder Institute",
+      "context": null
+    },
+    {
+      "id": 5172,
+      "type": "ORG",
+      "value": "Houston Education Research Consortium",
+      "context": null
+    },
+    {
+      "id": 5173,
+      "type": "ORG",
+      "value": "Rice University",
+      "context": null
+    },
+    {
+      "id": 5174,
+      "type": "ORG",
+      "value": "YMCA",
+      "context": null
+    },
+    {
+      "id": 5175,
+      "type": "ORG",
+      "value": "City of Houston",
+      "context": null
+    },
+    {
+      "id": 5176,
+      "type": "LOC",
+      "value": "HOUSTON",
+      "context": null
+    },
+    {
+      "id": 5177,
+      "type": "LOC",
+      "value": "HISD",
+      "context": null
+    },
+    {
+      "id": 5178,
+      "type": "LOC",
+      "value": "Mission Milby",
+      "context": null
+    },
+    {
+      "id": 5179,
+      "type": "LOC",
+      "value": "Broadway",
+      "context": null
+    },
+    {
+      "id": 5180,
+      "type": "LOC",
+      "value": "southeast Houston",
+      "context": null
+    },
+    {
+      "id": 5181,
+      "type": "LOC",
+      "value": "Marian Community Center",
+      "context": null
+    },
+    {
+      "id": 5182,
+      "type": "LOC",
+      "value": "South Gessner",
+      "context": null
+    },
+    {
+      "id": 5183,
+      "type": "LOC",
+      "value": "southwest Houston",
+      "context": null
+    },
+    {
+      "id": 5184,
+      "type": "DATE",
+      "value": "2023",
+      "context": null
+    },
+    {
+      "id": 5185,
+      "type": "NUM",
+      "value": "80.0",
+      "context": null
+    },
+    {
+      "id": 5186,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5187,
+      "type": "NUM",
+      "value": "30900.0",
+      "context": null
+    },
+    {
+      "id": 5188,
+      "type": "NUM",
+      "value": "33.0",
+      "context": null
+    },
+    {
+      "id": 5189,
+      "type": "NUM",
+      "value": "7.0",
+      "context": null
+    },
+    {
+      "id": 5190,
+      "type": "NUM",
+      "value": "12.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 787,
+      "title": "Mapping Sunrise: Visualizing HISD's Community Impact",
+      "description": "Create a geographic visualization of the Sunrise Centers in relation to underserved communities. Highlight the accessibility improvements and potential gaps in service coverage.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 788,
+      "title": "From Wraparound to Sunrise: A New Era in Student Support",
+      "description": "Analyze the transition from HISD's wraparound services to the Sunrise Centers and their differing approaches. Evaluate how these changes have quantitatively impacted student attendance and behavior.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 789,
+      "title": "The Economics of Education: Cost-Saving Strategies for HISD Families",
+      "description": "Examine how Sunrise Centers are alleviating financial burdens on families by providing essential services. Compare cost savings against local economic data to understand their broader economic impact.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 790,
+      "title": "Attendance and Behavior: Measuring Sunrise Centers' Success",
+      "description": "Delve into the statistical improvements in attendance and behavior among students utilizing the centers. Explore the metrics used to evaluate these improvements and their implications for educational outcomes.",
+      "order": 3,
+      "visualizations": []
+    },
+    {
+      "id": 791,
+      "title": "A Community-Driven Approach: The Role of Local Centers in Education",
+      "description": "Investigate how integrating educational support within community hubs affects student and family engagement. Use case studies to illustrate the effectiveness of community-centered educational models.",
+      "order": 4,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4077,
+      "title": "Translation Costs",
+      "description": "This dataset contains details of all translation and interpreting costs incurred by Blaby District Council for each financial year since 2011/12. It will be updated on an annual basis.",
+      "link": "https://data.gov.uk/dataset/translation-costs",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "Blaby District Council",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2019-04-08T15:32:20.927151",
+      "richness": 40
+    },
+    {
+      "id": 4078,
+      "title": "National Center for Education Statistics (NCES)",
+      "description": "Provides comprehensive data on U.S. education, including financial statistics and cost-saving strategies.",
+      "link": "https://nces.ed.gov/",
+      "source": "NCES",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4079,
+      "title": "U.S. Census Bureau - Education Finance Data",
+      "description": "Offers detailed financial data on education spending, enabling analysis of cost savings for families.",
+      "link": "https://www.census.gov/programs-surveys/school-finances.html",
+      "source": "U.S. Census Bureau",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4080,
+      "title": "Texas Education Agency (TEA) - Financial Reports",
+      "description": "Contains financial reports and data specific to Texas, useful for analyzing local economic impacts.",
+      "link": "https://tea.texas.gov/finance-and-grants/financial-compliance/financial-accountability",
+      "source": "Texas Education Agency",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4057,
+      "title": "IPCC AR4, AR5, and AR6 20-, 100-, and 500-year GWPs",
+      "description": "The International Panel for Climate Change (IPCC) produces regular Assessment Reports that provide global warming potentials (GWPs) for greenhouse gases (GHG) in the context of multiple time horizons including 20, 100, and 500 years. The GWPs (in kg CO2-equivalent per kg GHG) can be multiplied by kg GHGs emitted for use in estimating CO2-equivalent (CO2e) impacts of GHGs emitted. In the context of life cycle assessment (LCA) , the GWPs can be used as characterization factors in of the life cycle impact assessment. This dataset provides 20- (GWP-20), 100- (GWP-100) and 500-year (GWP-500) GWPs from the 4th (AR4), 6th (AR6) IPCC assessment reports, and 20- (GWP-20) and 100-year (GWP-100) GWPs from the 5th (AR5) report (AR5 provided no 500 yr GWPs). Datasets are provided in simple tables in Excel, in the openLCA JSON-LD format compliant with the U.S. Federal LCA Commons standards, and in Apache parquet format for the most efficient import into applications or scripts using languages like Python and R. The names for GHGs are from the Federal LCA Elementary Flow List (FEDEFL) v1.2, which are names preferred for this GHGs in the USEPA's Substance Registry Service. These datasets were created using the LCIA Formatter v1.1.1 (https://github.com/USEPA/LCIAformatter).  The GWP values are provided in these formats for convenient use; the values have not been altered from the values reported in the Assessment Reports. \nPython code used to produce the data is available in a github gist under the supporting data links along with dataset metadata from the LCIA formatter.\n",
+      "link": "https://catalog.data.gov/dataset/ipcc-ar4-ar5-and-ar6-20-100-and-500-year-gwps",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls",
+        "zip",
+        "parquet"
+      ],
+      "organisation": "U.S. Environmental Protection Agency",
+      "licence": "other-license-specified",
+      "last_modified": "2023-12-30T07:39:58.555179",
+      "richness": 60
+    },
+    {
+      "id": 4058,
+      "title": "Pittsburgh American Community Survey 2015 - Miscellaneous Data",
+      "description": "Miscellaneous Reports from the 2015 American Community Survey Report",
+      "link": "https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "Allegheny County / City of Pittsburgh / Western PA Regional Data Center",
+      "licence": "License not specified",
+      "last_modified": "2023-01-24T18:11:53.465881",
+      "richness": 40
+    },
+    {
+      "id": 4059,
+      "title": "Algorithmic Impact Assessment",
+      "description": "The Algorithmic Impact Assessment (AIA) is a mandatory risk assessment tool intended to support the Treasury Board’s Directive on Automated Decision-Making. The tool is a questionnaire that determines the impact level of an automated decision-system. It is composed of risk and mitigation questions. Assessment scores are based on many factors including systems design, algorithm, decision type, impact and data.\r\n\r\nThe AIA was developed based on best practices in consultation with both internal and external stakeholders. It was developed in the open, and is available to the public for sharing and re-use under an open license. Its [source code repository](https://github.com/canada-ca/aia-eia-js) is publicly available.",
+      "link": "https://open.canada.ca/data/en/dataset/5423054a-093c-4239-85be-fa0b36ae0b2e",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls"
+      ],
+      "organisation": "Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-11-21T01:26:00.981426",
+      "richness": 50
+    },
+    {
+      "id": 4060,
+      "title": "Impacts or expected impacts of challenges related to donations, fourth quarter of 2023",
+      "description": "Impacts or expected impacts of challenges related to donations, by North American Industry Classification System (NAICS), business employment size, type of business, business activity and majority ownership, fourth quarter of 2023.<br>",
+      "link": "https://open.canada.ca/data/en/dataset/6fe8dae4-d327-4b00-900f-d7d4f5e2330a",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2023-11-27T14:53:49.910718",
+      "richness": 50
+    },
+    {
+      "id": 4061,
+      "title": "Passport impact indicators",
+      "description": "Impact indicators on passport applications that were processed within target by Her Majesty's Passport Office.",
+      "link": "https://data.gov.uk/dataset/passport-impact-indicators",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls"
+      ],
+      "organisation": "HM Passport Office",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2014-01-02T12:31:14.290532",
+      "richness": 40
+    },
+    {
+      "id": 4062,
+      "title": "Houston GIS Open Data Portal",
+      "description": "Access geographic data related to Houston's infrastructure, demographics, and community resources.",
+      "link": "https://cohgis-mycity.opendata.arcgis.com/",
+      "source": "City of Houston",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4063,
+      "title": "U.S. Census Bureau - American Community Survey",
+      "description": "Provides detailed demographic, social, economic, and housing data for communities, useful for identifying underserved areas.",
+      "link": "https://www.census.gov/programs-surveys/acs",
+      "source": "U.S. Census Bureau",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4064,
+      "title": "HISD School Finder",
+      "description": "Interactive map and data on Houston Independent School District's schools, including Sunrise Centers locations.",
+      "link": "https://www.houstonisd.org/schoolfinder",
+      "source": "Houston Independent School District",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4065,
+      "title": "Supply Chain Greenhouse Gas Emission Factors v1.3 by NAICS-6",
+      "description": "The datasets comprise greenhouse gas (GHG) emission factors (Factors) for 1,016 U.S. commodities as defined by the 2017 version of the North American Industry Classification System (NAICS). The Factors are based on GHG data for 2022. Factors are given for all NAICS-defined commodities at the 6-digit level except for electricity, government, and households. Each record consists of three factor types as in the previous releases: Supply Chain Emissions without Margins (SEF), Margins of Supply Chain Emissions (MEF), and Supply Chain Emissions with Margins (SEF+MEF). One set of Factors provides kg carbon dioxide equivalents (CO2e) per 2022 U.S. dollar (USD) for all GHGs combined using 100-yr global warming potentials from IPCC 5th report (AR5) to calculate the equivalents. In this dataset there is one SEF, MEF and SEF+MEF per commodity. The other dataset of Factors provides kg of each unique GHG emitted per 2022 dollar per commodity without the CO2e calculation. The dollar in the denominator of all factors uses purchaser prices. See the supporting file 'Aboutv1.3SupplyChainGHGEmissionFactors.docx' for complete documentation of this dataset. ",
+      "link": "https://catalog.data.gov/dataset/supply-chain-greenhouse-gas-emission-factors-v1-3-by-naics-6",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "U.S. Environmental Protection Agency",
+      "licence": "other-license-specified",
+      "last_modified": "2024-07-10T18:42:30.962320",
+      "richness": 45
+    },
+    {
+      "id": 4081,
+      "title": "2017-18 Harassment or Bullying Civil Rights Data Collection",
+      "description": "This set of Excel files contains data on students reported as harassed or bullied or disciplined for harassment or bullying on the basis of sex, race, or disability category for all states. Each file contains three spreadsheets: total students, male students, and female students.",
+      "link": "https://catalog.data.gov/dataset/2017-18-harassment-or-bullying-civil-rights-data-collection",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls"
+      ],
+      "organisation": "Department of Education",
+      "licence": "other-license-specified",
+      "last_modified": "2024-10-25T13:10:30.174558",
+      "richness": 50
+    },
+    {
+      "id": 4066,
+      "title": "Supply Chain Greenhouse Gas Emission Factors v1.2 by NAICS-6",
+      "description": "The datasets are comprised of greenhouse gas (GHG) emission factors (Factors) for 1,016 U.S. commodities as defined by the 2017 version of the North American Industry Classification System (NAICS). The Factors are based on GHG data representing 2019. Factors are given for all NAICS-defined commodities at the 6-digit level except for electricity, government, and households. Each record consists of three factor types as in the previous releases: Supply Chain Emissions without Margins (SEF), Margins of Supply Chain Emissions (MEF), and Supply Chain Emissions with Margins (SEF+MEF). One set of Factors (SupplyChainGHGEmissionFactors_v1.2_NAICS_CO2e_USD2021.csv) provides kg carbon dioxide equivalents (CO2e) per USD for all GHGs combined using 100 yr global warming potentials from the 4th IPPC Assessment report to calculate the equivalents. In this dataset there is one SEF, MEF and SEF+MEF per commodity. The other dataset of Factors (SupplyChainGHGEmissionFactors_v1.2_NAICS_byGHG_USD2021.csv) provides kg of each unique GHG emitted per dollar per commodity without the CO2e calculation. The dollar (USD) in the denominator of all factors uses purchaser prices in 2021 USD.  See the supporting file 'Aboutthe2019v1.2SupplyChainGHGEmissionFactors.pdf' for complete documentation of this dataset.",
+      "link": "https://catalog.data.gov/dataset/supply-chain-greenhouse-gas-emission-factors-v1-2-by-naics-6",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "U.S. Environmental Protection Agency",
+      "licence": "other-license-specified",
+      "last_modified": "2023-04-20T20:43:47.426365",
+      "richness": 40
+    },
+    {
+      "id": 4067,
+      "title": "Student response to questions regarding their parents' support about school, by sex, age group and selected countries",
+      "description": "This table contains 2610 series, with data for years 1994 - 1998 (not all combinations necessarily have data for all years), and was last released on 2007-01-29.  This table contains data described by the following dimensions (Not all combinations are available): Geography (29 items: Austria; Belgium (French speaking);Canada; Belgium (Flemish speaking) ...), Sex (2 items: Males; Females ...), Age groups (3 items: 11 years;13 years;15 years ...), Parental support (3 items: If I have problems at school; my parent(s) are ready to help; My parent(s) encourage me to do well at school; My parent(s) are willing to come to the school to talk to teachers ...), Frequency (5 items: Never; Sometimes; Often; Rarely ...).",
+      "link": "https://open.canada.ca/data/en/dataset/46e8e7ba-54a1-4149-aaa4-e128b2c60057",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2023-01-17T22:24:20.308325",
+      "richness": 45
+    },
+    {
+      "id": 4068,
+      "title": "Fact Sheet - Child Support",
+      "description": "This Fact Sheet provides general information about child support under the Divorce Act.",
+      "link": "https://open.canada.ca/data/en/dataset/95ef5c38-ecbc-4317-9046-aa72d614b7b1",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Department of Justice Canada | Ministère de la Justice Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2023-05-17T21:26:07.461934",
+      "richness": 35
+    },
+    {
+      "id": 4069,
+      "title": "Student visitors",
+      "description": "Research into the student visitors route which allows people to visit the UK for up to six months to undertake a short course of study. The research investigates who is using this growing short-term study route, and if they are using it as intended by analysing samples of non visa nationals, successful applicants for a student visit visa and unsuccessful applicants for a student visit visa.",
+      "link": "https://data.gov.uk/dataset/student-visas",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Home Office",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2013-12-19T10:28:47.285969",
+      "richness": 35
+    },
+    {
+      "id": 4070,
+      "title": "Texas Education Agency - Student Attendance Reports",
+      "description": "Provides detailed reports on student attendance across Texas, useful for examining trends in HISD.",
+      "link": "https://tea.texas.gov/reports-and-data/student-data/student-attendance",
+      "source": "Texas Education Agency",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4071,
+      "title": "HISD Wraparound Services Data",
+      "description": "Data on the implementation and outcomes of wraparound services in HISD, including student behavior metrics.",
+      "link": "https://www.houstonisd.org/wraparound",
+      "source": "Houston Independent School District",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4072,
+      "title": "National Center for Education Statistics - School Safety and Discipline",
+      "description": "National data on student behavior and discipline, which can help compare trends before and after the transition.",
+      "link": "https://nces.ed.gov/programs/crime/",
+      "source": "National Center for Education Statistics",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4073,
+      "title": "Fruit and Vegetable Prices",
+      "description": "How much do fruits and vegetables cost? ERS estimated average prices for 153 commonly consumed fresh and processed fruits and vegetables.",
+      "link": "https://catalog.data.gov/dataset/fruit-and-vegetable-prices",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls"
+      ],
+      "organisation": "Department of Agriculture",
+      "licence": "Creative Commons CCZero",
+      "last_modified": "2025-04-21T20:41:29.599892",
+      "richness": 55
+    },
+    {
+      "id": 4074,
+      "title": "2017-18 Harassment or Bullying Civil Rights Data Collection",
+      "description": "This set of Excel files contains data on students reported as harassed or bullied or disciplined for harassment or bullying on the basis of sex, race, or disability category for all states. Each file contains three spreadsheets: total students, male students, and female students.",
+      "link": "https://catalog.data.gov/dataset/2017-18-harassment-or-bullying-civil-rights-data-collection",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls"
+      ],
+      "organisation": "Department of Education",
+      "licence": "other-license-specified",
+      "last_modified": "2024-10-25T13:10:30.174558",
+      "richness": 50
+    },
+    {
+      "id": 4075,
+      "title": "Education Costs as per the Public Accounts of Canada",
+      "description": "At the end of each fiscal year, government-wide financial information is published in the Public Accounts. This dataset, based on the Volume 3 of the Public Accounts, provides details of education costs incurred in the given fiscal year. For the purpose of this statement, an education cost represents the cost of any long-term education activity. That activity is any training or development given to a Government employee and conducted at an educational institution outside of the Public Service that amounted or will amount to a total of 65 working days or more over a maximum period of three (3) years, or that involved or will involve total expenditures in excess of $25,000 (including salary). This dataset is from the Public Accounts of Canada and is not the official record of information. The official version of records can be found on the Receiver General website for the most recent fiscal year and the Library and Archives website for historical years.",
+      "link": "https://open.canada.ca/data/en/dataset/f2f51625-148b-40b7-8a4c-140c285e4d70",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Public Services and Procurement Canada | Services publics et Approvisionnement Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2025-01-21T06:21:11.525557",
+      "richness": 55
+    },
+    {
+      "id": 4076,
+      "title": "Total water costs in manufacturing industries, by water cost component and industry",
+      "description": "<p>Total water costs for the manufacturing industries, by water cost component, for Canada, provinces, territories or drainage regions. The unit of measure is thousands of dollars.\n</p>\n",
+      "link": "https://open.canada.ca/data/en/dataset/172f70ec-cf22-4aec-a94e-6e3061791b9e",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-03-18T13:51:01.474796",
+      "richness": 50
+    },
+    {
+      "id": 4082,
+      "title": "Civil Rights Data Collection (CRDC) for the 2017-18 school year",
+      "description": "The Civil Rights Data Collection, 2017-18 (CRDC 2017-18) is part of the Civil Rights Data Collection (CRDC) program; program data are available beginning with the 2000 collection at https://civilrightsdata.ed.gov/data. CRDC 2017-18 is a cross-sectional survey that collects data on key education and civil rights issues in the nation's public schools, which include student enrollment and educational programs and services, disaggregated by race/ethnicity, sex, limited English proficiency, and disability. LEAs submit administrative records about schools in the district. CRDC 2017-18 is a universe survey. Key statistics produced from CRDC 2017-18 can provide information about critical civil rights issues as well as contextual information on the state of civil rights in the nation, including enrollment demographics, advanced placement, school discipline, and special education services.",
+      "link": "https://catalog.data.gov/dataset/civil-rights-data-collection-crdc-for-the-2017-18-school-year",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "Department of Education",
+      "licence": "other-license-specified",
+      "last_modified": "2024-10-25T13:09:32.101440",
+      "richness": 45
+    },
+    {
+      "id": 4083,
+      "title": "Population, aged 15 to 29, non-students and students by type of institution attended, age and labour force status",
+      "description": "Distribution of the population aged 15 to 29, non-students and students by type of institution attended, by age and labour force status, Canada. This table is included in Section E: Transitions and outcomes: Transitions to the labour market, of the Pan Canadian Education Indicators Program (PCEIP). PCEIP draws from a wide variety of data sources to provide information on the school-age population, elementary, secondary and postsecondary education, transitions, and labour market outcomes. The program presents indicators for all of Canada, the provinces, the territories, as well as selected international comparisons and comparisons over time. PCEIP is an ongoing initiative of the Canadian Education Statistics Council, a partnership between Statistics Canada and the Council of Ministers of Education, Canada that provides a set of statistical measures on education systems in Canada.",
+      "link": "https://open.canada.ca/data/en/dataset/22e7f72f-94ce-42dd-bbc9-d6137e073052",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-10-24T13:51:21.170170",
+      "richness": 55
+    },
+    {
+      "id": 4084,
+      "title": "Proportion of students who are working, aged 15 to 29, by age and type of institution attended",
+      "description": "Proportion of students aged 15 to 29 who were also working, by age and type of institution attended, Canada. This table is included in Section E: Transitions and outcomes: Transitions to the labour market of the Pan Canadian Education Indicators Program (PCEIP). PCEIP draws from a wide variety of data sources to provide information on the school-age population, elementary, secondary and postsecondary education, transitions, and labour market outcomes. The program presents indicators for all of Canada, the provinces, the territories, as well as selected international comparisons and comparisons over time. PCEIP is an ongoing initiative of the Canadian Education Statistics Council, a partnership between Statistics Canada and the Council of Ministers of Education, Canada that provides a set of statistical measures on education systems in Canada.",
+      "link": "https://open.canada.ca/data/en/dataset/a7d9b059-bf05-457e-95a6-fdb09b059f92",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-10-24T13:51:20.252109",
+      "richness": 55
+    },
+    {
+      "id": 4085,
+      "title": "Breeze attendances",
+      "description": "Breeze offers events and information for children and young people under the age of 19.\n\nPlease note\n-----------\n\n*   Unfortunately 2010 data is not available. It is also acknowledged that there is missing information in some of the datasets.",
+      "link": "https://data.gov.uk/dataset/breeze-attendances",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "Leeds City Council",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2021-08-04T16:56:54.826784",
+      "richness": 40
+    },
+    {
+      "id": 4086,
+      "title": "National Center for Education Statistics (NCES)",
+      "description": "Comprehensive data on U.S. education, including student attendance and behavior metrics.",
+      "link": "https://nces.ed.gov/",
+      "source": "NCES",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4087,
+      "title": "UNESCO Institute for Statistics (UIS)",
+      "description": "Global education statistics, including indicators on student attendance and educational outcomes.",
+      "link": "http://uis.unesco.org/",
+      "source": "UNESCO",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4088,
+      "title": "OECD Education Statistics",
+      "description": "Data on educational performance and outcomes, including metrics on student behavior and attendance.",
+      "link": "https://www.oecd.org/education/database.htm",
+      "source": "OECD",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4089,
+      "title": "Warehouse and Retail Sales",
+      "description": "This dataset contains a list of sales and movement data by item and department appended monthly.\r\nUpdate Frequency : Monthly",
+      "link": "https://catalog.data.gov/dataset/warehouse-and-retail-sales",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json",
+        "xml",
+        "csv"
+      ],
+      "organisation": "Montgomery County of Maryland",
+      "licence": "License not specified",
+      "last_modified": "2025-08-11T16:50:49.074245",
+      "richness": 85
+    },
+    {
+      "id": 4090,
+      "title": "Residential Construction Permits by County",
+      "description": "This dataset contains data on permits for residential construction collected in the Census Bureau's Building Permits Survey. Data is aggregated to the County level. Data is only for final permits, not preliminary permits. Final permit data is published in May of the following year. Annual data are available from 1980 through the most recent reporting year, and may also contain imputed values. This dataset is part of the State of the Cities Data Systems (SOCDS).",
+      "link": "https://catalog.data.gov/dataset/residential-construction-permits-by-county",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "Department of Housing and Urban Development",
+      "licence": "License not specified",
+      "last_modified": "2024-03-01T02:04:53.232411",
+      "richness": 40
+    },
+    {
+      "id": 4091,
+      "title": "Forest-Reliant Communities, 1996 - Education Index",
+      "description": "The education index is a measure of the proportion of the population 15 years of age and over who have post-secondary qualifications compared to the Canadian proportion meeting the same criteria. The index values are generally lower than the Canadian average. The median value is 0.78, and 88% of the communities have a value of less than 1.00 which is the Canadian norm. The values tend to be higher in Western Canada, especially in the southern part of British Columbia, and also in the larger communities with a population of 5000 or greater.",
+      "link": "https://open.canada.ca/data/en/dataset/db357a80-8893-11e0-ae97-6cf049291510",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "Natural Resources Canada | Ressources naturelles Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2022-03-14T19:44:29.517957",
+      "richness": 35
+    },
+    {
+      "id": 4092,
+      "title": "Nunavut Communities",
+      "description": "Nunavut’s 26 000 inhabitants live in 28 communities widely scattered across 2 million square kilometres. All communities are accessible by air and by sea. The Inuit have occupied the region for thousands of years and form almost 85 percent of the current population. Their language, Inuktitut is spoken by 80 per cent of the population. Nunavut's society is the youngest in Canada, with half the population under 21.",
+      "link": "https://open.canada.ca/data/en/dataset/e71d1dcf-8893-11e0-bdba-6cf049291510",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "Natural Resources Canada | Ressources naturelles Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2022-03-14T19:41:03.618357",
+      "richness": 35
+    },
+    {
+      "id": 4093,
+      "title": "Children, Education and Communities – Temporary Staffing Figures",
+      "description": "Temporary staffing figures for City of York Council directorate Children, Education and Communities.\r\n\r\nDetails shown are the costs and the FTE (full time equivalent) for each month by each specific department including the roles of the temporary staff and also the supplier who they are employed by.\r\n\r\nThe details are for each year starting at the financial year of 2010/11.\r\n\r\nAny negative figures are due to accrual reversals (matching invoices may be processed in future months), credit note from the supplier when an invoice is incorrect or a recode of the charge to another department within City of York Council.\r\n",
+      "link": "https://data.gov.uk/dataset/cses-temporary-staffing-figures",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "City of York Council",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2025-01-27T09:02:20.546223",
+      "richness": 50
+    },
+    {
+      "id": 4094,
+      "title": "National Center for Education Statistics (NCES)",
+      "description": "Comprehensive data on U.S. education including community-based educational initiatives and student engagement metrics.",
+      "link": "https://nces.ed.gov/",
+      "source": "NCES",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4095,
+      "title": "OECD Education Statistics",
+      "description": "International data on education systems, including community involvement and family engagement in education.",
+      "link": "https://www.oecd.org/education/database.htm",
+      "source": "OECD",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4096,
+      "title": "UNESCO Institute for Statistics (UIS)",
+      "description": "Global education data focusing on community-driven educational models and their impact on student outcomes.",
+      "link": "http://uis.unesco.org/",
+      "source": "UNESCO",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 89716,
+    "entities_count": 26,
+    "angles_count": 5,
+    "datasets_count": 40,
+    "angle_resources_count": 5
+  }
+}

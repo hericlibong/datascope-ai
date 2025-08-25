@@ -1,57 +1,105 @@
 import logging
-from analysis.models import Analysis
+import time
+from analysis.models import Analysis, Article, Entity, Angle, DatasetSuggestion
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
+
+from django.db import transaction
+from rest_framework import status
 from analysis.views import ArticleViewSet, AnalysisViewSet, HistoryAPIView
 from users.views import FeedbackViewSet
 
+from ai_engine.pipeline import run as run_pipeline
+from analysis.serializers import AnalysisDetailSerializer, AngleResourcesSerializer
+
+from django.contrib.auth import get_user_model
+
 logger = logging.getLogger("playground")
+
+def _get_playground_user():
+    User = get_user_model()
+    user, _ = User.objects.get_or_create(
+        username="playground",
+        defaults={"email": "playground@example.com"}
+    )
+    return user
 
 class PlaygroundDebugMixin:
     """
-    - Logge la requête + la réponse (statut, tailles, temps…)
-    - Si query param `debug=1`, ajoute un champ `_debug` dans le payload de réponse
-      (sans modifier le schéma principal consommé par l’UI normale).
+    Injection _debug automatique dès que ?debug=1 est présent, pour TOUTES
+    les réponses des vues Playground (list/retrieve/create/update...).
+    Ajoute aussi timing & compteurs simples.
     """
-    def _add_debug(self, data, extra=None):
-        try:
-            if isinstance(data, dict):
-                data["_debug"] = {**(extra or {})}
-        except Exception:
-            # on ne casse jamais la réponse si debug échoue
-            pass
-        return data
 
-    def _maybe_debug(self, request, data, meta=None):
-        if getattr(request.user, "is_authenticated", False):
-            user_id = request.user.id
-        else:
-            user_id = None
-
-        logger.debug({
-            "path": request.get_full_path(),
-            "method": request.method,
-            "user": user_id,
-            "meta": meta or {},
-            "payload_in_size": len(str(getattr(request, "data", ""))) if hasattr(request, "data") else 0
-        })
-        if request.query_params.get("debug") == "1" and isinstance(data, dict):
-            return self._add_debug(data, extra=meta or {})
-        return data
-
+    def initial(self, request, *args, **kwargs):
+        # point de départ pour le timing
+        self._ts_playground = time.perf_counter()
+        return super().initial(request, *args, **kwargs)
 
     def finalize_response(self, request, response, *args, **kwargs):
-        # Journalisation du statut + taille de sortie
+        # Logging sortie "classique"
         try:
             out_size = len(str(getattr(response, "data", "")))
         except Exception:
             out_size = None
         logger.debug({"status": response.status_code, "payload_out_size": out_size})
+
+        # Injection _debug automatique si demandé et si payload JSON dict
+        try:
+            if request.query_params.get("debug") == "1" and hasattr(response, "data") and isinstance(response.data, dict):
+                try:
+                    dur_ms = int((time.perf_counter() - getattr(self, "_ts_playground", 0)) * 1000)
+                except Exception:
+                    dur_ms = None
+
+                # user id safe
+                if getattr(request.user, "is_authenticated", False):
+                    user_id = request.user.id
+                else:
+                    user_id = None
+
+                # compteurs si dispos
+                d = response.data
+                counts = {}
+                for key in ("entities", "angles", "datasets", "angle_resources"):
+                    if key in d and isinstance(d[key], list):
+                        counts[f"{key}_count"] = len(d[key])
+
+                # section/action indicative
+                section = getattr(self, "debug_section", None)
+                if not section:
+                    # fallback sur le nom de la classe + action DRF si dispo
+                    action = getattr(self, "action", None)
+                    section = f"{self.__class__.__name__}:{action or 'unknown'}"
+
+                d["_debug"] = {
+                    "section": section,
+                    "path": request.get_full_path(),
+                    "method": request.method,
+                    "user": user_id,
+                    "duration_ms": dur_ms,
+                    **counts,
+                }
+                response.data = d
+        except Exception:
+            # on ne casse jamais la réponse si la partie _debug échoue
+            pass
+
         return super().finalize_response(request, response, *args, **kwargs)
+    
+    def _maybe_debug(self, request, data, meta=None):
+        """Compat legacy: les vues qui appellent encore _maybe_debug ne cassent pas.
+        L'injection _debug est désormais faite dans finalize_response()."""
+        return data
+
 
 
 class ArticlePlaygroundViewSet(PlaygroundDebugMixin, ArticleViewSet):
     permission_classes = [AllowAny]
+
+    def perform_create(self, serializer):
+        user = self.request.user if getattr(self.request.user, "is_authenticated", False) else _get_playground_user()
+        serializer.save(user=user)
     
     def create(self, request, *args, **kwargs):
         resp = super().create(request, *args, **kwargs)
@@ -67,15 +115,99 @@ class AnalysisPlaygroundViewSet(PlaygroundDebugMixin, AnalysisViewSet):
     def get_queryset(self):
         user = getattr(self.request, "user", None)
         if not getattr(user, "is_authenticated", False):
-            return Analysis.objects.none()
+            return Analysis.objects.filter(article__user__username="playground").order_by("-created_at")
         return super().get_queryset()
-    
+
     def create(self, request, *args, **kwargs):
-        resp = super().create(request, *args, **kwargs)
-        data = getattr(resp, "data", {})
-        meta = {"section": "analysis/create"}
-        resp.data = self._maybe_debug(request, data, meta)
-        return resp
+        # user playground si anonyme
+        if not getattr(request.user, "is_authenticated", False):
+            request.user = _get_playground_user()
+
+        # 1) article
+        article_id = request.data.get("article")
+        if not article_id:
+            return Response({"article": ["This field is required."]}, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            article = Article.objects.get(id=article_id)
+        except Article.DoesNotExist:
+            return Response({"article": ["Invalid article id."]}, status=status.HTTP_400_BAD_REQUEST)
+
+        # 2) pipeline
+        packaged, markdown, score, angle_resources = run_pipeline(
+            article.content,
+            user_id=str(request.user.id)
+        )
+        angle_resources_payload = AngleResourcesSerializer(angle_resources, many=True).data
+
+        # 3) upsert (create or update)
+        with transaction.atomic():
+            analysis, created = Analysis.objects.get_or_create(
+                article=article,
+                defaults={
+                    "summary": markdown,
+                    "score": score,
+                    "angle_resources": angle_resources_payload,
+                    "profile_label": request.data.get("profile_label", "playground"),
+                },
+            )
+            if not created:
+                # purge des anciens détails
+                Entity.objects.filter(analysis=analysis).delete()
+                Angle.objects.filter(analysis=analysis).delete()
+                DatasetSuggestion.objects.filter(analysis=analysis).delete()
+                # mise à jour des champs principaux
+                analysis.summary = markdown
+                analysis.score = score
+                analysis.angle_resources = angle_resources_payload
+                analysis.profile_label = request.data.get("profile_label", "playground")
+                analysis.save()
+
+            # 4) ENTITIES
+            for person in packaged.extraction.persons:
+                Entity.objects.create(analysis=analysis, type="PER", value=person)
+            for org in packaged.extraction.organizations:
+                Entity.objects.create(analysis=analysis, type="ORG", value=org)
+            for loc in packaged.extraction.locations:
+                Entity.objects.create(analysis=analysis, type="LOC", value=loc)
+            for date in packaged.extraction.dates:
+                Entity.objects.create(analysis=analysis, type="DATE", value=date)
+            for num in packaged.extraction.numbers:
+                Entity.objects.create(analysis=analysis, type="NUM", value=str(getattr(num, "value", num)))
+
+            # 5) ANGLES
+            for idx, ang in enumerate(packaged.angles.angles):
+                Angle.objects.create(
+                    analysis=analysis,
+                    title=ang.title,
+                    description=getattr(ang, "rationale", "") or getattr(ang, "description", ""),
+                    order=idx,
+                )
+
+            # 6) DATASETS
+            for ar in angle_resources:
+                for ds in ar.datasets:
+                    DatasetSuggestion.objects.create(
+                        analysis=analysis,
+                        title=ds.title,
+                        description=ds.description or "",
+                        link=ds.source_url or ds.link,
+                        source=ds.source_name,
+                        found_by=ds.found_by,
+                        formats=ds.formats,
+                        organisation=getattr(ds, "organization", None),
+                        licence=ds.license,
+                        last_modified=ds.last_modified or "",
+                        richness=ds.richness or 0,
+                    )
+
+        # 7) réponse
+        data = AnalysisDetailSerializer(analysis).data
+        data = self._maybe_debug(request, data, {"section": "analysis/create", "upsert": (not created)})
+        return Response(data, status=status.HTTP_201_CREATED if created else status.HTTP_200_OK)
+
+
+
+
 
     def retrieve(self, request, *args, **kwargs):
         resp = super().retrieve(request, *args, **kwargs)

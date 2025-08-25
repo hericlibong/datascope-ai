@@ -1,0 +1,1586 @@
+{
+  "id": 197,
+  "article": {
+    "id": 262,
+    "title": "opinion A curfew won't save Indianapolis teens. Investment in them",
+    "content": "opinion\nA curfew won't save Indianapolis teens. Investment in them will. | Opinion\n\nTeens are seeking stimulation because they're bored, connection because they're lonely and support we've taken away from them.\n\nIt was half past midnight. We were returning from a wedding, stunned at the sight of hundreds of teens lining the sidewalks downtown. I recognized one as my student, Dakari. The next morning, I saw the headline: gunfire, 2 a.m., three teens wounded. They never identify juveniles by name. For teachers, it’s torturous — were they one of ours?\n\nI stopped Dakari in the hall Monday. “I clocked you out late Saturday night. Everything good?” Dakari is a natural leader, unafraid of truth, which earned him the respect of his classmates. And luckily, he trusted me. Yeah, he was less than a block away. He was shaken, but unhurt. “I hope that’s the last time you’re out that late,\" I said.\n\n“Nah, we’re going out again next weekend.”\n\nMy heart sank at his response. It sank again when Indianapolis approved its new curfew this month — including a proposal to charge parents fines. It seems easy, right? But easy solutions are rarely good ones.\n\nBriggs: Mike Braun grandstands on Indianapolis crime while murders drop 24%\n\nIndianapolis has become a city that is afraid of its own children. I see teens demonized across social media as “feral” and “violent.” But these same teens are the most creative, savvy and thoughtful students I know. They are full of ideas about how to improve their community, and they jump at the chance to help. Unfortunately, we offer few ways to use these aptitudes.\n\nWe're offering teens too little help\n\nStudents in out-of-school programs have lower absenteeism and delinquency and better scores and earnings. In Baltimore, targeted youth programs almost single-handedly cut violence by a third. But in Indiana, we don’t have enough programs for them. For every child in one, three more are waitlisted, with demand outpacing supply.\n\nMeanwhile, the percentage of children alone and unsupervised has actually decreased. However, being home doesn’t mean children are safe. More youth are depressed, isolated or contemplating suicide than ever before, especially teen girls. And more teens are armed with guns and dying from them, including in rural counties. Safe storage proposals routinely fail, so Indiana has one of the highest rates of accidental child shootings in the country.\n\nSo why are so many teens out after dark? Like most of his peers, Dakari wasn’t out there to hurt anyone — he was there because his friends and family were there. Implemented alone, a curfew is a band-aid that makes isolation worse. A lasting solution must address root causes.\n\nTeens are seeking what we all need\n\n\nTeens are seeking stimulation because they’re bored. Out-of-school programs may be facing federal freezes and state shortfalls, but local parks, libraries, and nonprofits are a nexus for youth sports, clubs, arts, education and volunteering. But Indy’s parks are woefully underfunded — we pay less than half the national median. Our libraries once fared better, but recent cuts have decimated that lead. It’s no wonder Indiana ranks bottom ten for supporting children. We must invest more.\n\nTeens are seeking connection because they’re lonely. Teens were spending less time with friends even before COVID, but they’re also isolated from their families — 40% of children lack strong emotional bonds with their parents. One solution is having mentor-like adults outside home. But young people report fewer mentor figures than ever. Older people describe their teenage years as full of feedback from adults in their community. That community has fragmented, and youth mental health has deteriorated alongside it. We can all do more to engage youth in our neighborhoods.\n\nBriggs: Fountain Square camp shows Indianapolis' homelessness strategy is broken\n\nFinally, teens are seeking support. But we’ve designed a system that makes it almost impossible to care for our children. Indiana restricts teaching teens what could get them pregnant. New parents lack guaranteed paid parental leave. Many towns sit in tri-county childcare deserts — we rank worst in the country, costing billions. Parents must work to keep Medicaid, so kids go unsupervised. Child abuse reports often go uninvestigated, even as unhoused children sleep at DCS offices. And Indiana’s youth homelessness rate continues to balloon faster than the national rate. It’s all too easy to blame parents. Yet we’ve adopted policies that abandon them. Let’s flip that script and put families first.\n\nI know exactly what would have kept Dakari from going downtown — he needed something better to do. We all have a role in that responsibility. Let’s make Indianapolis a city that’s safe and enriching for our youth.\n\nRonak Shah is a middle school science teacher in Indianapolis.",
+    "file": null,
+    "language": "en",
+    "submitted_at": "2025-08-23T01:46:08.532925+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : en\n- **Personnes** : Dakari, Mike Braun, Ronak Shah\n- **Lieux** : Indianapolis, Baltimore, Indiana, Indy, Fountain Square\n- **Valeurs numériques** : half past midnight, 2 a.m., three (3.0 None), 24% (24.0 %), a third, one (1.0 None), three (3.0 None), 40% (40.0 %)\n\n## Suggestions d’angles\n\n### 1. Mapping Youth Program Deserts in Indianapolis\nVisualize areas of Indianapolis with limited access to youth programs and compare them to regions with higher rates of teen incidents. This could highlight the correlation between program availability and youth activity levels.\n\n### 2. The Cost of Curfews: Financial and Social Impacts\nAnalyze the financial burden of curfew fines on families and compare it to the costs of implementing comprehensive youth programs. This could reveal the economic inefficiencies of punitive measures versus supportive investments.\n\n### 3. From Isolation to Inclusion: Rebuilding Community Bonds\nExamine historical data on community engagement levels and their impact on youth well-being. This could help identify strategies to strengthen community ties and improve mental health outcomes for teens.\n\n### 4. Investing in Youth: A Comparative Analysis of State Funding\nCompare Indiana's investment in youth services with other states and assess the outcomes. Highlight which states have achieved success and explore what Indianapolis can learn from them to better support its youth.\n\n### 5. The Rising Tide of Youth Homelessness: A Statewide Crisis\nInvestigate the trends in youth homelessness in Indiana and its causes. Use data visualizations to show how policy changes could address this growing issue and improve outcomes for vulnerable children.\n",
+  "created_at": "2025-08-23T01:47:47.895269+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Mapping Youth Program Deserts in Indianapolis",
+      "description": "Visualize areas of Indianapolis with limited access to youth programs and compare them to regions with higher rates of teen incidents. This could highlight the correlation between program availability and youth activity levels.",
+      "keywords": [
+        "youth programs",
+        "Indianapolis",
+        "service gaps",
+        "community resources",
+        "program accessibility"
+      ],
+      "datasets": [
+        {
+          "title": "Population Estimates: National Monthly Population",
+          "description": "Monthly Population Estimates by Universe, Age, Sex, Race, and Hispanic Origin for the United States // Source: U.S. Census Bureau, Population Division // Universes include the resident population, resident population plus Armed Forces overseas, civilian population, civilian noninstitutionalized population, and household population. The estimates are developed from an April 1, 2020 base population and may incorporate changes resulting from the Count Question Resolution program and/or geographic program revisions. 'In combination' means in combination with one or more other races. The sum of the five race-in-combination groups adds to more than the total population because individuals may report more than one race. Hispanic origin is considered an ethnicity, not a race. Hispanics may be of any race. Responses of 'Some Other Race' from the Census are modified. This results in differences between the population for specific race categories shown in this file versus those in the Census data. // Current data on births, deaths, and migration are used to calculate population change since April 1, 2020. A time series of estimates is produced, beginning with April 1, 2020. The reference date for all estimates is the first of the month. With each new issue of estimates, the entire estimates series is revised. Additional information, including historical and intercensal estimates, evaluation estimates, demographic analysis, research papers, and methodology is available on website: https://www.census.gov/programs-surveys/popest.html",
+          "link": "https://catalog.data.gov/dataset/population-estimates-national-monthly-population",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-07-19T14:59:49.612691",
+          "richness": 40
+        },
+        {
+          "title": "Uniform Crime Reporting (UCR) Program",
+          "description": "Federal Bureau of Investigation, Department of Justice - Extraction of crime related data from the FBI's Uniform Crime Reporting (UCR) Program",
+          "link": "https://catalog.data.gov/dataset/uniform-crime-reporting-ucr-program",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-03-12T15:20:47.260464",
+          "richness": 50
+        },
+        {
+          "title": "Canada’s First State of Youth Report: For Youth, With Youth, By Youth Engagement Data",
+          "description": "Primary qualitative data from State of Youth Report Engagement sessions and individual response forms. The data was collected from 857 youth 13-36 from across Canada from August 2020 to May 2021. For additional details on the methodology or on the engagement sessions please refer to the Information on the Dataset Resource or contact: jeunesse-youth@pch.gc.ca.\r\n",
+          "link": "https://open.canada.ca/data/en/dataset/8a3e9c71-f601-49be-8976-28007cd3e6e4",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-11-21T00:24:36.785184",
+          "richness": 50
+        },
+        {
+          "title": "Number of graduates from regular programs for youth, public secondary schools, by age and sex",
+          "description": "The number of high school graduates from regular programs for youth, public schools, by age group and sex.",
+          "link": "https://open.canada.ca/data/en/dataset/f0e8bbb8-c7fa-4d00-be93-d85a168d4c86",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-10-11T14:15:16.837501",
+          "richness": 55
+        },
+        {
+          "title": "Youth centres",
+          "description": "<p>Details of all youth centres.</p>",
+          "link": "https://data.gov.uk/dataset/youth-centres-nsc",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json",
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2016-09-22T14:40:44.254369",
+          "richness": 65
+        },
+        {
+          "title": "City of Indianapolis Open Data Portal",
+          "description": "Access datasets related to community programs, public safety, and other civic issues in Indianapolis.",
+          "link": "https://data.indy.gov/",
+          "source": "City of Indianapolis",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "Indiana Youth Institute Data and Resources",
+          "description": "Provides data on youth demographics, education, and community resources across Indiana, including Indianapolis.",
+          "link": "https://www.iyi.org/data/",
+          "source": "Indiana Youth Institute",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "FBI Uniform Crime Reporting (UCR) Program",
+          "description": "Offers crime statistics, including teen incidents, which can be used to analyze crime patterns in Indianapolis.",
+          "link": "https://crime-data-explorer.fr.cloud.gov/",
+          "source": "Federal Bureau of Investigation",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "City of Indianapolis Open Data Portal",
+          "description": "Access datasets related to community programs, public safety, and other civic issues in Indianapolis.",
+          "link": "https://data.indy.gov/",
+          "source": "City of Indianapolis"
+        },
+        {
+          "title": "Indiana Youth Institute Data and Resources",
+          "description": "Provides data on youth demographics, education, and community resources across Indiana, including Indianapolis.",
+          "link": "https://www.iyi.org/data/",
+          "source": "Indiana Youth Institute"
+        },
+        {
+          "title": "FBI Uniform Crime Reporting (UCR) Program",
+          "description": "Offers crime statistics, including teen incidents, which can be used to analyze crime patterns in Indianapolis.",
+          "link": "https://crime-data-explorer.fr.cloud.gov/",
+          "source": "Federal Bureau of Investigation"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Carte des déserts de programmes jeunesse à Indianapolis",
+          "chart_type": "choropleth",
+          "x": "Zones d'Indianapolis",
+          "y": "Disponibilité des programmes jeunesse",
+          "note": "Utiliser les données des services municipaux et des organisations locales pour identifier les zones avec peu de programmes."
+        },
+        {
+          "title": "Corrélation entre incidents adolescents et programmes jeunesse",
+          "chart_type": "scatter",
+          "x": "Disponibilité des programmes jeunesse",
+          "y": "Taux d'incidents adolescents",
+          "note": "Comparer les données sur les incidents adolescents avec la disponibilité des programmes pour chaque zone."
+        },
+        {
+          "title": "Taux d'incidents adolescents par zone",
+          "chart_type": "heatmap",
+          "x": "Zones d'Indianapolis",
+          "y": "Taux d'incidents adolescents",
+          "note": "Visualiser les zones avec des taux élevés d'incidents pour identifier les priorités d'intervention."
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "The Cost of Curfews: Financial and Social Impacts",
+      "description": "Analyze the financial burden of curfew fines on families and compare it to the costs of implementing comprehensive youth programs. This could reveal the economic inefficiencies of punitive measures versus supportive investments.",
+      "keywords": [
+        "curfew costs",
+        "economic impact",
+        "social effects",
+        "public safety",
+        "business losses"
+      ],
+      "datasets": [
+        {
+          "title": "Fruit and Vegetable Prices",
+          "description": "How much do fruits and vegetables cost? ERS estimated average prices for 153 commonly consumed fresh and processed fruits and vegetables.",
+          "link": "https://catalog.data.gov/dataset/fruit-and-vegetable-prices",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-04-21T20:41:29.599892",
+          "richness": 55
+        },
+        {
+          "title": "Pittsburgh American Community Survey 2015 - Miscellaneous Data",
+          "description": "Miscellaneous Reports from the 2015 American Community Survey Report",
+          "link": "https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-01-24T18:11:53.465881",
+          "richness": 40
+        },
+        {
+          "title": "Total water costs in manufacturing industries, by water cost component and industry",
+          "description": "<p>Total water costs for the manufacturing industries, by water cost component, for Canada, provinces, territories or drainage regions. The unit of measure is thousands of dollars.\n</p>\n",
+          "link": "https://open.canada.ca/data/en/dataset/172f70ec-cf22-4aec-a94e-6e3061791b9e",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-03-18T13:51:01.474796",
+          "richness": 50
+        },
+        {
+          "title": "Total water costs in mineral extraction industries, by water cost component and industry",
+          "description": "<p>Water costs for the mineral extraction industries at the 4-digit North American Industry Classification System (NAICS), by water cost component, for Canada. The unit of measure is thousands of dollars.</p>\n",
+          "link": "https://open.canada.ca/data/en/dataset/9bb314f0-b1ba-44c2-af0a-0c45b557284b",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-03-18T13:51:11.758503",
+          "richness": 50
+        },
+        {
+          "title": "Translation Costs",
+          "description": "This dataset contains details of all translation and interpreting costs incurred by Blaby District Council for each financial year since 2011/12. It will be updated on an annual basis.",
+          "link": "https://data.gov.uk/dataset/translation-costs",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2019-04-08T15:32:20.927151",
+          "richness": 40
+        },
+        {
+          "title": "World Bank Open Data",
+          "description": "Access to global development data, including economic indicators and social impact metrics.",
+          "link": "https://data.worldbank.org/",
+          "source": "World Bank",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "OECD Social Expenditure Database",
+          "description": "Data on public and private social expenditures, useful for analyzing youth program investments.",
+          "link": "https://www.oecd.org/social/expenditure.htm",
+          "source": "OECD",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "UNICEF Data on Adolescents",
+          "description": "Statistics and information on youth, including the impact of social policies on adolescents.",
+          "link": "https://data.unicef.org/topic/adolescents/",
+          "source": "UNICEF",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "World Bank Open Data",
+          "description": "Access to global development data, including economic indicators and social impact metrics.",
+          "link": "https://data.worldbank.org/",
+          "source": "World Bank"
+        },
+        {
+          "title": "OECD Social Expenditure Database",
+          "description": "Data on public and private social expenditures, useful for analyzing youth program investments.",
+          "link": "https://www.oecd.org/social/expenditure.htm",
+          "source": "OECD"
+        },
+        {
+          "title": "UNICEF Data on Adolescents",
+          "description": "Statistics and information on youth, including the impact of social policies on adolescents.",
+          "link": "https://data.unicef.org/topic/adolescents/",
+          "source": "UNICEF"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Répartition des amendes de couvre-feu par revenu familial",
+          "chart_type": "bar",
+          "x": "Niveau de revenu familial",
+          "y": "Montant total des amendes (€)",
+          "note": "Données issues des rapports municipaux sur les amendes de couvre-feu."
+        },
+        {
+          "title": "Comparaison des coûts : amendes vs programmes pour jeunes",
+          "chart_type": "donut + bar",
+          "x": "Type de dépense",
+          "y": "Coût annuel moyen (€)",
+          "note": "Inclut les coûts des amendes et les budgets des programmes jeunesse."
+        },
+        {
+          "title": "Impact social des couvre-feux sur les jeunes",
+          "chart_type": "heatmap",
+          "x": "Impact social (éducation, emploi, santé)",
+          "y": "Niveau de gravité",
+          "note": "Basé sur des études de cas et des enquêtes sociales."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "From Isolation to Inclusion: Rebuilding Community Bonds",
+      "description": "Examine historical data on community engagement levels and their impact on youth well-being. This could help identify strategies to strengthen community ties and improve mental health outcomes for teens.",
+      "keywords": [
+        "community engagement",
+        "social inclusion",
+        "community programs",
+        "neighborhood initiatives",
+        "social cohesion"
+      ],
+      "datasets": [
+        {
+          "title": "Warehouse and Retail Sales",
+          "description": "This dataset contains a list of sales and movement data by item and department appended monthly.\r\nUpdate Frequency : Monthly",
+          "link": "https://catalog.data.gov/dataset/warehouse-and-retail-sales",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json",
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-08-11T16:50:49.074245",
+          "richness": 85
+        },
+        {
+          "title": "Residential Construction Permits by County",
+          "description": "This dataset contains data on permits for residential construction collected in the Census Bureau's Building Permits Survey. Data is aggregated to the County level. Data is only for final permits, not preliminary permits. Final permit data is published in May of the following year. Annual data are available from 1980 through the most recent reporting year, and may also contain imputed values. This dataset is part of the State of the Cities Data Systems (SOCDS).",
+          "link": "https://catalog.data.gov/dataset/residential-construction-permits-by-county",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-03-01T02:04:53.232411",
+          "richness": 40
+        },
+        {
+          "title": "Engaging with Black communities on Canada’s Black Justice Strategy - Online survey complementing the community-led consultations",
+          "description": "Justice Canada is developing Canada’s Black Justice Strategy (the Strategy or CBJS) to address anti-Black racism and systemic discrimination, which has led to the overrepresentation of Black people in the criminal justice system (CJS), including as victims of crime. The goal of the Strategy is to help ensure that all people in Canada have access to equal treatment before and under the law, as guaranteed by the Canadian Charter of Rights and Freedoms. As part of the development of the Strategy, Justice Canada undertook consultations with Black communities across Canada. A component of these consultations was an online survey developed to complement the community consultations, for those who were unable to attend the engagement sessions. This report summarizes the results of the online survey.",
+          "link": "https://open.canada.ca/data/en/dataset/e1a4cf98-fc65-405b-8794-7be2920b0e93",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-03-07T18:11:05.542860",
+          "richness": 50
+        },
+        {
+          "title": "Environmental engagement",
+          "description": "Percentage of households that engaged in activities aimed at conservation or protection of the environment or wildlife, and of those that did the type of activity. The data is from the Households and the environment survey.",
+          "link": "https://open.canada.ca/data/en/dataset/2a6099cd-6b2f-4ed3-b2e4-11cd68f4102c",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-12-08T14:44:31.639941",
+          "richness": 50
+        },
+        {
+          "title": "National Archives Staff Engagement",
+          "description": "The Civil Service People Survey involves organisations from across the civil service. A key element of the survey is the 'Employee Engagement Index'. This is a measure of how engaged employees are with their work and it is calculated from responses to five of the key questions in the people survey:\r\n\r\nI am proud when I tell others I am part of The National Archives  \r\nI would recommend The National Archives as a great place to work  \r\nI feel a strong personal attachment to The National Archives  \r\nThe National Archives inspires me to do the best in my job  \r\nThe National Archives motivates me to help it achieve its objectives\r\n",
+          "link": "https://data.gov.uk/dataset/national-archives-staff-engagement",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2020-06-17T09:45:53.583750",
+          "richness": 35
+        },
+        {
+          "title": "World Values Survey",
+          "description": "Provides data on social, cultural, economic, and political values worldwide, including community engagement metrics.",
+          "link": "https://www.worldvaluessurvey.org/",
+          "source": "World Values Survey Association",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "Youth Well-being Policy Review",
+          "description": "OECD data on factors affecting youth well-being, including community involvement and mental health indicators.",
+          "link": "https://www.oecd.org/els/youth-well-being.htm",
+          "source": "OECD",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "National Survey of Children's Health",
+          "description": "US-based survey data on child and adolescent health, including community and social well-being aspects.",
+          "link": "https://mchb.hrsa.gov/data/national-surveys",
+          "source": "Health Resources and Services Administration",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "World Values Survey",
+          "description": "Provides data on social, cultural, economic, and political values worldwide, including community engagement metrics.",
+          "link": "https://www.worldvaluessurvey.org/",
+          "source": "World Values Survey Association"
+        },
+        {
+          "title": "Youth Well-being Policy Review",
+          "description": "OECD data on factors affecting youth well-being, including community involvement and mental health indicators.",
+          "link": "https://www.oecd.org/els/youth-well-being.htm",
+          "source": "OECD"
+        },
+        {
+          "title": "National Survey of Children's Health",
+          "description": "US-based survey data on child and adolescent health, including community and social well-being aspects.",
+          "link": "https://mchb.hrsa.gov/data/national-surveys",
+          "source": "Health Resources and Services Administration"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Engagement communautaire des jeunes (2000-2023)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Niveau d'engagement (%)",
+          "note": "Source : Enquêtes nationales sur l'engagement communautaire"
+        },
+        {
+          "title": "Impact de l'engagement sur le bien-être des jeunes",
+          "chart_type": "bar",
+          "x": "Niveau d'engagement",
+          "y": "Score de bien-être moyen",
+          "note": "Données issues d'études longitudinales sur la santé mentale des jeunes"
+        },
+        {
+          "title": "Comparaison internationale des liens communautaires",
+          "chart_type": "choropleth",
+          "x": "Pays",
+          "y": "Indice de liens communautaires",
+          "note": "Source : Organisation mondiale de la santé, données 2023"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Investing in Youth: A Comparative Analysis of State Funding",
+      "description": "Compare Indiana's investment in youth services with other states and assess the outcomes. Highlight which states have achieved success and explore what Indianapolis can learn from them to better support its youth.",
+      "keywords": [
+        "youth programs",
+        "state funding",
+        "education grants",
+        "youth investment",
+        "government support"
+      ],
+      "datasets": [
+        {
+          "title": "Population Estimates: National Monthly Population",
+          "description": "Monthly Population Estimates by Universe, Age, Sex, Race, and Hispanic Origin for the United States // Source: U.S. Census Bureau, Population Division // Universes include the resident population, resident population plus Armed Forces overseas, civilian population, civilian noninstitutionalized population, and household population. The estimates are developed from an April 1, 2020 base population and may incorporate changes resulting from the Count Question Resolution program and/or geographic program revisions. 'In combination' means in combination with one or more other races. The sum of the five race-in-combination groups adds to more than the total population because individuals may report more than one race. Hispanic origin is considered an ethnicity, not a race. Hispanics may be of any race. Responses of 'Some Other Race' from the Census are modified. This results in differences between the population for specific race categories shown in this file versus those in the Census data. // Current data on births, deaths, and migration are used to calculate population change since April 1, 2020. A time series of estimates is produced, beginning with April 1, 2020. The reference date for all estimates is the first of the month. With each new issue of estimates, the entire estimates series is revised. Additional information, including historical and intercensal estimates, evaluation estimates, demographic analysis, research papers, and methodology is available on website: https://www.census.gov/programs-surveys/popest.html",
+          "link": "https://catalog.data.gov/dataset/population-estimates-national-monthly-population",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-07-19T14:59:49.612691",
+          "richness": 40
+        },
+        {
+          "title": "Uniform Crime Reporting (UCR) Program",
+          "description": "Federal Bureau of Investigation, Department of Justice - Extraction of crime related data from the FBI's Uniform Crime Reporting (UCR) Program",
+          "link": "https://catalog.data.gov/dataset/uniform-crime-reporting-ucr-program",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-03-12T15:20:47.260464",
+          "richness": 50
+        },
+        {
+          "title": "Canada’s First State of Youth Report: For Youth, With Youth, By Youth Engagement Data",
+          "description": "Primary qualitative data from State of Youth Report Engagement sessions and individual response forms. The data was collected from 857 youth 13-36 from across Canada from August 2020 to May 2021. For additional details on the methodology or on the engagement sessions please refer to the Information on the Dataset Resource or contact: jeunesse-youth@pch.gc.ca.\r\n",
+          "link": "https://open.canada.ca/data/en/dataset/8a3e9c71-f601-49be-8976-28007cd3e6e4",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-11-21T00:24:36.785184",
+          "richness": 50
+        },
+        {
+          "title": "Number of graduates from regular programs for youth, public secondary schools, by age and sex",
+          "description": "The number of high school graduates from regular programs for youth, public schools, by age group and sex.",
+          "link": "https://open.canada.ca/data/en/dataset/f0e8bbb8-c7fa-4d00-be93-d85a168d4c86",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-10-11T14:15:16.837501",
+          "richness": 55
+        },
+        {
+          "title": "Youth centres",
+          "description": "<p>Details of all youth centres.</p>",
+          "link": "https://data.gov.uk/dataset/youth-centres-nsc",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json",
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2016-09-22T14:40:44.254369",
+          "richness": 65
+        },
+        {
+          "title": "National Youth Policy Database",
+          "description": "Comprehensive data on state-level youth policies, funding, and outcomes across the United States.",
+          "link": "https://youth.gov/evidence-innovation/national-youth-policy-database",
+          "source": "Youth.gov",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "KIDS COUNT Data Center",
+          "description": "Provides state-specific data on child and youth well-being, including education, health, and economic indicators.",
+          "link": "https://datacenter.kidscount.org/",
+          "source": "Annie E. Casey Foundation",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "U.S. Census Bureau's American Community Survey",
+          "description": "Offers detailed demographic, social, and economic data at the state level, useful for comparing youth services.",
+          "link": "https://www.census.gov/programs-surveys/acs",
+          "source": "U.S. Census Bureau",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "National Youth Policy Database",
+          "description": "Comprehensive data on state-level youth policies, funding, and outcomes across the United States.",
+          "link": "https://youth.gov/evidence-innovation/national-youth-policy-database",
+          "source": "Youth.gov"
+        },
+        {
+          "title": "KIDS COUNT Data Center",
+          "description": "Provides state-specific data on child and youth well-being, including education, health, and economic indicators.",
+          "link": "https://datacenter.kidscount.org/",
+          "source": "Annie E. Casey Foundation"
+        },
+        {
+          "title": "U.S. Census Bureau's American Community Survey",
+          "description": "Offers detailed demographic, social, and economic data at the state level, useful for comparing youth services.",
+          "link": "https://www.census.gov/programs-surveys/acs",
+          "source": "U.S. Census Bureau"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Comparaison des financements jeunesse par État",
+          "chart_type": "bar",
+          "x": "État",
+          "y": "Montant du financement (millions $)",
+          "note": "Données 2023, source : Département de l'Éducation des États-Unis"
+        },
+        {
+          "title": "Résultats des investissements jeunesse par État",
+          "chart_type": "scatter",
+          "x": "Montant du financement (millions $)",
+          "y": "Indice de succès des programmes jeunesse",
+          "note": "Indice basé sur des critères éducatifs et sociaux"
+        },
+        {
+          "title": "Évolution des financements jeunesse à Indiana",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Montant du financement (millions $)",
+          "note": "Analyse des tendances sur 10 ans, source : Gouvernement de l'Indiana"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "The Rising Tide of Youth Homelessness: A Statewide Crisis",
+      "description": "Investigate the trends in youth homelessness in Indiana and its causes. Use data visualizations to show how policy changes could address this growing issue and improve outcomes for vulnerable children.",
+      "keywords": [
+        "youth homelessness",
+        "homeless shelters",
+        "statewide crisis",
+        "housing insecurity",
+        "youth services"
+      ],
+      "datasets": [
+        {
+          "title": "Pittsburgh American Community Survey 2015 - Miscellaneous Data",
+          "description": "Miscellaneous Reports from the 2015 American Community Survey Report",
+          "link": "https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-01-24T18:11:53.465881",
+          "richness": 40
+        },
+        {
+          "title": "Providence Police Case Log - Past 180 days",
+          "description": "Recorded state and municipal offenses from AEGIS records management system of the Providence Police.  A single case can contain multiple offenses.  Refer to the case number to see all offenses for a particular case.  The case number can also be used to look up arrest activity for a case in the Providence Police Arrest Log.  \n<br><b>UPDATE:</b><br>\nIncident location is now using block range instead of house numbers. Addresses between 1 and 99 will be 0 Block, addresses between 100 and 199 will use 100 block and so on.  If you are looking for actual addresses you can use the city's <a href=\"https://providenceri.nextrequest.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Open Records Portal</a> to make a request. <br><br>\nTo help maintain the anonymity of special victims and juveniles this list does not include violent sexual offenses, non-violent sexual offenses or incidents of  harassment. Cases being investigated by the department's Special Victims Unit (SVU) or Youth Services Bureau (YSB) will not be published.",
+          "link": "https://catalog.data.gov/dataset/providence-police-case-log-past-180-days",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json",
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-08-11T14:24:47.910266",
+          "richness": 85
+        },
+        {
+          "title": "Homeless Shelter Capacity Report",
+          "description": "The annual Shelter Capacity Report provides capacity statistics for emergency homeless shelters, transitional housing and violence against women (VAW) shelters in Canada. The number of shelter facilities and the number of permanent beds are reported for each province and territory, as well as by community.",
+          "link": "https://open.canada.ca/data/en/dataset/5800a008-02b1-4621-bc83-f745ae44931e",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-11-20T23:37:39.271342",
+          "richness": 50
+        },
+        {
+          "title": "Canada’s First State of Youth Report: For Youth, With Youth, By Youth Engagement Data",
+          "description": "Primary qualitative data from State of Youth Report Engagement sessions and individual response forms. The data was collected from 857 youth 13-36 from across Canada from August 2020 to May 2021. For additional details on the methodology or on the engagement sessions please refer to the Information on the Dataset Resource or contact: jeunesse-youth@pch.gc.ca.\r\n",
+          "link": "https://open.canada.ca/data/en/dataset/8a3e9c71-f601-49be-8976-28007cd3e6e4",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-11-21T00:24:36.785184",
+          "richness": 50
+        },
+        {
+          "title": "Youth centres",
+          "description": "<p>Details of all youth centres.</p>",
+          "link": "https://data.gov.uk/dataset/youth-centres-nsc",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json",
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2016-09-22T14:40:44.254369",
+          "richness": 65
+        },
+        {
+          "title": "HUD Homelessness Data Exchange",
+          "description": "Provides data on homelessness, including youth homelessness, across the U.S. with specific state-level insights.",
+          "link": "https://www.hudexchange.info/homelessness-assistance/homelessness-data-exchange/",
+          "source": "U.S. Department of Housing and Urban Development",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "Indiana Youth Institute Data Center",
+          "description": "Offers comprehensive data on various issues affecting youth in Indiana, including homelessness and related factors.",
+          "link": "https://www.iyi.org/data-library/",
+          "source": "Indiana Youth Institute",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "National Center for Homeless Education",
+          "description": "Contains data and resources on the education of homeless children and youth, with state-specific reports.",
+          "link": "https://nche.ed.gov/data/",
+          "source": "National Center for Homeless Education",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "HUD Homelessness Data Exchange",
+          "description": "Provides data on homelessness, including youth homelessness, across the U.S. with specific state-level insights.",
+          "link": "https://www.hudexchange.info/homelessness-assistance/homelessness-data-exchange/",
+          "source": "U.S. Department of Housing and Urban Development"
+        },
+        {
+          "title": "Indiana Youth Institute Data Center",
+          "description": "Offers comprehensive data on various issues affecting youth in Indiana, including homelessness and related factors.",
+          "link": "https://www.iyi.org/data-library/",
+          "source": "Indiana Youth Institute"
+        },
+        {
+          "title": "National Center for Homeless Education",
+          "description": "Contains data and resources on the education of homeless children and youth, with state-specific reports.",
+          "link": "https://nche.ed.gov/data/",
+          "source": "National Center for Homeless Education"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Trends in Youth Homelessness in Indiana (2010-2023)",
+          "chart_type": "line",
+          "x": "Year",
+          "y": "Number of Homeless Youth",
+          "note": "Data from Indiana Department of Education and local shelters"
+        },
+        {
+          "title": "Causes of Youth Homelessness in Indiana",
+          "chart_type": "bar",
+          "x": "Causes",
+          "y": "Percentage of Cases",
+          "note": "Survey data from Indiana Coalition for Homelessness Intervention"
+        },
+        {
+          "title": "Impact of Policy Changes on Youth Homelessness",
+          "chart_type": "donut + bar",
+          "x": "Policy Change",
+          "y": "Reduction in Homelessness (%)",
+          "note": "Hypothetical model based on policy proposals from Indiana Housing and Community Development Authority"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5191,
+      "type": "PER",
+      "value": "Dakari",
+      "context": null
+    },
+    {
+      "id": 5192,
+      "type": "PER",
+      "value": "Mike Braun",
+      "context": null
+    },
+    {
+      "id": 5193,
+      "type": "PER",
+      "value": "Ronak Shah",
+      "context": null
+    },
+    {
+      "id": 5194,
+      "type": "LOC",
+      "value": "Indianapolis",
+      "context": null
+    },
+    {
+      "id": 5195,
+      "type": "LOC",
+      "value": "Baltimore",
+      "context": null
+    },
+    {
+      "id": 5196,
+      "type": "LOC",
+      "value": "Indiana",
+      "context": null
+    },
+    {
+      "id": 5197,
+      "type": "LOC",
+      "value": "Indy",
+      "context": null
+    },
+    {
+      "id": 5198,
+      "type": "LOC",
+      "value": "Fountain Square",
+      "context": null
+    },
+    {
+      "id": 5199,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5200,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5201,
+      "type": "NUM",
+      "value": "3.0",
+      "context": null
+    },
+    {
+      "id": 5202,
+      "type": "NUM",
+      "value": "24.0",
+      "context": null
+    },
+    {
+      "id": 5203,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5204,
+      "type": "NUM",
+      "value": "1.0",
+      "context": null
+    },
+    {
+      "id": 5205,
+      "type": "NUM",
+      "value": "3.0",
+      "context": null
+    },
+    {
+      "id": 5206,
+      "type": "NUM",
+      "value": "40.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 792,
+      "title": "Mapping Youth Program Deserts in Indianapolis",
+      "description": "Visualize areas of Indianapolis with limited access to youth programs and compare them to regions with higher rates of teen incidents. This could highlight the correlation between program availability and youth activity levels.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 793,
+      "title": "The Cost of Curfews: Financial and Social Impacts",
+      "description": "Analyze the financial burden of curfew fines on families and compare it to the costs of implementing comprehensive youth programs. This could reveal the economic inefficiencies of punitive measures versus supportive investments.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 794,
+      "title": "From Isolation to Inclusion: Rebuilding Community Bonds",
+      "description": "Examine historical data on community engagement levels and their impact on youth well-being. This could help identify strategies to strengthen community ties and improve mental health outcomes for teens.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 795,
+      "title": "Investing in Youth: A Comparative Analysis of State Funding",
+      "description": "Compare Indiana's investment in youth services with other states and assess the outcomes. Highlight which states have achieved success and explore what Indianapolis can learn from them to better support its youth.",
+      "order": 3,
+      "visualizations": []
+    },
+    {
+      "id": 796,
+      "title": "The Rising Tide of Youth Homelessness: A Statewide Crisis",
+      "description": "Investigate the trends in youth homelessness in Indiana and its causes. Use data visualizations to show how policy changes could address this growing issue and improve outcomes for vulnerable children.",
+      "order": 4,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4108,
+      "title": "Total water costs in mineral extraction industries, by water cost component and industry",
+      "description": "<p>Water costs for the mineral extraction industries at the 4-digit North American Industry Classification System (NAICS), by water cost component, for Canada. The unit of measure is thousands of dollars.</p>\n",
+      "link": "https://open.canada.ca/data/en/dataset/9bb314f0-b1ba-44c2-af0a-0c45b557284b",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-03-18T13:51:11.758503",
+      "richness": 50
+    },
+    {
+      "id": 4122,
+      "title": "Uniform Crime Reporting (UCR) Program",
+      "description": "Federal Bureau of Investigation, Department of Justice - Extraction of crime related data from the FBI's Uniform Crime Reporting (UCR) Program",
+      "link": "https://catalog.data.gov/dataset/uniform-crime-reporting-ucr-program",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "Department of Justice",
+      "licence": "us-pd",
+      "last_modified": "2025-03-12T15:20:47.260464",
+      "richness": 50
+    },
+    {
+      "id": 4097,
+      "title": "Population Estimates: National Monthly Population",
+      "description": "Monthly Population Estimates by Universe, Age, Sex, Race, and Hispanic Origin for the United States // Source: U.S. Census Bureau, Population Division // Universes include the resident population, resident population plus Armed Forces overseas, civilian population, civilian noninstitutionalized population, and household population. The estimates are developed from an April 1, 2020 base population and may incorporate changes resulting from the Count Question Resolution program and/or geographic program revisions. 'In combination' means in combination with one or more other races. The sum of the five race-in-combination groups adds to more than the total population because individuals may report more than one race. Hispanic origin is considered an ethnicity, not a race. Hispanics may be of any race. Responses of 'Some Other Race' from the Census are modified. This results in differences between the population for specific race categories shown in this file versus those in the Census data. // Current data on births, deaths, and migration are used to calculate population change since April 1, 2020. A time series of estimates is produced, beginning with April 1, 2020. The reference date for all estimates is the first of the month. With each new issue of estimates, the entire estimates series is revised. Additional information, including historical and intercensal estimates, evaluation estimates, demographic analysis, research papers, and methodology is available on website: https://www.census.gov/programs-surveys/popest.html",
+      "link": "https://catalog.data.gov/dataset/population-estimates-national-monthly-population",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json"
+      ],
+      "organisation": "Department of Commerce",
+      "licence": "Creative Commons CCZero",
+      "last_modified": "2023-07-19T14:59:49.612691",
+      "richness": 40
+    },
+    {
+      "id": 4098,
+      "title": "Uniform Crime Reporting (UCR) Program",
+      "description": "Federal Bureau of Investigation, Department of Justice - Extraction of crime related data from the FBI's Uniform Crime Reporting (UCR) Program",
+      "link": "https://catalog.data.gov/dataset/uniform-crime-reporting-ucr-program",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "Department of Justice",
+      "licence": "us-pd",
+      "last_modified": "2025-03-12T15:20:47.260464",
+      "richness": 50
+    },
+    {
+      "id": 4099,
+      "title": "Canada’s First State of Youth Report: For Youth, With Youth, By Youth Engagement Data",
+      "description": "Primary qualitative data from State of Youth Report Engagement sessions and individual response forms. The data was collected from 857 youth 13-36 from across Canada from August 2020 to May 2021. For additional details on the methodology or on the engagement sessions please refer to the Information on the Dataset Resource or contact: jeunesse-youth@pch.gc.ca.\r\n",
+      "link": "https://open.canada.ca/data/en/dataset/8a3e9c71-f601-49be-8976-28007cd3e6e4",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf",
+        "csv"
+      ],
+      "organisation": "Canadian Heritage | Patrimoine canadien",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-11-21T00:24:36.785184",
+      "richness": 50
+    },
+    {
+      "id": 4100,
+      "title": "Number of graduates from regular programs for youth, public secondary schools, by age and sex",
+      "description": "The number of high school graduates from regular programs for youth, public schools, by age group and sex.",
+      "link": "https://open.canada.ca/data/en/dataset/f0e8bbb8-c7fa-4d00-be93-d85a168d4c86",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-10-11T14:15:16.837501",
+      "richness": 55
+    },
+    {
+      "id": 4101,
+      "title": "Youth centres",
+      "description": "<p>Details of all youth centres.</p>",
+      "link": "https://data.gov.uk/dataset/youth-centres-nsc",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json",
+        "xml",
+        "csv"
+      ],
+      "organisation": "North Somerset Council",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2016-09-22T14:40:44.254369",
+      "richness": 65
+    },
+    {
+      "id": 4102,
+      "title": "City of Indianapolis Open Data Portal",
+      "description": "Access datasets related to community programs, public safety, and other civic issues in Indianapolis.",
+      "link": "https://data.indy.gov/",
+      "source": "City of Indianapolis",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4103,
+      "title": "Indiana Youth Institute Data and Resources",
+      "description": "Provides data on youth demographics, education, and community resources across Indiana, including Indianapolis.",
+      "link": "https://www.iyi.org/data/",
+      "source": "Indiana Youth Institute",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4104,
+      "title": "FBI Uniform Crime Reporting (UCR) Program",
+      "description": "Offers crime statistics, including teen incidents, which can be used to analyze crime patterns in Indianapolis.",
+      "link": "https://crime-data-explorer.fr.cloud.gov/",
+      "source": "Federal Bureau of Investigation",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4105,
+      "title": "Fruit and Vegetable Prices",
+      "description": "How much do fruits and vegetables cost? ERS estimated average prices for 153 commonly consumed fresh and processed fruits and vegetables.",
+      "link": "https://catalog.data.gov/dataset/fruit-and-vegetable-prices",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls"
+      ],
+      "organisation": "Department of Agriculture",
+      "licence": "Creative Commons CCZero",
+      "last_modified": "2025-04-21T20:41:29.599892",
+      "richness": 55
+    },
+    {
+      "id": 4106,
+      "title": "Pittsburgh American Community Survey 2015 - Miscellaneous Data",
+      "description": "Miscellaneous Reports from the 2015 American Community Survey Report",
+      "link": "https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "Allegheny County / City of Pittsburgh / Western PA Regional Data Center",
+      "licence": "License not specified",
+      "last_modified": "2023-01-24T18:11:53.465881",
+      "richness": 40
+    },
+    {
+      "id": 4107,
+      "title": "Total water costs in manufacturing industries, by water cost component and industry",
+      "description": "<p>Total water costs for the manufacturing industries, by water cost component, for Canada, provinces, territories or drainage regions. The unit of measure is thousands of dollars.\n</p>\n",
+      "link": "https://open.canada.ca/data/en/dataset/172f70ec-cf22-4aec-a94e-6e3061791b9e",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-03-18T13:51:01.474796",
+      "richness": 50
+    },
+    {
+      "id": 4109,
+      "title": "Translation Costs",
+      "description": "This dataset contains details of all translation and interpreting costs incurred by Blaby District Council for each financial year since 2011/12. It will be updated on an annual basis.",
+      "link": "https://data.gov.uk/dataset/translation-costs",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "Blaby District Council",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2019-04-08T15:32:20.927151",
+      "richness": 40
+    },
+    {
+      "id": 4110,
+      "title": "World Bank Open Data",
+      "description": "Access to global development data, including economic indicators and social impact metrics.",
+      "link": "https://data.worldbank.org/",
+      "source": "World Bank",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4111,
+      "title": "OECD Social Expenditure Database",
+      "description": "Data on public and private social expenditures, useful for analyzing youth program investments.",
+      "link": "https://www.oecd.org/social/expenditure.htm",
+      "source": "OECD",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4112,
+      "title": "UNICEF Data on Adolescents",
+      "description": "Statistics and information on youth, including the impact of social policies on adolescents.",
+      "link": "https://data.unicef.org/topic/adolescents/",
+      "source": "UNICEF",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4113,
+      "title": "Warehouse and Retail Sales",
+      "description": "This dataset contains a list of sales and movement data by item and department appended monthly.\r\nUpdate Frequency : Monthly",
+      "link": "https://catalog.data.gov/dataset/warehouse-and-retail-sales",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json",
+        "xml",
+        "csv"
+      ],
+      "organisation": "Montgomery County of Maryland",
+      "licence": "License not specified",
+      "last_modified": "2025-08-11T16:50:49.074245",
+      "richness": 85
+    },
+    {
+      "id": 4114,
+      "title": "Residential Construction Permits by County",
+      "description": "This dataset contains data on permits for residential construction collected in the Census Bureau's Building Permits Survey. Data is aggregated to the County level. Data is only for final permits, not preliminary permits. Final permit data is published in May of the following year. Annual data are available from 1980 through the most recent reporting year, and may also contain imputed values. This dataset is part of the State of the Cities Data Systems (SOCDS).",
+      "link": "https://catalog.data.gov/dataset/residential-construction-permits-by-county",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "Department of Housing and Urban Development",
+      "licence": "License not specified",
+      "last_modified": "2024-03-01T02:04:53.232411",
+      "richness": 40
+    },
+    {
+      "id": 4115,
+      "title": "Engaging with Black communities on Canada’s Black Justice Strategy - Online survey complementing the community-led consultations",
+      "description": "Justice Canada is developing Canada’s Black Justice Strategy (the Strategy or CBJS) to address anti-Black racism and systemic discrimination, which has led to the overrepresentation of Black people in the criminal justice system (CJS), including as victims of crime. The goal of the Strategy is to help ensure that all people in Canada have access to equal treatment before and under the law, as guaranteed by the Canadian Charter of Rights and Freedoms. As part of the development of the Strategy, Justice Canada undertook consultations with Black communities across Canada. A component of these consultations was an online survey developed to complement the community consultations, for those who were unable to attend the engagement sessions. This report summarizes the results of the online survey.",
+      "link": "https://open.canada.ca/data/en/dataset/e1a4cf98-fc65-405b-8794-7be2920b0e93",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Department of Justice Canada | Ministère de la Justice Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2025-03-07T18:11:05.542860",
+      "richness": 50
+    },
+    {
+      "id": 4116,
+      "title": "Environmental engagement",
+      "description": "Percentage of households that engaged in activities aimed at conservation or protection of the environment or wildlife, and of those that did the type of activity. The data is from the Households and the environment survey.",
+      "link": "https://open.canada.ca/data/en/dataset/2a6099cd-6b2f-4ed3-b2e4-11cd68f4102c",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2023-12-08T14:44:31.639941",
+      "richness": 50
+    },
+    {
+      "id": 4117,
+      "title": "National Archives Staff Engagement",
+      "description": "The Civil Service People Survey involves organisations from across the civil service. A key element of the survey is the 'Employee Engagement Index'. This is a measure of how engaged employees are with their work and it is calculated from responses to five of the key questions in the people survey:\r\n\r\nI am proud when I tell others I am part of The National Archives  \r\nI would recommend The National Archives as a great place to work  \r\nI feel a strong personal attachment to The National Archives  \r\nThe National Archives inspires me to do the best in my job  \r\nThe National Archives motivates me to help it achieve its objectives\r\n",
+      "link": "https://data.gov.uk/dataset/national-archives-staff-engagement",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "The National Archives",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2020-06-17T09:45:53.583750",
+      "richness": 35
+    },
+    {
+      "id": 4118,
+      "title": "World Values Survey",
+      "description": "Provides data on social, cultural, economic, and political values worldwide, including community engagement metrics.",
+      "link": "https://www.worldvaluessurvey.org/",
+      "source": "World Values Survey Association",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4119,
+      "title": "Youth Well-being Policy Review",
+      "description": "OECD data on factors affecting youth well-being, including community involvement and mental health indicators.",
+      "link": "https://www.oecd.org/els/youth-well-being.htm",
+      "source": "OECD",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4120,
+      "title": "National Survey of Children's Health",
+      "description": "US-based survey data on child and adolescent health, including community and social well-being aspects.",
+      "link": "https://mchb.hrsa.gov/data/national-surveys",
+      "source": "Health Resources and Services Administration",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4121,
+      "title": "Population Estimates: National Monthly Population",
+      "description": "Monthly Population Estimates by Universe, Age, Sex, Race, and Hispanic Origin for the United States // Source: U.S. Census Bureau, Population Division // Universes include the resident population, resident population plus Armed Forces overseas, civilian population, civilian noninstitutionalized population, and household population. The estimates are developed from an April 1, 2020 base population and may incorporate changes resulting from the Count Question Resolution program and/or geographic program revisions. 'In combination' means in combination with one or more other races. The sum of the five race-in-combination groups adds to more than the total population because individuals may report more than one race. Hispanic origin is considered an ethnicity, not a race. Hispanics may be of any race. Responses of 'Some Other Race' from the Census are modified. This results in differences between the population for specific race categories shown in this file versus those in the Census data. // Current data on births, deaths, and migration are used to calculate population change since April 1, 2020. A time series of estimates is produced, beginning with April 1, 2020. The reference date for all estimates is the first of the month. With each new issue of estimates, the entire estimates series is revised. Additional information, including historical and intercensal estimates, evaluation estimates, demographic analysis, research papers, and methodology is available on website: https://www.census.gov/programs-surveys/popest.html",
+      "link": "https://catalog.data.gov/dataset/population-estimates-national-monthly-population",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json"
+      ],
+      "organisation": "Department of Commerce",
+      "licence": "Creative Commons CCZero",
+      "last_modified": "2023-07-19T14:59:49.612691",
+      "richness": 40
+    },
+    {
+      "id": 4123,
+      "title": "Canada’s First State of Youth Report: For Youth, With Youth, By Youth Engagement Data",
+      "description": "Primary qualitative data from State of Youth Report Engagement sessions and individual response forms. The data was collected from 857 youth 13-36 from across Canada from August 2020 to May 2021. For additional details on the methodology or on the engagement sessions please refer to the Information on the Dataset Resource or contact: jeunesse-youth@pch.gc.ca.\r\n",
+      "link": "https://open.canada.ca/data/en/dataset/8a3e9c71-f601-49be-8976-28007cd3e6e4",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf",
+        "csv"
+      ],
+      "organisation": "Canadian Heritage | Patrimoine canadien",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-11-21T00:24:36.785184",
+      "richness": 50
+    },
+    {
+      "id": 4124,
+      "title": "Number of graduates from regular programs for youth, public secondary schools, by age and sex",
+      "description": "The number of high school graduates from regular programs for youth, public schools, by age group and sex.",
+      "link": "https://open.canada.ca/data/en/dataset/f0e8bbb8-c7fa-4d00-be93-d85a168d4c86",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-10-11T14:15:16.837501",
+      "richness": 55
+    },
+    {
+      "id": 4125,
+      "title": "Youth centres",
+      "description": "<p>Details of all youth centres.</p>",
+      "link": "https://data.gov.uk/dataset/youth-centres-nsc",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json",
+        "xml",
+        "csv"
+      ],
+      "organisation": "North Somerset Council",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2016-09-22T14:40:44.254369",
+      "richness": 65
+    },
+    {
+      "id": 4126,
+      "title": "National Youth Policy Database",
+      "description": "Comprehensive data on state-level youth policies, funding, and outcomes across the United States.",
+      "link": "https://youth.gov/evidence-innovation/national-youth-policy-database",
+      "source": "Youth.gov",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4127,
+      "title": "KIDS COUNT Data Center",
+      "description": "Provides state-specific data on child and youth well-being, including education, health, and economic indicators.",
+      "link": "https://datacenter.kidscount.org/",
+      "source": "Annie E. Casey Foundation",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4128,
+      "title": "U.S. Census Bureau's American Community Survey",
+      "description": "Offers detailed demographic, social, and economic data at the state level, useful for comparing youth services.",
+      "link": "https://www.census.gov/programs-surveys/acs",
+      "source": "U.S. Census Bureau",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4129,
+      "title": "Pittsburgh American Community Survey 2015 - Miscellaneous Data",
+      "description": "Miscellaneous Reports from the 2015 American Community Survey Report",
+      "link": "https://catalog.data.gov/dataset/pittsburgh-american-community-survey-2015-miscellaneous-data",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "Allegheny County / City of Pittsburgh / Western PA Regional Data Center",
+      "licence": "License not specified",
+      "last_modified": "2023-01-24T18:11:53.465881",
+      "richness": 40
+    },
+    {
+      "id": 4130,
+      "title": "Providence Police Case Log - Past 180 days",
+      "description": "Recorded state and municipal offenses from AEGIS records management system of the Providence Police.  A single case can contain multiple offenses.  Refer to the case number to see all offenses for a particular case.  The case number can also be used to look up arrest activity for a case in the Providence Police Arrest Log.  \n<br><b>UPDATE:</b><br>\nIncident location is now using block range instead of house numbers. Addresses between 1 and 99 will be 0 Block, addresses between 100 and 199 will use 100 block and so on.  If you are looking for actual addresses you can use the city's <a href=\"https://providenceri.nextrequest.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Open Records Portal</a> to make a request. <br><br>\nTo help maintain the anonymity of special victims and juveniles this list does not include violent sexual offenses, non-violent sexual offenses or incidents of  harassment. Cases being investigated by the department's Special Victims Unit (SVU) or Youth Services Bureau (YSB) will not be published.",
+      "link": "https://catalog.data.gov/dataset/providence-police-case-log-past-180-days",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json",
+        "xml",
+        "csv"
+      ],
+      "organisation": "City of Providence",
+      "licence": "License not specified",
+      "last_modified": "2025-08-11T14:24:47.910266",
+      "richness": 85
+    },
+    {
+      "id": 4131,
+      "title": "Homeless Shelter Capacity Report",
+      "description": "The annual Shelter Capacity Report provides capacity statistics for emergency homeless shelters, transitional housing and violence against women (VAW) shelters in Canada. The number of shelter facilities and the number of permanent beds are reported for each province and territory, as well as by community.",
+      "link": "https://open.canada.ca/data/en/dataset/5800a008-02b1-4621-bc83-f745ae44931e",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "Employment and Social Development Canada | Emploi et Développement social Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-11-20T23:37:39.271342",
+      "richness": 50
+    },
+    {
+      "id": 4132,
+      "title": "Canada’s First State of Youth Report: For Youth, With Youth, By Youth Engagement Data",
+      "description": "Primary qualitative data from State of Youth Report Engagement sessions and individual response forms. The data was collected from 857 youth 13-36 from across Canada from August 2020 to May 2021. For additional details on the methodology or on the engagement sessions please refer to the Information on the Dataset Resource or contact: jeunesse-youth@pch.gc.ca.\r\n",
+      "link": "https://open.canada.ca/data/en/dataset/8a3e9c71-f601-49be-8976-28007cd3e6e4",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf",
+        "csv"
+      ],
+      "organisation": "Canadian Heritage | Patrimoine canadien",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2024-11-21T00:24:36.785184",
+      "richness": 50
+    },
+    {
+      "id": 4133,
+      "title": "Youth centres",
+      "description": "<p>Details of all youth centres.</p>",
+      "link": "https://data.gov.uk/dataset/youth-centres-nsc",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json",
+        "xml",
+        "csv"
+      ],
+      "organisation": "North Somerset Council",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2016-09-22T14:40:44.254369",
+      "richness": 65
+    },
+    {
+      "id": 4134,
+      "title": "HUD Homelessness Data Exchange",
+      "description": "Provides data on homelessness, including youth homelessness, across the U.S. with specific state-level insights.",
+      "link": "https://www.hudexchange.info/homelessness-assistance/homelessness-data-exchange/",
+      "source": "U.S. Department of Housing and Urban Development",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4135,
+      "title": "Indiana Youth Institute Data Center",
+      "description": "Offers comprehensive data on various issues affecting youth in Indiana, including homelessness and related factors.",
+      "link": "https://www.iyi.org/data-library/",
+      "source": "Indiana Youth Institute",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4136,
+      "title": "National Center for Homeless Education",
+      "description": "Contains data and resources on the education of homeless children and youth, with state-specific reports.",
+      "link": "https://nche.ed.gov/data/",
+      "source": "National Center for Homeless Education",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 99417,
+    "entities_count": 16,
+    "angles_count": 5,
+    "datasets_count": 40,
+    "angle_resources_count": 5
+  }
+}

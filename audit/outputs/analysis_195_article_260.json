@@ -1,0 +1,1636 @@
+{
+  "id": 195,
+  "article": {
+    "id": 260,
+    "title": "‘Social apnoea’: sleep disorder could worsen at weekends, research suggests",
+    "content": "‘Social apnoea’: sleep disorder could worsen at weekends, research suggests\n\nLifestyle factors such as drinking and smoking could contribute to increased severity of obstructive sleep apnoea\n\netting your hair down at the weekend might be a well-known recipe for a hangover, but researchers say it might also increase the severity of a common sleep disorder.\n\nObstructive sleep apnoea (OSA) involves complete pauses in breathing or partial reductions in airflow that arise because muscles in the back of the throat relax, causing the airways to narrow or close. It is more common in groups such as older people and people who are overweight or obese.\n\nNow researchers have found the severity of the condition increases at the weekend. The study cannot prove the cause, but suggests it could be down to lifestyle factors such an increase in drinking and smoking, or changes in the type or patterns of sleep – all of which can increase the risk of the condition. As a result, they have called the phenomenon “social apnoea”.\n\n“Obviously, people tend to drink more on the weekend. They tend to smoke more on the weekend if they are prone to smoking,” said Prof Danny Eckert, a co-author of the research at Flinders University in Australia, adding that as well as a possible effect from irregular sleep patterns, it might also be that people were less likely to use devices such as continuous positive airway pressure (Cpap) machines to manage the condition at the weekend.\n\nThe researchers say regardless of the underlying cause, the results matter given the health and safety implications of OSA. It is known to raise the risk of conditions including stroke, high blood pressure and type 2 diabetes, and can also affect driving safety as a result of sleepiness, have an impact on relationships, and reduce quality of life.\n\nWriting in the American Journal of Respiratory and Critical Care Medicine, Eckert and colleagues report how they analysed de-identified data from 70,052 people – the majority of whom were middle-aged, male, and overweight – who used a commercially available under-mattress sleep sensor that can track heart rate, snoring and sleep apnoea.\n\nAll participants had four or more sleep recordings a week, at least 28 sleep apnoea measurements a year, and five or more breathing disruptions an hour during sleep, on average, a year.\n\nThe team found the odds of moderate to severe sleep apnoea, meaning 15 or more breathing interruptions an hour, were 18% higher on Saturdays compared with Wednesdays, and the effect was more pronounced in men and people under the age of 60.\n\nThey also found weekend catch-up sleep of 45 minutes or more, compared with less than six minutes, and social jetlag – in other words, a clock-shift in sleep patterns – of 60 minutes or more, compared with less than 18 minutes, was associated with 47% and 38% greater odds of having moderate to severe OSA respectively.\n\nDr Sriram Iyer, an NHS respiratory and sleep consultant, who was not involved in the work, said the study highlighted the night-to-night variability in OSA symptoms, and the team’s assumptions about the cause of the weekend uptick were “perfectly reasonable”.\n\nRyan Chin Taw Cheong, a consultant ENT and sleep surgeon at the Cleveland clinic, London, praised the size of the study, saying it was the first of its kind to look at variability in the severity of the condition throughout the week.\n\nWhile he noted that study did not include data on participants’ lifestyles, meaning it could not prove the cause of the increased severity of OSA at the weekends, he said factors such as smoking and drinking were known to exacerbate symptoms, and addressing such issues – alongside diet and weight – should be one of the first steps taken to tackle the condition.\n\n“With the best intentions, we can try to treat you medically. But if you’re consuming lots of alcohol or smoking heavily, whatever we’re doing as medical professionals will be just a drop in the ocean,” Cheong said.",
+    "file": null,
+    "language": "en",
+    "submitted_at": "2025-08-23T01:27:01.937047+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : en\n- **Personnes** : Danny Eckert, Sriram Iyer, Ryan Chin Taw Cheong\n- **Organisations** : Flinders University, American Journal of Respiratory and Critical Care Medicine, NHS, Cleveland clinic\n- **Lieux** : Australia, London\n- **Valeurs numériques** : 70,052 (70052.0 None), four (4.0 None), 28 (28.0 None), five (5.0 None), an hour, a year, 18% (18.0 %), 15 (15.0 None), an hour, 60 (60.0 None), 45 minutes (45.0 minutes), six minutes (6.0 minutes), 47% (47.0 %), 38% (38.0 %), 60 minutes (60.0 minutes), 18 minutes (18.0 minutes)\n\n## Suggestions d’angles\n\n### 1. Weekend Warriors: Sleep Apnoea's Unseen Risk\nExamine how lifestyle changes from weekdays to weekends amplify sleep apnoea symptoms. Explore potential health risks associated with this variation, and visualize patterns using data from sleep studies.\n\n### 2. The Cost of Weekend Indulgence: Health Impact of Social Apnoea\nAnalyze the correlation between weekend lifestyle choices and the exacerbation of sleep disorders. Utilize data on alcohol consumption and smoking rates to highlight health policy implications.\n\n### 3. Social Jetlag: The Weekend Shift Affecting Sleep Health\nInvestigate the concept of social jetlag and its impact on sleep disorders like OSA. Use graphics to illustrate the shift in sleep patterns and its correlation with increased apnoea severity.\n\n### 4. Gender and Age: Who Suffers More from Weekend Sleep Woes?\nDelve into demographic variations in the severity of weekend sleep apnoea. Compare data across age groups and genders to identify the most affected populations, aiding targeted health interventions.\n\n### 5. From Habit to Hazard: Lifestyle Choices and Sleep Apnoea\nExplore how habitual weekend activities such as late-night outings and increased substance use can worsen OSA. Present visual data comparisons between weekday and weekend habits.\n",
+  "created_at": "2025-08-23T01:28:25.099486+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Weekend Warriors: Sleep Apnoea's Unseen Risk",
+      "description": "Examine how lifestyle changes from weekdays to weekends amplify sleep apnoea symptoms. Explore potential health risks associated with this variation, and visualize patterns using data from sleep studies.",
+      "keywords": [
+        "sleep apnoea",
+        "weekend warriors",
+        "sleep disorders",
+        "health risks",
+        "sleep study"
+      ],
+      "datasets": [
+        {
+          "title": "PLACES: Local Data for Better Health, County Data 2023 release",
+          "description": "This dataset contains model-based county estimates. PLACES covers the entire United States—50 states and the District of Columbia—at county, place, census tract, and ZIP Code Tabulation Area levels. It provides information uniformly on this large scale for local areas at four geographic levels. Estimates were provided by the Centers for Disease Control and Prevention (CDC), Division of Population Health, Epidemiology and Surveillance Branch. PLACES was funded by the Robert Wood Johnson Foundation in conjunction with the CDC Foundation. This dataset includes estimates for 36 measures: 13 for health outcomes, 9 for preventive services use, 4 for chronic disease-related health risk behaviors, 7 for disabilities, and 3 for health status. These estimates can be used to identify emerging health problems and to help develop and carry out effective, targeted public health prevention activities. Because the small area model cannot detect effects due to local interventions, users are cautioned against using these estimates for program or policy evaluations. Data sources used to generate these model-based estimates are Behavioral Risk Factor Surveillance System (BRFSS) 2021 or 2020 data, Census Bureau 2021 or 2020 county population estimate data, and American Community Survey 2017–2021, or 2016–2020 estimates. The 2023 release uses 2021 BRFSS data for 29 measures and 2020 BRFSS data for 7 measures (all teeth lost, dental visits, mammograms, cervical cancer screening, colorectal cancer screening, core preventive services among older adults, and sleeping less than 7 hours) that the survey collects data on every other year. More information about the methodology can be found at  www.cdc.gov/places.",
+          "link": "https://catalog.data.gov/dataset/places-local-data-for-better-health-county-data-2023-release",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json",
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-02-03T21:42:08.096743",
+          "richness": 75
+        },
+        {
+          "title": "Administrative Boundaries Centroids of National Park System Units",
+          "description": "National Park Service unit points.",
+          "link": "https://catalog.data.gov/dataset/administrative-boundaries-centroids-of-national-park-system-units-fcbf1",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-04-05T21:00:48.922310",
+          "richness": 55
+        },
+        {
+          "title": "Are Canadian adults getting enough sleep?",
+          "description": "Factors related to insufficient sleep and current recommendations",
+          "link": "https://open.canada.ca/data/en/dataset/a0321851-7926-4567-ba0d-ee12b82e5a99",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2019-05-03T17:56:15.889371",
+          "richness": 35
+        },
+        {
+          "title": "Are Canadian children getting enough sleep? - Infographic",
+          "description": "To be as healthy as possible, children need adequate night time sleep.",
+          "link": "https://open.canada.ca/data/en/dataset/0f4efe3d-0666-4627-8958-51656c5731d1",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2018-12-28T16:50:28.105297",
+          "richness": 35
+        },
+        {
+          "title": "Rough Sleeping Statistics England",
+          "description": "Rough sleeping counts and estimates in England, by local housing authority\r\n\r\nSource agency: Communities and Local Government\r\n\r\nDesignation: Official Statistics not designated as National Statistics\r\n\r\nLanguage: English\r\n\r\nAlternative title: Rough Sleeping Statistics England",
+          "link": "https://data.gov.uk/dataset/rough_sleeping_statistics_england_",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls",
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2015-02-26T10:16:32.545552",
+          "richness": 40
+        },
+        {
+          "title": "National Sleep Research Resource",
+          "description": "A comprehensive collection of sleep data from various studies, including polysomnography and actigraphy data.",
+          "link": "https://sleepdata.org/",
+          "source": "National Sleep Research Resource",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "CDC Sleep and Sleep Disorders Data",
+          "description": "Data and statistics on sleep health and disorders, including prevalence and risk factors in the U.S.",
+          "link": "https://www.cdc.gov/sleep/data_statistics.html",
+          "source": "Centers for Disease Control and Prevention",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "NHS Digital: Sleep Disorders Statistics",
+          "description": "Statistics on sleep disorders, including hospital admissions and treatments in England.",
+          "link": "https://digital.nhs.uk/data-and-information/publications/statistical/sleeping-disorders",
+          "source": "NHS Digital",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "National Sleep Research Resource",
+          "description": "A comprehensive collection of sleep data from various studies, including polysomnography and actigraphy data.",
+          "link": "https://sleepdata.org/",
+          "source": "National Sleep Research Resource"
+        },
+        {
+          "title": "CDC Sleep and Sleep Disorders Data",
+          "description": "Data and statistics on sleep health and disorders, including prevalence and risk factors in the U.S.",
+          "link": "https://www.cdc.gov/sleep/data_statistics.html",
+          "source": "Centers for Disease Control and Prevention"
+        },
+        {
+          "title": "NHS Digital: Sleep Disorders Statistics",
+          "description": "Statistics on sleep disorders, including hospital admissions and treatments in England.",
+          "link": "https://digital.nhs.uk/data-and-information/publications/statistical/sleeping-disorders",
+          "source": "NHS Digital"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Variation des symptômes de l'apnée du sommeil (semaine vs weekend)",
+          "chart_type": "line",
+          "x": "Jour de la semaine",
+          "y": "Sévérité des symptômes",
+          "note": "Source : Études de sommeil, données journalières"
+        },
+        {
+          "title": "Comparaison des habitudes de sommeil (semaine vs weekend)",
+          "chart_type": "bar",
+          "x": "Habitudes de sommeil",
+          "y": "Durée moyenne (heures)",
+          "note": "Inclut la durée du sommeil, les réveils nocturnes, etc."
+        },
+        {
+          "title": "Risque de santé lié à l'apnée du sommeil (semaine vs weekend)",
+          "chart_type": "heatmap",
+          "x": "Jour de la semaine",
+          "y": "Type de risque de santé",
+          "note": "Visualisation des risques cardiovasculaires, fatigue, etc."
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "The Cost of Weekend Indulgence: Health Impact of Social Apnoea",
+      "description": "Analyze the correlation between weekend lifestyle choices and the exacerbation of sleep disorders. Utilize data on alcohol consumption and smoking rates to highlight health policy implications.",
+      "keywords": [
+        "weekend drinking",
+        "social apnoea",
+        "health impact",
+        "alcohol consumption",
+        "sleep disorders"
+      ],
+      "datasets": [
+        {
+          "title": "USDA National Nutrient Database for Standard Reference Dataset for What We Eat In America, NHANES (Survey-SR)",
+          "description": "<p>The dataset, Survey-SR, provides the nutrient data for assessing dietary intakes from the national survey What We Eat In America, National Health and Nutrition Examination Survey (WWEIA, NHANES). Historically, USDA databases have been used for national nutrition monitoring (1). Currently, the Food and Nutrient Database for Dietary Studies (FNDDS) (2), is used by Food Surveys Research Group, ARS, to process dietary intake data from WWEIA, NHANES. Nutrient values for FNDDS are based on Survey-SR. Survey-SR was referred to as the \"Primary Data Set\" in older publications. Early versions of the dataset were composed mainly of commodity-type items such as wheat flour, sugar, milk, etc. However, with increased consumption of commercial processed and restaurant foods and changes in how national nutrition monitoring data are used (1), many commercial processed and restaurant items have been added to Survey-SR. \n \nThe current version, Survey-SR 2013-2014, is mainly based on the USDA National Nutrient Database for Standard Reference (SR) 28 (2) and contains sixty-six nutrientseach for 3,404 foods. These nutrient data will be used for assessing intake data from WWEIA, NHANES 2013-2014. Nutrient profiles were added for 265 new foods and updated for about 500 foods from the version used for the previous survey (WWEIA, NHANES 2011-12).  New foods added include mainly commercially processed foods such as several gluten-free products, milk substitutes, sauces and condiments such as sriracha, pesto and wasabi, Greek yogurt, breakfast cereals, low-sodium meat products, whole grain pastas and baked products, and several beverages including bottled tea and coffee, coconut water, malt beverages, hard cider, fruit-flavored drinks, fortified fruit juices and fruit and/or vegetable smoothies. Several school lunch pizzas and chicken products, fast-food sandwiches, and new beef cuts were also added, as they are now reported more frequently by survey respondents. Nutrient profiles were updated for several commonly consumed foods such as cheddar, mozzarella and American cheese, ground beef, butter, and catsup. The changes in nutrient values may be due to reformulations in products, changes in the market shares of brands, or more accurate data. Examples of more accurate data include analytical data, market share data, and data from a nationally representative sample. </p><div><br>Resources in this dataset:</div><br><ul><li><p>Resource Title: USDA National Nutrient Database for Standard Reference Dataset for What We Eat In America, NHANES 2013-14 (Survey SR 2013-14).</p> <p>File Name: SurveySR_2013_14 (1).zip</p><p>Resource Description: Access database downloaded on November 16, 2017. US Department of Agriculture, Agricultural Research Service, Nutrient Data Laboratory. USDA National Nutrient Database for Standard Reference Dataset for What We Eat In America, NHANES (Survey-SR), October 2015. </p></li><br><li><p>Resource Title: Data Dictionary.</p> <p>File Name: SurveySR_DD.pdf</p></li></ul><p></p>",
+          "link": "https://catalog.data.gov/dataset/usda-national-nutrient-database-for-standard-reference-dataset-for-what-we-eat-in-america--37895",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf",
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-04-21T19:28:03.105555",
+          "richness": 50
+        },
+        {
+          "title": "EPA Facility Registry Service (FRS): Facility Interests Dataset Download",
+          "description": "This downloadable data package consists of location and facility identification information from EPA's Facility Registry Service (FRS) for all sites that are available in the FRS individual feature layers. The layers comprise the FRS major program databases, including: Assessment Cleanup and Redevelopment Exchange System (ACRES) : brownfields sites ; Air Facility System (AFS) : stationary sources of air pollution ; ICIS-AIR (AIR) : stationary sources of air pollution;  Bureau of Indian Affairs (BIA) : schools data on Indian land; Base Realignment and Closure (BRAC) facilities; Clean Air Markets Division Business System (CAMDBS) :  market-based air pollution control programs;  Comprehensive Environmental Response, Superfund Enterprise Management System (SEMS): hazardous waste sites; Integrated Compliance Information System (ICIS) : integrated enforcement and compliance information; National Compliance Database (NCDB) : Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA) and the Toxic Substances Control Act (TSCA); National Pollutant Discharge Elimination System (NPDES) module of ICIS : NPDES surface water permits; Radiation Information Database (RADINFO) : radiation and radioactivity facilities; RACT/BACT/LAER Clearinghouse (RBLC) : best available air pollution technology requirements; Resource Conservation and Recovery Act Information System (RCRAInfo) : tracks generators, transporters, treaters, storers, and disposers of hazardous waste; Toxic Release Inventory (TRI) : certain industries that use, manufacture, treat, or transport more than 650 toxic chemicals; Emission Inventory System (EIS) : inventory of large stationary sources and voluntarily-reported smaller sources of air point pollution emitters; countermeasure (SPCC) and facility response plan (FRP) subject facilities; Electronic Greenhouse Gas Reporting Tool (E-GGRT) : large greenhouse gas emitters; Emissions and; Generation Resource Integrated Database (EGRID) : power plants. The Facility Registry Service (FRS) identifies and geospatially locates facilities, sites or places subject to environmental regulations or of environmental interest. Using vigorous verification and data management procedures, FRS integrates facility data from EPA's national program systems, other federal agencies, and State and tribal master facility records and provides EPA with a centrally managed, single source of comprehensive and authoritative information on facilities. This data set contains the FRS facilities that link to the programs listed above once the program data has been integrated into the FRS database. Additional information on FRS is available at the EPA website https://www.epa.gov/enviro/facility-registry-service-frs.  Included in this package are a file geodatabase, Esri ArcMap map document and an XML file of this metadata record.  Full FGDC metadata records for each layer are contained in the database.",
+          "link": "https://catalog.data.gov/dataset/epa-facility-registry-service-frs-facility-interests-dataset-download9",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-08-18T20:58:19.806938",
+          "richness": 45
+        },
+        {
+          "title": "Use of non-parental child care in the evenings or on weekends, children aged 0 to 5 years",
+          "description": "<p>Percentage of children aged 0 to 5 years participating in non-parental child care in the evenings or on weekends.<br>\n</p>\n",
+          "link": "https://open.canada.ca/data/en/dataset/0077bdfb-8176-4737-b982-4297c22e17dd",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-12-05T14:14:50.051369",
+          "richness": 50
+        },
+        {
+          "title": "Type of non-parental child care used in the evenings or on weekends, children aged 0 to 5 years",
+          "description": "<p>Percentage of children aged 0 to 5 years participating in non-parental child care in the evenings or on weekends, by type of child care arrangement.<br>\n</p>\n",
+          "link": "https://open.canada.ca/data/en/dataset/d8dc2992-f66d-40fb-b11d-0fbc49bc9bf7",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2023-12-05T14:14:50.653910",
+          "richness": 50
+        },
+        {
+          "title": "Parking Controlled Weekend Zones",
+          "description": "A controlled parking weekend zone, often referred to as a CPZ, is an area where the council have introduced restrictions on parking during certain times. These restrictions only apply to public roads. Other restrictions apply to private land and streets such as council estates.",
+          "link": "https://data.gov.uk/dataset/parking-controlled-weekend-zones",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2014-05-14T15:30:58.380889",
+          "richness": 40
+        },
+        {
+          "title": "WHO Global Health Observatory Data",
+          "description": "Comprehensive data on alcohol consumption and smoking prevalence worldwide, useful for health impact analysis.",
+          "link": "https://www.who.int/data/gho",
+          "source": "World Health Organization",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "OECD Health Statistics",
+          "description": "Data on health risks including alcohol and tobacco consumption across OECD countries, relevant for policy implications.",
+          "link": "https://www.oecd.org/health/health-data.htm",
+          "source": "OECD",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "Eurostat Public Health Database",
+          "description": "Statistics on health determinants, including lifestyle factors such as alcohol and tobacco use in Europe.",
+          "link": "https://ec.europa.eu/eurostat/web/health/data/database",
+          "source": "Eurostat",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "WHO Global Health Observatory Data",
+          "description": "Comprehensive data on alcohol consumption and smoking prevalence worldwide, useful for health impact analysis.",
+          "link": "https://www.who.int/data/gho",
+          "source": "World Health Organization"
+        },
+        {
+          "title": "OECD Health Statistics",
+          "description": "Data on health risks including alcohol and tobacco consumption across OECD countries, relevant for policy implications.",
+          "link": "https://www.oecd.org/health/health-data.htm",
+          "source": "OECD"
+        },
+        {
+          "title": "Eurostat Public Health Database",
+          "description": "Statistics on health determinants, including lifestyle factors such as alcohol and tobacco use in Europe.",
+          "link": "https://ec.europa.eu/eurostat/web/health/data/database",
+          "source": "Eurostat"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Weekend Alcohol Consumption vs Sleep Disorder Rates",
+          "chart_type": "scatter",
+          "x": "Alcohol Consumption (units)",
+          "y": "Sleep Disorder Incidence (%)",
+          "note": "Data source: National Health Surveys, 2023. Focus on weekend patterns."
+        },
+        {
+          "title": "Smoking Rates and Sleep Apnoea Correlation on Weekends",
+          "chart_type": "bar",
+          "x": "Smoking Rate (%)",
+          "y": "Sleep Apnoea Cases (%)",
+          "note": "Data source: Health Ministry Reports, 2023. Weekend-specific data."
+        },
+        {
+          "title": "Health Policy Impact: Alcohol and Smoking on Sleep Disorders",
+          "chart_type": "donut + bar",
+          "x": "Policy Implementation Year",
+          "y": "Reduction in Disorder Cases (%)",
+          "note": "Data source: Government Health Reports, 2018-2023. Shows policy efficacy."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Social Jetlag: The Weekend Shift Affecting Sleep Health",
+      "description": "Investigate the concept of social jetlag and its impact on sleep disorders like OSA. Use graphics to illustrate the shift in sleep patterns and its correlation with increased apnoea severity.",
+      "keywords": [
+        "social jetlag",
+        "sleep patterns",
+        "weekend sleep",
+        "circadian rhythm",
+        "sleep health"
+      ],
+      "datasets": [
+        {
+          "title": "Baby Names from Social Security Card Applications - National Data",
+          "description": "The data (name, year of birth, sex, and number) are from a 100 percent sample of Social Security card applications for 1880 on.",
+          "link": "https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-data",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-07-04T07:09:50.971701",
+          "richness": 50
+        },
+        {
+          "title": "Baby Names from Social Security Card Applications - State and District of Columbia Data",
+          "description": "The data (name, year of birth, sex, state, and number) are from a 100 percent sample of Social Security card applications starting with 1910. National data is in another dataset.",
+          "link": "https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-state-and-district-of-columbia-data",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-07-04T07:09:55.573131",
+          "richness": 50
+        },
+        {
+          "title": "Quality of Life - Social Stability",
+          "description": "Stability is important for overall well-being and can be affected by adverse changes in the social environment. Lack of social stability inversely influences quality of life, because it suggests a possible breakdown of the social order. Impacts on health and well-being may vary, but can potentially have detrimental long-lasting repercussions for society and the individual. Lower mobility (or change in residence) among the population through time implies greater social cohesion.",
+          "link": "https://open.canada.ca/data/en/dataset/edf08d8f-8893-11e0-876c-6cf049291510",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2022-03-14T19:39:14.056766",
+          "richness": 35
+        },
+        {
+          "title": "Social Insurance Number (SIN) Repository",
+          "description": "The Repository is a measure of transparency for the use of the SIN that cannot be succinctly captured in Appendix A of the Directive on Social Insurance Number. For example, there are several programs across many institutions that cite the Income Tax Act as the legal authority to collect the SIN as their institution must issue tax slips to individuals. There is not a straightforward way to list every single one in the Directive itself. Interested members of the public may now download the repository and see how many programs within an institution collect or use the SIN. ",
+          "link": "https://open.canada.ca/data/en/dataset/fccf7e83-4a64-4113-bc67-837ef55b4ba8",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xlsx"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-01-13T16:10:31.847894",
+          "richness": 50
+        },
+        {
+          "title": "Social Trends",
+          "description": "This series ended in 2012.\r\n\r\nAn established reference source, Social Trends draws together social and economic data from a wide range of government departments and other organisations; it paints a broad picture of UK society today, and how it has been changing.\r\nSource agency: Office for National Statistics\r\nDesignation: National Statistics\r\nLanguage: English\r\nAlternative title: Social Trends",
+          "link": "https://data.gov.uk/dataset/social_trends",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf",
+            "xls",
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2015-10-05T17:02:27.236068",
+          "richness": 60
+        },
+        {
+          "title": "CDC - Sleep and Sleep Disorders Data",
+          "description": "Comprehensive data on sleep patterns, disorders, and health impacts in the U.S., including social jetlag.",
+          "link": "https://www.cdc.gov/sleep/data_statistics.html",
+          "source": "Centers for Disease Control and Prevention",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "European Sleep Apnoea Database (ESADA)",
+          "description": "Data on sleep apnoea severity and associated health outcomes across Europe.",
+          "link": "https://esada.med.lu.se/",
+          "source": "European Sleep Apnoea Database",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "OECD Health Data - Sleep and Lifestyle",
+          "description": "International data on lifestyle factors affecting health, including sleep patterns and disorders.",
+          "link": "https://www.oecd.org/health/health-data.htm",
+          "source": "OECD",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "CDC - Sleep and Sleep Disorders Data",
+          "description": "Comprehensive data on sleep patterns, disorders, and health impacts in the U.S., including social jetlag.",
+          "link": "https://www.cdc.gov/sleep/data_statistics.html",
+          "source": "Centers for Disease Control and Prevention"
+        },
+        {
+          "title": "European Sleep Apnoea Database (ESADA)",
+          "description": "Data on sleep apnoea severity and associated health outcomes across Europe.",
+          "link": "https://esada.med.lu.se/",
+          "source": "European Sleep Apnoea Database"
+        },
+        {
+          "title": "OECD Health Data - Sleep and Lifestyle",
+          "description": "International data on lifestyle factors affecting health, including sleep patterns and disorders.",
+          "link": "https://www.oecd.org/health/health-data.htm",
+          "source": "OECD"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Variation des heures de sommeil en semaine vs week-end",
+          "chart_type": "bar",
+          "x": "Jour de la semaine",
+          "y": "Heures de sommeil",
+          "note": "Comparer les heures de sommeil entre les jours de semaine et le week-end"
+        },
+        {
+          "title": "Corrélation entre le décalage social et la sévérité de l'apnée",
+          "chart_type": "scatter",
+          "x": "Décalage social (heures)",
+          "y": "Indice de sévérité de l'apnée",
+          "note": "Source : Études cliniques sur l'apnée du sommeil"
+        },
+        {
+          "title": "Distribution du décalage social dans la population",
+          "chart_type": "histogram",
+          "x": "Décalage social (heures)",
+          "y": "Nombre de personnes",
+          "note": "Visualiser comment le décalage social est réparti dans différentes tranches d'âge"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Gender and Age: Who Suffers More from Weekend Sleep Woes?",
+      "description": "Delve into demographic variations in the severity of weekend sleep apnoea. Compare data across age groups and genders to identify the most affected populations, aiding targeted health interventions.",
+      "keywords": [
+        "sleep patterns",
+        "gender differences",
+        "age groups",
+        "weekend sleep",
+        "sleep deprivation"
+      ],
+      "datasets": [
+        {
+          "title": "NSSP Emergency Department Visit Trajectories by State and Sub State Regions- COVID-19, Flu, RSV, Combined",
+          "description": "NSSP Emergency Department (ED) Visit Trajectories by State and Sub-State Regions- COVID-19, Flu, RSV, Combined. This dataset provides the percentage of emergency department patient visits for the specified pathogen of all ED patient visits for the specified geographic part of the country that were observed for the given week from data submitted to the National Syndromic Surveillance Program (NSSP). In addition, the trend over time is characterized as increasing, decreasing or no change, with exceptions for when there are no data available, the data are too sparse, or there are not enough data to compute a trend. These data are to provide awareness of how the weekly trend is changing for the given geographic region.  \n\nNote that the reported sub-state trends are from Health Service Areas (HSA) and the data reported from the health care facilities located within the given HSA. Health Service Areas are regions of one or more counties that align to patterns of care seeking. The HSA level data are reported for each county in the HSA. \n\nMore information on HSAs is available <a href=\"https://seer.cancer.gov/seerstat/variables/countyattribs/hsa.html\"><b>here</b></a>.\n\nFor the emergency department time series, trajectory classifications reported on for sub-state (HSA) emergency department time series, trajectory classifications are based on approximations of the first derivative (slope) of trends that are smoothed using generalized additive models (GAMs). To determine time intervals in which the slope is sufficiently changing (i.e., rate of change distinguishable from 0), 95% confidence intervals for the slope approximations are calculated and assessed. Weeks with a 95% confidence interval not containing 0 are classified as increasing if the slope estimate is positive and decreasing if the slope estimate is negative. Weeks with a 95% confidence interval containing 0 are classified as stable. In the scenario that an HSA's time series is determined to be too sparse (i.e., many weeks with percentages of 0%), a model is not fit, and the HSA is classified as “sparse”.  \n\nFor additional information, please see: <a href=\"https://www.cdc.gov/ncird/surveillance/respiratory-illnesses/index.html#companion-guide\"><b>Companion Guide: NSSP Emergency Department Data on Respiratory Illness</b></a>\n\nUpdated once per week on Fridays. ",
+          "link": "https://catalog.data.gov/dataset/2023-respiratory-virus-response-nssp-emergency-department-visit-trajectories-by-state-and-",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json",
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-08-16T20:48:24.048348",
+          "richness": 85
+        },
+        {
+          "title": "U.S. Food Imports",
+          "description": "U.S. consumers demand variety, quality, and convenience in the foods they consume. As Americans have become wealthier and more ethnically diverse, the American food basket reflects a growing share of tropical products, spices, and imported gourmet products. Seasonal and climatic factors drive U.S. imports of popular types of fruits and vegetables and tropical products, such as cocoa and coffee. In addition, a growing share of U.S. imports can be attributed to intra-industry trade, whereby agricultural-processing industries based in the United States carry out certain processing steps offshore and import products at different levels of processing from their subsidiaries in foreign markets.\r\n \r\nThis data set provides import values of edible products (food and beverages) entering U.S. ports and their origin of shipment. Data are from the U.S. Department of Commerce, U.S. Census Bureau. Food and beverage import values are compiled by calendar year into food groups corresponding to major commodities or level of processing. At least 10 years of annual data are included, enabling users to track long-term growth patterns.",
+          "link": "https://catalog.data.gov/dataset/u-s-food-imports",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-04-21T20:42:39.675205",
+          "richness": 55
+        },
+        {
+          "title": "Drainage Patterns",
+          "description": "Contained within the 5th Edition (1978 to 1995) of the National Atlas of Canada is a map that shows rivers, lakes and glaciers of Canada in great detail without names as a pure pattern on a dark background.",
+          "link": "https://open.canada.ca/data/en/dataset/830ae77f-8aac-5c13-8ed0-855d7f87f33b",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2022-03-14T19:31:51.610956",
+          "richness": 35
+        },
+        {
+          "title": "Settlement Pattern",
+          "description": "Contained within the 5th Edition (1978 to 1995) of the National Atlas of Canada is a map that shows Canada as it could be seen from space on a clear night - settlements are white dots on a dark background. The data is from the 1981 Census.",
+          "link": "https://open.canada.ca/data/en/dataset/691b3cf5-13ee-5fb9-80ac-3165b413e00b",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2022-03-14T19:31:49.593208",
+          "richness": 35
+        },
+        {
+          "title": "Rough Sleeping Statistics England",
+          "description": "Rough sleeping counts and estimates in England, by local housing authority\r\n\r\nSource agency: Communities and Local Government\r\n\r\nDesignation: Official Statistics not designated as National Statistics\r\n\r\nLanguage: English\r\n\r\nAlternative title: Rough Sleeping Statistics England",
+          "link": "https://data.gov.uk/dataset/rough_sleeping_statistics_england_",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls",
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2015-02-26T10:16:32.545552",
+          "richness": 40
+        },
+        {
+          "title": "CDC - National Health Interview Survey (NHIS)",
+          "description": "Comprehensive health data including sleep patterns segmented by age and gender in the U.S.",
+          "link": "https://www.cdc.gov/nchs/nhis/index.htm",
+          "source": "Centers for Disease Control and Prevention",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "OECD Health Statistics",
+          "description": "Health data across OECD countries, including sleep-related issues by demographics.",
+          "link": "https://www.oecd.org/health/health-data.htm",
+          "source": "Organisation for Economic Co-operation and Development",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "UK Data Service - Understanding Society",
+          "description": "Longitudinal study data on UK residents, covering sleep habits by age and gender.",
+          "link": "https://www.understandingsociety.ac.uk/",
+          "source": "UK Data Service",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "CDC - National Health Interview Survey (NHIS)",
+          "description": "Comprehensive health data including sleep patterns segmented by age and gender in the U.S.",
+          "link": "https://www.cdc.gov/nchs/nhis/index.htm",
+          "source": "Centers for Disease Control and Prevention"
+        },
+        {
+          "title": "OECD Health Statistics",
+          "description": "Health data across OECD countries, including sleep-related issues by demographics.",
+          "link": "https://www.oecd.org/health/health-data.htm",
+          "source": "Organisation for Economic Co-operation and Development"
+        },
+        {
+          "title": "UK Data Service - Understanding Society",
+          "description": "Longitudinal study data on UK residents, covering sleep habits by age and gender.",
+          "link": "https://www.understandingsociety.ac.uk/",
+          "source": "UK Data Service"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Apnée du sommeil le week-end par groupe d'âge",
+          "chart_type": "bar",
+          "x": "Groupe d'âge",
+          "y": "Prévalence de l'apnée du sommeil (%)",
+          "note": "Comparer les taux d'apnée du sommeil le week-end entre différents groupes d'âge. Source : Enquête nationale sur la santé."
+        },
+        {
+          "title": "Différences de genre dans l'apnée du sommeil le week-end",
+          "chart_type": "donut",
+          "x": "Genre",
+          "y": "Pourcentage de personnes affectées",
+          "note": "Visualiser la répartition par genre des personnes souffrant d'apnée du sommeil le week-end. Source : Enquête nationale sur la santé."
+        },
+        {
+          "title": "Sévérité de l'apnée du sommeil le week-end par âge et genre",
+          "chart_type": "heatmap",
+          "x": "Groupe d'âge",
+          "y": "Genre",
+          "note": "Identifier les groupes les plus affectés par l'apnée du sommeil le week-end. Source : Enquête nationale sur la santé."
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "From Habit to Hazard: Lifestyle Choices and Sleep Apnoea",
+      "description": "Explore how habitual weekend activities such as late-night outings and increased substance use can worsen OSA. Present visual data comparisons between weekday and weekend habits.",
+      "keywords": [
+        "sleep disorders",
+        "lifestyle impact",
+        "sleep quality",
+        "health risks",
+        "apnoea prevalence"
+      ],
+      "datasets": [
+        {
+          "title": "Adult Depression (LGHC Indicator)",
+          "description": "This is a source dataset for a Let's Get Healthy California indicator at \"https://letsgethealthy.ca.gov/.\" This table displays the proportion of adults who were ever told they had a depressive disorder in California. It contains data for California only. The data are from the California Behavioral Risk Factor Surveillance Survey (BRFSS). The California BRFSS is an annual cross-sectional health-related telephone survey that collects data about California residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. The BRFSS is conducted by Public Health Survey Research Program of California State University, Sacramento under contract from CDPH. This indicator is based on the question: \"“Has a doctor, nurse or other health professional EVER told you that you have a depressive disorder (including depression, major depression, dysthymia, or minor depression)?” NOTE: Denominator data and weighting was taken from the California Department of Finance, not U.S. Census. Values may therefore differ from what has been published in the national BRFSS data tables by the Centers for Disease Control and Prevention (CDC) or other federal agencies.",
+          "link": "https://catalog.data.gov/dataset/adult-depression-lghc-indicator-627e3",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv",
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-11-27T01:08:24.514233",
+          "richness": 50
+        },
+        {
+          "title": "Health conditions among children under age 18, by selected characteristics: United States",
+          "description": "NOTE: On October 19, 2021, estimates for 2016–2018 by health insurance status were revised to correct errors. Changes are highlighted and tagged at https://www.cdc.gov/nchs/data/hus/2019/012-508.pdf\n\nData on health conditions among children under age 18, by selected population characteristics. Please refer to the PDF or Excel version of this table in the HUS 2019 Data Finder (https://www.cdc.gov/nchs/hus/contents2019.htm) for critical information about measures, definitions, and changes over time.\n\nSOURCE: NCHS, National Health Interview Survey, Family Core and Sample Child questionnaires.  For more information on the National Health Interview Survey, see the corresponding Appendix entry at https://www.cdc.gov/nchs/data/hus/hus19-appendix-508.pdf.",
+          "link": "https://catalog.data.gov/dataset/health-conditions-among-children-under-age-18-by-selected-characteristics-united-states-53b56",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "json",
+            "xml",
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-04-23T02:35:39.265118",
+          "richness": 80
+        },
+        {
+          "title": "Are Canadian adults getting enough sleep?",
+          "description": "Factors related to insufficient sleep and current recommendations",
+          "link": "https://open.canada.ca/data/en/dataset/a0321851-7926-4567-ba0d-ee12b82e5a99",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2019-05-03T17:56:15.889371",
+          "richness": 35
+        },
+        {
+          "title": "Are Canadian children getting enough sleep? - Infographic",
+          "description": "To be as healthy as possible, children need adequate night time sleep.",
+          "link": "https://open.canada.ca/data/en/dataset/0f4efe3d-0666-4627-8958-51656c5731d1",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2018-12-28T16:50:28.105297",
+          "richness": 35
+        },
+        {
+          "title": "Rough Sleeping Statistics England",
+          "description": "Rough sleeping counts and estimates in England, by local housing authority\r\n\r\nSource agency: Communities and Local Government\r\n\r\nDesignation: Official Statistics not designated as National Statistics\r\n\r\nLanguage: English\r\n\r\nAlternative title: Rough Sleeping Statistics England",
+          "link": "https://data.gov.uk/dataset/rough_sleeping_statistics_england_",
+          "source": "data.gov.uk",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls",
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2015-02-26T10:16:32.545552",
+          "richness": 40
+        },
+        {
+          "title": "CDC Behavioral Risk Factor Surveillance System (BRFSS)",
+          "description": "Annual data on health-related risk behaviors, chronic health conditions, and use of preventive services in the U.S.",
+          "link": "https://www.cdc.gov/brfss/",
+          "source": "Centers for Disease Control and Prevention",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "OECD Health Statistics",
+          "description": "Comprehensive data on health status, health care resources, and health spending across OECD countries.",
+          "link": "https://www.oecd.org/health/health-data.htm",
+          "source": "OECD",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "NHS Digital - Health Survey for England",
+          "description": "Data on health, lifestyle, and health-related behaviors of people in England, including sleep patterns and substance use.",
+          "link": "https://digital.nhs.uk/data-and-information/publications/statistical/health-survey-for-england",
+          "source": "NHS Digital",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "CDC Behavioral Risk Factor Surveillance System (BRFSS)",
+          "description": "Annual data on health-related risk behaviors, chronic health conditions, and use of preventive services in the U.S.",
+          "link": "https://www.cdc.gov/brfss/",
+          "source": "Centers for Disease Control and Prevention"
+        },
+        {
+          "title": "OECD Health Statistics",
+          "description": "Comprehensive data on health status, health care resources, and health spending across OECD countries.",
+          "link": "https://www.oecd.org/health/health-data.htm",
+          "source": "OECD"
+        },
+        {
+          "title": "NHS Digital - Health Survey for England",
+          "description": "Data on health, lifestyle, and health-related behaviors of people in England, including sleep patterns and substance use.",
+          "link": "https://digital.nhs.uk/data-and-information/publications/statistical/health-survey-for-england",
+          "source": "NHS Digital"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Comparison of Weekday and Weekend Sleep Patterns",
+          "chart_type": "bar",
+          "x": "Days of the Week",
+          "y": "Average Sleep Duration (hours)",
+          "note": "Data collected from a sample of individuals with OSA over a month."
+        },
+        {
+          "title": "Impact of Weekend Activities on OSA Severity",
+          "chart_type": "heatmap",
+          "x": "Activity Type",
+          "y": "OSA Severity Level",
+          "note": "OSA severity measured using AHI scores; activities include alcohol consumption, smoking, etc."
+        },
+        {
+          "title": "Substance Use Frequency: Weekdays vs Weekends",
+          "chart_type": "line",
+          "x": "Days of the Week",
+          "y": "Substance Use Incidents",
+          "note": "Includes alcohol and recreational drugs; data from self-reported surveys."
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5140,
+      "type": "PER",
+      "value": "Danny Eckert",
+      "context": null
+    },
+    {
+      "id": 5141,
+      "type": "PER",
+      "value": "Sriram Iyer",
+      "context": null
+    },
+    {
+      "id": 5142,
+      "type": "PER",
+      "value": "Ryan Chin Taw Cheong",
+      "context": null
+    },
+    {
+      "id": 5143,
+      "type": "ORG",
+      "value": "Flinders University",
+      "context": null
+    },
+    {
+      "id": 5144,
+      "type": "ORG",
+      "value": "American Journal of Respiratory and Critical Care Medicine",
+      "context": null
+    },
+    {
+      "id": 5145,
+      "type": "ORG",
+      "value": "NHS",
+      "context": null
+    },
+    {
+      "id": 5146,
+      "type": "ORG",
+      "value": "Cleveland clinic",
+      "context": null
+    },
+    {
+      "id": 5147,
+      "type": "LOC",
+      "value": "Australia",
+      "context": null
+    },
+    {
+      "id": 5148,
+      "type": "LOC",
+      "value": "London",
+      "context": null
+    },
+    {
+      "id": 5149,
+      "type": "NUM",
+      "value": "70052.0",
+      "context": null
+    },
+    {
+      "id": 5150,
+      "type": "NUM",
+      "value": "4.0",
+      "context": null
+    },
+    {
+      "id": 5151,
+      "type": "NUM",
+      "value": "28.0",
+      "context": null
+    },
+    {
+      "id": 5152,
+      "type": "NUM",
+      "value": "5.0",
+      "context": null
+    },
+    {
+      "id": 5153,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5154,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5155,
+      "type": "NUM",
+      "value": "18.0",
+      "context": null
+    },
+    {
+      "id": 5156,
+      "type": "NUM",
+      "value": "15.0",
+      "context": null
+    },
+    {
+      "id": 5157,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5158,
+      "type": "NUM",
+      "value": "60.0",
+      "context": null
+    },
+    {
+      "id": 5159,
+      "type": "NUM",
+      "value": "45.0",
+      "context": null
+    },
+    {
+      "id": 5160,
+      "type": "NUM",
+      "value": "6.0",
+      "context": null
+    },
+    {
+      "id": 5161,
+      "type": "NUM",
+      "value": "47.0",
+      "context": null
+    },
+    {
+      "id": 5162,
+      "type": "NUM",
+      "value": "38.0",
+      "context": null
+    },
+    {
+      "id": 5163,
+      "type": "NUM",
+      "value": "60.0",
+      "context": null
+    },
+    {
+      "id": 5164,
+      "type": "NUM",
+      "value": "18.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 782,
+      "title": "Weekend Warriors: Sleep Apnoea's Unseen Risk",
+      "description": "Examine how lifestyle changes from weekdays to weekends amplify sleep apnoea symptoms. Explore potential health risks associated with this variation, and visualize patterns using data from sleep studies.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 783,
+      "title": "The Cost of Weekend Indulgence: Health Impact of Social Apnoea",
+      "description": "Analyze the correlation between weekend lifestyle choices and the exacerbation of sleep disorders. Utilize data on alcohol consumption and smoking rates to highlight health policy implications.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 784,
+      "title": "Social Jetlag: The Weekend Shift Affecting Sleep Health",
+      "description": "Investigate the concept of social jetlag and its impact on sleep disorders like OSA. Use graphics to illustrate the shift in sleep patterns and its correlation with increased apnoea severity.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 785,
+      "title": "Gender and Age: Who Suffers More from Weekend Sleep Woes?",
+      "description": "Delve into demographic variations in the severity of weekend sleep apnoea. Compare data across age groups and genders to identify the most affected populations, aiding targeted health interventions.",
+      "order": 3,
+      "visualizations": []
+    },
+    {
+      "id": 786,
+      "title": "From Habit to Hazard: Lifestyle Choices and Sleep Apnoea",
+      "description": "Explore how habitual weekend activities such as late-night outings and increased substance use can worsen OSA. Present visual data comparisons between weekday and weekend habits.",
+      "order": 4,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4017,
+      "title": "PLACES: Local Data for Better Health, County Data 2023 release",
+      "description": "This dataset contains model-based county estimates. PLACES covers the entire United States—50 states and the District of Columbia—at county, place, census tract, and ZIP Code Tabulation Area levels. It provides information uniformly on this large scale for local areas at four geographic levels. Estimates were provided by the Centers for Disease Control and Prevention (CDC), Division of Population Health, Epidemiology and Surveillance Branch. PLACES was funded by the Robert Wood Johnson Foundation in conjunction with the CDC Foundation. This dataset includes estimates for 36 measures: 13 for health outcomes, 9 for preventive services use, 4 for chronic disease-related health risk behaviors, 7 for disabilities, and 3 for health status. These estimates can be used to identify emerging health problems and to help develop and carry out effective, targeted public health prevention activities. Because the small area model cannot detect effects due to local interventions, users are cautioned against using these estimates for program or policy evaluations. Data sources used to generate these model-based estimates are Behavioral Risk Factor Surveillance System (BRFSS) 2021 or 2020 data, Census Bureau 2021 or 2020 county population estimate data, and American Community Survey 2017–2021, or 2016–2020 estimates. The 2023 release uses 2021 BRFSS data for 29 measures and 2020 BRFSS data for 7 measures (all teeth lost, dental visits, mammograms, cervical cancer screening, colorectal cancer screening, core preventive services among older adults, and sleeping less than 7 hours) that the survey collects data on every other year. More information about the methodology can be found at  www.cdc.gov/places.",
+      "link": "https://catalog.data.gov/dataset/places-local-data-for-better-health-county-data-2023-release",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json",
+        "xml",
+        "csv"
+      ],
+      "organisation": "U.S. Department of Health & Human Services",
+      "licence": "other-license-specified",
+      "last_modified": "2025-02-03T21:42:08.096743",
+      "richness": 75
+    },
+    {
+      "id": 4018,
+      "title": "Administrative Boundaries Centroids of National Park System Units",
+      "description": "National Park Service unit points.",
+      "link": "https://catalog.data.gov/dataset/administrative-boundaries-centroids-of-national-park-system-units-fcbf1",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "zip"
+      ],
+      "organisation": "Department of the Interior",
+      "licence": "License not specified",
+      "last_modified": "2025-04-05T21:00:48.922310",
+      "richness": 55
+    },
+    {
+      "id": 4019,
+      "title": "Are Canadian adults getting enough sleep?",
+      "description": "Factors related to insufficient sleep and current recommendations",
+      "link": "https://open.canada.ca/data/en/dataset/a0321851-7926-4567-ba0d-ee12b82e5a99",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2019-05-03T17:56:15.889371",
+      "richness": 35
+    },
+    {
+      "id": 4020,
+      "title": "Are Canadian children getting enough sleep? - Infographic",
+      "description": "To be as healthy as possible, children need adequate night time sleep.",
+      "link": "https://open.canada.ca/data/en/dataset/0f4efe3d-0666-4627-8958-51656c5731d1",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2018-12-28T16:50:28.105297",
+      "richness": 35
+    },
+    {
+      "id": 4021,
+      "title": "Rough Sleeping Statistics England",
+      "description": "Rough sleeping counts and estimates in England, by local housing authority\r\n\r\nSource agency: Communities and Local Government\r\n\r\nDesignation: Official Statistics not designated as National Statistics\r\n\r\nLanguage: English\r\n\r\nAlternative title: Rough Sleeping Statistics England",
+      "link": "https://data.gov.uk/dataset/rough_sleeping_statistics_england_",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls",
+        "pdf"
+      ],
+      "organisation": "Ministry of Housing, Communities and Local Government",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2015-02-26T10:16:32.545552",
+      "richness": 40
+    },
+    {
+      "id": 4022,
+      "title": "National Sleep Research Resource",
+      "description": "A comprehensive collection of sleep data from various studies, including polysomnography and actigraphy data.",
+      "link": "https://sleepdata.org/",
+      "source": "National Sleep Research Resource",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4023,
+      "title": "CDC Sleep and Sleep Disorders Data",
+      "description": "Data and statistics on sleep health and disorders, including prevalence and risk factors in the U.S.",
+      "link": "https://www.cdc.gov/sleep/data_statistics.html",
+      "source": "Centers for Disease Control and Prevention",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4024,
+      "title": "NHS Digital: Sleep Disorders Statistics",
+      "description": "Statistics on sleep disorders, including hospital admissions and treatments in England.",
+      "link": "https://digital.nhs.uk/data-and-information/publications/statistical/sleeping-disorders",
+      "source": "NHS Digital",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4025,
+      "title": "USDA National Nutrient Database for Standard Reference Dataset for What We Eat In America, NHANES (Survey-SR)",
+      "description": "<p>The dataset, Survey-SR, provides the nutrient data for assessing dietary intakes from the national survey What We Eat In America, National Health and Nutrition Examination Survey (WWEIA, NHANES). Historically, USDA databases have been used for national nutrition monitoring (1). Currently, the Food and Nutrient Database for Dietary Studies (FNDDS) (2), is used by Food Surveys Research Group, ARS, to process dietary intake data from WWEIA, NHANES. Nutrient values for FNDDS are based on Survey-SR. Survey-SR was referred to as the \"Primary Data Set\" in older publications. Early versions of the dataset were composed mainly of commodity-type items such as wheat flour, sugar, milk, etc. However, with increased consumption of commercial processed and restaurant foods and changes in how national nutrition monitoring data are used (1), many commercial processed and restaurant items have been added to Survey-SR. \n \nThe current version, Survey-SR 2013-2014, is mainly based on the USDA National Nutrient Database for Standard Reference (SR) 28 (2) and contains sixty-six nutrientseach for 3,404 foods. These nutrient data will be used for assessing intake data from WWEIA, NHANES 2013-2014. Nutrient profiles were added for 265 new foods and updated for about 500 foods from the version used for the previous survey (WWEIA, NHANES 2011-12).  New foods added include mainly commercially processed foods such as several gluten-free products, milk substitutes, sauces and condiments such as sriracha, pesto and wasabi, Greek yogurt, breakfast cereals, low-sodium meat products, whole grain pastas and baked products, and several beverages including bottled tea and coffee, coconut water, malt beverages, hard cider, fruit-flavored drinks, fortified fruit juices and fruit and/or vegetable smoothies. Several school lunch pizzas and chicken products, fast-food sandwiches, and new beef cuts were also added, as they are now reported more frequently by survey respondents. Nutrient profiles were updated for several commonly consumed foods such as cheddar, mozzarella and American cheese, ground beef, butter, and catsup. The changes in nutrient values may be due to reformulations in products, changes in the market shares of brands, or more accurate data. Examples of more accurate data include analytical data, market share data, and data from a nationally representative sample. </p><div><br>Resources in this dataset:</div><br><ul><li><p>Resource Title: USDA National Nutrient Database for Standard Reference Dataset for What We Eat In America, NHANES 2013-14 (Survey SR 2013-14).</p> <p>File Name: SurveySR_2013_14 (1).zip</p><p>Resource Description: Access database downloaded on November 16, 2017. US Department of Agriculture, Agricultural Research Service, Nutrient Data Laboratory. USDA National Nutrient Database for Standard Reference Dataset for What We Eat In America, NHANES (Survey-SR), October 2015. </p></li><br><li><p>Resource Title: Data Dictionary.</p> <p>File Name: SurveySR_DD.pdf</p></li></ul><p></p>",
+      "link": "https://catalog.data.gov/dataset/usda-national-nutrient-database-for-standard-reference-dataset-for-what-we-eat-in-america--37895",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf",
+        "zip"
+      ],
+      "organisation": "Department of Agriculture",
+      "licence": "Creative Commons CCZero",
+      "last_modified": "2025-04-21T19:28:03.105555",
+      "richness": 50
+    },
+    {
+      "id": 4026,
+      "title": "EPA Facility Registry Service (FRS): Facility Interests Dataset Download",
+      "description": "This downloadable data package consists of location and facility identification information from EPA's Facility Registry Service (FRS) for all sites that are available in the FRS individual feature layers. The layers comprise the FRS major program databases, including: Assessment Cleanup and Redevelopment Exchange System (ACRES) : brownfields sites ; Air Facility System (AFS) : stationary sources of air pollution ; ICIS-AIR (AIR) : stationary sources of air pollution;  Bureau of Indian Affairs (BIA) : schools data on Indian land; Base Realignment and Closure (BRAC) facilities; Clean Air Markets Division Business System (CAMDBS) :  market-based air pollution control programs;  Comprehensive Environmental Response, Superfund Enterprise Management System (SEMS): hazardous waste sites; Integrated Compliance Information System (ICIS) : integrated enforcement and compliance information; National Compliance Database (NCDB) : Federal Insecticide, Fungicide, and Rodenticide Act (FIFRA) and the Toxic Substances Control Act (TSCA); National Pollutant Discharge Elimination System (NPDES) module of ICIS : NPDES surface water permits; Radiation Information Database (RADINFO) : radiation and radioactivity facilities; RACT/BACT/LAER Clearinghouse (RBLC) : best available air pollution technology requirements; Resource Conservation and Recovery Act Information System (RCRAInfo) : tracks generators, transporters, treaters, storers, and disposers of hazardous waste; Toxic Release Inventory (TRI) : certain industries that use, manufacture, treat, or transport more than 650 toxic chemicals; Emission Inventory System (EIS) : inventory of large stationary sources and voluntarily-reported smaller sources of air point pollution emitters; countermeasure (SPCC) and facility response plan (FRP) subject facilities; Electronic Greenhouse Gas Reporting Tool (E-GGRT) : large greenhouse gas emitters; Emissions and; Generation Resource Integrated Database (EGRID) : power plants. The Facility Registry Service (FRS) identifies and geospatially locates facilities, sites or places subject to environmental regulations or of environmental interest. Using vigorous verification and data management procedures, FRS integrates facility data from EPA's national program systems, other federal agencies, and State and tribal master facility records and provides EPA with a centrally managed, single source of comprehensive and authoritative information on facilities. This data set contains the FRS facilities that link to the programs listed above once the program data has been integrated into the FRS database. Additional information on FRS is available at the EPA website https://www.epa.gov/enviro/facility-registry-service-frs.  Included in this package are a file geodatabase, Esri ArcMap map document and an XML file of this metadata record.  Full FGDC metadata records for each layer are contained in the database.",
+      "link": "https://catalog.data.gov/dataset/epa-facility-registry-service-frs-facility-interests-dataset-download9",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "U.S. Environmental Protection Agency",
+      "licence": null,
+      "last_modified": "2025-08-18T20:58:19.806938",
+      "richness": 45
+    },
+    {
+      "id": 4027,
+      "title": "Use of non-parental child care in the evenings or on weekends, children aged 0 to 5 years",
+      "description": "<p>Percentage of children aged 0 to 5 years participating in non-parental child care in the evenings or on weekends.<br>\n</p>\n",
+      "link": "https://open.canada.ca/data/en/dataset/0077bdfb-8176-4737-b982-4297c22e17dd",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2023-12-05T14:14:50.051369",
+      "richness": 50
+    },
+    {
+      "id": 4028,
+      "title": "Type of non-parental child care used in the evenings or on weekends, children aged 0 to 5 years",
+      "description": "<p>Percentage of children aged 0 to 5 years participating in non-parental child care in the evenings or on weekends, by type of child care arrangement.<br>\n</p>\n",
+      "link": "https://open.canada.ca/data/en/dataset/d8dc2992-f66d-40fb-b11d-0fbc49bc9bf7",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml",
+        "csv"
+      ],
+      "organisation": "Statistics Canada | Statistique Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2023-12-05T14:14:50.653910",
+      "richness": 50
+    },
+    {
+      "id": 4029,
+      "title": "Parking Controlled Weekend Zones",
+      "description": "A controlled parking weekend zone, often referred to as a CPZ, is an area where the council have introduced restrictions on parking during certain times. These restrictions only apply to public roads. Other restrictions apply to private land and streets such as council estates.",
+      "link": "https://data.gov.uk/dataset/parking-controlled-weekend-zones",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml"
+      ],
+      "organisation": "London Borough of Tower Hamlets",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2014-05-14T15:30:58.380889",
+      "richness": 40
+    },
+    {
+      "id": 4030,
+      "title": "WHO Global Health Observatory Data",
+      "description": "Comprehensive data on alcohol consumption and smoking prevalence worldwide, useful for health impact analysis.",
+      "link": "https://www.who.int/data/gho",
+      "source": "World Health Organization",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4031,
+      "title": "OECD Health Statistics",
+      "description": "Data on health risks including alcohol and tobacco consumption across OECD countries, relevant for policy implications.",
+      "link": "https://www.oecd.org/health/health-data.htm",
+      "source": "OECD",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4032,
+      "title": "Eurostat Public Health Database",
+      "description": "Statistics on health determinants, including lifestyle factors such as alcohol and tobacco use in Europe.",
+      "link": "https://ec.europa.eu/eurostat/web/health/data/database",
+      "source": "Eurostat",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4033,
+      "title": "Baby Names from Social Security Card Applications - National Data",
+      "description": "The data (name, year of birth, sex, and number) are from a 100 percent sample of Social Security card applications for 1880 on.",
+      "link": "https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-national-data",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "Social Security Administration",
+      "licence": "Creative Commons CCZero",
+      "last_modified": "2025-07-04T07:09:50.971701",
+      "richness": 50
+    },
+    {
+      "id": 4034,
+      "title": "Baby Names from Social Security Card Applications - State and District of Columbia Data",
+      "description": "The data (name, year of birth, sex, state, and number) are from a 100 percent sample of Social Security card applications starting with 1910. National data is in another dataset.",
+      "link": "https://catalog.data.gov/dataset/baby-names-from-social-security-card-applications-state-and-district-of-columbia-data",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "Social Security Administration",
+      "licence": "Creative Commons CCZero",
+      "last_modified": "2025-07-04T07:09:55.573131",
+      "richness": 50
+    },
+    {
+      "id": 4035,
+      "title": "Quality of Life - Social Stability",
+      "description": "Stability is important for overall well-being and can be affected by adverse changes in the social environment. Lack of social stability inversely influences quality of life, because it suggests a possible breakdown of the social order. Impacts on health and well-being may vary, but can potentially have detrimental long-lasting repercussions for society and the individual. Lower mobility (or change in residence) among the population through time implies greater social cohesion.",
+      "link": "https://open.canada.ca/data/en/dataset/edf08d8f-8893-11e0-876c-6cf049291510",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "zip"
+      ],
+      "organisation": "Natural Resources Canada | Ressources naturelles Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2022-03-14T19:39:14.056766",
+      "richness": 35
+    },
+    {
+      "id": 4036,
+      "title": "Social Insurance Number (SIN) Repository",
+      "description": "The Repository is a measure of transparency for the use of the SIN that cannot be succinctly captured in Appendix A of the Directive on Social Insurance Number. For example, there are several programs across many institutions that cite the Income Tax Act as the legal authority to collect the SIN as their institution must issue tax slips to individuals. There is not a straightforward way to list every single one in the Directive itself. Interested members of the public may now download the repository and see how many programs within an institution collect or use the SIN. ",
+      "link": "https://open.canada.ca/data/en/dataset/fccf7e83-4a64-4113-bc67-837ef55b4ba8",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xlsx"
+      ],
+      "organisation": "Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2025-01-13T16:10:31.847894",
+      "richness": 50
+    },
+    {
+      "id": 4037,
+      "title": "Social Trends",
+      "description": "This series ended in 2012.\r\n\r\nAn established reference source, Social Trends draws together social and economic data from a wide range of government departments and other organisations; it paints a broad picture of UK society today, and how it has been changing.\r\nSource agency: Office for National Statistics\r\nDesignation: National Statistics\r\nLanguage: English\r\nAlternative title: Social Trends",
+      "link": "https://data.gov.uk/dataset/social_trends",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf",
+        "xls",
+        "xml"
+      ],
+      "organisation": "Office for National Statistics",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2015-10-05T17:02:27.236068",
+      "richness": 60
+    },
+    {
+      "id": 4038,
+      "title": "CDC - Sleep and Sleep Disorders Data",
+      "description": "Comprehensive data on sleep patterns, disorders, and health impacts in the U.S., including social jetlag.",
+      "link": "https://www.cdc.gov/sleep/data_statistics.html",
+      "source": "Centers for Disease Control and Prevention",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4039,
+      "title": "European Sleep Apnoea Database (ESADA)",
+      "description": "Data on sleep apnoea severity and associated health outcomes across Europe.",
+      "link": "https://esada.med.lu.se/",
+      "source": "European Sleep Apnoea Database",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4040,
+      "title": "OECD Health Data - Sleep and Lifestyle",
+      "description": "International data on lifestyle factors affecting health, including sleep patterns and disorders.",
+      "link": "https://www.oecd.org/health/health-data.htm",
+      "source": "OECD",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4041,
+      "title": "NSSP Emergency Department Visit Trajectories by State and Sub State Regions- COVID-19, Flu, RSV, Combined",
+      "description": "NSSP Emergency Department (ED) Visit Trajectories by State and Sub-State Regions- COVID-19, Flu, RSV, Combined. This dataset provides the percentage of emergency department patient visits for the specified pathogen of all ED patient visits for the specified geographic part of the country that were observed for the given week from data submitted to the National Syndromic Surveillance Program (NSSP). In addition, the trend over time is characterized as increasing, decreasing or no change, with exceptions for when there are no data available, the data are too sparse, or there are not enough data to compute a trend. These data are to provide awareness of how the weekly trend is changing for the given geographic region.  \n\nNote that the reported sub-state trends are from Health Service Areas (HSA) and the data reported from the health care facilities located within the given HSA. Health Service Areas are regions of one or more counties that align to patterns of care seeking. The HSA level data are reported for each county in the HSA. \n\nMore information on HSAs is available <a href=\"https://seer.cancer.gov/seerstat/variables/countyattribs/hsa.html\"><b>here</b></a>.\n\nFor the emergency department time series, trajectory classifications reported on for sub-state (HSA) emergency department time series, trajectory classifications are based on approximations of the first derivative (slope) of trends that are smoothed using generalized additive models (GAMs). To determine time intervals in which the slope is sufficiently changing (i.e., rate of change distinguishable from 0), 95% confidence intervals for the slope approximations are calculated and assessed. Weeks with a 95% confidence interval not containing 0 are classified as increasing if the slope estimate is positive and decreasing if the slope estimate is negative. Weeks with a 95% confidence interval containing 0 are classified as stable. In the scenario that an HSA's time series is determined to be too sparse (i.e., many weeks with percentages of 0%), a model is not fit, and the HSA is classified as “sparse”.  \n\nFor additional information, please see: <a href=\"https://www.cdc.gov/ncird/surveillance/respiratory-illnesses/index.html#companion-guide\"><b>Companion Guide: NSSP Emergency Department Data on Respiratory Illness</b></a>\n\nUpdated once per week on Fridays. ",
+      "link": "https://catalog.data.gov/dataset/2023-respiratory-virus-response-nssp-emergency-department-visit-trajectories-by-state-and-",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json",
+        "xml",
+        "csv"
+      ],
+      "organisation": "U.S. Department of Health & Human Services",
+      "licence": "other-license-specified",
+      "last_modified": "2025-08-16T20:48:24.048348",
+      "richness": 85
+    },
+    {
+      "id": 4042,
+      "title": "U.S. Food Imports",
+      "description": "U.S. consumers demand variety, quality, and convenience in the foods they consume. As Americans have become wealthier and more ethnically diverse, the American food basket reflects a growing share of tropical products, spices, and imported gourmet products. Seasonal and climatic factors drive U.S. imports of popular types of fruits and vegetables and tropical products, such as cocoa and coffee. In addition, a growing share of U.S. imports can be attributed to intra-industry trade, whereby agricultural-processing industries based in the United States carry out certain processing steps offshore and import products at different levels of processing from their subsidiaries in foreign markets.\r\n \r\nThis data set provides import values of edible products (food and beverages) entering U.S. ports and their origin of shipment. Data are from the U.S. Department of Commerce, U.S. Census Bureau. Food and beverage import values are compiled by calendar year into food groups corresponding to major commodities or level of processing. At least 10 years of annual data are included, enabling users to track long-term growth patterns.",
+      "link": "https://catalog.data.gov/dataset/u-s-food-imports",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls"
+      ],
+      "organisation": "Department of Agriculture",
+      "licence": "Creative Commons CCZero",
+      "last_modified": "2025-04-21T20:42:39.675205",
+      "richness": 55
+    },
+    {
+      "id": 4043,
+      "title": "Drainage Patterns",
+      "description": "Contained within the 5th Edition (1978 to 1995) of the National Atlas of Canada is a map that shows rivers, lakes and glaciers of Canada in great detail without names as a pure pattern on a dark background.",
+      "link": "https://open.canada.ca/data/en/dataset/830ae77f-8aac-5c13-8ed0-855d7f87f33b",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Natural Resources Canada | Ressources naturelles Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2022-03-14T19:31:51.610956",
+      "richness": 35
+    },
+    {
+      "id": 4044,
+      "title": "Settlement Pattern",
+      "description": "Contained within the 5th Edition (1978 to 1995) of the National Atlas of Canada is a map that shows Canada as it could be seen from space on a clear night - settlements are white dots on a dark background. The data is from the 1981 Census.",
+      "link": "https://open.canada.ca/data/en/dataset/691b3cf5-13ee-5fb9-80ac-3165b413e00b",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Natural Resources Canada | Ressources naturelles Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2022-03-14T19:31:49.593208",
+      "richness": 35
+    },
+    {
+      "id": 4045,
+      "title": "Rough Sleeping Statistics England",
+      "description": "Rough sleeping counts and estimates in England, by local housing authority\r\n\r\nSource agency: Communities and Local Government\r\n\r\nDesignation: Official Statistics not designated as National Statistics\r\n\r\nLanguage: English\r\n\r\nAlternative title: Rough Sleeping Statistics England",
+      "link": "https://data.gov.uk/dataset/rough_sleeping_statistics_england_",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls",
+        "pdf"
+      ],
+      "organisation": "Ministry of Housing, Communities and Local Government",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2015-02-26T10:16:32.545552",
+      "richness": 40
+    },
+    {
+      "id": 4046,
+      "title": "CDC - National Health Interview Survey (NHIS)",
+      "description": "Comprehensive health data including sleep patterns segmented by age and gender in the U.S.",
+      "link": "https://www.cdc.gov/nchs/nhis/index.htm",
+      "source": "Centers for Disease Control and Prevention",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4047,
+      "title": "OECD Health Statistics",
+      "description": "Health data across OECD countries, including sleep-related issues by demographics.",
+      "link": "https://www.oecd.org/health/health-data.htm",
+      "source": "Organisation for Economic Co-operation and Development",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4048,
+      "title": "UK Data Service - Understanding Society",
+      "description": "Longitudinal study data on UK residents, covering sleep habits by age and gender.",
+      "link": "https://www.understandingsociety.ac.uk/",
+      "source": "UK Data Service",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4049,
+      "title": "Adult Depression (LGHC Indicator)",
+      "description": "This is a source dataset for a Let's Get Healthy California indicator at \"https://letsgethealthy.ca.gov/.\" This table displays the proportion of adults who were ever told they had a depressive disorder in California. It contains data for California only. The data are from the California Behavioral Risk Factor Surveillance Survey (BRFSS). The California BRFSS is an annual cross-sectional health-related telephone survey that collects data about California residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. The BRFSS is conducted by Public Health Survey Research Program of California State University, Sacramento under contract from CDPH. This indicator is based on the question: \"“Has a doctor, nurse or other health professional EVER told you that you have a depressive disorder (including depression, major depression, dysthymia, or minor depression)?” NOTE: Denominator data and weighting was taken from the California Department of Finance, not U.S. Census. Values may therefore differ from what has been published in the national BRFSS data tables by the Centers for Disease Control and Prevention (CDC) or other federal agencies.",
+      "link": "https://catalog.data.gov/dataset/adult-depression-lghc-indicator-627e3",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv",
+        "zip"
+      ],
+      "organisation": "State of California",
+      "licence": "other-license-specified",
+      "last_modified": "2024-11-27T01:08:24.514233",
+      "richness": 50
+    },
+    {
+      "id": 4050,
+      "title": "Health conditions among children under age 18, by selected characteristics: United States",
+      "description": "NOTE: On October 19, 2021, estimates for 2016–2018 by health insurance status were revised to correct errors. Changes are highlighted and tagged at https://www.cdc.gov/nchs/data/hus/2019/012-508.pdf\n\nData on health conditions among children under age 18, by selected population characteristics. Please refer to the PDF or Excel version of this table in the HUS 2019 Data Finder (https://www.cdc.gov/nchs/hus/contents2019.htm) for critical information about measures, definitions, and changes over time.\n\nSOURCE: NCHS, National Health Interview Survey, Family Core and Sample Child questionnaires.  For more information on the National Health Interview Survey, see the corresponding Appendix entry at https://www.cdc.gov/nchs/data/hus/hus19-appendix-508.pdf.",
+      "link": "https://catalog.data.gov/dataset/health-conditions-among-children-under-age-18-by-selected-characteristics-united-states-53b56",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "json",
+        "xml",
+        "csv"
+      ],
+      "organisation": "U.S. Department of Health & Human Services",
+      "licence": "other-license-specified",
+      "last_modified": "2025-04-23T02:35:39.265118",
+      "richness": 80
+    },
+    {
+      "id": 4051,
+      "title": "Are Canadian adults getting enough sleep?",
+      "description": "Factors related to insufficient sleep and current recommendations",
+      "link": "https://open.canada.ca/data/en/dataset/a0321851-7926-4567-ba0d-ee12b82e5a99",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2019-05-03T17:56:15.889371",
+      "richness": 35
+    },
+    {
+      "id": 4052,
+      "title": "Are Canadian children getting enough sleep? - Infographic",
+      "description": "To be as healthy as possible, children need adequate night time sleep.",
+      "link": "https://open.canada.ca/data/en/dataset/0f4efe3d-0666-4627-8958-51656c5731d1",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2018-12-28T16:50:28.105297",
+      "richness": 35
+    },
+    {
+      "id": 4053,
+      "title": "Rough Sleeping Statistics England",
+      "description": "Rough sleeping counts and estimates in England, by local housing authority\r\n\r\nSource agency: Communities and Local Government\r\n\r\nDesignation: Official Statistics not designated as National Statistics\r\n\r\nLanguage: English\r\n\r\nAlternative title: Rough Sleeping Statistics England",
+      "link": "https://data.gov.uk/dataset/rough_sleeping_statistics_england_",
+      "source": "data.gov.uk",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls",
+        "pdf"
+      ],
+      "organisation": "Ministry of Housing, Communities and Local Government",
+      "licence": "UK Open Government Licence (OGL)",
+      "last_modified": "2015-02-26T10:16:32.545552",
+      "richness": 40
+    },
+    {
+      "id": 4054,
+      "title": "CDC Behavioral Risk Factor Surveillance System (BRFSS)",
+      "description": "Annual data on health-related risk behaviors, chronic health conditions, and use of preventive services in the U.S.",
+      "link": "https://www.cdc.gov/brfss/",
+      "source": "Centers for Disease Control and Prevention",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4055,
+      "title": "OECD Health Statistics",
+      "description": "Comprehensive data on health status, health care resources, and health spending across OECD countries.",
+      "link": "https://www.oecd.org/health/health-data.htm",
+      "source": "OECD",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 4056,
+      "title": "NHS Digital - Health Survey for England",
+      "description": "Data on health, lifestyle, and health-related behaviors of people in England, including sleep patterns and substance use.",
+      "link": "https://digital.nhs.uk/data-and-information/publications/statistical/health-survey-for-england",
+      "source": "NHS Digital",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 83210,
+    "entities_count": 25,
+    "angles_count": 5,
+    "datasets_count": 40,
+    "angle_resources_count": 5
+  }
+}

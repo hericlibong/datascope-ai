@@ -7,3 +7,56 @@
 {'status': 200, 'payload_out_size': 97}
 {'path': '/api/playground/history/', 'method': 'GET', 'user': None, 'meta': {'section': 'history/get'}, 'payload_in_size': 2}
 {'status': 200, 'payload_out_size': 59}
+{'status': 400, 'payload_out_size': 78}
+{'status': 400, 'payload_out_size': 78}
+{'status': 400, 'payload_out_size': 78}
+{'status': 400, 'payload_out_size': 78}
+{'status': 400, 'payload_out_size': 78}
+{'status': 400, 'payload_out_size': 78}
+{'path': '/api/playground/articles/?debug=1', 'method': 'POST', 'user': None, 'meta': {'section': 'articles/create'}, 'payload_in_size': 3526}
+{'status': 201, 'payload_out_size': 3683}
+{'status': 400, 'payload_out_size': 158}
+{'status': 400, 'payload_out_size': 158}
+{'path': '/api/playground/articles/?debug=1', 'method': 'POST', 'user': None, 'meta': {'section': 'articles/create'}, 'payload_in_size': 3526}
+{'status': 201, 'payload_out_size': 3683}
+{'status': 400, 'payload_out_size': 158}
+{'status': 400, 'payload_out_size': 158}
+{'path': '/api/playground/analysis/?debug=1', 'method': 'POST', 'user': 13, 'meta': {'section': 'analysis/create'}, 'payload_in_size': 61}
+{'status': 201, 'payload_out_size': 3842}
+{'status': 404, 'payload_out_size': 88}
+{'status': 404, 'payload_out_size': 88}
+{'path': '/api/playground/analysis/186/?debug=1', 'method': 'GET', 'user': None, 'meta': {'section': 'analysis/retrieve'}, 'payload_in_size': 2}
+{'status': 200, 'payload_out_size': 3890}
+{'path': '/api/playground/analysis/?debug=1', 'method': 'POST', 'user': 13, 'meta': {'section': 'analysis/create', 'upsert': True}, 'payload_in_size': 47}
+{'status': 200, 'payload_out_size': 66564}
+{'path': '/api/playground/analysis/186/?debug=1', 'method': 'GET', 'user': None, 'meta': {'section': 'analysis/retrieve'}, 'payload_in_size': 2}
+{'status': 200, 'payload_out_size': 66550}
+{'status': 404, 'payload_out_size': 62}
+{'section': 'analysis/list'}
+{'status': 200, 'payload_out_size': 37274}
+{'status': 200, 'payload_out_size': 66506}
+{'status': 200, 'payload_out_size': 66506}
+{'status': 201, 'payload_out_size': 4731}
+{'status': 201, 'payload_out_size': 90120}
+{'status': 201, 'payload_out_size': 3641}
+{'status': 201, 'payload_out_size': 64474}
+{'status': 201, 'payload_out_size': 4731}
+{'status': 201, 'payload_out_size': 90120}
+{'status': 201, 'payload_out_size': 3258}
+{'status': 201, 'payload_out_size': 83766}
+{'status': 201, 'payload_out_size': 8638}
+{'status': 201, 'payload_out_size': 89630}
+{'status': 201, 'payload_out_size': 3453}
+{'status': 201, 'payload_out_size': 90686}
+{'status': 201, 'payload_out_size': 4181}
+{'status': 201, 'payload_out_size': 76094}
+{'status': 201, 'payload_out_size': 4213}
+{'status': 201, 'payload_out_size': 85087}
+{'status': 201, 'payload_out_size': 3853}
+{'status': 201, 'payload_out_size': 77204}
+{'status': 201, 'payload_out_size': 5100}
+{'status': 201, 'payload_out_size': 68466}
+{'status': 201, 'payload_out_size': 3912}
+{'status': 201, 'payload_out_size': 104656}
+{'section': 'analysis/list'}
+{'status': 200, 'payload_out_size': 467013}

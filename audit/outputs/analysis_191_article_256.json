@@ -1,0 +1,1520 @@
+{
+  "id": 191,
+  "article": {
+    "id": 256,
+    "title": "Moustiques tigres : \"Toute la France hexagonale va être touchée,",
+    "content": "Moustiques tigres : \"Toute la France hexagonale va être touchée, et les villes en premier\", prévient un spécialiste\n\nL'insecte a colonisé 81 des 96 départements métropolitains et les maladies qu'il véhicule ne sont désormais plus \"exotiques\". \n\n\nToute la France hexagonale va être touchée, et les villes en premier\", alerte Didier Fontenille, entomologiste, directeur de recherche émérite à l’Institut de recherche pour le développement (IRD), alors que les cas autochtones de contaminations à la dengue(Nouvelle fenêtre) et au chikungunya(Nouvelle fenêtre) battent des records.\n:\nà lire aussi CARTES. Insecte des villes, arrivé par le Sud, qui se déplace grâce aux voitures… Visualisez comment le moustique tigre colonise la France hexagonale\n\nCes maladies \"qu'on considérait comme exotiques par le passé\" touchent maintenant la France hexagonale \"en raison de la présence du moustique tigre et de son abondance dans de plus en plus de départements\". Au total, 81 des 96 départements métropolitains sont considérés comme colonisés. Ceux qui y échappent encore, sont principalement situés en Bretagne, Normandie, dans le nord et dans l'est de la France. Mais \"j'ai le regret d'annoncer aux personnes qui vivent dans ces départements qu'elles seront également touchées\", alerte l'entomologiste. Les villes vont être touchées en premier car elles concentrent des \"îlots de chaleur, qui font que le moustique s'y trouve bien et trouve à manger puisqu'il pique les humains\".\nGénétiquement adapté, hiberne \"comme une marmotte\"\n\nSi la France concentre 65 espèces différentes de moustiques, c'est le moustique tigre qui est en cause. Arrivé en 2004 en France métropolitaine, \"il est originaire d'Asie du Sud-Est, donc c'est un moustique tropical et il est très adapté aux climats chauds, mais génétiquement, il s'est adapté aux climats tempérés\", explique Didier Fontenille. \"Il est capable de passer l'hiver sous forme d'œuf, en hibernation, comme une marmotte\".\n\nMais il se réveille en fonction de la \"durée du jour\" et non de la chaleur. \"En revanche, ce qui se passe avec le changement climatique, c'est que les conditions durant lesquelles il est actif sont plus favorables, donc on va avoir plus de moustiques parce qu'il y aura plus d'œufs qui seront pondus par les femelles\". Ainsi, on ne trouvera pas forcément des moustiques plus tôt ou tard dans la saison, mais après leur réveil, leur nombre sera tout de suite plus important.\nSeule méthode de lutte efficace : la stérilisation des mâles\n\nUne politique très efficace, \"encore au stade de recherche expérimentale\" est celle de la stérilisation des moustiques mâles. \"C'est difficile à mettre en œuvre\" et \"très coûteux\" mais \"ça marche très bien\" puisque les œufs pondus par les femelles ne vont pas éclore et les populations vont \"diminuer petit à petit\". C'est cependant une disparition lente qui n'est donc \"pas du tout utilisable en période épidémique\". Il espère cependant que la technique \"va se développer\", notamment, car elle permet de \"s'affranchir des insecticides\".",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-22T21:45:09.247107+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Didier Fontenille\n- **Organisations** : Institut de recherche pour le développement\n- **Lieux** : France hexagonale, Bretagne, Normandie, Asie du Sud-Est\n- **Valeurs numériques** : 81 (81.0 None), 96 (96.0 None), 65 (65.0 None), 2004 (2004.0 None)\n\n## Suggestions d’angles\n\n### 1. Moustique tigre : cartographie de sa progression en France\nVisualiser l'évolution géographique de la colonisation des moustiques tigres depuis leur arrivée en 2004. Comparer les régions touchées avec celles qui sont encore épargnées pour comprendre les facteurs géographiques et climatiques en jeu.\n\n### 2. Impact économique des moustiques tigres sur le tourisme\nAnalyser comment la présence croissante du moustique tigre dans les zones touristiques influence l'économie locale. Étudier les coûts associés à la prévention et aux soins de santé dans les départements les plus touchés.\n\n### 3. Changement climatique et adaptation du moustique tigre\nExaminer la corrélation entre le réchauffement climatique et l'adaptation génétique du moustique tigre en France. Investiguer comment ces changements influencent la durée et la période d'activité du moustique.\n\n### 4. Efficacité des méthodes de lutte contre le moustique tigre\nComparer les différentes méthodes de lutte contre le moustique tigre en termes d'efficacité et de coût. Évaluer les perspectives de développement de la stérilisation des mâles comme alternative aux insecticides.\n\n### 5. Les villes face à l'invasion silencieuse du moustique tigre\nÉtudier pourquoi les villes sont plus vulnérables en raison des îlots de chaleur et de la densité de population. Discuter des mesures urbaines possibles pour limiter la prolifération de cet insecte.\n",
+  "created_at": "2025-08-22T21:46:41.790775+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Moustique tigre : cartographie de sa progression en France",
+      "description": "Visualiser l'évolution géographique de la colonisation des moustiques tigres depuis leur arrivée en 2004. Comparer les régions touchées avec celles qui sont encore épargnées pour comprendre les facteurs géographiques et climatiques en jeu.",
+      "keywords": [
+        "moustique tigre",
+        "cartographie moustique",
+        "progression moustique",
+        "France moustique",
+        "Aedes albopictus"
+      ],
+      "datasets": [
+        {
+          "title": "Plots of Wind Patterns for the World’s Volcanoes",
+          "description": "This product includes rose diagrams and tables of wind patterns at volcanoes listed in the Smithsonian Institution’s Volcanoes of the World Database.  At each volcano, the speed and direction of wind above the volcano were read from output of the NCEP/NCAR Reanalysis 1 model, at twice-daily intervals from January 1, 1990 to December 28, 2009.  These results were then plotted as 20 wind rose diagrams, divided into four seasons and five elevation intervals, and as one summary plot for year-round winds at 0-5 km elevation above sea level.  Rose petals indicate the downwind direction of the wind vector.  These rose diagrams are wrapped into a single zip file for each volcano.  Also included in the zip file are five text files, for elevation intervals (above sea level) of 0-5, 5-11, 11-16, 16-24, and 24-40km, which give wind vectors, twice daily (at 0000 and 1200 UTC) over the 1990-2010 time range.  The rose diagrams are accessible through the attached kmz file, which opens in Google Earth, or as hypertext links in the attached html table.  In the kmz file, placemarks at each volcano can be opened to reveal the summary wind rose diagram, along with a link to the page containing the other data.",
+          "link": "https://catalog.data.gov/dataset/plots-of-wind-patterns-for-the-worlds-volcanoes",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-07-06T07:00:39.991798",
+          "richness": 45
+        },
+        {
+          "title": "Wind rose plots for the volcano: 343082  Tigre, El",
+          "description": "This zip folder contains ASCII text files of vectors at the specified volcano at \n12-hour intervals, \nfrom January 1, 1990 through December 28, 2009.  \nThe wind vectors are divided into five files, names by their elevation range above \nsea level in the atmosphere: 00-05km.txt; 05-11km.txt; 11-16km.txt; 16-24km.txt; \nand 24-30km.txt. \nThe zip folder also contains a subfolder \"figures\", with Wind rose plots of wind \ndirection and speed over \nthis time period.  The plots are by season, and by elevation, given a total of 20 \nplots (4 seasons, 5 \nelevation ranges).  A summary plot is also included which gives the year-round \nwind pattern at the volcano, \nat 0-5 km elevation.  Plots are in both jpg and pdf format.",
+          "link": "https://catalog.data.gov/dataset/wind-rose-plots-for-the-volcano-343082-tigre-el",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-07-06T13:51:56.838309",
+          "richness": 45
+        },
+        {
+          "title": "Mosquito bite prevention for travellers",
+          "description": "Mosquitoes spread Zika Virus, Dengue, Malaria, Chikungunya, and other diseases. They bite during the day and night.",
+          "link": "https://open.canada.ca/data/en/dataset/aae781a8-bf36-40b2-9dc7-0abddbe695ec",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2020-01-24T18:42:19.750562",
+          "richness": 35
+        },
+        {
+          "title": "West Nile virus and other mosquito-borne diseases surveillance report: Annual edition (2018)",
+          "description": "West Nile virus (WNV) continues to be the leading cause of domestically acquired mosquito-borne disease in Canada. In addition to describing the human health burden of WNV, this report will demonstrate the efforts made to strengthen animal health surveillance in collaboration with multi-disciplinary health partners with the goal of achieving optimal human health outcomes.",
+          "link": "https://open.canada.ca/data/en/dataset/68cc3303-5807-4f8f-9db2-9091f2e9d2cf",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2020-06-17T17:01:16.358325",
+          "richness": 35
+        },
+        {
+          "title": "Ethiopia - KPC (KAP) Survey Report Shire, Adi-Harush camp - 2017",
+          "description": "Adi-Harush Refugee Camp is located in the North West of Tigray regional state of Ethiopia, at about 1170 km from the capital Addis Ababa. \nThe camp population is 9766 [UNHCR, July, 2017]. The camp hosts Eritrean refugees having different ethnic groups where the majorities are Tigrigna and Saho and some minorities of Tigre and Belian.   \nThe main objective of this survey was to collect data and information on water, sanitation and coverage in the Adi-Harush Refugee camp in 2017 and to have base line data for the 2018 interventions. The total sample size was 175 households.\nThe study revealed the gravity of the identified problems, which are latrine coverage, safe water management at home level, hand washing practice, and the risk of diarrhea disease.",
+          "link": "https://data.humdata.org/dataset/unhcr-eth-kap-2017-shire-adiharush-v2-1",
+          "source": "data.humdata.org",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-08-17T02:37:34.187941",
+          "richness": 55
+        },
+        {
+          "title": "Vigilance-Moustiques",
+          "description": "Provides up-to-date maps and data on the presence and spread of the tiger mosquito in France.",
+          "link": "https://vigilance-moustiques.com/",
+          "source": "Vigilance-Moustiques",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "Santé Publique France - Surveillance du moustique tigre",
+          "description": "Data on the monitoring and distribution of the tiger mosquito across different regions in France.",
+          "link": "https://www.santepubliquefrance.fr/",
+          "source": "Santé Publique France",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "European Centre for Disease Prevention and Control (ECDC) - Mosquito Maps",
+          "description": "Offers maps and data on the distribution of invasive mosquito species, including the tiger mosquito, in Europe.",
+          "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source": "ECDC",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "Vigilance-Moustiques",
+          "description": "Provides up-to-date maps and data on the presence and spread of the tiger mosquito in France.",
+          "link": "https://vigilance-moustiques.com/",
+          "source": "Vigilance-Moustiques"
+        },
+        {
+          "title": "Santé Publique France - Surveillance du moustique tigre",
+          "description": "Data on the monitoring and distribution of the tiger mosquito across different regions in France.",
+          "link": "https://www.santepubliquefrance.fr/",
+          "source": "Santé Publique France"
+        },
+        {
+          "title": "European Centre for Disease Prevention and Control (ECDC) - Mosquito Maps",
+          "description": "Offers maps and data on the distribution of invasive mosquito species, including the tiger mosquito, in Europe.",
+          "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source": "ECDC"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Progression annuelle du moustique tigre en France",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de départements colonisés",
+          "note": "Source : Santé publique France, données annuelles de 2004 à 2023"
+        },
+        {
+          "title": "Carte des régions colonisées par le moustique tigre",
+          "chart_type": "choropleth",
+          "x": "Région",
+          "y": "Statut de colonisation",
+          "note": "Les régions sont colorées selon leur statut : colonisé ou non colonisé. Source : Santé publique France, données 2023"
+        },
+        {
+          "title": "Facteurs climatiques et géographiques influençant la colonisation",
+          "chart_type": "heatmap",
+          "x": "Facteurs",
+          "y": "Région",
+          "note": "Facteurs tels que température moyenne, précipitations, densité de population. Source : Météo France et INSEE"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Impact économique des moustiques tigres sur le tourisme",
+      "description": "Analyser comment la présence croissante du moustique tigre dans les zones touristiques influence l'économie locale. Étudier les coûts associés à la prévention et aux soins de santé dans les départements les plus touchés.",
+      "keywords": [
+        "moustiques tigres",
+        "impact économique",
+        "tourisme",
+        "santé publique",
+        "zones touristiques"
+      ],
+      "datasets": [
+        {
+          "title": "Plots of Wind Patterns for the World’s Volcanoes",
+          "description": "This product includes rose diagrams and tables of wind patterns at volcanoes listed in the Smithsonian Institution’s Volcanoes of the World Database.  At each volcano, the speed and direction of wind above the volcano were read from output of the NCEP/NCAR Reanalysis 1 model, at twice-daily intervals from January 1, 1990 to December 28, 2009.  These results were then plotted as 20 wind rose diagrams, divided into four seasons and five elevation intervals, and as one summary plot for year-round winds at 0-5 km elevation above sea level.  Rose petals indicate the downwind direction of the wind vector.  These rose diagrams are wrapped into a single zip file for each volcano.  Also included in the zip file are five text files, for elevation intervals (above sea level) of 0-5, 5-11, 11-16, 16-24, and 24-40km, which give wind vectors, twice daily (at 0000 and 1200 UTC) over the 1990-2010 time range.  The rose diagrams are accessible through the attached kmz file, which opens in Google Earth, or as hypertext links in the attached html table.  In the kmz file, placemarks at each volcano can be opened to reveal the summary wind rose diagram, along with a link to the page containing the other data.",
+          "link": "https://catalog.data.gov/dataset/plots-of-wind-patterns-for-the-worlds-volcanoes",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-07-06T07:00:39.991798",
+          "richness": 45
+        },
+        {
+          "title": "Wind rose plots for the volcano: 343082  Tigre, El",
+          "description": "This zip folder contains ASCII text files of vectors at the specified volcano at \n12-hour intervals, \nfrom January 1, 1990 through December 28, 2009.  \nThe wind vectors are divided into five files, names by their elevation range above \nsea level in the atmosphere: 00-05km.txt; 05-11km.txt; 11-16km.txt; 16-24km.txt; \nand 24-30km.txt. \nThe zip folder also contains a subfolder \"figures\", with Wind rose plots of wind \ndirection and speed over \nthis time period.  The plots are by season, and by elevation, given a total of 20 \nplots (4 seasons, 5 \nelevation ranges).  A summary plot is also included which gives the year-round \nwind pattern at the volcano, \nat 0-5 km elevation.  Plots are in both jpg and pdf format.",
+          "link": "https://catalog.data.gov/dataset/wind-rose-plots-for-the-volcano-343082-tigre-el",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-07-06T13:51:56.838309",
+          "richness": 45
+        },
+        {
+          "title": "Mosquito bite prevention for travellers",
+          "description": "Mosquitoes spread Zika Virus, Dengue, Malaria, Chikungunya, and other diseases. They bite during the day and night.",
+          "link": "https://open.canada.ca/data/en/dataset/aae781a8-bf36-40b2-9dc7-0abddbe695ec",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2020-01-24T18:42:19.750562",
+          "richness": 35
+        },
+        {
+          "title": "West Nile virus and other mosquito-borne diseases surveillance report: Annual edition (2018)",
+          "description": "West Nile virus (WNV) continues to be the leading cause of domestically acquired mosquito-borne disease in Canada. In addition to describing the human health burden of WNV, this report will demonstrate the efforts made to strengthen animal health surveillance in collaboration with multi-disciplinary health partners with the goal of achieving optimal human health outcomes.",
+          "link": "https://open.canada.ca/data/en/dataset/68cc3303-5807-4f8f-9db2-9091f2e9d2cf",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2020-06-17T17:01:16.358325",
+          "richness": 35
+        },
+        {
+          "title": "Ethiopia - KPC (KAP) Survey Report Shire, Adi-Harush camp - 2017",
+          "description": "Adi-Harush Refugee Camp is located in the North West of Tigray regional state of Ethiopia, at about 1170 km from the capital Addis Ababa. \nThe camp population is 9766 [UNHCR, July, 2017]. The camp hosts Eritrean refugees having different ethnic groups where the majorities are Tigrigna and Saho and some minorities of Tigre and Belian.   \nThe main objective of this survey was to collect data and information on water, sanitation and coverage in the Adi-Harush Refugee camp in 2017 and to have base line data for the 2018 interventions. The total sample size was 175 households.\nThe study revealed the gravity of the identified problems, which are latrine coverage, safe water management at home level, hand washing practice, and the risk of diarrhea disease.",
+          "link": "https://data.humdata.org/dataset/unhcr-eth-kap-2017-shire-adiharush-v2-1",
+          "source": "data.humdata.org",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-08-17T02:37:34.187941",
+          "richness": 55
+        },
+        {
+          "title": "Santé Publique France - Surveillance du moustique tigre",
+          "description": "Data on the spread and impact of the tiger mosquito in France, including affected departments.",
+          "link": "https://www.santepubliquefrance.fr",
+          "source": "Santé Publique France",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "Eurostat Tourism Statistics",
+          "description": "Detailed data on tourist overnight stays, arrivals, and impact on local economies within EU countries.",
+          "link": "https://ec.europa.eu/eurostat/web/tourism",
+          "source": "Eurostat",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "WHO Global Health Observatory Data",
+          "description": "Information on health expenditures and disease outbreaks, relevant for assessing healthcare costs.",
+          "link": "https://www.who.int/data/gho",
+          "source": "World Health Organization",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "Santé Publique France - Surveillance du moustique tigre",
+          "description": "Data on the spread and impact of the tiger mosquito in France, including affected departments.",
+          "link": "https://www.santepubliquefrance.fr",
+          "source": "Santé Publique France"
+        },
+        {
+          "title": "Eurostat Tourism Statistics",
+          "description": "Detailed data on tourist overnight stays, arrivals, and impact on local economies within EU countries.",
+          "link": "https://ec.europa.eu/eurostat/web/tourism",
+          "source": "Eurostat"
+        },
+        {
+          "title": "WHO Global Health Observatory Data",
+          "description": "Information on health expenditures and disease outbreaks, relevant for assessing healthcare costs.",
+          "link": "https://www.who.int/data/gho",
+          "source": "World Health Organization"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Répartition géographique des moustiques tigres",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Nombre de signalements",
+          "note": "Source : Ministère de la Santé, données 2023"
+        },
+        {
+          "title": "Coûts de prévention et soins liés aux moustiques tigres",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Montant en euros",
+          "note": "Inclut les coûts de prévention et de traitement des maladies"
+        },
+        {
+          "title": "Impact des moustiques tigres sur le tourisme",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Variation du nombre de touristes (%)",
+          "note": "Comparaison entre zones touchées et non touchées"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Changement climatique et adaptation du moustique tigre",
+      "description": "Examiner la corrélation entre le réchauffement climatique et l'adaptation génétique du moustique tigre en France. Investiguer comment ces changements influencent la durée et la période d'activité du moustique.",
+      "keywords": [
+        "changement climatique",
+        "moustique tigre",
+        "adaptation biologique",
+        "réchauffement climatique",
+        "maladies vectorielles"
+      ],
+      "datasets": [
+        {
+          "title": "Description of the actions and results of the 2013-2020 Climate Change Action Plan as of 2023-03-31",
+          "description": "For each of the actions carried out by the partner ministries and agencies of the 2013-2020 Climate Change Action Plan, the content of this dataset makes it possible to know the budgets associated with each action and the resulting projects. It also makes it possible to monitor the progress of these actions towards the expected results in the fight against climate change.",
+          "link": "https://open.canada.ca/data/en/dataset/1533149d-f6f7-4b93-903a-5a60f40ffb92",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xlsx",
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-07-09T16:02:06.204927",
+          "richness": 55
+        },
+        {
+          "title": "Description of the actions and results of the 2013-2020 Climate Change Action Plan as of 2024-03-31",
+          "description": "For each of the actions carried out by the partner ministries and agencies of the 2013-2020 Climate Change Action Plan, the content of this dataset makes it possible to know the budgets associated with each action and the resulting projects. It also makes it possible to monitor the progress of these actions towards the expected results in the fight against climate change.",
+          "link": "https://open.canada.ca/data/en/dataset/3a60b7c8-422b-460e-b257-1d875b01c4df",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "csv"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-07-09T16:02:11.886875",
+          "richness": 55
+        },
+        {
+          "title": "Democratic Republic of the Congo - Subnational Administrative Boundaries",
+          "description": "Democratic Republic of the Congo administrative level 0-2 boundaries (COD-AB) dataset.\r\n\r\nThe date that these administrative boundaries were established is unknown.\r\n\r\nNOTE:  See COD-AB caveats.  COD-PS Sex and age disaggregation only from ADM1 ratios and shold be viewed as unreliable.\r\n\r\nThis COD-AB was most recently reviewed for accuracy and necessary changes in December 2024.  The COD-AB requires improvements.\r\n\r\nSourced from Referenciel Géographique Commun\r\n\r\nVetting by Information Technology Outreach Services (ITOS) with funding from USAID.\r\n\r\nThis COD-AB is suitable for database or GIS linkage to the Democratic Republic of the Congo [COD-PS](https://data.humdata.org/dataset/cod-ps-cod).\r\n\r\nNo edge-matched (COD-EM) version of this COD-AB has yet been prepared.\r\n\r\nPlease see the [COD Portal](https://cod.unocha.org/).\r\n\r\nAdministrative level 1 contains 26 feature(s).  The normal administrative level 1 feature type is ' Province'.\r\n\r\nAdministrative level 2 contains 189 feature(s).  The normal administrative level 2 feature type is 'Territory / Territorie'.\r\n\r\nRecommended cartographic projection:  Africa Albers Equal Area Conic\r\n\r\nThis metadata was last updated on January 18, 2025.",
+          "link": "https://data.humdata.org/dataset/cod-ab-cod",
+          "source": "data.humdata.org",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xlsx",
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-06-24T21:56:16.309089",
+          "richness": 55
+        },
+        {
+          "title": "DRC Health Data Ebola 2018",
+          "description": "On 1 August 2018, the Ministry of Health of the Democratic Republic of the Congo declared a new outbreak of Ebola virus disease in North Kivu Province. The Ministry of Health, WHO and partners are responding to this event, and working to establish the full extent of this outbreak. Numbers may fluctuate on a daily basis due to many factors, including continuing monitoring, investigation and reclassification of cases. Alert and suspected cases (not reported here), are systematically investigated to confirm or exclude Ebola virus disease before inclusion in the case counts or discarded as non-cases.\r\n\r\nWHO GIS team is supporting the National Health Information System Division (DSNIS) to update the health related geographic data (health zones, areas and health facility structures) and other spatial information such as road, building, school together with the OpenStreetMap community and various partners. To carry out this work, the methodology was decided with local cartographers and together we were able to improve the data locally.\r\n\r\n",
+          "link": "https://data.humdata.org/dataset/drc-health-facilities",
+          "source": "data.humdata.org",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xls",
+            "zip"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-08-05T01:58:12.384675",
+          "richness": 60
+        },
+        {
+          "title": "Plots of Wind Patterns for the World’s Volcanoes",
+          "description": "This product includes rose diagrams and tables of wind patterns at volcanoes listed in the Smithsonian Institution’s Volcanoes of the World Database.  At each volcano, the speed and direction of wind above the volcano were read from output of the NCEP/NCAR Reanalysis 1 model, at twice-daily intervals from January 1, 1990 to December 28, 2009.  These results were then plotted as 20 wind rose diagrams, divided into four seasons and five elevation intervals, and as one summary plot for year-round winds at 0-5 km elevation above sea level.  Rose petals indicate the downwind direction of the wind vector.  These rose diagrams are wrapped into a single zip file for each volcano.  Also included in the zip file are five text files, for elevation intervals (above sea level) of 0-5, 5-11, 11-16, 16-24, and 24-40km, which give wind vectors, twice daily (at 0000 and 1200 UTC) over the 1990-2010 time range.  The rose diagrams are accessible through the attached kmz file, which opens in Google Earth, or as hypertext links in the attached html table.  In the kmz file, placemarks at each volcano can be opened to reveal the summary wind rose diagram, along with a link to the page containing the other data.",
+          "link": "https://catalog.data.gov/dataset/plots-of-wind-patterns-for-the-worlds-volcanoes",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-07-06T07:00:39.991798",
+          "richness": 45
+        },
+        {
+          "title": "Météo France Climate Data",
+          "description": "Access to historical and current climate data in France, including temperature trends and anomalies.",
+          "link": "https://donneespubliques.meteofrance.fr/",
+          "source": "Météo France",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "ECDC Mosquito Maps",
+          "description": "Distribution maps and surveillance data of the Aedes albopictus (tiger mosquito) in Europe.",
+          "link": "https://ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source": "European Centre for Disease Prevention and Control",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "GBIF Biodiversity Data",
+          "description": "Global biodiversity data, including species occurrence records of the tiger mosquito in France.",
+          "link": "https://www.gbif.org/",
+          "source": "Global Biodiversity Information Facility",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "Météo France Climate Data",
+          "description": "Access to historical and current climate data in France, including temperature trends and anomalies.",
+          "link": "https://donneespubliques.meteofrance.fr/",
+          "source": "Météo France"
+        },
+        {
+          "title": "ECDC Mosquito Maps",
+          "description": "Distribution maps and surveillance data of the Aedes albopictus (tiger mosquito) in Europe.",
+          "link": "https://ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source": "European Centre for Disease Prevention and Control"
+        },
+        {
+          "title": "GBIF Biodiversity Data",
+          "description": "Global biodiversity data, including species occurrence records of the tiger mosquito in France.",
+          "link": "https://www.gbif.org/",
+          "source": "Global Biodiversity Information Facility"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Évolution des températures et activité du moustique tigre",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Température moyenne (°C) / Période d'activité (jours)",
+          "note": "Comparer les données climatiques avec la période d'activité du moustique tigre en France. Source : Météo France, entomologistes locaux."
+        },
+        {
+          "title": "Distribution géographique du moustique tigre en France",
+          "chart_type": "choropleth",
+          "x": "Région",
+          "y": "Présence du moustique tigre (oui/non)",
+          "note": "Visualiser l'expansion géographique du moustique tigre. Source : Santé publique France."
+        },
+        {
+          "title": "Adaptation génétique du moustique tigre et température",
+          "chart_type": "scatter",
+          "x": "Température moyenne régionale (°C)",
+          "y": "Fréquence des adaptations génétiques (%)",
+          "note": "Étudier la corrélation entre les températures et les adaptations génétiques. Source : études génétiques locales."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Efficacité des méthodes de lutte contre le moustique tigre",
+      "description": "Comparer les différentes méthodes de lutte contre le moustique tigre en termes d'efficacité et de coût. Évaluer les perspectives de développement de la stérilisation des mâles comme alternative aux insecticides.",
+      "keywords": [
+        "moustique tigre",
+        "lutte antivectorielle",
+        "efficacité méthodes",
+        "prévention moustiques",
+        "contrôle moustiques"
+      ],
+      "datasets": [
+        {
+          "title": "Plots of Wind Patterns for the World’s Volcanoes",
+          "description": "This product includes rose diagrams and tables of wind patterns at volcanoes listed in the Smithsonian Institution’s Volcanoes of the World Database.  At each volcano, the speed and direction of wind above the volcano were read from output of the NCEP/NCAR Reanalysis 1 model, at twice-daily intervals from January 1, 1990 to December 28, 2009.  These results were then plotted as 20 wind rose diagrams, divided into four seasons and five elevation intervals, and as one summary plot for year-round winds at 0-5 km elevation above sea level.  Rose petals indicate the downwind direction of the wind vector.  These rose diagrams are wrapped into a single zip file for each volcano.  Also included in the zip file are five text files, for elevation intervals (above sea level) of 0-5, 5-11, 11-16, 16-24, and 24-40km, which give wind vectors, twice daily (at 0000 and 1200 UTC) over the 1990-2010 time range.  The rose diagrams are accessible through the attached kmz file, which opens in Google Earth, or as hypertext links in the attached html table.  In the kmz file, placemarks at each volcano can be opened to reveal the summary wind rose diagram, along with a link to the page containing the other data.",
+          "link": "https://catalog.data.gov/dataset/plots-of-wind-patterns-for-the-worlds-volcanoes",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-07-06T07:00:39.991798",
+          "richness": 45
+        },
+        {
+          "title": "Wind rose plots for the volcano: 343082  Tigre, El",
+          "description": "This zip folder contains ASCII text files of vectors at the specified volcano at \n12-hour intervals, \nfrom January 1, 1990 through December 28, 2009.  \nThe wind vectors are divided into five files, names by their elevation range above \nsea level in the atmosphere: 00-05km.txt; 05-11km.txt; 11-16km.txt; 16-24km.txt; \nand 24-30km.txt. \nThe zip folder also contains a subfolder \"figures\", with Wind rose plots of wind \ndirection and speed over \nthis time period.  The plots are by season, and by elevation, given a total of 20 \nplots (4 seasons, 5 \nelevation ranges).  A summary plot is also included which gives the year-round \nwind pattern at the volcano, \nat 0-5 km elevation.  Plots are in both jpg and pdf format.",
+          "link": "https://catalog.data.gov/dataset/wind-rose-plots-for-the-volcano-343082-tigre-el",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-07-06T13:51:56.838309",
+          "richness": 45
+        },
+        {
+          "title": "Mosquito bite prevention for travellers",
+          "description": "Mosquitoes spread Zika Virus, Dengue, Malaria, Chikungunya, and other diseases. They bite during the day and night.",
+          "link": "https://open.canada.ca/data/en/dataset/aae781a8-bf36-40b2-9dc7-0abddbe695ec",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2020-01-24T18:42:19.750562",
+          "richness": 35
+        },
+        {
+          "title": "West Nile virus and other mosquito-borne diseases surveillance report: Annual edition (2018)",
+          "description": "West Nile virus (WNV) continues to be the leading cause of domestically acquired mosquito-borne disease in Canada. In addition to describing the human health burden of WNV, this report will demonstrate the efforts made to strengthen animal health surveillance in collaboration with multi-disciplinary health partners with the goal of achieving optimal human health outcomes.",
+          "link": "https://open.canada.ca/data/en/dataset/68cc3303-5807-4f8f-9db2-9091f2e9d2cf",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2020-06-17T17:01:16.358325",
+          "richness": 35
+        },
+        {
+          "title": "Ethiopia - KPC (KAP) Survey Report Shire, Adi-Harush camp - 2017",
+          "description": "Adi-Harush Refugee Camp is located in the North West of Tigray regional state of Ethiopia, at about 1170 km from the capital Addis Ababa. \nThe camp population is 9766 [UNHCR, July, 2017]. The camp hosts Eritrean refugees having different ethnic groups where the majorities are Tigrigna and Saho and some minorities of Tigre and Belian.   \nThe main objective of this survey was to collect data and information on water, sanitation and coverage in the Adi-Harush Refugee camp in 2017 and to have base line data for the 2018 interventions. The total sample size was 175 households.\nThe study revealed the gravity of the identified problems, which are latrine coverage, safe water management at home level, hand washing practice, and the risk of diarrhea disease.",
+          "link": "https://data.humdata.org/dataset/unhcr-eth-kap-2017-shire-adiharush-v2-1",
+          "source": "data.humdata.org",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-08-17T02:37:34.187941",
+          "richness": 55
+        },
+        {
+          "title": "World Health Organization - Vector Control",
+          "description": "Information on vector control strategies, including the effectiveness of different methods against Aedes mosquitoes.",
+          "link": "https://www.who.int/teams/global-malaria-programme/vector-control",
+          "source": "World Health Organization",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "European Centre for Disease Prevention and Control - Aedes Surveillance",
+          "description": "Data on the distribution and control measures of Aedes mosquitoes, including the tiger mosquito, in Europe.",
+          "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/aedes",
+          "source": "European Centre for Disease Prevention and Control",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "FAO - Integrated Pest Management",
+          "description": "Resources on integrated pest management approaches including biological control methods for mosquito management.",
+          "link": "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+          "source": "Food and Agriculture Organization",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "World Health Organization - Vector Control",
+          "description": "Information on vector control strategies, including the effectiveness of different methods against Aedes mosquitoes.",
+          "link": "https://www.who.int/teams/global-malaria-programme/vector-control",
+          "source": "World Health Organization"
+        },
+        {
+          "title": "European Centre for Disease Prevention and Control - Aedes Surveillance",
+          "description": "Data on the distribution and control measures of Aedes mosquitoes, including the tiger mosquito, in Europe.",
+          "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/aedes",
+          "source": "European Centre for Disease Prevention and Control"
+        },
+        {
+          "title": "FAO - Integrated Pest Management",
+          "description": "Resources on integrated pest management approaches including biological control methods for mosquito management.",
+          "link": "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+          "source": "Food and Agriculture Organization"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Comparaison des méthodes de lutte contre le moustique tigre",
+          "chart_type": "bar",
+          "x": "Méthode",
+          "y": "Efficacité (%)",
+          "note": "Comparer l'efficacité des insecticides, pièges, et stérilisation des mâles"
+        },
+        {
+          "title": "Coût des différentes méthodes de lutte",
+          "chart_type": "bar",
+          "x": "Méthode",
+          "y": "Coût (€/hectare)",
+          "note": "Données obtenues auprès des services de santé publique et des fabricants"
+        },
+        {
+          "title": "Perspectives de la stérilisation des mâles",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Taux de stérilisation atteint (%)",
+          "note": "Projection basée sur les études actuelles et les développements technologiques"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Les villes face à l'invasion silencieuse du moustique tigre",
+      "description": "Étudier pourquoi les villes sont plus vulnérables en raison des îlots de chaleur et de la densité de population. Discuter des mesures urbaines possibles pour limiter la prolifération de cet insecte.",
+      "keywords": [
+        "moustique tigre",
+        "invasion urbaine",
+        "santé publique",
+        "prévention moustiques",
+        "changement climatique"
+      ],
+      "datasets": [
+        {
+          "title": "Plots of Wind Patterns for the World’s Volcanoes",
+          "description": "This product includes rose diagrams and tables of wind patterns at volcanoes listed in the Smithsonian Institution’s Volcanoes of the World Database.  At each volcano, the speed and direction of wind above the volcano were read from output of the NCEP/NCAR Reanalysis 1 model, at twice-daily intervals from January 1, 1990 to December 28, 2009.  These results were then plotted as 20 wind rose diagrams, divided into four seasons and five elevation intervals, and as one summary plot for year-round winds at 0-5 km elevation above sea level.  Rose petals indicate the downwind direction of the wind vector.  These rose diagrams are wrapped into a single zip file for each volcano.  Also included in the zip file are five text files, for elevation intervals (above sea level) of 0-5, 5-11, 11-16, 16-24, and 24-40km, which give wind vectors, twice daily (at 0000 and 1200 UTC) over the 1990-2010 time range.  The rose diagrams are accessible through the attached kmz file, which opens in Google Earth, or as hypertext links in the attached html table.  In the kmz file, placemarks at each volcano can be opened to reveal the summary wind rose diagram, along with a link to the page containing the other data.",
+          "link": "https://catalog.data.gov/dataset/plots-of-wind-patterns-for-the-worlds-volcanoes",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-07-06T07:00:39.991798",
+          "richness": 45
+        },
+        {
+          "title": "Wind rose plots for the volcano: 343082  Tigre, El",
+          "description": "This zip folder contains ASCII text files of vectors at the specified volcano at \n12-hour intervals, \nfrom January 1, 1990 through December 28, 2009.  \nThe wind vectors are divided into five files, names by their elevation range above \nsea level in the atmosphere: 00-05km.txt; 05-11km.txt; 11-16km.txt; 16-24km.txt; \nand 24-30km.txt. \nThe zip folder also contains a subfolder \"figures\", with Wind rose plots of wind \ndirection and speed over \nthis time period.  The plots are by season, and by elevation, given a total of 20 \nplots (4 seasons, 5 \nelevation ranges).  A summary plot is also included which gives the year-round \nwind pattern at the volcano, \nat 0-5 km elevation.  Plots are in both jpg and pdf format.",
+          "link": "https://catalog.data.gov/dataset/wind-rose-plots-for-the-volcano-343082-tigre-el",
+          "source": "data.gov",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "xml"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2024-07-06T13:51:56.838309",
+          "richness": 45
+        },
+        {
+          "title": "Mosquito bite prevention for travellers",
+          "description": "Mosquitoes spread Zika Virus, Dengue, Malaria, Chikungunya, and other diseases. They bite during the day and night.",
+          "link": "https://open.canada.ca/data/en/dataset/aae781a8-bf36-40b2-9dc7-0abddbe695ec",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2020-01-24T18:42:19.750562",
+          "richness": 35
+        },
+        {
+          "title": "West Nile virus and other mosquito-borne diseases surveillance report: Annual edition (2018)",
+          "description": "West Nile virus (WNV) continues to be the leading cause of domestically acquired mosquito-borne disease in Canada. In addition to describing the human health burden of WNV, this report will demonstrate the efforts made to strengthen animal health surveillance in collaboration with multi-disciplinary health partners with the goal of achieving optimal human health outcomes.",
+          "link": "https://open.canada.ca/data/en/dataset/68cc3303-5807-4f8f-9db2-9091f2e9d2cf",
+          "source": "open.canada.ca",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2020-06-17T17:01:16.358325",
+          "richness": 35
+        },
+        {
+          "title": "Ethiopia - KPC (KAP) Survey Report Shire, Adi-Harush camp - 2017",
+          "description": "Adi-Harush Refugee Camp is located in the North West of Tigray regional state of Ethiopia, at about 1170 km from the capital Addis Ababa. \nThe camp population is 9766 [UNHCR, July, 2017]. The camp hosts Eritrean refugees having different ethnic groups where the majorities are Tigrigna and Saho and some minorities of Tigre and Belian.   \nThe main objective of this survey was to collect data and information on water, sanitation and coverage in the Adi-Harush Refugee camp in 2017 and to have base line data for the 2018 interventions. The total sample size was 175 households.\nThe study revealed the gravity of the identified problems, which are latrine coverage, safe water management at home level, hand washing practice, and the risk of diarrhea disease.",
+          "link": "https://data.humdata.org/dataset/unhcr-eth-kap-2017-shire-adiharush-v2-1",
+          "source": "data.humdata.org",
+          "found_by": "CONNECTOR",
+          "formats": [
+            "pdf"
+          ],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "2025-08-17T02:37:34.187941",
+          "richness": 55
+        },
+        {
+          "title": "European Centre for Disease Prevention and Control (ECDC) - Mosquito Maps",
+          "description": "Provides distribution maps of the Aedes albopictus (tiger mosquito) in Europe, useful for understanding spread patterns.",
+          "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source": "ECDC",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "Copernicus Climate Data Store",
+          "description": "Offers climate data, including urban heat island effects, which can help analyze why cities are vulnerable to mosquito proliferation.",
+          "link": "https://cds.climate.copernicus.eu/",
+          "source": "Copernicus",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        },
+        {
+          "title": "World Health Organization - Vector-borne Diseases",
+          "description": "Contains information on vector control strategies and measures that cities can implement to limit mosquito proliferation.",
+          "link": "https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases",
+          "source": "WHO",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0
+        }
+      ],
+      "sources": [
+        {
+          "title": "European Centre for Disease Prevention and Control (ECDC) - Mosquito Maps",
+          "description": "Provides distribution maps of the Aedes albopictus (tiger mosquito) in Europe, useful for understanding spread patterns.",
+          "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source": "ECDC"
+        },
+        {
+          "title": "Copernicus Climate Data Store",
+          "description": "Offers climate data, including urban heat island effects, which can help analyze why cities are vulnerable to mosquito proliferation.",
+          "link": "https://cds.climate.copernicus.eu/",
+          "source": "Copernicus"
+        },
+        {
+          "title": "World Health Organization - Vector-borne Diseases",
+          "description": "Contains information on vector control strategies and measures that cities can implement to limit mosquito proliferation.",
+          "link": "https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases",
+          "source": "WHO"
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Répartition du moustique tigre en milieu urbain",
+          "chart_type": "choropleth",
+          "x": "Villes",
+          "y": "Densité du moustique tigre",
+          "note": "Source : données de santé publique, échelle municipale"
+        },
+        {
+          "title": "Corrélation entre îlots de chaleur et prolifération du moustique tigre",
+          "chart_type": "heatmap",
+          "x": "Température moyenne des îlots de chaleur",
+          "y": "Densité du moustique tigre",
+          "note": "Données climatiques et entomologiques locales"
+        },
+        {
+          "title": "Impact des mesures urbaines sur la population de moustiques tigres",
+          "chart_type": "bar",
+          "x": "Mesures urbaines",
+          "y": "Réduction de la densité de moustiques (%)",
+          "note": "Comparaison des villes ayant mis en place différentes mesures"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 4988,
+      "type": "PER",
+      "value": "Didier Fontenille",
+      "context": null
+    },
+    {
+      "id": 4989,
+      "type": "ORG",
+      "value": "Institut de recherche pour le développement",
+      "context": null
+    },
+    {
+      "id": 4990,
+      "type": "LOC",
+      "value": "France hexagonale",
+      "context": null
+    },
+    {
+      "id": 4991,
+      "type": "LOC",
+      "value": "Bretagne",
+      "context": null
+    },
+    {
+      "id": 4992,
+      "type": "LOC",
+      "value": "Normandie",
+      "context": null
+    },
+    {
+      "id": 4993,
+      "type": "LOC",
+      "value": "Asie du Sud-Est",
+      "context": null
+    },
+    {
+      "id": 4994,
+      "type": "NUM",
+      "value": "81.0",
+      "context": null
+    },
+    {
+      "id": 4995,
+      "type": "NUM",
+      "value": "96.0",
+      "context": null
+    },
+    {
+      "id": 4996,
+      "type": "NUM",
+      "value": "65.0",
+      "context": null
+    },
+    {
+      "id": 4997,
+      "type": "NUM",
+      "value": "2004.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 762,
+      "title": "Moustique tigre : cartographie de sa progression en France",
+      "description": "Visualiser l'évolution géographique de la colonisation des moustiques tigres depuis leur arrivée en 2004. Comparer les régions touchées avec celles qui sont encore épargnées pour comprendre les facteurs géographiques et climatiques en jeu.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 763,
+      "title": "Impact économique des moustiques tigres sur le tourisme",
+      "description": "Analyser comment la présence croissante du moustique tigre dans les zones touristiques influence l'économie locale. Étudier les coûts associés à la prévention et aux soins de santé dans les départements les plus touchés.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 764,
+      "title": "Changement climatique et adaptation du moustique tigre",
+      "description": "Examiner la corrélation entre le réchauffement climatique et l'adaptation génétique du moustique tigre en France. Investiguer comment ces changements influencent la durée et la période d'activité du moustique.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 765,
+      "title": "Efficacité des méthodes de lutte contre le moustique tigre",
+      "description": "Comparer les différentes méthodes de lutte contre le moustique tigre en termes d'efficacité et de coût. Évaluer les perspectives de développement de la stérilisation des mâles comme alternative aux insecticides.",
+      "order": 3,
+      "visualizations": []
+    },
+    {
+      "id": 766,
+      "title": "Les villes face à l'invasion silencieuse du moustique tigre",
+      "description": "Étudier pourquoi les villes sont plus vulnérables en raison des îlots de chaleur et de la densité de population. Discuter des mesures urbaines possibles pour limiter la prolifération de cet insecte.",
+      "order": 4,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 3871,
+      "title": "Eurostat Tourism Statistics",
+      "description": "Detailed data on tourist overnight stays, arrivals, and impact on local economies within EU countries.",
+      "link": "https://ec.europa.eu/eurostat/web/tourism",
+      "source": "Eurostat",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3872,
+      "title": "WHO Global Health Observatory Data",
+      "description": "Information on health expenditures and disease outbreaks, relevant for assessing healthcare costs.",
+      "link": "https://www.who.int/data/gho",
+      "source": "World Health Organization",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3859,
+      "title": "Mosquito bite prevention for travellers",
+      "description": "Mosquitoes spread Zika Virus, Dengue, Malaria, Chikungunya, and other diseases. They bite during the day and night.",
+      "link": "https://open.canada.ca/data/en/dataset/aae781a8-bf36-40b2-9dc7-0abddbe695ec",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2020-01-24T18:42:19.750562",
+      "richness": 35
+    },
+    {
+      "id": 3857,
+      "title": "Plots of Wind Patterns for the World’s Volcanoes",
+      "description": "This product includes rose diagrams and tables of wind patterns at volcanoes listed in the Smithsonian Institution’s Volcanoes of the World Database.  At each volcano, the speed and direction of wind above the volcano were read from output of the NCEP/NCAR Reanalysis 1 model, at twice-daily intervals from January 1, 1990 to December 28, 2009.  These results were then plotted as 20 wind rose diagrams, divided into four seasons and five elevation intervals, and as one summary plot for year-round winds at 0-5 km elevation above sea level.  Rose petals indicate the downwind direction of the wind vector.  These rose diagrams are wrapped into a single zip file for each volcano.  Also included in the zip file are five text files, for elevation intervals (above sea level) of 0-5, 5-11, 11-16, 16-24, and 24-40km, which give wind vectors, twice daily (at 0000 and 1200 UTC) over the 1990-2010 time range.  The rose diagrams are accessible through the attached kmz file, which opens in Google Earth, or as hypertext links in the attached html table.  In the kmz file, placemarks at each volcano can be opened to reveal the summary wind rose diagram, along with a link to the page containing the other data.",
+      "link": "https://catalog.data.gov/dataset/plots-of-wind-patterns-for-the-worlds-volcanoes",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml"
+      ],
+      "organisation": "Department of the Interior",
+      "licence": "License not specified",
+      "last_modified": "2024-07-06T07:00:39.991798",
+      "richness": 45
+    },
+    {
+      "id": 3858,
+      "title": "Wind rose plots for the volcano: 343082  Tigre, El",
+      "description": "This zip folder contains ASCII text files of vectors at the specified volcano at \n12-hour intervals, \nfrom January 1, 1990 through December 28, 2009.  \nThe wind vectors are divided into five files, names by their elevation range above \nsea level in the atmosphere: 00-05km.txt; 05-11km.txt; 11-16km.txt; 16-24km.txt; \nand 24-30km.txt. \nThe zip folder also contains a subfolder \"figures\", with Wind rose plots of wind \ndirection and speed over \nthis time period.  The plots are by season, and by elevation, given a total of 20 \nplots (4 seasons, 5 \nelevation ranges).  A summary plot is also included which gives the year-round \nwind pattern at the volcano, \nat 0-5 km elevation.  Plots are in both jpg and pdf format.",
+      "link": "https://catalog.data.gov/dataset/wind-rose-plots-for-the-volcano-343082-tigre-el",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml"
+      ],
+      "organisation": "Department of the Interior",
+      "licence": "License not specified",
+      "last_modified": "2024-07-06T13:51:56.838309",
+      "richness": 45
+    },
+    {
+      "id": 3860,
+      "title": "West Nile virus and other mosquito-borne diseases surveillance report: Annual edition (2018)",
+      "description": "West Nile virus (WNV) continues to be the leading cause of domestically acquired mosquito-borne disease in Canada. In addition to describing the human health burden of WNV, this report will demonstrate the efforts made to strengthen animal health surveillance in collaboration with multi-disciplinary health partners with the goal of achieving optimal human health outcomes.",
+      "link": "https://open.canada.ca/data/en/dataset/68cc3303-5807-4f8f-9db2-9091f2e9d2cf",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2020-06-17T17:01:16.358325",
+      "richness": 35
+    },
+    {
+      "id": 3861,
+      "title": "Ethiopia - KPC (KAP) Survey Report Shire, Adi-Harush camp - 2017",
+      "description": "Adi-Harush Refugee Camp is located in the North West of Tigray regional state of Ethiopia, at about 1170 km from the capital Addis Ababa. \nThe camp population is 9766 [UNHCR, July, 2017]. The camp hosts Eritrean refugees having different ethnic groups where the majorities are Tigrigna and Saho and some minorities of Tigre and Belian.   \nThe main objective of this survey was to collect data and information on water, sanitation and coverage in the Adi-Harush Refugee camp in 2017 and to have base line data for the 2018 interventions. The total sample size was 175 households.\nThe study revealed the gravity of the identified problems, which are latrine coverage, safe water management at home level, hand washing practice, and the risk of diarrhea disease.",
+      "link": "https://data.humdata.org/dataset/unhcr-eth-kap-2017-shire-adiharush-v2-1",
+      "source": "data.humdata.org",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "UNHCR - The UN Refugee Agency",
+      "licence": "Other",
+      "last_modified": "2025-08-17T02:37:34.187941",
+      "richness": 55
+    },
+    {
+      "id": 3862,
+      "title": "Vigilance-Moustiques",
+      "description": "Provides up-to-date maps and data on the presence and spread of the tiger mosquito in France.",
+      "link": "https://vigilance-moustiques.com/",
+      "source": "Vigilance-Moustiques",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3863,
+      "title": "Santé Publique France - Surveillance du moustique tigre",
+      "description": "Data on the monitoring and distribution of the tiger mosquito across different regions in France.",
+      "link": "https://www.santepubliquefrance.fr/",
+      "source": "Santé Publique France",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3864,
+      "title": "European Centre for Disease Prevention and Control (ECDC) - Mosquito Maps",
+      "description": "Offers maps and data on the distribution of invasive mosquito species, including the tiger mosquito, in Europe.",
+      "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+      "source": "ECDC",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3865,
+      "title": "Plots of Wind Patterns for the World’s Volcanoes",
+      "description": "This product includes rose diagrams and tables of wind patterns at volcanoes listed in the Smithsonian Institution’s Volcanoes of the World Database.  At each volcano, the speed and direction of wind above the volcano were read from output of the NCEP/NCAR Reanalysis 1 model, at twice-daily intervals from January 1, 1990 to December 28, 2009.  These results were then plotted as 20 wind rose diagrams, divided into four seasons and five elevation intervals, and as one summary plot for year-round winds at 0-5 km elevation above sea level.  Rose petals indicate the downwind direction of the wind vector.  These rose diagrams are wrapped into a single zip file for each volcano.  Also included in the zip file are five text files, for elevation intervals (above sea level) of 0-5, 5-11, 11-16, 16-24, and 24-40km, which give wind vectors, twice daily (at 0000 and 1200 UTC) over the 1990-2010 time range.  The rose diagrams are accessible through the attached kmz file, which opens in Google Earth, or as hypertext links in the attached html table.  In the kmz file, placemarks at each volcano can be opened to reveal the summary wind rose diagram, along with a link to the page containing the other data.",
+      "link": "https://catalog.data.gov/dataset/plots-of-wind-patterns-for-the-worlds-volcanoes",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml"
+      ],
+      "organisation": "Department of the Interior",
+      "licence": "License not specified",
+      "last_modified": "2024-07-06T07:00:39.991798",
+      "richness": 45
+    },
+    {
+      "id": 3866,
+      "title": "Wind rose plots for the volcano: 343082  Tigre, El",
+      "description": "This zip folder contains ASCII text files of vectors at the specified volcano at \n12-hour intervals, \nfrom January 1, 1990 through December 28, 2009.  \nThe wind vectors are divided into five files, names by their elevation range above \nsea level in the atmosphere: 00-05km.txt; 05-11km.txt; 11-16km.txt; 16-24km.txt; \nand 24-30km.txt. \nThe zip folder also contains a subfolder \"figures\", with Wind rose plots of wind \ndirection and speed over \nthis time period.  The plots are by season, and by elevation, given a total of 20 \nplots (4 seasons, 5 \nelevation ranges).  A summary plot is also included which gives the year-round \nwind pattern at the volcano, \nat 0-5 km elevation.  Plots are in both jpg and pdf format.",
+      "link": "https://catalog.data.gov/dataset/wind-rose-plots-for-the-volcano-343082-tigre-el",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml"
+      ],
+      "organisation": "Department of the Interior",
+      "licence": "License not specified",
+      "last_modified": "2024-07-06T13:51:56.838309",
+      "richness": 45
+    },
+    {
+      "id": 3867,
+      "title": "Mosquito bite prevention for travellers",
+      "description": "Mosquitoes spread Zika Virus, Dengue, Malaria, Chikungunya, and other diseases. They bite during the day and night.",
+      "link": "https://open.canada.ca/data/en/dataset/aae781a8-bf36-40b2-9dc7-0abddbe695ec",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2020-01-24T18:42:19.750562",
+      "richness": 35
+    },
+    {
+      "id": 3868,
+      "title": "West Nile virus and other mosquito-borne diseases surveillance report: Annual edition (2018)",
+      "description": "West Nile virus (WNV) continues to be the leading cause of domestically acquired mosquito-borne disease in Canada. In addition to describing the human health burden of WNV, this report will demonstrate the efforts made to strengthen animal health surveillance in collaboration with multi-disciplinary health partners with the goal of achieving optimal human health outcomes.",
+      "link": "https://open.canada.ca/data/en/dataset/68cc3303-5807-4f8f-9db2-9091f2e9d2cf",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2020-06-17T17:01:16.358325",
+      "richness": 35
+    },
+    {
+      "id": 3869,
+      "title": "Ethiopia - KPC (KAP) Survey Report Shire, Adi-Harush camp - 2017",
+      "description": "Adi-Harush Refugee Camp is located in the North West of Tigray regional state of Ethiopia, at about 1170 km from the capital Addis Ababa. \nThe camp population is 9766 [UNHCR, July, 2017]. The camp hosts Eritrean refugees having different ethnic groups where the majorities are Tigrigna and Saho and some minorities of Tigre and Belian.   \nThe main objective of this survey was to collect data and information on water, sanitation and coverage in the Adi-Harush Refugee camp in 2017 and to have base line data for the 2018 interventions. The total sample size was 175 households.\nThe study revealed the gravity of the identified problems, which are latrine coverage, safe water management at home level, hand washing practice, and the risk of diarrhea disease.",
+      "link": "https://data.humdata.org/dataset/unhcr-eth-kap-2017-shire-adiharush-v2-1",
+      "source": "data.humdata.org",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "UNHCR - The UN Refugee Agency",
+      "licence": "Other",
+      "last_modified": "2025-08-17T02:37:34.187941",
+      "richness": 55
+    },
+    {
+      "id": 3870,
+      "title": "Santé Publique France - Surveillance du moustique tigre",
+      "description": "Data on the spread and impact of the tiger mosquito in France, including affected departments.",
+      "link": "https://www.santepubliquefrance.fr",
+      "source": "Santé Publique France",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3873,
+      "title": "Description of the actions and results of the 2013-2020 Climate Change Action Plan as of 2023-03-31",
+      "description": "For each of the actions carried out by the partner ministries and agencies of the 2013-2020 Climate Change Action Plan, the content of this dataset makes it possible to know the budgets associated with each action and the resulting projects. It also makes it possible to monitor the progress of these actions towards the expected results in the fight against climate change.",
+      "link": "https://open.canada.ca/data/en/dataset/1533149d-f6f7-4b93-903a-5a60f40ffb92",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xlsx",
+        "pdf"
+      ],
+      "organisation": "Government and Municipalities of Québec | Gouvernement et municipalités du Québec",
+      "licence": "Creative Commons 4.0 Attribution (CC-BY) licence – Quebec",
+      "last_modified": "2025-07-09T16:02:06.204927",
+      "richness": 55
+    },
+    {
+      "id": 3874,
+      "title": "Description of the actions and results of the 2013-2020 Climate Change Action Plan as of 2024-03-31",
+      "description": "For each of the actions carried out by the partner ministries and agencies of the 2013-2020 Climate Change Action Plan, the content of this dataset makes it possible to know the budgets associated with each action and the resulting projects. It also makes it possible to monitor the progress of these actions towards the expected results in the fight against climate change.",
+      "link": "https://open.canada.ca/data/en/dataset/3a60b7c8-422b-460e-b257-1d875b01c4df",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "csv"
+      ],
+      "organisation": "Government and Municipalities of Québec | Gouvernement et municipalités du Québec",
+      "licence": "Creative Commons 4.0 Attribution (CC-BY) licence – Quebec",
+      "last_modified": "2025-07-09T16:02:11.886875",
+      "richness": 55
+    },
+    {
+      "id": 3875,
+      "title": "Democratic Republic of the Congo - Subnational Administrative Boundaries",
+      "description": "Democratic Republic of the Congo administrative level 0-2 boundaries (COD-AB) dataset.\r\n\r\nThe date that these administrative boundaries were established is unknown.\r\n\r\nNOTE:  See COD-AB caveats.  COD-PS Sex and age disaggregation only from ADM1 ratios and shold be viewed as unreliable.\r\n\r\nThis COD-AB was most recently reviewed for accuracy and necessary changes in December 2024.  The COD-AB requires improvements.\r\n\r\nSourced from Referenciel Géographique Commun\r\n\r\nVetting by Information Technology Outreach Services (ITOS) with funding from USAID.\r\n\r\nThis COD-AB is suitable for database or GIS linkage to the Democratic Republic of the Congo [COD-PS](https://data.humdata.org/dataset/cod-ps-cod).\r\n\r\nNo edge-matched (COD-EM) version of this COD-AB has yet been prepared.\r\n\r\nPlease see the [COD Portal](https://cod.unocha.org/).\r\n\r\nAdministrative level 1 contains 26 feature(s).  The normal administrative level 1 feature type is ' Province'.\r\n\r\nAdministrative level 2 contains 189 feature(s).  The normal administrative level 2 feature type is 'Territory / Territorie'.\r\n\r\nRecommended cartographic projection:  Africa Albers Equal Area Conic\r\n\r\nThis metadata was last updated on January 18, 2025.",
+      "link": "https://data.humdata.org/dataset/cod-ab-cod",
+      "source": "data.humdata.org",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xlsx",
+        "zip"
+      ],
+      "organisation": "OCHA Democratic Republic of the Congo (DRC)",
+      "licence": "Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)",
+      "last_modified": "2025-06-24T21:56:16.309089",
+      "richness": 55
+    },
+    {
+      "id": 3876,
+      "title": "DRC Health Data Ebola 2018",
+      "description": "On 1 August 2018, the Ministry of Health of the Democratic Republic of the Congo declared a new outbreak of Ebola virus disease in North Kivu Province. The Ministry of Health, WHO and partners are responding to this event, and working to establish the full extent of this outbreak. Numbers may fluctuate on a daily basis due to many factors, including continuing monitoring, investigation and reclassification of cases. Alert and suspected cases (not reported here), are systematically investigated to confirm or exclude Ebola virus disease before inclusion in the case counts or discarded as non-cases.\r\n\r\nWHO GIS team is supporting the National Health Information System Division (DSNIS) to update the health related geographic data (health zones, areas and health facility structures) and other spatial information such as road, building, school together with the OpenStreetMap community and various partners. To carry out this work, the methodology was decided with local cartographers and together we were able to improve the data locally.\r\n\r\n",
+      "link": "https://data.humdata.org/dataset/drc-health-facilities",
+      "source": "data.humdata.org",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xls",
+        "zip"
+      ],
+      "organisation": "World Health Organization",
+      "licence": "Open Database License (ODC-ODbL)",
+      "last_modified": "2025-08-05T01:58:12.384675",
+      "richness": 60
+    },
+    {
+      "id": 3877,
+      "title": "Plots of Wind Patterns for the World’s Volcanoes",
+      "description": "This product includes rose diagrams and tables of wind patterns at volcanoes listed in the Smithsonian Institution’s Volcanoes of the World Database.  At each volcano, the speed and direction of wind above the volcano were read from output of the NCEP/NCAR Reanalysis 1 model, at twice-daily intervals from January 1, 1990 to December 28, 2009.  These results were then plotted as 20 wind rose diagrams, divided into four seasons and five elevation intervals, and as one summary plot for year-round winds at 0-5 km elevation above sea level.  Rose petals indicate the downwind direction of the wind vector.  These rose diagrams are wrapped into a single zip file for each volcano.  Also included in the zip file are five text files, for elevation intervals (above sea level) of 0-5, 5-11, 11-16, 16-24, and 24-40km, which give wind vectors, twice daily (at 0000 and 1200 UTC) over the 1990-2010 time range.  The rose diagrams are accessible through the attached kmz file, which opens in Google Earth, or as hypertext links in the attached html table.  In the kmz file, placemarks at each volcano can be opened to reveal the summary wind rose diagram, along with a link to the page containing the other data.",
+      "link": "https://catalog.data.gov/dataset/plots-of-wind-patterns-for-the-worlds-volcanoes",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml"
+      ],
+      "organisation": "Department of the Interior",
+      "licence": "License not specified",
+      "last_modified": "2024-07-06T07:00:39.991798",
+      "richness": 45
+    },
+    {
+      "id": 3878,
+      "title": "Météo France Climate Data",
+      "description": "Access to historical and current climate data in France, including temperature trends and anomalies.",
+      "link": "https://donneespubliques.meteofrance.fr/",
+      "source": "Météo France",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3879,
+      "title": "ECDC Mosquito Maps",
+      "description": "Distribution maps and surveillance data of the Aedes albopictus (tiger mosquito) in Europe.",
+      "link": "https://ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+      "source": "European Centre for Disease Prevention and Control",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3880,
+      "title": "GBIF Biodiversity Data",
+      "description": "Global biodiversity data, including species occurrence records of the tiger mosquito in France.",
+      "link": "https://www.gbif.org/",
+      "source": "Global Biodiversity Information Facility",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3890,
+      "title": "Wind rose plots for the volcano: 343082  Tigre, El",
+      "description": "This zip folder contains ASCII text files of vectors at the specified volcano at \n12-hour intervals, \nfrom January 1, 1990 through December 28, 2009.  \nThe wind vectors are divided into five files, names by their elevation range above \nsea level in the atmosphere: 00-05km.txt; 05-11km.txt; 11-16km.txt; 16-24km.txt; \nand 24-30km.txt. \nThe zip folder also contains a subfolder \"figures\", with Wind rose plots of wind \ndirection and speed over \nthis time period.  The plots are by season, and by elevation, given a total of 20 \nplots (4 seasons, 5 \nelevation ranges).  A summary plot is also included which gives the year-round \nwind pattern at the volcano, \nat 0-5 km elevation.  Plots are in both jpg and pdf format.",
+      "link": "https://catalog.data.gov/dataset/wind-rose-plots-for-the-volcano-343082-tigre-el",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml"
+      ],
+      "organisation": "Department of the Interior",
+      "licence": "License not specified",
+      "last_modified": "2024-07-06T13:51:56.838309",
+      "richness": 45
+    },
+    {
+      "id": 3881,
+      "title": "Plots of Wind Patterns for the World’s Volcanoes",
+      "description": "This product includes rose diagrams and tables of wind patterns at volcanoes listed in the Smithsonian Institution’s Volcanoes of the World Database.  At each volcano, the speed and direction of wind above the volcano were read from output of the NCEP/NCAR Reanalysis 1 model, at twice-daily intervals from January 1, 1990 to December 28, 2009.  These results were then plotted as 20 wind rose diagrams, divided into four seasons and five elevation intervals, and as one summary plot for year-round winds at 0-5 km elevation above sea level.  Rose petals indicate the downwind direction of the wind vector.  These rose diagrams are wrapped into a single zip file for each volcano.  Also included in the zip file are five text files, for elevation intervals (above sea level) of 0-5, 5-11, 11-16, 16-24, and 24-40km, which give wind vectors, twice daily (at 0000 and 1200 UTC) over the 1990-2010 time range.  The rose diagrams are accessible through the attached kmz file, which opens in Google Earth, or as hypertext links in the attached html table.  In the kmz file, placemarks at each volcano can be opened to reveal the summary wind rose diagram, along with a link to the page containing the other data.",
+      "link": "https://catalog.data.gov/dataset/plots-of-wind-patterns-for-the-worlds-volcanoes",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml"
+      ],
+      "organisation": "Department of the Interior",
+      "licence": "License not specified",
+      "last_modified": "2024-07-06T07:00:39.991798",
+      "richness": 45
+    },
+    {
+      "id": 3882,
+      "title": "Wind rose plots for the volcano: 343082  Tigre, El",
+      "description": "This zip folder contains ASCII text files of vectors at the specified volcano at \n12-hour intervals, \nfrom January 1, 1990 through December 28, 2009.  \nThe wind vectors are divided into five files, names by their elevation range above \nsea level in the atmosphere: 00-05km.txt; 05-11km.txt; 11-16km.txt; 16-24km.txt; \nand 24-30km.txt. \nThe zip folder also contains a subfolder \"figures\", with Wind rose plots of wind \ndirection and speed over \nthis time period.  The plots are by season, and by elevation, given a total of 20 \nplots (4 seasons, 5 \nelevation ranges).  A summary plot is also included which gives the year-round \nwind pattern at the volcano, \nat 0-5 km elevation.  Plots are in both jpg and pdf format.",
+      "link": "https://catalog.data.gov/dataset/wind-rose-plots-for-the-volcano-343082-tigre-el",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml"
+      ],
+      "organisation": "Department of the Interior",
+      "licence": "License not specified",
+      "last_modified": "2024-07-06T13:51:56.838309",
+      "richness": 45
+    },
+    {
+      "id": 3883,
+      "title": "Mosquito bite prevention for travellers",
+      "description": "Mosquitoes spread Zika Virus, Dengue, Malaria, Chikungunya, and other diseases. They bite during the day and night.",
+      "link": "https://open.canada.ca/data/en/dataset/aae781a8-bf36-40b2-9dc7-0abddbe695ec",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2020-01-24T18:42:19.750562",
+      "richness": 35
+    },
+    {
+      "id": 3884,
+      "title": "West Nile virus and other mosquito-borne diseases surveillance report: Annual edition (2018)",
+      "description": "West Nile virus (WNV) continues to be the leading cause of domestically acquired mosquito-borne disease in Canada. In addition to describing the human health burden of WNV, this report will demonstrate the efforts made to strengthen animal health surveillance in collaboration with multi-disciplinary health partners with the goal of achieving optimal human health outcomes.",
+      "link": "https://open.canada.ca/data/en/dataset/68cc3303-5807-4f8f-9db2-9091f2e9d2cf",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2020-06-17T17:01:16.358325",
+      "richness": 35
+    },
+    {
+      "id": 3885,
+      "title": "Ethiopia - KPC (KAP) Survey Report Shire, Adi-Harush camp - 2017",
+      "description": "Adi-Harush Refugee Camp is located in the North West of Tigray regional state of Ethiopia, at about 1170 km from the capital Addis Ababa. \nThe camp population is 9766 [UNHCR, July, 2017]. The camp hosts Eritrean refugees having different ethnic groups where the majorities are Tigrigna and Saho and some minorities of Tigre and Belian.   \nThe main objective of this survey was to collect data and information on water, sanitation and coverage in the Adi-Harush Refugee camp in 2017 and to have base line data for the 2018 interventions. The total sample size was 175 households.\nThe study revealed the gravity of the identified problems, which are latrine coverage, safe water management at home level, hand washing practice, and the risk of diarrhea disease.",
+      "link": "https://data.humdata.org/dataset/unhcr-eth-kap-2017-shire-adiharush-v2-1",
+      "source": "data.humdata.org",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "UNHCR - The UN Refugee Agency",
+      "licence": "Other",
+      "last_modified": "2025-08-17T02:37:34.187941",
+      "richness": 55
+    },
+    {
+      "id": 3886,
+      "title": "World Health Organization - Vector Control",
+      "description": "Information on vector control strategies, including the effectiveness of different methods against Aedes mosquitoes.",
+      "link": "https://www.who.int/teams/global-malaria-programme/vector-control",
+      "source": "World Health Organization",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3887,
+      "title": "European Centre for Disease Prevention and Control - Aedes Surveillance",
+      "description": "Data on the distribution and control measures of Aedes mosquitoes, including the tiger mosquito, in Europe.",
+      "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/aedes",
+      "source": "European Centre for Disease Prevention and Control",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3888,
+      "title": "FAO - Integrated Pest Management",
+      "description": "Resources on integrated pest management approaches including biological control methods for mosquito management.",
+      "link": "https://www.fao.org/agriculture/crops/thematic-sitemap/theme/pests/ipm/en/",
+      "source": "Food and Agriculture Organization",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3889,
+      "title": "Plots of Wind Patterns for the World’s Volcanoes",
+      "description": "This product includes rose diagrams and tables of wind patterns at volcanoes listed in the Smithsonian Institution’s Volcanoes of the World Database.  At each volcano, the speed and direction of wind above the volcano were read from output of the NCEP/NCAR Reanalysis 1 model, at twice-daily intervals from January 1, 1990 to December 28, 2009.  These results were then plotted as 20 wind rose diagrams, divided into four seasons and five elevation intervals, and as one summary plot for year-round winds at 0-5 km elevation above sea level.  Rose petals indicate the downwind direction of the wind vector.  These rose diagrams are wrapped into a single zip file for each volcano.  Also included in the zip file are five text files, for elevation intervals (above sea level) of 0-5, 5-11, 11-16, 16-24, and 24-40km, which give wind vectors, twice daily (at 0000 and 1200 UTC) over the 1990-2010 time range.  The rose diagrams are accessible through the attached kmz file, which opens in Google Earth, or as hypertext links in the attached html table.  In the kmz file, placemarks at each volcano can be opened to reveal the summary wind rose diagram, along with a link to the page containing the other data.",
+      "link": "https://catalog.data.gov/dataset/plots-of-wind-patterns-for-the-worlds-volcanoes",
+      "source": "data.gov",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "xml"
+      ],
+      "organisation": "Department of the Interior",
+      "licence": "License not specified",
+      "last_modified": "2024-07-06T07:00:39.991798",
+      "richness": 45
+    },
+    {
+      "id": 3891,
+      "title": "Mosquito bite prevention for travellers",
+      "description": "Mosquitoes spread Zika Virus, Dengue, Malaria, Chikungunya, and other diseases. They bite during the day and night.",
+      "link": "https://open.canada.ca/data/en/dataset/aae781a8-bf36-40b2-9dc7-0abddbe695ec",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2020-01-24T18:42:19.750562",
+      "richness": 35
+    },
+    {
+      "id": 3892,
+      "title": "West Nile virus and other mosquito-borne diseases surveillance report: Annual edition (2018)",
+      "description": "West Nile virus (WNV) continues to be the leading cause of domestically acquired mosquito-borne disease in Canada. In addition to describing the human health burden of WNV, this report will demonstrate the efforts made to strengthen animal health surveillance in collaboration with multi-disciplinary health partners with the goal of achieving optimal human health outcomes.",
+      "link": "https://open.canada.ca/data/en/dataset/68cc3303-5807-4f8f-9db2-9091f2e9d2cf",
+      "source": "open.canada.ca",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "Public Health Agency of Canada | Agence de la santé publique du Canada",
+      "licence": "Open Government Licence - Canada",
+      "last_modified": "2020-06-17T17:01:16.358325",
+      "richness": 35
+    },
+    {
+      "id": 3893,
+      "title": "Ethiopia - KPC (KAP) Survey Report Shire, Adi-Harush camp - 2017",
+      "description": "Adi-Harush Refugee Camp is located in the North West of Tigray regional state of Ethiopia, at about 1170 km from the capital Addis Ababa. \nThe camp population is 9766 [UNHCR, July, 2017]. The camp hosts Eritrean refugees having different ethnic groups where the majorities are Tigrigna and Saho and some minorities of Tigre and Belian.   \nThe main objective of this survey was to collect data and information on water, sanitation and coverage in the Adi-Harush Refugee camp in 2017 and to have base line data for the 2018 interventions. The total sample size was 175 households.\nThe study revealed the gravity of the identified problems, which are latrine coverage, safe water management at home level, hand washing practice, and the risk of diarrhea disease.",
+      "link": "https://data.humdata.org/dataset/unhcr-eth-kap-2017-shire-adiharush-v2-1",
+      "source": "data.humdata.org",
+      "found_by": "CONNECTOR",
+      "formats": [
+        "pdf"
+      ],
+      "organisation": "UNHCR - The UN Refugee Agency",
+      "licence": "Other",
+      "last_modified": "2025-08-17T02:37:34.187941",
+      "richness": 55
+    },
+    {
+      "id": 3894,
+      "title": "European Centre for Disease Prevention and Control (ECDC) - Mosquito Maps",
+      "description": "Provides distribution maps of the Aedes albopictus (tiger mosquito) in Europe, useful for understanding spread patterns.",
+      "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+      "source": "ECDC",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3895,
+      "title": "Copernicus Climate Data Store",
+      "description": "Offers climate data, including urban heat island effects, which can help analyze why cities are vulnerable to mosquito proliferation.",
+      "link": "https://cds.climate.copernicus.eu/",
+      "source": "Copernicus",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    },
+    {
+      "id": 3896,
+      "title": "World Health Organization - Vector-borne Diseases",
+      "description": "Contains information on vector control strategies and measures that cities can implement to limit mosquito proliferation.",
+      "link": "https://www.who.int/news-room/fact-sheets/detail/vector-borne-diseases",
+      "source": "WHO",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 92589,
+    "entities_count": 10,
+    "angles_count": 5,
+    "datasets_count": 40,
+    "angle_resources_count": 5
+  }
+}
