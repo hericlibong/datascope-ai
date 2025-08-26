@@ -198,3 +198,10 @@ LOGGING = {
     },
 }
 
+# URL_VALIDATION_TIMEOUT: Maximum delay in seconds before a URL validation request is aborted
+URL_VALIDATION_TIMEOUT = 5
+
+# URL_VALIDATION_USER_AGENT: Identification string sent in HTTP header during URL validation
+URL_VALIDATION_USER_AGENT = "DatascopeAI/validator"
+
+# URL_VALIDATION_FILTER_404: If True, filters URLs returning a 404 error (page not found)URL_VALIDATION_FILTER_404 = True

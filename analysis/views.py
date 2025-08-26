@@ -12,8 +12,8 @@ from .serializers import (
     AnalysisDetailSerializer,
     AngleResourcesSerializer
 )
-from users.serializers import FeedbackSerializer
-from users.models import Feedback
+# from users.serializers import FeedbackSerializer
+# from users.models import Feedback
 
 from ai_engine.pipeline import run as run_pipeline
 from analysis.models import Entity, Angle, DatasetSuggestion
@@ -93,12 +93,24 @@ class ArticleAnalyzeAPIView(APIView):
         # ------------------------------------------------------------------
         # 1. Appel du pipeline (nouvelle signature)
         # ------------------------------------------------------------------
+
+        # --- ✅ NEW: lecture du flag ?validate=true dans la query string ---
+        # Exemples acceptés : ?validate=true / ?validate=1 / ?validate=yes / ?validate=on
+        validate_qs = (request.query_params.get("validate") or "").strip().lower()  # NEW
+        validate_flag = validate_qs in ("1", "true", "yes", "on")                    # NEW
+        # -------------------------------------------------------------------
+
         (
             packaged,           # Extraction + angles (Pydantic)
             markdown,           # Résumé markdown
             score,              # Score final (0-10)
-            angle_resources,    # 🆕  list[AngleResources]
-        ) = run_pipeline(article.content, user_id=str(request.user.id))
+            angle_resources,    # list[AngleResources]
+        ) = run_pipeline(
+            article.content,
+            user_id=str(request.user.id),
+            validate_urls=validate_flag,   # ✅ NEW: active le hook de validation d’URL dans le pipeline
+            # filter_404=None              # (optionnel) on laisse les settings piloter le filtrage
+        )
 
         # ------------------------------------------------------------------
         # 2. Persistance de l’analyse
@@ -142,7 +154,7 @@ class ArticleAnalyzeAPIView(APIView):
                     analysis       = analysis,
                     title          = ds.title,
                     description    = ds.description or "",
-                    link            =ds.source_url or ds.link,
+                    link           = ds.source_url or ds.link,
                     source         = ds.source_name,
                     found_by       = ds.found_by,
                     formats        = ds.formats,

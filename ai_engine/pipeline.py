@@ -14,6 +14,10 @@ from ai_engine.connectors.data_canada import CanadaGovClient
 from ai_engine.connectors.data_uk import UKGovClient
 from ai_engine.connectors.hdx_data import HdxClient
 
+# --- NEW imports
+from django.conf import settings
+from ai_engine.services import validate_url
+
 MAX_TOKENS = 8_000
 
 
@@ -98,7 +102,6 @@ def run_connectors(
                                 "uk_to_suggestion",
                                 "hdx_to_suggestion",
                             ):
-                                
                                 if hasattr(connector, fn):
                                     try:
                                         suggestion = getattr(connector, fn)(raw_ds)
@@ -142,7 +145,6 @@ def run_connectors(
     return all_angles
 
 
-
 # ------------------------------------------------------------------
 def _llm_to_ds(item: LLMSourceSuggestion, *, angle_idx: int) -> DatasetSuggestion:
     """Convertit une LLMSourceSuggestion en DatasetSuggestion standardisé."""
@@ -165,6 +167,8 @@ def _llm_to_ds(item: LLMSourceSuggestion, *, angle_idx: int) -> DatasetSuggestio
 def run(
     article_text: str,
     user_id: str = "anon",
+    validate_urls: bool = False,        # NEW
+    filter_404: bool | None = None,     # NEW
 ) -> tuple[
     AnalysisPackage,        # extraction + angles « brut »
     str,                    # markdown
@@ -176,6 +180,45 @@ def run(
 
     # -- validation longueur -------------------------------------------------
     _validate(article_text)
+
+    if filter_404 is None:
+        filter_404 = getattr(settings, "URL_VALIDATION_FILTER_404", True)
+
+    # Small per-run cache to avoid validating the same URL multiple times
+    _url_validation_cache: dict[str, dict] = {}
+
+    def _validate_once(url: str) -> dict:
+        if not url:
+            return {"input_url": "", "status": "error", "http_status": None, "final_url": None, "error": "EmptyURL"}
+        cached = _url_validation_cache.get(url)
+        if cached:
+            return cached
+        res = validate_url(url)
+        _url_validation_cache[url] = res
+        return res
+
+    def _get_url(obj):
+        if isinstance(obj, dict):
+            return obj.get("source_url") or obj.get("link")
+        return getattr(obj, "source_url", None) or getattr(obj, "link", None)
+
+    def _set_url(obj, new_url: str):
+        if isinstance(obj, dict):
+            if "source_url" in obj:
+                obj["source_url"] = new_url
+            if "link" in obj:
+                obj["link"] = new_url
+        else:
+            if hasattr(obj, "source_url"):
+                obj.source_url = new_url
+            if hasattr(obj, "link"):
+                obj.link = new_url
+
+    def _set_validation(obj, payload: dict):
+        if isinstance(obj, dict):
+            obj["validation"] = payload
+        else:
+            setattr(obj, "validation", payload)
 
     # -- 1. Extraction -------------------------------------------------------
     extraction_result = extraction.run(article_text)
@@ -204,16 +247,11 @@ def run(
     viz_sets = viz.run(angle_result)
 
     # 8. Fusion et construction AngleResources ---------------
-    # angle_resources: list[AngleResources] = []
     for idx, angle in enumerate(angle_result.angles):
         kw_set   = keywords_per_angle[idx] if idx < len(keywords_per_angle) else None
         conn_ds  = connectors_sets[idx]    if idx < len(connectors_sets)    else []
 
-        # ---- conversion LLM -> DatasetSuggestion
-        # llm_raw   = llm_sources_sets[idx]  if idx < len(llm_sources_sets)   else []
-        llm_raw   = (
-            llm_sources_sets[idx] if idx < len(llm_sources_sets) else []
-        )
+        llm_raw   = llm_sources_sets[idx] if idx < len(llm_sources_sets) else []
         llm_ds    = [_llm_to_ds(obj, angle_idx=idx) for obj in llm_raw]
 
         viz_list  = viz_sets[idx]          if idx < len(viz_sets)           else []
@@ -226,6 +264,37 @@ def run(
                 merged_ds.append(ds)
                 seen_urls.add(ds.source_url)
 
+        # --- URL validation hook (Step 3) ----------------------------------
+        if validate_urls:
+            # Datasets
+            validated_datasets = []
+            for ds in merged_ds:
+                url = _get_url(ds)
+                res = _validate_once(url)
+                _set_validation(ds, res)
+
+                if res.get("status") in ("ok", "redirected") and res.get("final_url"):
+                    _set_url(ds, res["final_url"])
+
+                if not (filter_404 and res.get("status") == "not_found"):
+                    validated_datasets.append(ds)
+            merged_ds = validated_datasets
+
+            # Sources
+            validated_sources = []
+            for src in llm_raw:
+                url = _get_url(src)
+                res = _validate_once(url)
+                _set_validation(src, res)
+
+                if res.get("status") in ("ok", "redirected") and res.get("final_url"):
+                    _set_url(src, res["final_url"])
+
+                if not (filter_404 and res.get("status") == "not_found"):
+                    validated_sources.append(src)
+            llm_raw = validated_sources
+        # -------------------------------------------------------------------
+
         angle_resources.append(
             AngleResources(
                 index          = idx,
@@ -233,12 +302,10 @@ def run(
                 description    = angle.rationale,
                 keywords       = kw_set.sets[0].keywords if kw_set else [],
                 datasets       = merged_ds,
-                # sources        = llm_ds,
                 sources        = llm_raw,
                 visualizations = viz_list,
             )
         )
-
 
     # -- 9. Packaging « historique » (extraction + angles) -------------------
     packaged, markdown = package(extraction_result, angle_result)
@@ -250,4 +317,3 @@ def run(
     )
 
     return packaged, markdown, score_10, angle_resources
-

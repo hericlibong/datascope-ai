@@ -17,6 +17,7 @@ class DatasetSuggestion(BaseModel):
     richness: int = 0
     found_by: str | None = None        # "LLM" or "CONNECTOR"
     angle_idx: int | None = None       # ← nouveau 
+    validation : dict | None = None    # ← nouveau
 
 class NumberEntity(BaseModel):
     raw: str = Field(..., description="Nombre tel qu'il apparaît dans le texte")
@@ -69,6 +70,7 @@ class LLMSourceSuggestion(BaseModel):
     link: str
     source: str   # portail ou organisme
     angle_idx: int 
+    validation : dict | None = None    # ← nouveau
 
 class LLMSourceSuggestionList(BaseModel):
     datasets: list[LLMSourceSuggestion]

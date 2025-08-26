@@ -35,6 +35,15 @@ class AngleSerializer(serializers.ModelSerializer):
 
 
 class DatasetSuggestionSerializer(serializers.ModelSerializer):
+    # --- NEW: expose validation si présent (runtime ou None côté DB)
+    validation = serializers.SerializerMethodField(required=False)  # NEW
+
+    def get_validation(self, obj):  # NEW
+        # obj peut être un model instance, un Pydantic object ou un dict
+        if isinstance(obj, dict):
+            return obj.get("validation")
+        return getattr(obj, "validation", None)
+
     class Meta:
         model = DatasetSuggestion
         fields = (
@@ -44,11 +53,12 @@ class DatasetSuggestionSerializer(serializers.ModelSerializer):
             "link",
             "source",
             "found_by",
-            "formats",        # 🆕
-            "organisation",   # 🆕  orthographe FR / DB
-            "licence",        # 🆕
-            "last_modified",  # 🆕
-            "richness",       # 🆕
+            "formats",
+            "organisation",
+            "licence",
+            "last_modified",
+            "richness",
+            "validation",  # NEW
         )
 
 
@@ -110,6 +120,14 @@ class LLMSuggestionSerializer(serializers.Serializer):
     link        = serializers.URLField()
     source      = serializers.CharField()
 
+    # --- NEW: expose validation si présent (annoté par le pipeline)
+    validation  = serializers.SerializerMethodField(required=False)  # NEW
+
+    def get_validation(self, obj):  # NEW
+        if isinstance(obj, dict):
+            return obj.get("validation")
+        return getattr(obj, "validation", None)
+
 
 # 2) suggestions de visus (LLM)
 class VizSuggestionSerializer(serializers.Serializer):
@@ -129,6 +147,3 @@ class AngleResourcesSerializer(serializers.Serializer):
     datasets       = DatasetSuggestionSerializer(many=True)
     sources        = LLMSuggestionSerializer(many=True)
     visualizations = VizSuggestionSerializer(many=True)
-
-      
-    
