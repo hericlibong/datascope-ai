@@ -205,3 +205,17 @@ URL_VALIDATION_TIMEOUT = 5
 URL_VALIDATION_USER_AGENT = "DatascopeAI/validator"
 
 # URL_VALIDATION_FILTER_404: If True, filters URLs returning a 404 error (page not found)URL_VALIDATION_FILTER_404 = True
+URL_VALIDATION_FILTER_404 = True 
+
+
+TRUSTED_DOMAINS = [
+    # FR/EU
+    "data.gouv.fr", "insee.fr", "ec.europa.eu", "eurostat.ec.europa.eu",
+    "santepubliquefrance.fr", "ecdc.europa.eu",
+    # INTL
+    "oecd.org", "who.int", "worldbank.org", "imf.org", "un.org", "unesco.org",
+    # EN (US/UK)
+    "data.gov", "cdc.gov", "data.gov.uk", "ons.gov.uk", "nhs.uk",
+]
+TRUSTED_SOFT_WEIGHT = 0.15
+TRUSTED_STRICT_DEFAULT = False

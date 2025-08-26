@@ -17,6 +17,7 @@ from ai_engine.connectors.hdx_data import HdxClient
 # --- NEW imports
 from django.conf import settings
 from ai_engine.services import validate_url
+from urllib.parse import urlparse  # NEW TRUSTED
 
 MAX_TOKENS = 8_000
 
@@ -220,6 +221,45 @@ def run(
         else:
             setattr(obj, "validation", payload)
 
+    # --- NEW TRUSTED: helpers re-rank qualitatif ---------------------------
+    def _host(u: str | None) -> str:
+        """Return the lowercase netloc or empty string."""
+        if not u:
+            return ""
+        try:
+            return urlparse(u).netloc.lower()
+        except Exception:
+            return ""
+
+    def _is_trusted(host: str) -> bool:
+        """
+        Domain suffix match against settings.TRUSTED_DOMAINS.
+        Accepts subdomains: foo.bar.oecd.org -> oecd.org
+        """
+        for d in getattr(settings, "TRUSTED_DOMAINS", []):
+            d = str(d).lower().strip()
+            if not d:
+                continue
+            if host == d or host.endswith("." + d):
+                return True
+        return False
+
+    def _trusted_weight_from_url(u: str | None) -> float:
+        base = 1.0
+        boost = float(getattr(settings, "TRUSTED_SOFT_WEIGHT", 0.15) or 0.0)
+        return base + boost if _is_trusted(_host(u)) else base
+
+    def _pick_url_for_weight(obj) -> str | None:
+        """
+        Use final_url from validation if present (more reliable),
+        else fall back to source_url/link.
+        """
+        v = getattr(obj, "validation", None)
+        if isinstance(v, dict) and v.get("final_url"):
+            return v["final_url"]
+        return getattr(obj, "source_url", None) or getattr(obj, "link", None)
+    # -----------------------------------------------------------------------
+
     # -- 1. Extraction -------------------------------------------------------
     extraction_result = extraction.run(article_text)
 
@@ -294,6 +334,17 @@ def run(
                     validated_sources.append(src)
             llm_raw = validated_sources
         # -------------------------------------------------------------------
+
+        # --- NEW TRUSTED: re-ranking qualitatif (soft) ----------------------
+        merged_ds.sort(
+            key=lambda ds: _trusted_weight_from_url(_pick_url_for_weight(ds)),
+            reverse=True,
+        )
+        llm_raw.sort(
+            key=lambda src: _trusted_weight_from_url(_pick_url_for_weight(src)),
+            reverse=True,
+        )
+        # --------------------------------------------------------------------
 
         angle_resources.append(
             AngleResources(
