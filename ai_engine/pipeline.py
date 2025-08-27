@@ -1,5 +1,6 @@
 import ai_engine
 import inspect
+import re  # NEW THEME: tokenisation simple
 from ai_engine.utils import token_len
 from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
@@ -56,22 +57,17 @@ def run_connectors(
 
     all_angles: list[list[DatasetSuggestion]] = []
 
-    # ---------------- boucle sur les angles ---------------------------- #
     for idx, kw_result in enumerate(keywords_per_angle):
-        print(f"\n=== [ANGLE {idx}] {kw_result.sets[0].angle_title} ===")  # 🖨️ début angle
+        print(f"\n=== [ANGLE {idx}] {kw_result.sets[0].angle_title} ===")
         seen_urls: set[str] = set()
         angle_suggestions: list[DatasetSuggestion] = []
 
-        # ---> boucle sur les 5 mots-clés proposés pour CET angle
-        for kw_set in kw_result.sets:                       # (normalement 1 set)
-            for keyword in kw_set.keywords:                 # les 5 mots-clés
+        for kw_set in kw_result.sets:
+            for keyword in kw_set.keywords:
                 print(f"→ keyword='{keyword}'")
-
-                # ----> boucle sur chaque connecteur
                 for connector in connectors:
                     sig = inspect.signature(connector.search).parameters
                     print(f"   ↳ {connector.__class__.__name__}.search … ", end="")
-
                     try:
                         if "max_results" in sig:
                             raw_results = connector.search(keyword, max_results=max_per_keyword)
@@ -83,10 +79,9 @@ def run_connectors(
                         print(f"ERREUR : {e!r}")
                         continue
                     else:
-                        print("ok")   # appel réussi
+                        print("ok")
 
                     for raw_ds in raw_results:
-                        # ---------- conversion vers DatasetSuggestion -------------------------------------
                         suggestion: DatasetSuggestion | None = None
 
                         if hasattr(connector, "to_suggestion"):
@@ -107,7 +102,7 @@ def run_connectors(
                                     try:
                                         suggestion = getattr(connector, fn)(raw_ds)
                                     except Exception as conv_err:
-                                        print(f"      ↳ échec {fn} : {conv_err!r}")  # ⬅️ log détaillé
+                                        print(f"      ↳ échec {fn} : {conv_err!r}")
                                         suggestion = None
                                     break
 
@@ -122,7 +117,6 @@ def run_connectors(
                             print("      ⏩ doublon")
                             continue
 
-                        # ---------- marquage et stockage ---------------------------
                         suggestion.found_by  = "CONNECTOR"
                         suggestion.angle_idx = idx
 
@@ -153,9 +147,9 @@ def _llm_to_ds(item: LLMSourceSuggestion, *, angle_idx: int) -> DatasetSuggestio
         title        = item.title,
         description  = item.description,
         source_name  = item.source,
-        source_url   = item.link,          # <-- champ correct
+        source_url   = item.link,
         found_by     = "LLM",
-        angle_idx    = angle_idx,          # marquage de l’angle parent
+        angle_idx    = angle_idx,
         formats      = [],
         organization = None,
         license      = None,
@@ -170,11 +164,12 @@ def run(
     user_id: str = "anon",
     validate_urls: bool = False,        # NEW
     filter_404: bool | None = None,     # NEW
+    theme_strict: bool | None = None,   # NEW THEME (optionnel)
 ) -> tuple[
-    AnalysisPackage,        # extraction + angles « brut »
-    str,                    # markdown
-    float,                  # score_10
-    list[AngleResources],   # ressources détaillées par angle
+    AnalysisPackage,
+    str,
+    float,
+    list[AngleResources],
 ]:
     """Orchestre l’ensemble du workflow DataScope et regroupe les ressources
     par angle éditorial dans des objets `AngleResources`."""
@@ -184,6 +179,13 @@ def run(
 
     if filter_404 is None:
         filter_404 = getattr(settings, "URL_VALIDATION_FILTER_404", True)
+
+    # --- NEW THEME: paramètres du filtre thématique -------------------------
+    if theme_strict is None:
+        theme_strict = bool(getattr(settings, "THEME_FILTER_STRICT_DEFAULT", False))
+    _THEME_MIN_HITS = int(getattr(settings, "THEME_FILTER_MIN_UNIGRAM_HITS", 2))
+    _THEME_PENALTY  = float(getattr(settings, "THEME_FILTER_SOFT_PENALTY", 0.15) or 0.0)
+    # -----------------------------------------------------------------------
 
     # Small per-run cache to avoid validating the same URL multiple times
     _url_validation_cache: dict[str, dict] = {}
@@ -223,7 +225,6 @@ def run(
 
     # --- NEW TRUSTED: helpers re-rank qualitatif ---------------------------
     def _host(u: str | None) -> str:
-        """Return the lowercase netloc or empty string."""
         if not u:
             return ""
         try:
@@ -232,10 +233,6 @@ def run(
             return ""
 
     def _is_trusted(host: str) -> bool:
-        """
-        Domain suffix match against settings.TRUSTED_DOMAINS.
-        Accepts subdomains: foo.bar.oecd.org -> oecd.org
-        """
         for d in getattr(settings, "TRUSTED_DOMAINS", []):
             d = str(d).lower().strip()
             if not d:
@@ -250,14 +247,56 @@ def run(
         return base + boost if _is_trusted(_host(u)) else base
 
     def _pick_url_for_weight(obj) -> str | None:
-        """
-        Use final_url from validation if present (more reliable),
-        else fall back to source_url/link.
-        """
         v = getattr(obj, "validation", None)
         if isinstance(v, dict) and v.get("final_url"):
             return v["final_url"]
         return getattr(obj, "source_url", None) or getattr(obj, "link", None)
+    # -----------------------------------------------------------------------
+
+    # --- NEW THEME: helpers filtre thématique ------------------------------
+    _re_split = re.compile(r"\W+", flags=re.UNICODE)
+
+    def _tokenize(s: str | None) -> list[str]:
+        if not s:
+            return []
+        return [t for t in _re_split.split(s.lower()) if len(t) >= 3]
+
+    def _bigrams(tokens: list[str]) -> set[tuple[str, str]]:
+        return set(zip(tokens, tokens[1:])) if len(tokens) >= 2 else set()
+
+    def _url_path_tokens(u: str | None) -> list[str]:
+        if not u:
+            return []
+        try:
+            path = urlparse(u).path or ""
+            path = path.replace("-", " ").replace("_", " ").replace(".", " ")
+            return _tokenize(path)
+        except Exception:
+            return []
+
+    def _item_text_tokens(obj) -> tuple[set[str], set[tuple[str, str]]]:
+        parts = []
+        parts.append(getattr(obj, "title", "") or "")
+        parts.append(getattr(obj, "description", "") or "")
+        parts.append(getattr(obj, "source_name", "") or getattr(obj, "source", "") or "")
+        parts.append(getattr(obj, "organization", "") or "")
+        u = _pick_url_for_weight(obj)
+        toks = _tokenize(" ".join(parts)) + _url_path_tokens(u)
+        uni = set(toks)
+        bi = _bigrams(toks)
+        return uni, bi
+
+    def _theme_weight_and_flag(obj, angle_unigrams: set[str], angle_bigrams: set[tuple[str, str]]) -> tuple[float, bool]:
+        """
+        Retourne (poids, is_off_theme).
+        - poids = 1.0 si OK, 1.0 - _THEME_PENALTY si hors-thème (soft).
+        - is_off_theme True si aucun bigram et hits unigrams < seuil.
+        """
+        item_uni, item_bi = _item_text_tokens(obj)
+        unigram_hits = len(angle_unigrams.intersection(item_uni))
+        bigram_match = bool(angle_bigrams.intersection(item_bi))
+        off_theme = (not bigram_match) and (unigram_hits < _THEME_MIN_HITS)
+        return (1.0 if not off_theme else 1.0 - _THEME_PENALTY), off_theme
     # -----------------------------------------------------------------------
 
     # -- 1. Extraction -------------------------------------------------------
@@ -306,7 +345,6 @@ def run(
 
         # --- URL validation hook (Step 3) ----------------------------------
         if validate_urls:
-            # Datasets
             validated_datasets = []
             for ds in merged_ds:
                 url = _get_url(ds)
@@ -320,7 +358,6 @@ def run(
                     validated_datasets.append(ds)
             merged_ds = validated_datasets
 
-            # Sources
             validated_sources = []
             for src in llm_raw:
                 url = _get_url(src)
@@ -335,15 +372,46 @@ def run(
             llm_raw = validated_sources
         # -------------------------------------------------------------------
 
-        # --- NEW TRUSTED: re-ranking qualitatif (soft) ----------------------
-        merged_ds.sort(
-            key=lambda ds: _trusted_weight_from_url(_pick_url_for_weight(ds)),
-            reverse=True,
-        )
-        llm_raw.sort(
-            key=lambda src: _trusted_weight_from_url(_pick_url_for_weight(src)),
-            reverse=True,
-        )
+        # --- NEW THEME: signature thématique de l’angle ----------------------
+        angle_text = angle.title or ""
+        if kw_set and getattr(kw_set, "sets", None):
+            angle_text += " " + " ".join(kw_set.sets[0].keywords or [])
+        _ang_tokens = _tokenize(angle_text)
+        _ANG_UNI = set(_ang_tokens)
+        _ANG_BI  = _bigrams(_ang_tokens)
+        # ---------------------------------------------------------------------
+
+        # --- NEW THEME: calcul des poids + strict (LLM only) -----------------
+        _theme_w: dict[int, float] = {}
+
+        themed_datasets = []
+        for ds in merged_ds:
+            if getattr(ds, "found_by", "") == "LLM":
+                w, off = _theme_weight_and_flag(ds, _ANG_UNI, _ANG_BI)
+                if theme_strict and off:
+                    continue  # drop en mode strict (LLM only)
+                _theme_w[id(ds)] = w
+            else:
+                _theme_w[id(ds)] = 1.0  # CONNECTOR inchangé
+            themed_datasets.append(ds)
+        merged_ds = themed_datasets
+
+        themed_sources = []
+        for src in llm_raw:
+            w, off = _theme_weight_and_flag(src, _ANG_UNI, _ANG_BI)
+            if theme_strict and off:
+                continue
+            _theme_w[id(src)] = w
+            themed_sources.append(src)
+        llm_raw = themed_sources
+        # ---------------------------------------------------------------------
+
+        # --- Trusted re-ranking (soft) × Theme weight ------------------------
+        def _final_weight(obj) -> float:
+            return _trusted_weight_from_url(_pick_url_for_weight(obj)) * _theme_w.get(id(obj), 1.0)
+
+        merged_ds.sort(key=_final_weight, reverse=True)
+        llm_raw.sort(key=_final_weight, reverse=True)
         # --------------------------------------------------------------------
 
         angle_resources.append(
@@ -358,7 +426,7 @@ def run(
             )
         )
 
-    # -- 9. Packaging « historique » (extraction + angles) -------------------
+    # -- 9. Packaging « historique » ----------------------------------------
     packaged, markdown = package(extraction_result, angle_result)
 
     # -- 10. Mémoire utilisateur --------------------------------------------

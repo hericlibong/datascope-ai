@@ -219,3 +219,8 @@ TRUSTED_DOMAINS = [
 ]
 TRUSTED_SOFT_WEIGHT = 0.15
 TRUSTED_STRICT_DEFAULT = False
+
+THEME_FILTER_SOFT_PENALTY = 0.15    # pénalité multiplicative si hors-thème (soft)
+THEME_FILTER_STRICT_DEFAULT = False # strict = drop hors-thème
+THEME_FILTER_MIN_UNIGRAM_HITS = 2   # seuil pragmatique
+
