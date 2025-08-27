@@ -1,6 +1,8 @@
 import ai_engine
 import inspect
 import re  # NEW THEME: tokenisation simple
+import logging
+
 from ai_engine.utils import token_len
 from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
@@ -19,6 +21,9 @@ from ai_engine.connectors.hdx_data import HdxClient
 from django.conf import settings
 from ai_engine.services import validate_url
 from urllib.parse import urlparse  # NEW TRUSTED
+
+
+logger = logging.getLogger("datascope.ai_engine")  # NEW
 
 MAX_TOKENS = 8_000
 
@@ -190,6 +195,9 @@ def run(
     # Small per-run cache to avoid validating the same URL multiple times
     _url_validation_cache: dict[str, dict] = {}
 
+    def _connectors_enabled() -> bool:  # NEW
+        return bool(getattr(settings, "CONNECTORS_ENABLED", False))
+
     def _validate_once(url: str) -> dict:
         if not url:
             return {"input_url": "", "status": "error", "http_status": None, "final_url": None, "error": "EmptyURL"}
@@ -310,14 +318,18 @@ def run(
 
     # -- 3. Angles -----------------------------------------------------------
     angle_result = angles.run(article_text)
-    print(f"[DEBUG] {len(angle_result.angles)} angles générés")
+    logger.debug("Angles générés: %s", len(angle_result.angles))
 
     # -- 4. Keywords (liste alignée) ----------------------------------------
     keywords_per_angle = keywords.run(angle_result)
 
     angle_resources: list[AngleResources] = []
     # -- 5. Datasets via connecteurs (liste par angle) ----------------------
-    connectors_sets = run_connectors(keywords_per_angle)
+    if _connectors_enabled():  # NEW
+        connectors_sets = run_connectors(keywords_per_angle)
+    else:
+        # même shape: une liste vide par angle (LLM-only)
+        connectors_sets = [[] for _ in range(len(keywords_per_angle))]
 
     # 6. Sources LLM par angle  ------------------------------
     llm_sources_sets = llm_sources.run(angle_result)

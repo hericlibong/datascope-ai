@@ -224,3 +224,6 @@ THEME_FILTER_SOFT_PENALTY = 0.15    # pénalité multiplicative si hors-thème (
 THEME_FILTER_STRICT_DEFAULT = False # strict = drop hors-thème
 THEME_FILTER_MIN_UNIGRAM_HITS = 2   # seuil pragmatique
 
+CONNECTORS_ENABLED = False  # ← par défaut OFF pour cette version
+DATASCOPE_LOG_LEVEL = "WARNING"  # "DEBUG" pour activer les traces locales
+

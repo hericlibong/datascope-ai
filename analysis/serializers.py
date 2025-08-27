@@ -12,21 +12,18 @@ from .models import (
 
 # ---------- leaf serializers ----------
 class EntitySerializer(serializers.ModelSerializer):
-    
     class Meta:
         model = Entity
         fields = ("id", "type", "value", "context")
 
 
 class VisualizationSuggestionSerializer(serializers.ModelSerializer):
-    
     class Meta:
         model = VisualizationSuggestion
         fields = ("id", "chart_type", "description", "markdown_snippet")
 
 
 class AngleSerializer(serializers.ModelSerializer):
-    
     visualizations = VisualizationSuggestionSerializer(many=True, read_only=True)
 
     class Meta:
@@ -35,11 +32,34 @@ class AngleSerializer(serializers.ModelSerializer):
 
 
 class DatasetSuggestionSerializer(serializers.ModelSerializer):
-    # --- NEW: expose validation si présent (runtime ou None côté DB)
-    validation = serializers.SerializerMethodField(required=False)  # NEW
+    # --- NEW: always expose a unified 'link' and 'source' for the UI
+    link = serializers.SerializerMethodField()    # NEW (unified output)
+    source = serializers.SerializerMethodField()  # NEW (unified output)
 
-    def get_validation(self, obj):  # NEW
-        # obj peut être un model instance, un Pydantic object ou un dict
+    # --- NEW: expose validation if present (runtime on Pydantic objects)
+    validation = serializers.SerializerMethodField(required=False)
+
+    def get_link(self, obj):  # NEW (unified output)
+        """
+        Prefer source_url (Pydantic/connector objects), fallback to DB 'link'.
+        This keeps a stable 'link' key for the UI in all cases.
+        """
+        # dict support (angle_resources path)
+        if isinstance(obj, dict):
+            return obj.get("source_url") or obj.get("link")
+        # object support
+        return getattr(obj, "source_url", None) or getattr(obj, "link", None)
+
+    def get_source(self, obj):  # NEW (unified output)
+        """
+        Prefer source_name (Pydantic/connector objects), fallback to DB 'source'.
+        """
+        if isinstance(obj, dict):
+            return obj.get("source_name") or obj.get("source")
+        return getattr(obj, "source_name", None) or getattr(obj, "source", None)
+
+    def get_validation(self, obj):
+        # obj may be a dict or a model/Pydantic object
         if isinstance(obj, dict):
             return obj.get("validation")
         return getattr(obj, "validation", None)
@@ -50,21 +70,21 @@ class DatasetSuggestionSerializer(serializers.ModelSerializer):
             "id",
             "title",
             "description",
-            "link",
-            "source",
+            # historical DB fields:
+            "link",            # unified alias (SerializerMethodField)
+            "source",          # unified alias (SerializerMethodField)
             "found_by",
             "formats",
             "organisation",
             "licence",
             "last_modified",
             "richness",
-            "validation",  # NEW
+            "validation",      # runtime-only field from pipeline (if present)
         )
 
 
 # ---------- article & analysis ----------
 class ArticleSerializer(serializers.ModelSerializer):
-    
     user = serializers.HiddenField(default=serializers.CurrentUserDefault())
 
     class Meta:
@@ -97,6 +117,7 @@ class ArticleSerializer(serializers.ModelSerializer):
 class AnalysisSerializer(serializers.ModelSerializer):
     angle_resources = serializers.JSONField(read_only=True)
     article = ArticleSerializer(read_only=True)
+
     class Meta:
         model = Analysis
         fields = ("id", "article", "score", "profile_label", "summary", "created_at", "angle_resources")
@@ -112,6 +133,7 @@ class AnalysisDetailSerializer(AnalysisSerializer):
     class Meta(AnalysisSerializer.Meta):
         fields = AnalysisSerializer.Meta.fields + ("entities", "angles", "datasets")
 
+
 # ---------- ressources par angle (backend v2) ----------
 # 1) suggestions de portails / bases (LLM)
 class LLMSuggestionSerializer(serializers.Serializer):
@@ -120,10 +142,24 @@ class LLMSuggestionSerializer(serializers.Serializer):
     link        = serializers.URLField()
     source      = serializers.CharField()
 
-    # --- NEW: expose validation si présent (annoté par le pipeline)
-    validation  = serializers.SerializerMethodField(required=False)  # NEW
+    # --- NEW: mirrors for historical keys expected by some UIs
+    source_url  = serializers.SerializerMethodField()        # NEW (unified output)
+    source_name = serializers.SerializerMethodField()        # NEW (unified output)
 
-    def get_validation(self, obj):  # NEW
+    # --- NEW: expose validation if present (annotated by pipeline)
+    validation  = serializers.SerializerMethodField(required=False)
+
+    def get_source_url(self, obj):  # NEW (unified output)
+        if isinstance(obj, dict):
+            return obj.get("link")
+        return getattr(obj, "link", None)
+
+    def get_source_name(self, obj):  # NEW (unified output)
+        if isinstance(obj, dict):
+            return obj.get("source")
+        return getattr(obj, "source", None)
+
+    def get_validation(self, obj):
         if isinstance(obj, dict):
             return obj.get("validation")
         return getattr(obj, "validation", None)
