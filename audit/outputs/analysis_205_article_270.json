@@ -1,0 +1,709 @@
+{
+  "id": 205,
+  "article": {
+    "id": 270,
+    "title": "La sécheresse s’aggrave dans l’Orne : 18 communes visées par",
+    "content": "La sécheresse s’aggrave dans l’Orne : 18 communes visées par des restrictions des usages de l’eau\n\nLa sécheresse s’est accentuée sur une partie du département de l’Orne. La préfecture impose, dès ce jeudi 14 août, une restriction des usages de l’eau dans dix-huit communes. \n\nLe déficit de précipitations observé depuis février 2025 et les faibles débits des principaux cours d’eau ont conduit le préfet de l’Orne à placer, le 10 juin, cinq zones d’alerte en vigilance sécheresse.\nAlerte renforcée sécheresse\n\n« Malgré un début d’été globalement conforme aux normales saisonnières et quelques épisodes orageux, les prévisions météorologiques confirment la persistance de cette période sèche », fait savoir la préfecture ce jeudi 14 août au matin.\n\n    La situation s’est notamment aggravée sur la Mayenne amont, où les niveaux ont connu la semaine dernière une forte baisse. En conséquence, la « Mayenne amont » est placée en alerte renforcée sécheresse.\n    Préfecture de l’Orne\n\nLes zones « Egrenne-Varenne », « Orne moyenne », « Sarthe amont », « Touques », « Risle-Charentonne-Guiel » et « Iton » sont placées en vigilance sécheresse.\nLes communes concernées\n\nPar conséquent, sur le bassin Mayenne amont, classé en alerte renforcée, des mesures de limitation ou de restriction temporaire des usages de l’eau, pour les particuliers, les collectivités, les industriels et les agriculteurs notamment, entrent en vigueur ce jeudi 14 août 2025 et jusqu’à nouvel ordre.\n\nElles concernent les communes de Bagnoles-de l’Orne-Normandie, Céaucé, Ciral, Joué-du-Bois, Juvigny-Val d’Andaine, La Chaux, La Coulonche, La Ferté-Macé, La Motte-Fouquet, La Lacelle, Les Monts-d’Andaine, Magny-le-Désert, Méhoudin, Rives d’Andaine, Saint-Martin-des-Landes, Saint-Ouen-le-Brisoult, Saint-Patrice-du-Désert, Tessé-Froulay.\n\nLa liste des interdictions\n\nDans ces communes, pour les particuliers, les entreprises et les collectivités, il est notamment interdit de laver les véhicules en dehors des stations équipées de dispositifs économes en eau, d’arroser les potagers et plantations entre 8 h et 20 h, de remplir et de mettre à niveau les piscines, d’arroser les pelouses, massifs fleuris, jardinières, etc. et de laver les terrasses et façades.\n\nPour les cultures, l’irrigation est interdite de 8 h à 20 h ainsi que dans la nuit du mercredi au jeudi et les nuits du samedi au lundi. Pour les cultures équipées d’un système d’irrigation localisée économe (micro-aspersion, goutte à goutte), l’irrigation est interdite de 10 h à 18 h.\n\nS’agissant des installations classées pour la protection de l’environnement (ICPE), les prélèvements en eau doivent être réduits de 10 % et les opérations exceptionnelles reportées.\nAppel global à la sobriété\n\nPour connaître les mesures en vigueur à partir d’une adresse précise, la plateforme VigiEau est accessible sur https://vigieau.gouv.fr/. La liste des communes concernées, les mesures applicables et leur zonage sont également consultables sur www.orne.gouv.fr/secheresse.\n\nYohann Blondel, le secrétaire général chargé de l’administration de l’État dans l’Orne et sous-préfet d’Alençon, appelle « chacun, y compris ceux ne relevant pas de secteurs soumis à restrictions, à la sobriété dans la consommation en eau et à adopter des pratiques quotidiennes économes, afin de préserver la ressource ».",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-27T20:26:06.889904+02:00"
+  },
+  "score": 7.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Yohann Blondel\n- **Organisations** : Préfecture de l’Orne\n- **Lieux** : Orne, Mayenne amont, Egrenne-Varenne, Orne moyenne, Sarthe amont, Touques, Risle-Charentonne-Guiel, Iton, Bagnoles-de l’Orne-Normandie, Céaucé, Ciral, Joué-du-Bois, Juvigny-Val d’Andaine, La Chaux, La Coulonche, La Ferté-Macé, La Motte-Fouquet, La Lacelle, Les Monts-d’Andaine, Magny-le-Désert, Méhoudin, Rives d’Andaine, Saint-Martin-des-Landes, Saint-Ouen-le-Brisoult, Saint-Patrice-du-Désert, Tessé-Froulay, Alençon\n- **Dates** : 2025-08-14, 2025-06-10\n- **Valeurs numériques** : 18 (18.0 None), 10 % (10.0 %)\n\n## Suggestions d’angles\n\n### 1. Sécheresse dans l'Orne : un aperçu historique\nAnalyser les données historiques de sécheresse dans l'Orne pour évaluer les tendances à long terme. Cette perspective pourrait inclure des graphiques montrant l'évolution des précipitations et des débits des cours d'eau.\n\n### 2. Impact économique des restrictions d'eau\nÉtudier l'impact économique des restrictions d'eau sur les secteurs agricoles et industriels dans l'Orne. Inclure des visualisations des pertes économiques potentielles par secteur et par commune.\n\n### 3. Comparaison régionale des restrictions d'eau\nComparer les mesures de restrictions d'eau dans l'Orne avec celles d'autres départements français touchés par la sécheresse. Utiliser des cartes interactives pour visualiser les différences régionales en termes de sévérité et de durée des restrictions.\n\n### 4. Consommation d'eau : les bons élèves de l'Orne\nIdentifier et analyser les communes de l'Orne qui ont réussi à réduire leur consommation d'eau malgré la sécheresse. Inclure des statistiques comparatives et des témoignages de bonnes pratiques de gestion de l'eau.\n",
+  "created_at": "2025-08-27T20:26:36.031989+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Sécheresse dans l'Orne : un aperçu historique",
+      "description": "Analyser les données historiques de sécheresse dans l'Orne pour évaluer les tendances à long terme. Cette perspective pourrait inclure des graphiques montrant l'évolution des précipitations et des débits des cours d'eau.",
+      "keywords": [
+        "sécheresse Orne",
+        "historique climat",
+        "précipitations Orne",
+        "impact sécheresse",
+        "changement climatique"
+      ],
+      "datasets": [
+        {
+          "title": "Données historiques de précipitations en France",
+          "description": "Explorez les données historiques sur les précipitations en France, y compris la région de l'Orne, pour analyser les tendances climatiques.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/fr/datasets/?q=précipitations",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/",
+            "error": null
+          }
+        },
+        {
+          "title": "Hydroportail - Banque Hydro",
+          "description": "Accédez aux données sur les débits des cours d'eau en France, y compris l'Orne, pour analyser les tendances des ressources en eau.",
+          "link": "https://www.hydro.eaufrance.fr/",
+          "source": "Eaufrance",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "http://www.hydro.eaufrance.fr/",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.hydro.eaufrance.fr/",
+            "error": null
+          }
+        }
+      ],
+      "sources": [],
+      "visualizations": [
+        {
+          "title": "Évolution des précipitations annuelles dans l'Orne",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Précipitations annuelles (mm)",
+          "note": "Source : Météo France, données annuelles depuis 1950"
+        },
+        {
+          "title": "Variations des débits des cours d'eau de l'Orne",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Débit moyen (m³/s)",
+          "note": "Source : Agence de l'eau, données mensuelles"
+        },
+        {
+          "title": "Jours de sécheresse par décennie dans l'Orne",
+          "chart_type": "bar",
+          "x": "Décennie",
+          "y": "Nombre de jours de sécheresse",
+          "note": "Un jour de sécheresse est défini par des précipitations < 1 mm"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Impact économique des restrictions d'eau",
+      "description": "Étudier l'impact économique des restrictions d'eau sur les secteurs agricoles et industriels dans l'Orne. Inclure des visualisations des pertes économiques potentielles par secteur et par commune.",
+      "keywords": [
+        "restrictions d'eau",
+        "impact économique",
+        "agriculture",
+        "consommation d'eau",
+        "sécheresse"
+      ],
+      "datasets": [
+        {
+          "title": "Statistiques agricoles et industrielles",
+          "description": "Portail de données sur les secteurs agricoles et industriels en France, avec des informations économiques détaillées.",
+          "link": "https://www.insee.fr/fr/statistiques?q=agriculture%20industrie",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques?q=agriculture%20industrie",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques?q=agriculture%20industrie",
+            "error": null
+          }
+        },
+        {
+          "title": "Restrictions d'eau et agriculture",
+          "description": "Données sur l'impact des restrictions d'eau sur l'agriculture, incluant les pertes économiques par secteur.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/fr/datasets/?q=restrictions%20d%27eau%20agriculture",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/",
+            "error": null
+          }
+        }
+      ],
+      "sources": [],
+      "visualizations": [
+        {
+          "title": "Pertes économiques par secteur dans l'Orne",
+          "chart_type": "bar",
+          "x": "Secteur (Agriculture, Industrie)",
+          "y": "Pertes économiques (€)",
+          "note": "Comparer les pertes économiques potentielles entre les secteurs agricole et industriel."
+        },
+        {
+          "title": "Impact des restrictions d'eau par commune",
+          "chart_type": "choropleth",
+          "x": "Commune",
+          "y": "Pertes économiques (€)",
+          "note": "Visualisation géographique des pertes économiques par commune dans l'Orne."
+        },
+        {
+          "title": "Évolution des pertes économiques mensuelles",
+          "chart_type": "line",
+          "x": "Mois",
+          "y": "Pertes économiques (€)",
+          "note": "Suivre l'évolution des pertes économiques mois par mois en 2023. Source : Chambre d'agriculture de l'Orne"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Comparaison régionale des restrictions d'eau",
+      "description": "Comparer les mesures de restrictions d'eau dans l'Orne avec celles d'autres départements français touchés par la sécheresse. Utiliser des cartes interactives pour visualiser les différences régionales en termes de sévérité et de durée des restrictions.",
+      "keywords": [
+        "restrictions d'eau",
+        "gestion de l'eau",
+        "sécheresse régionale",
+        "consommation d'eau",
+        "politiques de l'eau"
+      ],
+      "datasets": [
+        {
+          "title": "Propluvia - Restrictions d'eau par département",
+          "description": "Consultez les mesures de restrictions d'eau actuelles et passées pour chaque département français.",
+          "link": "https://vigieau.gouv.fr/propluvia/faces/index.jsp",
+          "source": "Ministère de la Transition écologique",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://propluvia.developpement-durable.gouv.fr/propluvia/faces/index.jsp",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://vigieau.gouv.fr/propluvia/faces/index.jsp",
+            "error": null
+          }
+        },
+        {
+          "title": "Data.gouv.fr - Recherche sur restrictions d'eau",
+          "description": "Recherchez des jeux de données sur les restrictions d'eau en France pour une analyse régionale détaillée.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "Data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/fr/datasets/?q=restrictions+d%27eau",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/",
+            "error": null
+          }
+        },
+        {
+          "title": "Vigicrues - Cartes des restrictions d'eau",
+          "description": "Accédez aux cartes interactives des restrictions d'eau en France, y compris les départements touchés par la sécheresse.",
+          "link": "https://www.vigicrues.gouv.fr/",
+          "source": "Vigicrues",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.vigicrues.gouv.fr/",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.vigicrues.gouv.fr/",
+            "error": null
+          }
+        }
+      ],
+      "sources": [],
+      "visualizations": [
+        {
+          "title": "Carte des restrictions d'eau par département",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Niveau de restriction",
+          "note": "Source : Ministère de la Transition écologique, données actualisées mensuellement"
+        },
+        {
+          "title": "Durée moyenne des restrictions d'eau (2023)",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Durée en jours",
+          "note": "Les données incluent les périodes de restrictions depuis le début de l'année 2023"
+        },
+        {
+          "title": "Comparaison de la sévérité des restrictions d'eau",
+          "chart_type": "heatmap",
+          "x": "Département",
+          "y": "Mois",
+          "note": "Chaque case représente le niveau de restriction pour un mois donné"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Consommation d'eau : les bons élèves de l'Orne",
+      "description": "Identifier et analyser les communes de l'Orne qui ont réussi à réduire leur consommation d'eau malgré la sécheresse. Inclure des statistiques comparatives et des témoignages de bonnes pratiques de gestion de l'eau.",
+      "keywords": [
+        "consommation d'eau",
+        "Orne",
+        "gestion de l'eau",
+        "réduction consommation",
+        "efficacité hydrique"
+      ],
+      "datasets": [
+        {
+          "title": "Consommation d'eau par commune en France",
+          "description": "Explorez les données sur la consommation d'eau des communes françaises, y compris celles de l'Orne, pour identifier les tendances et les pratiques efficaces.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/fr/datasets/?q=consommation%20d%27eau%20communes",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/",
+            "error": null
+          }
+        },
+        {
+          "title": "Gestion de l'eau et sécheresse en France",
+          "description": "Accédez aux statistiques et rapports sur la gestion de l'eau en période de sécheresse, avec des exemples de bonnes pratiques.",
+          "link": "https://www.ecologie.gouv.fr/recherche?search_api_views_fulltext=s%C3%A9cheresse%20gestion%20eau",
+          "source": "Ministère de la Transition écologique",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.ecologie.gouv.fr/recherche?search_api_views_fulltext=s%C3%A9cheresse%20gestion%20eau",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ecologie.gouv.fr/recherche?search_api_views_fulltext=s%C3%A9cheresse%20gestion%20eau",
+            "error": null
+          }
+        }
+      ],
+      "sources": [],
+      "visualizations": [
+        {
+          "title": "Réduction de la consommation d'eau par commune",
+          "chart_type": "bar",
+          "x": "Commune",
+          "y": "Réduction de consommation (%)",
+          "note": "Comparer les réductions de consommation d'eau en pourcentage des communes de l'Orne entre 2022 et 2023"
+        },
+        {
+          "title": "Carte des communes économes en eau",
+          "chart_type": "choropleth",
+          "x": "Commune",
+          "y": "Volume d'eau économisé (m³)",
+          "note": "Carte de l'Orne montrant les volumes d'eau économisés par commune"
+        },
+        {
+          "title": "Bonnes pratiques de gestion de l'eau",
+          "chart_type": "table",
+          "x": "Commune",
+          "y": "Pratiques mises en œuvre",
+          "note": "Tableau listant les pratiques efficaces adoptées par les communes pour économiser l'eau"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5423,
+      "type": "PER",
+      "value": "Yohann Blondel",
+      "context": null
+    },
+    {
+      "id": 5424,
+      "type": "ORG",
+      "value": "Préfecture de l’Orne",
+      "context": null
+    },
+    {
+      "id": 5425,
+      "type": "LOC",
+      "value": "Orne",
+      "context": null
+    },
+    {
+      "id": 5426,
+      "type": "LOC",
+      "value": "Mayenne amont",
+      "context": null
+    },
+    {
+      "id": 5427,
+      "type": "LOC",
+      "value": "Egrenne-Varenne",
+      "context": null
+    },
+    {
+      "id": 5428,
+      "type": "LOC",
+      "value": "Orne moyenne",
+      "context": null
+    },
+    {
+      "id": 5429,
+      "type": "LOC",
+      "value": "Sarthe amont",
+      "context": null
+    },
+    {
+      "id": 5430,
+      "type": "LOC",
+      "value": "Touques",
+      "context": null
+    },
+    {
+      "id": 5431,
+      "type": "LOC",
+      "value": "Risle-Charentonne-Guiel",
+      "context": null
+    },
+    {
+      "id": 5432,
+      "type": "LOC",
+      "value": "Iton",
+      "context": null
+    },
+    {
+      "id": 5433,
+      "type": "LOC",
+      "value": "Bagnoles-de l’Orne-Normandie",
+      "context": null
+    },
+    {
+      "id": 5434,
+      "type": "LOC",
+      "value": "Céaucé",
+      "context": null
+    },
+    {
+      "id": 5435,
+      "type": "LOC",
+      "value": "Ciral",
+      "context": null
+    },
+    {
+      "id": 5436,
+      "type": "LOC",
+      "value": "Joué-du-Bois",
+      "context": null
+    },
+    {
+      "id": 5437,
+      "type": "LOC",
+      "value": "Juvigny-Val d’Andaine",
+      "context": null
+    },
+    {
+      "id": 5438,
+      "type": "LOC",
+      "value": "La Chaux",
+      "context": null
+    },
+    {
+      "id": 5439,
+      "type": "LOC",
+      "value": "La Coulonche",
+      "context": null
+    },
+    {
+      "id": 5440,
+      "type": "LOC",
+      "value": "La Ferté-Macé",
+      "context": null
+    },
+    {
+      "id": 5441,
+      "type": "LOC",
+      "value": "La Motte-Fouquet",
+      "context": null
+    },
+    {
+      "id": 5442,
+      "type": "LOC",
+      "value": "La Lacelle",
+      "context": null
+    },
+    {
+      "id": 5443,
+      "type": "LOC",
+      "value": "Les Monts-d’Andaine",
+      "context": null
+    },
+    {
+      "id": 5444,
+      "type": "LOC",
+      "value": "Magny-le-Désert",
+      "context": null
+    },
+    {
+      "id": 5445,
+      "type": "LOC",
+      "value": "Méhoudin",
+      "context": null
+    },
+    {
+      "id": 5446,
+      "type": "LOC",
+      "value": "Rives d’Andaine",
+      "context": null
+    },
+    {
+      "id": 5447,
+      "type": "LOC",
+      "value": "Saint-Martin-des-Landes",
+      "context": null
+    },
+    {
+      "id": 5448,
+      "type": "LOC",
+      "value": "Saint-Ouen-le-Brisoult",
+      "context": null
+    },
+    {
+      "id": 5449,
+      "type": "LOC",
+      "value": "Saint-Patrice-du-Désert",
+      "context": null
+    },
+    {
+      "id": 5450,
+      "type": "LOC",
+      "value": "Tessé-Froulay",
+      "context": null
+    },
+    {
+      "id": 5451,
+      "type": "LOC",
+      "value": "Alençon",
+      "context": null
+    },
+    {
+      "id": 5452,
+      "type": "DATE",
+      "value": "2025-08-14",
+      "context": null
+    },
+    {
+      "id": 5453,
+      "type": "DATE",
+      "value": "2025-06-10",
+      "context": null
+    },
+    {
+      "id": 5454,
+      "type": "NUM",
+      "value": "18.0",
+      "context": null
+    },
+    {
+      "id": 5455,
+      "type": "NUM",
+      "value": "10.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 831,
+      "title": "Sécheresse dans l'Orne : un aperçu historique",
+      "description": "Analyser les données historiques de sécheresse dans l'Orne pour évaluer les tendances à long terme. Cette perspective pourrait inclure des graphiques montrant l'évolution des précipitations et des débits des cours d'eau.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 832,
+      "title": "Impact économique des restrictions d'eau",
+      "description": "Étudier l'impact économique des restrictions d'eau sur les secteurs agricoles et industriels dans l'Orne. Inclure des visualisations des pertes économiques potentielles par secteur et par commune.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 833,
+      "title": "Comparaison régionale des restrictions d'eau",
+      "description": "Comparer les mesures de restrictions d'eau dans l'Orne avec celles d'autres départements français touchés par la sécheresse. Utiliser des cartes interactives pour visualiser les différences régionales en termes de sévérité et de durée des restrictions.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 834,
+      "title": "Consommation d'eau : les bons élèves de l'Orne",
+      "description": "Identifier et analyser les communes de l'Orne qui ont réussi à réduire leur consommation d'eau malgré la sécheresse. Inclure des statistiques comparatives et des témoignages de bonnes pratiques de gestion de l'eau.",
+      "order": 3,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4285,
+      "title": "Données historiques de précipitations en France",
+      "description": "Explorez les données historiques sur les précipitations en France, y compris la région de l'Orne, pour analyser les tendances climatiques.",
+      "link": "https://www.data.gouv.fr/datasets/",
+      "source": "data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4286,
+      "title": "Hydroportail - Banque Hydro",
+      "description": "Accédez aux données sur les débits des cours d'eau en France, y compris l'Orne, pour analyser les tendances des ressources en eau.",
+      "link": "https://www.hydro.eaufrance.fr/",
+      "source": "Eaufrance",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4287,
+      "title": "Statistiques agricoles et industrielles",
+      "description": "Portail de données sur les secteurs agricoles et industriels en France, avec des informations économiques détaillées.",
+      "link": "https://www.insee.fr/fr/statistiques?q=agriculture%20industrie",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4288,
+      "title": "Restrictions d'eau et agriculture",
+      "description": "Données sur l'impact des restrictions d'eau sur l'agriculture, incluant les pertes économiques par secteur.",
+      "link": "https://www.data.gouv.fr/datasets/",
+      "source": "data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4289,
+      "title": "Propluvia - Restrictions d'eau par département",
+      "description": "Consultez les mesures de restrictions d'eau actuelles et passées pour chaque département français.",
+      "link": "https://vigieau.gouv.fr/propluvia/faces/index.jsp",
+      "source": "Ministère de la Transition écologique",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4290,
+      "title": "Data.gouv.fr - Recherche sur restrictions d'eau",
+      "description": "Recherchez des jeux de données sur les restrictions d'eau en France pour une analyse régionale détaillée.",
+      "link": "https://www.data.gouv.fr/datasets/",
+      "source": "Data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4291,
+      "title": "Vigicrues - Cartes des restrictions d'eau",
+      "description": "Accédez aux cartes interactives des restrictions d'eau en France, y compris les départements touchés par la sécheresse.",
+      "link": "https://www.vigicrues.gouv.fr/",
+      "source": "Vigicrues",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4292,
+      "title": "Consommation d'eau par commune en France",
+      "description": "Explorez les données sur la consommation d'eau des communes françaises, y compris celles de l'Orne, pour identifier les tendances et les pratiques efficaces.",
+      "link": "https://www.data.gouv.fr/datasets/",
+      "source": "data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4293,
+      "title": "Gestion de l'eau et sécheresse en France",
+      "description": "Accédez aux statistiques et rapports sur la gestion de l'eau en période de sécheresse, avec des exemples de bonnes pratiques.",
+      "link": "https://www.ecologie.gouv.fr/recherche?search_api_views_fulltext=s%C3%A9cheresse%20gestion%20eau",
+      "source": "Ministère de la Transition écologique",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 29202,
+    "entities_count": 33,
+    "angles_count": 4,
+    "datasets_count": 9,
+    "angle_resources_count": 4
+  }
+}

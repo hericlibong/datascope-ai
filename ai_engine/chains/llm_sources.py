@@ -57,13 +57,22 @@ Bilingual context:
 - For French content, prefer institutions authoritative in French contexts when available.
 - For English content, prefer institutions authoritative in English/INTL contexts when available.
 
+Selection criterion for SOURCES (NOT datasets):
+- Base your selection primarily on the ANGLE DESCRIPTION (context/rationale); the title and keywords are only secondary signals.
+- Prefer documentation or thematic pages that EXPLAIN the data: methodology notes, glossaries, official guides, portal sections dedicated to the topic.
+
 Link quality rules:
-- Do not fabricate deep URLs. Prefer official dataset landing pages or canonical catalogue entries.
-- If a dataset is only available via a portal page, return that portal page (not a random blog/mirror).
-- When multiple candidates exist, pick the most official/maintained source.
+- Do not fabricate deep URLs.
+- Avoid returning a bare homepage as the only link.
+- If you are NOT certain of an exact dataset landing page, RETURN the official CATALOGUE SEARCH URL with a relevant query instead of a bare homepage.
+  Examples:
+  - data.gouv.fr: https://www.data.gouv.fr/fr/datasets/?q=<keywords>
+  - insee.fr:     https://www.insee.fr/fr/recherche?texte=<keywords>
+  - eurostat:     https://ec.europa.eu/eurostat/web/main/search?q=<keywords>
 
 Return the usual fields for each suggestion.
-"""  # NEW
+"""
+
 
 
 # --------------------------------------------------------------------------- #

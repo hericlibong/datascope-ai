@@ -4,6 +4,7 @@ from rest_framework import status
 from rest_framework.views import APIView
 from rest_framework.parsers import MultiPartParser, FormParser
 from django.utils.timezone import now
+from django.conf import settings
 
 from .models import Article, Analysis
 from .serializers import (
@@ -98,6 +99,8 @@ class ArticleAnalyzeAPIView(APIView):
         # Exemples acceptés : ?validate=true / ?validate=1 / ?validate=yes / ?validate=on
         validate_qs = (request.query_params.get("validate") or "").strip().lower()  # NEW
         validate_flag = validate_qs in ("1", "true", "yes", "on")                    # NEW
+        if not validate_qs:
+            validate_flag = bool(getattr(settings, "URL_VALIDATION_DEFAULT", True))
         # -------------------------------------------------------------------
 
         (

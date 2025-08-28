@@ -6,6 +6,7 @@ from rest_framework.permissions import AllowAny
 
 from django.db import transaction
 from rest_framework import status
+from django.conf import settings
 from analysis.views import ArticleViewSet, AnalysisViewSet, HistoryAPIView
 from users.views import FeedbackViewSet
 
@@ -132,10 +133,17 @@ class AnalysisPlaygroundViewSet(PlaygroundDebugMixin, AnalysisViewSet):
         except Article.DoesNotExist:
             return Response({"article": ["Invalid article id."]}, status=status.HTTP_400_BAD_REQUEST)
 
-        # 2) pipeline
+        # 2) pipeline with validation flag
+        validate_qs = (request.query_params.get("validate") or "").strip().lower()
+        validate_flag = validate_qs in ("1", "true", "yes", "on")
+        if not validate_qs:
+            # fallback global si le front n'envoie pas le paramètre
+            validate_flag = bool(getattr(settings, "URL_VALIDATION_DEFAULT", True))
+
         packaged, markdown, score, angle_resources = run_pipeline(
             article.content,
-            user_id=str(request.user.id)
+            user_id=str(request.user.id),
+            validate_urls=validate_flag,
         )
         angle_resources_payload = AngleResourcesSerializer(angle_resources, many=True).data
 

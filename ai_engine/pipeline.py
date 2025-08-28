@@ -261,6 +261,24 @@ def run(
         return getattr(obj, "source_url", None) or getattr(obj, "link", None)
     # -----------------------------------------------------------------------
 
+    # --- NEW HOMEPAGE: pénalité soft pour homepages ------------------------
+    def _homepage_soft_weight(u: str | None) -> float:  # NEW HOMEPAGE
+        """
+        Penalize bare portal homepages (path length <= 1 segment).
+        Ex: https://www.insee.fr/ (0 seg) ou /fr (1 seg) -> pénalité soft.
+        """
+        base = 1.0
+        penalty = float(getattr(settings, "HOMEPAGE_SOFT_PENALTY", 0.20) or 0.0)
+        if not u:
+            return base
+        try:
+            path = urlparse(u).path or ""
+            segments = [s for s in path.split("/") if s]
+            return base - penalty if len(segments) <= 1 else base
+        except Exception:
+            return base
+    # -----------------------------------------------------------------------
+
     # --- NEW THEME: helpers filtre thématique ------------------------------
     _re_split = re.compile(r"\W+", flags=re.UNICODE)
 
@@ -342,8 +360,51 @@ def run(
         kw_set   = keywords_per_angle[idx] if idx < len(keywords_per_angle) else None
         conn_ds  = connectors_sets[idx]    if idx < len(connectors_sets)    else []
 
-        llm_raw   = llm_sources_sets[idx] if idx < len(llm_sources_sets) else []
-        llm_ds    = [_llm_to_ds(obj, angle_idx=idx) for obj in llm_raw]
+        # ------------------------------------------------------------------
+        # NEW SPLIT LLM -> DATASETS/SOURCES (avant toute conversion)
+        # ------------------------------------------------------------------
+        def _looks_like_dataset_url(u: str | None) -> bool:
+            if not u:
+                return False
+            try:
+                p = urlparse(u)
+                path = (p.path or "").lower()
+                segs = [s for s in path.split("/") if s]
+                # home/portal => plutôt "source"
+                if len(segs) <= 1:
+                    return False
+                hints = (
+                    "dataset", "datasets", "datastore", "data",
+                    "statistique", "statistiques", "statistics",
+                    "recherche", "search", "catalog", "catalogue",
+                    "table", "api", "download"
+                )
+                return any(h in path for h in hints)
+            except Exception:
+                return False
+
+        llm_all = llm_sources_sets[idx] if idx < len(llm_sources_sets) else []
+
+        llm_for_datasets = []
+        llm_for_sources  = []
+        for s in llm_all:
+            u = getattr(s, "link", None) or getattr(s, "source_url", None)
+            if _looks_like_dataset_url(u):
+                llm_for_datasets.append(s)
+            else:
+                llm_for_sources.append(s)
+
+        # Option: garantir un minimum de sources visibles
+        SOURCES_MIN_PER_ANGLE = int(getattr(settings, "SOURCES_MIN_PER_ANGLE", 2) or 0)
+        if len(llm_for_sources) < SOURCES_MIN_PER_ANGLE and len(llm_for_datasets) > 0:
+            n = min(SOURCES_MIN_PER_ANGLE - len(llm_for_sources), len(llm_for_datasets))
+            llm_for_sources.extend(llm_for_datasets[-n:])
+            llm_for_datasets = llm_for_datasets[:-n]
+
+        # Conversion en DatasetSuggestion uniquement pour le panier datasets
+        llm_ds  = [_llm_to_ds(obj, angle_idx=idx) for obj in llm_for_datasets]
+        llm_raw = llm_for_sources
+        # ------------------------------------------------------------------
 
         viz_list  = viz_sets[idx]          if idx < len(viz_sets)           else []
 
@@ -384,9 +445,31 @@ def run(
             llm_raw = validated_sources
         # -------------------------------------------------------------------
 
-        # --- NEW THEME: signature thématique de l’angle ----------------------
-        angle_text = angle.title or ""
-        if kw_set and getattr(kw_set, "sets", None):
+        # --- DE-DUP entre datasets et sources (évite les doublons visuels) ---
+        def _normalize_url(u: str | None) -> str | None:
+            if not u:
+                return None
+            try:
+                p = urlparse(u)
+                path = (p.path or "/").rstrip("/") or "/"
+                return f"{(p.scheme or 'http').lower()}://{(p.netloc or '').lower()}{path}"
+            except Exception:
+                return u
+
+        def _url_key_for_dedupe(obj) -> str | None:
+            # on préfère final_url (si validation a tourné), sinon source_url/link
+            u = _pick_url_for_weight(obj) or _get_url(obj)
+            return _normalize_url(u)
+
+        seen_dataset_links = {
+            _url_key_for_dedupe(d) for d in merged_ds if _url_key_for_dedupe(d)
+        }
+        llm_raw = [s for s in llm_raw if _url_key_for_dedupe(s) not in seen_dataset_links]
+        # ---------------------------------------------------------------------
+
+        # --- NEW THEME: signature thématique de l’angle (title + desc + keywords) ---
+        angle_text = f"{getattr(angle, 'title', '') or ''} {getattr(angle, 'rationale', '') or ''}"
+        if kw_set and getattr(kw_set, "sets", None) and len(kw_set.sets) > 0:
             angle_text += " " + " ".join(kw_set.sets[0].keywords or [])
         _ang_tokens = _tokenize(angle_text)
         _ANG_UNI = set(_ang_tokens)
@@ -418,13 +501,18 @@ def run(
         llm_raw = themed_sources
         # ---------------------------------------------------------------------
 
-        # --- Trusted re-ranking (soft) × Theme weight ------------------------
+        # --- Trusted re-ranking (soft) × Theme weight × Homepage penalty -----
         def _final_weight(obj) -> float:
-            return _trusted_weight_from_url(_pick_url_for_weight(obj)) * _theme_w.get(id(obj), 1.0)
+            u = _pick_url_for_weight(obj)  # utilise final_url si présent
+            return (
+                _trusted_weight_from_url(u)
+                * _theme_w.get(id(obj), 1.0)
+                * _homepage_soft_weight(u)
+            )
 
         merged_ds.sort(key=_final_weight, reverse=True)
         llm_raw.sort(key=_final_weight, reverse=True)
-        # --------------------------------------------------------------------
+        # ---------------------------------------------------------------------
 
         angle_resources.append(
             AngleResources(

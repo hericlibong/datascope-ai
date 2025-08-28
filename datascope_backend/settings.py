@@ -207,6 +207,8 @@ URL_VALIDATION_USER_AGENT = "DatascopeAI/validator"
 # URL_VALIDATION_FILTER_404: If True, filters URLs returning a 404 error (page not found)URL_VALIDATION_FILTER_404 = True
 URL_VALIDATION_FILTER_404 = True 
 
+URL_VALIDATION_DEFAULT = True
+
 
 TRUSTED_DOMAINS = [
     # FR/EU
@@ -227,3 +229,6 @@ THEME_FILTER_MIN_UNIGRAM_HITS = 2   # seuil pragmatique
 CONNECTORS_ENABLED = False  # ← par défaut OFF pour cette version
 DATASCOPE_LOG_LEVEL = "WARNING"  # "DEBUG" pour activer les traces locales
 
+HOMEPAGE_SOFT_PENALTY = 0.20  # 0.25–0.30 si tu veux appuyer l'effet
+
+SOURCE_MIN_PER_ANGLE = 2
