@@ -28,6 +28,72 @@ logger = logging.getLogger("datascope.ai_engine")  # NEW
 MAX_TOKENS = 8_000
 
 
+# ------------------------------------------------------------------
+# NEW HELPERS: dataset/source heuristics + balancing
+def _is_homepage_like(path: str) -> bool:
+    """Path '/', '/fr', '/en' considered homepage-like."""
+    p = path.strip('/')
+    return p == '' or '/' not in p
+
+def _is_dataset_like_url(url: str) -> bool:
+    """
+    Heuristic: dataset-like if path contains dataset/catalog/search/statistics,
+    excluding homepages. Soft and minimalistic.
+    """
+    try:
+        p = urlparse(url)
+        path = (p.path or '').lower()
+        if _is_homepage_like(path):
+            return False
+        tokens = ('/datasets', 'dataset', 'catalog', 'statistics', '/data', 'datastore', 'search')
+        return any(t in path for t in tokens)
+    except Exception:
+        return False
+
+def _rebalance_minima(datasets, sources, min_ds: int, min_src: int, logger):
+    """
+    Minimal balancing: ensure at least min_ds datasets and min_src sources.
+    1) Move dataset-like from sources -> datasets.
+    2) Move source-like from datasets -> sources.
+    3) Fallback: move first items if still short.
+    """
+    moved_ds, moved_src = 0, 0
+
+    def pop_best(predicate, items):
+        for i, it in enumerate(items):
+            url = getattr(it, "link", None) or getattr(it, "source_url", None)
+            if predicate(url):
+                return items.pop(i)
+        return None
+
+    # 1) Fill datasets from sources
+    while len(datasets) < min_ds and sources:
+        pick = pop_best(lambda u: _is_dataset_like_url(u or ""), sources)
+        if pick is None:
+            break
+        datasets.append(pick)
+        moved_ds += 1
+
+    # 2) Fill sources from datasets
+    while len(sources) < min_src and datasets:
+        pick = pop_best(lambda u: not _is_dataset_like_url(u or ""), datasets)
+        if pick is None:
+            break
+        sources.append(pick)
+        moved_src += 1
+
+    # 3) Fallback if still short
+    while len(datasets) < min_ds and len(sources) > min_src:
+        datasets.append(sources.pop(0)); moved_ds += 1  # noqa: E702
+    while len(sources) < min_src and len(datasets) > min_ds:
+        sources.append(datasets.pop(0)); moved_src += 1  # noqa: E702
+
+    if (moved_ds or moved_src) and logger:
+        logger.debug(f"min_guard_applied: datasets+{moved_ds}, sources+{moved_src}, "
+                     f"final_sizes={{'datasets': {len(datasets)}, 'sources': {len(sources)}}}")
+# ------------------------------------------------------------------
+
+
 def _validate(text: str) -> None:
     if token_len(text, model=ai_engine.OPENAI_MODEL) > MAX_TOKENS:
         raise ValueError("Article trop long")
@@ -512,6 +578,16 @@ def run(
 
         merged_ds.sort(key=_final_weight, reverse=True)
         llm_raw.sort(key=_final_weight, reverse=True)
+        # ---------------------------------------------------------------------
+
+        # --- NEW: REBALANCE datasets/sources minima --------------------------
+        _rebalance_minima(
+            merged_ds,
+            llm_raw,
+            getattr(settings, "DATASETS_MIN_PER_ANGLE", 3),
+            getattr(settings, "SOURCES_MIN_PER_ANGLE", 3),
+            logger,
+        )
         # ---------------------------------------------------------------------
 
         angle_resources.append(

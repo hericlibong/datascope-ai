@@ -231,4 +231,5 @@ DATASCOPE_LOG_LEVEL = "WARNING"  # "DEBUG" pour activer les traces locales
 
 HOMEPAGE_SOFT_PENALTY = 0.20  # 0.25–0.30 si tu veux appuyer l'effet
 
-SOURCE_MIN_PER_ANGLE = 2
+SOURCE_MIN_PER_ANGLE = 3
+DATASETS_MIN_PER_ANGLE = 3
