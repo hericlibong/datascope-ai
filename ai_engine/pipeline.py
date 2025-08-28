@@ -1,12 +1,22 @@
+from __future__ import annotations
+
 import ai_engine
 import inspect
-import re  # NEW THEME: tokenisation simple
 import logging
+from typing import Optional
+
+from django.conf import settings
 
 from ai_engine.utils import token_len
 from ai_engine.chains import extraction, angles
 from ai_engine.formatter import package
-from ai_engine.schemas import AnalysisPackage, DatasetSuggestion, KeywordsResult, LLMSourceSuggestion, AngleResources
+from ai_engine.schemas import (
+    AnalysisPackage,  
+    DatasetSuggestion,
+    KeywordsResult,
+    LLMSourceSuggestion,
+    AngleResources,
+)
 from ai_engine.scoring import compute_score
 from ai_engine.chains import keywords, viz, llm_sources
 from ai_engine.memory import get_memory
@@ -17,84 +27,27 @@ from ai_engine.connectors.data_canada import CanadaGovClient
 from ai_engine.connectors.data_uk import UKGovClient
 from ai_engine.connectors.hdx_data import HdxClient
 
-# --- NEW imports
-from django.conf import settings
 from ai_engine.services import validate_url
-from urllib.parse import urlparse  # NEW TRUSTED
 
+# Modular imports
+from ai_engine.url_utils import (
+    get_url, set_url, set_validation, pick_url_for_weight, url_key_for_dedupe, is_dataset_like_url,
+)
+from ai_engine.theme_filter import build_angle_signature, theme_weight_and_flag
+from ai_engine.trust import trusted_weight_from_url as _trusted_weight_from_url
+from ai_engine.ranking import (
+    homepage_soft_weight as _homepage_soft_weight,
+    datasets_path_soft_boost as _datasets_path_soft_boost,
+    final_weight as _compose_final_weight,
+)
+from ai_engine.balancing import rebalance_minima
 
-logger = logging.getLogger("datascope.ai_engine")  # NEW
+logger = logging.getLogger("datascope.ai_engine")
 
 MAX_TOKENS = 8_000
 
 
-# ------------------------------------------------------------------
-# NEW HELPERS: dataset/source heuristics + balancing
-def _is_homepage_like(path: str) -> bool:
-    """Path '/', '/fr', '/en' considered homepage-like."""
-    p = path.strip('/')
-    return p == '' or '/' not in p
-
-def _is_dataset_like_url(url: str) -> bool:
-    """
-    Heuristic: dataset-like if path contains dataset/catalog/search/statistics,
-    excluding homepages. Soft and minimalistic.
-    """
-    try:
-        p = urlparse(url)
-        path = (p.path or '').lower()
-        if _is_homepage_like(path):
-            return False
-        tokens = ('/datasets', 'dataset', 'catalog', 'statistics', '/data', 'datastore', 'search')
-        return any(t in path for t in tokens)
-    except Exception:
-        return False
-
-def _rebalance_minima(datasets, sources, min_ds: int, min_src: int, logger):
-    """
-    Minimal balancing: ensure at least min_ds datasets and min_src sources.
-    1) Move dataset-like from sources -> datasets.
-    2) Move source-like from datasets -> sources.
-    3) Fallback: move first items if still short.
-    """
-    moved_ds, moved_src = 0, 0
-
-    def pop_best(predicate, items):
-        for i, it in enumerate(items):
-            url = getattr(it, "link", None) or getattr(it, "source_url", None)
-            if predicate(url):
-                return items.pop(i)
-        return None
-
-    # 1) Fill datasets from sources
-    while len(datasets) < min_ds and sources:
-        pick = pop_best(lambda u: _is_dataset_like_url(u or ""), sources)
-        if pick is None:
-            break
-        datasets.append(pick)
-        moved_ds += 1
-
-    # 2) Fill sources from datasets
-    while len(sources) < min_src and datasets:
-        pick = pop_best(lambda u: not _is_dataset_like_url(u or ""), datasets)
-        if pick is None:
-            break
-        sources.append(pick)
-        moved_src += 1
-
-    # 3) Fallback if still short
-    while len(datasets) < min_ds and len(sources) > min_src:
-        datasets.append(sources.pop(0)); moved_ds += 1  # noqa: E702
-    while len(sources) < min_src and len(datasets) > min_ds:
-        sources.append(datasets.pop(0)); moved_src += 1  # noqa: E702
-
-    if (moved_ds or moved_src) and logger:
-        logger.debug(f"min_guard_applied: datasets+{moved_ds}, sources+{moved_src}, "
-                     f"final_sizes={{'datasets': {len(datasets)}, 'sources': {len(sources)}}}")
-# ------------------------------------------------------------------
-
-
-def _validate(text: str) -> None:
+def _validate_length(text: str) -> None:
     if token_len(text, model=ai_engine.OPENAI_MODEL) > MAX_TOKENS:
         raise ValueError("Article trop long")
 
@@ -109,15 +62,6 @@ def run_connectors(
     max_per_keyword: int = 2,
     max_total_per_angle: int = 5,
 ) -> list[list[DatasetSuggestion]]:
-    """
-    Interroge les connecteurs open-data pour CHAQUE angle et renvoie
-    une liste de listes alignée sur l’ordre des angles.
-
-    Chaque DatasetSuggestion sort avec :
-        • found_by  = "CONNECTOR"
-        • angle_idx = index de l’angle parent
-    """
-
     connectors = [
         DataGouvClient(),
         DataGovClient(),
@@ -211,9 +155,7 @@ def run_connectors(
     return all_angles
 
 
-# ------------------------------------------------------------------
 def _llm_to_ds(item: LLMSourceSuggestion, *, angle_idx: int) -> DatasetSuggestion:
-    """Convertit une LLMSourceSuggestion en DatasetSuggestion standardisé."""
     return DatasetSuggestion(
         title        = item.title,
         description  = item.description,
@@ -227,41 +169,42 @@ def _llm_to_ds(item: LLMSourceSuggestion, *, angle_idx: int) -> DatasetSuggestio
         last_modified= "",
         richness     = 0,
     )
+
+def _ds_to_llm(item: DatasetSuggestion, *, angle_idx: int | None = None) -> LLMSourceSuggestion:
+    ai = angle_idx if angle_idx is not None else getattr(item, "angle_idx", 0)
+    return LLMSourceSuggestion(
+        title       = item.title,
+        description = item.description,
+        link        = getattr(item, "source_url", None) or getattr(item, "link", None) or "",
+        source      = getattr(item, "source_name", None) or getattr(item, "source", None) or "",
+        angle_idx   = ai,
+    )
+
+    
 # ------------------------------------------------------------------
-
-
+# Main pipeline
+# ------------------------------------------------------------------
 def run(
-    article_text: str,
-    user_id: str = "anon",
-    validate_urls: bool = False,        # NEW
-    filter_404: bool | None = None,     # NEW
-    theme_strict: bool | None = None,   # NEW THEME (optionnel)
-) -> tuple[
-    AnalysisPackage,
-    str,
-    float,
-    list[AngleResources],
-]:
-    """Orchestre l’ensemble du workflow DataScope et regroupe les ressources
-    par angle éditorial dans des objets `AngleResources`."""
-
-    # -- validation longueur -------------------------------------------------
-    _validate(article_text)
+article_text: str,
+user_id: str = "anon",
+validate_urls: bool = False,
+filter_404: Optional[bool] = None,
+theme_strict: Optional[bool] = None,
+) -> tuple[AnalysisPackage, str, float, list[AngleResources]]:
+    
+    _validate_length(article_text)
 
     if filter_404 is None:
-        filter_404 = getattr(settings, "URL_VALIDATION_FILTER_404", True)
+        filter_404 = bool(getattr(settings, "URL_VALIDATION_FILTER_404", True))
 
-    # --- NEW THEME: paramètres du filtre thématique -------------------------
     if theme_strict is None:
         theme_strict = bool(getattr(settings, "THEME_FILTER_STRICT_DEFAULT", False))
     _THEME_MIN_HITS = int(getattr(settings, "THEME_FILTER_MIN_UNIGRAM_HITS", 2))
     _THEME_PENALTY  = float(getattr(settings, "THEME_FILTER_SOFT_PENALTY", 0.15) or 0.0)
-    # -----------------------------------------------------------------------
 
-    # Small per-run cache to avoid validating the same URL multiple times
     _url_validation_cache: dict[str, dict] = {}
 
-    def _connectors_enabled() -> bool:  # NEW
+    def _connectors_enabled() -> bool:
         return bool(getattr(settings, "CONNECTORS_ENABLED", False))
 
     def _validate_once(url: str) -> dict:
@@ -274,207 +217,57 @@ def run(
         _url_validation_cache[url] = res
         return res
 
-    def _get_url(obj):
-        if isinstance(obj, dict):
-            return obj.get("source_url") or obj.get("link")
-        return getattr(obj, "source_url", None) or getattr(obj, "link", None)
+    # Read settings once for weights
+    _TRUST_BOOST = float(getattr(settings, "TRUSTED_SOFT_WEIGHT", 0.15) or 0.0)
+    _TRUST_DOMAINS = getattr(settings, "TRUSTED_DOMAINS", [])
+    _HOMEPAGE_PENALTY = float(getattr(settings, "HOMEPAGE_SOFT_PENALTY", 0.20) or 0.0)
+    _DATASETS_PATH_SOFT_BOOST = float(getattr(settings, "DATASETS_PATH_SOFT_BOOST", 0.05) or 0.0)
 
-    def _set_url(obj, new_url: str):
-        if isinstance(obj, dict):
-            if "source_url" in obj:
-                obj["source_url"] = new_url
-            if "link" in obj:
-                obj["link"] = new_url
-        else:
-            if hasattr(obj, "source_url"):
-                obj.source_url = new_url
-            if hasattr(obj, "link"):
-                obj.link = new_url
+    def _trusted(u: str | None) -> float:
+        return _trusted_weight_from_url(u, _TRUST_BOOST, _TRUST_DOMAINS)
 
-    def _set_validation(obj, payload: dict):
-        if isinstance(obj, dict):
-            obj["validation"] = payload
-        else:
-            setattr(obj, "validation", payload)
+    def _homepage(u: str | None) -> float:
+        return _homepage_soft_weight(u, _HOMEPAGE_PENALTY)
 
-    # --- NEW TRUSTED: helpers re-rank qualitatif ---------------------------
-    def _host(u: str | None) -> str:
-        if not u:
-            return ""
-        try:
-            return urlparse(u).netloc.lower()
-        except Exception:
-            return ""
+    def _datasets_boost(u: str | None) -> float:
+        return _datasets_path_soft_boost(u, _DATASETS_PATH_SOFT_BOOST)
 
-    def _is_trusted(host: str) -> bool:
-        for d in getattr(settings, "TRUSTED_DOMAINS", []):
-            d = str(d).lower().strip()
-            if not d:
-                continue
-            if host == d or host.endswith("." + d):
-                return True
-        return False
-
-    def _trusted_weight_from_url(u: str | None) -> float:
-        base = 1.0
-        boost = float(getattr(settings, "TRUSTED_SOFT_WEIGHT", 0.15) or 0.0)
-        return base + boost if _is_trusted(_host(u)) else base
-
-    def _pick_url_for_weight(obj) -> str | None:
-        v = getattr(obj, "validation", None)
-        if isinstance(v, dict) and v.get("final_url"):
-            return v["final_url"]
-        return getattr(obj, "source_url", None) or getattr(obj, "link", None)
-    # -----------------------------------------------------------------------
-
-    # --- NEW HOMEPAGE: pénalité soft pour homepages ------------------------
-    def _homepage_soft_weight(u: str | None) -> float:  # NEW HOMEPAGE
-        """
-        Penalize bare portal homepages (path length <= 1 segment).
-        Ex: https://www.insee.fr/ (0 seg) ou /fr (1 seg) -> pénalité soft.
-        """
-        base = 1.0
-        penalty = float(getattr(settings, "HOMEPAGE_SOFT_PENALTY", 0.20) or 0.0)
-        if not u:
-            return base
-        try:
-            path = urlparse(u).path or ""
-            segments = [s for s in path.split("/") if s]
-            return base - penalty if len(segments) <= 1 else base
-        except Exception:
-            return base
-    # -----------------------------------------------------------------------
-
-    # --- NEW THEME: helpers filtre thématique ------------------------------
-    _re_split = re.compile(r"\W+", flags=re.UNICODE)
-
-    def _tokenize(s: str | None) -> list[str]:
-        if not s:
-            return []
-        return [t for t in _re_split.split(s.lower()) if len(t) >= 3]
-
-    def _bigrams(tokens: list[str]) -> set[tuple[str, str]]:
-        return set(zip(tokens, tokens[1:])) if len(tokens) >= 2 else set()
-
-    def _url_path_tokens(u: str | None) -> list[str]:
-        if not u:
-            return []
-        try:
-            path = urlparse(u).path or ""
-            path = path.replace("-", " ").replace("_", " ").replace(".", " ")
-            return _tokenize(path)
-        except Exception:
-            return []
-
-    def _item_text_tokens(obj) -> tuple[set[str], set[tuple[str, str]]]:
-        parts = []
-        parts.append(getattr(obj, "title", "") or "")
-        parts.append(getattr(obj, "description", "") or "")
-        parts.append(getattr(obj, "source_name", "") or getattr(obj, "source", "") or "")
-        parts.append(getattr(obj, "organization", "") or "")
-        u = _pick_url_for_weight(obj)
-        toks = _tokenize(" ".join(parts)) + _url_path_tokens(u)
-        uni = set(toks)
-        bi = _bigrams(toks)
-        return uni, bi
-
-    def _theme_weight_and_flag(obj, angle_unigrams: set[str], angle_bigrams: set[tuple[str, str]]) -> tuple[float, bool]:
-        """
-        Retourne (poids, is_off_theme).
-        - poids = 1.0 si OK, 1.0 - _THEME_PENALTY si hors-thème (soft).
-        - is_off_theme True si aucun bigram et hits unigrams < seuil.
-        """
-        item_uni, item_bi = _item_text_tokens(obj)
-        unigram_hits = len(angle_unigrams.intersection(item_uni))
-        bigram_match = bool(angle_bigrams.intersection(item_bi))
-        off_theme = (not bigram_match) and (unigram_hits < _THEME_MIN_HITS)
-        return (1.0 if not off_theme else 1.0 - _THEME_PENALTY), off_theme
-    # -----------------------------------------------------------------------
-
-    # -- 1. Extraction -------------------------------------------------------
     extraction_result = extraction.run(article_text)
-
-    # -- 2. Scoring ----------------------------------------------------------
     score_10 = round(
         compute_score(extraction_result, article_text, model=ai_engine.OPENAI_MODEL),
         1,
     )
 
-    # -- 3. Angles -----------------------------------------------------------
     angle_result = angles.run(article_text)
     logger.debug("Angles générés: %s", len(angle_result.angles))
 
-    # -- 4. Keywords (liste alignée) ----------------------------------------
     keywords_per_angle = keywords.run(angle_result)
 
-    angle_resources: list[AngleResources] = []
-    # -- 5. Datasets via connecteurs (liste par angle) ----------------------
-    if _connectors_enabled():  # NEW
+    if _connectors_enabled():
         connectors_sets = run_connectors(keywords_per_angle)
     else:
-        # même shape: une liste vide par angle (LLM-only)
         connectors_sets = [[] for _ in range(len(keywords_per_angle))]
 
-    # 6. Sources LLM par angle  ------------------------------
     llm_sources_sets = llm_sources.run(angle_result)
-
-    # 7. Suggestions de visus  -------------------------------
     viz_sets = viz.run(angle_result)
 
-    # 8. Fusion et construction AngleResources ---------------
+    angle_resources: list[AngleResources] = []
+
     for idx, angle in enumerate(angle_result.angles):
-        kw_set   = keywords_per_angle[idx] if idx < len(keywords_per_angle) else None
-        conn_ds  = connectors_sets[idx]    if idx < len(connectors_sets)    else []
-
-        # ------------------------------------------------------------------
-        # NEW SPLIT LLM -> DATASETS/SOURCES (avant toute conversion)
-        # ------------------------------------------------------------------
-        def _looks_like_dataset_url(u: str | None) -> bool:
-            if not u:
-                return False
-            try:
-                p = urlparse(u)
-                path = (p.path or "").lower()
-                segs = [s for s in path.split("/") if s]
-                # home/portal => plutôt "source"
-                if len(segs) <= 1:
-                    return False
-                hints = (
-                    "dataset", "datasets", "datastore", "data",
-                    "statistique", "statistiques", "statistics",
-                    "recherche", "search", "catalog", "catalogue",
-                    "table", "api", "download"
-                )
-                return any(h in path for h in hints)
-            except Exception:
-                return False
-
+        kw_set = keywords_per_angle[idx] if idx < len(keywords_per_angle) else None
+        conn_ds = connectors_sets[idx] if idx < len(connectors_sets) else []
         llm_all = llm_sources_sets[idx] if idx < len(llm_sources_sets) else []
+        viz_list = viz_sets[idx] if idx < len(viz_sets) else []
 
-        llm_for_datasets = []
-        llm_for_sources  = []
+        # Split LLM into dataset-like vs source-like
+        llm_for_datasets, llm_for_sources = [], []
         for s in llm_all:
-            u = getattr(s, "link", None) or getattr(s, "source_url", None)
-            if _looks_like_dataset_url(u):
-                llm_for_datasets.append(s)
-            else:
-                llm_for_sources.append(s)
+            (llm_for_datasets if is_dataset_like_url(get_url(s)) else llm_for_sources).append(s)
 
-        # Option: garantir un minimum de sources visibles
-        SOURCES_MIN_PER_ANGLE = int(getattr(settings, "SOURCES_MIN_PER_ANGLE", 2) or 0)
-        if len(llm_for_sources) < SOURCES_MIN_PER_ANGLE and len(llm_for_datasets) > 0:
-            n = min(SOURCES_MIN_PER_ANGLE - len(llm_for_sources), len(llm_for_datasets))
-            llm_for_sources.extend(llm_for_datasets[-n:])
-            llm_for_datasets = llm_for_datasets[:-n]
-
-        # Conversion en DatasetSuggestion uniquement pour le panier datasets
-        llm_ds  = [_llm_to_ds(obj, angle_idx=idx) for obj in llm_for_datasets]
+        llm_ds = [_llm_to_ds(obj, angle_idx=idx) for obj in llm_for_datasets]
         llm_raw = llm_for_sources
-        # ------------------------------------------------------------------
 
-        viz_list  = viz_sets[idx]          if idx < len(viz_sets)           else []
-
-        # ---- fusion + déduplication (URL) ------------------
+        # Merge & dedupe datasets
         seen_urls = {d.source_url for d in conn_ds}
         merged_ds = conn_ds[:]
         for ds in llm_ds:
@@ -482,130 +275,100 @@ def run(
                 merged_ds.append(ds)
                 seen_urls.add(ds.source_url)
 
-        # --- URL validation hook (Step 3) ----------------------------------
+        # Validation (optional)
         if validate_urls:
-            validated_datasets = []
+            vd, vs = [], []
             for ds in merged_ds:
-                url = _get_url(ds)
-                res = _validate_once(url)
-                _set_validation(ds, res)
-
+                res = _validate_once(get_url(ds))
+                set_validation(ds, res)
                 if res.get("status") in ("ok", "redirected") and res.get("final_url"):
-                    _set_url(ds, res["final_url"])
-
+                    set_url(ds, res["final_url"])
                 if not (filter_404 and res.get("status") == "not_found"):
-                    validated_datasets.append(ds)
-            merged_ds = validated_datasets
+                    vd.append(ds)
+            merged_ds = vd
 
-            validated_sources = []
             for src in llm_raw:
-                url = _get_url(src)
-                res = _validate_once(url)
-                _set_validation(src, res)
-
+                res = _validate_once(get_url(src))
+                set_validation(src, res)
                 if res.get("status") in ("ok", "redirected") and res.get("final_url"):
-                    _set_url(src, res["final_url"])
-
+                    set_url(src, res["final_url"])
                 if not (filter_404 and res.get("status") == "not_found"):
-                    validated_sources.append(src)
-            llm_raw = validated_sources
-        # -------------------------------------------------------------------
+                    vs.append(src)
+            llm_raw = vs
 
-        # --- DE-DUP entre datasets et sources (évite les doublons visuels) ---
-        def _normalize_url(u: str | None) -> str | None:
-            if not u:
-                return None
-            try:
-                p = urlparse(u)
-                path = (p.path or "/").rstrip("/") or "/"
-                return f"{(p.scheme or 'http').lower()}://{(p.netloc or '').lower()}{path}"
-            except Exception:
-                return u
+        # De-dup sources against datasets
+        seen_dataset_links = {url_key_for_dedupe(d) for d in merged_ds if url_key_for_dedupe(d)}
+        llm_raw = [s for s in llm_raw if url_key_for_dedupe(s) not in seen_dataset_links]
 
-        def _url_key_for_dedupe(obj) -> str | None:
-            # on préfère final_url (si validation a tourné), sinon source_url/link
-            u = _pick_url_for_weight(obj) or _get_url(obj)
-            return _normalize_url(u)
+        # Theme signature
+        angle_title = getattr(angle, "title", "") or ""
+        angle_rationale = getattr(angle, "rationale", "") or ""
+        angle_keywords = (kw_set.sets[0].keywords if (kw_set and getattr(kw_set, "sets", None)) else [])
+        ANG_UNI, ANG_BI = build_angle_signature(angle_title, angle_rationale, angle_keywords)
 
-        seen_dataset_links = {
-            _url_key_for_dedupe(d) for d in merged_ds if _url_key_for_dedupe(d)
-        }
-        llm_raw = [s for s in llm_raw if _url_key_for_dedupe(s) not in seen_dataset_links]
-        # ---------------------------------------------------------------------
-
-        # --- NEW THEME: signature thématique de l’angle (title + desc + keywords) ---
-        angle_text = f"{getattr(angle, 'title', '') or ''} {getattr(angle, 'rationale', '') or ''}"
-        if kw_set and getattr(kw_set, "sets", None) and len(kw_set.sets) > 0:
-            angle_text += " " + " ".join(kw_set.sets[0].keywords or [])
-        _ang_tokens = _tokenize(angle_text)
-        _ANG_UNI = set(_ang_tokens)
-        _ANG_BI  = _bigrams(_ang_tokens)
-        # ---------------------------------------------------------------------
-
-        # --- NEW THEME: calcul des poids + strict (LLM only) -----------------
-        _theme_w: dict[int, float] = {}
-
+        # Theme weights
+        theme_w: dict[int, float] = {}
         themed_datasets = []
         for ds in merged_ds:
             if getattr(ds, "found_by", "") == "LLM":
-                w, off = _theme_weight_and_flag(ds, _ANG_UNI, _ANG_BI)
+                w, off = theme_weight_and_flag(ds, ANG_UNI, ANG_BI, min_hits=_THEME_MIN_HITS, penalty=_THEME_PENALTY, pick_url_for_weight=pick_url_for_weight)
                 if theme_strict and off:
-                    continue  # drop en mode strict (LLM only)
-                _theme_w[id(ds)] = w
+                    continue
+                theme_w[id(ds)] = w
             else:
-                _theme_w[id(ds)] = 1.0  # CONNECTOR inchangé
+                theme_w[id(ds)] = 1.0
             themed_datasets.append(ds)
         merged_ds = themed_datasets
 
         themed_sources = []
         for src in llm_raw:
-            w, off = _theme_weight_and_flag(src, _ANG_UNI, _ANG_BI)
+            w, off = theme_weight_and_flag(src, ANG_UNI, ANG_BI, min_hits=_THEME_MIN_HITS, penalty=_THEME_PENALTY, pick_url_for_weight=pick_url_for_weight)
             if theme_strict and off:
                 continue
-            _theme_w[id(src)] = w
+            theme_w[id(src)] = w
             themed_sources.append(src)
         llm_raw = themed_sources
-        # ---------------------------------------------------------------------
 
-        # --- Trusted re-ranking (soft) × Theme weight × Homepage penalty -----
+        # Final weights (trusted × theme × homepage × datasets-path)
         def _final_weight(obj) -> float:
-            u = _pick_url_for_weight(obj)  # utilise final_url si présent
-            return (
-                _trusted_weight_from_url(u)
-                * _theme_w.get(id(obj), 1.0)
-                * _homepage_soft_weight(u)
+            return _compose_final_weight(
+                obj,
+                theme_w=theme_w,
+                pick_url_for_weight=pick_url_for_weight,
+                trust_weight_fn=_trusted,
+                homepage_weight_fn=_homepage,
+                datasets_path_boost_fn=_datasets_boost,
             )
 
         merged_ds.sort(key=_final_weight, reverse=True)
         llm_raw.sort(key=_final_weight, reverse=True)
-        # ---------------------------------------------------------------------
 
-        # --- NEW: REBALANCE datasets/sources minima --------------------------
-        _rebalance_minima(
+        # Rebalance minima (3/3) — TYPE-SAFE (avec convertisseurs)
+        rebalance_minima(
             merged_ds,
             llm_raw,
-            getattr(settings, "DATASETS_MIN_PER_ANGLE", 3),
-            getattr(settings, "SOURCES_MIN_PER_ANGLE", 3),
-            logger,
+            int(getattr(settings, "DATASETS_MIN_PER_ANGLE", 3) or 3),
+            int(getattr(settings, "SOURCES_MIN_PER_ANGLE", 3) or 3),
+            is_dataset_like_url,
+            to_dataset=lambda it: _llm_to_ds(it, angle_idx=idx),
+            to_source=lambda it: _ds_to_llm(it, angle_idx=idx),
+            logger=logger,
         )
-        # ---------------------------------------------------------------------
 
         angle_resources.append(
             AngleResources(
-                index          = idx,
-                title          = angle.title,
-                description    = angle.rationale,
-                keywords       = kw_set.sets[0].keywords if kw_set else [],
-                datasets       = merged_ds,
-                sources        = llm_raw,
-                visualizations = viz_list,
+                index=idx,
+                title=angle.title,
+                description=angle.rationale,
+                keywords=kw_set.sets[0].keywords if kw_set else [],
+                datasets=merged_ds,
+                sources=llm_raw,
+                visualizations=viz_list,
             )
         )
 
-    # -- 9. Packaging « historique » ----------------------------------------
     packaged, markdown = package(extraction_result, angle_result)
 
-    # -- 10. Mémoire utilisateur --------------------------------------------
     get_memory(user_id).save_context(
         {"article": article_text},
         {"summary": f"[score={score_10}] Angles: {[a.title for a in angle_result.angles]}"},

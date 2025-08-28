@@ -1,0 +1,639 @@
+{
+  "id": 213,
+  "article": {
+    "id": 282,
+    "title": "Dramatic rise in whale and dolphin strandings in Scotland Research",
+    "content": "Dramatic rise in whale and dolphin strandings in Scotland\n\nResearch shows steep increases over past 30 years, after summer of strandings across Europe\n\n\nThe number of marine mammals stranded in Scotland has risen dramatically in the past 30 years, a study has found.\n\nFrom 1992 to 2022, 5,147 cetaceans died on Scottish shores, and a new paper shows steep increases in the rate of strandings of up to 800% in some species, continuing exponentially every year.\n\nThe paper, by the University of Glasgow’s Scottish marine animal stranding scheme (Smass), follows this summer’s extraordinary sequence of rarely seen, deep-diving whale species stranding on northern European shores. Over a period of just over two weeks, 36 beaked whales and pilot whales were found in locations from western and southern Ireland to Orkney, Norfolk, the Netherlands and southern Sweden. The animals appeared to have entered shallow seas where they could not forage for their usual foods such as deep-sea squid.\n\nThe widespread locations of these events is provoking serious concern, especially among volunteer groups who work to save the stranded whales – without success, in all of the above cases.\n\n“Clusters of beaked whales should raise suspicions,” said Dr Andrew Brownlow, the director of Smass.\n\nIt is believed that sonic disturbance can cause deep-diving whales to strand. Rachel Lennon, the lead author of the paper published in the journal Scientific Reports, said that in Scotland “sources of anthropogenic noise are abundant, including seismic survey air guns and drilling from industrial construction”.\n\nThe new paper does not cite concerns that military sonar exercises in the open ocean are a known factor in such events. Brownlow noted that a “globally unprecendented number” of 118 stranded beaked whales off Ireland and western Scotland in 2018 was traced to a single sound source off the continental shelf.\n\nThe paper appears only weeks after Smass scientists attended the strandings of four northern bottlenose whales – another beaked whale species – and a pod of 23 pilot whales on the Orkney islands. The pilot whale stranding came almost exactly a year after a record 77 of the same species stranded on the same Orkney beach. A total of 150 animals have mass stranded off Scotland this year.\n\nSmass scientists are also concerned that the number of stranded baleen whales such as fin, minke and humpback whales has risen sharply over the survey period. This may be due to more animals moving north as waters warm due to climate breakdown. It may also be a delayed result of the cessation of whale hunting – Lennon noted that “as populations begin to recover from the impacts of historic whaling, reports of entanglement have increased”.\n\nAs surface feeders, baleen whales are prone to being caught in fishing gear, leading to protracted deaths from starvation or infection. The paper also shows an increase in the number of stranded common dolphins and harbour porpoises, which can be vulnerable to collisions with leisure craft.\n\nThe 30-year report shows that stranded whales and dolphins act as “sentinels” – visible warning signs of how human activity is affecting the marine environment.\n\n“Clearly the oceans are changing,” Brownlow said, “and Scotland is on the edge of this flux. We now get sperm whales calving off our shores whereas we never saw females in these northern waters before. Beaked whales only used to be recorded in small numbers in the autumn. Temperature, salinity, distribution of prey, oceanic heatwaves – the pattern is moving, and we need to be better at working out where these animals are, and when.\n\n“This is the new normal, and we must tread as softly as we can.”",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-28T22:46:31.935778+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : en\n- **Personnes** : Dr Andrew Brownlow, Rachel Lennon\n- **Organisations** : University of Glasgow, Scottish marine animal stranding scheme, Smass, Scientific Reports\n- **Lieux** : Scotland, Europe, Scottish shores, northern European shores, western and southern Ireland, Orkney, Norfolk, the Netherlands, southern Sweden, Ireland, western Scotland, Orkney islands\n- **Valeurs numériques** : 30 years (30.0 years), 1992 (1992.0 None), 2022 (2022.0 None), 5,147 (5147.0 None), 800% (800.0 %), 36 (36.0 None), two weeks, 118 (118.0 None), 2018 (2018.0 None), four (4.0 None), 23 (23.0 None), 77 (77.0 None), 150 (150.0 None), 30-year (30.0 year)\n\n## Suggestions d’angles\n\n### 1. Mapping the Soundscape: Human Noise and Marine Life\nInvestigate the correlation between anthropogenic noise sources and cetacean strandings. Visualize a map of noise pollution hotspots alongside stranding events to highlight areas of concern.\n\n### 2. Climate Change and Whale Migrations: A Northern Shift\nExamine how warming waters and changing prey distributions are altering whale migration patterns. Use data to illustrate shifts in whale sightings and strandings in northern waters over the past decades.\n\n### 3. The Silent Threat: Fishing Gear and Baleen Whales\nAnalyze the rise in baleen whale entanglements with fishing gear as whale populations recover from historic hunting. Provide a comparative analysis of entanglement incidents by region and species.\n\n### 4. A 30-Year Surge: Visualizing Cetacean Strandings in Scotland\nCreate an interactive timeline showing the exponential increase in cetacean strandings in Scotland. Highlight key events and potential causes to offer a comprehensive overview of this alarming trend.\n\n### 5. Whales on the Beach: Sentinel Species in Crisis\nExplore the role of stranded whales and dolphins as indicators of ocean health. Investigate how these sentinel events reflect broader environmental changes, integrating data on ocean temperature, salinity, and human activity.\n",
+  "created_at": "2025-08-28T22:47:06.934846+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Mapping the Soundscape: Human Noise and Marine Life",
+      "description": "Investigate the correlation between anthropogenic noise sources and cetacean strandings. Visualize a map of noise pollution hotspots alongside stranding events to highlight areas of concern.",
+      "keywords": [
+        "marine noise",
+        "ocean sound",
+        "human impact",
+        "marine life",
+        "acoustic pollution"
+      ],
+      "datasets": [
+        {
+          "title": "Ocean Noise and Marine Life",
+          "description": "Comprehensive information on the impact of ocean noise on marine life, including cetaceans.",
+          "link": "https://www.noaa.gov/ocean-exploration-research/ocean-noise",
+          "source": "NOAA",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.noaa.gov/ocean-exploration-research/ocean-noise",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.noaa.gov/ocean-exploration-research/ocean-noise",
+            "error": "HTTP 403"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Marine Noise Pollution Data",
+          "description": "Access to datasets on marine noise pollution and its effects on marine ecosystems.",
+          "link": "https://emodnet.ec.europa.eu/en/human-activities",
+          "source": "EMODnet",
+          "source_url": "https://emodnet.ec.europa.eu/en/human-activities",
+          "source_name": "EMODnet",
+          "validation": {
+            "input_url": "https://www.emodnet-humanactivities.eu/search?q=noise",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://emodnet.ec.europa.eu/en/human-activities",
+            "error": null
+          }
+        },
+        {
+          "title": "Cetacean Strandings Database",
+          "description": "Database of cetacean stranding events worldwide, useful for analyzing trends and correlations.",
+          "link": "https://www.iwc.int/strandings",
+          "source": "International Whaling Commission",
+          "source_url": "https://www.iwc.int/strandings",
+          "source_name": "International Whaling Commission",
+          "validation": {
+            "input_url": "https://www.iwc.int/strandings",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.iwc.int/strandings",
+            "error": "HTTP 403"
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Carte des hotspots de pollution sonore marine",
+          "chart_type": "choropleth",
+          "x": "Zones géographiques",
+          "y": "Niveau de pollution sonore",
+          "note": "Source : données de suivi acoustique océanique"
+        },
+        {
+          "title": "Corrélation entre bruit anthropique et échouages de cétacés",
+          "chart_type": "scatter",
+          "x": "Niveau de bruit anthropique",
+          "y": "Nombre d'échouages de cétacés",
+          "note": "Données agrégées par région et période"
+        },
+        {
+          "title": "Évolution temporelle des échouages de cétacés",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre d'échouages",
+          "note": "Source : rapports annuels sur les échouages de cétacés"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Climate Change and Whale Migrations: A Northern Shift",
+      "description": "Examine how warming waters and changing prey distributions are altering whale migration patterns. Use data to illustrate shifts in whale sightings and strandings in northern waters over the past decades.",
+      "keywords": [
+        "whale migration",
+        "climate impact",
+        "ocean temperature",
+        "marine ecosystems",
+        "species distribution"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "NOAA Marine Mammal Stock Assessments",
+          "description": "NOAA offers comprehensive assessments of marine mammal stocks, including data on whale migrations and sightings.",
+          "link": "https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-stock-assessment-reports",
+          "source": "NOAA",
+          "source_url": "https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-stock-assessment-reports",
+          "source_name": "NOAA",
+          "validation": {
+            "input_url": "https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-stock-assessment-reports",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-stock-assessment-reports",
+            "error": null
+          }
+        },
+        {
+          "title": "IWC Whale Population Estimates",
+          "description": "The International Whaling Commission provides data on whale populations, migration patterns, and strandings globally.",
+          "link": "https://iwc.int/estimate",
+          "source": "International Whaling Commission",
+          "source_url": "https://iwc.int/estimate",
+          "source_name": "International Whaling Commission",
+          "validation": {
+            "input_url": "https://iwc.int/estimate",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://iwc.int/estimate",
+            "error": "HTTP 403"
+          }
+        },
+        {
+          "title": "OBIS - Ocean Biogeographic Information System",
+          "description": "OBIS provides access to global marine species data, including whale sightings and distribution changes over time.",
+          "link": "https://obis.org/",
+          "source": "Ocean Biogeographic Information System",
+          "source_url": "https://obis.org/",
+          "source_name": "Ocean Biogeographic Information System",
+          "validation": {
+            "input_url": "https://obis.org/",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://obis.org/",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Évolution des migrations des baleines vers le nord (1980-2023)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de baleines observées",
+          "note": "Source : Observations maritimes internationales, données annuelles"
+        },
+        {
+          "title": "Distribution des échouages de baleines par latitude (1980-2023)",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Latitude",
+          "note": "Source : Rapports d'échouages, données géolocalisées"
+        },
+        {
+          "title": "Changement des températures des eaux et migration des baleines",
+          "chart_type": "choropleth",
+          "x": "Région",
+          "y": "Changement de température (°C)",
+          "note": "Source : NOAA, données de température des océans"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "The Silent Threat: Fishing Gear and Baleen Whales",
+      "description": "Analyze the rise in baleen whale entanglements with fishing gear as whale populations recover from historic hunting. Provide a comparative analysis of entanglement incidents by region and species.",
+      "keywords": [
+        "fishing gear",
+        "baleen whales",
+        "marine entanglement",
+        "whale conservation",
+        "ocean pollution"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Global Whale Entanglement Database",
+          "description": "Comprehensive data on whale entanglement incidents worldwide, categorized by species and region.",
+          "link": "https://www.iwc.int/entanglement",
+          "source": "International Whaling Commission",
+          "source_url": "https://www.iwc.int/entanglement",
+          "source_name": "International Whaling Commission",
+          "validation": {
+            "input_url": "https://www.iwc.int/entanglement",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.iwc.int/entanglement",
+            "error": "HTTP 403"
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Baleen Whale Entanglements by Region (2000-2023)",
+          "chart_type": "choropleth",
+          "x": "Region",
+          "y": "Number of Entanglements",
+          "note": "Data source: Global Whale Entanglement Database, annual data."
+        },
+        {
+          "title": "Species-Specific Entanglements (2000-2023)",
+          "chart_type": "bar",
+          "x": "Whale Species",
+          "y": "Number of Entanglements",
+          "note": "Focus on most affected species like the North Atlantic right whale."
+        },
+        {
+          "title": "Annual Trend of Whale Entanglements (2000-2023)",
+          "chart_type": "line",
+          "x": "Year",
+          "y": "Number of Entanglements",
+          "note": "Highlights the correlation with whale population recovery."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "A 30-Year Surge: Visualizing Cetacean Strandings in Scotland",
+      "description": "Create an interactive timeline showing the exponential increase in cetacean strandings in Scotland. Highlight key events and potential causes to offer a comprehensive overview of this alarming trend.",
+      "keywords": [
+        "cetacean strandings",
+        "marine mammals",
+        "Scotland coast",
+        "wildlife data",
+        "environmental trends"
+      ],
+      "datasets": [
+        {
+          "title": "Scottish Marine Animal Strandings Scheme (SMASS)",
+          "description": "Provides data on cetacean strandings in Scotland, including species, locations, and potential causes over the years.",
+          "link": "https://data.marine.gov.scot/search/type/dataset",
+          "source": "Marine Scotland",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://data.marine.gov.scot/dataset/scottish-marine-animal-strandings-scheme",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://data.marine.gov.scot/search/type/dataset",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "European Cetacean Society Database",
+          "description": "Access to data and research on cetacean strandings and conservation efforts across Europe, including Scotland.",
+          "link": "https://www.europeancetaceansociety.eu/",
+          "source": "European Cetacean Society",
+          "source_url": "https://www.europeancetaceansociety.eu/",
+          "source_name": "European Cetacean Society",
+          "validation": {
+            "input_url": "https://www.europeancetaceansociety.eu/",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.europeancetaceansociety.eu/",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Évolution des échouages de cétacés (1990-2020)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre d'échouages",
+          "note": "Source : Scottish Marine Animal Strandings Scheme"
+        },
+        {
+          "title": "Événements clés influençant les échouages",
+          "chart_type": "timeline",
+          "x": "Année",
+          "y": "Événements",
+          "note": "Inclure les marées noires, changements climatiques, etc."
+        },
+        {
+          "title": "Répartition géographique des échouages",
+          "chart_type": "choropleth",
+          "x": "Région",
+          "y": "Nombre d'échouages",
+          "note": "Visualisation par région côtière en Écosse"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Whales on the Beach: Sentinel Species in Crisis",
+      "description": "Explore the role of stranded whales and dolphins as indicators of ocean health. Investigate how these sentinel events reflect broader environmental changes, integrating data on ocean temperature, salinity, and human activity.",
+      "keywords": [
+        "whale stranding",
+        "marine conservation",
+        "sentinel species",
+        "ocean health",
+        "biodiversity crisis"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Marine Mammals and Ocean Health",
+          "description": "Explore data on marine mammal strandings and their role as indicators of ocean health, provided by the International Whaling Commission.",
+          "link": "https://iwc.int/strandings",
+          "source": "International Whaling Commission",
+          "source_url": "https://iwc.int/strandings",
+          "source_name": "International Whaling Commission",
+          "validation": {
+            "input_url": "https://iwc.int/strandings",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://iwc.int/strandings",
+            "error": "HTTP 403"
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Échouages de cétacés par année",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre d'échouages",
+          "note": "Source : Réseaux d'observation des échouages, données annuelles"
+        },
+        {
+          "title": "Température et salinité moyennes de l'océan",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Région océanique",
+          "note": "Source : NOAA, données mensuelles"
+        },
+        {
+          "title": "Activités humaines et échouages de cétacés",
+          "chart_type": "scatter",
+          "x": "Indice d'activité humaine",
+          "y": "Nombre d'échouages",
+          "note": "Source : Études environnementales, données annuelles"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5668,
+      "type": "PER",
+      "value": "Dr Andrew Brownlow",
+      "context": null
+    },
+    {
+      "id": 5669,
+      "type": "PER",
+      "value": "Rachel Lennon",
+      "context": null
+    },
+    {
+      "id": 5670,
+      "type": "ORG",
+      "value": "University of Glasgow",
+      "context": null
+    },
+    {
+      "id": 5671,
+      "type": "ORG",
+      "value": "Scottish marine animal stranding scheme",
+      "context": null
+    },
+    {
+      "id": 5672,
+      "type": "ORG",
+      "value": "Smass",
+      "context": null
+    },
+    {
+      "id": 5673,
+      "type": "ORG",
+      "value": "Scientific Reports",
+      "context": null
+    },
+    {
+      "id": 5674,
+      "type": "LOC",
+      "value": "Scotland",
+      "context": null
+    },
+    {
+      "id": 5675,
+      "type": "LOC",
+      "value": "Europe",
+      "context": null
+    },
+    {
+      "id": 5676,
+      "type": "LOC",
+      "value": "Scottish shores",
+      "context": null
+    },
+    {
+      "id": 5677,
+      "type": "LOC",
+      "value": "northern European shores",
+      "context": null
+    },
+    {
+      "id": 5678,
+      "type": "LOC",
+      "value": "western and southern Ireland",
+      "context": null
+    },
+    {
+      "id": 5679,
+      "type": "LOC",
+      "value": "Orkney",
+      "context": null
+    },
+    {
+      "id": 5680,
+      "type": "LOC",
+      "value": "Norfolk",
+      "context": null
+    },
+    {
+      "id": 5681,
+      "type": "LOC",
+      "value": "the Netherlands",
+      "context": null
+    },
+    {
+      "id": 5682,
+      "type": "LOC",
+      "value": "southern Sweden",
+      "context": null
+    },
+    {
+      "id": 5683,
+      "type": "LOC",
+      "value": "Ireland",
+      "context": null
+    },
+    {
+      "id": 5684,
+      "type": "LOC",
+      "value": "western Scotland",
+      "context": null
+    },
+    {
+      "id": 5685,
+      "type": "LOC",
+      "value": "Orkney islands",
+      "context": null
+    },
+    {
+      "id": 5686,
+      "type": "NUM",
+      "value": "30.0",
+      "context": null
+    },
+    {
+      "id": 5687,
+      "type": "NUM",
+      "value": "1992.0",
+      "context": null
+    },
+    {
+      "id": 5688,
+      "type": "NUM",
+      "value": "2022.0",
+      "context": null
+    },
+    {
+      "id": 5689,
+      "type": "NUM",
+      "value": "5147.0",
+      "context": null
+    },
+    {
+      "id": 5690,
+      "type": "NUM",
+      "value": "800.0",
+      "context": null
+    },
+    {
+      "id": 5691,
+      "type": "NUM",
+      "value": "36.0",
+      "context": null
+    },
+    {
+      "id": 5692,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5693,
+      "type": "NUM",
+      "value": "118.0",
+      "context": null
+    },
+    {
+      "id": 5694,
+      "type": "NUM",
+      "value": "2018.0",
+      "context": null
+    },
+    {
+      "id": 5695,
+      "type": "NUM",
+      "value": "4.0",
+      "context": null
+    },
+    {
+      "id": 5696,
+      "type": "NUM",
+      "value": "23.0",
+      "context": null
+    },
+    {
+      "id": 5697,
+      "type": "NUM",
+      "value": "77.0",
+      "context": null
+    },
+    {
+      "id": 5698,
+      "type": "NUM",
+      "value": "150.0",
+      "context": null
+    },
+    {
+      "id": 5699,
+      "type": "NUM",
+      "value": "30.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 868,
+      "title": "Mapping the Soundscape: Human Noise and Marine Life",
+      "description": "Investigate the correlation between anthropogenic noise sources and cetacean strandings. Visualize a map of noise pollution hotspots alongside stranding events to highlight areas of concern.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 869,
+      "title": "Climate Change and Whale Migrations: A Northern Shift",
+      "description": "Examine how warming waters and changing prey distributions are altering whale migration patterns. Use data to illustrate shifts in whale sightings and strandings in northern waters over the past decades.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 870,
+      "title": "The Silent Threat: Fishing Gear and Baleen Whales",
+      "description": "Analyze the rise in baleen whale entanglements with fishing gear as whale populations recover from historic hunting. Provide a comparative analysis of entanglement incidents by region and species.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 871,
+      "title": "A 30-Year Surge: Visualizing Cetacean Strandings in Scotland",
+      "description": "Create an interactive timeline showing the exponential increase in cetacean strandings in Scotland. Highlight key events and potential causes to offer a comprehensive overview of this alarming trend.",
+      "order": 3,
+      "visualizations": []
+    },
+    {
+      "id": 872,
+      "title": "Whales on the Beach: Sentinel Species in Crisis",
+      "description": "Explore the role of stranded whales and dolphins as indicators of ocean health. Investigate how these sentinel events reflect broader environmental changes, integrating data on ocean temperature, salinity, and human activity.",
+      "order": 4,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4331,
+      "title": "Ocean Noise and Marine Life",
+      "description": "Comprehensive information on the impact of ocean noise on marine life, including cetaceans.",
+      "link": "https://www.noaa.gov/ocean-exploration-research/ocean-noise",
+      "source": "NOAA",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4332,
+      "title": "Scottish Marine Animal Strandings Scheme (SMASS)",
+      "description": "Provides data on cetacean strandings in Scotland, including species, locations, and potential causes over the years.",
+      "link": "https://data.marine.gov.scot/search/type/dataset",
+      "source": "Marine Scotland",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 35030,
+    "entities_count": 32,
+    "angles_count": 5,
+    "datasets_count": 2,
+    "angle_resources_count": 5
+  }
+}
