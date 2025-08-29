@@ -1,0 +1,586 @@
+{
+  "id": 215,
+  "article": {
+    "id": 284,
+    "title": "opinion A curfew won't save Indianapolis teens. Investment in them",
+    "content": "opinion\nA curfew won't save Indianapolis teens. Investment in them will. | Opinion\n\nTeens are seeking stimulation because they're bored, connection because they're lonely and support we've taken away from them.\n\nIt was half past midnight. We were returning from a wedding, stunned at the sight of hundreds of teens lining the sidewalks downtown. I recognized one as my student, Dakari. The next morning, I saw the headline: gunfire, 2 a.m., three teens wounded. They never identify juveniles by name. For teachers, it’s torturous — were they one of ours?\n\nI stopped Dakari in the hall Monday. “I clocked you out late Saturday night. Everything good?” Dakari is a natural leader, unafraid of truth, which earned him the respect of his classmates. And luckily, he trusted me. Yeah, he was less than a block away. He was shaken, but unhurt. “I hope that’s the last time you’re out that late,\" I said.\n\n“Nah, we’re going out again next weekend.”\n\nMy heart sank at his response. It sank again when Indianapolis approved its new curfew this month — including a proposal to charge parents fines. It seems easy, right? But easy solutions are rarely good ones.\n\nBriggs: Mike Braun grandstands on Indianapolis crime while murders drop 24%\n\nIndianapolis has become a city that is afraid of its own children. I see teens demonized across social media as “feral” and “violent.” But these same teens are the most creative, savvy and thoughtful students I know. They are full of ideas about how to improve their community, and they jump at the chance to help. Unfortunately, we offer few ways to use these aptitudes.\n\nWe're offering teens too little help\n\nStudents in out-of-school programs have lower absenteeism and delinquency and better scores and earnings. In Baltimore, targeted youth programs almost single-handedly cut violence by a third. But in Indiana, we don’t have enough programs for them. For every child in one, three more are waitlisted, with demand outpacing supply.\n\nMeanwhile, the percentage of children alone and unsupervised has actually decreased. However, being home doesn’t mean children are safe. More youth are depressed, isolated or contemplating suicide than ever before, especially teen girls. And more teens are armed with guns and dying from them, including in rural counties. Safe storage proposals routinely fail, so Indiana has one of the highest rates of accidental child shootings in the country.\n\nSo why are so many teens out after dark? Like most of his peers, Dakari wasn’t out there to hurt anyone — he was there because his friends and family were there. Implemented alone, a curfew is a band-aid that makes isolation worse. A lasting solution must address root causes.\n\nTeens are seeking what we all need\n\n\nTeens are seeking stimulation because they’re bored. Out-of-school programs may be facing federal freezes and state shortfalls, but local parks, libraries, and nonprofits are a nexus for youth sports, clubs, arts, education and volunteering. But Indy’s parks are woefully underfunded — we pay less than half the national median. Our libraries once fared better, but recent cuts have decimated that lead. It’s no wonder Indiana ranks bottom ten for supporting children. We must invest more.\n\nTeens are seeking connection because they’re lonely. Teens were spending less time with friends even before COVID, but they’re also isolated from their families — 40% of children lack strong emotional bonds with their parents. One solution is having mentor-like adults outside home. But young people report fewer mentor figures than ever. Older people describe their teenage years as full of feedback from adults in their community. That community has fragmented, and youth mental health has deteriorated alongside it. We can all do more to engage youth in our neighborhoods.\n\nBriggs: Fountain Square camp shows Indianapolis' homelessness strategy is broken\n\nFinally, teens are seeking support. But we’ve designed a system that makes it almost impossible to care for our children. Indiana restricts teaching teens what could get them pregnant. New parents lack guaranteed paid parental leave. Many towns sit in tri-county childcare deserts — we rank worst in the country, costing billions. Parents must work to keep Medicaid, so kids go unsupervised. Child abuse reports often go uninvestigated, even as unhoused children sleep at DCS offices. And Indiana’s youth homelessness rate continues to balloon faster than the national rate. It’s all too easy to blame parents. Yet we’ve adopted policies that abandon them. Let’s flip that script and put families first.\n\nI know exactly what would have kept Dakari from going downtown — he needed something better to do. We all have a role in that responsibility. Let’s make Indianapolis a city that’s safe and enriching for our youth.\n\nRonak Shah is a middle school science teacher in Indianapolis.",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-29T00:58:25.020930+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : en\n- **Personnes** : Dakari, Mike Braun, Ronak Shah\n- **Lieux** : Indianapolis, Baltimore, Indiana, Indy, Fountain Square\n- **Valeurs numériques** : half past midnight, 2 a.m., three (3.0 None), 24% (24.0 %), a third, one (1.0 None), three (3.0 None), 40% (40.0 %)\n\n## Suggestions d’angles\n\n### 1. Mapping Youth Program Deserts in Indianapolis\nVisualize areas of Indianapolis with limited access to youth programs and compare them to regions with higher rates of teen incidents. This could highlight the correlation between program availability and youth activity levels.\n\n### 2. The Cost of Curfews: Financial and Social Impacts\nAnalyze the financial burden of curfew fines on families and compare it to the costs of implementing comprehensive youth programs. This could reveal the economic inefficiencies of punitive measures versus supportive investments.\n\n### 3. From Isolation to Inclusion: Rebuilding Community Bonds\nExamine historical data on community engagement levels and their impact on youth well-being. This could help identify strategies to strengthen community ties and improve mental health outcomes for teens.\n\n### 4. Investing in Youth: A Comparative Analysis of State Funding\nCompare Indiana's investment in youth services with other states and assess the outcomes. Highlight which states have achieved success and explore what Indianapolis can learn from them to better support its youth.\n\n### 5. The Rising Tide of Youth Homelessness: A Statewide Crisis\nInvestigate the trends in youth homelessness in Indiana and its causes. Use data visualizations to show how policy changes could address this growing issue and improve outcomes for vulnerable children.\n",
+  "created_at": "2025-08-29T00:59:04.236623+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Mapping Youth Program Deserts in Indianapolis",
+      "description": "Visualize areas of Indianapolis with limited access to youth programs and compare them to regions with higher rates of teen incidents. This could highlight the correlation between program availability and youth activity levels.",
+      "keywords": [
+        "youth programs",
+        "Indianapolis",
+        "service gaps",
+        "community resources",
+        "program accessibility"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Youth Program and Services Data",
+          "description": "A database providing information on various youth programs and services available in Indianapolis.",
+          "link": "https://data.indy.gov/dataset?q=youth+programs",
+          "source": "City of Indianapolis Open Data Portal",
+          "source_url": "https://data.indy.gov/dataset?q=youth+programs",
+          "source_name": "City of Indianapolis Open Data Portal",
+          "validation": {
+            "input_url": "https://data.indy.gov/dataset?q=youth+programs",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://data.indy.gov/dataset?q=youth+programs",
+            "error": null
+          }
+        },
+        {
+          "title": "Crime Data for Indianapolis",
+          "description": "Access to detailed crime reports and statistics for Indianapolis, useful for analyzing teen incidents.",
+          "link": "https://data.indy.gov/dataset?q=crime",
+          "source": "City of Indianapolis Open Data Portal",
+          "source_url": "https://data.indy.gov/dataset?q=crime",
+          "source_name": "City of Indianapolis Open Data Portal",
+          "validation": {
+            "input_url": "https://data.indy.gov/dataset?q=crime",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://data.indy.gov/dataset?q=crime",
+            "error": null
+          }
+        },
+        {
+          "title": "American Community Survey (ACS) Data",
+          "description": "Provides demographic and economic data which can be used to analyze community needs and resources.",
+          "link": "https://data.census.gov/cedsci/",
+          "source": "U.S. Census Bureau",
+          "source_url": "https://data.census.gov/cedsci/",
+          "source_name": "U.S. Census Bureau",
+          "validation": {
+            "input_url": "https://data.census.gov/cedsci/",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://data.census.gov/cedsci/",
+            "error": "HTTP 403"
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Carte des déserts de programmes jeunesse à Indianapolis",
+          "chart_type": "choropleth",
+          "x": "Zones d'Indianapolis",
+          "y": "Disponibilité des programmes jeunesse",
+          "note": "Utiliser les données des services municipaux et des organisations locales pour identifier les zones avec peu de programmes."
+        },
+        {
+          "title": "Corrélation entre incidents adolescents et programmes jeunesse",
+          "chart_type": "scatter",
+          "x": "Disponibilité des programmes jeunesse",
+          "y": "Taux d'incidents adolescents",
+          "note": "Comparer les données sur les incidents adolescents avec la disponibilité des programmes pour chaque zone."
+        },
+        {
+          "title": "Taux d'incidents adolescents par zone",
+          "chart_type": "heatmap",
+          "x": "Zones d'Indianapolis",
+          "y": "Taux d'incidents adolescents",
+          "note": "Visualiser les zones avec des taux élevés d'incidents pour identifier les priorités d'intervention."
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "The Cost of Curfews: Financial and Social Impacts",
+      "description": "Analyze the financial burden of curfew fines on families and compare it to the costs of implementing comprehensive youth programs. This could reveal the economic inefficiencies of punitive measures versus supportive investments.",
+      "keywords": [
+        "curfew costs",
+        "economic impact",
+        "social effects",
+        "public safety",
+        "business losses"
+      ],
+      "datasets": [
+        {
+          "title": "INSEE Family Budgets Survey",
+          "description": "Provides insights into the financial burden on families, including impacts of fines and penalties in France.",
+          "link": "https://www.insee.fr/fr/recherche?texte=budget%20des%20familles",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/recherche?texte=budget%20des%20familles",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/recherche?texte=budget%20des%20familles",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Eurostat Crime and Criminal Justice Statistics",
+          "description": "Provides data on crime rates, including fines and penalties, across EU countries, useful for analyzing the financial burden of curfew fines.",
+          "link": "https://ec.europa.eu/eurostat/web/crime",
+          "source": "Eurostat",
+          "source_url": "https://ec.europa.eu/eurostat/web/crime",
+          "source_name": "Eurostat",
+          "validation": {
+            "input_url": "https://ec.europa.eu/eurostat/web/crime",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://ec.europa.eu/eurostat/web/crime",
+            "error": null
+          }
+        },
+        {
+          "title": "OECD Social Expenditure Database (SOCX)",
+          "description": "Offers data on public spending on social programs, allowing comparison with costs of implementing youth programs.",
+          "link": "https://www.oecd.org/social/expenditure.htm",
+          "source": "OECD",
+          "source_url": "https://www.oecd.org/social/expenditure.htm",
+          "source_name": "OECD",
+          "validation": {
+            "input_url": "https://www.oecd.org/social/expenditure.htm",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.oecd.org/social/expenditure.htm",
+            "error": "HTTP 403"
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Répartition des amendes de couvre-feu par revenu familial",
+          "chart_type": "bar",
+          "x": "Niveau de revenu familial",
+          "y": "Montant total des amendes (€)",
+          "note": "Données issues des rapports municipaux sur les amendes de couvre-feu."
+        },
+        {
+          "title": "Comparaison des coûts : amendes vs programmes pour jeunes",
+          "chart_type": "donut + bar",
+          "x": "Type de dépense",
+          "y": "Coût annuel moyen (€)",
+          "note": "Inclut les coûts des amendes et les budgets des programmes jeunesse."
+        },
+        {
+          "title": "Impact social des couvre-feux sur les jeunes",
+          "chart_type": "heatmap",
+          "x": "Impact social (éducation, emploi, santé)",
+          "y": "Niveau de gravité",
+          "note": "Basé sur des études de cas et des enquêtes sociales."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "From Isolation to Inclusion: Rebuilding Community Bonds",
+      "description": "Examine historical data on community engagement levels and their impact on youth well-being. This could help identify strategies to strengthen community ties and improve mental health outcomes for teens.",
+      "keywords": [
+        "community engagement",
+        "social inclusion",
+        "community programs",
+        "neighborhood initiatives",
+        "social cohesion"
+      ],
+      "datasets": [
+        {
+          "title": "Eurostat Database on Social Participation",
+          "description": "Access comprehensive data on social participation and its impact on mental health within the European Union.",
+          "link": "https://ec.europa.eu/eurostat/web/main/search?q=social+participation",
+          "source": "Eurostat",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://ec.europa.eu/eurostat/web/main/search?q=social+participation",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://ec.europa.eu/eurostat/web/main/search?q=social+participation",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "OECD Social and Welfare Statistics",
+          "description": "Explore data on social engagement, community participation, and their effects on youth well-being across OECD countries.",
+          "link": "https://data-explorer.oecd.org/vis?df[ds]=DisseminateFinalDMZ&df[id]=DSD_SOCX_AGG@DF_SOCX_AGG&df[ag]=OECD.ELS.SPD",
+          "source": "OECD",
+          "source_url": "https://data-explorer.oecd.org/vis?df[ds]=DisseminateFinalDMZ&df[id]=DSD_SOCX_AGG@DF_SOCX_AGG&df[ag]=OECD.ELS.SPD",
+          "source_name": "OECD",
+          "validation": {
+            "input_url": "https://stats.oecd.org/Index.aspx?DataSetCode=SOCX_AGG",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://data-explorer.oecd.org/vis?df[ds]=DisseminateFinalDMZ&df[id]=DSD_SOCX_AGG@DF_SOCX_AGG&df[ag]=OECD.ELS.SPD",
+            "error": null
+          }
+        },
+        {
+          "title": "World Bank Social Capital Surveys",
+          "description": "Analyze data on community engagement and its correlation with youth mental health in various countries.",
+          "link": "https://databank.worldbank.org/ddperror.aspx?aspxerrorpath=/reports.aspx",
+          "source": "World Bank",
+          "source_url": "https://databank.worldbank.org/ddperror.aspx?aspxerrorpath=/reports.aspx",
+          "source_name": "World Bank",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Engagement communautaire des jeunes (2000-2023)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Niveau d'engagement (%)",
+          "note": "Source : Enquêtes nationales sur l'engagement communautaire"
+        },
+        {
+          "title": "Impact de l'engagement sur le bien-être des jeunes",
+          "chart_type": "bar",
+          "x": "Niveau d'engagement",
+          "y": "Score de bien-être moyen",
+          "note": "Données issues d'études longitudinales sur la santé mentale des jeunes"
+        },
+        {
+          "title": "Comparaison internationale des liens communautaires",
+          "chart_type": "choropleth",
+          "x": "Pays",
+          "y": "Indice de liens communautaires",
+          "note": "Source : Organisation mondiale de la santé, données 2023"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Investing in Youth: A Comparative Analysis of State Funding",
+      "description": "Compare Indiana's investment in youth services with other states and assess the outcomes. Highlight which states have achieved success and explore what Indianapolis can learn from them to better support its youth.",
+      "keywords": [
+        "youth programs",
+        "state funding",
+        "education grants",
+        "youth investment",
+        "government support"
+      ],
+      "datasets": [
+        {
+          "title": "Youth Services Expenditure Data",
+          "description": "Explore state-level data on expenditures for youth services, including education and welfare programs.",
+          "link": "https://www.census.gov/data/datasets.html?q=youth+services+expenditure",
+          "source": "U.S. Census Bureau",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.census.gov/data/datasets.html?q=youth+services+expenditure",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.census.gov/data/datasets.html?q=youth+services+expenditure",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kids Count Data Center",
+          "description": "Comprehensive data on child well-being across the U.S., including economic, education, and health indicators.",
+          "link": "https://datacenter.aecf.org/",
+          "source": "Annie E. Casey Foundation",
+          "source_url": "https://datacenter.aecf.org/",
+          "source_name": "Annie E. Casey Foundation",
+          "validation": {
+            "input_url": "https://datacenter.kidscount.org/",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://datacenter.aecf.org/",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Comparaison des financements jeunesse par État",
+          "chart_type": "bar",
+          "x": "État",
+          "y": "Montant du financement (millions $)",
+          "note": "Données 2023, source : Département de l'Éducation des États-Unis"
+        },
+        {
+          "title": "Résultats des investissements jeunesse par État",
+          "chart_type": "scatter",
+          "x": "Montant du financement (millions $)",
+          "y": "Indice de succès des programmes jeunesse",
+          "note": "Indice basé sur des critères éducatifs et sociaux"
+        },
+        {
+          "title": "Évolution des financements jeunesse à Indiana",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Montant du financement (millions $)",
+          "note": "Analyse des tendances sur 10 ans, source : Gouvernement de l'Indiana"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "The Rising Tide of Youth Homelessness: A Statewide Crisis",
+      "description": "Investigate the trends in youth homelessness in Indiana and its causes. Use data visualizations to show how policy changes could address this growing issue and improve outcomes for vulnerable children.",
+      "keywords": [
+        "youth homelessness",
+        "homeless shelters",
+        "statewide crisis",
+        "housing insecurity",
+        "youth services"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "National Center for Homeless Education State Data",
+          "description": "State-level data on homeless children and youth, including educational impacts and policy implications.",
+          "link": "https://nche.ed.gov/data/",
+          "source": "National Center for Homeless Education",
+          "source_url": "https://nche.ed.gov/data/",
+          "source_name": "National Center for Homeless Education",
+          "validation": {
+            "input_url": "https://nche.ed.gov/data/",
+            "status": "error",
+            "http_status": null,
+            "final_url": null,
+            "error": "Timeout"
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Trends in Youth Homelessness in Indiana (2010-2023)",
+          "chart_type": "line",
+          "x": "Year",
+          "y": "Number of Homeless Youth",
+          "note": "Data from Indiana Department of Education and local shelters"
+        },
+        {
+          "title": "Causes of Youth Homelessness in Indiana",
+          "chart_type": "bar",
+          "x": "Causes",
+          "y": "Percentage of Cases",
+          "note": "Survey data from Indiana Coalition for Homelessness Intervention"
+        },
+        {
+          "title": "Impact of Policy Changes on Youth Homelessness",
+          "chart_type": "donut + bar",
+          "x": "Policy Change",
+          "y": "Reduction in Homelessness (%)",
+          "note": "Hypothetical model based on policy proposals from Indiana Housing and Community Development Authority"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5732,
+      "type": "PER",
+      "value": "Dakari",
+      "context": null
+    },
+    {
+      "id": 5733,
+      "type": "PER",
+      "value": "Mike Braun",
+      "context": null
+    },
+    {
+      "id": 5734,
+      "type": "PER",
+      "value": "Ronak Shah",
+      "context": null
+    },
+    {
+      "id": 5735,
+      "type": "LOC",
+      "value": "Indianapolis",
+      "context": null
+    },
+    {
+      "id": 5736,
+      "type": "LOC",
+      "value": "Baltimore",
+      "context": null
+    },
+    {
+      "id": 5737,
+      "type": "LOC",
+      "value": "Indiana",
+      "context": null
+    },
+    {
+      "id": 5738,
+      "type": "LOC",
+      "value": "Indy",
+      "context": null
+    },
+    {
+      "id": 5739,
+      "type": "LOC",
+      "value": "Fountain Square",
+      "context": null
+    },
+    {
+      "id": 5740,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5741,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5742,
+      "type": "NUM",
+      "value": "3.0",
+      "context": null
+    },
+    {
+      "id": 5743,
+      "type": "NUM",
+      "value": "24.0",
+      "context": null
+    },
+    {
+      "id": 5744,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5745,
+      "type": "NUM",
+      "value": "1.0",
+      "context": null
+    },
+    {
+      "id": 5746,
+      "type": "NUM",
+      "value": "3.0",
+      "context": null
+    },
+    {
+      "id": 5747,
+      "type": "NUM",
+      "value": "40.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 878,
+      "title": "Mapping Youth Program Deserts in Indianapolis",
+      "description": "Visualize areas of Indianapolis with limited access to youth programs and compare them to regions with higher rates of teen incidents. This could highlight the correlation between program availability and youth activity levels.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 879,
+      "title": "The Cost of Curfews: Financial and Social Impacts",
+      "description": "Analyze the financial burden of curfew fines on families and compare it to the costs of implementing comprehensive youth programs. This could reveal the economic inefficiencies of punitive measures versus supportive investments.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 880,
+      "title": "From Isolation to Inclusion: Rebuilding Community Bonds",
+      "description": "Examine historical data on community engagement levels and their impact on youth well-being. This could help identify strategies to strengthen community ties and improve mental health outcomes for teens.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 881,
+      "title": "Investing in Youth: A Comparative Analysis of State Funding",
+      "description": "Compare Indiana's investment in youth services with other states and assess the outcomes. Highlight which states have achieved success and explore what Indianapolis can learn from them to better support its youth.",
+      "order": 3,
+      "visualizations": []
+    },
+    {
+      "id": 882,
+      "title": "The Rising Tide of Youth Homelessness: A Statewide Crisis",
+      "description": "Investigate the trends in youth homelessness in Indiana and its causes. Use data visualizations to show how policy changes could address this growing issue and improve outcomes for vulnerable children.",
+      "order": 4,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4335,
+      "title": "INSEE Family Budgets Survey",
+      "description": "Provides insights into the financial burden on families, including impacts of fines and penalties in France.",
+      "link": "https://www.insee.fr/fr/recherche?texte=budget%20des%20familles",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4336,
+      "title": "Eurostat Database on Social Participation",
+      "description": "Access comprehensive data on social participation and its impact on mental health within the European Union.",
+      "link": "https://ec.europa.eu/eurostat/web/main/search?q=social+participation",
+      "source": "Eurostat",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4337,
+      "title": "Youth Services Expenditure Data",
+      "description": "Explore state-level data on expenditures for youth services, including education and welfare programs.",
+      "link": "https://www.census.gov/data/datasets.html?q=youth+services+expenditure",
+      "source": "U.S. Census Bureau",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 39227,
+    "entities_count": 16,
+    "angles_count": 5,
+    "datasets_count": 3,
+    "angle_resources_count": 5
+  }
+}
