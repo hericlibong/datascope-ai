@@ -1,0 +1,300 @@
+{
+  "id": 222,
+  "article": {
+    "id": 297,
+    "title": "Moustiques tigres : \"Toute la France hexagonale va être touchée,",
+    "content": "Moustiques tigres : \"Toute la France hexagonale va être touchée, et les villes en premier\", prévient un spécialiste\n\nL'insecte a colonisé 81 des 96 départements métropolitains et les maladies qu'il véhicule ne sont désormais plus \"exotiques\". \n\n\nToute la France hexagonale va être touchée, et les villes en premier\", alerte Didier Fontenille, entomologiste, directeur de recherche émérite à l’Institut de recherche pour le développement (IRD), alors que les cas autochtones de contaminations à la dengue(Nouvelle fenêtre) et au chikungunya(Nouvelle fenêtre) battent des records.\n:\nà lire aussi CARTES. Insecte des villes, arrivé par le Sud, qui se déplace grâce aux voitures… Visualisez comment le moustique tigre colonise la France hexagonale\n\nCes maladies \"qu'on considérait comme exotiques par le passé\" touchent maintenant la France hexagonale \"en raison de la présence du moustique tigre et de son abondance dans de plus en plus de départements\". Au total, 81 des 96 départements métropolitains sont considérés comme colonisés. Ceux qui y échappent encore, sont principalement situés en Bretagne, Normandie, dans le nord et dans l'est de la France. Mais \"j'ai le regret d'annoncer aux personnes qui vivent dans ces départements qu'elles seront également touchées\", alerte l'entomologiste. Les villes vont être touchées en premier car elles concentrent des \"îlots de chaleur, qui font que le moustique s'y trouve bien et trouve à manger puisqu'il pique les humains\".\nGénétiquement adapté, hiberne \"comme une marmotte\"\n\nSi la France concentre 65 espèces différentes de moustiques, c'est le moustique tigre qui est en cause. Arrivé en 2004 en France métropolitaine, \"il est originaire d'Asie du Sud-Est, donc c'est un moustique tropical et il est très adapté aux climats chauds, mais génétiquement, il s'est adapté aux climats tempérés\", explique Didier Fontenille. \"Il est capable de passer l'hiver sous forme d'œuf, en hibernation, comme une marmotte\".\n\nMais il se réveille en fonction de la \"durée du jour\" et non de la chaleur. \"En revanche, ce qui se passe avec le changement climatique, c'est que les conditions durant lesquelles il est actif sont plus favorables, donc on va avoir plus de moustiques parce qu'il y aura plus d'œufs qui seront pondus par les femelles\". Ainsi, on ne trouvera pas forcément des moustiques plus tôt ou tard dans la saison, mais après leur réveil, leur nombre sera tout de suite plus important.\nSeule méthode de lutte efficace : la stérilisation des mâles\n\nUne politique très efficace, \"encore au stade de recherche expérimentale\" est celle de la stérilisation des moustiques mâles. \"C'est difficile à mettre en œuvre\" et \"très coûteux\" mais \"ça marche très bien\" puisque les œufs pondus par les femelles ne vont pas éclore et les populations vont \"diminuer petit à petit\". C'est cependant une disparition lente qui n'est donc \"pas du tout utilisable en période épidémique\". Il espère cependant que la technique \"va se développer\", notamment, car elle permet de \"s'affranchir des insecticides\".",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-29T11:29:26.685089+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Didier Fontenille\n- **Organisations** : Institut de recherche pour le développement\n- **Lieux** : France hexagonale, Bretagne, Normandie, Asie du Sud-Est\n- **Valeurs numériques** : 81 (81.0 None), 96 (96.0 None), 65 (65.0 None), 2004 (2004.0 None)\n\n## Suggestions d’angles\n\n### 1. Évolution temporelle des cas de dengue et chikungunya\nQ: Comment ont évolué les cas autochtones de dengue et chikungunya en France métropolitaine ? Metrics: Nombre de cas par an, % changement annuel. Granularity: Départements, annuel 2004–2023. Data: Santé publique France, ECDC, data.gouv.fr, INSEE. Axis: Temporal\n\n### 2. Répartition géographique du moustique tigre en France\nQ: Quels départements sont les plus touchés par le moustique tigre ? Metrics: Nombre de départements colonisés, % de couverture départementale. Granularity: Département, 2023. Data: IRD, data.gouv.fr, Santé publique France, INSEE. Axis: Geographic\n\n### 3. Efficacité des méthodes de lutte contre le moustique tigre\nQ: Quelle est l'efficacité de la stérilisation des mâles par rapport aux insecticides ? Metrics: Réduction des populations de moustiques, coût par département. Granularity: Département, expérimental 2020–2023. Data: IRD, data.gouv.fr, INRAE, Santé publique France. Axis: Policy\n",
+  "created_at": "2025-08-29T11:30:08.857811+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Évolution temporelle des cas de dengue et chikungunya",
+      "description": "Q: Comment ont évolué les cas autochtones de dengue et chikungunya en France métropolitaine ? Metrics: Nombre de cas par an, % changement annuel. Granularity: Départements, annuel 2004–2023. Data: Santé publique France, ECDC, data.gouv.fr, INSEE. Axis: Temporal",
+      "keywords": [
+        "dengue cas",
+        "chikungunya cas",
+        "évolution temporelle",
+        "maladies vectorielles",
+        "épidémiologie"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "ECDC - Surveillance Atlas of Infectious Diseases",
+          "description": "Atlas interactif offrant des données sur les maladies infectieuses en Europe, y compris la dengue et le chikungunya.",
+          "link": "https://atlas.ecdc.europa.eu/public/index.aspx?Dataset=27&HealthTopic=44",
+          "source": "ECDC",
+          "source_url": "https://atlas.ecdc.europa.eu/public/index.aspx?Dataset=27&HealthTopic=44",
+          "source_name": "ECDC",
+          "validation": {
+            "input_url": "https://atlas.ecdc.europa.eu/public/index.aspx?Dataset=27&HealthTopic=44",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://atlas.ecdc.europa.eu/public/index.aspx?Dataset=27&HealthTopic=44",
+            "error": null
+          }
+        },
+        {
+          "title": "Santé publique France - Surveillance de la dengue et du chikungunya",
+          "description": "Données sur la surveillance épidémiologique des cas de dengue et chikungunya en France métropolitaine.",
+          "link": "https://www.santepubliquefrance.fr/recherche/#search=dengue%20chikungunya",
+          "source": "Santé publique France",
+          "source_url": "https://www.santepubliquefrance.fr/recherche/#search=dengue%20chikungunya",
+          "source_name": "Santé publique France",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/recherche/#search=dengue%20chikungunya",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/recherche/#search=dengue%20chikungunya",
+            "error": null
+          }
+        },
+        {
+          "title": "Data.gouv.fr - Données ouvertes sur les maladies vectorielles",
+          "description": "Portail de recherche pour les données ouvertes sur les maladies transmises par les moustiques en France.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "Data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "Data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Évolution annuelle des cas de dengue et chikungunya (2004-2023)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de cas",
+          "note": "Source : Santé publique France, ECDC, données annuelles"
+        },
+        {
+          "title": "Changement annuel (%) des cas de dengue et chikungunya",
+          "chart_type": "bar",
+          "x": "Année",
+          "y": "Pourcentage de changement",
+          "note": "Calculé à partir des données de Santé publique France"
+        },
+        {
+          "title": "Distribution géographique des cas de dengue et chikungunya en 2023",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Nombre de cas",
+          "note": "Source : data.gouv.fr, granularité départementale"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Répartition géographique du moustique tigre en France",
+      "description": "Q: Quels départements sont les plus touchés par le moustique tigre ? Metrics: Nombre de départements colonisés, % de couverture départementale. Granularity: Département, 2023. Data: IRD, data.gouv.fr, Santé publique France, INSEE. Axis: Geographic",
+      "keywords": [
+        "moustique tigre",
+        "distribution géographique",
+        "France",
+        "zones infestées",
+        "Aedes albopictus"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "IRD - Études sur le moustique tigre",
+          "description": "Recherches et publications de l'IRD sur la répartition et l'impact du moustique tigre en France.",
+          "link": "https://www.ird.fr/recherche?q=moustique+tigre",
+          "source": "IRD",
+          "source_url": "https://www.ird.fr/recherche?q=moustique+tigre",
+          "source_name": "IRD",
+          "validation": {
+            "input_url": "https://www.ird.fr/recherche?q=moustique+tigre",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.ird.fr/recherche?q=moustique+tigre",
+            "error": "HTTP 403"
+          }
+        },
+        {
+          "title": "Portail Open Data - Moustique tigre",
+          "description": "Données ouvertes sur la présence du moustique tigre par département en France.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Carte des départements colonisés par le moustique tigre",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Présence du moustique tigre",
+          "note": "Source : IRD, data.gouv.fr"
+        },
+        {
+          "title": "Pourcentage de couverture départementale par le moustique tigre",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Pourcentage de couverture",
+          "note": "Source : Santé publique France, 2023"
+        },
+        {
+          "title": "Nombre total de départements colonisés par le moustique tigre",
+          "chart_type": "table",
+          "x": "Année",
+          "y": "Nombre de départements",
+          "note": "Source : INSEE, données 2023"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Efficacité des méthodes de lutte contre le moustique tigre",
+      "description": "Q: Quelle est l'efficacité de la stérilisation des mâles par rapport aux insecticides ? Metrics: Réduction des populations de moustiques, coût par département. Granularity: Département, expérimental 2020–2023. Data: IRD, data.gouv.fr, INRAE, Santé publique France. Axis: Policy",
+      "keywords": [
+        "moustique tigre",
+        "lutte antivectorielle",
+        "efficacité méthodes",
+        "contrôle moustiques",
+        "prévention dengue"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Data.gouv.fr - Recherche sur le moustique tigre",
+          "description": "Portail de données publiques pour rechercher des jeux de données sur le moustique tigre et les méthodes de lutte.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "Data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "Data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Réduction des populations de moustiques par méthode (2020-2023)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Réduction de population (%)",
+          "note": "Comparer la stérilisation des mâles et les insecticides. Source : IRD, INRAE"
+        },
+        {
+          "title": "Coût par département des méthodes de lutte (2020-2023)",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Coût (€)",
+          "note": "Données issues de data.gouv.fr, Santé publique France"
+        },
+        {
+          "title": "Efficacité par département des méthodes de lutte (2023)",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Efficacité (%)",
+          "note": "Carte des performances par département pour 2023. Source : IRD"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5824,
+      "type": "PER",
+      "value": "Didier Fontenille",
+      "context": null
+    },
+    {
+      "id": 5825,
+      "type": "ORG",
+      "value": "Institut de recherche pour le développement",
+      "context": null
+    },
+    {
+      "id": 5826,
+      "type": "LOC",
+      "value": "France hexagonale",
+      "context": null
+    },
+    {
+      "id": 5827,
+      "type": "LOC",
+      "value": "Bretagne",
+      "context": null
+    },
+    {
+      "id": 5828,
+      "type": "LOC",
+      "value": "Normandie",
+      "context": null
+    },
+    {
+      "id": 5829,
+      "type": "LOC",
+      "value": "Asie du Sud-Est",
+      "context": null
+    },
+    {
+      "id": 5830,
+      "type": "NUM",
+      "value": "81.0",
+      "context": null
+    },
+    {
+      "id": 5831,
+      "type": "NUM",
+      "value": "96.0",
+      "context": null
+    },
+    {
+      "id": 5832,
+      "type": "NUM",
+      "value": "65.0",
+      "context": null
+    },
+    {
+      "id": 5833,
+      "type": "NUM",
+      "value": "2004.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 909,
+      "title": "Évolution temporelle des cas de dengue et chikungunya",
+      "description": "Q: Comment ont évolué les cas autochtones de dengue et chikungunya en France métropolitaine ? Metrics: Nombre de cas par an, % changement annuel. Granularity: Départements, annuel 2004–2023. Data: Santé publique France, ECDC, data.gouv.fr, INSEE. Axis: Temporal",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 910,
+      "title": "Répartition géographique du moustique tigre en France",
+      "description": "Q: Quels départements sont les plus touchés par le moustique tigre ? Metrics: Nombre de départements colonisés, % de couverture départementale. Granularity: Département, 2023. Data: IRD, data.gouv.fr, Santé publique France, INSEE. Axis: Geographic",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 911,
+      "title": "Efficacité des méthodes de lutte contre le moustique tigre",
+      "description": "Q: Quelle est l'efficacité de la stérilisation des mâles par rapport aux insecticides ? Metrics: Réduction des populations de moustiques, coût par département. Granularity: Département, expérimental 2020–2023. Data: IRD, data.gouv.fr, INRAE, Santé publique France. Axis: Policy",
+      "order": 2,
+      "visualizations": []
+    }
+  ],
+  "datasets": [],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 42190,
+    "entities_count": 10,
+    "angles_count": 3,
+    "datasets_count": 0,
+    "angle_resources_count": 3
+  }
+}

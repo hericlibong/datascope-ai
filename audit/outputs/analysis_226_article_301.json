@@ -1,0 +1,493 @@
+{
+  "id": 226,
+  "article": {
+    "id": 301,
+    "title": "Moustiques tigres : \"Toute la France hexagonale va être touchée,",
+    "content": "Moustiques tigres : \"Toute la France hexagonale va être touchée, et les villes en premier\", prévient un spécialiste\n\nL'insecte a colonisé 81 des 96 départements métropolitains et les maladies qu'il véhicule ne sont désormais plus \"exotiques\". \n\n\nToute la France hexagonale va être touchée, et les villes en premier\", alerte Didier Fontenille, entomologiste, directeur de recherche émérite à l’Institut de recherche pour le développement (IRD), alors que les cas autochtones de contaminations à la dengue(Nouvelle fenêtre) et au chikungunya(Nouvelle fenêtre) battent des records.\n:\nà lire aussi CARTES. Insecte des villes, arrivé par le Sud, qui se déplace grâce aux voitures… Visualisez comment le moustique tigre colonise la France hexagonale\n\nCes maladies \"qu'on considérait comme exotiques par le passé\" touchent maintenant la France hexagonale \"en raison de la présence du moustique tigre et de son abondance dans de plus en plus de départements\". Au total, 81 des 96 départements métropolitains sont considérés comme colonisés. Ceux qui y échappent encore, sont principalement situés en Bretagne, Normandie, dans le nord et dans l'est de la France. Mais \"j'ai le regret d'annoncer aux personnes qui vivent dans ces départements qu'elles seront également touchées\", alerte l'entomologiste. Les villes vont être touchées en premier car elles concentrent des \"îlots de chaleur, qui font que le moustique s'y trouve bien et trouve à manger puisqu'il pique les humains\".\nGénétiquement adapté, hiberne \"comme une marmotte\"\n\nSi la France concentre 65 espèces différentes de moustiques, c'est le moustique tigre qui est en cause. Arrivé en 2004 en France métropolitaine, \"il est originaire d'Asie du Sud-Est, donc c'est un moustique tropical et il est très adapté aux climats chauds, mais génétiquement, il s'est adapté aux climats tempérés\", explique Didier Fontenille. \"Il est capable de passer l'hiver sous forme d'œuf, en hibernation, comme une marmotte\".\n\nMais il se réveille en fonction de la \"durée du jour\" et non de la chaleur. \"En revanche, ce qui se passe avec le changement climatique, c'est que les conditions durant lesquelles il est actif sont plus favorables, donc on va avoir plus de moustiques parce qu'il y aura plus d'œufs qui seront pondus par les femelles\". Ainsi, on ne trouvera pas forcément des moustiques plus tôt ou tard dans la saison, mais après leur réveil, leur nombre sera tout de suite plus important.\nSeule méthode de lutte efficace : la stérilisation des mâles\n\nUne politique très efficace, \"encore au stade de recherche expérimentale\" est celle de la stérilisation des moustiques mâles. \"C'est difficile à mettre en œuvre\" et \"très coûteux\" mais \"ça marche très bien\" puisque les œufs pondus par les femelles ne vont pas éclore et les populations vont \"diminuer petit à petit\". C'est cependant une disparition lente qui n'est donc \"pas du tout utilisable en période épidémique\". Il espère cependant que la technique \"va se développer\", notamment, car elle permet de \"s'affranchir des insecticides\".",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-29T14:15:58.283031+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Didier Fontenille\n- **Organisations** : Institut de recherche pour le développement\n- **Lieux** : France hexagonale, Bretagne, Normandie, Asie du Sud-Est\n- **Valeurs numériques** : 81 (81.0 None), 96 (96.0 None), 65 (65.0 None), 2004 (2004.0 None)\n\n## Suggestions d’angles\n\n### 1. Où la propagation du moustique tigre s'accélère-t-elle le plus?\nAlors que le moustique tigre gagne du terrain en France, il est crucial d'identifier les zones où sa progression est la plus rapide pour anticiper les risques sanitaires. Par exemple, des départements comme la Vendée ou le Vaucluse pourraient montrer des progressions surprenantes par rapport à des zones déjà hautement colonisées. Q: Quels départements voient l'accélération la plus rapide de la colonisation par les moustiques tigres? Metrics: % d'augmentation annuelle, nombre de départements colonisés par an, écart-type de la progression annuelle. Granularity: département; annuel 2004–2024. Data: Santé publique France, data.gouv.fr, ECDC, Moustiques.gouv.fr. Axis: Temporal, Geographic\n\n### 2. Qui paie le plus pour la lutte contre le moustique tigre?\nAvec la montée du moustique tigre en France, les coûts de gestion et de prévention s'alourdissent pour les collectivités locales. Certaines régions, comme Provence-Alpes-Côte d'Azur (PACA), dépensent peut-être bien plus que d'autres, révélant des inégalités dans la gestion. Q: Quels départements supportent les plus grosses dépenses liées au moustique tigre? Metrics: dépenses par département, dépenses/habitant, % du budget alloué comparé au total des dépenses sanitaires. Granularity: département; annuel 2010–2024. Data: INSEE, CNCCFP, data.gouv.fr, comptes santé. Axis: Geographic, Inequalities\n\n### 3. La variabilité des législations locales contre les moustiques tigres\nFace à la menace croissante des moustiques tigres, les stratégies de gestion varient largement entre différentes régions de France. Des zones comme l'Occitanie pourraient adopter des politiques plus agressives que d'autres, illustrant une réponse inégale. Q: Comment les politiques de gestion du moustique tigre varient-elles entre les départements et quelles sont les plus efficaces? Metrics: types de politiques par département, nombre de politiques adoptées, % de réduction dans les zones avec politiques agressives. Granularity: département; annuel 2015–2024. Data: data.gouv.fr, Bulletins officiels des collectivités, Sénat, Santé publique France. Axis: Policy, Geographic\n\n### 4. Changement climatique : Amplificateur du danger moustique en France?\nLe changement climatique pourrait exacerber la menace des moustiques tigres en prolongeant leur saison d'activité. Des régions traditionnellement tempérées, comme la Bretagne, pourraient être touchées plus tôt que prévu. Q: Comment le réchauffement climatique influence-t-il la saisonnalité et la répartition géographique du moustique tigre en France? Metrics: jours d'activité par saison, température moyenne vs présence de moustiques, anomalies météorologiques vs colonisation. Granularity: département; mensuel 2010–2024. Data: Météo-France, data.gouv.fr, ECDC, Vigieau. Axis: Temporal, DataQuality\n",
+  "created_at": "2025-08-29T14:16:44.717757+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Où la propagation du moustique tigre s'accélère-t-elle le plus?",
+      "description": "Alors que le moustique tigre gagne du terrain en France, il est crucial d'identifier les zones où sa progression est la plus rapide pour anticiper les risques sanitaires. Par exemple, des départements comme la Vendée ou le Vaucluse pourraient montrer des progressions surprenantes par rapport à des zones déjà hautement colonisées. Q: Quels départements voient l'accélération la plus rapide de la colonisation par les moustiques tigres? Metrics: % d'augmentation annuelle, nombre de départements colonisés par an, écart-type de la progression annuelle. Granularity: département; annuel 2004–2024. Data: Santé publique France, data.gouv.fr, ECDC, Moustiques.gouv.fr. Axis: Temporal, Geographic",
+      "keywords": [
+        "moustique tigre",
+        "propagation moustique",
+        "zones à risque",
+        "climat tropical",
+        "données épidémiologiques"
+      ],
+      "datasets": [
+        {
+          "title": "Surveillance du moustique tigre en Europe",
+          "description": "Données de l'ECDC sur la répartition et la progression du moustique tigre en Europe, avec des mises à jour régulières.",
+          "link": "https://www.ecdc.europa.eu/en/search?s=moustique%20tigre",
+          "source": "ECDC",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.ecdc.europa.eu/en/search?s=moustique%20tigre",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ecdc.europa.eu/en/search?s=moustique%20tigre",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Portail d'information Moustiques.gouv.fr",
+          "description": "Informations et données sur la surveillance et la progression du moustique tigre en France, par département.",
+          "link": "https://moustiques.gouv.fr",
+          "source": "Moustiques.gouv.fr",
+          "source_url": "https://moustiques.gouv.fr",
+          "source_name": "Moustiques.gouv.fr",
+          "validation": {
+            "input_url": "https://moustiques.gouv.fr",
+            "status": "error",
+            "http_status": null,
+            "final_url": null,
+            "error": "ConnectionError"
+          }
+        },
+        {
+          "title": "Moustique tigre en France - Données de surveillance",
+          "description": "Données sur la présence et la progression du moustique tigre par département en France, mises à jour annuellement.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Propagation annuelle du moustique tigre par département",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "% d'augmentation annuelle",
+          "note": "Source : Moustiques.gouv.fr, données de 2004 à 2024"
+        },
+        {
+          "title": "Nombre de départements colonisés par an",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de départements",
+          "note": "Source : Santé publique France, ECDC"
+        },
+        {
+          "title": "Écart-type de la progression annuelle du moustique tigre",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Écart-type de la progression annuelle",
+          "note": "Source : data.gouv.fr, granularité départementale"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Qui paie le plus pour la lutte contre le moustique tigre?",
+      "description": "Avec la montée du moustique tigre en France, les coûts de gestion et de prévention s'alourdissent pour les collectivités locales. Certaines régions, comme Provence-Alpes-Côte d'Azur (PACA), dépensent peut-être bien plus que d'autres, révélant des inégalités dans la gestion. Q: Quels départements supportent les plus grosses dépenses liées au moustique tigre? Metrics: dépenses par département, dépenses/habitant, % du budget alloué comparé au total des dépenses sanitaires. Granularity: département; annuel 2010–2024. Data: INSEE, CNCCFP, data.gouv.fr, comptes santé. Axis: Geographic, Inequalities",
+      "keywords": [
+        "financement moustique tigre",
+        "budget santé publique",
+        "subventions anti-moustique",
+        "dépenses municipales",
+        "lutte vectorielle"
+      ],
+      "datasets": [
+        {
+          "title": "INSEE Regional Public Finance Data",
+          "description": "Access data on public finance, including health and environmental expenditures at the departmental level in France.",
+          "link": "https://www.insee.fr/fr/recherche?texte=d%C3%A9penses+publiques+par+d%C3%A9partement",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/recherche?texte=d%C3%A9penses+publiques+par+d%C3%A9partement",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/recherche?texte=d%C3%A9penses+publiques+par+d%C3%A9partement",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "French Ministry of Health - Public Health Accounts",
+          "description": "Reports and data on health expenditures, including environmental health measures at the regional level.",
+          "link": "https://sante.gouv.fr",
+          "source": "Ministère des Solidarités et de la Santé",
+          "source_url": "https://sante.gouv.fr",
+          "source_name": "Ministère des Solidarités et de la Santé",
+          "validation": {
+            "input_url": "https://solidarites-sante.gouv.fr/systeme-de-sante-et-medico-social/comptes-de-la-sante/",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://sante.gouv.fr",
+            "error": null
+          }
+        },
+        {
+          "title": "Data on Mosquito Control Spending in France",
+          "description": "Explore datasets related to public spending on mosquito control by French departments, including budget allocations.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Dépenses par département pour le moustique tigre (2010-2024)",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Dépenses totales (€)",
+          "note": "Source : data.gouv.fr, INSEE. Visualisation géographique des dépenses."
+        },
+        {
+          "title": "Dépenses par habitant pour la lutte contre le moustique tigre",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Dépenses par habitant (€)",
+          "note": "Source : data.gouv.fr, INSEE. Permet de voir les inégalités en termes de dépenses par habitant."
+        },
+        {
+          "title": "% du budget sanitaire alloué au moustique tigre",
+          "chart_type": "heatmap",
+          "x": "Département",
+          "y": "Année",
+          "note": "Source : CNCCFP, comptes santé. Montre l'évolution de la part du budget sanitaire allouée."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "La variabilité des législations locales contre les moustiques tigres",
+      "description": "Face à la menace croissante des moustiques tigres, les stratégies de gestion varient largement entre différentes régions de France. Des zones comme l'Occitanie pourraient adopter des politiques plus agressives que d'autres, illustrant une réponse inégale. Q: Comment les politiques de gestion du moustique tigre varient-elles entre les départements et quelles sont les plus efficaces? Metrics: types de politiques par département, nombre de politiques adoptées, % de réduction dans les zones avec politiques agressives. Granularity: département; annuel 2015–2024. Data: data.gouv.fr, Bulletins officiels des collectivités, Sénat, Santé publique France. Axis: Policy, Geographic",
+      "keywords": [
+        "législation moustiques",
+        "moustique tigre",
+        "réglementation locale",
+        "contrôle moustiques",
+        "prévention moustiques"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Bulletins Officiels des Collectivités on Mosquito Control",
+          "description": "Search for official bulletins on local mosquito control policies and their implementation.",
+          "link": "https://www.bulletin-officiel.gouv.fr/recherche?q=moustique%20tigre",
+          "source": "Bulletins officiels des collectivités",
+          "source_url": "https://www.bulletin-officiel.gouv.fr/recherche?q=moustique%20tigre",
+          "source_name": "Bulletins officiels des collectivités",
+          "validation": {
+            "input_url": "https://www.bulletin-officiel.gouv.fr/recherche?q=moustique%20tigre",
+            "status": "error",
+            "http_status": null,
+            "final_url": null,
+            "error": "ConnectionError"
+          }
+        },
+        {
+          "title": "French Departmental Policies on Tiger Mosquito Control",
+          "description": "Search for datasets on local policies regarding tiger mosquito control across French departments.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Types de politiques anti-moustiques par département",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Type de politique",
+          "note": "Source : Bulletins officiels des collectivités, données annuelles"
+        },
+        {
+          "title": "% de réduction des moustiques tigres par politique",
+          "chart_type": "bar",
+          "x": "Type de politique",
+          "y": "% de réduction",
+          "note": "Source : Santé publique France, données annuelles 2015-2024"
+        },
+        {
+          "title": "Nombre de politiques adoptées par département (2015-2024)",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Département",
+          "note": "Source : data.gouv.fr, analyse des politiques locales"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Changement climatique : Amplificateur du danger moustique en France?",
+      "description": "Le changement climatique pourrait exacerber la menace des moustiques tigres en prolongeant leur saison d'activité. Des régions traditionnellement tempérées, comme la Bretagne, pourraient être touchées plus tôt que prévu. Q: Comment le réchauffement climatique influence-t-il la saisonnalité et la répartition géographique du moustique tigre en France? Metrics: jours d'activité par saison, température moyenne vs présence de moustiques, anomalies météorologiques vs colonisation. Granularity: département; mensuel 2010–2024. Data: Météo-France, data.gouv.fr, ECDC, Vigieau. Axis: Temporal, DataQuality",
+      "keywords": [
+        "changement climatique",
+        "danger moustique",
+        "santé publique",
+        "vecteurs maladies",
+        "France climat"
+      ],
+      "datasets": [
+        {
+          "title": "Data.gouv.fr Climate and Mosquito Data",
+          "description": "Explore datasets related to climate change and mosquito presence in France, searchable by department and time frame.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/fr/datasets/?q=climat%20moustique",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "ECDC Mosquito Surveillance Data",
+          "description": "Data on the distribution and seasonal activity of Aedes mosquitoes in Europe, including France, updated regularly.",
+          "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source": "ECDC",
+          "source_url": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source_name": "ECDC",
+          "validation": {
+            "input_url": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+            "error": null
+          }
+        },
+        {
+          "title": "WHO Climate Change and Health",
+          "description": "Guidance and reports on the health impacts of climate change, including vector-borne diseases like those spread by mosquitoes.",
+          "link": "https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health",
+          "source": "WHO",
+          "source_url": "https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health",
+          "source_name": "WHO",
+          "validation": {
+            "input_url": "https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.who.int/news-room/fact-sheets/detail/climate-change-and-health",
+            "error": null
+          }
+        },
+        {
+          "title": "Météo-France Climate Data",
+          "description": "Access monthly temperature and weather anomaly data for France, useful for analyzing climate impact on mosquito activity.",
+          "link": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+          "source": "Météo-France",
+          "source_url": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+          "source_name": "Météo-France",
+          "validation": {
+            "input_url": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Jours d'activité des moustiques tigres par département (2010-2024)",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Département",
+          "note": "Source : ECDC, données mensuelles"
+        },
+        {
+          "title": "Température moyenne vs présence de moustiques tigres (2010-2024)",
+          "chart_type": "scatter",
+          "x": "Température moyenne (°C)",
+          "y": "Présence de moustiques (%)",
+          "note": "Source : Météo-France et ECDC"
+        },
+        {
+          "title": "Anomalies météorologiques et colonisation des moustiques tigres (2010-2024)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de départements colonisés",
+          "note": "Source : Vigieau, data.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5864,
+      "type": "PER",
+      "value": "Didier Fontenille",
+      "context": null
+    },
+    {
+      "id": 5865,
+      "type": "ORG",
+      "value": "Institut de recherche pour le développement",
+      "context": null
+    },
+    {
+      "id": 5866,
+      "type": "LOC",
+      "value": "France hexagonale",
+      "context": null
+    },
+    {
+      "id": 5867,
+      "type": "LOC",
+      "value": "Bretagne",
+      "context": null
+    },
+    {
+      "id": 5868,
+      "type": "LOC",
+      "value": "Normandie",
+      "context": null
+    },
+    {
+      "id": 5869,
+      "type": "LOC",
+      "value": "Asie du Sud-Est",
+      "context": null
+    },
+    {
+      "id": 5870,
+      "type": "NUM",
+      "value": "81.0",
+      "context": null
+    },
+    {
+      "id": 5871,
+      "type": "NUM",
+      "value": "96.0",
+      "context": null
+    },
+    {
+      "id": 5872,
+      "type": "NUM",
+      "value": "65.0",
+      "context": null
+    },
+    {
+      "id": 5873,
+      "type": "NUM",
+      "value": "2004.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 925,
+      "title": "Où la propagation du moustique tigre s'accélère-t-elle le plus?",
+      "description": "Alors que le moustique tigre gagne du terrain en France, il est crucial d'identifier les zones où sa progression est la plus rapide pour anticiper les risques sanitaires. Par exemple, des départements comme la Vendée ou le Vaucluse pourraient montrer des progressions surprenantes par rapport à des zones déjà hautement colonisées. Q: Quels départements voient l'accélération la plus rapide de la colonisation par les moustiques tigres? Metrics: % d'augmentation annuelle, nombre de départements colonisés par an, écart-type de la progression annuelle. Granularity: département; annuel 2004–2024. Data: Santé publique France, data.gouv.fr, ECDC, Moustiques.gouv.fr. Axis: Temporal, Geographic",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 926,
+      "title": "Qui paie le plus pour la lutte contre le moustique tigre?",
+      "description": "Avec la montée du moustique tigre en France, les coûts de gestion et de prévention s'alourdissent pour les collectivités locales. Certaines régions, comme Provence-Alpes-Côte d'Azur (PACA), dépensent peut-être bien plus que d'autres, révélant des inégalités dans la gestion. Q: Quels départements supportent les plus grosses dépenses liées au moustique tigre? Metrics: dépenses par département, dépenses/habitant, % du budget alloué comparé au total des dépenses sanitaires. Granularity: département; annuel 2010–2024. Data: INSEE, CNCCFP, data.gouv.fr, comptes santé. Axis: Geographic, Inequalities",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 927,
+      "title": "La variabilité des législations locales contre les moustiques tigres",
+      "description": "Face à la menace croissante des moustiques tigres, les stratégies de gestion varient largement entre différentes régions de France. Des zones comme l'Occitanie pourraient adopter des politiques plus agressives que d'autres, illustrant une réponse inégale. Q: Comment les politiques de gestion du moustique tigre varient-elles entre les départements et quelles sont les plus efficaces? Metrics: types de politiques par département, nombre de politiques adoptées, % de réduction dans les zones avec politiques agressives. Granularity: département; annuel 2015–2024. Data: data.gouv.fr, Bulletins officiels des collectivités, Sénat, Santé publique France. Axis: Policy, Geographic",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 928,
+      "title": "Changement climatique : Amplificateur du danger moustique en France?",
+      "description": "Le changement climatique pourrait exacerber la menace des moustiques tigres en prolongeant leur saison d'activité. Des régions traditionnellement tempérées, comme la Bretagne, pourraient être touchées plus tôt que prévu. Q: Comment le réchauffement climatique influence-t-il la saisonnalité et la répartition géographique du moustique tigre en France? Metrics: jours d'activité par saison, température moyenne vs présence de moustiques, anomalies météorologiques vs colonisation. Granularity: département; mensuel 2010–2024. Data: Météo-France, data.gouv.fr, ECDC, Vigieau. Axis: Temporal, DataQuality",
+      "order": 3,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4360,
+      "title": "Surveillance du moustique tigre en Europe",
+      "description": "Données de l'ECDC sur la répartition et la progression du moustique tigre en Europe, avec des mises à jour régulières.",
+      "link": "https://www.ecdc.europa.eu/en/search?s=moustique%20tigre",
+      "source": "ECDC",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4361,
+      "title": "INSEE Regional Public Finance Data",
+      "description": "Access data on public finance, including health and environmental expenditures at the departmental level in France.",
+      "link": "https://www.insee.fr/fr/recherche?texte=d%C3%A9penses+publiques+par+d%C3%A9partement",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4362,
+      "title": "Data.gouv.fr Climate and Mosquito Data",
+      "description": "Explore datasets related to climate change and mosquito presence in France, searchable by department and time frame.",
+      "link": "https://www.data.gouv.fr/datasets/",
+      "source": "data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 46480,
+    "entities_count": 10,
+    "angles_count": 4,
+    "datasets_count": 3,
+    "angle_resources_count": 4
+  }
+}

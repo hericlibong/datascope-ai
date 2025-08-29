@@ -1,0 +1,384 @@
+{
+  "id": 220,
+  "article": {
+    "id": 295,
+    "title": "Moustiques tigres : \"Toute la France hexagonale va être touchée,",
+    "content": "Moustiques tigres : \"Toute la France hexagonale va être touchée, et les villes en premier\", prévient un spécialiste\n\nL'insecte a colonisé 81 des 96 départements métropolitains et les maladies qu'il véhicule ne sont désormais plus \"exotiques\". \n\n\nToute la France hexagonale va être touchée, et les villes en premier\", alerte Didier Fontenille, entomologiste, directeur de recherche émérite à l’Institut de recherche pour le développement (IRD), alors que les cas autochtones de contaminations à la dengue(Nouvelle fenêtre) et au chikungunya(Nouvelle fenêtre) battent des records.\n:\nà lire aussi CARTES. Insecte des villes, arrivé par le Sud, qui se déplace grâce aux voitures… Visualisez comment le moustique tigre colonise la France hexagonale\n\nCes maladies \"qu'on considérait comme exotiques par le passé\" touchent maintenant la France hexagonale \"en raison de la présence du moustique tigre et de son abondance dans de plus en plus de départements\". Au total, 81 des 96 départements métropolitains sont considérés comme colonisés. Ceux qui y échappent encore, sont principalement situés en Bretagne, Normandie, dans le nord et dans l'est de la France. Mais \"j'ai le regret d'annoncer aux personnes qui vivent dans ces départements qu'elles seront également touchées\", alerte l'entomologiste. Les villes vont être touchées en premier car elles concentrent des \"îlots de chaleur, qui font que le moustique s'y trouve bien et trouve à manger puisqu'il pique les humains\".\nGénétiquement adapté, hiberne \"comme une marmotte\"\n\nSi la France concentre 65 espèces différentes de moustiques, c'est le moustique tigre qui est en cause. Arrivé en 2004 en France métropolitaine, \"il est originaire d'Asie du Sud-Est, donc c'est un moustique tropical et il est très adapté aux climats chauds, mais génétiquement, il s'est adapté aux climats tempérés\", explique Didier Fontenille. \"Il est capable de passer l'hiver sous forme d'œuf, en hibernation, comme une marmotte\".\n\nMais il se réveille en fonction de la \"durée du jour\" et non de la chaleur. \"En revanche, ce qui se passe avec le changement climatique, c'est que les conditions durant lesquelles il est actif sont plus favorables, donc on va avoir plus de moustiques parce qu'il y aura plus d'œufs qui seront pondus par les femelles\". Ainsi, on ne trouvera pas forcément des moustiques plus tôt ou tard dans la saison, mais après leur réveil, leur nombre sera tout de suite plus important.\nSeule méthode de lutte efficace : la stérilisation des mâles\n\nUne politique très efficace, \"encore au stade de recherche expérimentale\" est celle de la stérilisation des moustiques mâles. \"C'est difficile à mettre en œuvre\" et \"très coûteux\" mais \"ça marche très bien\" puisque les œufs pondus par les femelles ne vont pas éclore et les populations vont \"diminuer petit à petit\". C'est cependant une disparition lente qui n'est donc \"pas du tout utilisable en période épidémique\". Il espère cependant que la technique \"va se développer\", notamment, car elle permet de \"s'affranchir des insecticides\".",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-29T10:26:00.044692+02:00"
+  },
+  "score": 7.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Didier Fontenille\n- **Organisations** : Institut de recherche pour le développement (IRD)\n- **Lieux** : France hexagonale, France métropolitaine, Bretagne, Normandie, le nord de la France, l'est de la France, départements métropolitains, Asie du Sud-Est, les villes\n- **Dates** : 2004\n- **Valeurs numériques** : 81 (81.0 None), 96 (96.0 None), 65 (65.0 None)\n\n## Suggestions d’angles\n\n### 1. Cartographie fine: colonisation moustique tigre vs cas autochtones\nComparer la carte de colonisation du moustique tigre avec la répartition spatiale des cas autochtones pour identifier foyers urbains prioritaires.\nQ: Le moustique tigre explique-t-il spatialement la hausse des cas autochtones ?\nMetrics: taux d'incidence autochtone/100k, % de communes/départements colonisés, densité d'ovitraps (œufs/trap).\nGranularity: commune/IRIS vs département; mensuel 2010–2024. Data: Santé publique France, ECDC, data.gouv.fr, INSEE. Axis: Geographic\n\n### 2. Évolution saisonnière et effet du réchauffement sur l'abondance\nMesurer si la durée et l'intensité de la saison d'activité du moustique ont augmenté en lien avec les anomalies climatiques.\nQ: La durée et l'intensité de la saison active du moustique ont-elles progressé depuis 2010 ?\nMetrics: nombre d'œufs/ovitrap, cas mensuels/100k, degré‑jours et anomalies température vs 1991–2020.\nGranularity: mensuel par station météo ou département, 2010–2024. Data: Météo‑France, IRD, Entente interdépartementale de démoustication, Santé publique France. Axis: Temporal\n\n### 3. Efficacité des politiques locales: stérilisation, insecticides, budgets\nÉvaluer si les mesures locales (stérilisation mâles, traitements insecticides, budgets) réduisent l'incidence et les inégalités d'exposition.\nQ: Les communes ayant déployé stérilisation ou investi plus en lutte vectorielle ont-elles moins de cas ?\nMetrics: cas/100k, % communes avec programmes de stérilisation ou traitement, budget €/hab, délai moyen d'intervention après cas index.\nGranularity: commune annuel vs département 2015–2024. Data: Agences régionales de santé (ARS), data.gouv.fr, INSEE, Santé publique France. Axis: Policy\n",
+  "created_at": "2025-08-29T10:30:06.835398+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Cartographie fine: colonisation moustique tigre vs cas autochtones",
+      "description": "Comparer la carte de colonisation du moustique tigre avec la répartition spatiale des cas autochtones pour identifier foyers urbains prioritaires.\nQ: Le moustique tigre explique-t-il spatialement la hausse des cas autochtones ?\nMetrics: taux d'incidence autochtone/100k, % de communes/départements colonisés, densité d'ovitraps (œufs/trap).\nGranularity: commune/IRIS vs département; mensuel 2010–2024. Data: Santé publique France, ECDC, data.gouv.fr, INSEE. Axis: Geographic",
+      "keywords": [
+        "moustique tigre",
+        "Aedes albopictus",
+        "présence moustiques",
+        "cas autochtones",
+        "surveillance entomologique"
+      ],
+      "datasets": [
+        {
+          "title": "INSEE — découpage IRIS, populations légales et fichiers géographiques",
+          "description": "Ressources et jeux de données pour obtenir les limites IRIS/communes, populations légales et correspondances géographiques nécessaires au calcul des taux d'incidence à petite échelle.",
+          "link": "https://www.insee.fr/fr/recherche?texte=IRIS",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/recherche?texte=IRIS",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/recherche?texte=IRIS",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "data.gouv.fr — recherche de jeux de données sur moustique tigre / ovitraps",
+          "description": "Portail national centralisant jeux de données fournis par ARS, collectivités et laboratoires : cartes de colonisation, relevés d'ovitraps (œufs/trap), et séries locales utiles pour estimer densité d'ovitraps et indicateurs entomologiques.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Cartographie bivariée : colonisation vs incidence (commune)",
+          "chart_type": "bivariate choropleth / deux cartes côte-à-côte (colonisation & incidence)",
+          "x": "Commune (géographie) / carte",
+          "y": "Taux d'incidence autochtone /100k + % de communes colonisées",
+          "note": "Afficher au niveau commune (ou IRIS si dispo) avec cartes synchronisées ; agréger mensuellement 2010–2024. Appliquer lissage empirique (Bayes/3 mois) pour stabiliser petits effectifs ; masquer ou annoter communes à très faible population. Sources : Santé publique France, ECDC, data.gouv.fr, INSEE."
+        },
+        {
+          "title": "Séries mensuelles : incidence vs % zones colonisées",
+          "chart_type": "line chart (double axe) — série mensuelle 2010–2024",
+          "x": "Mois (2010–2024)",
+          "y": "Taux d'incidence autochtone/100k (axe gauche) ; % communes/départements colonisés (axe droit)",
+          "note": "Agrégat départemental et national ; calculer moyennes mobiles (3 ou 6 mois) et annoter pics épidémiques. Permet d'examiner temporalité et décalages entre progression de la colonisation et hausse des cas. Sources : Santé publique France, ECDC, data.gouv.fr."
+        },
+        {
+          "title": "Densité d'ovitraps vs incidence (commune) — nuage & régression",
+          "chart_type": "scatter / hexbin + régression (poss. facettage par période)",
+          "x": "Densité d'ovitraps (œufs par trap) — moyenne communale mensuelle",
+          "y": "Taux d'incidence autochtone/100k (commune)",
+          "note": "Log-transformer la densité d'œufs si forte asymétrie ; pondérer par taille de population et contrôler urbanisation/altitude dans modèle (GLM ou mixed). Facetter par tranches temporelles (ex. pré‑colonisation, post‑colonisation). Sources : data.gouv.fr (ovitraps), Santé publique France, INSEE."
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Évolution saisonnière et effet du réchauffement sur l'abondance",
+      "description": "Mesurer si la durée et l'intensité de la saison d'activité du moustique ont augmenté en lien avec les anomalies climatiques.\nQ: La durée et l'intensité de la saison active du moustique ont-elles progressé depuis 2010 ?\nMetrics: nombre d'œufs/ovitrap, cas mensuels/100k, degré‑jours et anomalies température vs 1991–2020.\nGranularity: mensuel par station météo ou département, 2010–2024. Data: Météo‑France, IRD, Entente interdépartementale de démoustication, Santé publique France. Axis: Temporal",
+      "keywords": [
+        "saisonnalité",
+        "abondance des espèces",
+        "phénologie",
+        "anomalies de température",
+        "suivi des populations"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Météo‑France — Données climatiques publiques (observations et normales 1991–2020)",
+          "description": "Portail open data de Météo‑France proposant séries mensuelles par station (températures, températures moyennes/max/min), indices climatiques et produits sur les normales 1991–2020; permet de calculer degré‑jours et anomalies par rapport à la période de référence.",
+          "link": "https://donneespubliques.meteofrance.fr/",
+          "source": "Météo‑France",
+          "source_url": "https://donneespubliques.meteofrance.fr/",
+          "source_name": "Météo‑France",
+          "validation": {
+            "input_url": "https://donneespubliques.meteofrance.fr/",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://donneespubliques.meteofrance.fr/",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr — recherche : ovitrap, moustique, démoustication (jeux de données locaux)",
+          "description": "Catalogue national recensant jeux de données départementaux et locaux (comptages d'œufs/ovitraps, rapports d'ententes interdépartementales de démoustication, séries mensuelles) publiés par collectivités et acteurs locaux; utilisez la recherche pour retrouver séries 2010–2024.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Longueur et intensité de la saison active (2010–2024)",
+          "chart_type": "stacked area + line (ou dual axis)",
+          "x": "Mois (2010-01 à 2024-12)",
+          "y": "Durée de la saison (semaines ou nombre de mois actifs) — Intensity: AUC œufs/ovitrap ou cas mensuels/100k",
+          "note": "Calculer chaque année la saison (début/fin = premier/dernier mois dépassant un seuil défini, ex. >X œufs/trappe ou percentile 75). Intensité = AUC de la courbe mensuelle pendant la saison. Tracer durée (ligne) et intensité (surface empilée) par département ou station; appliquer un lissage 3 mois et tests de tendance (Mann–Kendall). Sources : Entente interdépartementale de démoustication, Santé publique France, Météo‑France, IRD. Granularité : mensuelle par station ou département."
+        },
+        {
+          "title": "Saisons mensuelles — heatmap années × mois (œufs / cas)",
+          "chart_type": "heatmap (année en y × mois en x) — petite carte déportée possible",
+          "x": "Mois (Jan → Déc)",
+          "y": "Année (2010 → 2024)",
+          "note": "Couleur = moyenne mensuelle d'œufs/ovitrap (ou cas/100k). Produire une heatmap par département ou sélectionner les départements les plus concernés; permet de visualiser allongement (couleurs hautes s'étendent vers les mois de début/fin). Normaliser par effort de piégeage si nécessaire. Sources et granularité : mêmes que ci‑dessus."
+        },
+        {
+          "title": "Anomalies de T° et degré‑jours vs longueur de saison",
+          "chart_type": "line + bar (double axe) / small multiples par département",
+          "x": "Mois (2010-2024)",
+          "y": "Anomalie T° (°C vs 1991–2020) et degré‑jours — Longueur de saison (mois) en barres/ligne secondaire",
+          "note": "Tracer l'anomalie de température et les degré‑jours cumulés (axe gauche) et la longueur de la saison active (axe droit). Chercher corrélations temporelles et décalages (lag) entre anomalies chaudes et allongement de la saison. Indiquer intervalle de confiance et p‑value de la tendance. Sources : Météo‑France (anomalies 1991–2020), IRD, Entente interdépartementale, SPF. Granularité mensuelle par station/dép."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Efficacité des politiques locales: stérilisation, insecticides, budgets",
+      "description": "Évaluer si les mesures locales (stérilisation mâles, traitements insecticides, budgets) réduisent l'incidence et les inégalités d'exposition.\nQ: Les communes ayant déployé stérilisation ou investi plus en lutte vectorielle ont-elles moins de cas ?\nMetrics: cas/100k, % communes avec programmes de stérilisation ou traitement, budget €/hab, délai moyen d'intervention après cas index.\nGranularity: commune annuel vs département 2015–2024. Data: Agences régionales de santé (ARS), data.gouv.fr, INSEE, Santé publique France. Axis: Policy",
+      "keywords": [
+        "taux de stérilisation",
+        "opérations de stérilisation",
+        "utilisation d'insecticides",
+        "budgets municipaux",
+        "indicateurs d'efficacité"
+      ],
+      "datasets": [
+        {
+          "title": "INSEE — recherches sur finances locales et populations communales",
+          "description": "Catalogue et séries sur finances locales (dépenses, recettes, budget par commune) et populations légales communales — indispensable pour calculer budget €/hab et taux par commune/département 2015–2024.",
+          "link": "https://www.insee.fr/fr/recherche?texte=finances+locales+communes+populations",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/recherche?texte=finances+locales+communes+populations",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/recherche?texte=finances+locales+communes+populations",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Santé publique France — documentation et surveillance des arboviroses",
+          "description": "Pages thématiques et notes méthodologiques sur la surveillance (cas cliniques, déclarations), l'entomologie et les actions de lutte antivectorielle en France — utile pour définir métriques cas/100k, compréhension des seuils et des pratiques d'intervention.",
+          "link": "https://www.santepubliquefrance.fr/recherche/?q=arboviroses",
+          "source": "Santé publique France",
+          "source_url": "https://www.santepubliquefrance.fr/recherche/?q=arboviroses",
+          "source_name": "Santé publique France",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/recherche?q=arboviroses",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/recherche/?q=arboviroses",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr — recherche de jeux de données locaux sur lutte antivectorielle et stérilisation",
+          "description": "Portail national indexant jeux de données publiés par ARS, collectivités et chercheurs (rapports d'intervention, listes de communes traitées, programmes de stérilisation, marchés publics) ; utile pour retrouver données opérationnelles et métadonnées locales 2015–2024.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Carte bivariée : incidence vs présence de stérilisation (communes)",
+          "chart_type": "choropleth bivarié / carte",
+          "x": "Géographie (commune)",
+          "y": "Cas / 100k (moyenne annuelle) + statut programme de stérilisation (oui/non)",
+          "note": "Agrégation commune-année (2015–2024). Utiliser shapefiles communes (data.gouv.fr / IGN), incidence calculée par Santé publique France, statut programmes depuis ARS / collectivités. Filtrer communes très petites (ex. <500 hab) et représenter bivarié (teinte = incidence, motif/contour = présence de stérilisation) ou deux couches (carte d'incidence + hachures pour stérilisation). Prévoir zooms sur zones à forte densité."
+        },
+        {
+          "title": "Budget lutte vectorielle vs incidence (commune-année, scatter)",
+          "chart_type": "scatter + régression linéaire (points colorés)",
+          "x": "Budget lutte vectorielle (€ / hab, annuel, commune)",
+          "y": "Cas / 100k (commune-année)",
+          "note": "Points = commune-année (2015–2024). Colorer par présence de stérilisation ou taux de communes traitées (catégorie), taille des points ~ population. Utiliser échelle log pour budget si distribution asymétrique. Afficher droite de régression (contrôlée par effets départementaux), intervalle de confiance et p-value. Sources : budgets locaux (comptes locaux / data.gouv), INSEE pop., incidences Santé publique France, interventions ARS."
+        },
+        {
+          "title": "Évolution % communes avec programmes et incidence (département, 2015–2024)",
+          "chart_type": "double axe : barres + lignes (time series)",
+          "x": "Année",
+          "y": "Barres = % communes avec programme (stéril./traitement); Ligne = Cas / 100k (moyenne départementale)",
+          "note": "Agrégation annuelle au niveau départemental. Barres montrent couverture politique locale (% communes par département ayant stérilisation ou traitements), ligne la tendance d'incidence. Afficher intervalles (IC) et délai moyen d'intervention (tooltip ou sous‑panneau). Sources : ARS, Santé publique France, INSEE, budgets locaux (2015–2024). Contrôler pour climat/urbanisation si comparaison inter‑départements."
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5794,
+      "type": "PER",
+      "value": "Didier Fontenille",
+      "context": null
+    },
+    {
+      "id": 5795,
+      "type": "ORG",
+      "value": "Institut de recherche pour le développement (IRD)",
+      "context": null
+    },
+    {
+      "id": 5796,
+      "type": "LOC",
+      "value": "France hexagonale",
+      "context": null
+    },
+    {
+      "id": 5797,
+      "type": "LOC",
+      "value": "France métropolitaine",
+      "context": null
+    },
+    {
+      "id": 5798,
+      "type": "LOC",
+      "value": "Bretagne",
+      "context": null
+    },
+    {
+      "id": 5799,
+      "type": "LOC",
+      "value": "Normandie",
+      "context": null
+    },
+    {
+      "id": 5800,
+      "type": "LOC",
+      "value": "le nord de la France",
+      "context": null
+    },
+    {
+      "id": 5801,
+      "type": "LOC",
+      "value": "l'est de la France",
+      "context": null
+    },
+    {
+      "id": 5802,
+      "type": "LOC",
+      "value": "départements métropolitains",
+      "context": null
+    },
+    {
+      "id": 5803,
+      "type": "LOC",
+      "value": "Asie du Sud-Est",
+      "context": null
+    },
+    {
+      "id": 5804,
+      "type": "LOC",
+      "value": "les villes",
+      "context": null
+    },
+    {
+      "id": 5805,
+      "type": "DATE",
+      "value": "2004",
+      "context": null
+    },
+    {
+      "id": 5806,
+      "type": "NUM",
+      "value": "81.0",
+      "context": null
+    },
+    {
+      "id": 5807,
+      "type": "NUM",
+      "value": "96.0",
+      "context": null
+    },
+    {
+      "id": 5808,
+      "type": "NUM",
+      "value": "65.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 903,
+      "title": "Cartographie fine: colonisation moustique tigre vs cas autochtones",
+      "description": "Comparer la carte de colonisation du moustique tigre avec la répartition spatiale des cas autochtones pour identifier foyers urbains prioritaires.\nQ: Le moustique tigre explique-t-il spatialement la hausse des cas autochtones ?\nMetrics: taux d'incidence autochtone/100k, % de communes/départements colonisés, densité d'ovitraps (œufs/trap).\nGranularity: commune/IRIS vs département; mensuel 2010–2024. Data: Santé publique France, ECDC, data.gouv.fr, INSEE. Axis: Geographic",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 904,
+      "title": "Évolution saisonnière et effet du réchauffement sur l'abondance",
+      "description": "Mesurer si la durée et l'intensité de la saison d'activité du moustique ont augmenté en lien avec les anomalies climatiques.\nQ: La durée et l'intensité de la saison active du moustique ont-elles progressé depuis 2010 ?\nMetrics: nombre d'œufs/ovitrap, cas mensuels/100k, degré‑jours et anomalies température vs 1991–2020.\nGranularity: mensuel par station météo ou département, 2010–2024. Data: Météo‑France, IRD, Entente interdépartementale de démoustication, Santé publique France. Axis: Temporal",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 905,
+      "title": "Efficacité des politiques locales: stérilisation, insecticides, budgets",
+      "description": "Évaluer si les mesures locales (stérilisation mâles, traitements insecticides, budgets) réduisent l'incidence et les inégalités d'exposition.\nQ: Les communes ayant déployé stérilisation ou investi plus en lutte vectorielle ont-elles moins de cas ?\nMetrics: cas/100k, % communes avec programmes de stérilisation ou traitement, budget €/hab, délai moyen d'intervention après cas index.\nGranularity: commune annuel vs département 2015–2024. Data: Agences régionales de santé (ARS), data.gouv.fr, INSEE, Santé publique France. Axis: Policy",
+      "order": 2,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4350,
+      "title": "INSEE — découpage IRIS, populations légales et fichiers géographiques",
+      "description": "Ressources et jeux de données pour obtenir les limites IRIS/communes, populations légales et correspondances géographiques nécessaires au calcul des taux d'incidence à petite échelle.",
+      "link": "https://www.insee.fr/fr/recherche?texte=IRIS",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4351,
+      "title": "INSEE — recherches sur finances locales et populations communales",
+      "description": "Catalogue et séries sur finances locales (dépenses, recettes, budget par commune) et populations légales communales — indispensable pour calculer budget €/hab et taux par commune/département 2015–2024.",
+      "link": "https://www.insee.fr/fr/recherche?texte=finances+locales+communes+populations",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 246814,
+    "entities_count": 15,
+    "angles_count": 3,
+    "datasets_count": 2,
+    "angle_resources_count": 3
+  }
+}

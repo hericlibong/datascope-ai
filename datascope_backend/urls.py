@@ -22,4 +22,5 @@ urlpatterns = [
     path("api/users/", include("users.urls")),
     path("api/analysis/", include("analysis.urls")),
     path("api/", include("api.urls")),  # générique pour les endpoints globaux
+    path("api/playground/", include("api.playground_urls")),  # ← ajoute/restitue cette ligne
 ]

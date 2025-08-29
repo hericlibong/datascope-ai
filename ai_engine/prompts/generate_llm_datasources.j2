@@ -1,40 +1,32 @@
+You are helping a newsroom find links for one editorial angle.
 
-You are an assistant specialized in open data.
+ANGLE
+Title: {angle_title}
+Description: {angle_desc}
 
-Based on the editorial angle below, suggest up to 3 relevant data sources, databases, or open data portals that the data journalist could consult and potentially use.  
-These can include thematic portals (environment, justice, health, etc.), government databases, or international organizations (UN, Eurostat, FAO, etc.).
+TASK
+Return a single list of 4–6 items in total for this angle:
+• 2–3 dataset-like links (first)
+• 2–3 source/documentation links (after)
 
-⚠️ Recommendations:
-- The source must be freely accessible (no paywall or mandatory registration).
-- Avoid blogs, press articles, or Google search results.
-- Prioritize official websites, public agencies, or international institutions.
-- Return concise titles (no more than 120 characters) and 1 to 2 sentences for the description.
+DEFINITIONS
+Dataset-like = data access pages (dataset/datasets, data, datastore, statistics, api, download) OR a catalogue search page with the query kept in the URL (e.g., ?q=...). Never a homepage or near-root page.
+Source/Documentation = methodology notes, glossaries, surveillance/bulletins, official thematic pages, reports that explain or contextualize data (not direct file downloads).
 
-TITLE: 
-{angle_title}
-DESCRIPTION: 
-{angle_desc}
+HOW TO BUILD LINKS
+• Use the angle’s cues in the description (Q, Metrics, Granularity, Data) to craft precise queries in the same language as the angle.
+• If you cannot provide a specific dataset landing page, return an official catalogue search URL with the query preserved (not a bare homepage). Prefer pages that keep ?q=… or an equivalent query parameter.
+• If a portal drops the query and redirects to a root page, choose another result that preserves the query or a concrete dataset page on the topic.
 
-Return a JSON matching the following instructions:
+QUALITY RULES
+• Do not return homepages or near-root pages.
+• Prefer pages with CSV/JSON/API or explicit “Download/API” entries for datasets.
+• Prefer recent/maintained pages when possible.
+• Avoid duplicates or near-duplicates (same landing page).
+• Ensure datasets include at least one item matching the granularity hinted by the angle (e.g., department/commune or monthly period).
+• Ensure sources include at least one methodology/surveillance page when relevant.
 
+OUTPUT
+Return exactly the JSON that matches:
 {format_instructions}
-
-
-Example EN
-ANGLES:
- Evolution of rail traffic throughout Northeastern Europe
-
-
-Expected example:
-{{
-"language": "eng",
-"sets": [
-    {{
-        "title": "Eurostat Tourism Statistics",
-        "description": "Detailed data on tourist overnight stays, arrivals and impact on local economies within EU countries.",
-        "link": "https://ec.europa.eu/eurostat/web/tourism",
-        "source": "Eurostat"
-    }},
-
-]
-}}
+(Do not add extra fields. Use concise newsroom titles. Keep any search query parameters in the URL.)

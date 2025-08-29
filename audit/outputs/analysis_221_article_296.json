@@ -1,0 +1,387 @@
+{
+  "id": 221,
+  "article": {
+    "id": 296,
+    "title": "Moustiques tigres : \"Toute la France hexagonale va être touchée,",
+    "content": "Moustiques tigres : \"Toute la France hexagonale va être touchée, et les villes en premier\", prévient un spécialiste\n\nL'insecte a colonisé 81 des 96 départements métropolitains et les maladies qu'il véhicule ne sont désormais plus \"exotiques\". \n\n\nToute la France hexagonale va être touchée, et les villes en premier\", alerte Didier Fontenille, entomologiste, directeur de recherche émérite à l’Institut de recherche pour le développement (IRD), alors que les cas autochtones de contaminations à la dengue(Nouvelle fenêtre) et au chikungunya(Nouvelle fenêtre) battent des records.\n:\nà lire aussi CARTES. Insecte des villes, arrivé par le Sud, qui se déplace grâce aux voitures… Visualisez comment le moustique tigre colonise la France hexagonale\n\nCes maladies \"qu'on considérait comme exotiques par le passé\" touchent maintenant la France hexagonale \"en raison de la présence du moustique tigre et de son abondance dans de plus en plus de départements\". Au total, 81 des 96 départements métropolitains sont considérés comme colonisés. Ceux qui y échappent encore, sont principalement situés en Bretagne, Normandie, dans le nord et dans l'est de la France. Mais \"j'ai le regret d'annoncer aux personnes qui vivent dans ces départements qu'elles seront également touchées\", alerte l'entomologiste. Les villes vont être touchées en premier car elles concentrent des \"îlots de chaleur, qui font que le moustique s'y trouve bien et trouve à manger puisqu'il pique les humains\".\nGénétiquement adapté, hiberne \"comme une marmotte\"\n\nSi la France concentre 65 espèces différentes de moustiques, c'est le moustique tigre qui est en cause. Arrivé en 2004 en France métropolitaine, \"il est originaire d'Asie du Sud-Est, donc c'est un moustique tropical et il est très adapté aux climats chauds, mais génétiquement, il s'est adapté aux climats tempérés\", explique Didier Fontenille. \"Il est capable de passer l'hiver sous forme d'œuf, en hibernation, comme une marmotte\".\n\nMais il se réveille en fonction de la \"durée du jour\" et non de la chaleur. \"En revanche, ce qui se passe avec le changement climatique, c'est que les conditions durant lesquelles il est actif sont plus favorables, donc on va avoir plus de moustiques parce qu'il y aura plus d'œufs qui seront pondus par les femelles\". Ainsi, on ne trouvera pas forcément des moustiques plus tôt ou tard dans la saison, mais après leur réveil, leur nombre sera tout de suite plus important.\nSeule méthode de lutte efficace : la stérilisation des mâles\n\nUne politique très efficace, \"encore au stade de recherche expérimentale\" est celle de la stérilisation des moustiques mâles. \"C'est difficile à mettre en œuvre\" et \"très coûteux\" mais \"ça marche très bien\" puisque les œufs pondus par les femelles ne vont pas éclore et les populations vont \"diminuer petit à petit\". C'est cependant une disparition lente qui n'est donc \"pas du tout utilisable en période épidémique\". Il espère cependant que la technique \"va se développer\", notamment, car elle permet de \"s'affranchir des insecticides\".",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-29T11:12:53.381164+02:00"
+  },
+  "score": 7.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Didier Fontenille\n- **Organisations** : Institut de recherche pour le développement, IRD\n- **Lieux** : France hexagonale, Bretagne, Normandie, nord, est de la France, Asie du Sud-Est, France métropolitaine, Sud\n- **Dates** : 2004\n- **Valeurs numériques** : 81 (81.0 départements métropolitains), 96 (96.0 départements métropolitains), 65 (65.0 espèces)\n\n## Suggestions d’angles\n\n### 1. Chronologie: colonisation vs cas autochtones depuis 2004\nQ: La hausse des cas autochtones suit-elle l’expansion départementale du moustique tigre?\nMetrics: départements colonisés (% et variation annuelle), incidence dengue/chikungunya/100k, délai implantation→1er cas.\nGranularity: département mensuel 2004–2024; commune annuel dans zones à risque.\nData: Santé publique France, ECDC, ANSES, Météo-France.\nAxis: Temporal; Geographic\n\n### 2. Îlots de chaleur et quartiers: qui est le plus exposé?\nQ: Les quartiers IRIS avec forts îlots de chaleur urbains ont-ils plus de moustiques/alertes?\nMetrics: densité d’ovitraps positifs/km², signalements/10k hab., temp. de surface (°C), taux de végétalisation (%).\nGranularity: IRIS mensuel mai–oct 2018–2024 dans 10 grandes villes.\nData: EID Méditerranée, Cerema, Copernicus, INSEE.\nAxis: Inequalities; Geographic\n\n### 3. SIT vs insecticides: quel impact et à quel coût?\nQ: Les zones pilotes SIT réduisent-elles plus vite les indices entomologiques et cas humains?\nMetrics: index ovitrap (%), œufs/trappe, adultes capturés, cas autochtones/100k, coût €/hab., délai d’intervention (jours).\nGranularity: commune/secteur hebdomadaire 2018–2025 avec groupes témoins appariés.\nData: IRD, ARS PACA/Occitanie, EID Méditerranée, data.gouv.fr.\nAxis: Policy; Temporal\n",
+  "created_at": "2025-08-29T11:20:20.017110+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Chronologie: colonisation vs cas autochtones depuis 2004",
+      "description": "Q: La hausse des cas autochtones suit-elle l’expansion départementale du moustique tigre?\nMetrics: départements colonisés (% et variation annuelle), incidence dengue/chikungunya/100k, délai implantation→1er cas.\nGranularity: département mensuel 2004–2024; commune annuel dans zones à risque.\nData: Santé publique France, ECDC, ANSES, Météo-France.\nAxis: Temporal; Geographic",
+      "keywords": [
+        "Aedes albopictus",
+        "moustique tigre",
+        "implantation par département",
+        "cas autochtones",
+        "arboviroses France"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Santé publique France – Dengue/Chikungunya: surveillance en métropole",
+          "description": "Page thématique et bulletins saisonniers détaillant cas importés et autochtones par département et la méthode de surveillance, utile pour estimer l’incidence et le délai implantation→1er cas.",
+          "link": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/dengue",
+          "source": "Santé publique France",
+          "source_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/dengue",
+          "source_name": "Santé publique France",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/dengue",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/dengue",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr – Recherche jeux de données « moustique tigre » (communes/départements)",
+          "description": "Recherche catalogue pour obtenir les jeux de données ouverts sur la présence/implantation d’Aedes albopictus (communal/départemental) et séries historiques.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Colonisation vs cas autochtones (France, 2004–2024)",
+          "chart_type": "line (double axe)",
+          "x": "Mois (2004–2024)",
+          "y": "Part des départements colonisés (%) ; Incidence autochtone (/100k)",
+          "note": "Sources: ANSES (implantation A. albopictus), SPF (dengue/chik), ECDC. Granularité mensuelle; lisser l’incidence (MM3). Afficher aussi la variation annuelle du % colonisé en série/annotation."
+        },
+        {
+          "title": "Carte animée: diffusion et cas autochtones par département",
+          "chart_type": "choropleth + bubble (animation temporelle)",
+          "x": "Mois/Année (2004–2024, animation)",
+          "y": "Département (polygones) ; Cas autochtones (bulles/100k) ; Statut colonisation",
+          "note": "Choroplèthe: statut/ancienneté de colonisation (ANSES). Bulles normalisées par population (INSEE). Cas autochtones: SPF. Ajouter fond météo (Météo-France) en couche optionnelle."
+        },
+        {
+          "title": "Délai implantation → 1er cas autochtone",
+          "chart_type": "histogram",
+          "x": "Délai (mois depuis implantation départementale)",
+          "y": "Nombre de départements",
+          "note": "Calculer: date d’implantation (ANSES) → date 1er cas autochtone (SPF). Annoter médiane/IQR. Traiter les départements sans cas au 31/12/2024 comme censurés (alternative: courbe de survie)."
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Îlots de chaleur et quartiers: qui est le plus exposé?",
+      "description": "Q: Les quartiers IRIS avec forts îlots de chaleur urbains ont-ils plus de moustiques/alertes?\nMetrics: densité d’ovitraps positifs/km², signalements/10k hab., temp. de surface (°C), taux de végétalisation (%).\nGranularity: IRIS mensuel mai–oct 2018–2024 dans 10 grandes villes.\nData: EID Méditerranée, Cerema, Copernicus, INSEE.\nAxis: Inequalities; Geographic",
+      "keywords": [
+        "îlots de chaleur",
+        "température de surface",
+        "cartographie thermique",
+        "vulnérabilité thermique",
+        "quartiers prioritaires"
+      ],
+      "datasets": [
+        {
+          "title": "INSEE – Contours IRIS et populations légales",
+          "description": "Limites géographiques IRIS et populations légales pour normaliser les indicateurs (signalements/10 000 hab.) et agréger les données à l’IRIS. Référentiel indispensable pour les 10 grandes villes étudiées.",
+          "link": "https://www.insee.fr/fr/recherche?texte=IRIS%20contours%20population",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/recherche?texte=IRIS%20contours%20population",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/recherche?texte=IRIS%20contours%20population",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "EID Méditerranée – Surveillance moustique tigre (ovitraps et signalements)",
+          "description": "Données ouvertes de l’EID Méditerranée sur Aedes albopictus: réseau d’ovitraps, résultats et signalements citoyens. Exploitables pour densité d’ovitraps positifs/km² et signalements/10 000 hab. par IRIS (mai–oct., séries 2018–2024 selon zones).",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "EID Méditerranée",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "EID Méditerranée",
+          "validation": null
+        },
+        {
+          "title": "Cerema – Indicateurs d’îlots de chaleur urbains (ICU) à l’échelle IRIS",
+          "description": "Indicateurs d’exposition aux îlots de chaleur urbains produits par le Cerema, avec méthodologie et cartographies par quartiers (IRIS) pour de nombreuses villes. Utile pour repérer les IRIS les plus chauds et croiser avec moustiques/signalements.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "Cerema",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "Cerema",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Îlots de chaleur vs moustiques: carte bivariée par ville",
+          "chart_type": "choropleth bivariée + small multiples (10 villes)",
+          "x": "IRIS (polygones)",
+          "y": "Temp. de surface (°C) × Densité d’ovitraps positifs/km²",
+          "note": "Moyenne mai–oct 2018–2024; échelle bivariée 3×3; sources: EID Méditerranée, Copernicus (LST), Cerema (ICU), INSEE (contours/pop)."
+        },
+        {
+          "title": "Plus chaud, plus de moustiques? Relation au niveau IRIS",
+          "chart_type": "scatter (2 panneaux) + tendance",
+          "x": "Temp. de surface (°C) [p1] / Taux de végétalisation (%) [p2]",
+          "y": "Densité d’ovitraps positifs/km² (ou signalements/10k hab.)",
+          "note": "Points=IRIS-mois, mai–oct 2018–2024; tendance LOESS globale et par ville; couleur: ville; taille: population exposée."
+        },
+        {
+          "title": "Saison des signalements selon la chaleur des IRIS",
+          "chart_type": "line (moyennes) + facettes par ville",
+          "x": "Mois (mai–oct)",
+          "y": "Signalements/10k hab. par décile de temp. de surface",
+          "note": "Moyenne 2018–2024; déciles de température calculés par ville; annoter l’écart D10–D1. Sources: EID Méditerranée, Copernicus, INSEE."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "SIT vs insecticides: quel impact et à quel coût?",
+      "description": "Q: Les zones pilotes SIT réduisent-elles plus vite les indices entomologiques et cas humains?\nMetrics: index ovitrap (%), œufs/trappe, adultes capturés, cas autochtones/100k, coût €/hab., délai d’intervention (jours).\nGranularity: commune/secteur hebdomadaire 2018–2025 avec groupes témoins appariés.\nData: IRD, ARS PACA/Occitanie, EID Méditerranée, data.gouv.fr.\nAxis: Policy; Temporal",
+      "keywords": [
+        "technique insecte stérile",
+        "lutte antivectorielle",
+        "dépenses insecticides",
+        "coûts TIS",
+        "densité moustiques"
+      ],
+      "datasets": [
+        {
+          "title": "IRD Dataverse – Jeux de données sur SIT Aedes albopictus (protocoles, indices, essais)",
+          "description": "Catalogue de données de recherche IRD sur la technique des mâles stériles (SIT) et la dynamique entomologique, pertinent pour évaluer l’impact SIT vs insecticides.",
+          "link": "https://dataverse.ird.fr/dataverse/root?q=aedes%20albopictus%20sterile",
+          "source": "IRD",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://dataverse.ird.fr/dataverse/root?q=aedes%20albopictus%20sterile",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://dataverse.ird.fr/dataverse/root?q=aedes%20albopictus%20sterile",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "EID Méditerranée – Surveillance entomologique et opérations LAV (Occitanie/PACA)",
+          "description": "Open data on ovitrap positivity, œufs/trappe, captures d’adultes et interventions, utile pour des comparaisons hebdo par commune/secteur et l’estimation des délais d’intervention.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "EID Méditerranée",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "EID Méditerranée",
+          "validation": null
+        },
+        {
+          "title": "Santé publique France – Dengue/Chikungunya/Zika surveillance (France métropolitaine)",
+          "description": "Official indicators and downloads to track autochthonous cases over time, with case definitions and methodological notes (usable for weekly series by area where available).",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "Santé publique France",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "Santé publique France",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Impact SIT vs insecticides sur l’indice ovitrap (2018–2025)",
+          "chart_type": "line (event study)",
+          "x": "Semaine relative à l’intervention (t=-52…+52)",
+          "y": "Indice ovitrap positif (%) – médiane par groupe",
+          "note": "Comparer SIT, insecticides et témoins appariés (commune/secteur, hebdo). Afficher rubans IC95% (bootstrap) et marqueur du t0. Option: basculer la métrique en œufs/trappe ou adultes capturés. Sources: IRD, ARS PACA/Occitanie, EID Méditerranée, data.gouv.fr."
+        },
+        {
+          "title": "Cas autochtones/100k: SIT vs témoins (hebdo, 2018–2025)",
+          "chart_type": "line",
+          "x": "Semaine (2018–2025)",
+          "y": "Cas autochtones pour 100 000 (moyenne pondérée)",
+          "note": "Courbes SIT vs insecticides vs témoins appariés; point d’intervention et estimation diff-in-diff en annotation. Facettes possibles par région (PACA/Occitanie). Granularité: commune/secteur hebdomadaire. Sources: IRD, ARS PACA/Occitanie, EID Méditerranée, data.gouv.fr."
+        },
+        {
+          "title": "Coût-efficacité des stratégies: coût €/hab. vs cas évités",
+          "chart_type": "bubble scatter",
+          "x": "Coût par habitant (€)",
+          "y": "Réduction des cas vs témoins (%)",
+          "note": "Bulles colorées par stratégie (SIT, insecticides); taille = délai d’intervention (jours). Étiquettes par commune/secteur; période 2018–2025. Ajouter lignes d’isocoût/efficacité si utile. Sources: IRD, ARS PACA/Occitanie, EID Méditerranée, data.gouv.fr."
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5809,
+      "type": "PER",
+      "value": "Didier Fontenille",
+      "context": null
+    },
+    {
+      "id": 5810,
+      "type": "ORG",
+      "value": "Institut de recherche pour le développement",
+      "context": null
+    },
+    {
+      "id": 5811,
+      "type": "ORG",
+      "value": "IRD",
+      "context": null
+    },
+    {
+      "id": 5812,
+      "type": "LOC",
+      "value": "France hexagonale",
+      "context": null
+    },
+    {
+      "id": 5813,
+      "type": "LOC",
+      "value": "Bretagne",
+      "context": null
+    },
+    {
+      "id": 5814,
+      "type": "LOC",
+      "value": "Normandie",
+      "context": null
+    },
+    {
+      "id": 5815,
+      "type": "LOC",
+      "value": "nord",
+      "context": null
+    },
+    {
+      "id": 5816,
+      "type": "LOC",
+      "value": "est de la France",
+      "context": null
+    },
+    {
+      "id": 5817,
+      "type": "LOC",
+      "value": "Asie du Sud-Est",
+      "context": null
+    },
+    {
+      "id": 5818,
+      "type": "LOC",
+      "value": "France métropolitaine",
+      "context": null
+    },
+    {
+      "id": 5819,
+      "type": "LOC",
+      "value": "Sud",
+      "context": null
+    },
+    {
+      "id": 5820,
+      "type": "DATE",
+      "value": "2004",
+      "context": null
+    },
+    {
+      "id": 5821,
+      "type": "NUM",
+      "value": "81.0",
+      "context": null
+    },
+    {
+      "id": 5822,
+      "type": "NUM",
+      "value": "96.0",
+      "context": null
+    },
+    {
+      "id": 5823,
+      "type": "NUM",
+      "value": "65.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 906,
+      "title": "Chronologie: colonisation vs cas autochtones depuis 2004",
+      "description": "Q: La hausse des cas autochtones suit-elle l’expansion départementale du moustique tigre?\nMetrics: départements colonisés (% et variation annuelle), incidence dengue/chikungunya/100k, délai implantation→1er cas.\nGranularity: département mensuel 2004–2024; commune annuel dans zones à risque.\nData: Santé publique France, ECDC, ANSES, Météo-France.\nAxis: Temporal; Geographic",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 907,
+      "title": "Îlots de chaleur et quartiers: qui est le plus exposé?",
+      "description": "Q: Les quartiers IRIS avec forts îlots de chaleur urbains ont-ils plus de moustiques/alertes?\nMetrics: densité d’ovitraps positifs/km², signalements/10k hab., temp. de surface (°C), taux de végétalisation (%).\nGranularity: IRIS mensuel mai–oct 2018–2024 dans 10 grandes villes.\nData: EID Méditerranée, Cerema, Copernicus, INSEE.\nAxis: Inequalities; Geographic",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 908,
+      "title": "SIT vs insecticides: quel impact et à quel coût?",
+      "description": "Q: Les zones pilotes SIT réduisent-elles plus vite les indices entomologiques et cas humains?\nMetrics: index ovitrap (%), œufs/trappe, adultes capturés, cas autochtones/100k, coût €/hab., délai d’intervention (jours).\nGranularity: commune/secteur hebdomadaire 2018–2025 avec groupes témoins appariés.\nData: IRD, ARS PACA/Occitanie, EID Méditerranée, data.gouv.fr.\nAxis: Policy; Temporal",
+      "order": 2,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4352,
+      "title": "INSEE – Contours IRIS et populations légales",
+      "description": "Limites géographiques IRIS et populations légales pour normaliser les indicateurs (signalements/10 000 hab.) et agréger les données à l’IRIS. Référentiel indispensable pour les 10 grandes villes étudiées.",
+      "link": "https://www.insee.fr/fr/recherche?texte=IRIS%20contours%20population",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4353,
+      "title": "IRD Dataverse – Jeux de données sur SIT Aedes albopictus (protocoles, indices, essais)",
+      "description": "Catalogue de données de recherche IRD sur la technique des mâles stériles (SIT) et la dynamique entomologique, pertinent pour évaluer l’impact SIT vs insecticides.",
+      "link": "https://dataverse.ird.fr/dataverse/root?q=aedes%20albopictus%20sterile",
+      "source": "IRD",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 446658,
+    "entities_count": 15,
+    "angles_count": 3,
+    "datasets_count": 2,
+    "angle_resources_count": 3
+  }
+}

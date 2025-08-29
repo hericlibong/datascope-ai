@@ -1,0 +1,520 @@
+{
+  "id": 217,
+  "article": {
+    "id": 286,
+    "title": "Moustiques tigres : \"Toute la France hexagonale va être touchée,",
+    "content": "Moustiques tigres : \"Toute la France hexagonale va être touchée, et les villes en premier\", prévient un spécialiste\n\nL'insecte a colonisé 81 des 96 départements métropolitains et les maladies qu'il véhicule ne sont désormais plus \"exotiques\". \n\n\nToute la France hexagonale va être touchée, et les villes en premier\", alerte Didier Fontenille, entomologiste, directeur de recherche émérite à l’Institut de recherche pour le développement (IRD), alors que les cas autochtones de contaminations à la dengue(Nouvelle fenêtre) et au chikungunya(Nouvelle fenêtre) battent des records.\n:\nà lire aussi CARTES. Insecte des villes, arrivé par le Sud, qui se déplace grâce aux voitures… Visualisez comment le moustique tigre colonise la France hexagonale\n\nCes maladies \"qu'on considérait comme exotiques par le passé\" touchent maintenant la France hexagonale \"en raison de la présence du moustique tigre et de son abondance dans de plus en plus de départements\". Au total, 81 des 96 départements métropolitains sont considérés comme colonisés. Ceux qui y échappent encore, sont principalement situés en Bretagne, Normandie, dans le nord et dans l'est de la France. Mais \"j'ai le regret d'annoncer aux personnes qui vivent dans ces départements qu'elles seront également touchées\", alerte l'entomologiste. Les villes vont être touchées en premier car elles concentrent des \"îlots de chaleur, qui font que le moustique s'y trouve bien et trouve à manger puisqu'il pique les humains\".\nGénétiquement adapté, hiberne \"comme une marmotte\"\n\nSi la France concentre 65 espèces différentes de moustiques, c'est le moustique tigre qui est en cause. Arrivé en 2004 en France métropolitaine, \"il est originaire d'Asie du Sud-Est, donc c'est un moustique tropical et il est très adapté aux climats chauds, mais génétiquement, il s'est adapté aux climats tempérés\", explique Didier Fontenille. \"Il est capable de passer l'hiver sous forme d'œuf, en hibernation, comme une marmotte\".\n\nMais il se réveille en fonction de la \"durée du jour\" et non de la chaleur. \"En revanche, ce qui se passe avec le changement climatique, c'est que les conditions durant lesquelles il est actif sont plus favorables, donc on va avoir plus de moustiques parce qu'il y aura plus d'œufs qui seront pondus par les femelles\". Ainsi, on ne trouvera pas forcément des moustiques plus tôt ou tard dans la saison, mais après leur réveil, leur nombre sera tout de suite plus important.\nSeule méthode de lutte efficace : la stérilisation des mâles\n\nUne politique très efficace, \"encore au stade de recherche expérimentale\" est celle de la stérilisation des moustiques mâles. \"C'est difficile à mettre en œuvre\" et \"très coûteux\" mais \"ça marche très bien\" puisque les œufs pondus par les femelles ne vont pas éclore et les populations vont \"diminuer petit à petit\". C'est cependant une disparition lente qui n'est donc \"pas du tout utilisable en période épidémique\". Il espère cependant que la technique \"va se développer\", notamment, car elle permet de \"s'affranchir des insecticides\".",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-29T09:31:48.010534+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Didier Fontenille\n- **Organisations** : Institut de recherche pour le développement\n- **Lieux** : France hexagonale, Bretagne, Normandie, Asie du Sud-Est\n- **Valeurs numériques** : 81 (81.0 None), 96 (96.0 None), 65 (65.0 None), 2004 (2004.0 None)\n\n## Suggestions d’angles\n\n### 1. Moustique tigre : cartographie de sa progression en France\nVisualiser l'évolution géographique de la colonisation des moustiques tigres depuis leur arrivée en 2004. Comparer les régions touchées avec celles qui sont encore épargnées pour comprendre les facteurs géographiques et climatiques en jeu.\n\n### 2. Impact économique des moustiques tigres sur le tourisme\nAnalyser comment la présence croissante du moustique tigre dans les zones touristiques influence l'économie locale. Étudier les coûts associés à la prévention et aux soins de santé dans les départements les plus touchés.\n\n### 3. Changement climatique et adaptation du moustique tigre\nExaminer la corrélation entre le réchauffement climatique et l'adaptation génétique du moustique tigre en France. Investiguer comment ces changements influencent la durée et la période d'activité du moustique.\n\n### 4. Efficacité des méthodes de lutte contre le moustique tigre\nComparer les différentes méthodes de lutte contre le moustique tigre en termes d'efficacité et de coût. Évaluer les perspectives de développement de la stérilisation des mâles comme alternative aux insecticides.\n\n### 5. Les villes face à l'invasion silencieuse du moustique tigre\nÉtudier pourquoi les villes sont plus vulnérables en raison des îlots de chaleur et de la densité de population. Discuter des mesures urbaines possibles pour limiter la prolifération de cet insecte.\n",
+  "created_at": "2025-08-29T09:31:55.736558+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Moustique tigre : cartographie de sa progression en France",
+      "description": "Visualiser l'évolution géographique de la colonisation des moustiques tigres depuis leur arrivée en 2004. Comparer les régions touchées avec celles qui sont encore épargnées pour comprendre les facteurs géographiques et climatiques en jeu.",
+      "keywords": [
+        "moustique tigre",
+        "cartographie moustique",
+        "progression moustique",
+        "France moustique",
+        "Aedes albopictus"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Répartition géographique du moustique tigre en France",
+          "description": "Données sur la progression du moustique tigre en France, avec des informations sur les facteurs climatiques et géographiques.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Progression annuelle du moustique tigre en France",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de départements colonisés",
+          "note": "Source : Santé publique France, données annuelles de 2004 à 2023"
+        },
+        {
+          "title": "Carte des régions colonisées par le moustique tigre",
+          "chart_type": "choropleth",
+          "x": "Région",
+          "y": "Statut de colonisation",
+          "note": "Les régions sont colorées selon leur statut : colonisé ou non colonisé. Source : Santé publique France, données 2023"
+        },
+        {
+          "title": "Facteurs climatiques et géographiques influençant la colonisation",
+          "chart_type": "heatmap",
+          "x": "Facteurs",
+          "y": "Région",
+          "note": "Facteurs tels que température moyenne, précipitations, densité de population. Source : Météo France et INSEE"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Impact économique des moustiques tigres sur le tourisme",
+      "description": "Analyser comment la présence croissante du moustique tigre dans les zones touristiques influence l'économie locale. Étudier les coûts associés à la prévention et aux soins de santé dans les départements les plus touchés.",
+      "keywords": [
+        "moustiques tigres",
+        "impact économique",
+        "tourisme",
+        "santé publique",
+        "zones touristiques"
+      ],
+      "datasets": [
+        {
+          "title": "INSEE - Économie et tourisme",
+          "description": "Statistiques économiques sur le tourisme en France, y compris les coûts liés aux risques sanitaires.",
+          "link": "https://www.insee.fr/fr/recherche?texte=tourisme+%C3%A9conomie",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/recherche?texte=tourisme+économie",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/recherche?texte=tourisme+%C3%A9conomie",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Eurostat Tourism Statistics",
+          "description": "Données détaillées sur le tourisme dans l'UE, y compris l'impact économique local des facteurs environnementaux.",
+          "link": "https://ec.europa.eu/eurostat/web/tourism",
+          "source": "Eurostat",
+          "source_url": "https://ec.europa.eu/eurostat/web/tourism",
+          "source_name": "Eurostat",
+          "validation": {
+            "input_url": "https://ec.europa.eu/eurostat/web/tourism",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://ec.europa.eu/eurostat/web/tourism",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Répartition géographique des moustiques tigres",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Nombre de signalements",
+          "note": "Source : Ministère de la Santé, données 2023"
+        },
+        {
+          "title": "Coûts de prévention et soins liés aux moustiques tigres",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Montant en euros",
+          "note": "Inclut les coûts de prévention et de traitement des maladies"
+        },
+        {
+          "title": "Impact des moustiques tigres sur le tourisme",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Variation du nombre de touristes (%)",
+          "note": "Comparaison entre zones touchées et non touchées"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Changement climatique et adaptation du moustique tigre",
+      "description": "Examiner la corrélation entre le réchauffement climatique et l'adaptation génétique du moustique tigre en France. Investiguer comment ces changements influencent la durée et la période d'activité du moustique.",
+      "keywords": [
+        "changement climatique",
+        "moustique tigre",
+        "adaptation biologique",
+        "réchauffement climatique",
+        "maladies vectorielles"
+      ],
+      "datasets": [
+        {
+          "title": "Climate Change and Vector-Borne Diseases",
+          "description": "Data and reports on how climate change affects the distribution and activity of vector-borne diseases like those spread by mosquitoes.",
+          "link": "https://www.ecdc.europa.eu/en/search?s=climate+change+mosquito",
+          "source": "ECDC",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.ecdc.europa.eu/en/search?s=climate+change+mosquito",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ecdc.europa.eu/en/search?s=climate+change+mosquito",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Climat et santé publique en France",
+          "description": "Explorez les effets du changement climatique sur la santé publique, y compris la propagation des maladies transmises par les moustiques.",
+          "link": "https://www.santepubliquefrance.fr/recherche/#search=changement%20climatique%20moustique",
+          "source": "Santé Publique France",
+          "source_url": "https://www.santepubliquefrance.fr/recherche/#search=changement%20climatique%20moustique",
+          "source_name": "Santé Publique France",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/recherche/#search=changement%20climatique%20moustique",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/recherche/#search=changement%20climatique%20moustique",
+            "error": null
+          }
+        },
+        {
+          "title": "Impact du changement climatique sur la biodiversité",
+          "description": "Informations sur l'impact du réchauffement climatique sur les espèces et les écosystèmes, y compris les moustiques.",
+          "link": "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=changement+climatique+moustique",
+          "source": "Ministère de la Transition écologique",
+          "source_url": "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=changement+climatique+moustique",
+          "source_name": "Ministère de la Transition écologique",
+          "validation": {
+            "input_url": "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=changement+climatique+moustique",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ecologie.gouv.fr/recherche?search_api_fulltext=changement+climatique+moustique",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Évolution des températures et activité du moustique tigre",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Température moyenne (°C) / Période d'activité (jours)",
+          "note": "Comparer les données climatiques avec la période d'activité du moustique tigre en France. Source : Météo France, entomologistes locaux."
+        },
+        {
+          "title": "Distribution géographique du moustique tigre en France",
+          "chart_type": "choropleth",
+          "x": "Région",
+          "y": "Présence du moustique tigre (oui/non)",
+          "note": "Visualiser l'expansion géographique du moustique tigre. Source : Santé publique France."
+        },
+        {
+          "title": "Adaptation génétique du moustique tigre et température",
+          "chart_type": "scatter",
+          "x": "Température moyenne régionale (°C)",
+          "y": "Fréquence des adaptations génétiques (%)",
+          "note": "Étudier la corrélation entre les températures et les adaptations génétiques. Source : études génétiques locales."
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Efficacité des méthodes de lutte contre le moustique tigre",
+      "description": "Comparer les différentes méthodes de lutte contre le moustique tigre en termes d'efficacité et de coût. Évaluer les perspectives de développement de la stérilisation des mâles comme alternative aux insecticides.",
+      "keywords": [
+        "moustique tigre",
+        "lutte antivectorielle",
+        "efficacité méthodes",
+        "prévention moustiques",
+        "contrôle moustiques"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Sterile Insect Technique for Mosquito Control",
+          "description": "Ressources sur la technique de stérilisation des insectes comme méthode de contrôle des populations de moustiques.",
+          "link": "https://www.iaea.org/topics/sterile-insect-technique",
+          "source": "International Atomic Energy Agency",
+          "source_url": "https://www.iaea.org/topics/sterile-insect-technique",
+          "source_name": "International Atomic Energy Agency",
+          "validation": {
+            "input_url": "https://www.iaea.org/topics/sterile-insect-technique",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.iaea.org/topics/sterile-insect-technique",
+            "error": null
+          }
+        },
+        {
+          "title": "Lutte contre le moustique tigre en France",
+          "description": "Informations sur les méthodes de lutte et leur efficacité, y compris la stérilisation des mâles.",
+          "link": "https://www.santepubliquefrance.fr/recherche/#search=mosquito%20control",
+          "source": "Santé Publique France",
+          "source_url": "https://www.santepubliquefrance.fr/recherche/#search=mosquito%20control",
+          "source_name": "Santé Publique France",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/recherche/#search=mosquito%20control",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/recherche/#search=mosquito%20control",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Comparaison des méthodes de lutte contre le moustique tigre",
+          "chart_type": "bar",
+          "x": "Méthode",
+          "y": "Efficacité (%)",
+          "note": "Comparer l'efficacité des insecticides, pièges, et stérilisation des mâles"
+        },
+        {
+          "title": "Coût des différentes méthodes de lutte",
+          "chart_type": "bar",
+          "x": "Méthode",
+          "y": "Coût (€/hectare)",
+          "note": "Données obtenues auprès des services de santé publique et des fabricants"
+        },
+        {
+          "title": "Perspectives de la stérilisation des mâles",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Taux de stérilisation atteint (%)",
+          "note": "Projection basée sur les études actuelles et les développements technologiques"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Les villes face à l'invasion silencieuse du moustique tigre",
+      "description": "Étudier pourquoi les villes sont plus vulnérables en raison des îlots de chaleur et de la densité de population. Discuter des mesures urbaines possibles pour limiter la prolifération de cet insecte.",
+      "keywords": [
+        "moustique tigre",
+        "invasion urbaine",
+        "santé publique",
+        "prévention moustiques",
+        "changement climatique"
+      ],
+      "datasets": [
+        {
+          "title": "INSEE - Densité de population et îlots de chaleur urbains",
+          "description": "Études et données sur la densité de population et les îlots de chaleur urbains en France, facteurs influençant la prolifération du moustique tigre.",
+          "link": "https://www.insee.fr/fr/recherche?texte=%C3%AElots+de+chaleur+urbains",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/recherche?texte=îlots+de+chaleur+urbains",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/recherche?texte=%C3%AElots+de+chaleur+urbains",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "European Centre for Disease Prevention and Control - Aedes Albopictus",
+          "description": "Données sur la distribution du moustique tigre en Europe et les risques associés. Comprend des cartes et des rapports de situation.",
+          "link": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source": "ECDC",
+          "source_url": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source_name": "ECDC",
+          "validation": {
+            "input_url": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Répartition du moustique tigre en milieu urbain",
+          "chart_type": "choropleth",
+          "x": "Villes",
+          "y": "Densité du moustique tigre",
+          "note": "Source : données de santé publique, échelle municipale"
+        },
+        {
+          "title": "Corrélation entre îlots de chaleur et prolifération du moustique tigre",
+          "chart_type": "heatmap",
+          "x": "Température moyenne des îlots de chaleur",
+          "y": "Densité du moustique tigre",
+          "note": "Données climatiques et entomologiques locales"
+        },
+        {
+          "title": "Impact des mesures urbaines sur la population de moustiques tigres",
+          "chart_type": "bar",
+          "x": "Mesures urbaines",
+          "y": "Réduction de la densité de moustiques (%)",
+          "note": "Comparaison des villes ayant mis en place différentes mesures"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5764,
+      "type": "PER",
+      "value": "Didier Fontenille",
+      "context": null
+    },
+    {
+      "id": 5765,
+      "type": "ORG",
+      "value": "Institut de recherche pour le développement",
+      "context": null
+    },
+    {
+      "id": 5766,
+      "type": "LOC",
+      "value": "France hexagonale",
+      "context": null
+    },
+    {
+      "id": 5767,
+      "type": "LOC",
+      "value": "Bretagne",
+      "context": null
+    },
+    {
+      "id": 5768,
+      "type": "LOC",
+      "value": "Normandie",
+      "context": null
+    },
+    {
+      "id": 5769,
+      "type": "LOC",
+      "value": "Asie du Sud-Est",
+      "context": null
+    },
+    {
+      "id": 5770,
+      "type": "NUM",
+      "value": "81.0",
+      "context": null
+    },
+    {
+      "id": 5771,
+      "type": "NUM",
+      "value": "96.0",
+      "context": null
+    },
+    {
+      "id": 5772,
+      "type": "NUM",
+      "value": "65.0",
+      "context": null
+    },
+    {
+      "id": 5773,
+      "type": "NUM",
+      "value": "2004.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 888,
+      "title": "Moustique tigre : cartographie de sa progression en France",
+      "description": "Visualiser l'évolution géographique de la colonisation des moustiques tigres depuis leur arrivée en 2004. Comparer les régions touchées avec celles qui sont encore épargnées pour comprendre les facteurs géographiques et climatiques en jeu.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 889,
+      "title": "Impact économique des moustiques tigres sur le tourisme",
+      "description": "Analyser comment la présence croissante du moustique tigre dans les zones touristiques influence l'économie locale. Étudier les coûts associés à la prévention et aux soins de santé dans les départements les plus touchés.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 890,
+      "title": "Changement climatique et adaptation du moustique tigre",
+      "description": "Examiner la corrélation entre le réchauffement climatique et l'adaptation génétique du moustique tigre en France. Investiguer comment ces changements influencent la durée et la période d'activité du moustique.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 891,
+      "title": "Efficacité des méthodes de lutte contre le moustique tigre",
+      "description": "Comparer les différentes méthodes de lutte contre le moustique tigre en termes d'efficacité et de coût. Évaluer les perspectives de développement de la stérilisation des mâles comme alternative aux insecticides.",
+      "order": 3,
+      "visualizations": []
+    },
+    {
+      "id": 892,
+      "title": "Les villes face à l'invasion silencieuse du moustique tigre",
+      "description": "Étudier pourquoi les villes sont plus vulnérables en raison des îlots de chaleur et de la densité de population. Discuter des mesures urbaines possibles pour limiter la prolifération de cet insecte.",
+      "order": 4,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4341,
+      "title": "INSEE - Économie et tourisme",
+      "description": "Statistiques économiques sur le tourisme en France, y compris les coûts liés aux risques sanitaires.",
+      "link": "https://www.insee.fr/fr/recherche?texte=tourisme+%C3%A9conomie",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4342,
+      "title": "Climate Change and Vector-Borne Diseases",
+      "description": "Data and reports on how climate change affects the distribution and activity of vector-borne diseases like those spread by mosquitoes.",
+      "link": "https://www.ecdc.europa.eu/en/search?s=climate+change+mosquito",
+      "source": "ECDC",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4343,
+      "title": "INSEE - Densité de population et îlots de chaleur urbains",
+      "description": "Études et données sur la densité de population et les îlots de chaleur urbains en France, facteurs influençant la prolifération du moustique tigre.",
+      "link": "https://www.insee.fr/fr/recherche?texte=%C3%AElots+de+chaleur+urbains",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 7761,
+    "entities_count": 10,
+    "angles_count": 5,
+    "datasets_count": 3,
+    "angle_resources_count": 5
+  }
+}

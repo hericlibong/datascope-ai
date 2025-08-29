@@ -1,0 +1,452 @@
+{
+  "id": 223,
+  "article": {
+    "id": 298,
+    "title": "Moustiques tigres : \"Toute la France hexagonale va être touchée,",
+    "content": "Moustiques tigres : \"Toute la France hexagonale va être touchée, et les villes en premier\", prévient un spécialiste\n\nL'insecte a colonisé 81 des 96 départements métropolitains et les maladies qu'il véhicule ne sont désormais plus \"exotiques\". \n\n\nToute la France hexagonale va être touchée, et les villes en premier\", alerte Didier Fontenille, entomologiste, directeur de recherche émérite à l’Institut de recherche pour le développement (IRD), alors que les cas autochtones de contaminations à la dengue(Nouvelle fenêtre) et au chikungunya(Nouvelle fenêtre) battent des records.\n:\nà lire aussi CARTES. Insecte des villes, arrivé par le Sud, qui se déplace grâce aux voitures… Visualisez comment le moustique tigre colonise la France hexagonale\n\nCes maladies \"qu'on considérait comme exotiques par le passé\" touchent maintenant la France hexagonale \"en raison de la présence du moustique tigre et de son abondance dans de plus en plus de départements\". Au total, 81 des 96 départements métropolitains sont considérés comme colonisés. Ceux qui y échappent encore, sont principalement situés en Bretagne, Normandie, dans le nord et dans l'est de la France. Mais \"j'ai le regret d'annoncer aux personnes qui vivent dans ces départements qu'elles seront également touchées\", alerte l'entomologiste. Les villes vont être touchées en premier car elles concentrent des \"îlots de chaleur, qui font que le moustique s'y trouve bien et trouve à manger puisqu'il pique les humains\".\nGénétiquement adapté, hiberne \"comme une marmotte\"\n\nSi la France concentre 65 espèces différentes de moustiques, c'est le moustique tigre qui est en cause. Arrivé en 2004 en France métropolitaine, \"il est originaire d'Asie du Sud-Est, donc c'est un moustique tropical et il est très adapté aux climats chauds, mais génétiquement, il s'est adapté aux climats tempérés\", explique Didier Fontenille. \"Il est capable de passer l'hiver sous forme d'œuf, en hibernation, comme une marmotte\".\n\nMais il se réveille en fonction de la \"durée du jour\" et non de la chaleur. \"En revanche, ce qui se passe avec le changement climatique, c'est que les conditions durant lesquelles il est actif sont plus favorables, donc on va avoir plus de moustiques parce qu'il y aura plus d'œufs qui seront pondus par les femelles\". Ainsi, on ne trouvera pas forcément des moustiques plus tôt ou tard dans la saison, mais après leur réveil, leur nombre sera tout de suite plus important.\nSeule méthode de lutte efficace : la stérilisation des mâles\n\nUne politique très efficace, \"encore au stade de recherche expérimentale\" est celle de la stérilisation des moustiques mâles. \"C'est difficile à mettre en œuvre\" et \"très coûteux\" mais \"ça marche très bien\" puisque les œufs pondus par les femelles ne vont pas éclore et les populations vont \"diminuer petit à petit\". C'est cependant une disparition lente qui n'est donc \"pas du tout utilisable en période épidémique\". Il espère cependant que la technique \"va se développer\", notamment, car elle permet de \"s'affranchir des insecticides\".",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-29T12:01:33.524284+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Didier Fontenille\n- **Organisations** : Institut de recherche pour le développement\n- **Lieux** : France hexagonale, Bretagne, Normandie, Asie du Sud-Est\n- **Valeurs numériques** : 81 (81.0 None), 96 (96.0 None), 65 (65.0 None), 2004 (2004.0 None)\n\n## Suggestions d’angles\n\n### 1. Quelles villes sont les plus vulnérables au moustique tigre ?\nQ: Taux d'infestation par ville; Metrics: % de villes colonisées, # cas/chikungunya par habitant; Granularity: commune vs département, 2010–2024, annuel; Data: data.gouv.fr (Moustique-tigre), INSEE, Santé publique France; Axis: Geographic, Policy.\n\n### 2. Changement climatique et explosion des moustiques tigres : une réalité ?\nQ: Corrélation entre températures moyennes et population de moustiques; Metrics: % croissance population moustiques, °C anomalies températures moyennes; Granularity: département, 2004–2024, annuel; Data: Météo-France, Vigieau, IRD; Axis: Temporal, Geographic.\n\n### 3. Effectivité des politiques contre le moustique tigre : le point sur 2023\nQ: Taux de réussite des interventions et campagnes; Metrics: % réduction population, coûts campagnes/individu; Granularity: département, 2018–2023, annuel; Data: ANSES, IRD, data.gouv.fr (Moustique-tigre); Axis: Policy, DataQuality.\n\n### 4. Disparités régionales face aux maladies vectorielles : où agit-on le plus ?\nQ: Distribution des efforts et ressources par région; Metrics: financements/investissements, # programmes mis en place; Granularity: région, 2020–2024, trimestriel→annuel; Data: Ministry of Health, WHO, ECDC, INSEE; Axis: Inequalities, Policy.\n",
+  "created_at": "2025-08-29T12:02:38.063799+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Quelles villes sont les plus vulnérables au moustique tigre ?",
+      "description": "Q: Taux d'infestation par ville; Metrics: % de villes colonisées, # cas/chikungunya par habitant; Granularity: commune vs département, 2010–2024, annuel; Data: data.gouv.fr (Moustique-tigre), INSEE, Santé publique France; Axis: Geographic, Policy.",
+      "keywords": [
+        "moustique tigre",
+        "vulnérabilité urbaine",
+        "villes à risque",
+        "zones infestées",
+        "santé publique"
+      ],
+      "datasets": [
+        {
+          "title": "INSEE - Données démographiques par commune",
+          "description": "Données démographiques détaillées par commune, utiles pour analyser la vulnérabilité au moustique tigre.",
+          "link": "https://www.insee.fr/fr/recherche?texte=donn%C3%A9es%20d%C3%A9mographiques%20commune",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/recherche?texte=donn%C3%A9es%20d%C3%A9mographiques%20commune",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/recherche?texte=donn%C3%A9es%20d%C3%A9mographiques%20commune",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Santé publique France - Surveillance du chikungunya",
+          "description": "Informations sur les cas de chikungunya en France, avec des données par habitant et par région.",
+          "link": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya",
+          "source": "Santé publique France",
+          "source_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya",
+          "source_name": "Santé publique France",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya",
+            "error": null
+          }
+        },
+        {
+          "title": "Portail Moustique Tigre",
+          "description": "Données sur la présence du moustique tigre en France, incluant les taux d'infestation par commune et département.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "% de villes colonisées par le moustique tigre (2010-2024)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "% de villes colonisées",
+          "note": "Source : data.gouv.fr, granularité annuelle"
+        },
+        {
+          "title": "Cas de chikungunya par habitant par commune (2024)",
+          "chart_type": "choropleth",
+          "x": "Commune",
+          "y": "# cas/chikungunya par habitant",
+          "note": "Source : Santé publique France, données pour l'année 2024"
+        },
+        {
+          "title": "Comparaison du taux d'infestation par département (2024)",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Taux d'infestation",
+          "note": "Source : data.gouv.fr, données pour l'année 2024"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Changement climatique et explosion des moustiques tigres : une réalité ?",
+      "description": "Q: Corrélation entre températures moyennes et population de moustiques; Metrics: % croissance population moustiques, °C anomalies températures moyennes; Granularity: département, 2004–2024, annuel; Data: Météo-France, Vigieau, IRD; Axis: Temporal, Geographic.",
+      "keywords": [
+        "changement climatique",
+        "moustiques tigres",
+        "réchauffement climatique",
+        "biodiversité",
+        "santé publique"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Météo-France Climate Data",
+          "description": "Access historical and current climate data including temperature anomalies across France.",
+          "link": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+          "source": "Météo-France",
+          "source_url": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+          "source_name": "Météo-France",
+          "validation": {
+            "input_url": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+            "error": null
+          }
+        },
+        {
+          "title": "Vigieau Mosquito Monitoring",
+          "description": "Explore data on the distribution and population growth of tiger mosquitoes in France.",
+          "link": "https://www.vigieau.fr/donnees",
+          "source": "Vigieau",
+          "source_url": "https://www.vigieau.fr/donnees",
+          "source_name": "Vigieau",
+          "validation": {
+            "input_url": "https://www.vigieau.fr/donnees",
+            "status": "error",
+            "http_status": null,
+            "final_url": null,
+            "error": "SSLError"
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Évolution des anomalies de température et des moustiques tigres",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Anomalies de température (°C) et % croissance moustiques",
+          "note": "Source : Météo-France, Vigieau, IRD; Comparaison des tendances annuelles"
+        },
+        {
+          "title": "Répartition géographique des moustiques tigres par département",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "% Croissance population moustiques",
+          "note": "Source : Vigieau; Granularité départementale, données 2024"
+        },
+        {
+          "title": "Corrélation température-moustiques par département (2004-2024)",
+          "chart_type": "scatter",
+          "x": "Anomalies de température (°C)",
+          "y": "% Croissance population moustiques",
+          "note": "Source : Météo-France, IRD; Analyse de la corrélation par département"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Effectivité des politiques contre le moustique tigre : le point sur 2023",
+      "description": "Q: Taux de réussite des interventions et campagnes; Metrics: % réduction population, coûts campagnes/individu; Granularity: département, 2018–2023, annuel; Data: ANSES, IRD, data.gouv.fr (Moustique-tigre); Axis: Policy, DataQuality.",
+      "keywords": [
+        "moustique tigre",
+        "politiques publiques",
+        "lutte anti-vectorielle",
+        "évaluation 2023",
+        "santé publique"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "IRD - Études sur le moustique tigre",
+          "description": "Recherches et données sur la biologie, l'écologie et les méthodes de contrôle du moustique tigre.",
+          "link": "https://www.ird.fr/recherche?search_api_fulltext=moustique+tigre",
+          "source": "IRD",
+          "source_url": "https://www.ird.fr/recherche?search_api_fulltext=moustique+tigre",
+          "source_name": "IRD",
+          "validation": {
+            "input_url": "https://www.ird.fr/recherche?search_api_fulltext=moustique+tigre",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.ird.fr/recherche?search_api_fulltext=moustique+tigre",
+            "error": "HTTP 403"
+          }
+        },
+        {
+          "title": "Data.gouv.fr - Données sur le moustique tigre",
+          "description": "Portail de données ouvertes contenant des informations sur les campagnes et interventions contre le moustique tigre en France.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Réduction population moustique tigre par département (2018-2023)",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "% réduction population",
+          "note": "Source : ANSES, données annuelles"
+        },
+        {
+          "title": "Coût des campagnes par individu (2018-2023)",
+          "chart_type": "bar",
+          "x": "Année",
+          "y": "Coût par individu (€)",
+          "note": "Source : data.gouv.fr, coûts totaux divisés par la population concernée"
+        },
+        {
+          "title": "Taux de réussite des interventions par politique (2018-2023)",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Politique",
+          "note": "Source : IRD, succès mesuré par la réduction de population"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Disparités régionales face aux maladies vectorielles : où agit-on le plus ?",
+      "description": "Q: Distribution des efforts et ressources par région; Metrics: financements/investissements, # programmes mis en place; Granularity: région, 2020–2024, trimestriel→annuel; Data: Ministry of Health, WHO, ECDC, INSEE; Axis: Inequalities, Policy.",
+      "keywords": [
+        "maladies vectorielles",
+        "disparités régionales",
+        "zones d'intervention",
+        "prévention santé",
+        "épidémiologie régionale"
+      ],
+      "datasets": [
+        {
+          "title": "WHO Global Health Expenditure Database",
+          "description": "Offers insights into health expenditures by region, including investments in vector-borne disease programs.",
+          "link": "https://apps.who.int/nha/database",
+          "source": "WHO",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://apps.who.int/nha/database",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://apps.who.int/nha/database",
+            "error": null
+          }
+        },
+        {
+          "title": "INSEE Regional Health Statistics",
+          "description": "Explore regional health data in France, including program implementations and resource allocations.",
+          "link": "https://www.insee.fr/fr/statistiques?debut=0&theme=5",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques?debut=0&theme=5",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques?debut=0&theme=5",
+            "error": null
+          }
+        }
+      ],
+      "sources": [],
+      "visualizations": [
+        {
+          "title": "Investissements par région (2020-2024)",
+          "chart_type": "bar",
+          "x": "Région",
+          "y": "Montant des financements (€)",
+          "note": "Source : Ministry of Health, données annuelles"
+        },
+        {
+          "title": "Nombre de programmes par région et trimestre",
+          "chart_type": "heatmap",
+          "x": "Trimestre",
+          "y": "Région",
+          "note": "Source : WHO, données trimestrielles"
+        },
+        {
+          "title": "Comparaison des disparités régionales en 2024",
+          "chart_type": "choropleth",
+          "x": "Région",
+          "y": "Indice d'inégalité",
+          "note": "Source : ECDC, INSEE, agrégation annuelle"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5834,
+      "type": "PER",
+      "value": "Didier Fontenille",
+      "context": null
+    },
+    {
+      "id": 5835,
+      "type": "ORG",
+      "value": "Institut de recherche pour le développement",
+      "context": null
+    },
+    {
+      "id": 5836,
+      "type": "LOC",
+      "value": "France hexagonale",
+      "context": null
+    },
+    {
+      "id": 5837,
+      "type": "LOC",
+      "value": "Bretagne",
+      "context": null
+    },
+    {
+      "id": 5838,
+      "type": "LOC",
+      "value": "Normandie",
+      "context": null
+    },
+    {
+      "id": 5839,
+      "type": "LOC",
+      "value": "Asie du Sud-Est",
+      "context": null
+    },
+    {
+      "id": 5840,
+      "type": "NUM",
+      "value": "81.0",
+      "context": null
+    },
+    {
+      "id": 5841,
+      "type": "NUM",
+      "value": "96.0",
+      "context": null
+    },
+    {
+      "id": 5842,
+      "type": "NUM",
+      "value": "65.0",
+      "context": null
+    },
+    {
+      "id": 5843,
+      "type": "NUM",
+      "value": "2004.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 912,
+      "title": "Quelles villes sont les plus vulnérables au moustique tigre ?",
+      "description": "Q: Taux d'infestation par ville; Metrics: % de villes colonisées, # cas/chikungunya par habitant; Granularity: commune vs département, 2010–2024, annuel; Data: data.gouv.fr (Moustique-tigre), INSEE, Santé publique France; Axis: Geographic, Policy.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 913,
+      "title": "Changement climatique et explosion des moustiques tigres : une réalité ?",
+      "description": "Q: Corrélation entre températures moyennes et population de moustiques; Metrics: % croissance population moustiques, °C anomalies températures moyennes; Granularity: département, 2004–2024, annuel; Data: Météo-France, Vigieau, IRD; Axis: Temporal, Geographic.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 914,
+      "title": "Effectivité des politiques contre le moustique tigre : le point sur 2023",
+      "description": "Q: Taux de réussite des interventions et campagnes; Metrics: % réduction population, coûts campagnes/individu; Granularity: département, 2018–2023, annuel; Data: ANSES, IRD, data.gouv.fr (Moustique-tigre); Axis: Policy, DataQuality.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 915,
+      "title": "Disparités régionales face aux maladies vectorielles : où agit-on le plus ?",
+      "description": "Q: Distribution des efforts et ressources par région; Metrics: financements/investissements, # programmes mis en place; Granularity: région, 2020–2024, trimestriel→annuel; Data: Ministry of Health, WHO, ECDC, INSEE; Axis: Inequalities, Policy.",
+      "order": 3,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4354,
+      "title": "INSEE - Données démographiques par commune",
+      "description": "Données démographiques détaillées par commune, utiles pour analyser la vulnérabilité au moustique tigre.",
+      "link": "https://www.insee.fr/fr/recherche?texte=donn%C3%A9es%20d%C3%A9mographiques%20commune",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4355,
+      "title": "WHO Global Health Expenditure Database",
+      "description": "Offers insights into health expenditures by region, including investments in vector-borne disease programs.",
+      "link": "https://apps.who.int/nha/database",
+      "source": "WHO",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4356,
+      "title": "INSEE Regional Health Statistics",
+      "description": "Explore regional health data in France, including program implementations and resource allocations.",
+      "link": "https://www.insee.fr/fr/statistiques?debut=0&theme=5",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 64587,
+    "entities_count": 10,
+    "angles_count": 4,
+    "datasets_count": 3,
+    "angle_resources_count": 4
+  }
+}

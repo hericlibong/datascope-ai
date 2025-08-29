@@ -32,7 +32,7 @@ def _build_chain() -> Runnable:
 
     chat = ChatOpenAI(
         model=ai_engine.OPENAI_MODEL,
-        temperature=0.7,
+       # temperature=0.7,
         timeout=40,                  # un peu de créativité
         openai_api_key=ai_engine.OPENAI_API_KEY,
     )

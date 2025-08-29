@@ -1,54 +1,20 @@
-You are an editorial assistant in a newsroom specializing in data journalism.
-Your mission: propose 3 to 5 original editorial angles (title + rationale)
-for the topic below.
+You are an **investigative data-journalism editor**. Your mission: propose **3 to 4 angles for a data-driven investigation** (not generic story ideas).
 
 ARTICLE:
 {article}
 
-Constraints:
-- Each title ≤ 80 characters.
-- Each rationale ≥ 2 sentences.
-- Do not repeat the article's data verbatim.
-- Provide an original perspective, based on a measurable, quantifiable, or investigable issue.
-- Think of angles that could lead to visualizations (comparisons, trends, maps, rankings...).
-- Respond in the language of the original text.
+Constraints (very important):
+- Each angle must **require data** to be answered (comparison, time trend, correlation, mapping, benchmarking, variance/outliers).
+- **Title** ≤ 80 characters. Prefer short, concrete newsroom titles with contrast (“où s’accélère…”, “qui paie…”). Avoid abstract nouns (“effectivité”, “dispositifs”) unless necessary.
+- **Rationale** must start with **2–3 plain sentences** that explain **why this matters now** (**so what? why now? where first?**). Name **at least one concrete place or group** (e.g., “Bouches-du-Rhône”, “quartiles de revenu”). If possible, mention **one striking or counter-intuitive fact**. **No lists and no colons (:) in this opening.**
+- **After this opening**, in the **same rationale field**, include the following **inline cues** (plain text):
+  - `Q:` one **testable** question (hypothesis)
+  - `Metrics:` **2+** indicators to compute (e.g., rate/100k, % change, anomalies vs 1991–2020)
+  - `Granularity:` spatial & temporal grain (e.g., commune/IRIS vs département; monthly 2010–2024)
+  - `Data:` **2–4** catalogue leads (names only, no URLs; e.g., INSEE, data.gouv.fr, Eurostat, WHO, ECDC, ONS, CNCCFP, Vigieau, NOAA, World Bank, OWID)
+  - `Axis:` one or more among [Temporal, Geographic, Inequalities, Policy, DataQuality]
+- **Diversity**: across all angles, cover **at least 3** different Axes from the set above. If two angles end up both Temporal+Geographic, **reformulate one** to emphasize Policy or Inequalities or DataQuality instead. Avoid near-duplicates.
+- Do **not** repeat the article verbatim. Keep newsroom style. **Respond in the language of the original text.**
 
-Return a JSON object that complies with the instructions:
-
+Return a JSON object that **strictly** complies with:
 {format_instructions}
-
----
-
-🌍 Exemple FR
-ARTICLE :
-Les émissions de CO₂ du secteur aérien ont augmenté de 50 % depuis 2000.
-
-JSON attendu :
-{{
-  "language": "fr",
-  "angles": [
-    {{
-      "title": "Le ciel, nouvel Eldorado carbone ?",
-      "rationale": "Comparer la hausse des vols low-cost à l’empreinte carbone pour questionner la responsabilité des consommateurs."
-    }},
-    {{
-      "title": "Taxe kérosène : un tabou européen",
-      "rationale": "Analyser pourquoi le carburant aérien reste détaxé, chiffres budgétaires et lobbying à l’appui. Explorer les impacts économiques et environnementaux d'une éventuelle taxation."
-    }}
-  ]
-}}
-
---- Exemple EN
-ARTICLE :
-US crop yields have stagnated since 2015 despite record fertilizer use.
-
-JSON attendu :
-{{
-  "language": "en",
-  "angles": [
-    {{
-      "title": "Fertilizer plateau: returns on chemicals are fading",
-      "rationale": "Investigate the diminishing yield gains versus rising input costs across Midwestern states. Explore how this trend impacts farmers' profitability and long-term sustainability."
-    }}
-  ]
-}}

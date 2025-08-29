@@ -18,7 +18,7 @@ from tenacity import (
 
 logger = logging.getLogger("ai_engine.retry")
 
-MAX_ATTEMPTS = int(os.getenv("LLM_MAX_RETRIES", 3))
+MAX_ATTEMPTS = int(os.getenv("LLM_MAX_RETRIES", 1))
 
 
 def llm_retry(func):

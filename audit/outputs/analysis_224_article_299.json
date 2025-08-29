@@ -1,0 +1,534 @@
+{
+  "id": 224,
+  "article": {
+    "id": 299,
+    "title": "Moustiques tigres : \"Toute la France hexagonale va être touchée,",
+    "content": "Moustiques tigres : \"Toute la France hexagonale va être touchée, et les villes en premier\", prévient un spécialiste\n\nL'insecte a colonisé 81 des 96 départements métropolitains et les maladies qu'il véhicule ne sont désormais plus \"exotiques\". \n\n\nToute la France hexagonale va être touchée, et les villes en premier\", alerte Didier Fontenille, entomologiste, directeur de recherche émérite à l’Institut de recherche pour le développement (IRD), alors que les cas autochtones de contaminations à la dengue(Nouvelle fenêtre) et au chikungunya(Nouvelle fenêtre) battent des records.\n:\nà lire aussi CARTES. Insecte des villes, arrivé par le Sud, qui se déplace grâce aux voitures… Visualisez comment le moustique tigre colonise la France hexagonale\n\nCes maladies \"qu'on considérait comme exotiques par le passé\" touchent maintenant la France hexagonale \"en raison de la présence du moustique tigre et de son abondance dans de plus en plus de départements\". Au total, 81 des 96 départements métropolitains sont considérés comme colonisés. Ceux qui y échappent encore, sont principalement situés en Bretagne, Normandie, dans le nord et dans l'est de la France. Mais \"j'ai le regret d'annoncer aux personnes qui vivent dans ces départements qu'elles seront également touchées\", alerte l'entomologiste. Les villes vont être touchées en premier car elles concentrent des \"îlots de chaleur, qui font que le moustique s'y trouve bien et trouve à manger puisqu'il pique les humains\".\nGénétiquement adapté, hiberne \"comme une marmotte\"\n\nSi la France concentre 65 espèces différentes de moustiques, c'est le moustique tigre qui est en cause. Arrivé en 2004 en France métropolitaine, \"il est originaire d'Asie du Sud-Est, donc c'est un moustique tropical et il est très adapté aux climats chauds, mais génétiquement, il s'est adapté aux climats tempérés\", explique Didier Fontenille. \"Il est capable de passer l'hiver sous forme d'œuf, en hibernation, comme une marmotte\".\n\nMais il se réveille en fonction de la \"durée du jour\" et non de la chaleur. \"En revanche, ce qui se passe avec le changement climatique, c'est que les conditions durant lesquelles il est actif sont plus favorables, donc on va avoir plus de moustiques parce qu'il y aura plus d'œufs qui seront pondus par les femelles\". Ainsi, on ne trouvera pas forcément des moustiques plus tôt ou tard dans la saison, mais après leur réveil, leur nombre sera tout de suite plus important.\nSeule méthode de lutte efficace : la stérilisation des mâles\n\nUne politique très efficace, \"encore au stade de recherche expérimentale\" est celle de la stérilisation des moustiques mâles. \"C'est difficile à mettre en œuvre\" et \"très coûteux\" mais \"ça marche très bien\" puisque les œufs pondus par les femelles ne vont pas éclore et les populations vont \"diminuer petit à petit\". C'est cependant une disparition lente qui n'est donc \"pas du tout utilisable en période épidémique\". Il espère cependant que la technique \"va se développer\", notamment, car elle permet de \"s'affranchir des insecticides\".",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-29T12:16:34.020376+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Didier Fontenille\n- **Organisations** : Institut de recherche pour le développement\n- **Lieux** : France hexagonale, Bretagne, Normandie, Asie du Sud-Est\n- **Valeurs numériques** : 81 (81.0 None), 96 (96.0 None), 65 (65.0 None), 2004 (2004.0 None)\n\n## Suggestions d’angles\n\n### 1. La progression géographique du moustique tigre depuis 2004\nFace à l'invasion du moustique tigre, il est crucial de comprendre comment cet insecte s'est propagé géographiquement en France pour anticiper les risques sanitaires. Q: Comment la répartition du moustique tigre a-t-elle évolué depuis 2004 en France métropolitaine ? Metrics: #départements colonisés/an, % croissance annuelle; Granularity: département, 2004–2024, annuel; Data: data.gouv.fr (santé), ARS, IRD; Axis: Temporal, Geographic.\n\n### 2. Impact du changement climatique sur l'activité du moustique tigre\nLe changement climatique bouleverse les conditions de vie du moustique tigre. Il est important d'examiner comment ces modifications influencent sa période d'activité. Q: Dans quelle mesure le changement climatique a-t-il allongé la période d'activité du moustique tigre ? Metrics: durée de la saison active, températures moyennes; Granularity: région, 2004–2024, trimestriel; Data: Météo France, NOAA, IRD; Axis: Temporal, DataQuality.\n\n### 3. Corrélation entre densité urbaine et prolifération du moustique tigre\nLes villes, avec leurs îlots de chaleur urbains, semblent être des foyers idéaux pour les moustiques tigres. Comprendre cette relation peut guider les politiques de santé publique. Q: La densité humaine et urbaine influence-t-elle la présence du moustique tigre ? Metrics: densité de population, nombre de signalements de moustiques, % zones urbaines couvertes; Granularity: commune, 2010–2024, annuel; Data: INSEE, data.gouv.fr, ECDC; Axis: Geographic, Inequalities.\n\n### 4. Stérilisation des mâles: efficacité et coût des programmes pilotes\nLa stérilisation des moustiques mâles est une méthode prometteuse mais coûteuse. Évaluer ses impacts pourrait orienter des décisions politiques sur son adoption plus large. Q: Ces programmes réduisent-ils efficacement la population de moustiques tigres et à quel coût ? Metrics: % réduction population, coût/euro investi; Granularity: département pilote, 2015–2024, annuel; Data: IRD, data.gouv.fr, agences régionales de santé; Axis: Policy, DataQuality.\n\n### 5. Évolution des cas autochtones de dengue et chikungunya en France\nL'augmentation des cas autochtones de maladies transmises par les moustiques est alarmante. Analyser cette tendance est essentiel pour évaluer l'ampleur des risques. Q: Quelle est l'évolution des cas autochtones de dengue et de chikungunya en France métropolitaine ? Metrics: #cas/an, % augmentation annuelle; Granularity: département, 2004–2024, annuel; Data: Santé Publique France, ECDC, WHO; Axis: Temporal, Geographic.\n",
+  "created_at": "2025-08-29T12:17:46.128023+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "La progression géographique du moustique tigre depuis 2004",
+      "description": "Face à l'invasion du moustique tigre, il est crucial de comprendre comment cet insecte s'est propagé géographiquement en France pour anticiper les risques sanitaires. Q: Comment la répartition du moustique tigre a-t-elle évolué depuis 2004 en France métropolitaine ? Metrics: #départements colonisés/an, % croissance annuelle; Granularity: département, 2004–2024, annuel; Data: data.gouv.fr (santé), ARS, IRD; Axis: Temporal, Geographic.",
+      "keywords": [
+        "moustique tigre",
+        "distribution géographique",
+        "expansion invasive",
+        "données épidémiologiques",
+        "changement climatique"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "ECDC - Mosquito maps",
+          "description": "Maps and data on the presence of Aedes albopictus (tiger mosquito) in Europe, including France.",
+          "link": "https://www.ecdc.europa.eu:443/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source": "ECDC",
+          "source_url": "https://www.ecdc.europa.eu:443/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source_name": "ECDC",
+          "validation": {
+            "input_url": "https://ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.ecdc.europa.eu:443/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+            "error": null
+          }
+        },
+        {
+          "title": "Portail de données ouvertes - Moustique tigre",
+          "description": "Search for datasets related to the geographical distribution and colonization of the tiger mosquito in France.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Départements colonisés par le moustique tigre (2004-2024)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "#Départements colonisés",
+          "note": "Source : ARS, IRD, données annuelles"
+        },
+        {
+          "title": "Croissance annuelle du moustique tigre par département",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "% Croissance annuelle",
+          "note": "Source : data.gouv.fr, données de 2004 à 2024"
+        },
+        {
+          "title": "Propagation géographique du moustique tigre en France",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Département",
+          "note": "Visualisation de la progression par département, source : ARS"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Impact du changement climatique sur l'activité du moustique tigre",
+      "description": "Le changement climatique bouleverse les conditions de vie du moustique tigre. Il est important d'examiner comment ces modifications influencent sa période d'activité. Q: Dans quelle mesure le changement climatique a-t-il allongé la période d'activité du moustique tigre ? Metrics: durée de la saison active, températures moyennes; Granularity: région, 2004–2024, trimestriel; Data: Météo France, NOAA, IRD; Axis: Temporal, DataQuality.",
+      "keywords": [
+        "changement climatique",
+        "moustique tigre",
+        "réchauffement climatique",
+        "maladies vectorielles",
+        "biodiversité"
+      ],
+      "datasets": [
+        {
+          "title": "IRD - Impacts du changement climatique sur la biodiversité",
+          "description": "Études et données sur l'impact du changement climatique sur la biodiversité, y compris les moustiques.",
+          "link": "https://www.ird.fr/recherche/themes/changement-climatique",
+          "source": "IRD",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.ird.fr/recherche/themes/changement-climatique",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.ird.fr/recherche/themes/changement-climatique",
+            "error": "HTTP 403"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Météo France - Données climatiques",
+          "description": "Accès aux données climatiques historiques et actuelles en France, incluant les températures moyennes trimestrielles.",
+          "link": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+          "source": "Météo France",
+          "source_url": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+          "source_name": "Météo France",
+          "validation": {
+            "input_url": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://donneespubliques.meteofrance.fr/?fond=produit&id_produit=90&id_rubrique=32",
+            "error": null
+          }
+        },
+        {
+          "title": "NOAA Climate Data Online",
+          "description": "Base de données sur les températures mondiales et les conditions climatiques, permettant une analyse régionale et temporelle.",
+          "link": "https://www.ncdc.noaa.gov/cdo-web/",
+          "source": "NOAA",
+          "source_url": "https://www.ncdc.noaa.gov/cdo-web/",
+          "source_name": "NOAA",
+          "validation": {
+            "input_url": "https://www.ncdc.noaa.gov/cdo-web/",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ncdc.noaa.gov/cdo-web/",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Durée de la saison active du moustique tigre (2004-2024)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Durée de la saison active (mois)",
+          "note": "Source : Météo France, données trimestrielles par région"
+        },
+        {
+          "title": "Températures moyennes par région (2004-2024)",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Région",
+          "note": "Source : NOAA, températures moyennes trimestrielles"
+        },
+        {
+          "title": "Corrélation entre température et activité du moustique tigre",
+          "chart_type": "scatter",
+          "x": "Température moyenne (°C)",
+          "y": "Durée de la saison active (mois)",
+          "note": "Source : IRD, analyse régionale"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Corrélation entre densité urbaine et prolifération du moustique tigre",
+      "description": "Les villes, avec leurs îlots de chaleur urbains, semblent être des foyers idéaux pour les moustiques tigres. Comprendre cette relation peut guider les politiques de santé publique. Q: La densité humaine et urbaine influence-t-elle la présence du moustique tigre ? Metrics: densité de population, nombre de signalements de moustiques, % zones urbaines couvertes; Granularity: commune, 2010–2024, annuel; Data: INSEE, data.gouv.fr, ECDC; Axis: Geographic, Inequalities.",
+      "keywords": [
+        "densité urbaine",
+        "moustique tigre",
+        "prolifération moustique",
+        "zones urbaines",
+        "santé publique"
+      ],
+      "datasets": [
+        {
+          "title": "INSEE - Population Density by Commune",
+          "description": "Provides detailed data on population density at the commune level in France, essential for analyzing urban density.",
+          "link": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-01",
+          "source": "INSEE",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-01",
+            "status": "error",
+            "http_status": 500,
+            "final_url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-01",
+            "error": "HTTP 500"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "ECDC - Surveillance of Invasive Mosquito Species",
+          "description": "Data on the distribution and spread of invasive mosquito species, including the tiger mosquito, across Europe.",
+          "link": "https://www.ecdc.europa.eu:443/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source": "ECDC",
+          "source_url": "https://www.ecdc.europa.eu:443/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+          "source_name": "ECDC",
+          "validation": {
+            "input_url": "https://ecdc.europa.eu/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.ecdc.europa.eu:443/en/disease-vectors/surveillance-and-disease-data/mosquito-maps",
+            "error": null
+          }
+        },
+        {
+          "title": "Data.gouv.fr - Urban Heat Islands and Climate Data",
+          "description": "Explore datasets related to urban heat islands and climate data in France, useful for understanding environmental factors.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Densité urbaine vs Signalements de moustiques tigres (2010-2024)",
+          "chart_type": "scatter",
+          "x": "Densité de population (hab/km²)",
+          "y": "Nombre de signalements de moustiques tigres",
+          "note": "Source : INSEE, data.gouv.fr; Granularité : commune"
+        },
+        {
+          "title": "Évolution annuelle des zones urbaines couvertes et des moustiques tigres",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Pourcentage de zones urbaines couvertes",
+          "note": "Source : ECDC, data.gouv.fr; Granularité : commune"
+        },
+        {
+          "title": "Carte des signalements de moustiques tigres par densité urbaine",
+          "chart_type": "choropleth",
+          "x": "Commune",
+          "y": "Nombre de signalements",
+          "note": "Source : INSEE, data.gouv.fr; Granularité : commune"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Stérilisation des mâles: efficacité et coût des programmes pilotes",
+      "description": "La stérilisation des moustiques mâles est une méthode prometteuse mais coûteuse. Évaluer ses impacts pourrait orienter des décisions politiques sur son adoption plus large. Q: Ces programmes réduisent-ils efficacement la population de moustiques tigres et à quel coût ? Metrics: % réduction population, coût/euro investi; Granularity: département pilote, 2015–2024, annuel; Data: IRD, data.gouv.fr, agences régionales de santé; Axis: Policy, DataQuality.",
+      "keywords": [
+        "stérilisation mâles",
+        "programmes pilotes",
+        "efficacité coût",
+        "contrôle population",
+        "gestion faune"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "Santé Publique France: Vector Control",
+          "description": "Information and data on vector control strategies, including mosquito sterilization, from Santé Publique France.",
+          "link": "https://www.santepubliquefrance.fr/recherche/#search=st%C3%A9rilisation%20moustiques",
+          "source": "Santé Publique France",
+          "source_url": "https://www.santepubliquefrance.fr/recherche/#search=st%C3%A9rilisation%20moustiques",
+          "source_name": "Santé Publique France",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/recherche/#search=st%C3%A9rilisation%20moustiques",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/recherche/#search=st%C3%A9rilisation%20moustiques",
+            "error": null
+          }
+        },
+        {
+          "title": "IRD Research on Mosquito Control",
+          "description": "Explore research and data on mosquito control methods, including male sterilization, conducted by the Institut de Recherche pour le Développement (IRD).",
+          "link": "https://www.ird.fr/recherche?texte=st%C3%A9rilisation+moustiques",
+          "source": "IRD",
+          "source_url": "https://www.ird.fr/recherche?texte=st%C3%A9rilisation+moustiques",
+          "source_name": "IRD",
+          "validation": {
+            "input_url": "https://www.ird.fr/recherche?texte=st%C3%A9rilisation+moustiques",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.ird.fr/recherche?texte=st%C3%A9rilisation+moustiques",
+            "error": "HTTP 403"
+          }
+        },
+        {
+          "title": "Data.gouv.fr: Mosquito Control Programs",
+          "description": "Access datasets related to mosquito control programs in France, including pilot projects and their effectiveness.",
+          "link": "https://www.data.gouv.fr/datasets/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/datasets/",
+          "source_name": "data.gouv.fr",
+          "validation": null
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Réduction de la population de moustiques par département (2015-2024)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "% Réduction population",
+          "note": "Source : IRD, agences régionales de santé"
+        },
+        {
+          "title": "Coût par euro investi dans la stérilisation (2015-2024)",
+          "chart_type": "bar",
+          "x": "Année",
+          "y": "Coût/euro investi",
+          "note": "Source : data.gouv.fr, données annuelles"
+        },
+        {
+          "title": "Carte des départements pilotes et efficacité des programmes",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "% Réduction population",
+          "note": "Granularité : département, Source : IRD"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Évolution des cas autochtones de dengue et chikungunya en France",
+      "description": "L'augmentation des cas autochtones de maladies transmises par les moustiques est alarmante. Analyser cette tendance est essentiel pour évaluer l'ampleur des risques. Q: Quelle est l'évolution des cas autochtones de dengue et de chikungunya en France métropolitaine ? Metrics: #cas/an, % augmentation annuelle; Granularity: département, 2004–2024, annuel; Data: Santé Publique France, ECDC, WHO; Axis: Temporal, Geographic.",
+      "keywords": [
+        "dengue France",
+        "chikungunya France",
+        "cas autochtones",
+        "épidémiologie dengue",
+        "évolution chikungunya"
+      ],
+      "datasets": [],
+      "sources": [
+        {
+          "title": "ECDC - Surveillance of Communicable Diseases",
+          "description": "Données sur la surveillance des maladies transmissibles, y compris la dengue et le chikungunya, en Europe.",
+          "link": "https://www.ecdc.europa.eu/en/surveillance-and-disease-data",
+          "source": "ECDC",
+          "source_url": "https://www.ecdc.europa.eu/en/surveillance-and-disease-data",
+          "source_name": "ECDC",
+          "validation": {
+            "input_url": "https://www.ecdc.europa.eu/en/surveillance-and-disease-data",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.ecdc.europa.eu/en/ecdc-activities-surveillance",
+            "error": "HTTP 403"
+          }
+        },
+        {
+          "title": "WHO - Dengue and Chikungunya Data",
+          "description": "Informations globales et régionales sur les cas de dengue et chikungunya, avec des rapports annuels.",
+          "link": "https://www.who.int/teams/global-malaria-programme/dengue-and-chikungunya",
+          "source": "WHO",
+          "source_url": "https://www.who.int/teams/global-malaria-programme/dengue-and-chikungunya",
+          "source_name": "WHO",
+          "validation": {
+            "input_url": "https://www.who.int/teams/global-malaria-programme/dengue-and-chikungunya",
+            "status": "error",
+            "http_status": null,
+            "final_url": null,
+            "error": "Timeout"
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Cas annuels de dengue et chikungunya en France (2004-2024)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de cas",
+          "note": "Source : Santé Publique France, ECDC, WHO; données annuelles"
+        },
+        {
+          "title": "Augmentation annuelle des cas de dengue et chikungunya par département",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "% Augmentation annuelle",
+          "note": "Source : Santé Publique France, données par département"
+        },
+        {
+          "title": "Répartition géographique des cas autochtones de dengue et chikungunya",
+          "chart_type": "heatmap",
+          "x": "Département",
+          "y": "Année",
+          "note": "Source : ECDC, WHO; visualisation des tendances par département"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5844,
+      "type": "PER",
+      "value": "Didier Fontenille",
+      "context": null
+    },
+    {
+      "id": 5845,
+      "type": "ORG",
+      "value": "Institut de recherche pour le développement",
+      "context": null
+    },
+    {
+      "id": 5846,
+      "type": "LOC",
+      "value": "France hexagonale",
+      "context": null
+    },
+    {
+      "id": 5847,
+      "type": "LOC",
+      "value": "Bretagne",
+      "context": null
+    },
+    {
+      "id": 5848,
+      "type": "LOC",
+      "value": "Normandie",
+      "context": null
+    },
+    {
+      "id": 5849,
+      "type": "LOC",
+      "value": "Asie du Sud-Est",
+      "context": null
+    },
+    {
+      "id": 5850,
+      "type": "NUM",
+      "value": "81.0",
+      "context": null
+    },
+    {
+      "id": 5851,
+      "type": "NUM",
+      "value": "96.0",
+      "context": null
+    },
+    {
+      "id": 5852,
+      "type": "NUM",
+      "value": "65.0",
+      "context": null
+    },
+    {
+      "id": 5853,
+      "type": "NUM",
+      "value": "2004.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 916,
+      "title": "La progression géographique du moustique tigre depuis 2004",
+      "description": "Face à l'invasion du moustique tigre, il est crucial de comprendre comment cet insecte s'est propagé géographiquement en France pour anticiper les risques sanitaires. Q: Comment la répartition du moustique tigre a-t-elle évolué depuis 2004 en France métropolitaine ? Metrics: #départements colonisés/an, % croissance annuelle; Granularity: département, 2004–2024, annuel; Data: data.gouv.fr (santé), ARS, IRD; Axis: Temporal, Geographic.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 917,
+      "title": "Impact du changement climatique sur l'activité du moustique tigre",
+      "description": "Le changement climatique bouleverse les conditions de vie du moustique tigre. Il est important d'examiner comment ces modifications influencent sa période d'activité. Q: Dans quelle mesure le changement climatique a-t-il allongé la période d'activité du moustique tigre ? Metrics: durée de la saison active, températures moyennes; Granularity: région, 2004–2024, trimestriel; Data: Météo France, NOAA, IRD; Axis: Temporal, DataQuality.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 918,
+      "title": "Corrélation entre densité urbaine et prolifération du moustique tigre",
+      "description": "Les villes, avec leurs îlots de chaleur urbains, semblent être des foyers idéaux pour les moustiques tigres. Comprendre cette relation peut guider les politiques de santé publique. Q: La densité humaine et urbaine influence-t-elle la présence du moustique tigre ? Metrics: densité de population, nombre de signalements de moustiques, % zones urbaines couvertes; Granularity: commune, 2010–2024, annuel; Data: INSEE, data.gouv.fr, ECDC; Axis: Geographic, Inequalities.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 919,
+      "title": "Stérilisation des mâles: efficacité et coût des programmes pilotes",
+      "description": "La stérilisation des moustiques mâles est une méthode prometteuse mais coûteuse. Évaluer ses impacts pourrait orienter des décisions politiques sur son adoption plus large. Q: Ces programmes réduisent-ils efficacement la population de moustiques tigres et à quel coût ? Metrics: % réduction population, coût/euro investi; Granularity: département pilote, 2015–2024, annuel; Data: IRD, data.gouv.fr, agences régionales de santé; Axis: Policy, DataQuality.",
+      "order": 3,
+      "visualizations": []
+    },
+    {
+      "id": 920,
+      "title": "Évolution des cas autochtones de dengue et chikungunya en France",
+      "description": "L'augmentation des cas autochtones de maladies transmises par les moustiques est alarmante. Analyser cette tendance est essentiel pour évaluer l'ampleur des risques. Q: Quelle est l'évolution des cas autochtones de dengue et de chikungunya en France métropolitaine ? Metrics: #cas/an, % augmentation annuelle; Granularity: département, 2004–2024, annuel; Data: Santé Publique France, ECDC, WHO; Axis: Temporal, Geographic.",
+      "order": 4,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4357,
+      "title": "IRD - Impacts du changement climatique sur la biodiversité",
+      "description": "Études et données sur l'impact du changement climatique sur la biodiversité, y compris les moustiques.",
+      "link": "https://www.ird.fr/recherche/themes/changement-climatique",
+      "source": "IRD",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4358,
+      "title": "INSEE - Population Density by Commune",
+      "description": "Provides detailed data on population density at the commune level in France, essential for analyzing urban density.",
+      "link": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-01",
+      "source": "INSEE",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 72124,
+    "entities_count": 10,
+    "angles_count": 5,
+    "datasets_count": 2,
+    "angle_resources_count": 5
+  }
+}
