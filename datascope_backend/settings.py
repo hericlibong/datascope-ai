@@ -15,8 +15,25 @@ from decouple import config, Csv
 from datetime import timedelta
 import os
 
+# (Option simple) charger .env si ce n'est pas déjà fait
+try:
+    from dotenv import load_dotenv  # pip install python-dotenv
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    load_dotenv(BASE_DIR / ".env")
+except Exception:
+    pass
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# --- Clés & config recherche web ---
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")
+
+SEARCH_ENABLED = True
+SEARCH_PROVIDER = os.getenv("SEARCH_PROVIDER", "tavily")  # tavily | serper | bing | searxng
+SEARCH_MAX_RESULTS = int(os.getenv("SEARCH_MAX_RESULTS", "10"))
+SEARCH_TIMEOUT = int(os.getenv("SEARCH_TIMEOUT", "8"))
 
 
 # Quick-start development settings - unsuitable for production

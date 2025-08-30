@@ -18,7 +18,8 @@ from ai_engine.schemas import (
     AngleResources,
 )
 from ai_engine.scoring import compute_score
-from ai_engine.chains import keywords, viz, llm_sources
+from ai_engine.chains import keywords, viz # llm_sources
+from ai_engine.chains import llm_sources_collect  # NEW
 from ai_engine.memory import get_memory
 
 from ai_engine.connectors.data_gouv import DataGouvClient
@@ -248,7 +249,13 @@ theme_strict: Optional[bool] = None,
     else:
         connectors_sets = [[] for _ in range(len(keywords_per_angle))]
 
-    llm_sources_sets = llm_sources.run(angle_result)
+    # llm_sources_sets = llm_sources.run(angle_result)
+    
+    if bool(getattr(settings, "SEARCH_ENABLED", False)):
+        llm_sources_sets = llm_sources_collect.run(angle_result)  # NEW: collecte via web search
+    else:
+        llm_sources_sets = llm_sources_collect.run(angle_result)  # fallback LLM-only
+    
     viz_sets = viz.run(angle_result)
 
     angle_resources: list[AngleResources] = []

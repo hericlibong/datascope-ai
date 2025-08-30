@@ -1,0 +1,1550 @@
+{
+  "id": 228,
+  "article": {
+    "id": 303,
+    "title": "Moustiques tigres : \"Toute la France hexagonale va être touchée,",
+    "content": "Moustiques tigres : \"Toute la France hexagonale va être touchée, et les villes en premier\", prévient un spécialiste\n\nL'insecte a colonisé 81 des 96 départements métropolitains et les maladies qu'il véhicule ne sont désormais plus \"exotiques\". \n\n\nToute la France hexagonale va être touchée, et les villes en premier\", alerte Didier Fontenille, entomologiste, directeur de recherche émérite à l’Institut de recherche pour le développement (IRD), alors que les cas autochtones de contaminations à la dengue(Nouvelle fenêtre) et au chikungunya(Nouvelle fenêtre) battent des records.\n:\nà lire aussi CARTES. Insecte des villes, arrivé par le Sud, qui se déplace grâce aux voitures… Visualisez comment le moustique tigre colonise la France hexagonale\n\nCes maladies \"qu'on considérait comme exotiques par le passé\" touchent maintenant la France hexagonale \"en raison de la présence du moustique tigre et de son abondance dans de plus en plus de départements\". Au total, 81 des 96 départements métropolitains sont considérés comme colonisés. Ceux qui y échappent encore, sont principalement situés en Bretagne, Normandie, dans le nord et dans l'est de la France. Mais \"j'ai le regret d'annoncer aux personnes qui vivent dans ces départements qu'elles seront également touchées\", alerte l'entomologiste. Les villes vont être touchées en premier car elles concentrent des \"îlots de chaleur, qui font que le moustique s'y trouve bien et trouve à manger puisqu'il pique les humains\".\nGénétiquement adapté, hiberne \"comme une marmotte\"\n\nSi la France concentre 65 espèces différentes de moustiques, c'est le moustique tigre qui est en cause. Arrivé en 2004 en France métropolitaine, \"il est originaire d'Asie du Sud-Est, donc c'est un moustique tropical et il est très adapté aux climats chauds, mais génétiquement, il s'est adapté aux climats tempérés\", explique Didier Fontenille. \"Il est capable de passer l'hiver sous forme d'œuf, en hibernation, comme une marmotte\".\n\nMais il se réveille en fonction de la \"durée du jour\" et non de la chaleur. \"En revanche, ce qui se passe avec le changement climatique, c'est que les conditions durant lesquelles il est actif sont plus favorables, donc on va avoir plus de moustiques parce qu'il y aura plus d'œufs qui seront pondus par les femelles\". Ainsi, on ne trouvera pas forcément des moustiques plus tôt ou tard dans la saison, mais après leur réveil, leur nombre sera tout de suite plus important.\nSeule méthode de lutte efficace : la stérilisation des mâles\n\nUne politique très efficace, \"encore au stade de recherche expérimentale\" est celle de la stérilisation des moustiques mâles. \"C'est difficile à mettre en œuvre\" et \"très coûteux\" mais \"ça marche très bien\" puisque les œufs pondus par les femelles ne vont pas éclore et les populations vont \"diminuer petit à petit\". C'est cependant une disparition lente qui n'est donc \"pas du tout utilisable en période épidémique\". Il espère cependant que la technique \"va se développer\", notamment, car elle permet de \"s'affranchir des insecticides\".",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-30T10:16:31.369945+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Didier Fontenille\n- **Organisations** : Institut de recherche pour le développement\n- **Lieux** : France hexagonale, Bretagne, Normandie, Asie du Sud-Est\n- **Valeurs numériques** : 81 (81.0 None), 96 (96.0 None), 65 (65.0 None), 2004 (2004.0 None)\n\n## Suggestions d’angles\n\n### 1. Où la propagation du moustique tigre s'accélère-t-elle le plus?\nAlors que le moustique tigre gagne du terrain en France, il est crucial d'identifier les zones où sa progression est la plus rapide pour anticiper les risques sanitaires. Par exemple, des départements comme la Vendée ou le Vaucluse pourraient montrer des progressions surprenantes par rapport à des zones déjà hautement colonisées. Q: Quels départements voient l'accélération la plus rapide de la colonisation par les moustiques tigres? Metrics: % d'augmentation annuelle, nombre de départements colonisés par an, écart-type de la progression annuelle. Granularity: département; annuel 2004–2024. Data: Santé publique France, data.gouv.fr, ECDC, Moustiques.gouv.fr. Axis: Temporal, Geographic\n\n### 2. Qui paie le plus pour la lutte contre le moustique tigre?\nAvec la montée du moustique tigre en France, les coûts de gestion et de prévention s'alourdissent pour les collectivités locales. Certaines régions, comme Provence-Alpes-Côte d'Azur (PACA), dépensent peut-être bien plus que d'autres, révélant des inégalités dans la gestion. Q: Quels départements supportent les plus grosses dépenses liées au moustique tigre? Metrics: dépenses par département, dépenses/habitant, % du budget alloué comparé au total des dépenses sanitaires. Granularity: département; annuel 2010–2024. Data: INSEE, CNCCFP, data.gouv.fr, comptes santé. Axis: Geographic, Inequalities\n\n### 3. La variabilité des législations locales contre les moustiques tigres\nFace à la menace croissante des moustiques tigres, les stratégies de gestion varient largement entre différentes régions de France. Des zones comme l'Occitanie pourraient adopter des politiques plus agressives que d'autres, illustrant une réponse inégale. Q: Comment les politiques de gestion du moustique tigre varient-elles entre les départements et quelles sont les plus efficaces? Metrics: types de politiques par département, nombre de politiques adoptées, % de réduction dans les zones avec politiques agressives. Granularity: département; annuel 2015–2024. Data: data.gouv.fr, Bulletins officiels des collectivités, Sénat, Santé publique France. Axis: Policy, Geographic\n\n### 4. Changement climatique : Amplificateur du danger moustique en France?\nLe changement climatique pourrait exacerber la menace des moustiques tigres en prolongeant leur saison d'activité. Des régions traditionnellement tempérées, comme la Bretagne, pourraient être touchées plus tôt que prévu. Q: Comment le réchauffement climatique influence-t-il la saisonnalité et la répartition géographique du moustique tigre en France? Metrics: jours d'activité par saison, température moyenne vs présence de moustiques, anomalies météorologiques vs colonisation. Granularity: département; mensuel 2010–2024. Data: Météo-France, data.gouv.fr, ECDC, Vigieau. Axis: Temporal, DataQuality\n",
+  "created_at": "2025-08-30T10:18:05.534782+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Où la propagation du moustique tigre s'accélère-t-elle le plus?",
+      "description": "Alors que le moustique tigre gagne du terrain en France, il est crucial d'identifier les zones où sa progression est la plus rapide pour anticiper les risques sanitaires. Par exemple, des départements comme la Vendée ou le Vaucluse pourraient montrer des progressions surprenantes par rapport à des zones déjà hautement colonisées. Q: Quels départements voient l'accélération la plus rapide de la colonisation par les moustiques tigres? Metrics: % d'augmentation annuelle, nombre de départements colonisés par an, écart-type de la progression annuelle. Granularity: département; annuel 2004–2024. Data: Santé publique France, data.gouv.fr, ECDC, Moustiques.gouv.fr. Axis: Temporal, Geographic",
+      "keywords": [
+        "moustique tigre",
+        "propagation moustique",
+        "zones à risque",
+        "climat tropical",
+        "données épidémiologiques"
+      ],
+      "datasets": [
+        {
+          "title": "Moustique tigre en France : 71 départements en vigilance rouge",
+          "description": "L'implantation du moustique tigre progresse de manière continue et rapide. Elle concerne quatre nouveaux départements : l'Allier, l'Ille-et-",
+          "link": "https://www.pasteur.fr/fr/accueil/journal-recherche/actualites/moustique-tigre-france-71-departements-vigilance-rouge",
+          "source": "www.pasteur.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.pasteur.fr/fr/accueil/journal-recherche/actualites/moustique-tigre-france-71-departements-vigilance-rouge",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.pasteur.fr/fr/accueil/journal-recherche/actualites/moustique-tigre-france-71-departements-vigilance-rouge",
+            "error": null
+          }
+        },
+        {
+          "title": "Journal of the European Mosquito Control Association",
+          "description": "Aedes albopictus was first discovered on the French-Italian border in 2004 and in less than ten years has completely colonised south-east France",
+          "link": "https://brill.com/downloadpdf/view/journals/jemc/43/1/article-pS1_1.pdf",
+          "source": "brill.com",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": null
+        },
+        {
+          "title": "Données en France métropolitaine - Santé publique France",
+          "description": "Surveillance des arboviroses en France métropolitaine : nette augmentation des cas de ... Cartes de présence du moustique tigre (Aedes albopictus) en France",
+          "link": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine",
+          "source": "www.santepubliquefrance.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Chikungunya, dengue et zika - Données de la surveillance ...",
+          "description": "Du 1er mai 2024 au 26 novembre 2024, ont été identifiés en France hexagonale : 2 028 cas importés de dengue, dont 1 808 dans les départements où l'implantation",
+          "link": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+          "source": "www.santepubliquefrance.fr",
+          "source_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+          "source_name": "www.santepubliquefrance.fr",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+            "error": null
+          }
+        },
+        {
+          "title": "Expansion géographique d'Aedes albopictus - INMA",
+          "description": "En France métropolitaine, la propagation du moustique Aedes albopictus est donc en constante progression depuis sa première détection à Menton en 2004. Son",
+          "link": "https://www.inma.fr/wp-content/uploads/2017/08/dip_mem_2012_26_vacus.pdf",
+          "source": "www.inma.fr",
+          "source_url": "https://www.inma.fr/wp-content/uploads/2017/08/dip_mem_2012_26_vacus.pdf",
+          "source_name": "www.inma.fr",
+          "validation": {
+            "input_url": "https://www.inma.fr/wp-content/uploads/2017/08/dip_mem_2012_26_vacus.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.inma.fr/wp-content/uploads/2017/08/dip_mem_2012_26_vacus.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Do Imported Aedes albopictus Mosquitoes Cause Dengue ...",
+          "description": "Installé en Europe depuis trente ans, le moustique tigre a colonisé la France dès 2004 et le département du Bas-Rhin en 2014. Ce dernier département fait",
+          "link": "https://www.researchgate.net/publication/23427164_The_Hidden_Passenger_of_Lucky_Bamboo_Do_Imported_Aedes_albopictus_Mosquitoes_Cause_Dengue_Virus_Transmission_in_the_Netherlands",
+          "source": "www.researchgate.net",
+          "source_url": "https://www.researchgate.net/publication/23427164_The_Hidden_Passenger_of_Lucky_Bamboo_Do_Imported_Aedes_albopictus_Mosquitoes_Cause_Dengue_Virus_Transmission_in_the_Netherlands",
+          "source_name": "www.researchgate.net",
+          "validation": {
+            "input_url": "https://www.researchgate.net/publication/23427164_The_Hidden_Passenger_of_Lucky_Bamboo_Do_Imported_Aedes_albopictus_Mosquitoes_Cause_Dengue_Virus_Transmission_in_the_Netherlands",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.researchgate.net/publication/23427164_The_Hidden_Passenger_of_Lucky_Bamboo_Do_Imported_Aedes_albopictus_Mosquitoes_Cause_Dengue_Virus_Transmission_in_the_Netherlands",
+            "error": "HTTP 403"
+          }
+        },
+        {
+          "title": "Moustique tigre en France hexagonale : risque et impacts d ...",
+          "description": "En France hexagonale1 et plus globalement en Europe, le nombre de cas humains d’infections par des arbovirus transmis par les moustiques Aedes albopictus (comme la dengue, la fièvre à virus chikungunya, la fièvre à virus Zika) ou Culex spp. Anses ● Rapport d’expertise collective Saisine 2022-SA-0146 Arboviroses et impacts Version finale page 246 / 247 juillet 2024 • Questionnaire adressé aux chambres de commerce et d’industrie (CCI) dans les DROM Les questions visent à recueillir votre expérience de la gestion d’épidémies de dengue, chikungunya et/ou Zika afin d’estimer les impacts potentiels d’une augmentation de la transmission autochtone d’arboviroses par Aedes albopictus dans l’Hexagone.",
+          "link": "https://www.anses.fr/fr/system/files/ASE2022SA0146RA.pdf",
+          "source": "www.anses.fr",
+          "source_url": "https://www.anses.fr/fr/system/files/ASE2022SA0146RA.pdf",
+          "source_name": "www.anses.fr",
+          "validation": {
+            "input_url": "https://www.anses.fr/fr/system/files/ASE2022SA0146RA.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.anses.fr/fr/system/files/ASE2022SA0146RA.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Ferrantia 87 schaffner.indd",
+          "description": "by F Schaffner · 2023 · Cited by 6 — moustique tigre asiatique dans la région du. Rhin supérieur (tiger-platform ... southern France, August 2019. Eurosurveil- lance 24(45): 1900655. doi",
+          "link": "https://ps.mnhn.lu/ferrantia/publications/Ferrantia87.pdf",
+          "source": "ps.mnhn.lu",
+          "source_url": "https://ps.mnhn.lu/ferrantia/publications/Ferrantia87.pdf",
+          "source_name": "ps.mnhn.lu",
+          "validation": {
+            "input_url": "https://ps.mnhn.lu/ferrantia/publications/Ferrantia87.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://ps.mnhn.lu/ferrantia/publications/Ferrantia87.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "impact of climate change on the healthcare system in ...",
+          "description": "... France, 2017). The trigger levels are determined per department, hence the ... 5 https://tiger-platform.eu/fr/moustique-tigre/. 6 https://www.gov.uk",
+          "link": "https://climat.be/doc/fhs-climate-healthcare-final-report-final.pdf",
+          "source": "climat.be",
+          "source_url": "https://climat.be/doc/fhs-climate-healthcare-final-report-final.pdf",
+          "source_name": "climat.be",
+          "validation": {
+            "input_url": "https://climat.be/doc/fhs-climate-healthcare-final-report-final.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://climat.be/doc/fhs-climate-healthcare-final-report-final.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Approche holistique des facteurs favorisant le ...",
+          "description": "Originaire d'Asie du Sud et de l'Est, Aedes albopictus, communément appelé moustique tigre, a été introduit sur le continent européen en 1970",
+          "link": "https://theses.hal.science/tel-04786558v1/file/TH2023DUVALPENELOPE.pdf",
+          "source": "theses.hal.science",
+          "source_url": "https://theses.hal.science/tel-04786558v1/file/TH2023DUVALPENELOPE.pdf",
+          "source_name": "theses.hal.science",
+          "validation": {
+            "input_url": "https://theses.hal.science/tel-04786558v1/file/TH2023DUVALPENELOPE.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://theses.hal.science/tel-04786558v1/file/TH2023DUVALPENELOPE.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Maladies vectorielles émergentes",
+          "description": "Tableau 1: Nombre de cas et foyers détectés chez l'avifaune, les équidés et chez les humains depuis le. 01/05/2023 pour les foyers/cas animaux (",
+          "link": "https://gds19.org/Docs/PDF/UP/2023/UP-2023-09-22.pdf",
+          "source": "gds19.org",
+          "source_url": "https://gds19.org/Docs/PDF/UP/2023/UP-2023-09-22.pdf",
+          "source_name": "gds19.org",
+          "validation": {
+            "input_url": "https://gds19.org/Docs/PDF/UP/2023/UP-2023-09-22.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://gds19.org/Docs/PDF/UP/2023/UP-2023-09-22.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Bases génétiques de la résistance à la deltaméthrine chez ...",
+          "description": "Cette thèse a été réalisée d'Octobre 2021 à Octobre 2024 au Laboratoire d'Écologie Alpine (LECA). Grenoble. Elle a été financée par une",
+          "link": "https://theses.hal.science/tel-05140055v1/file/BACOT_2024_archivage.pdf",
+          "source": "theses.hal.science",
+          "source_url": "https://theses.hal.science/tel-05140055v1/file/BACOT_2024_archivage.pdf",
+          "source_name": "theses.hal.science",
+          "validation": {
+            "input_url": "https://theses.hal.science/tel-05140055v1/file/BACOT_2024_archivage.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://theses.hal.science/tel-05140055v1/file/BACOT_2024_archivage.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Moustique tigre : une épidémie sans précédent dans l'hexagone cet ...",
+          "description": "Missing: augmentation annuelle",
+          "link": "https://france3-regions.franceinfo.fr/centre-val-de-loire/loiret/orleans/moustique-tigre-une-epidemie-sans-precedent-dans-l-hexagone-cet-ete-comment-se-proteger-des-maladies-comme-le-chikungunya-3208514.html",
+          "source": "france3-regions.franceinfo.fr",
+          "source_url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/loiret/orleans/moustique-tigre-une-epidemie-sans-precedent-dans-l-hexagone-cet-ete-comment-se-proteger-des-maladies-comme-le-chikungunya-3208514.html",
+          "source_name": "france3-regions.franceinfo.fr",
+          "validation": {
+            "input_url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/loiret/orleans/moustique-tigre-une-epidemie-sans-precedent-dans-l-hexagone-cet-ete-comment-se-proteger-des-maladies-comme-le-chikungunya-3208514.html",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/loiret/orleans/moustique-tigre-une-epidemie-sans-precedent-dans-l-hexagone-cet-ete-comment-se-proteger-des-maladies-comme-le-chikungunya-3208514.html",
+            "error": null
+          }
+        },
+        {
+          "title": "Le moustique tigre : une implantation dans 78 départements en ...",
+          "description": "Arrivé en France hexagonale en 2004, le moustique tigre (Aedes albopictus) continue son implantation rapide sur le territoire avec sept nouveaux",
+          "link": "https://sante.gouv.fr/actualites/actualites-du-ministere/article/le-moustique-tigre-une-implantation-dans-78-departements-en-metropole",
+          "source": "sante.gouv.fr",
+          "source_url": "https://sante.gouv.fr/actualites/actualites-du-ministere/article/le-moustique-tigre-une-implantation-dans-78-departements-en-metropole",
+          "source_name": "sante.gouv.fr",
+          "validation": {
+            "input_url": "https://sante.gouv.fr/actualites/actualites-du-ministere/article/le-moustique-tigre-une-implantation-dans-78-departements-en-metropole",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://sante.gouv.fr/actualites/actualites-du-ministere/article/le-moustique-tigre-une-implantation-dans-78-departements-en-metropole",
+            "error": null
+          }
+        },
+        {
+          "title": "Cartes de présence du moustique tigre (Aedes albopictus) en ...",
+          "description": "* Exposition à l’amiante et risque pour la santé Ces cartes officielles de présence du moustique tigre *(Aedes albopictus)* en France métropolitaine sont destinées à l’information des décideurs et du grand public. Les départements dans lesquels le moustique tigre est implanté et actif, sont répartis en 2 catégories, les départements faiblement colonisés si moins de 40 % des communes du département sont colonisées, les départements fortement colonisés si au moins 40 % des communes du département sont colonisées. Les particuliers peuvent contribuer à la surveillance de l’implantation du moustique tigre (Aedes albopictus) en métropole et alimenter les données de cette carte, en particulier dans les quelques départements n’ayant pas encore rapporté de présence du vecteur.",
+          "link": "https://sante.gouv.fr/sante-et-environnement/risques-microbiologiques-physiques-et-chimiques/especes-nuisibles-et-parasites/article/cartes-de-presence-du-moustique-tigre-aedes-albopictus-en-france-metropolitaine",
+          "source": "sante.gouv.fr",
+          "source_url": "https://sante.gouv.fr/sante-et-environnement/risques-microbiologiques-physiques-et-chimiques/especes-nuisibles-et-parasites/article/cartes-de-presence-du-moustique-tigre-aedes-albopictus-en-france-metropolitaine",
+          "source_name": "sante.gouv.fr",
+          "validation": {
+            "input_url": "https://sante.gouv.fr/sante-et-environnement/risques-microbiologiques-physiques-et-chimiques/especes-nuisibles-et-parasites/article/cartes-de-presence-du-moustique-tigre-aedes-albopictus-en-france-metropolitaine",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://sante.gouv.fr/sante-et-environnement/risques-microbiologiques-physiques-et-chimiques/especes-nuisibles-et-parasites/article/cartes-de-presence-du-moustique-tigre-aedes-albopictus-en-france-metropolitaine",
+            "error": null
+          }
+        },
+        {
+          "title": "Mosquitoes management: Environmental issues and ...",
+          "description": "This edited volume focuses on contemporary developments in mosquito control policies. It is premised on the idea that, in view of the social",
+          "link": "https://library.oapen.org/bitstream/handle/20.500.12657/89779/9782807602427.pdf?sequence=1&isAllowed=y",
+          "source": "library.oapen.org",
+          "source_url": "https://library.oapen.org/bitstream/handle/20.500.12657/89779/9782807602427.pdf?sequence=1&isAllowed=y",
+          "source_name": "library.oapen.org",
+          "validation": {
+            "input_url": "https://library.oapen.org/bitstream/handle/20.500.12657/89779/9782807602427.pdf?sequence=1&isAllowed=y",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://library.oapen.org/bitstream/handle/20.500.12657/89779/9782807602427.pdf?sequence=1&isAllowed=y",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Propagation annuelle du moustique tigre par département",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "% d'augmentation annuelle",
+          "note": "Source : Moustiques.gouv.fr, données de 2004 à 2024"
+        },
+        {
+          "title": "Nombre de départements colonisés par an",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de départements",
+          "note": "Source : Santé publique France, ECDC"
+        },
+        {
+          "title": "Écart-type de la progression annuelle du moustique tigre",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Écart-type de la progression annuelle",
+          "note": "Source : data.gouv.fr, granularité départementale"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Qui paie le plus pour la lutte contre le moustique tigre?",
+      "description": "Avec la montée du moustique tigre en France, les coûts de gestion et de prévention s'alourdissent pour les collectivités locales. Certaines régions, comme Provence-Alpes-Côte d'Azur (PACA), dépensent peut-être bien plus que d'autres, révélant des inégalités dans la gestion. Q: Quels départements supportent les plus grosses dépenses liées au moustique tigre? Metrics: dépenses par département, dépenses/habitant, % du budget alloué comparé au total des dépenses sanitaires. Granularity: département; annuel 2010–2024. Data: INSEE, CNCCFP, data.gouv.fr, comptes santé. Axis: Geographic, Inequalities",
+      "keywords": [
+        "financement moustique tigre",
+        "budget santé publique",
+        "subventions anti-moustique",
+        "dépenses municipales",
+        "lutte vectorielle"
+      ],
+      "datasets": [
+        {
+          "title": "Écologie, contrôle et coûts des moustiques vecteurs d' ...",
+          "description": "FSPI. Coordinateur administratif : J.M. Portefaix. Coordinateur scientifique IRD : David Roiz. Budget total : 599 150 €. Budget géré : 235 024 €. 32. DiMoC.",
+          "link": "https://www.researchgate.net/publication/371166339_Ecologie_controle_et_couts_des_moustiques_vecteurs_d'arbovirus_Habilitation_a_Diriger_des_Recherches",
+          "source": "www.researchgate.net",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.researchgate.net/publication/371166339_Ecologie_controle_et_couts_des_moustiques_vecteurs_d'arbovirus_Habilitation_a_Diriger_des_Recherches",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.researchgate.net/publication/371166339_Ecologie_controle_et_couts_des_moustiques_vecteurs_d'arbovirus_Habilitation_a_Diriger_des_Recherches",
+            "error": "HTTP 403"
+          }
+        },
+        {
+          "title": "Publications",
+          "description": "Moustique tigre en France hexagonale : risque et impacts d'une arbovirose Rapport: L'Anses a été saisie le 3/08/2022 par la Direction générale de la santé (DGS)",
+          "link": "https://www.parisschoolofeconomics.eu/recherche/groupes-de-recherche-thematiques/comportement-bien-etre-et-normes/publications/",
+          "source": "www.parisschoolofeconomics.eu",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.parisschoolofeconomics.eu/recherche/groupes-de-recherche-thematiques/comportement-bien-etre-et-normes/publications",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.parisschoolofeconomics.eu/recherche/groupes-de-recherche-thematiques/comportement-bien-etre-et-normes/publications/",
+            "error": null
+          }
+        },
+        {
+          "title": "en Normandie",
+          "description": "Les 13 diagrammes ombrothermiques sont dessinés à partir de données Météo-France sur la période 2001-2020. ... processionnaire, moustique tigre…",
+          "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/05/21/60338351-24ee-4930-a16c-ec1ca2cfa541/profil_climat_edition2024.pdf",
+          "source": "www.datanormandie.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/05/21/60338351-24ee-4930-a16c-ec1ca2cfa541/profil_climat_edition2024.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/05/21/60338351-24ee-4930-a16c-ec1ca2cfa541/profil_climat_edition2024.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Extension Clesud Terminal _ EIE V3.1_sans annexes",
+          "description": "L'Autorité environnementale (MRAe PACA) a été saisie indépendamment par les maîtres d'ouvrage pour le cadrage de l'étude d'impact de leur",
+          "link": "https://www.bouches-du-rhone.gouv.fr/content/download/48170/273178/file/op%20Extension%20Clesud%20Terminal_EIE%20V3.1_sans%20annexes.pdf",
+          "source": "www.bouches-du-rhone.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.bouches-du-rhone.gouv.fr/content/download/48170/273178/file/op%20Extension%20Clesud%20Terminal_EIE%20V3.1_sans%20annexes.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.bouches-du-rhone.gouv.fr/content/download/48170/273178/file/op%20Extension%20Clesud%20Terminal_EIE%20V3.1_sans%20annexes.pdf",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "PJ 4 Etude d'impac - Pyrenees-atlantiques.gouv.fr",
+          "description": "Le département des Pyrénées-Atlantiques est colonisé par le moustique tigre. ... La production de granulats en France en 2020 s'élève à 330 millions de tonnes.",
+          "link": "https://www.pyrenees-atlantiques.gouv.fr/contenu/telechargement/57088/419453/file/PJ4-Etude_impact_Louvie-mars2025-Partie%202-1.pdf",
+          "source": "www.pyrenees-atlantiques.gouv.fr",
+          "source_url": "https://www.pyrenees-atlantiques.gouv.fr/contenu/telechargement/57088/419453/file/PJ4-Etude_impact_Louvie-mars2025-Partie%202-1.pdf",
+          "source_name": "www.pyrenees-atlantiques.gouv.fr",
+          "validation": {
+            "input_url": "https://www.pyrenees-atlantiques.gouv.fr/contenu/telechargement/57088/419453/file/PJ4-Etude_impact_Louvie-mars2025-Partie%202-1.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.pyrenees-atlantiques.gouv.fr/contenu/telechargement/57088/419453/file/PJ4-Etude_impact_Louvie-mars2025-Partie%202-1.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Approche holistique des facteurs favorisant le ...",
+          "description": "La colonisation en cours de la France métropolitaine par le moustique tigre, Aedes albopictus, en fait dorénavant un problème sanitaire au",
+          "link": "https://theses.hal.science/tel-04786558v1/file/TH2023DUVALPENELOPE.pdf",
+          "source": "theses.hal.science",
+          "source_url": "https://theses.hal.science/tel-04786558v1/file/TH2023DUVALPENELOPE.pdf",
+          "source_name": "theses.hal.science",
+          "validation": {
+            "input_url": "https://theses.hal.science/tel-04786558v1/file/TH2023DUVALPENELOPE.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://theses.hal.science/tel-04786558v1/file/TH2023DUVALPENELOPE.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Les coûts économiques des invasions biologiques en France",
+          "description": "Les données sont basées sur le nombre d'espèces recensées dans GRIIS et GISD. Elles illustrent le manque important de données de coûts é",
+          "link": "https://invacost.fr/wp-content/uploads/2021/08/RapportCoutsFrance.pdf",
+          "source": "invacost.fr",
+          "source_url": "https://invacost.fr/wp-content/uploads/2021/08/RapportCoutsFrance.pdf",
+          "source_name": "invacost.fr",
+          "validation": {
+            "input_url": "https://invacost.fr/wp-content/uploads/2021/08/RapportCoutsFrance.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://invacost.fr/wp-content/uploads/2021/08/RapportCoutsFrance.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Bases génétiques de l'adaptation du moustique tigre ...",
+          "description": "L'archive ouverte pluridisciplinaire HAL, est destinée au dépôt et à la diffusion de documents scientifiques de niveau recherche, publiés ou non",
+          "link": "https://theses.hal.science/tel-01323966v2/file/GoubertClement.pdf",
+          "source": "theses.hal.science",
+          "source_url": "https://theses.hal.science/tel-01323966v2/file/GoubertClement.pdf",
+          "source_name": "theses.hal.science",
+          "validation": {
+            "input_url": "https://theses.hal.science/tel-01323966v2/file/GoubertClement.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://theses.hal.science/tel-01323966v2/file/GoubertClement.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "état des lieux santé environnementale",
+          "description": "insectes vecteurs tels que le moustique tigre), aux zoonoses et au développement de bactéries et champignons, algues toxiques",
+          "link": "https://www.cca.bzh/app/uploads/2024/11/CLS_SanteEnvironnement_DIAG.pdf",
+          "source": "www.cca.bzh",
+          "source_url": "https://www.cca.bzh/app/uploads/2024/11/CLS_SanteEnvironnement_DIAG.pdf",
+          "source_name": "www.cca.bzh",
+          "validation": {
+            "input_url": "https://www.cca.bzh/app/uploads/2024/11/CLS_SanteEnvironnement_DIAG.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.cca.bzh/app/uploads/2024/11/CLS_SanteEnvironnement_DIAG.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "rapport annuel 2025 du haut conseil pour le climat",
+          "description": "En 2024, plus de 3 700 décès sont attribuables à la cha- leur sur l'ensemble de la période de surveillance de l'été. La transmission locale de",
+          "link": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+          "source": "www.centre-francais-fondations.org",
+          "source_url": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+          "source_name": "www.centre-francais-fondations.org",
+          "validation": {
+            "input_url": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Crise(s), climat : plan de transformation de l'économie ...",
+          "description": "Avec la pandémie de COVID-19, les Français redécouvrent ce que signifie une pénu- rie, et voient que l'argent se trouve toujours, mais ne suffit pas à résoudre",
+          "link": "https://theshiftproject.org/app/uploads/2025/05/Crises-climat_chantier-du-Plan_Shift-Project.pdf",
+          "source": "theshiftproject.org",
+          "source_url": "https://theshiftproject.org/app/uploads/2025/05/Crises-climat_chantier-du-Plan_Shift-Project.pdf",
+          "source_name": "theshiftproject.org",
+          "validation": {
+            "input_url": "https://theshiftproject.org/app/uploads/2025/05/Crises-climat_chantier-du-Plan_Shift-Project.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://theshiftproject.org/app/uploads/2025/05/Crises-climat_chantier-du-Plan_Shift-Project.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "CC du 14 juin 2023",
+          "description": "... Dépenses d'investissement de l'exercice. 1 415 585,19. Résultat d'investissement de l'Exercice. - 53 958,97. Restes à réaliser 2022 pour",
+          "link": "https://www.ccdsp.fr/images/documents/Delib20230614.pdf",
+          "source": "www.ccdsp.fr",
+          "source_url": "https://www.ccdsp.fr/images/documents/Delib20230614.pdf",
+          "source_name": "www.ccdsp.fr",
+          "validation": {
+            "input_url": "https://www.ccdsp.fr/images/documents/Delib20230614.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ccdsp.fr/images/documents/Delib20230614.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": ",&$-.(-(/01&0%)(##$*-0203$#.&-'(\" - Verre & protections.com",
+          "description": "Mostiglass, efficace à 100 % contre les moustiques‐tigre. Technal : fenêtre anti-bruit. Page 41. SALON. 41. VERRE & PROTECTIONS MAG N°112 I",
+          "link": "https://www.verreetprotections.com/wp-content/uploads/VPM112_BD.pdf",
+          "source": "www.verreetprotections.com",
+          "source_url": "https://www.verreetprotections.com/wp-content/uploads/VPM112_BD.pdf",
+          "source_name": "www.verreetprotections.com",
+          "validation": {
+            "input_url": "https://www.verreetprotections.com/wp-content/uploads/VPM112_BD.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.verreetprotections.com/wp-content/uploads/VPM112_BD.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "plan climat air energie territorial syndicat mixte du bassin de ...",
+          "description": "L'élaboration du PCAET se déroule en trois grandes étapes : • Un diagnostic qui permet d'identifier les enjeux climat, air, énergie pour le territoire ainsi.",
+          "link": "http://scot-cavaillon-coustellet-islesurlasorgue.fr/wp-content/uploads/2020/01/Rapport-diagnostic-SCoT-CCIS-V14-DS.pdf",
+          "source": "scot-cavaillon-coustellet-islesurlasorgue.fr",
+          "source_url": "http://scot-cavaillon-coustellet-islesurlasorgue.fr/wp-content/uploads/2020/01/Rapport-diagnostic-SCoT-CCIS-V14-DS.pdf",
+          "source_name": "scot-cavaillon-coustellet-islesurlasorgue.fr",
+          "validation": {
+            "input_url": "http://scot-cavaillon-coustellet-islesurlasorgue.fr/wp-content/uploads/2020/01/Rapport-diagnostic-SCoT-CCIS-V14-DS.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "http://scot-cavaillon-coustellet-islesurlasorgue.fr/wp-content/uploads/2020/01/Rapport-diagnostic-SCoT-CCIS-V14-DS.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "PLAN CLIMAT AIR ENERGIE TERRITORIAL DIAGNOSTIC ...",
+          "description": "Un diagnostic qui permet d'identifier les enjeux climat, air, énergie pour le territoire ainsi que ses potentialités et ses vulnérabilités,.",
+          "link": "https://sorguesducomtat.fr/uploads/contenus/33/37115b684888200ba71aef7a45777040.pdf",
+          "source": "sorguesducomtat.fr",
+          "source_url": "https://sorguesducomtat.fr/uploads/contenus/33/37115b684888200ba71aef7a45777040.pdf",
+          "source_name": "sorguesducomtat.fr",
+          "validation": {
+            "input_url": "https://sorguesducomtat.fr/uploads/contenus/33/37115b684888200ba71aef7a45777040.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://sorguesducomtat.fr/uploads/contenus/33/37115b684888200ba71aef7a45777040.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Réduction massive",
+          "description": "by VG Boussada · 2025 — Les présents travaux de recherche exploitent les données mesurées de février 2016 à décembre 2021 aux trois stations du bassin versant (Delarque & Pak, 2023).",
+          "link": "https://www.gfpesticides.org/bdd_fichiers/694c7f065c3a714ea1f53c7a0ff603f9a125546cd39.pdf",
+          "source": "www.gfpesticides.org",
+          "source_url": "https://www.gfpesticides.org/bdd_fichiers/694c7f065c3a714ea1f53c7a0ff603f9a125546cd39.pdf",
+          "source_name": "www.gfpesticides.org",
+          "validation": {
+            "input_url": "https://www.gfpesticides.org/bdd_fichiers/694c7f065c3a714ea1f53c7a0ff603f9a125546cd39.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.gfpesticides.org/bdd_fichiers/694c7f065c3a714ea1f53c7a0ff603f9a125546cd39.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Démarches PCAET V2 PEC SEQ",
+          "description": "... 2018;13/02/2021;03/04/2017;PCAET;\"Plan climat air énergie territorial\";\"Après extension de l'agglomération de 12 à 47 communes, Grand Châtellerault élabore",
+          "link": "https://www.territoires-climat.ademe.fr/opendata/Demarches_PCAET_V2_pec_seq.csv",
+          "source": "www.territoires-climat.ademe.fr",
+          "source_url": "https://www.territoires-climat.ademe.fr/opendata/Demarches_PCAET_V2_pec_seq.csv",
+          "source_name": "www.territoires-climat.ademe.fr",
+          "validation": {
+            "input_url": "https://www.territoires-climat.ademe.fr/opendata/Demarches_PCAET_V2_pec_seq.csv",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.territoires-climat.ademe.fr/opendata/Demarches_PCAET_V2_pec_seq.csv",
+            "error": null
+          }
+        },
+        {
+          "title": "Délibération no 090/2024",
+          "description": "Absents ayant donné pouvoir. Xavier MARQUOT pouvoir à Joëlle EICKAMYER. Céline BEYNEIX pouvoir à Catherine GASPA.",
+          "link": "https://www.ccpro.fr/Ressources/Deliberations/2024-2506.pdf",
+          "source": "www.ccpro.fr",
+          "source_url": "https://www.ccpro.fr/Ressources/Deliberations/2024-2506.pdf",
+          "source_name": "www.ccpro.fr",
+          "validation": {
+            "input_url": "https://www.ccpro.fr/Ressources/Deliberations/2024-2506.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ccpro.fr/Ressources/Deliberations/2024-2506.pdf",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Dépenses par département pour le moustique tigre (2010-2024)",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Dépenses totales (€)",
+          "note": "Source : data.gouv.fr, INSEE. Visualisation géographique des dépenses."
+        },
+        {
+          "title": "Dépenses par habitant pour la lutte contre le moustique tigre",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Dépenses par habitant (€)",
+          "note": "Source : data.gouv.fr, INSEE. Permet de voir les inégalités en termes de dépenses par habitant."
+        },
+        {
+          "title": "% du budget sanitaire alloué au moustique tigre",
+          "chart_type": "heatmap",
+          "x": "Département",
+          "y": "Année",
+          "note": "Source : CNCCFP, comptes santé. Montre l'évolution de la part du budget sanitaire allouée."
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "La variabilité des législations locales contre les moustiques tigres",
+      "description": "Face à la menace croissante des moustiques tigres, les stratégies de gestion varient largement entre différentes régions de France. Des zones comme l'Occitanie pourraient adopter des politiques plus agressives que d'autres, illustrant une réponse inégale. Q: Comment les politiques de gestion du moustique tigre varient-elles entre les départements et quelles sont les plus efficaces? Metrics: types de politiques par département, nombre de politiques adoptées, % de réduction dans les zones avec politiques agressives. Granularity: département; annuel 2015–2024. Data: data.gouv.fr, Bulletins officiels des collectivités, Sénat, Santé publique France. Axis: Policy, Geographic",
+      "keywords": [
+        "législation moustiques",
+        "moustique tigre",
+        "réglementation locale",
+        "contrôle moustiques",
+        "prévention moustiques"
+      ],
+      "datasets": [
+        {
+          "title": "Risques sanitaires - Catalogue PIGMA",
+          "description": "Ce jeu de données recense les communes du département de la Gironde suivies pour le Moustique Tigre. DDRM 33 - Dossier départemental des risques majeurs de la",
+          "link": "https://www.pigma.org/geonetwork/bordeaux_metropole_dir_info_geo/search?keyword=Risques%20sanitaires",
+          "source": "www.pigma.org",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.pigma.org/geonetwork/bordeaux_metropole_dir_info_geo/search?keyword=Risques%20sanitaires",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.pigma.org/geonetwork/bordeaux_metropole_dir_info_geo/search?keyword=Risques%20sanitaires",
+            "error": null
+          }
+        },
+        {
+          "title": "Publications - Paris School of Economics",
+          "description": "Moustique tigre en France hexagonale : risque et impacts d'une arbovirose Rapport: L'Anses a été saisie le 3/08/2022 par la Direction générale de la santé (DGS)",
+          "link": "https://www.parisschoolofeconomics.eu/recherche/groupes-de-recherche-thematiques/comportement-bien-etre-et-normes/publications/",
+          "source": "www.parisschoolofeconomics.eu",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.parisschoolofeconomics.eu/recherche/groupes-de-recherche-thematiques/comportement-bien-etre-et-normes/publications",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.parisschoolofeconomics.eu/recherche/groupes-de-recherche-thematiques/comportement-bien-etre-et-normes/publications/",
+            "error": null
+          }
+        },
+        {
+          "title": "Transferir - GBIF",
+          "description": "Système d'Information sur la Nature et les Paysages d'Ile de France - Données sensibles (ou cachées par les observateurs) de la base de données Île-de-France.",
+          "link": "https://www.gbif.org/pt/occurrence/download/0038680-250717081556266",
+          "source": "www.gbif.org",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.gbif.org/pt/occurrence/download/0038680-250717081556266",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.gbif.org/pt/occurrence/download/0038680-250717081556266",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Chikungunya, dengue et zika - Données de la surveillance ...",
+          "description": "Du 1er mai 2024 au 26 novembre 2024, ont été identifiés en France hexagonale : 2 028 cas importés de dengue, dont 1 808 dans les départements où l'implantation",
+          "link": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+          "source": "www.santepubliquefrance.fr",
+          "source_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+          "source_name": "www.santepubliquefrance.fr",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+            "error": null
+          }
+        },
+        {
+          "title": "Chikungunya, dengue et Zika - Données de la surveillance ...",
+          "description": "Du 1er mai au 30 novembre de chaque année, Santé publique France coordonne la surveillance renforcée saisonnière du chikungunya, de la dengue, du Zika et du",
+          "link": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-zika-et-west-nile-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2025",
+          "source": "www.santepubliquefrance.fr",
+          "source_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-zika-et-west-nile-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2025",
+          "source_name": "www.santepubliquefrance.fr",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2025",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-zika-et-west-nile-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2025",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Bases génétiques de l'adaptation du moustique tigre Aedes ...",
+          "description": "L'archive ouverte pluridisciplinaire HAL, est destinée au dépôt et à la diffusion de documents scientifiques de niveau recherche, publiés ou non",
+          "link": "https://theses.hal.science/tel-01323966v2/file/GoubertClement.pdf",
+          "source": "theses.hal.science",
+          "source_url": "https://theses.hal.science/tel-01323966v2/file/GoubertClement.pdf",
+          "source_name": "theses.hal.science",
+          "validation": {
+            "input_url": "https://theses.hal.science/tel-01323966v2/file/GoubertClement.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://theses.hal.science/tel-01323966v2/file/GoubertClement.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Identifier un moustique : morphologie classique et nouvelles ...",
+          "description": "Les espèces invasives comme le moustique tigre comptent parmi les vecteurs les plus efficaces (dengue, chikungunya, Zika). L'identification précise des espèces,",
+          "link": "https://www.researchgate.net/publication/342620540_Identifier_un_moustique_morphologie_classique_et_nouvelles_techniques_moleculaires_associees_pour_une_taxonomie_integree",
+          "source": "www.researchgate.net",
+          "source_url": "https://www.researchgate.net/publication/342620540_Identifier_un_moustique_morphologie_classique_et_nouvelles_techniques_moleculaires_associees_pour_une_taxonomie_integree",
+          "source_name": "www.researchgate.net",
+          "validation": {
+            "input_url": "https://www.researchgate.net/publication/342620540_Identifier_un_moustique_morphologie_classique_et_nouvelles_techniques_moleculaires_associees_pour_une_taxonomie_integree",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.researchgate.net/publication/342620540_Identifier_un_moustique_morphologie_classique_et_nouvelles_techniques_moleculaires_associees_pour_une_taxonomie_integree",
+            "error": "HTTP 403"
+          }
+        },
+        {
+          "title": "[PDF] Bases génétiques de la résistance à la deltaméthrine chez le ...",
+          "description": "Cette thèse a été réalisée d'Octobre 2021 à Octobre 2024 au Laboratoire d'Écologie Alpine (LECA). Grenoble. Elle a été financée par une",
+          "link": "https://theses.hal.science/tel-05140055v1/file/BACOT_2024_archivage.pdf",
+          "source": "theses.hal.science",
+          "source_url": "https://theses.hal.science/tel-05140055v1/file/BACOT_2024_archivage.pdf",
+          "source_name": "theses.hal.science",
+          "validation": {
+            "input_url": "https://theses.hal.science/tel-05140055v1/file/BACOT_2024_archivage.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://theses.hal.science/tel-05140055v1/file/BACOT_2024_archivage.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] rapport annuel 2025 du haut conseil pour le climat",
+          "description": "Les Français affichent une forte inquiétude vis-à-vis du changement climatiqueI, dont les impacts s'aggravent.",
+          "link": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+          "source": "www.centre-francais-fondations.org",
+          "source_url": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+          "source_name": "www.centre-francais-fondations.org",
+          "validation": {
+            "input_url": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Moustique tigre : agissons pour limiter sa prolifération",
+          "description": "Aujourd'hui, l'implantation et la présence active de ce moustique est avérée dans 212 territoires de la région (195 communes et 17",
+          "link": "https://www.villebon-sur-yvette.fr/actualite/moustique-tigre-agissons-pour-limiter-sa-proliferation/",
+          "source": "www.villebon-sur-yvette.fr",
+          "source_url": "https://www.villebon-sur-yvette.fr/actualite/moustique-tigre-agissons-pour-limiter-sa-proliferation/",
+          "source_name": "www.villebon-sur-yvette.fr",
+          "validation": {
+            "input_url": "https://www.villebon-sur-yvette.fr/actualite/moustique-tigre-agissons-pour-limiter-sa-proliferation",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.villebon-sur-yvette.fr/actualite/moustique-tigre-agissons-pour-limiter-sa-proliferation/",
+            "error": null
+          }
+        },
+        {
+          "title": "Gare aux moustiques tigres ! - Ville de Paris",
+          "description": "Une surveillance renforcée du moustique tigre est mise en place par les autorités du 1er mai au 30 novembre. Présent et actif à Paris,",
+          "link": "https://www.paris.fr/pages/gare-aux-moustiques-tigres-20801",
+          "source": "www.paris.fr",
+          "source_url": "https://www.paris.fr/pages/gare-aux-moustiques-tigres-20801",
+          "source_name": "www.paris.fr",
+          "validation": {
+            "input_url": "https://www.paris.fr/pages/gare-aux-moustiques-tigres-20801",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.paris.fr/pages/gare-aux-moustiques-tigres-20801",
+            "error": null
+          }
+        },
+        {
+          "title": "Moustique-tigre : un enjeu sanitaire grandissant en France",
+          "description": "Il propose une approche complète incluant identification, cycle de vie, risques sanitaires, répartition géographique, moyens de prévention et",
+          "link": "https://www.sanarysurmer.com/environnement/moustique-tigre-un-enjeu-sanitaire-grandissant-en-france/",
+          "source": "www.sanarysurmer.com",
+          "source_url": "https://www.sanarysurmer.com/environnement/moustique-tigre-un-enjeu-sanitaire-grandissant-en-france/",
+          "source_name": "www.sanarysurmer.com",
+          "validation": {
+            "input_url": "https://www.sanarysurmer.com/environnement/moustique-tigre-un-enjeu-sanitaire-grandissant-en-france",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.sanarysurmer.com/environnement/moustique-tigre-un-enjeu-sanitaire-grandissant-en-france/",
+            "error": null
+          }
+        },
+        {
+          "title": "Luttons ensemble contre la prolifération des moustiques tigres",
+          "description": "Environnement : Luttons ensemble contre la prolifération des moustiques tigres · Eliminez les endroits où l'eau peut stagner · Remplissez de sable",
+          "link": "https://www.valleesud.fr/actualite/luttons-ensemble-contre-la-proliferation-des-moustiques-tigres/",
+          "source": "www.valleesud.fr",
+          "source_url": "https://www.valleesud.fr/actualite/luttons-ensemble-contre-la-proliferation-des-moustiques-tigres/",
+          "source_name": "www.valleesud.fr",
+          "validation": {
+            "input_url": "https://www.valleesud.fr/actualite/luttons-ensemble-contre-la-proliferation-des-moustiques-tigres",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.valleesud.fr/actualite/luttons-ensemble-contre-la-proliferation-des-moustiques-tigres/",
+            "error": null
+          }
+        },
+        {
+          "title": "Comment supprimer le moustique tigre - Bordeaux Métropole",
+          "description": "Que faire contre les moustiques tigres ? Retrouvez les bons gestes à adopter pour stopper leur prolifération. Le moustique tigre est présent",
+          "link": "https://www.bordeaux-metropole.fr/a-votre-service/services-aux-particuliers/environnement-sante/comment-supprimer-moustique-tigre",
+          "source": "www.bordeaux-metropole.fr",
+          "source_url": "https://www.bordeaux-metropole.fr/a-votre-service/services-aux-particuliers/environnement-sante/comment-supprimer-moustique-tigre",
+          "source_name": "www.bordeaux-metropole.fr",
+          "validation": {
+            "input_url": "https://www.bordeaux-metropole.fr/a-votre-service/services-aux-particuliers/environnement-sante/comment-supprimer-moustique-tigre",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.bordeaux-metropole.fr/a-votre-service/services-aux-particuliers/environnement-sante/comment-supprimer-moustique-tigre",
+            "error": null
+          }
+        },
+        {
+          "title": "Technique du moustique stérile renforcée : une réussite dans des ...",
+          "description": "Le taux de succès (proportion de pièges enregistrant une suppression supérieure à 80 %) a atteint jusqu'à 71 % à La Réunion et 100 % en Espagne.",
+          "link": "https://www.cirad.fr/espace-presse/communiques-de-presse/2025/technique-moustique-sterile-renforcee-reduction-drastique-des-populations",
+          "source": "www.cirad.fr",
+          "source_url": "https://www.cirad.fr/espace-presse/communiques-de-presse/2025/technique-moustique-sterile-renforcee-reduction-drastique-des-populations",
+          "source_name": "www.cirad.fr",
+          "validation": {
+            "input_url": "https://www.cirad.fr/espace-presse/communiques-de-presse/2025/technique-moustique-sterile-renforcee-reduction-drastique-des-populations",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.cirad.fr/espace-presse/communiques-de-presse/2025/technique-moustique-sterile-renforcee-reduction-drastique-des-populations",
+            "error": null
+          }
+        },
+        {
+          "title": "Pourquoi le moustique tigre inquiète-t-il autant - notre-environnement",
+          "description": "L'augmentation des températures allonge la période d'activité du moustique tigre, étend vers le nord son aire de répartition, accélère son cycle",
+          "link": "https://www.notre-environnement.gouv.fr/actualites/breves/article/pourquoi-le-moustique-tigre-inquiete-t-il-autant",
+          "source": "www.notre-environnement.gouv.fr",
+          "source_url": "https://www.notre-environnement.gouv.fr/actualites/breves/article/pourquoi-le-moustique-tigre-inquiete-t-il-autant",
+          "source_name": "www.notre-environnement.gouv.fr",
+          "validation": {
+            "input_url": "https://www.notre-environnement.gouv.fr/actualites/breves/article/pourquoi-le-moustique-tigre-inquiete-t-il-autant",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.notre-environnement.gouv.fr/actualites/breves/article/pourquoi-le-moustique-tigre-inquiete-t-il-autant",
+            "error": null
+          }
+        },
+        {
+          "title": "Cartes de présence du moustique tigre (Aedes albopictus) en ...",
+          "description": "* Exposition à l’amiante et risque pour la santé Ces cartes officielles de présence du moustique tigre *(Aedes albopictus)* en France métropolitaine sont destinées à l’information des décideurs et du grand public. Les départements dans lesquels le moustique tigre est implanté et actif, sont répartis en 2 catégories, les départements faiblement colonisés si moins de 40 % des communes du département sont colonisées, les départements fortement colonisés si au moins 40 % des communes du département sont colonisées. Les particuliers peuvent contribuer à la surveillance de l’implantation du moustique tigre (Aedes albopictus) en métropole et alimenter les données de cette carte, en particulier dans les quelques départements n’ayant pas encore rapporté de présence du vecteur.",
+          "link": "https://sante.gouv.fr/sante-et-environnement/risques-microbiologiques-physiques-et-chimiques/especes-nuisibles-et-parasites/article/cartes-de-presence-du-moustique-tigre-aedes-albopictus-en-france-metropolitaine",
+          "source": "sante.gouv.fr",
+          "source_url": "https://sante.gouv.fr/sante-et-environnement/risques-microbiologiques-physiques-et-chimiques/especes-nuisibles-et-parasites/article/cartes-de-presence-du-moustique-tigre-aedes-albopictus-en-france-metropolitaine",
+          "source_name": "sante.gouv.fr",
+          "validation": {
+            "input_url": "https://sante.gouv.fr/sante-et-environnement/risques-microbiologiques-physiques-et-chimiques/especes-nuisibles-et-parasites/article/cartes-de-presence-du-moustique-tigre-aedes-albopictus-en-france-metropolitaine",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://sante.gouv.fr/sante-et-environnement/risques-microbiologiques-physiques-et-chimiques/especes-nuisibles-et-parasites/article/cartes-de-presence-du-moustique-tigre-aedes-albopictus-en-france-metropolitaine",
+            "error": null
+          }
+        },
+        {
+          "title": "Diapause characterisation and seasonality of Aedes japonicus ...",
+          "description": "The invasive mosquito Aedes japonicus japonicus (Theobald, 1901) settled in 2013 in the Alsace region, in the northeast of France. In this temperate area, some",
+          "link": "https://www.researchgate.net/publication/351874604_Diapause_characterisation_and_seasonality_of_Aedes_japonicus_japonicus_Diptera_Culicidae_in_the_northeast_of_France",
+          "source": "www.researchgate.net",
+          "source_url": "https://www.researchgate.net/publication/351874604_Diapause_characterisation_and_seasonality_of_Aedes_japonicus_japonicus_Diptera_Culicidae_in_the_northeast_of_France",
+          "source_name": "www.researchgate.net",
+          "validation": {
+            "input_url": "https://www.researchgate.net/publication/351874604_Diapause_characterisation_and_seasonality_of_Aedes_japonicus_japonicus_Diptera_Culicidae_in_the_northeast_of_France",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.researchgate.net/publication/351874604_Diapause_characterisation_and_seasonality_of_Aedes_japonicus_japonicus_Diptera_Culicidae_in_the_northeast_of_France",
+            "error": "HTTP 403"
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Types de politiques anti-moustiques par département",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Type de politique",
+          "note": "Source : Bulletins officiels des collectivités, données annuelles"
+        },
+        {
+          "title": "% de réduction des moustiques tigres par politique",
+          "chart_type": "bar",
+          "x": "Type de politique",
+          "y": "% de réduction",
+          "note": "Source : Santé publique France, données annuelles 2015-2024"
+        },
+        {
+          "title": "Nombre de politiques adoptées par département (2015-2024)",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Département",
+          "note": "Source : data.gouv.fr, analyse des politiques locales"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Changement climatique : Amplificateur du danger moustique en France?",
+      "description": "Le changement climatique pourrait exacerber la menace des moustiques tigres en prolongeant leur saison d'activité. Des régions traditionnellement tempérées, comme la Bretagne, pourraient être touchées plus tôt que prévu. Q: Comment le réchauffement climatique influence-t-il la saisonnalité et la répartition géographique du moustique tigre en France? Metrics: jours d'activité par saison, température moyenne vs présence de moustiques, anomalies météorologiques vs colonisation. Granularity: département; mensuel 2010–2024. Data: Météo-France, data.gouv.fr, ECDC, Vigieau. Axis: Temporal, DataQuality",
+      "keywords": [
+        "changement climatique",
+        "danger moustique",
+        "santé publique",
+        "vecteurs maladies",
+        "France climat"
+      ],
+      "datasets": [
+        {
+          "title": "Télécharger la liste en CSV - Data gouv",
+          "description": "\"67a1e85a366f75613f750296\";\"Fiches d'informations sur les stations\";\"fiches-dinformations-sur-les-stations\";\"\";\"https://www.data.[...]-2-6/\";\"Météo-France\";\"534fff8ba3a7292c64a77ed4\";\"\";\"\";\"Fourniture, au format texte, des moyennes des différents indices annuels de températures et de nombre de jours de températures, sur les 8602 points terrestres de la France métropolitaine et sur les horizons proche (2021-2050), **moyen **(2041-2070) et **lointain **(2071-2100), pour le scénario RCP (Representative Concentration Pathway) 2.6. Les données se téléchargent sous forme de fichier journalier compressé, à sur un calendrier de sélection, dont la couleur maximale de la Vigilance du jour est celle affichée en fond de cellule dans le calendrier\";\"continuous\";\"Licence Ouverte / Open Licence\";\"\";\"\";\"fr:departement\";\"\";False;\"2014-11-17T16:01:03.327000\";\"2016-03-10T23:34:55.597000\";\"\";False;1;0;\"xml; gif\";\"\";\"\";\"\";\"\";\"\";\"0.89\";0;0;\"{'2024-07': 0, '2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0}\";0;0;8042;3017",
+          "link": "https://www.data.gouv.fr/api/1/organizations/meteo-france/datasets.csv",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/api/1/organizations/meteo-france/datasets.csv",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/api/1/organizations/meteo-france/datasets.csv",
+            "error": null
+          }
+        },
+        {
+          "title": "https://www.data.gouv.fr/api/1/organizations/meteo...",
+          "description": "... de constater que depuis le 13/05/2025 les fichiers ne sont plus déposés sur le \"\"serveur de fichier Cloud dédié de Météo-France\"\". Alors qu",
+          "link": "https://www.data.gouv.fr/api/1/organizations/meteo-france/discussions.csv",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/api/1/organizations/meteo-france/discussions.csv",
+            "status": "error",
+            "http_status": null,
+            "final_url": null,
+            "error": "Timeout"
+          }
+        },
+        {
+          "title": "et santé : le changement n'est pas que climatique",
+          "description": "de la mucormycose en France (2012-2022) : étude transversale d'un programme de surveillance prospective. La mucormycose est une infection fongique invasive",
+          "link": "https://www.pasteur.fr/fr/file/63048/download",
+          "source": "www.pasteur.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.pasteur.fr/fr/file/63048/download",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.pasteur.fr/fr/file/63048/download",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Chikungunya, dengue et zika - Données de la surveillance ...",
+          "description": "Chikungunya, dengue et zika - Données de la surveillance renforcée en France hexagonale 2024 ... Carte de présence du moustique tigre (Aedes albopictus) en France",
+          "link": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+          "source": "www.santepubliquefrance.fr",
+          "source_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+          "source_name": "www.santepubliquefrance.fr",
+          "validation": {
+            "input_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine/chikungunya-dengue-et-zika-donnees-de-la-surveillance-renforcee-en-france-hexagonale-2024",
+            "error": null
+          }
+        },
+        {
+          "title": "Études biologiques et comportementales de deux espèces",
+          "description": "by C Oliva · 2012 · Cited by 5 — Distribution géographique d'Aedes albopictus en 2011. Source: http ... albopictus, communément appelé \"moustique tigre\", est vecteur d'au moins 22.",
+          "link": "https://theses.hal.science/tel-00965525/file/2012lare0008_Oliva.pdf",
+          "source": "theses.hal.science",
+          "source_url": "https://theses.hal.science/tel-00965525/file/2012lare0008_Oliva.pdf",
+          "source_name": "theses.hal.science",
+          "validation": {
+            "input_url": "https://theses.hal.science/tel-00965525/file/2012lare0008_Oliva.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://theses.hal.science/tel-00965525/file/2012lare0008_Oliva.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "UNIVERSITÉ DE LA RÉUNION - Agritrop",
+          "description": "by CF Oliva · 2012 · Cited by 5 — Distribution géographique d'Aedes albopictus en 2011. Source: http://www ... albopictus, communément appelé \"moustique tigre\", est vecteur d'au moins 22.",
+          "link": "https://agritrop.cirad.fr/573960/1/document_573960.pdf",
+          "source": "agritrop.cirad.fr",
+          "source_url": "https://agritrop.cirad.fr/573960/1/document_573960.pdf",
+          "source_name": "agritrop.cirad.fr",
+          "validation": {
+            "input_url": "https://agritrop.cirad.fr/573960/1/document_573960.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://agritrop.cirad.fr/573960/1/document_573960.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Épidémiologie comparée et prédictive des épidémies de ...",
+          "description": "albopictus, communément appelé «moustique tigre» , est une des espèces les ... French West Indies in 2013–2015 (S2 Dataset (D2)) and of ZIKV then",
+          "link": "https://theses.hal.science/tel-02865504v1/file/these_Riou_Julien_2018.pdf",
+          "source": "theses.hal.science",
+          "source_url": "https://theses.hal.science/tel-02865504v1/file/these_Riou_Julien_2018.pdf",
+          "source_name": "theses.hal.science",
+          "validation": {
+            "input_url": "https://theses.hal.science/tel-02865504v1/file/these_Riou_Julien_2018.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://theses.hal.science/tel-02865504v1/file/these_Riou_Julien_2018.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Santé animale - alimentation - Bulletin épidémiologique",
+          "description": "albopictus, le désormais fameux moustique tigre, en France métropolitaine. Depuis qu'il a été introduit dans les Alpes-Maritimes. 28 Bulletin",
+          "link": "https://be.anses.fr/sites/default/files/BEP-mg-BE66.pdf",
+          "source": "be.anses.fr",
+          "source_url": "https://be.anses.fr/sites/default/files/BEP-mg-BE66.pdf",
+          "source_name": "be.anses.fr",
+          "validation": {
+            "input_url": "https://be.anses.fr/sites/default/files/BEP-mg-BE66.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://be.anses.fr/sites/default/files/BEP-mg-BE66.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Etude de l'émergence récente d'arboviroses zoonotiques en ...",
+          "description": "Provenance des cas de dengue importés au 1er juin 2009 (n=1419). 95. Figure 31. Répartition du moustique Aedes albopictus en Europe en mars 2012.",
+          "link": "https://dumas.ccsd.cnrs.fr/dumas-04551289v1/file/didier_8816.pdf",
+          "source": "dumas.ccsd.cnrs.fr",
+          "source_url": "https://dumas.ccsd.cnrs.fr/dumas-04551289v1/file/didier_8816.pdf",
+          "source_name": "dumas.ccsd.cnrs.fr",
+          "validation": {
+            "input_url": "https://dumas.ccsd.cnrs.fr/dumas-04551289v1/file/didier_8816.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://dumas.ccsd.cnrs.fr/dumas-04551289v1/file/didier_8816.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "avril 2022 - Adaptation au changement climatique",
+          "description": "la chenille processionnaire ou le moustique tigre). Le réchauffement climatique, c'est ... en France métropolitaine durant les étés 2015-2017 », Bulletin.",
+          "link": "https://www.annales.org/re/2022/re_106_avril_2022.pdf",
+          "source": "www.annales.org",
+          "source_url": "https://www.annales.org/re/2022/re_106_avril_2022.pdf",
+          "source_name": "www.annales.org",
+          "validation": {
+            "input_url": "https://www.annales.org/re/2022/re_106_avril_2022.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.annales.org/re/2022/re_106_avril_2022.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "HCC_RA_2025 - 18.07 copie",
+          "description": "Le réchauffement climatique est amplifié en France métropolitaine par rapport à la moyenne mondiale. Du fait de cette amplification, des",
+          "link": "https://www.hautconseilclimat.fr/wp-content/uploads/2025/07/HCC_RA_2025-18.07_web.pdf",
+          "source": "www.hautconseilclimat.fr",
+          "source_url": "https://www.hautconseilclimat.fr/wp-content/uploads/2025/07/HCC_RA_2025-18.07_web.pdf",
+          "source_name": "www.hautconseilclimat.fr",
+          "validation": {
+            "input_url": "https://www.hautconseilclimat.fr/wp-content/uploads/2025/07/HCC_RA_2025-18.07_web.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.hautconseilclimat.fr/wp-content/uploads/2025/07/HCC_RA_2025-18.07_web.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "rapport annuel 2025 du haut conseil pour le climat",
+          "description": "Le réchauffement climatique est amplifié en France métropolitaine par rapport à la moyenne mondiale. Du fait de cette amplification, des",
+          "link": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+          "source": "www.centre-francais-fondations.org",
+          "source_url": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+          "source_name": "www.centre-francais-fondations.org",
+          "validation": {
+            "input_url": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.centre-francais-fondations.org/wp-content/uploads/2025/08/RA-2025-Haut-Conseil-pour-le-Climat.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Full article: La sécheresse 2022 en France : retour vers le futur",
+          "description": "Le printemps météorologique (1 mars–31 mai) 2022, caractérisé par une anomalie de température moyenne de +1.1°C par rapport à la normale 1991–",
+          "link": "https://www.tandfonline.com/doi/full/10.1080/27678490.2024.2304351",
+          "source": "www.tandfonline.com",
+          "source_url": "https://www.tandfonline.com/doi/full/10.1080/27678490.2024.2304351",
+          "source_name": "www.tandfonline.com",
+          "validation": {
+            "input_url": "https://www.tandfonline.com/doi/full/10.1080/27678490.2024.2304351",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.tandfonline.com/doi/full/10.1080/27678490.2024.2304351",
+            "error": "HTTP 403"
+          }
+        },
+        {
+          "title": "[PDF] Hydrologie DOM - Le portail technique de l'OFB",
+          "description": "Les données d'observations météorologiques fournies par Météo-France pour la Martinique recouvrent la période 1980-2010. Des simulations climatiques sont",
+          "link": "https://professionnels.ofb.fr/sites/default/files/pdf/RE_Explore2070_Hydrologie_DOM.pdf",
+          "source": "professionnels.ofb.fr",
+          "source_url": "https://professionnels.ofb.fr/sites/default/files/pdf/RE_Explore2070_Hydrologie_DOM.pdf",
+          "source_name": "professionnels.ofb.fr",
+          "validation": {
+            "input_url": "https://professionnels.ofb.fr/sites/default/files/pdf/RE_Explore2070_Hydrologie_DOM.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://professionnels.ofb.fr/sites/default/files/pdf/RE_Explore2070_Hydrologie_DOM.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Données sur l'eau | OIEau - Eaudoc",
+          "description": "C'est un outil numérique unique en France qui synthétise les travaux des climatologues et intègre les données issues des travaux du GIEC (Groupe d'experts",
+          "link": "https://www.oieau.fr/eaudoc/flux-veille/donnees-sur-eau?_ga=2.222864600.25837709.1658128262-1170440446.1610031053&page=13",
+          "source": "www.oieau.fr",
+          "source_url": "https://www.oieau.fr/eaudoc/flux-veille/donnees-sur-eau?_ga=2.222864600.25837709.1658128262-1170440446.1610031053&page=13",
+          "source_name": "www.oieau.fr",
+          "validation": {
+            "input_url": "https://www.oieau.fr/eaudoc/flux-veille/donnees-sur-eau?_ga=2.222864600.25837709.1658128262-1170440446.1610031053&page=13",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.oieau.fr/eaudoc/flux-veille/donnees-sur-eau?_ga=2.222864600.25837709.1658128262-1170440446.1610031053&page=13",
+            "error": null
+          }
+        },
+        {
+          "title": "export-datasets.csv - GitHub Gist",
+          "description": "Chaque enregistrement comprend à la fois des informations pratiques et scientifiques (adresse, horaires, conditions [...]gouv.fr/fr/datasets/participations-dans-les-contrats-signes-du-programme-cadre-recherche-et-developpement-technologique-7eme-pcrdt-de-la-commission-europeenne/,\"Ce jeu de données contient les subventions allouées par la Commission européenne aux participants au PCRDT à la date du 6 octobre 2014. 566011d9c751df37c1aad371,Participations dans les contrats signés du programme-cadre recherche et développement technologique (H2020) de la Commission européenne,http://www.data.gouv.fr/fr/datasets/participations-dans-les-contrats-signes-du-programme-cadre-recherche-et-developpement-technologique-h2020-de-la-commission-europeenne-1/,\"Ce jeu de données contient les subventions allouées par la Commission européenne aux participants au PCRDT à la date du 15 juillet 2015. 565db6f2c751df2d32aad370,Aides à la presse,http://www.data.gouv.fr/fr/datasets/aides-a-la-presse-1/,\"**Cette page présente une compilation des ressources sur les aides à la presse mises à disposition par le ministère de la culture et de la communication.**",
+          "link": "https://gist.github.com/abulte/f8610025219340f57af6d4fda647dbd6",
+          "source": "gist.github.com",
+          "source_url": "https://gist.github.com/abulte/f8610025219340f57af6d4fda647dbd6",
+          "source_name": "gist.github.com",
+          "validation": {
+            "input_url": "https://gist.github.com/abulte/f8610025219340f57af6d4fda647dbd6",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://gist.github.com/abulte/f8610025219340f57af6d4fda647dbd6",
+            "error": null
+          }
+        },
+        {
+          "title": "Évolution du manteau neigeux pendant la sécheresse de 2022 en ...",
+          "description": "Sur tous les massifs, le manteau neigeux a rapidement décliné pour atteindre une valeur basse dès le début de l'année 2022. Cette fonte rapide",
+          "link": "https://www.tandfonline.com/doi/full/10.1080/27678490.2024.2314174",
+          "source": "www.tandfonline.com",
+          "source_url": "https://www.tandfonline.com/doi/full/10.1080/27678490.2024.2314174",
+          "source_name": "www.tandfonline.com",
+          "validation": {
+            "input_url": "https://www.tandfonline.com/doi/full/10.1080/27678490.2024.2314174",
+            "status": "error",
+            "http_status": 403,
+            "final_url": "https://www.tandfonline.com/doi/full/10.1080/27678490.2024.2314174",
+            "error": "HTTP 403"
+          }
+        },
+        {
+          "title": "API de prévisions météo - Infoclimat",
+          "description": "Méthode personnalisée : données de prévisions météo à 7 jours en JSON, XML, CSV. Vous pouvez faire appel à l'API Infoclimat, qui vous retournera les",
+          "link": "https://www.infoclimat.fr/api-previsions-meteo.html?id=2988507&cntry=FR",
+          "source": "www.infoclimat.fr",
+          "source_url": "https://www.infoclimat.fr/api-previsions-meteo.html?id=2988507&cntry=FR",
+          "source_name": "www.infoclimat.fr",
+          "validation": {
+            "input_url": "https://www.infoclimat.fr/api-previsions-meteo.html?id=2988507&cntry=FR",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.infoclimat.fr/api-previsions-meteo.html?id=2988507&cntry=FR",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Jours d'activité des moustiques tigres par département (2010-2024)",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Département",
+          "note": "Source : ECDC, données mensuelles"
+        },
+        {
+          "title": "Température moyenne vs présence de moustiques tigres (2010-2024)",
+          "chart_type": "scatter",
+          "x": "Température moyenne (°C)",
+          "y": "Présence de moustiques (%)",
+          "note": "Source : Météo-France et ECDC"
+        },
+        {
+          "title": "Anomalies météorologiques et colonisation des moustiques tigres (2010-2024)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de départements colonisés",
+          "note": "Source : Vigieau, data.gouv.fr"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5884,
+      "type": "PER",
+      "value": "Didier Fontenille",
+      "context": null
+    },
+    {
+      "id": 5885,
+      "type": "ORG",
+      "value": "Institut de recherche pour le développement",
+      "context": null
+    },
+    {
+      "id": 5886,
+      "type": "LOC",
+      "value": "France hexagonale",
+      "context": null
+    },
+    {
+      "id": 5887,
+      "type": "LOC",
+      "value": "Bretagne",
+      "context": null
+    },
+    {
+      "id": 5888,
+      "type": "LOC",
+      "value": "Normandie",
+      "context": null
+    },
+    {
+      "id": 5889,
+      "type": "LOC",
+      "value": "Asie du Sud-Est",
+      "context": null
+    },
+    {
+      "id": 5890,
+      "type": "NUM",
+      "value": "81.0",
+      "context": null
+    },
+    {
+      "id": 5891,
+      "type": "NUM",
+      "value": "96.0",
+      "context": null
+    },
+    {
+      "id": 5892,
+      "type": "NUM",
+      "value": "65.0",
+      "context": null
+    },
+    {
+      "id": 5893,
+      "type": "NUM",
+      "value": "2004.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 933,
+      "title": "Où la propagation du moustique tigre s'accélère-t-elle le plus?",
+      "description": "Alors que le moustique tigre gagne du terrain en France, il est crucial d'identifier les zones où sa progression est la plus rapide pour anticiper les risques sanitaires. Par exemple, des départements comme la Vendée ou le Vaucluse pourraient montrer des progressions surprenantes par rapport à des zones déjà hautement colonisées. Q: Quels départements voient l'accélération la plus rapide de la colonisation par les moustiques tigres? Metrics: % d'augmentation annuelle, nombre de départements colonisés par an, écart-type de la progression annuelle. Granularity: département; annuel 2004–2024. Data: Santé publique France, data.gouv.fr, ECDC, Moustiques.gouv.fr. Axis: Temporal, Geographic",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 934,
+      "title": "Qui paie le plus pour la lutte contre le moustique tigre?",
+      "description": "Avec la montée du moustique tigre en France, les coûts de gestion et de prévention s'alourdissent pour les collectivités locales. Certaines régions, comme Provence-Alpes-Côte d'Azur (PACA), dépensent peut-être bien plus que d'autres, révélant des inégalités dans la gestion. Q: Quels départements supportent les plus grosses dépenses liées au moustique tigre? Metrics: dépenses par département, dépenses/habitant, % du budget alloué comparé au total des dépenses sanitaires. Granularity: département; annuel 2010–2024. Data: INSEE, CNCCFP, data.gouv.fr, comptes santé. Axis: Geographic, Inequalities",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 935,
+      "title": "La variabilité des législations locales contre les moustiques tigres",
+      "description": "Face à la menace croissante des moustiques tigres, les stratégies de gestion varient largement entre différentes régions de France. Des zones comme l'Occitanie pourraient adopter des politiques plus agressives que d'autres, illustrant une réponse inégale. Q: Comment les politiques de gestion du moustique tigre varient-elles entre les départements et quelles sont les plus efficaces? Metrics: types de politiques par département, nombre de politiques adoptées, % de réduction dans les zones avec politiques agressives. Granularity: département; annuel 2015–2024. Data: data.gouv.fr, Bulletins officiels des collectivités, Sénat, Santé publique France. Axis: Policy, Geographic",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 936,
+      "title": "Changement climatique : Amplificateur du danger moustique en France?",
+      "description": "Le changement climatique pourrait exacerber la menace des moustiques tigres en prolongeant leur saison d'activité. Des régions traditionnellement tempérées, comme la Bretagne, pourraient être touchées plus tôt que prévu. Q: Comment le réchauffement climatique influence-t-il la saisonnalité et la répartition géographique du moustique tigre en France? Metrics: jours d'activité par saison, température moyenne vs présence de moustiques, anomalies météorologiques vs colonisation. Granularity: département; mensuel 2010–2024. Data: Météo-France, data.gouv.fr, ECDC, Vigieau. Axis: Temporal, DataQuality",
+      "order": 3,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4366,
+      "title": "Moustique tigre en France : 71 départements en vigilance rouge",
+      "description": "L'implantation du moustique tigre progresse de manière continue et rapide. Elle concerne quatre nouveaux départements : l'Allier, l'Ille-et-",
+      "link": "https://www.pasteur.fr/fr/accueil/journal-recherche/actualites/moustique-tigre-france-71-departements-vigilance-rouge",
+      "source": "www.pasteur.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4367,
+      "title": "Journal of the European Mosquito Control Association",
+      "description": "Aedes albopictus was first discovered on the French-Italian border in 2004 and in less than ten years has completely colonised south-east France",
+      "link": "https://brill.com/downloadpdf/view/journals/jemc/43/1/article-pS1_1.pdf",
+      "source": "brill.com",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4368,
+      "title": "Données en France métropolitaine - Santé publique France",
+      "description": "Surveillance des arboviroses en France métropolitaine : nette augmentation des cas de ... Cartes de présence du moustique tigre (Aedes albopictus) en France",
+      "link": "https://www.santepubliquefrance.fr/maladies-et-traumatismes/maladies-a-transmission-vectorielle/chikungunya/articles/donnees-en-france-metropolitaine",
+      "source": "www.santepubliquefrance.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4369,
+      "title": "Écologie, contrôle et coûts des moustiques vecteurs d' ...",
+      "description": "FSPI. Coordinateur administratif : J.M. Portefaix. Coordinateur scientifique IRD : David Roiz. Budget total : 599 150 €. Budget géré : 235 024 €. 32. DiMoC.",
+      "link": "https://www.researchgate.net/publication/371166339_Ecologie_controle_et_couts_des_moustiques_vecteurs_d'arbovirus_Habilitation_a_Diriger_des_Recherches",
+      "source": "www.researchgate.net",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4370,
+      "title": "Publications",
+      "description": "Moustique tigre en France hexagonale : risque et impacts d'une arbovirose Rapport: L'Anses a été saisie le 3/08/2022 par la Direction générale de la santé (DGS)",
+      "link": "https://www.parisschoolofeconomics.eu/recherche/groupes-de-recherche-thematiques/comportement-bien-etre-et-normes/publications/",
+      "source": "www.parisschoolofeconomics.eu",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4371,
+      "title": "en Normandie",
+      "description": "Les 13 diagrammes ombrothermiques sont dessinés à partir de données Météo-France sur la période 2001-2020. ... processionnaire, moustique tigre…",
+      "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/05/21/60338351-24ee-4930-a16c-ec1ca2cfa541/profil_climat_edition2024.pdf",
+      "source": "www.datanormandie.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4372,
+      "title": "Extension Clesud Terminal _ EIE V3.1_sans annexes",
+      "description": "L'Autorité environnementale (MRAe PACA) a été saisie indépendamment par les maîtres d'ouvrage pour le cadrage de l'étude d'impact de leur",
+      "link": "https://www.bouches-du-rhone.gouv.fr/content/download/48170/273178/file/op%20Extension%20Clesud%20Terminal_EIE%20V3.1_sans%20annexes.pdf",
+      "source": "www.bouches-du-rhone.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4373,
+      "title": "Risques sanitaires - Catalogue PIGMA",
+      "description": "Ce jeu de données recense les communes du département de la Gironde suivies pour le Moustique Tigre. DDRM 33 - Dossier départemental des risques majeurs de la",
+      "link": "https://www.pigma.org/geonetwork/bordeaux_metropole_dir_info_geo/search?keyword=Risques%20sanitaires",
+      "source": "www.pigma.org",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4374,
+      "title": "Publications - Paris School of Economics",
+      "description": "Moustique tigre en France hexagonale : risque et impacts d'une arbovirose Rapport: L'Anses a été saisie le 3/08/2022 par la Direction générale de la santé (DGS)",
+      "link": "https://www.parisschoolofeconomics.eu/recherche/groupes-de-recherche-thematiques/comportement-bien-etre-et-normes/publications/",
+      "source": "www.parisschoolofeconomics.eu",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4375,
+      "title": "Transferir - GBIF",
+      "description": "Système d'Information sur la Nature et les Paysages d'Ile de France - Données sensibles (ou cachées par les observateurs) de la base de données Île-de-France.",
+      "link": "https://www.gbif.org/pt/occurrence/download/0038680-250717081556266",
+      "source": "www.gbif.org",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4376,
+      "title": "Télécharger la liste en CSV - Data gouv",
+      "description": "\"67a1e85a366f75613f750296\";\"Fiches d'informations sur les stations\";\"fiches-dinformations-sur-les-stations\";\"\";\"https://www.data.[...]-2-6/\";\"Météo-France\";\"534fff8ba3a7292c64a77ed4\";\"\";\"\";\"Fourniture, au format texte, des moyennes des différents indices annuels de températures et de nombre de jours de températures, sur les 8602 points terrestres de la France métropolitaine et sur les horizons proche (2021-2050), **moyen **(2041-2070) et **lointain **(2071-2100), pour le scénario RCP (Representative Concentration Pathway) 2.6. Les données se téléchargent sous forme de fichier journalier compressé, à sur un calendrier de sélection, dont la couleur maximale de la Vigilance du jour est celle affichée en fond de cellule dans le calendrier\";\"continuous\";\"Licence Ouverte / Open Licence\";\"\";\"\";\"fr:departement\";\"\";False;\"2014-11-17T16:01:03.327000\";\"2016-03-10T23:34:55.597000\";\"\";False;1;0;\"xml; gif\";\"\";\"\";\"\";\"\";\"\";\"0.89\";0;0;\"{'2024-07': 0, '2024-08': 0, '2024-09': 0, '2024-10': 0, '2024-11': 0, '2024-12': 0, '2025-01': 0, '2025-02': 0, '2025-03': 0, '2025-04': 0, '2025-05': 0, '2025-06': 0, '2025-07': 0}\";0;0;8042;3017",
+      "link": "https://www.data.gouv.fr/api/1/organizations/meteo-france/datasets.csv",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4377,
+      "title": "https://www.data.gouv.fr/api/1/organizations/meteo...",
+      "description": "... de constater que depuis le 13/05/2025 les fichiers ne sont plus déposés sur le \"\"serveur de fichier Cloud dédié de Météo-France\"\". Alors qu",
+      "link": "https://www.data.gouv.fr/api/1/organizations/meteo-france/discussions.csv",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4378,
+      "title": "et santé : le changement n'est pas que climatique",
+      "description": "de la mucormycose en France (2012-2022) : étude transversale d'un programme de surveillance prospective. La mucormycose est une infection fongique invasive",
+      "link": "https://www.pasteur.fr/fr/file/63048/download",
+      "source": "www.pasteur.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 94216,
+    "entities_count": 10,
+    "angles_count": 4,
+    "datasets_count": 13,
+    "angle_resources_count": 4
+  }
+}
