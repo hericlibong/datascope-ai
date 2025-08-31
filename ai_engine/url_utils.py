@@ -1,10 +1,87 @@
 from __future__ import annotations
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qs
 from typing import Any, Optional
 
 # -----------------------------
 # URL helpers & classification
 # -----------------------------
+
+# --- New helpers for dataset/source post-processing ---
+
+DATA_PATH_TOKENS = {
+    "dataset", "datasets", "data", "datastore", "statistics",
+    "download", "api", "geonetwork", "catalog", "search"
+}
+
+DATA_FORMAT_EXTS = (".csv", ".json", ".geojson", ".parquet")
+DATA_SERVICE_TOKENS = ("wfs", "wms", "api")
+
+
+def url_path_depth(url: str) -> int:
+    """Return the number of non-empty path segments."""
+    try:
+        p = urlparse(url)
+        parts = [s for s in p.path.split("/") if s]
+        return len(parts)
+    except Exception:
+        return 0
+
+
+def is_pdf_url(url: str) -> bool:
+    """True if URL clearly targets a PDF resource."""
+    try:
+        p = urlparse(url)
+        path = (p.path or "").lower()
+        if path.endswith(".pdf"):
+            return True
+        # some portals expose ?format=pdf or filename=....pdf
+        q = "&".join([f"{k}={v}" for k, vals in parse_qs(p.query).items() for v in vals]).lower()
+        return ".pdf" in q
+    except Exception:
+        return False
+
+
+def is_near_root(url: str) -> bool:
+    """Near-root = home or 1-segment path, often low-signal pages."""
+    return url_path_depth(url) <= 1
+
+
+def has_data_path_token(url: str) -> bool:
+    """Heuristic: dataset-like path tokens present."""
+    try:
+        p = urlparse(url)
+        path = (p.path or "").lower()
+        return any(tok in path for tok in DATA_PATH_TOKENS)
+    except Exception:
+        return False
+
+
+def has_data_format_signal(url: str, text: str = "") -> bool:
+    """
+    Heuristic: file/data format or service tokens found in URL or associated text.
+    This positively hints at 'dataset' pages (CSV/JSON/GeoJSON/API/WFS/WMS).
+    """
+    low_url = (url or "").lower()
+    low_txt = (text or "").lower()
+    if any(ext in low_url or ext in low_txt for ext in DATA_FORMAT_EXTS):
+        return True
+    if any(tok in low_url or tok in low_txt for tok in DATA_SERVICE_TOKENS):
+        return True
+    return False
+
+
+def is_dataset_root_listing(url: str) -> bool:
+    """True for paths like '/dataset' or '/datasets' without a concrete slug."""
+    try:
+        p = urlparse(url)
+        parts = [s for s in (p.path or "").split("/") if s]
+        if not parts:
+            return False
+        last = parts[-1].lower()
+        return last in {"dataset", "datasets"} and len(parts) <= 2
+    except Exception:
+        return False
+
 
 def normalize_url(u: Optional[str]) -> Optional[str]:
     if not u:
@@ -91,4 +168,3 @@ def is_dataset_like_url(url: Optional[str]) -> bool:
         return any(h in path for h in hints)
     except Exception:
         return False
-    

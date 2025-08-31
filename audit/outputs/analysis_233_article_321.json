@@ -1,0 +1,1780 @@
+{
+  "id": 233,
+  "article": {
+    "id": 321,
+    "title": "Près d’Alençon, un match de football interrompu par… un essaim",
+    "content": "Près d’Alençon, un match de football interrompu par… un essaim d’abeilles !\n\nÀ Condé-sur-Sarthe, dimanche 27 avril 2025, le match de football face à La Ferté-Macé/Bagnoles a été interrompu à cause d’un essaim d’abeilles qui virevoltait autour du terrain\n\nSur le terrain de Condé-sur-Sarthe, près d’Alençon (Orne), les joueurs locaux étaient, comme à leurs habitudes, vêtus de vert. Dimanche 27 avril 2025, dans le cadre de la 20e journée de Régional 3, ils recevaient leurs voisins de La Ferté-Macé/Bagnoles et leurs maillots noir et gris.\n\nPourtant, ce sont les jaunes et noires qui ont, un temps, piqué la vedette aux joueurs de football.\nUne interruption de 15 minutes à cause des abeilles\n\nEn seconde période, le match a en effet été interrompu pour une invasion… d’abeilles sauvages !\n\nPlutôt que de butiner les fleurs voisines, les petites bêtes avaient décidé de faire leur sport un peu trop près du rectangle vert condéen. L’essaim d’abeilles, installé sur la main courante qui borde le terrain, étant particulièrement conséquent, l’arbitre de la rencontre a dû prendre la décision d’arrêter la partie, le temps qu’un apiculteur intervienne.\n\nDe quoi donner quelques sueurs froides à l’entraîneur local, dont les joueurs venaient juste d’ouvrir le score. « Heureusement que le match n’a pas été arrêté trop longtemps, sinon il aurait fallu le rejouer ! », souffle Cyrille François.\n\nLes abeilles évacuées, les locaux vainqueurs\n\nFinalement, le match a pu reprendre au bout de 15 minutes et Condé-sur-Sarthe a su maintenir son avance jusqu’au coup de sifflet final, malgré le départ forcé de ses quelques supportrices.\n\nLe héros reste donc l’unique buteur, Enzo Boulanger. « On s’en sort plutôt bien ! », appréciait le coach ornais, en évoquant davantage le contenu du match et ses problèmes d’effectif plutôt que l’interruption de la rencontre.\n\nEn s’imposant à deux journées de la fin de la saison, l’Espérance de Condé-sur-Sarthe, 2e de son groupe, peut encore espérer monter à l’étage supérieur. Souhaitons-leur que cette petite mésaventure leur donne des ailes !",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-31T19:18:17.621739+02:00"
+  },
+  "score": 7.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Cyrille François, Enzo Boulanger\n- **Organisations** : La Ferté-Macé/Bagnoles, Espérance de Condé-sur-Sarthe\n- **Lieux** : Condé-sur-Sarthe, Alençon, Orne\n- **Dates** : 2025-04-27\n- **Valeurs numériques** : 20e (20.0 None), 15 minutes (15.0 minutes), 2e (2.0 None)\n\n## Suggestions d’angles\n\n### 1. Où les abeilles s’invitent-elles le plus souvent ?\nLes interruptions de matchs de football à cause d'abeilles semblent rares, mais les incursions d'abeilles dans des lieux publics peuvent s'avérer plus fréquentes que l'on ne pense, notamment dans les stades et les parcs en France. Comprendre où et quand ces incidents surviennent peut aider à mieux gérer ces situations à risques. \nQ: Quels lieux en France sont les plus touchés par les incursions d’abeilles ? \nMetrics: nombre d’incursions par département/saison, taux d’incursions par 100k habitants \nGranularity: département; annuel 2010–2025 \nData: INSEE, data.gouv.fr, Ministère de l'Agriculture \nAxis: Geographic\n\n### 2. Impact du changement climatique sur le comportement des abeilles\nLe changement climatique affecte le comportement migratoire et la période d’activité des abeilles. Ces changements peuvent provoquer des incidents comme celui survenu lors du match de football. Analyser comment les tendances climatiques influencent ces comportements pourrait révéler des surprises et influences inattendues. \nQ: Le réchauffement climatique influe-t-il sur la fréquence des invasions d’abeilles en France ? \nMetrics: variations saisonnières d’incidents d’abeilles, températures moyennes annuelles \nGranularity: national; mensuel 2000–2025 \nData: Météo-France, INRAE, NOAA \nAxis: Temporal\n\n### 3. Rugby vs Football: Qui subit le plus d'interruptions animales?\nBien que le football ait connu un incident notable de match interrompu par des abeilles, d'autres sports sont potentiellement touchés aussi par des intrusions animales. Comparer ces interférences entre divers sports pourrait indiquer quelles disciplines sont les plus à risques. \nQ: Les matchs de rugby sont-ils plus fréquemment perturbés par des animaux que ceux de football ? \nMetrics: fréquence d'interruptions par type de sport, comparaison 2010–2025 \nGranularity: national; annuel \nData: Ligue de Football Professionnel, Fédération Française de Rugby, data.gouv.fr \nAxis: DataQuality\n",
+  "created_at": "2025-08-31T19:22:06.031104+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Où les abeilles s’invitent-elles le plus souvent ?",
+      "description": "Les interruptions de matchs de football à cause d'abeilles semblent rares, mais les incursions d'abeilles dans des lieux publics peuvent s'avérer plus fréquentes que l'on ne pense, notamment dans les stades et les parcs en France. Comprendre où et quand ces incidents surviennent peut aider à mieux gérer ces situations à risques. \nQ: Quels lieux en France sont les plus touchés par les incursions d’abeilles ? \nMetrics: nombre d’incursions par département/saison, taux d’incursions par 100k habitants \nGranularity: département; annuel 2010–2025 \nData: INSEE, data.gouv.fr, Ministère de l'Agriculture \nAxis: Geographic",
+      "keywords": [
+        "habitat abeilles",
+        "pollinisation",
+        "biodiversité urbaine",
+        "zones rurales",
+        "écosystèmes abeilles"
+      ],
+      "datasets": [
+        {
+          "title": "Concrete Finisher Job Description - Construction",
+          "description": "Concrete Finisher Job Description - Construction Concrete Finisher Job Description In conclusion, a Concrete Finisher job description entails working with concrete, leveling, smoothing, and shaping concrete surfaces to create high-quality finishes. To get a job as a Concrete Finisher in the construction industry, you need to have some education and experience. A: A Concrete Finisher is a skilled construction worker who works with freshly poured concrete to create smooth and level surfaces for various structures. Q: What are the job responsibilities of a Concrete Finisher? A: A Concrete Finisher's job responsibilities include preparing the surface for concrete pouring, spreading and leveling concrete, applying finishing techniques, smoothing and correcting surface imperfections, and applying sealants and protective coatings.",
+          "link": "https://jobdescription.org/job-descriptions/construction-concrete-finisher-job-description",
+          "source": "jobdescription.org",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://jobdescription.org/job-descriptions/construction-concrete-finisher-job-description",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://jobdescription.org/job-descriptions/construction-concrete-finisher-job-description",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] mortalités massives aigües - reagir - ADA France",
+          "description": "Autrement dit, le cheptel apiaire français constitue un réseau de surveillance basé sur la santé des abeilles et dé- pendant de la vigilance des apiculteurs",
+          "link": "https://www.adafrance.org/wp-content/uploads/2023/03/Guide-MMA-INTERAPI-VF.pdf",
+          "source": "www.adafrance.org",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": null
+        },
+        {
+          "title": "Actualités panne : Info en direct - Vidéos et images",
+          "description": "Grosse panne d'électricité à Cergy-Pontoise : plus de 8 000 clients privés de courant. 16 juil. 2025 Pontoise · Une partie des riverains privés d'internet à la",
+          "link": "https://actu.fr/tag/panne",
+          "source": "actu.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Archives Le Dauphiné Libéré - 03 juillet 2025",
+          "description": "Retrouvez les articles parus le jeudi 3 juillet 2025 dans Le Dauphiné Libéré. Parcourez nos archives facilement.",
+          "link": "https://www.ledauphine.com/archives/2025/03-07",
+          "source": "www.ledauphine.com",
+          "source_url": "https://www.ledauphine.com/archives/2025/03-07",
+          "source_name": "www.ledauphine.com",
+          "validation": {
+            "input_url": "https://www.ledauphine.com/archives/2025/03-07",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ledauphine.com/archives/2025/03-07",
+            "error": null
+          }
+        },
+        {
+          "title": "Archives Le Progrès - 22 avril 2025",
+          "description": "Retrouvez les articles parus le mardi 22 avril 2025 dans Le Progrès. Parcourez nos archives facilement.",
+          "link": "https://www.leprogres.fr/archives/2025/22-04",
+          "source": "www.leprogres.fr",
+          "source_url": "https://www.leprogres.fr/archives/2025/22-04",
+          "source_name": "www.leprogres.fr",
+          "validation": {
+            "input_url": "https://www.leprogres.fr/archives/2025/22-04",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.leprogres.fr/archives/2025/22-04",
+            "error": null
+          }
+        },
+        {
+          "title": "Archives Le Dauphiné Libéré - 20 avril 2025",
+          "description": "Retrouvez les articles parus le dimanche 20 avril 2025 dans Le Dauphiné Libéré. Parcourez nos archives facilement.",
+          "link": "https://www.ledauphine.com/archives/2025/20-04",
+          "source": "www.ledauphine.com",
+          "source_url": "https://www.ledauphine.com/archives/2025/20-04",
+          "source_name": "www.ledauphine.com",
+          "validation": {
+            "input_url": "https://www.ledauphine.com/archives/2025/20-04",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ledauphine.com/archives/2025/20-04",
+            "error": null
+          }
+        },
+        {
+          "title": "Actualités Lavelanet et ses environs - Page 2",
+          "description": "Succès populaire pour la journée portes ouvertes des pompiers de Lavelanet. France - Monde. \"L'Ariège",
+          "link": "https://www.ladepeche.fr/communes/lavelanet,09d/page-2",
+          "source": "www.ladepeche.fr",
+          "source_url": "https://www.ladepeche.fr/communes/lavelanet,09d/page-2",
+          "source_name": "www.ladepeche.fr",
+          "validation": {
+            "input_url": "https://www.ladepeche.fr/communes/lavelanet,09d/page-2",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ladepeche.fr/communes/lavelanet,09d/page-2",
+            "error": null
+          }
+        },
+        {
+          "title": "Jardin d'herbes médicinales | Suisse Tourisme",
+          "description": "Une visite de notre jardin de plantes médicinales est bien plus qu'une simple promenade - c'est une invitation à découvrir la nature dans toute sa splendeur.",
+          "link": "https://www.myswitzerland.com/fr/decouvrir/manifestations/jardin-dherbes-medicinales",
+          "source": "www.myswitzerland.com",
+          "source_url": "https://www.myswitzerland.com/fr/decouvrir/manifestations/jardin-dherbes-medicinales",
+          "source_name": "www.myswitzerland.com",
+          "validation": {
+            "input_url": "https://www.myswitzerland.com/fr/decouvrir/manifestations/jardin-dherbes-medicinales",
+            "status": "error",
+            "http_status": 406,
+            "final_url": "https://www.myswitzerland.com/fr-fr/decouvrir/manifestations/jardin-dherbes-medicinales",
+            "error": "HTTP 406"
+          }
+        },
+        {
+          "title": "Analyse des déclarations de troubles de santé à l'OMAA (2017-2021)",
+          "description": "L'Observatoire des Mortalités et des Affaiblissements de l'Abeille mellifère (OMAA) est un système de surveillance innovant dont les objectifs",
+          "link": "https://www.plateforme-esa.fr/en/node/1305",
+          "source": "www.plateforme-esa.fr",
+          "source_url": "https://www.plateforme-esa.fr/en/node/1305",
+          "source_name": "www.plateforme-esa.fr",
+          "validation": {
+            "input_url": "https://www.plateforme-esa.fr/en/node/1305",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.plateforme-esa.fr/en/node/1305",
+            "error": null
+          }
+        },
+        {
+          "title": "Concrete Finishes in Commercial Construction: A Quick Reference …",
+          "description": "Selecting the right concrete finish can impact safety, lifecycle performance, maintainability, and cost for any building, facility, or campus. For GCs, concrete subcontractors, and facilities …",
+          "link": "https://www.gp-radar.com/article/concrete-finishes-in-commercial-construction-types-processes-curing-and-performance",
+          "source": "www.gp-radar.com",
+          "source_url": "https://www.gp-radar.com/article/concrete-finishes-in-commercial-construction-types-processes-curing-and-performance",
+          "source_name": "www.gp-radar.com",
+          "validation": {
+            "input_url": "https://www.gp-radar.com/article/concrete-finishes-in-commercial-construction-types-processes-curing-and-performance",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.gp-radar.com/article/concrete-finishes-in-commercial-construction-types-processes-curing-and-performance",
+            "error": null
+          }
+        },
+        {
+          "title": "How To Become A Concrete Finisher - Blue Collar Brain",
+          "description": "In this post, we’ll explore the process of becoming a concrete finisher (also called a cement finisher). Learn the steps and get the knowledge you need to jumpstart your career today.",
+          "link": "https://bluecollarbrain.com/how-to-become/concrete-finisher/",
+          "source": "bluecollarbrain.com",
+          "source_url": "https://bluecollarbrain.com/how-to-become/concrete-finisher/",
+          "source_name": "bluecollarbrain.com",
+          "validation": {
+            "input_url": "https://bluecollarbrain.com/how-to-become/concrete-finisher",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://bluecollarbrain.com/how-to-become/concrete-finisher/",
+            "error": null
+          }
+        },
+        {
+          "title": "Concrete Finisher Job Description, Responsibilities and Salary …",
+          "description": "Concrete Finisher Job Description, Responsibilities and Salary Range | BuildStream Concrete Finisher By meeting these standards, Concrete Finishers play an integral role in the construction industry, ensuring the durability and safety of concrete structures, and contributing to the successful completion of construction projects. Concrete Finisher salaries in 2024 Salary information for Concrete Finisher is not available. The ideal candidate will have expertise in smoothing, finishing, and maintaining concrete surfaces for various construction projects. Interview Questions for Concrete Finishers ### What does a Concrete Finisher do in the construction industry? ### What are typical job duties of a Concrete Finisher? The U.S. Bureau of Labor Statistics projects construction trade workers, including Concrete Finishers, will see faster than average job growth.",
+          "link": "https://www.buildstream.co/job-descriptions/concrete-finisher",
+          "source": "www.buildstream.co",
+          "source_url": "https://www.buildstream.co/job-descriptions/concrete-finisher",
+          "source_name": "www.buildstream.co",
+          "validation": {
+            "input_url": "https://www.buildstream.co/job-descriptions/concrete-finisher",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.buildstream.co/job-descriptions/concrete-finisher",
+            "error": null
+          }
+        },
+        {
+          "title": "Concrete Flatwork Associate and Advanced Finisher",
+          "description": "JTA for ACI Certification of Concrete Flatwork Associate, Finisher, and Advanced Finisher **Concrete Flatwork Associate:** ACI will grant certification to those candidates who obtain a passing grade on the written examination. Individuals with Concrete Flatwork Associate certification can upgrade to Advanced Finisher status upon submittal and approval of sufficient work experience or combination of sufficient work experience and passing the ACI performance examination. **Concrete Flatwork Finisher:** ACI will grant certification to those candidates who: Individuals with Concrete Flatwork Finisher certification can upgrade to Advanced Finisher status upon successful completion of the written examination. **Advanced Concrete Flatwork Finisher:** ACI will grant certification to those candidates who obtain a passing grade on the written examination PLUS either: CP–10PACK2: Craftsman Workbook for ACI Certification of Concrete Flatwork Finishing with CCS-0",
+          "link": "https://www.concrete.org/certification/certificationprograms.aspx?m=details&pgm=Concrete+Flatwork+Finishing&cert=Concrete+Flatwork+Associate+and+Advanced+Finisher",
+          "source": "www.concrete.org",
+          "source_url": "https://www.concrete.org/certification/certificationprograms.aspx?m=details&pgm=Concrete+Flatwork+Finishing&cert=Concrete+Flatwork+Associate+and+Advanced+Finisher",
+          "source_name": "www.concrete.org",
+          "validation": {
+            "input_url": "https://www.concrete.org/certification/certificationprograms.aspx?m=details&pgm=Concrete+Flatwork+Finishing&cert=Concrete+Flatwork+Associate+and+Advanced+Finisher",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.concrete.org/certification/certificationprograms.aspx?m=details&pgm=Concrete+Flatwork+Finishing&cert=Concrete+Flatwork+Associate+and+Advanced+Finisher",
+            "error": null
+          }
+        },
+        {
+          "title": "Actualités Ilevia : Info en direct - Vidéos et images",
+          "description": "La ligne 1 du métro Ilévia est interrompue en partie ce vendredi 23 août 2025 après. Lille Actu. Lille. Le trafic interrompu sur la ligne 1 du métro Ilévia ce",
+          "link": "https://actu.fr/tag/ilevia",
+          "source": "actu.fr",
+          "source_url": "https://actu.fr/tag/ilevia",
+          "source_name": "actu.fr",
+          "validation": {
+            "input_url": "https://actu.fr/tag/ilevia",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://actu.fr/tag/ilevia",
+            "error": null
+          }
+        },
+        {
+          "title": "The Beekeeper ce soir sur TF1 : quel amusant point ...",
+          "description": "Ce dimanche 1er juin à 21h10, TF1 diffuse The Beekeeper, un thriller d'action où Jason Statham joue un ancien agent secret reconverti en",
+          "link": "https://www.diverto.tv/actualites/tele/the-beekeeper-ce-soir-sur-tf1-quel-amusant-point-commun-a-jason-stathan-avec-son-personnage",
+          "source": "www.diverto.tv",
+          "source_url": "https://www.diverto.tv/actualites/tele/the-beekeeper-ce-soir-sur-tf1-quel-amusant-point-commun-a-jason-stathan-avec-son-personnage",
+          "source_name": "www.diverto.tv",
+          "validation": {
+            "input_url": "https://www.diverto.tv/actualites/tele/the-beekeeper-ce-soir-sur-tf1-quel-amusant-point-commun-a-jason-stathan-avec-son-personnage",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.diverto.tv/actualites/tele/the-beekeeper-ce-soir-sur-tf1-quel-amusant-point-commun-a-jason-stathan-avec-son-personnage",
+            "error": null
+          }
+        },
+        {
+          "title": "Brumath. Spectaculaire : un nid de frelons asiatiques de 8 ...",
+          "description": "Un impressionnant nid de frelons asiatiques perché en haut d'un bouleau dans un quartier résidentiel de Brumath a été délogé ce mercredi 9",
+          "link": "https://www.dna.fr/economie/2024/10/10/spectaculaire-un-nid-de-frelons-asiatiques-de-8-kilos-a-15-metres-du-sol",
+          "source": "www.dna.fr",
+          "source_url": "https://www.dna.fr/economie/2024/10/10/spectaculaire-un-nid-de-frelons-asiatiques-de-8-kilos-a-15-metres-du-sol",
+          "source_name": "www.dna.fr",
+          "validation": {
+            "input_url": "https://www.dna.fr/economie/2024/10/10/spectaculaire-un-nid-de-frelons-asiatiques-de-8-kilos-a-15-metres-du-sol",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.dna.fr/economie/2024/10/10/spectaculaire-un-nid-de-frelons-asiatiques-de-8-kilos-a-15-metres-du-sol",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] RAPPORT D'ACTIVITÉ 2021 - DRAAF Provence-Alpes-Côte d'Azur",
+          "description": "Doté de 1.2 milliards d'euros au niveau national, le volet agricole du plan France Relance a pour objectif la reconquête d'une souveraineté",
+          "link": "https://draaf.paca.agriculture.gouv.fr/IMG/pdf/rapport_activite_2021-ecran_r.pdf",
+          "source": "draaf.paca.agriculture.gouv.fr",
+          "source_url": "https://draaf.paca.agriculture.gouv.fr/IMG/pdf/rapport_activite_2021-ecran_r.pdf",
+          "source_name": "draaf.paca.agriculture.gouv.fr",
+          "validation": {
+            "input_url": "https://draaf.paca.agriculture.gouv.fr/IMG/pdf/rapport_activite_2021-ecran_r.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://draaf.paca.agriculture.gouv.fr/IMG/pdf/rapport_activite_2021-ecran_r.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "EtatDesLieuxPPP_1 dec2016 - DRAAF Centre-Val de Loire",
+          "description": "De 2011 à 2015, ces ac ons ont été essen ellement menées par les par es prenantes du plan Ecophyto en région (chambres d'agricultures, FREDON, France nature",
+          "link": "https://draaf.centre-val-de-loire.agriculture.gouv.fr/IMG/pdf/EtatDesLieuxPPP_1_dec2016_cle012cfa.pdf",
+          "source": "draaf.centre-val-de-loire.agriculture.gouv.fr",
+          "source_url": "https://draaf.centre-val-de-loire.agriculture.gouv.fr/IMG/pdf/EtatDesLieuxPPP_1_dec2016_cle012cfa.pdf",
+          "source_name": "draaf.centre-val-de-loire.agriculture.gouv.fr",
+          "validation": {
+            "input_url": "https://draaf.centre-val-de-loire.agriculture.gouv.fr/IMG/pdf/EtatDesLieuxPPP_1_dec2016_cle012cfa.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://draaf.centre-val-de-loire.agriculture.gouv.fr/IMG/pdf/EtatDesLieuxPPP_1_dec2016_cle012cfa.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Diversités des arthropodes & agriculture biologique",
+          "description": "En 2020, l'Association des Entomologistes de Picardie (ADEP) a développé une méthode de diagnostic permettant d'observer des arthropodes (insectes, arachnides)",
+          "link": "https://draaf.hauts-de-france.agriculture.gouv.fr/IMG/pdf/diagnostics_7_exploitations_bio_hauts_de_france_adep_vers_finale_30_08_2023.pdf",
+          "source": "draaf.hauts-de-france.agriculture.gouv.fr",
+          "source_url": "https://draaf.hauts-de-france.agriculture.gouv.fr/IMG/pdf/diagnostics_7_exploitations_bio_hauts_de_france_adep_vers_finale_30_08_2023.pdf",
+          "source_name": "draaf.hauts-de-france.agriculture.gouv.fr",
+          "validation": {
+            "input_url": "https://draaf.hauts-de-france.agriculture.gouv.fr/IMG/pdf/diagnostics_7_exploitations_bio_hauts_de_france_adep_vers_finale_30_08_2023.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://draaf.hauts-de-france.agriculture.gouv.fr/IMG/pdf/diagnostics_7_exploitations_bio_hauts_de_france_adep_vers_finale_30_08_2023.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] La surveillance en santé animale : Avenir de la plateforme ESA",
+          "description": "➢ des cadres et agents techniques et administratifs en fonction dans les laboratoires d'analyses appartenant aux Départements membres de l'EPSSA. - Les",
+          "link": "https://agriculture.gouv.fr/sites/default/files/cgaaer_14067_2015_rapport.pdf",
+          "source": "agriculture.gouv.fr",
+          "source_url": "https://agriculture.gouv.fr/sites/default/files/cgaaer_14067_2015_rapport.pdf",
+          "source_name": "agriculture.gouv.fr",
+          "validation": {
+            "input_url": "https://agriculture.gouv.fr/sites/default/files/cgaaer_14067_2015_rapport.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://agriculture.gouv.fr/sites/default/files/cgaaer_14067_2015_rapport.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Job Description: Concrete Finisher - M Luis Construction",
+          "description": "Job Description: Concrete Finisher M Luis Construction Co., Inc. is a woman and minority-owned, multi-generational, and regionally recognized asphalt manufacturer.",
+          "link": "https://www.mluisconstruction.com/wp-content/uploads/2021/03/Concrete-Finisher-2021.pdf",
+          "source": "www.mluisconstruction.com",
+          "source_url": "https://www.mluisconstruction.com/wp-content/uploads/2021/03/Concrete-Finisher-2021.pdf",
+          "source_name": "www.mluisconstruction.com",
+          "validation": {
+            "input_url": "https://www.mluisconstruction.com/wp-content/uploads/2021/03/Concrete-Finisher-2021.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.mluisconstruction.com/wp-content/uploads/2021/03/Concrete-Finisher-2021.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Evaluation du dispositif de surveillance des mortalités massives ...",
+          "description": "Rapport d'évaluation Oasis de la surveillance des mortalités massives aiguës des abeilles en France. 3. 3.4. Analyse selon les attributs d'un dispositif de",
+          "link": "https://apiculture.com/fr/?option=com_dropfiles&format=&task=frontfile.download&catid=22&id=260&Itemid=1000000000000",
+          "source": "apiculture.com",
+          "source_url": "https://apiculture.com/fr/?option=com_dropfiles&format=&task=frontfile.download&catid=22&id=260&Itemid=1000000000000",
+          "source_name": "apiculture.com",
+          "validation": {
+            "input_url": "https://apiculture.com/files/22/Sante-de-l-Abeille/260/Dispositif-de-surveillance-des-mortalites-massives-aigues-des-abeilles.pdf",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://apiculture.com/fr/?option=com_dropfiles&format=&task=frontfile.download&catid=22&id=260&Itemid=1000000000000",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Incursions d'abeilles par département (2010-2025)",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Nombre d'incursions",
+          "note": "Source : data.gouv.fr, Ministère de l'Agriculture"
+        },
+        {
+          "title": "Taux d'incursions d'abeilles par 100k habitants",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Taux d'incursions",
+          "note": "Calcul basé sur les données INSEE et Ministère de l'Agriculture"
+        },
+        {
+          "title": "Saisonnalité des incursions d'abeilles (2010-2025)",
+          "chart_type": "line",
+          "x": "Saison",
+          "y": "Nombre d'incursions",
+          "note": "Données agrégées par saison et année"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Impact du changement climatique sur le comportement des abeilles",
+      "description": "Le changement climatique affecte le comportement migratoire et la période d’activité des abeilles. Ces changements peuvent provoquer des incidents comme celui survenu lors du match de football. Analyser comment les tendances climatiques influencent ces comportements pourrait révéler des surprises et influences inattendues. \nQ: Le réchauffement climatique influe-t-il sur la fréquence des invasions d’abeilles en France ? \nMetrics: variations saisonnières d’incidents d’abeilles, températures moyennes annuelles \nGranularity: national; mensuel 2000–2025 \nData: Météo-France, INRAE, NOAA \nAxis: Temporal",
+      "keywords": [
+        "changement climatique",
+        "comportement des abeilles",
+        "pollinisation",
+        "biodiversité",
+        "température et abeilles"
+      ],
+      "datasets": [
+        {
+          "title": "API Store Service de visualisation cartographique (WMS) du jeu de données : Campings en zone inondable en Côte-d'Or open data in a single API request",
+          "description": "Explore Service de visualisation cartographique ( WMS ) du jeu de données : Campings en zone inondable en Côte-d'Or API at API Store. Open Data API marketplace to help developers build their applications quickly and easily.",
+          "link": "https://api.store/france-api/bureau-de-recherches-geologiques-et-minieres-api/service-de-visualisation-cartographique-wms-du-jeu-de-donnees-campings-en-zone-inondable-en-cote-dor-api",
+          "source": "api.store",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://api.store/france-api/bureau-de-recherches-geologiques-et-minieres-api/service-de-visualisation-cartographique-wms-du-jeu-de-donnees-campings-en-zone-inondable-en-cote-dor-api",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://api.store/france-api/bureau-de-recherches-geologiques-et-minieres-api/service-de-visualisation-cartographique-wms-du-jeu-de-donnees-campings-en-zone-inondable-en-cote-dor-api",
+            "error": null
+          }
+        },
+        {
+          "title": "Chambres-agriculture MAEC API - Dispositif 2025-2027 - Chambre d'agriculture - Tarn",
+          "description": "Amélioration du potentiel pollinisateur des abeilles domestiques",
+          "link": "https://tarn.chambres-agriculture.fr/actualites-1/actualite/maec-api-dispositif-2025-2027-1",
+          "source": "tarn.chambres-agriculture.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://tarn.chambres-agriculture.fr/actualites-1/actualite/maec-api-dispositif-2025-2027-1",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://tarn.chambres-agriculture.fr/actualites-1/actualite/maec-api-dispositif-2025-2027-1",
+            "error": null
+          }
+        },
+        {
+          "title": "Les abeilles, des pollinisateurs essentiels dont la santé est ...",
+          "description": "Feb 22, 2024 · Les abeilles , des pollinisateurs essentiels dont la santé est menacée Les abeilles représentent 90 % des insectes pollinisateurs, aux côtés de bourdons, papillons ou encore de mouches. Depuis plusieurs années, un phénomène d'affaiblissement et de mortalité des colonies d' abeilles est constaté dans le monde.",
+          "link": "https://www.anses.fr/fr/content/les-abeilles-des-pollinisateurs-essentiels-dont-la-sante-est-menacee",
+          "source": "www.anses.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.anses.fr/fr/content/les-abeilles-des-pollinisateurs-essentiels-dont-la-sante-est-menacee",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.anses.fr/fr/content/les-abeilles-des-pollinisateurs-essentiels-dont-la-sante-est-menacee",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] La flore mellifère et le déclin des abeilles - Hal Inrae",
+          "description": "systèmes céréaliers intensifs et ont un impact sur la santé des colonies d'abeilles. Le pollen est un produit coûteux pour les apiculteurs",
+          "link": "https://hal.inrae.fr/hal-02811278/document",
+          "source": "hal.inrae.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://hal.inrae.fr/hal-02811278/document",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://hal.inrae.fr/hal-02811278/document",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Le déclin des abeilles, un casse-tête pour la recherche - Hal Inrae",
+          "description": "Parmi 20 000 espèces d'abeilles présentes dans le monde, Apis mellifera est la plus répandue et celle que l'on connaît le mieux. Mais, comme.",
+          "link": "https://hal.inrae.fr/hal-02669222v1/document",
+          "source": "hal.inrae.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://hal.inrae.fr/hal-02669222v1/document",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://hal.inrae.fr/hal-02669222v1/document",
+            "error": null
+          }
+        },
+        {
+          "title": "Réaliser un diagnostic de la santé des abeilles en traduisant leurs ...",
+          "description": "L'apiculture nous a appris que la qualité du miel reflétait radicalement la santé des abeilles. Une contamination par un polluant comme des",
+          "link": "https://www.inrae.fr/actualites/realiser-diagnostic-sante-abeilles-traduisant-leurs-pheromones",
+          "source": "www.inrae.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.inrae.fr/actualites/realiser-diagnostic-sante-abeilles-traduisant-leurs-pheromones",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.inrae.fr/actualites/realiser-diagnostic-sante-abeilles-traduisant-leurs-pheromones",
+            "error": null
+          }
+        },
+        {
+          "title": "Aedes albopictus Is Rapidly Invading Its Climatic Niche in ...",
+          "description": "Importantly, the accelerating colonization of Ae. albopictus in France may be approaching the limit of its theoretical climatic niche; future expansion will depend on the climate‐driven enlargement of suitable areas. The area at risk of dengue transmission has recently expanded from the Mediterranean coasts over northern Spain and Western France .",
+          "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12365582/",
+          "source": "pmc.ncbi.nlm.nih.gov",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12365582",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12365582/",
+            "error": null
+          }
+        },
+        {
+          "title": "FranceAgriMer Publication du bilan de campagne apicole 2022 | FranceAgriMer - établissement national des produits de l'agriculture et de la mer",
+          "description": "Les enseignements-clés de l’Observatoire de la production de miel et de gelée royale 2023 de FranceAgriMer",
+          "link": "https://www.franceagrimer.fr/recherche?field_categorie_de_contenu%5b%5d=77",
+          "source": "www.franceagrimer.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.franceagrimer.fr/Actualite/Filieres/Apiculture/2024/Publication-du-bilan-de-campagne-apicole-2022",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.franceagrimer.fr/recherche?field_categorie_de_contenu%5b%5d=77",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Graphiques historiques températures et précipitations",
+          "description": "Accueil Réutilisations Graphiques historiques températures et précipitations Voir la réutilisation Laurent Cognard",
+          "link": "https://www.data.gouv.fr/reuses/graphiques-historiques-temperatures-et-precipitations",
+          "source": "www.data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/reuses/graphiques-historiques-temperatures-et-precipitations",
+          "source_name": "www.data.gouv.fr",
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/reuses/graphiques-historiques-temperatures-et-precipitations",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/reuses/graphiques-historiques-temperatures-et-precipitations",
+            "error": null
+          }
+        },
+        {
+          "title": "Archives Le Dauphiné Libéré - 07 août 2025",
+          "description": "Retrouvez les articles parus le jeudi 7 août 2025 dans Le Dauphiné Libéré. Parcourez nos archives facilement.",
+          "link": "https://www.ledauphine.com/archives/2025/07-08",
+          "source": "www.ledauphine.com",
+          "source_url": "https://www.ledauphine.com/archives/2025/07-08",
+          "source_name": "www.ledauphine.com",
+          "validation": {
+            "input_url": "https://www.ledauphine.com/archives/2025/07-08",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ledauphine.com/archives/2025/07-08",
+            "error": null
+          }
+        },
+        {
+          "title": "BeeFunc, une base de données dédiée aux traits des abeilles ...",
+          "description": "4 days ago · Une manière d’atteindre cet objectif est d’explorer comment leurs traits sont associés à leur exposition aux perturbations anthropiques. À ce jour, il n’existe aucune base de données synthétisant les traits des abeilles au niveau spécifique en France , ce qui limite l’interprétation fonctionnelle des inventaires.",
+          "link": "https://oseren.univ-rennes.fr/actualites/beefunc-une-base-de-donnees-dediee-aux-traits-des-abeilles-en-france",
+          "source": "oseren.univ-rennes.fr",
+          "source_url": "https://oseren.univ-rennes.fr/actualites/beefunc-une-base-de-donnees-dediee-aux-traits-des-abeilles-en-france",
+          "source_name": "oseren.univ-rennes.fr",
+          "validation": {
+            "input_url": "https://oseren.univ-rennes.fr/actualites/beefunc-une-base-de-donnees-dediee-aux-traits-des-abeilles-en-france",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://oseren.univ-rennes.fr/actualites/beefunc-une-base-de-donnees-dediee-aux-traits-des-abeilles-en-france",
+            "error": null
+          }
+        },
+        {
+          "title": "Online prijave za izložbe - e-kinologija",
+          "description": "31/08/2025 Boxer Club of Serbia Annual Championship, Ergela Kelebija 31/08/2025 Cane Corso National Championship Serbia, Alibunar 06/09/2025 CACIB Kać, Kać 06/09/2025 Kać - Beagle and FCI group 5 Specialty, Kać 14/09/2025 CACIB Leskovac, Leskovac 14/09/2025 CAC Lebane, Lebane 20/09/2025 National Specialty Show For Caucasian Shepherd, Kumanovo",
+          "link": "https://www.e-kinologija.com/prijave/index.php",
+          "source": "www.e-kinologija.com",
+          "source_url": "https://www.e-kinologija.com/prijave/index.php",
+          "source_name": "www.e-kinologija.com",
+          "validation": {
+            "input_url": "https://www.e-kinologija.com/prijave/index.php",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.e-kinologija.com/prijave/index.php",
+            "error": null
+          }
+        },
+        {
+          "title": "National Association to Stop Guardian Abuse: Daughter arrested for ...",
+          "description": "An elderly woman from Augusta was found in a state of severe neglect last week, prompting her daughter's arrest. The 82-year-old was discovered incoherent and physically stuck to her mattress during a medical emergency on Dec. 30 at the home they shared on Rollingwood Drive, authorities said. When paramedics arrived at the family's home, they found the woman non-responsive, with her skin",
+          "link": "https://nasga-stopguardianabuse.blogspot.com/2025/01/daughter-arrested-for-neglect-after.html",
+          "source": "nasga-stopguardianabuse.blogspot.com",
+          "source_url": "https://nasga-stopguardianabuse.blogspot.com/2025/01/daughter-arrested-for-neglect-after.html",
+          "source_name": "nasga-stopguardianabuse.blogspot.com",
+          "validation": {
+            "input_url": "https://nasga-stopguardianabuse.blogspot.com/2025/01/daughter-arrested-for-neglect-after.html",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://nasga-stopguardianabuse.blogspot.com/2025/01/daughter-arrested-for-neglect-after.html",
+            "error": null
+          }
+        },
+        {
+          "title": "Développer la résilience des abeilles - INRAE",
+          "description": "Et le changement climatique aggrave cela avec son cortège de sécheresses, pluies exceptionnelles, redoux hivernaux… qui épuisent les abeilles",
+          "link": "https://www.inrae.fr/actualites/developper-resilience-abeilles",
+          "source": "www.inrae.fr",
+          "source_url": "https://www.inrae.fr/actualites/developper-resilience-abeilles",
+          "source_name": "www.inrae.fr",
+          "validation": {
+            "input_url": "https://www.inrae.fr/actualites/developper-resilience-abeilles",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.inrae.fr/actualites/developper-resilience-abeilles",
+            "error": null
+          }
+        },
+        {
+          "title": "Les abeilles au cœur des transitions - INRAE",
+          "description": "En France, 72,2 % des espèces cultivées pour l'alimentation humaine présentent une dépendance plus ou moins forte à l'action des insectes",
+          "link": "https://www.inrae.fr/dossiers/abeilles-au-coeur-transitions",
+          "source": "www.inrae.fr",
+          "source_url": "https://www.inrae.fr/dossiers/abeilles-au-coeur-transitions",
+          "source_name": "www.inrae.fr",
+          "validation": {
+            "input_url": "https://www.inrae.fr/dossiers/abeilles-au-coeur-transitions",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.inrae.fr/dossiers/abeilles-au-coeur-transitions",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Standardisation du succès d'approvisionnement des abeilles ...",
+          "description": "17h00-17h15 Impact du paysage sur la diversité des abeilles dans un contexte de réimplantation ... modélisation d'accompagnement, une méthodologie",
+          "link": "https://hal.inrae.fr/hal-03807256/document",
+          "source": "hal.inrae.fr",
+          "source_url": "https://hal.inrae.fr/hal-03807256/document",
+          "source_name": "hal.inrae.fr",
+          "validation": {
+            "input_url": "https://hal.inrae.fr/hal-03807256/document",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://hal.inrae.fr/hal-03807256/document",
+            "error": null
+          }
+        },
+        {
+          "title": "Pour mieux protéger les abeilles des pesticides - INRAE",
+          "description": "L'idée est de mesurer les effets des produits utilisés sur la santé des abeilles en dotant ces dernières de micropuces électroniques permettant",
+          "link": "https://www.inrae.fr/actualites/mieux-proteger-abeilles-pesticides",
+          "source": "www.inrae.fr",
+          "source_url": "https://www.inrae.fr/actualites/mieux-proteger-abeilles-pesticides",
+          "source_name": "www.inrae.fr",
+          "validation": {
+            "input_url": "https://www.inrae.fr/actualites/mieux-proteger-abeilles-pesticides",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.inrae.fr/actualites/mieux-proteger-abeilles-pesticides",
+            "error": null
+          }
+        },
+        {
+          "title": "Des experts scientifiques internationaux évaluent le déclin ... - INRAE",
+          "description": "La perte de la biodiversité des pollinisateurs a été jugée partout comme un risque important, mettant en péril les avantages qu'ils procurent",
+          "link": "https://www.inrae.fr/actualites/experts-scientifiques-internationaux-evaluent-declin-pollinisateurs-monde",
+          "source": "www.inrae.fr",
+          "source_url": "https://www.inrae.fr/actualites/experts-scientifiques-internationaux-evaluent-declin-pollinisateurs-monde",
+          "source_name": "www.inrae.fr",
+          "validation": {
+            "input_url": "https://www.inrae.fr/actualites/experts-scientifiques-internationaux-evaluent-declin-pollinisateurs-monde",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.inrae.fr/actualites/experts-scientifiques-internationaux-evaluent-declin-pollinisateurs-monde",
+            "error": null
+          }
+        },
+        {
+          "title": "Trezor Promo Codes - Active & Valid Offers | August 2025",
+          "description": "Looking for a tested & working Trezor promo code? Save more with Trezor coupon code by exploring our hand-picked Trezor promo code offers.",
+          "link": "https://www.bitdegree.org/crypto/deals/trezor-promo-codes",
+          "source": "www.bitdegree.org",
+          "source_url": "https://www.bitdegree.org/crypto/deals/trezor-promo-codes",
+          "source_name": "www.bitdegree.org",
+          "validation": {
+            "input_url": "https://www.bitdegree.org/crypto/deals/trezor-promo-codes",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.bitdegree.org/crypto/deals/trezor-promo-codes",
+            "error": null
+          }
+        },
+        {
+          "title": "Download MONTAGEM BATCHI - SLOWED - MXZI by Divyansh Nagar | Listen MP3 ...",
+          "description": "Download and stream MONTAGEM BATCHI - SLOWED - MXZI by Divyansh Nagar for free on audio.com. High-quality audio available for both streaming and download. Listen now.",
+          "link": "https://audio.com/divyansh-nagar/audio/montagem-batchi-slowed-mxzi",
+          "source": "audio.com",
+          "source_url": "https://audio.com/divyansh-nagar/audio/montagem-batchi-slowed-mxzi",
+          "source_name": "audio.com",
+          "validation": {
+            "input_url": "https://audio.com/divyansh-nagar/audio/montagem-batchi-slowed-mxzi",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://audio.com/divyansh-nagar/audio/montagem-batchi-slowed-mxzi",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Impact des trajectoires d'occupation du sol sur l'abondance et la ...",
+          "description": "- la régulation sociale des abeilles domestiques et ses rapports avec les bioagresseurs (Y. LE. CONTE). - les interactions plantes-abeilles en termes de",
+          "link": "https://hal.inrae.fr/hal-02821819v1/file/37349_20101213033155047_1.pdf",
+          "source": "hal.inrae.fr",
+          "source_url": "https://hal.inrae.fr/hal-02821819v1/file/37349_20101213033155047_1.pdf",
+          "source_name": "hal.inrae.fr",
+          "validation": {
+            "input_url": "https://hal.inrae.fr/hal-02821819v1/file/37349_20101213033155047_1.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://hal.inrae.fr/hal-02821819v1/file/37349_20101213033155047_1.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Écologie de l'approvisionnement des abeilles dans l'anthropocène",
+          "description": "RFID : une nouvelle méthodologie en écotoxicologie de l'abeille, in: Oral Communication. Presented at the Colloque 2011 de la société",
+          "link": "https://hal.inrae.fr/tel-04479867v1/file/HDR_MHenry_240227.pdf",
+          "source": "hal.inrae.fr",
+          "source_url": "https://hal.inrae.fr/tel-04479867v1/file/HDR_MHenry_240227.pdf",
+          "source_name": "hal.inrae.fr",
+          "validation": {
+            "input_url": "https://hal.inrae.fr/tel-04479867v1/file/HDR_MHenry_240227.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://hal.inrae.fr/tel-04479867v1/file/HDR_MHenry_240227.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Apiservices Abeilles et changement climatique",
+          "description": "Site portail de l'apiculture mondiale - Petites annonces apicoles - Listes fournisseurs matériel apicole, produits de la ruche, etc.",
+          "link": "https://apiculture.com/fr/?option=com_dropfiles&format=&task=frontfile.download&catid=21&id=1285&Itemid=1000000000000",
+          "source": "apiculture.com",
+          "source_url": "https://apiculture.com/fr/?option=com_dropfiles&format=&task=frontfile.download&catid=21&id=1285&Itemid=1000000000000",
+          "source_name": "apiculture.com",
+          "validation": {
+            "input_url": "https://apiculture.com/files/21/Abeille-de-France/1285/Abeilles-et-changement-climatique.pdf",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://apiculture.com/fr/?option=com_dropfiles&format=&task=frontfile.download&catid=21&id=1285&Itemid=1000000000000",
+            "error": null
+          }
+        },
+        {
+          "title": "Jysk Auktion - KATALOGET TIL SØNDAGENS AUKTION ER... | Facebook",
+          "description": "💥 KATALOGET TIL SØNDAGENS AUKTION ER ONLINE! 💥 Find din (e) favorit (ter), og gør en god handel 🚗 🤝 Link til kataloget:",
+          "link": "https://www.facebook.com/story.php?story_fbid=3807919729292803&id=100057595023814",
+          "source": "www.facebook.com",
+          "source_url": "https://www.facebook.com/story.php?story_fbid=3807919729292803&id=100057595023814",
+          "source_name": "www.facebook.com",
+          "validation": {
+            "input_url": "https://www.facebook.com/story.php?story_fbid=3807919729292803&id=100057595023814",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.facebook.com/story.php?story_fbid=3807919729292803&id=100057595023814",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Incidents d'abeilles par mois en France (2000-2025)",
+          "chart_type": "line",
+          "x": "Mois",
+          "y": "Nombre d'incidents",
+          "note": "Source : INRAE, données mensuelles"
+        },
+        {
+          "title": "Températures moyennes annuelles en France (2000-2025)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Température moyenne (°C)",
+          "note": "Source : Météo-France, données annuelles"
+        },
+        {
+          "title": "Corrélation entre température et incidents d'abeilles",
+          "chart_type": "scatter",
+          "x": "Température moyenne annuelle (°C)",
+          "y": "Nombre d'incidents d'abeilles",
+          "note": "Analyse croisée des données de Météo-France et INRAE"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Rugby vs Football: Qui subit le plus d'interruptions animales?",
+      "description": "Bien que le football ait connu un incident notable de match interrompu par des abeilles, d'autres sports sont potentiellement touchés aussi par des intrusions animales. Comparer ces interférences entre divers sports pourrait indiquer quelles disciplines sont les plus à risques. \nQ: Les matchs de rugby sont-ils plus fréquemment perturbés par des animaux que ceux de football ? \nMetrics: fréquence d'interruptions par type de sport, comparaison 2010–2025 \nGranularity: national; annuel \nData: Ligue de Football Professionnel, Fédération Française de Rugby, data.gouv.fr \nAxis: DataQuality",
+      "keywords": [
+        "interruptions animales",
+        "rugby",
+        "football",
+        "animaux terrain",
+        "match incidents"
+      ],
+      "datasets": [
+        {
+          "title": "Catalogue des données de data.gouv.fr",
+          "description": "8 Fichier principal export-dataset-20250828-055053.csv Mis à jour aujourd’hui csv (206,2 Mo) 4K csv",
+          "link": "https://www.data.gouv.fr/datasets/catalogue-des-donnees-de-data-gouv-fr",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/datasets/catalogue-des-donnees-de-data-gouv-fr",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/catalogue-des-donnees-de-data-gouv-fr",
+            "error": null
+          }
+        },
+        {
+          "title": "Communes et villes de France en CSV, Excel, Json, Parquet et ...",
+          "description": "La liste des communes de France contient **46 données** permettant d'identifier les communes et de faire relier les communes françaises avec des fichiers issus de l'Open Data, en utilisant le code Insee de la commune, ou alors le ou les codes postaux, codes des départements, régions, cantons ou académie. Les fichiers aux formats Excel (xlsx), Parquet (.parquet) et Feather (.feather) ne sont pas acceptés sur data.gouv.fr mais sont disponibles librement sur villedereve.fr/open-data-donnees-libres-sur-les-communes. *   **nom_a**: Nom de la commune, précédé de la préposition à, au ou aux et de l'article de la commune, le cas échéant (ex: au Havre) *   **nom_de**: Nom de la commune, précédé de la préposition d', de, du ou des et de l'article de la commune, le cas échéant (ex: du Havre)",
+          "link": "https://www.data.gouv.fr/datasets/communes-et-villes-de-france-en-csv-excel-json-parquet-et-feather",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/datasets/communes-et-villes-de-france-en-csv-excel-json-parquet-et-feather",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/communes-et-villes-de-france-en-csv-excel-json-parquet-et-feather",
+            "error": null
+          }
+        },
+        {
+          "title": "Netcraft Launches New Real-time Threat API to Improve ...",
+          "description": "Mar 10, 2025 — The API supports both CSV and JSON formats, providing machine-readable threat data, including a unique threat identifier, URL, threat type",
+          "link": "https://www.prnewswire.com/news-releases/netcraft-launches-new-real-time-threat-api-to-improve-and-accelerate-collaboration-with-infrastructure-providers-302395956.html",
+          "source": "www.prnewswire.com",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.prnewswire.com/news-releases/netcraft-launches-new-real-time-threat-api-to-improve-and-accelerate-collaboration-with-infrastructure-providers-302395956.html",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.prnewswire.com/news-releases/netcraft-launches-new-real-time-threat-api-to-improve-and-accelerate-collaboration-with-infrastructure-providers-302395956.html",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Sport (Français) - data.gouv.fr",
+          "description": "January 2, 2025 - Sport dans le Pas-de-Calais. \\ Ce jeu de données est en…",
+          "link": "https://www.data.gouv.fr/datasets/sport-francais-pdct",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/en/datasets/sport-francais-pdct",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/sport-francais-pdct",
+            "error": null
+          }
+        },
+        {
+          "title": "Thèses soutenues en France depuis 1985 - data.gouv.fr",
+          "description": "Seules les thèses de doctorat françaises soutenues depuis 1985, telles que définies par l’arrêté du 25 septembre 1985, l’arrêté du 7 août 2006 et l’arrêté du 25 mai 2016 (mis à jour par l'arrêté du 26 août 2022), font l’objet d’un signalement sur theses.fr (et sont présentes dans ce jeu de données).¹ Ce signalement constitue une obligation réglementaire. Elles sont réduites au strict nécessaire, conformément à l’article 89, paragraphe 1, du Règlement Général sur la Protection des Données : noms et prénoms des personnes liées aux thèses de doctorat (auteurs, directeurs de thèse, membres du jury), liste des thèses liées au nom desdites personnes. Le droit à l’effacement ne peut s’exercer concernant le signalement des thèses de doctorat soutenues, conformément aux exceptions prévues par l’article 17, paragraphes 3.b et 3.d, du Règlement Général sur la Protection des Données.",
+          "link": "https://www.data.gouv.fr/datasets/theses-soutenues-en-france-depuis-1985",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/datasets/theses-soutenues-en-france-depuis-1985",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/theses-soutenues-en-france-depuis-1985",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Etat des lieux des équipements sportifs - Football - data.gouv.fr",
+          "description": "September 20, 2024 - Etat des lieux des équipements sportifs dédiés au football .",
+          "link": "https://www.data.gouv.fr/datasets/etat-des-lieux-des-equipements-sportifs-football",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/en/datasets/etat-des-lieux-des-equipements-sportifs-football",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/etat-des-lieux-des-equipements-sportifs-football",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Implication JO 2024",
+          "description": "République Française · Ces informations font partie de l'étude sur l'économie du sport parue en février 2020",
+          "link": "https://www.data.gouv.fr/datasets/implication-jo-2024",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/datasets/implication-jo-2024",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/implication-jo-2024",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Fourrière animale - Devenir des animaux - data.gouv.fr",
+          "description": "November 29, 2024 - République Française · This is a degraded experience of data.gouv.fr. Please enable JavaScript and use an up to date browser",
+          "link": "https://www.data.gouv.fr/datasets/fourriere-animale-devenir-des-animaux",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/en/datasets/fourriere-animale-devenir-des-animaux",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/fourriere-animale-devenir-des-animaux",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Paris 2024 - Sites de compétition - data.gouv.fr",
+          "description": "July 31, 2024 - Ce jeu de données recense tous les sites de compétitions…",
+          "link": "https://www.data.gouv.fr/datasets/paris-2024-sites-de-competition",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/en/datasets/paris-2024-sites-de-competition",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/paris-2024-sites-de-competition",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Jeux de données \"archives\" (2024)",
+          "description": "République Française · Extraction et catégorisation des jeux de données des services d’archives (ou assimilés) en open data, à partir du catalogue des données de data.gouv.fr (export du 5 février 2025)",
+          "link": "https://www.data.gouv.fr/datasets/jeux-de-donnees-archives-2024",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/datasets/jeux-de-donnees-archives-2024",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/jeux-de-donnees-archives-2024",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Label Ville amie des animaux",
+          "description": "République Française · Depuis 2020, la Région distingue avec le label « Ville amie des animaux », de 1 à 3 pattes, les communes franciliennes qui œuvrent en faveur de la protection des animaux de compagnie, contre la maltraitance et l'abandon",
+          "link": "https://www.data.gouv.fr/datasets/label-ville-amie-des-animaux",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/datasets/label-ville-amie-des-animaux",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/label-ville-amie-des-animaux",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr L'open data du sport et des Jeux Olympiques et Paralympiques - data.gouv.fr",
+          "description": "Explorez et exploitez les données ouvertes du sport !",
+          "link": "https://www.data.gouv.fr/posts/lopen-data-du-sport-et-des-jeux-olympiques-et-paralympiques",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/en/posts/lopen-data-du-sport-et-des-jeux-olympiques-et-paralympiques",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/posts/lopen-data-du-sport-et-des-jeux-olympiques-et-paralympiques",
+            "error": null
+          }
+        },
+        {
+          "title": "Arun63/sharegpt-structured-output-json · Datasets at ...",
+          "description": "This dataset can be used to train LLMs for applications such as: Automated data extraction; Conversational AI with structured outputs; JSON -based API response",
+          "link": "https://huggingface.co/datasets/Arun63/sharegpt-structured-output-json",
+          "source": "huggingface.co",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://huggingface.co/datasets/Arun63/sharegpt-structured-output-json",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://huggingface.co/datasets/Arun63/sharegpt-structured-output-json",
+            "error": null
+          }
+        },
+        {
+          "title": "API data formats",
+          "description": "Apr 8, 2011 — The JSON is just a transformation of the CSV : an Array of Objects corresponding to CSV rows, with the CSV headers repeated as the keys of each",
+          "link": "http://blog.mappiness.org.uk/2011/04/08/api-data-formats/",
+          "source": "blog.mappiness.org.uk",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "http://blog.mappiness.org.uk/2011/04/08/api-data-formats",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "http://blog.mappiness.org.uk/2011/04/08/api-data-formats/",
+            "error": null
+          }
+        },
+        {
+          "title": "Forum d'Etalab Les données disponibles en open data sur data.gouv.fr - Hackathon #OpenField16 (7-9 oct 2016) - Forum d'Etalab",
+          "description": "September 12, 2016 - Données nationales Ministère de la Ville, de la Jeunesse et des Sports : Recensement des équipements sportifs, espaces et sites de pratiques (RES) - 2016 Recensement des licences et clubs auprès des fédérations sportives agréées - 2013 Base anonymisée des individus ayant obtenu un",
+          "link": "https://forum.etalab.gouv.fr/t/les-donnees-disponibles-en-open-data-sur-data-gouv-fr/2893",
+          "source": "forum.etalab.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://forum.etalab.gouv.fr/t/les-donnees-disponibles-en-open-data-sur-data-gouv-fr/2893",
+            "status": "error",
+            "http_status": null,
+            "final_url": null,
+            "error": "ConnectionError"
+          }
+        },
+        {
+          "title": "amazing-bard-prompts/prompts.csv at main",
+          "description": "I will provide you with a pet and their owner and your goal is to help the owner understand why their pet has been exhibiting certain behavior, and come up with",
+          "link": "https://github.com/dsdanielpark/amazing-bard-prompts/blob/main/prompts.csv",
+          "source": "github.com",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://github.com/dsdanielpark/amazing-bard-prompts/blob/main/prompts.csv",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://github.com/dsdanielpark/amazing-bard-prompts/blob/main/prompts.csv",
+            "error": null
+          }
+        },
+        {
+          "title": "Generating sample data - Cloudant blog",
+          "description": "Generating sample data. Sep 14, 2018 | Glynn Bird. Data JSON . Application development using Cloudant as the database, for me, starts with data design.",
+          "link": "https://blog.cloudant.com/2018/09/14/Generating-sample-JSON-data.html",
+          "source": "blog.cloudant.com",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://blog.cloudant.com/2018/09/14/Generating-sample-JSON-data.html",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://blog.cloudant.com/2018/09/14/Generating-sample-JSON-data.html",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Data.gouv.fr Association ASS JOUEURS CSV RUGBY à 38200 VIENNE",
+          "description": "Le JavaScript n'est pas activé sur votre navigateur · Le JavaScript n'est pas activé sur votre navigateur. Pour vous permettre de naviguer correctement sur notre site, il est nécessaire qu'il soit activé · Comment activer le JavaScript · Chrome · https://support.google.com/chrome ·",
+          "link": "https://annuaire-entreprises.data.gouv.fr/entreprise/ass-joueurs-csv-rugby-425380748",
+          "source": "annuaire-entreprises.data.gouv.fr",
+          "source_url": "https://annuaire-entreprises.data.gouv.fr/entreprise/ass-joueurs-csv-rugby-425380748",
+          "source_name": "annuaire-entreprises.data.gouv.fr",
+          "validation": {
+            "input_url": "https://annuaire-entreprises.data.gouv.fr/entreprise/ass-joueurs-csv-rugby-425380748",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://annuaire-entreprises.data.gouv.fr/entreprise/ass-joueurs-csv-rugby-425380748",
+            "error": null
+          }
+        },
+        {
+          "title": "Ouvrir des données | Guides de data.gouv.fr",
+          "description": "Un fichier CSV (Comma Separated Values) est un fichier texte qui stocke des données sous forme de tableau et utilise des virgules (ou des point virgules, des tabulations, etc.) pour séparer les valeurs.",
+          "link": "https://guides.data.gouv.fr/reutiliser-des-donnees/guide-traitement-et-analyse-de-donnees/manipuler-des-donnees/ouvrir-des-donnees",
+          "source": "guides.data.gouv.fr",
+          "source_url": "https://guides.data.gouv.fr/reutiliser-des-donnees/guide-traitement-et-analyse-de-donnees/manipuler-des-donnees/ouvrir-des-donnees",
+          "source_name": "guides.data.gouv.fr",
+          "validation": {
+            "input_url": "https://guides.data.gouv.fr/reutiliser-des-donnees/guide-traitement-et-analyse-de-donnees/manipuler-des-donnees/ouvrir-des-donnees",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://guides.data.gouv.fr/reutiliser-des-donnees/guide-traitement-et-analyse-de-donnees/manipuler-des-donnees/ouvrir-des-donnees",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Le rugby en France (2011) - data.gouv.fr",
+          "description": "April 30, 2024 - Carte de France du pourcentage de licenciés du rugby sur…",
+          "link": "https://www.data.gouv.fr/reuses/le-rugby-en-france-2011",
+          "source": "www.data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/reuses/le-rugby-en-france-2011",
+          "source_name": "www.data.gouv.fr",
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/en/reuses/le-rugby-en-france-2011",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/reuses/le-rugby-en-france-2011",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Programme des matchs de foot - data.gouv.fr",
+          "description": "April 30, 2024 - Utilisation de l'open data pour afficher le programme des…",
+          "link": "https://www.data.gouv.fr/reuses/programme-des-matchs-de-foot",
+          "source": "www.data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/reuses/programme-des-matchs-de-foot",
+          "source_name": "www.data.gouv.fr",
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/en/reuses/programme-des-matchs-de-foot",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/reuses/programme-des-matchs-de-foot",
+            "error": null
+          }
+        },
+        {
+          "title": "Enseignement Supérieur Enquête statistique sur l'utilisation des animaux à des fins scientifiques | enseignementsup-recherche.gouv.fr",
+          "description": "Enquête statistique sur l'utilisation des animaux à des fins scientifiques | enseignementsup-recherche.gouv.fr Ce site utilise des cookies afin de mieux vous informer et vous proposer des vidéos, des fonctionnalités de partage et des contenus animés et interactifs. Image 1: Ministère chargé de l'Enseignement supérieur et de la RechercheRetourner à la page d'accueil Image 2: Ministère chargé de l'Enseignement supérieur et de la RechercheRetourner à la page d'accueil Depuis 2014, pour répondre aux obligations réglementaires européennes (article 54.2 de la directive 2010/63/UE et décision d'exécution 2012/707/UE), le ministère chargé de la recherche réalise à un rythme annuel une enquête statistique sur l’utilisation des animaux à des fins scientifiques (vertébrés et céphalopodes). Image 4: Ministère chargé de l'Enseignement supérieur et de la Recherche",
+          "link": "https://www.enseignementsup-recherche.gouv.fr/fr/enquete-statistique-sur-l-utilisation-des-animaux-des-fins-scientifiques-46270",
+          "source": "www.enseignementsup-recherche.gouv.fr",
+          "source_url": "https://www.enseignementsup-recherche.gouv.fr/fr/enquete-statistique-sur-l-utilisation-des-animaux-des-fins-scientifiques-46270",
+          "source_name": "www.enseignementsup-recherche.gouv.fr",
+          "validation": {
+            "input_url": "https://www.enseignementsup-recherche.gouv.fr/fr/enquete-statistique-sur-l-utilisation-des-animaux-des-fins-scientifiques-46270",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.enseignementsup-recherche.gouv.fr/fr/enquete-statistique-sur-l-utilisation-des-animaux-des-fins-scientifiques-46270",
+            "error": null
+          }
+        },
+        {
+          "title": "L'Équipe On a retrouvé les athlètes « disparus » de Paris 2024",
+          "description": "March 7, 2025 - « L'Équipe » est parti à la recherche des athlètes volatilisés après les Jeux de Paris . En France et en Belgique, où ils ont trouvé refuge, associations, avocats et clubs sportifs se mobilisent autour d'eux dans une profonde quête d'humanité.",
+          "link": "https://www.lequipe.fr/Tous-sports/Article/On-a-retrouve-les-athletes-disparus-de-paris-2024/1544886",
+          "source": "www.lequipe.fr",
+          "source_url": "https://www.lequipe.fr/Tous-sports/Article/On-a-retrouve-les-athletes-disparus-de-paris-2024/1544886",
+          "source_name": "www.lequipe.fr",
+          "validation": {
+            "input_url": "https://www.lequipe.fr/Tous-sports/Article/On-a-retrouve-les-athletes-disparus-de-paris-2024/1544886",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.lequipe.fr/Tous-sports/Article/On-a-retrouve-les-athletes-disparus-de-paris-2024/1544886",
+            "error": null
+          }
+        },
+        {
+          "title": "Wikipedia Liste des animaux les plus mortels pour l'homme — Wikipédia",
+          "description": "April 14, 2025 - La liste des animaux les plus mortels pour les humains dans le monde tord le cou aux préjugés et aux croyances populaires en raison de la mauvaise réputation historique dont souffrent certaines espèces animales ( requins, serpents, ours, crocodiles, lions, piranhas) alors que d'autres tuent",
+          "link": "https://fr.wikipedia.org/wiki/Liste_des_animaux_les_plus_mortels_pour_l'homme",
+          "source": "fr.wikipedia.org",
+          "source_url": "https://fr.wikipedia.org/wiki/Liste_des_animaux_les_plus_mortels_pour_l'homme",
+          "source_name": "fr.wikipedia.org",
+          "validation": {
+            "input_url": "https://fr.wikipedia.org/wiki/Liste_des_animaux_les_plus_mortels_pour_l'homme",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://fr.wikipedia.org/wiki/Liste_des_animaux_les_plus_mortels_pour_l'homme",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Interruptions animales par sport (2010-2025)",
+          "chart_type": "bar",
+          "x": "Type de sport",
+          "y": "Nombre d'interruptions",
+          "note": "Source : Ligue de Football Professionnel, Fédération Française de Rugby, data.gouv.fr"
+        },
+        {
+          "title": "Évolution annuelle des interruptions animales",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre d'interruptions",
+          "note": "Comparaison entre le rugby et le football de 2010 à 2025"
+        },
+        {
+          "title": "Répartition des interruptions animales par type",
+          "chart_type": "donut",
+          "x": "Type d'animal",
+          "y": "Proportion des interruptions",
+          "note": "Analyse des types d'animaux causant des interruptions dans les sports"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5962,
+      "type": "PER",
+      "value": "Cyrille François",
+      "context": null
+    },
+    {
+      "id": 5963,
+      "type": "PER",
+      "value": "Enzo Boulanger",
+      "context": null
+    },
+    {
+      "id": 5964,
+      "type": "ORG",
+      "value": "La Ferté-Macé/Bagnoles",
+      "context": null
+    },
+    {
+      "id": 5965,
+      "type": "ORG",
+      "value": "Espérance de Condé-sur-Sarthe",
+      "context": null
+    },
+    {
+      "id": 5966,
+      "type": "LOC",
+      "value": "Condé-sur-Sarthe",
+      "context": null
+    },
+    {
+      "id": 5967,
+      "type": "LOC",
+      "value": "Alençon",
+      "context": null
+    },
+    {
+      "id": 5968,
+      "type": "LOC",
+      "value": "Orne",
+      "context": null
+    },
+    {
+      "id": 5969,
+      "type": "DATE",
+      "value": "2025-04-27",
+      "context": null
+    },
+    {
+      "id": 5970,
+      "type": "NUM",
+      "value": "20.0",
+      "context": null
+    },
+    {
+      "id": 5971,
+      "type": "NUM",
+      "value": "15.0",
+      "context": null
+    },
+    {
+      "id": 5972,
+      "type": "NUM",
+      "value": "2.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 953,
+      "title": "Où les abeilles s’invitent-elles le plus souvent ?",
+      "description": "Les interruptions de matchs de football à cause d'abeilles semblent rares, mais les incursions d'abeilles dans des lieux publics peuvent s'avérer plus fréquentes que l'on ne pense, notamment dans les stades et les parcs en France. Comprendre où et quand ces incidents surviennent peut aider à mieux gérer ces situations à risques. \nQ: Quels lieux en France sont les plus touchés par les incursions d’abeilles ? \nMetrics: nombre d’incursions par département/saison, taux d’incursions par 100k habitants \nGranularity: département; annuel 2010–2025 \nData: INSEE, data.gouv.fr, Ministère de l'Agriculture \nAxis: Geographic",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 954,
+      "title": "Impact du changement climatique sur le comportement des abeilles",
+      "description": "Le changement climatique affecte le comportement migratoire et la période d’activité des abeilles. Ces changements peuvent provoquer des incidents comme celui survenu lors du match de football. Analyser comment les tendances climatiques influencent ces comportements pourrait révéler des surprises et influences inattendues. \nQ: Le réchauffement climatique influe-t-il sur la fréquence des invasions d’abeilles en France ? \nMetrics: variations saisonnières d’incidents d’abeilles, températures moyennes annuelles \nGranularity: national; mensuel 2000–2025 \nData: Météo-France, INRAE, NOAA \nAxis: Temporal",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 955,
+      "title": "Rugby vs Football: Qui subit le plus d'interruptions animales?",
+      "description": "Bien que le football ait connu un incident notable de match interrompu par des abeilles, d'autres sports sont potentiellement touchés aussi par des intrusions animales. Comparer ces interférences entre divers sports pourrait indiquer quelles disciplines sont les plus à risques. \nQ: Les matchs de rugby sont-ils plus fréquemment perturbés par des animaux que ceux de football ? \nMetrics: fréquence d'interruptions par type de sport, comparaison 2010–2025 \nGranularity: national; annuel \nData: Ligue de Football Professionnel, Fédération Française de Rugby, data.gouv.fr \nAxis: DataQuality",
+      "order": 2,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4481,
+      "title": "Concrete Finisher Job Description - Construction",
+      "description": "Concrete Finisher Job Description - Construction Concrete Finisher Job Description In conclusion, a Concrete Finisher job description entails working with concrete, leveling, smoothing, and shaping concrete surfaces to create high-quality finishes. To get a job as a Concrete Finisher in the construction industry, you need to have some education and experience. A: A Concrete Finisher is a skilled construction worker who works with freshly poured concrete to create smooth and level surfaces for various structures. Q: What are the job responsibilities of a Concrete Finisher? A: A Concrete Finisher's job responsibilities include preparing the surface for concrete pouring, spreading and leveling concrete, applying finishing techniques, smoothing and correcting surface imperfections, and applying sealants and protective coatings.",
+      "link": "https://jobdescription.org/job-descriptions/construction-concrete-finisher-job-description",
+      "source": "jobdescription.org",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4482,
+      "title": "[PDF] mortalités massives aigües - reagir - ADA France",
+      "description": "Autrement dit, le cheptel apiaire français constitue un réseau de surveillance basé sur la santé des abeilles et dé- pendant de la vigilance des apiculteurs",
+      "link": "https://www.adafrance.org/wp-content/uploads/2023/03/Guide-MMA-INTERAPI-VF.pdf",
+      "source": "www.adafrance.org",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4483,
+      "title": "Actualités panne : Info en direct - Vidéos et images",
+      "description": "Grosse panne d'électricité à Cergy-Pontoise : plus de 8 000 clients privés de courant. 16 juil. 2025 Pontoise · Une partie des riverains privés d'internet à la",
+      "link": "https://actu.fr/tag/panne",
+      "source": "actu.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4484,
+      "title": "API Store Service de visualisation cartographique (WMS) du jeu de données : Campings en zone inondable en Côte-d'Or open data in a single API request",
+      "description": "Explore Service de visualisation cartographique ( WMS ) du jeu de données : Campings en zone inondable en Côte-d'Or API at API Store. Open Data API marketplace to help developers build their applications quickly and easily.",
+      "link": "https://api.store/france-api/bureau-de-recherches-geologiques-et-minieres-api/service-de-visualisation-cartographique-wms-du-jeu-de-donnees-campings-en-zone-inondable-en-cote-dor-api",
+      "source": "api.store",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4485,
+      "title": "Chambres-agriculture MAEC API - Dispositif 2025-2027 - Chambre d'agriculture - Tarn",
+      "description": "Amélioration du potentiel pollinisateur des abeilles domestiques",
+      "link": "https://tarn.chambres-agriculture.fr/actualites-1/actualite/maec-api-dispositif-2025-2027-1",
+      "source": "tarn.chambres-agriculture.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4486,
+      "title": "Les abeilles, des pollinisateurs essentiels dont la santé est ...",
+      "description": "Feb 22, 2024 · Les abeilles , des pollinisateurs essentiels dont la santé est menacée Les abeilles représentent 90 % des insectes pollinisateurs, aux côtés de bourdons, papillons ou encore de mouches. Depuis plusieurs années, un phénomène d'affaiblissement et de mortalité des colonies d' abeilles est constaté dans le monde.",
+      "link": "https://www.anses.fr/fr/content/les-abeilles-des-pollinisateurs-essentiels-dont-la-sante-est-menacee",
+      "source": "www.anses.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4487,
+      "title": "[PDF] La flore mellifère et le déclin des abeilles - Hal Inrae",
+      "description": "systèmes céréaliers intensifs et ont un impact sur la santé des colonies d'abeilles. Le pollen est un produit coûteux pour les apiculteurs",
+      "link": "https://hal.inrae.fr/hal-02811278/document",
+      "source": "hal.inrae.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4488,
+      "title": "[PDF] Le déclin des abeilles, un casse-tête pour la recherche - Hal Inrae",
+      "description": "Parmi 20 000 espèces d'abeilles présentes dans le monde, Apis mellifera est la plus répandue et celle que l'on connaît le mieux. Mais, comme.",
+      "link": "https://hal.inrae.fr/hal-02669222v1/document",
+      "source": "hal.inrae.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4489,
+      "title": "Réaliser un diagnostic de la santé des abeilles en traduisant leurs ...",
+      "description": "L'apiculture nous a appris que la qualité du miel reflétait radicalement la santé des abeilles. Une contamination par un polluant comme des",
+      "link": "https://www.inrae.fr/actualites/realiser-diagnostic-sante-abeilles-traduisant-leurs-pheromones",
+      "source": "www.inrae.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4490,
+      "title": "Aedes albopictus Is Rapidly Invading Its Climatic Niche in ...",
+      "description": "Importantly, the accelerating colonization of Ae. albopictus in France may be approaching the limit of its theoretical climatic niche; future expansion will depend on the climate‐driven enlargement of suitable areas. The area at risk of dengue transmission has recently expanded from the Mediterranean coasts over northern Spain and Western France .",
+      "link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12365582/",
+      "source": "pmc.ncbi.nlm.nih.gov",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4491,
+      "title": "FranceAgriMer Publication du bilan de campagne apicole 2022 | FranceAgriMer - établissement national des produits de l'agriculture et de la mer",
+      "description": "Les enseignements-clés de l’Observatoire de la production de miel et de gelée royale 2023 de FranceAgriMer",
+      "link": "https://www.franceagrimer.fr/recherche?field_categorie_de_contenu%5b%5d=77",
+      "source": "www.franceagrimer.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4492,
+      "title": "Catalogue des données de data.gouv.fr",
+      "description": "8 Fichier principal export-dataset-20250828-055053.csv Mis à jour aujourd’hui csv (206,2 Mo) 4K csv",
+      "link": "https://www.data.gouv.fr/datasets/catalogue-des-donnees-de-data-gouv-fr",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4493,
+      "title": "Communes et villes de France en CSV, Excel, Json, Parquet et ...",
+      "description": "La liste des communes de France contient **46 données** permettant d'identifier les communes et de faire relier les communes françaises avec des fichiers issus de l'Open Data, en utilisant le code Insee de la commune, ou alors le ou les codes postaux, codes des départements, régions, cantons ou académie. Les fichiers aux formats Excel (xlsx), Parquet (.parquet) et Feather (.feather) ne sont pas acceptés sur data.gouv.fr mais sont disponibles librement sur villedereve.fr/open-data-donnees-libres-sur-les-communes. *   **nom_a**: Nom de la commune, précédé de la préposition à, au ou aux et de l'article de la commune, le cas échéant (ex: au Havre) *   **nom_de**: Nom de la commune, précédé de la préposition d', de, du ou des et de l'article de la commune, le cas échéant (ex: du Havre)",
+      "link": "https://www.data.gouv.fr/datasets/communes-et-villes-de-france-en-csv-excel-json-parquet-et-feather",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4494,
+      "title": "Netcraft Launches New Real-time Threat API to Improve ...",
+      "description": "Mar 10, 2025 — The API supports both CSV and JSON formats, providing machine-readable threat data, including a unique threat identifier, URL, threat type",
+      "link": "https://www.prnewswire.com/news-releases/netcraft-launches-new-real-time-threat-api-to-improve-and-accelerate-collaboration-with-infrastructure-providers-302395956.html",
+      "source": "www.prnewswire.com",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4495,
+      "title": "data.gouv.fr Sport (Français) - data.gouv.fr",
+      "description": "January 2, 2025 - Sport dans le Pas-de-Calais. \\ Ce jeu de données est en…",
+      "link": "https://www.data.gouv.fr/datasets/sport-francais-pdct",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4496,
+      "title": "Thèses soutenues en France depuis 1985 - data.gouv.fr",
+      "description": "Seules les thèses de doctorat françaises soutenues depuis 1985, telles que définies par l’arrêté du 25 septembre 1985, l’arrêté du 7 août 2006 et l’arrêté du 25 mai 2016 (mis à jour par l'arrêté du 26 août 2022), font l’objet d’un signalement sur theses.fr (et sont présentes dans ce jeu de données).¹ Ce signalement constitue une obligation réglementaire. Elles sont réduites au strict nécessaire, conformément à l’article 89, paragraphe 1, du Règlement Général sur la Protection des Données : noms et prénoms des personnes liées aux thèses de doctorat (auteurs, directeurs de thèse, membres du jury), liste des thèses liées au nom desdites personnes. Le droit à l’effacement ne peut s’exercer concernant le signalement des thèses de doctorat soutenues, conformément aux exceptions prévues par l’article 17, paragraphes 3.b et 3.d, du Règlement Général sur la Protection des Données.",
+      "link": "https://www.data.gouv.fr/datasets/theses-soutenues-en-france-depuis-1985",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4497,
+      "title": "data.gouv.fr Etat des lieux des équipements sportifs - Football - data.gouv.fr",
+      "description": "September 20, 2024 - Etat des lieux des équipements sportifs dédiés au football .",
+      "link": "https://www.data.gouv.fr/datasets/etat-des-lieux-des-equipements-sportifs-football",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4498,
+      "title": "data.gouv.fr Implication JO 2024",
+      "description": "République Française · Ces informations font partie de l'étude sur l'économie du sport parue en février 2020",
+      "link": "https://www.data.gouv.fr/datasets/implication-jo-2024",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4499,
+      "title": "data.gouv.fr Fourrière animale - Devenir des animaux - data.gouv.fr",
+      "description": "November 29, 2024 - République Française · This is a degraded experience of data.gouv.fr. Please enable JavaScript and use an up to date browser",
+      "link": "https://www.data.gouv.fr/datasets/fourriere-animale-devenir-des-animaux",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4500,
+      "title": "data.gouv.fr Paris 2024 - Sites de compétition - data.gouv.fr",
+      "description": "July 31, 2024 - Ce jeu de données recense tous les sites de compétitions…",
+      "link": "https://www.data.gouv.fr/datasets/paris-2024-sites-de-competition",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4501,
+      "title": "data.gouv.fr Jeux de données \"archives\" (2024)",
+      "description": "République Française · Extraction et catégorisation des jeux de données des services d’archives (ou assimilés) en open data, à partir du catalogue des données de data.gouv.fr (export du 5 février 2025)",
+      "link": "https://www.data.gouv.fr/datasets/jeux-de-donnees-archives-2024",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4502,
+      "title": "data.gouv.fr Label Ville amie des animaux",
+      "description": "République Française · Depuis 2020, la Région distingue avec le label « Ville amie des animaux », de 1 à 3 pattes, les communes franciliennes qui œuvrent en faveur de la protection des animaux de compagnie, contre la maltraitance et l'abandon",
+      "link": "https://www.data.gouv.fr/datasets/label-ville-amie-des-animaux",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4503,
+      "title": "data.gouv.fr L'open data du sport et des Jeux Olympiques et Paralympiques - data.gouv.fr",
+      "description": "Explorez et exploitez les données ouvertes du sport !",
+      "link": "https://www.data.gouv.fr/posts/lopen-data-du-sport-et-des-jeux-olympiques-et-paralympiques",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4504,
+      "title": "Arun63/sharegpt-structured-output-json · Datasets at ...",
+      "description": "This dataset can be used to train LLMs for applications such as: Automated data extraction; Conversational AI with structured outputs; JSON -based API response",
+      "link": "https://huggingface.co/datasets/Arun63/sharegpt-structured-output-json",
+      "source": "huggingface.co",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4505,
+      "title": "API data formats",
+      "description": "Apr 8, 2011 — The JSON is just a transformation of the CSV : an Array of Objects corresponding to CSV rows, with the CSV headers repeated as the keys of each",
+      "link": "http://blog.mappiness.org.uk/2011/04/08/api-data-formats/",
+      "source": "blog.mappiness.org.uk",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4506,
+      "title": "Forum d'Etalab Les données disponibles en open data sur data.gouv.fr - Hackathon #OpenField16 (7-9 oct 2016) - Forum d'Etalab",
+      "description": "September 12, 2016 - Données nationales Ministère de la Ville, de la Jeunesse et des Sports : Recensement des équipements sportifs, espaces et sites de pratiques (RES) - 2016 Recensement des licences et clubs auprès des fédérations sportives agréées - 2013 Base anonymisée des individus ayant obtenu un",
+      "link": "https://forum.etalab.gouv.fr/t/les-donnees-disponibles-en-open-data-sur-data-gouv-fr/2893",
+      "source": "forum.etalab.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4507,
+      "title": "amazing-bard-prompts/prompts.csv at main",
+      "description": "I will provide you with a pet and their owner and your goal is to help the owner understand why their pet has been exhibiting certain behavior, and come up with",
+      "link": "https://github.com/dsdanielpark/amazing-bard-prompts/blob/main/prompts.csv",
+      "source": "github.com",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4508,
+      "title": "Generating sample data - Cloudant blog",
+      "description": "Generating sample data. Sep 14, 2018 | Glynn Bird. Data JSON . Application development using Cloudant as the database, for me, starts with data design.",
+      "link": "https://blog.cloudant.com/2018/09/14/Generating-sample-JSON-data.html",
+      "source": "blog.cloudant.com",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 228477,
+    "entities_count": 11,
+    "angles_count": 3,
+    "datasets_count": 28,
+    "angle_resources_count": 3
+  }
+}

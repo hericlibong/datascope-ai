@@ -1,0 +1,833 @@
+{
+  "id": 234,
+  "article": {
+    "id": 322,
+    "title": "Prisons pour mineurs : combien de jeunes sont incarcérés en",
+    "content": "Prisons pour mineurs : combien de jeunes sont incarcérés en France ?\n\nDans un rapport publié vendredi 29 août, la Contrôleure générale demande la fermeture d'une prison pour mineurs à Marseille en raison d'\"atteintes graves aux droits des adolescents\". \n\nLa recommandation est très rare. La Contrôleure générale des lieux de détention préconise \"la fermeture, au moins partielle\", de l'établissement pénitentiaire pour mineurs de Marseille. Dominique Simonnot dénonce le \"caractère gravissime\" des conditions d'incarcération des adolescents. Dans cet établissement, les jeunes sont une cinquantaine, mais ils sont plusieurs centaines à être emprisonnés en France.\n\nLes mineurs sont une minorité, ils représentent moins de 1% des détenus en France. Précisément on comptait 771 mineurs derrière les barreaux fin 2023, selon les derniers chiffres du ministère de la justice(Nouvelle fenêtre). Un nombre relativement stable depuis une dizaine d'années. La plupart des détenus mineurs ont entre 16 et 18 ans, mais il y en a aussi des plus jeunes. Environ 80 détenus ont entre 13 et 16 ans. Dans l'écrasante majorité des cas, ce sont des garçons. Il y a très peu de filles mineures en prison.\n\nSi le détail des condamnations de ceux qui sont en prison n'est pas connu, on sait que presque les deux tiers des mineurs condamnés en 2023, soit environ 20 000 condamnations, l'ont été pour atteinte aux biens ou aux personnes. Cela correspond par exemple à des vols, du recel, ou encore des coups et violences volontaires. Une minorité, un peu plus de 400, ont été condamnés pour des crimes, très souvent des viols. Il faut aussi savoir que les peines de prison ferme pour mineurs restent assez rares. À peine 3 000 en 2023. La plupart du temps, les juges privilégient plutôt un avertissement ou une mesure éducative.\nPeu de prisons dédiées aux jeunes\n\nUne majorité, les deux tiers, se retrouve dans des quartiers pour mineurs. La France en compte 46. Il s'agit de prisons pour adultes ou une partie du bâtiment est aménagée spécialement pour des adolescents.\n\nLes autres jeunes détenus, un tiers, se retrouvent dans des prisons spécialisées pour mineurs comme c'est le cas à Marseille. Ce type d'établissement est plus rare : il n'y en a que six sur tout le territoire. Ces établissements sont assez récents, ils ont moins d'une dizaine d'années. Ils étaient censés pallier les dysfonctionnements des quartiers pour mineurs.",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-31T20:02:14.066568+02:00"
+  },
+  "score": 7.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Personnes** : Dominique Simonnot\n- **Organisations** : Contrôleure générale, ministère de la justice\n- **Lieux** : France, Marseille\n- **Dates** : 2023-08-29\n- **Valeurs numériques** : une cinquantaine, plusieurs centaines, moins de 1% (1.0 %), 771 (771.0 None), 2023 (2023.0 None), une dizaine d'années, entre 16 et 18 ans, 80 (80.0 None), entre 13 et 16 ans, presque les deux tiers, 2023 (2023.0 None), 20 000 (20000.0 None), un peu plus de 400, 3 000 (3000.0 None), 2023 (2023.0 None), les deux tiers, 46 (46.0 None), un tiers, six (6.0 None), moins d'une dizaine d'années\n\n## Suggestions d’angles\n\n### 1. Pourquoi la fermeture de la prison de Marseille est urgente\nLa recommandation de fermeture d'une prison pour mineurs à Marseille expose des enjeux graves et urgents pour le département. Marseille, déjà confrontée à des défis sociaux, se montre représentative des carences des établissements réservés aux jeunes. S'attaquer à de tels problèmes pourrait servir d'exemple pour d'autres établissements similaires. Dès lors, il est crucial de comprendre les différences dans les conditions des quartiers pour mineurs et des prisons spécialisées à travers le pays. `Q:` Les prisons spécialisées respectent-elles mieux les droits des mineurs que les quartiers aménagés? `Metrics:` Nombre de plaintes de mineurs, taux de récidive, signalements de la Contrôleure. `Granularity:` Département, annuel 2015–2023. `Data:` Ministère de la Justice, data.gouv.fr, INSEE, Contrôleure générale des lieux de détention. `Axis:` Policy, Geographic.\n\n### 2. Quel impact des peines sur la récidive des mineurs ?\nLe choix des juges de préférer des mesures éducatives ou des avertissements, alors que les peines de prison ferme sont rares, soulève la question de l'efficacité de ces approches sur la récidive. Cela est particulièrement crucial pour les départements où les taux de criminalité mineure sont élevés. On note un contraste avec la rareté des prisons spécialisées disponibles. `Q:` Les peines alternatives réduisent-elles davantage la récidive que l'incarcération chez les mineurs? `Metrics:` Taux de récidive post-peine, comparaison par type de peine (prison ferme, avertissement, mesures éducatives). `Granularity:` Département, annuel 2010–2023. `Data:` Ministère de la Justice, INSEE, data.gouv.fr. `Axis:` Temporal, Policy.\n\n### 3. Disparité géographique dans l'incarcération des mineurs\nBien que les mineurs représentent moins de 1% des détenus en France, leur répartition géographique pourrait révéler des tendances cachées dans le traitement des jeunes délinquants en divers territoires. Par exemple, quel est le taux d'incarcération des mineurs dans les Bouches-du-Rhône comparé à d'autres départements ? Une telle analyse soulève des questions sur les inégalités dans le système pénal pour les jeunes. `Q:` Existe-t-il des inégalités régionales dans les taux d'incarcération des mineurs? `Metrics:` Taux d'incarcération des mineurs par département, taux de condamnations par nature des infractions. `Granularity:` Département, 2022–2023. `Data:` INSEE, Ministère de la Justice, data.gouv.fr. `Axis:` Geographic, Inequalities.\n\n### 4. Filles incarcérées : une minorité invisible ?\nLes statistiques indiquent qu'il y a très peu de filles mineures en prison, mais qu'en est-il réellement de leur situation et de leurs besoins spécifiques ? Examinons les comparaisons entre les sexes pour identifier des disparités institutionnelles et des besoins spécifiques souvent négligés, notamment en Bouches-du-Rhône où les problèmes de détention sont médiatisés. `Q:` Les filles mineures incarcérées bénéficient-elles d'un traitement adapté à leurs besoins spécifiques? `Metrics:` Proportion filles/garçons incarcérés, nombre de plaintes de filles, accès à des programmes adaptés. `Granularity:` National et départemental, 2023. `Data:` Ministère de la Justice, data.gouv.fr, Observatoire national de la délinquance. `Axis:` DataQuality, Inequalities.\n",
+  "created_at": "2025-08-31T20:05:02.199114+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Pourquoi la fermeture de la prison de Marseille est urgente",
+      "description": "La recommandation de fermeture d'une prison pour mineurs à Marseille expose des enjeux graves et urgents pour le département. Marseille, déjà confrontée à des défis sociaux, se montre représentative des carences des établissements réservés aux jeunes. S'attaquer à de tels problèmes pourrait servir d'exemple pour d'autres établissements similaires. Dès lors, il est crucial de comprendre les différences dans les conditions des quartiers pour mineurs et des prisons spécialisées à travers le pays. `Q:` Les prisons spécialisées respectent-elles mieux les droits des mineurs que les quartiers aménagés? `Metrics:` Nombre de plaintes de mineurs, taux de récidive, signalements de la Contrôleure. `Granularity:` Département, annuel 2015–2023. `Data:` Ministère de la Justice, data.gouv.fr, INSEE, Contrôleure générale des lieux de détention. `Axis:` Policy, Geographic.",
+      "keywords": [
+        "prison Marseille",
+        "conditions détention",
+        "sécurité prison",
+        "réforme pénitentiaire",
+        "surpopulation carcérale"
+      ],
+      "datasets": [
+        {
+          "title": "Insee La récidive plus fréquente et plus rapide chez les jeunes condamnés − France, portrait social | Insee",
+          "description": "Ce taux de récidive atteint 59 % pour les condamnés présentant des antécédents judiciaires . Environ 40 % des récidivistes retournent devant la Justice pour la même infraction que celle sanctionnée en 2004. La récidive est très fréquente chez les jeunes, voire très jeunes, délinquants",
+          "link": "https://www.insee.fr/fr/statistiques/1288289?sommaire=1288298",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/1288289?sommaire=1288298",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/1288289?sommaire=1288298",
+            "error": null
+          }
+        },
+        {
+          "title": "Sénat Prévenir la délinquance des mineurs - Éviter la récidive - Sénat",
+          "description": "Surtout, tous les mineurs ayant réitéré majeurs ne sont pas pris en compte : le parcours délinquant du jeune n'est donc pas retracé dans son intégralité. Il est donc plus pertinent d'observer le taux de « récidive » au sens large 39 ( * ) des personnes condamnées une première fois",
+          "link": "https://www.senat.fr/rap/r21-885/r21-8857.html",
+          "source": "www.senat.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Franceinfo Le vrai du faux. \"L'écrasante majorité des mineurs condamnés ne récidive pas\"",
+          "description": "October 28, 2016 - Jean-Jacques Urvoas affirme que les sanctions contre les mineurs sont efficaces contre la récidive . Mais le ministre de la Justice va un peu trop loin dans sa déclaration.",
+          "link": "https://www.franceinfo.fr/replay-radio/le-vrai-du-faux/le-vrai-du-faux-l-ecrasante-majorite-des-mineurs-condamnes-ne-recidive-pas_1883763.html",
+          "source": "www.franceinfo.fr",
+          "source_url": "https://www.franceinfo.fr/replay-radio/le-vrai-du-faux/le-vrai-du-faux-l-ecrasante-majorite-des-mineurs-condamnes-ne-recidive-pas_1883763.html",
+          "source_name": "www.franceinfo.fr",
+          "validation": {
+            "input_url": "https://www.franceinfo.fr/replay-radio/le-vrai-du-faux/le-vrai-du-faux-l-ecrasante-majorite-des-mineurs-condamnes-ne-recidive-pas_1883763.html",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.franceinfo.fr/replay-radio/le-vrai-du-faux/le-vrai-du-faux-l-ecrasante-majorite-des-mineurs-condamnes-ne-recidive-pas_1883763.html",
+            "error": null
+          }
+        },
+        {
+          "title": "France Bleu Y-a-t-il vraiment de plus en plus d'homicides commis par des mineurs en France ? - ici",
+          "description": "April 22, 2024 - Guet-apens, attaques en ligne, agressions et insultes : le ministère de l'Intérieur enregistre une hausse de 13% des infractions anti-LGBT+ en 2023 . Des chiffres qui confirment, aux yeux des associations, un climat \"extrêmement préoccupant\" en France. ... Violence des mineurs : le ministre",
+          "link": "https://www.francebleu.fr/infos/societe/y-a-t-il-vraiment-de-plus-en-plus-d-homicides-commis-par-des-mineurs-en-france-3010934",
+          "source": "www.francebleu.fr",
+          "source_url": "https://www.francebleu.fr/infos/societe/y-a-t-il-vraiment-de-plus-en-plus-d-homicides-commis-par-des-mineurs-en-france-3010934",
+          "source_name": "www.francebleu.fr",
+          "validation": {
+            "input_url": "https://www.francebleu.fr/infos/societe/y-a-t-il-vraiment-de-plus-en-plus-d-homicides-commis-par-des-mineurs-en-france-3010934",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.francebleu.fr/infos/societe/y-a-t-il-vraiment-de-plus-en-plus-d-homicides-commis-par-des-mineurs-en-france-3010934",
+            "error": null
+          }
+        },
+        {
+          "title": "Statista Pédocriminalité, inceste et violences sexuelles sur mineurs en France - Faits et chiffres | Statista",
+          "description": "Les contenus qui vous sont présentés sur ce service peuvent être basés sur vos profils de personnalisation de contenu, qui peuvent correspondre à votre activité sur ce service ou d’autres services (par exemple, les formulaires que vous soumettez, le contenu que vous consultez), les éventuels centres d’intérêt et renseignements personnels, par exemple en adaptant l’ordre de présentation des contenus afin qu’il soit d’autant plus facile pour vous de trouver (sans publicité) des contenus correspondant à vos centres d’intérêt. Des rapports peuvent être générés en fonction de la combinaison d’ensembles de données (comme les profils d’utilisateurs, les statistiques, les études de marché, les données analytiques) concernant vos interactions et celles d’autres utilisateurs avec des contenus publicitaires ou (non publicitaires) afin d’identifier les caractéristiques communes (par exemple, pour déterminer quels publics cibles sont les plus réceptifs à une campagne publicitaire ou à certains contenus).",
+          "link": "https://fr.statista.com/themes/8097/la-pedocriminalite-en-france/",
+          "source": "fr.statista.com",
+          "source_url": "https://fr.statista.com/themes/8097/la-pedocriminalite-en-france/",
+          "source_name": "fr.statista.com",
+          "validation": {
+            "input_url": "https://fr.statista.com/themes/8097/la-pedocriminalite-en-france",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://fr.statista.com/themes/8097/la-pedocriminalite-en-france/",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Nombre de plaintes de mineurs par département (2015-2023)",
+          "chart_type": "bar",
+          "x": "Département",
+          "y": "Nombre de plaintes",
+          "note": "Source : Ministère de la Justice, données annuelles"
+        },
+        {
+          "title": "Taux de récidive des mineurs en détention (2015-2023)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Taux de récidive (%)",
+          "note": "Comparaison entre quartiers pour mineurs et prisons spécialisées"
+        },
+        {
+          "title": "Signalements de la Contrôleure par établissement (2015-2023)",
+          "chart_type": "heatmap",
+          "x": "Département",
+          "y": "Nombre de signalements",
+          "note": "Source : Contrôleure générale des lieux de détention, données annuelles"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Quel impact des peines sur la récidive des mineurs ?",
+      "description": "Le choix des juges de préférer des mesures éducatives ou des avertissements, alors que les peines de prison ferme sont rares, soulève la question de l'efficacité de ces approches sur la récidive. Cela est particulièrement crucial pour les départements où les taux de criminalité mineure sont élevés. On note un contraste avec la rareté des prisons spécialisées disponibles. `Q:` Les peines alternatives réduisent-elles davantage la récidive que l'incarcération chez les mineurs? `Metrics:` Taux de récidive post-peine, comparaison par type de peine (prison ferme, avertissement, mesures éducatives). `Granularity:` Département, annuel 2010–2023. `Data:` Ministère de la Justice, INSEE, data.gouv.fr. `Axis:` Temporal, Policy.",
+      "keywords": [
+        "récidive mineurs",
+        "peines correctionnelles",
+        "justice juvénile",
+        "réhabilitation jeunes",
+        "statistiques récidive"
+      ],
+      "datasets": [
+        {
+          "title": "data.gouv.fr Télécharger la liste au format CSV",
+          "description": "Données nationales au 1er jour ... ( mineurs /majeurs)). Suite à un regroupement avec la \"\"Statistique mensuelle des personnes écrouées en aménagements de peine \"\", depuis mai 2015, les tableaux concernant les aménagements de peine ont été rajoutés à ce jeu de données.\";\"monthly\";\"Licence Ouverte / Open Licence\";\" 2010 -01-01\";\"2",
+          "link": "https://www.data.gouv.fr/api/1/organizations/ministere-de-la-justice/datasets.csv",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/fr/organizations/ministere-de-la-justice/datasets.csv",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/api/1/organizations/ministere-de-la-justice/datasets.csv",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Data",
+          "description": "\"id\";\"title\";\"slug\";\"acronym\";\"url\";\"organization\";\"organization_id\";\"owner\";\"owner_id\";\"description\";\"description_short\";\"frequency\";\"license\";\"temporal_coverage.start\";\"temporal_coverage.end\";\"spatial.granularity\";\"spatial.zones\";\"featured\";\"created_at\";\"last_modified\";\"tags\";\"archived\";",
+          "link": "https://www.data.gouv.fr/api/1/organizations/caisse-nationale-de-lassurance-maladie/datasets.csv",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/api/1/organizations/caisse-nationale-de-lassurance-maladie/datasets.csv",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/api/1/organizations/caisse-nationale-de-lassurance-maladie/datasets.csv",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Statistique mensuelle de la population écrouée et détenue en France",
+          "description": "République Française · Cette statistique contient des données sur la population écrouée au sein des établissements pénitentiaires en France . Elle permet de distinguer le nombre de personnes écrouées détenues (détenu. e .s au sein des établissements pénitentiaires) du nombre de personnes",
+          "link": "https://www.data.gouv.fr/datasets/statistique-mensuelle-de-la-population-ecrouee-et-detenue-en-france",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/datasets/statistique-mensuelle-de-la-population-ecrouee-et-detenue-en-france",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/statistique-mensuelle-de-la-population-ecrouee-et-detenue-en-france",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Les condamnations (statistiques à partir du casier judiciaire national)",
+          "description": "République Française · Les données sur les condamnations sont issues du casier judiciaire national qui est une source riche d’informations. Son exploitation permet de décrire les condamnations par nature d’infraction, de peine mais également de fournir des renseignements démographiques",
+          "link": "https://www.data.gouv.fr/datasets/les-condamnations-statistiques-a-partir-du-casier-judiciaire-national",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/datasets/les-condamnations-statistiques-a-partir-du-casier-judiciaire-national",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/les-condamnations-statistiques-a-partir-du-casier-judiciaire-national",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Violence conjugale — Wikipédia",
+          "description": "La prévalence et le partage par genres de la violence conjugale au sein d’une population sont difficiles à évaluer parce que les instruments de mesure ne sont pas équivalents et que «des variations méthodologiques en apparence anodines exercent un effet important sur les réponses des participants» et conséquemment sur la mesure. *   P r Roger Henrion (préf.Bernard Kouchner), Les Femmes victimes de violences conjugales, le rôle des professionnels de santé: rapport au ministre chargé de la santé, La Documentation française, 2001, 81 p.(présentation en ligne[archive], lire en ligne[archive][PDF])Image 24: Document utilisé pour la rédaction de l’article *   Sénat \"Sénat (France)\"), 2006-2016: un combat inachevé contre les violences conjugales: rapport d'information sur l'évaluation des dispositifs de lutte contre les violences au sein des couples, 2016, 198 p.(présentation en ligne[archive], lire en ligne[archive][PDF])Image 27: Document utilisé pour la rédaction de l’article",
+          "link": "https://fr.wikipedia.org/wiki/Violence_conjugale",
+          "source": "fr.wikipedia.org",
+          "source_url": "https://fr.wikipedia.org/wiki/Violence_conjugale",
+          "source_name": "fr.wikipedia.org",
+          "validation": {
+            "input_url": "https://fr.wikipedia.org/wiki/Violence_conjugale",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://fr.wikipedia.org/wiki/Violence_conjugale",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Accueil - data.gouv.fr",
+          "description": "République Française · Ceci est une expérience dégradée de data.gouv.fr. Veuillez activer JavaScript et utiliser un navigateur à jour",
+          "link": "https://www.data.gouv.fr/",
+          "source": "data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/",
+          "source_name": "data.gouv.fr",
+          "validation": {
+            "input_url": "https://data.gouv.fr/fr?format=csv&organization=534fffa8a3a7292c64a780c8",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/",
+            "error": null
+          }
+        },
+        {
+          "title": "data.gouv.fr Home - data.gouv.fr",
+          "description": "République Française · This is a degraded experience of data.gouv.fr. Please enable JavaScript and use an up to date browser",
+          "link": "https://www.data.gouv.fr/",
+          "source": "www.data.gouv.fr",
+          "source_url": "https://www.data.gouv.fr/",
+          "source_name": "www.data.gouv.fr",
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/en?organization=534fffb7a3a7292c64a78145&format=json",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Taux de récidive par type de peine chez les mineurs (2010-2023)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Taux de récidive (%)",
+          "note": "Source : Ministère de la Justice, données annuelles"
+        },
+        {
+          "title": "Comparaison des peines alternatives et incarcération par département",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Taux de récidive (%)",
+          "note": "Source : data.gouv.fr, granularité départementale"
+        },
+        {
+          "title": "Distribution des types de peines pour mineurs (2010-2023)",
+          "chart_type": "bar",
+          "x": "Type de peine",
+          "y": "Nombre de cas",
+          "note": "Source : Ministère de la Justice, INSEE"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Disparité géographique dans l'incarcération des mineurs",
+      "description": "Bien que les mineurs représentent moins de 1% des détenus en France, leur répartition géographique pourrait révéler des tendances cachées dans le traitement des jeunes délinquants en divers territoires. Par exemple, quel est le taux d'incarcération des mineurs dans les Bouches-du-Rhône comparé à d'autres départements ? Une telle analyse soulève des questions sur les inégalités dans le système pénal pour les jeunes. `Q:` Existe-t-il des inégalités régionales dans les taux d'incarcération des mineurs? `Metrics:` Taux d'incarcération des mineurs par département, taux de condamnations par nature des infractions. `Granularity:` Département, 2022–2023. `Data:` INSEE, Ministère de la Justice, data.gouv.fr. `Axis:` Geographic, Inequalities.",
+      "keywords": [
+        "incarcération mineurs",
+        "disparité géographique",
+        "justice juvénile",
+        "taux incarcération",
+        "régions France"
+      ],
+      "datasets": [
+        {
+          "title": "Catalogue des données de data.gouv.fr",
+          "description": "La liste des jeux de données publiés sur data.gouv.fr : pour chaque jeu de données publié, il est notamment indiqué son numéro d'identification, son titre, son url, son rattachement à une organisation (quand il existe), sa description, sa fréquence de mise à jour, sa licence associée, sa couverture temporelle et spatiale, ses dates de création et de dernière mise à jour, son",
+          "link": "https://www.data.gouv.fr/datasets/catalogue-des-donnees-de-data-gouv-fr",
+          "source": "www.data.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.data.gouv.fr/datasets/catalogue-des-donnees-de-data-gouv-fr",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.data.gouv.fr/datasets/catalogue-des-donnees-de-data-gouv-fr",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Direction de la protection judiciaire de la jeunesse",
+          "description": "Au-delà de ces éléments qui font de l'incarcération une expérience collective, ce rapport montre que les effets de l'incarcération étaient",
+          "link": "https://www.justice.gouv.fr/sites/default/files/2023-12/rapport_recherches_etudes_2023_programmation_2024.pdf",
+          "source": "www.justice.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "[PDF] Divergences territoriales dans les modalités d'attribution des aides ...",
+          "description": "... du soutien à l'autonomie en 2023 d'après le rapport de branche ... jeu de données utilisées pour estimer les coefficients du fait d'un",
+          "link": "https://www.igf.finances.gouv.fr/files/live/sites/igf/files/contributed/Rapports%20de%20mission/2024/2024-M-072-03%20Aides%20sociales%20WEB.pdf",
+          "source": "www.tutelleauquotidien.fr",
+          "source_url": "https://www.igf.finances.gouv.fr/files/live/sites/igf/files/contributed/Rapports%20de%20mission/2024/2024-M-072-03%20Aides%20sociales%20WEB.pdf",
+          "source_name": "www.tutelleauquotidien.fr",
+          "validation": {
+            "input_url": "https://www.tutelleauquotidien.fr/bibliotheque/weblink/39/2407/1.html",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.igf.finances.gouv.fr/files/live/sites/igf/files/contributed/Rapports%20de%20mission/2024/2024-M-072-03%20Aides%20sociales%20WEB.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] 1_RapportVarinard.pdf - Ministère de la justice",
+          "description": "L'incarcération des mineurs les plus ancrés dans la délinquance est parfois une nécessité à un moment du parcours d'un jeune qui rejette",
+          "link": "https://www.justice.gouv.fr/sites/default/files/migrations/presse/art_pix/1_RapportVarinard.pdf",
+          "source": "www.justice.gouv.fr",
+          "source_url": "https://www.justice.gouv.fr/sites/default/files/migrations/presse/art_pix/1_RapportVarinard.pdf",
+          "source_name": "www.justice.gouv.fr",
+          "validation": {
+            "input_url": "https://www.justice.gouv.fr/sites/default/files/migrations/presse/art_pix/1_RapportVarinard.pdf",
+            "status": "error",
+            "http_status": 400,
+            "final_url": "https://www.justice.gouv.fr/sites/default/files/migrations/presse/art_pix/1_RapportVarinard.pdf",
+            "error": "HTTP 400"
+          }
+        },
+        {
+          "title": "[PDF] Les effets de l'enfermement sur les mineurs détenus",
+          "description": "Au 1er janvier 2023, 614 mineurs étaient détenus dans une prison française1. Sur l'ensemble de l'année 2022, 3142 mineurs ont été incarcérés, dont 102 filles (",
+          "link": "https://www.justice.gouv.fr/sites/default/files/2023-10/alice_simon_effets_enfermement_mineurs.pdf",
+          "source": "www.justice.gouv.fr",
+          "source_url": "https://www.justice.gouv.fr/sites/default/files/2023-10/alice_simon_effets_enfermement_mineurs.pdf",
+          "source_name": "www.justice.gouv.fr",
+          "validation": {
+            "input_url": "https://www.justice.gouv.fr/sites/default/files/2023-10/alice_simon_effets_enfermement_mineurs.pdf",
+            "status": "error",
+            "http_status": 400,
+            "final_url": "https://www.justice.gouv.fr/sites/default/files/2023-10/alice_simon_effets_enfermement_mineurs.pdf",
+            "error": "HTTP 400"
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Taux d'incarcération des mineurs par département",
+          "chart_type": "choropleth",
+          "x": "Département",
+          "y": "Taux d'incarcération des mineurs (%)",
+          "note": "Source : Ministère de la Justice, données 2022-2023"
+        },
+        {
+          "title": "Comparaison des infractions par nature et département",
+          "chart_type": "heatmap",
+          "x": "Nature des infractions",
+          "y": "Département",
+          "note": "Source : Ministère de la Justice, granularité départementale"
+        },
+        {
+          "title": "Évolution des condamnations des mineurs par département",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Nombre de condamnations",
+          "note": "Source : Ministère de la Justice, données 2022-2023"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Filles incarcérées : une minorité invisible ?",
+      "description": "Les statistiques indiquent qu'il y a très peu de filles mineures en prison, mais qu'en est-il réellement de leur situation et de leurs besoins spécifiques ? Examinons les comparaisons entre les sexes pour identifier des disparités institutionnelles et des besoins spécifiques souvent négligés, notamment en Bouches-du-Rhône où les problèmes de détention sont médiatisés. `Q:` Les filles mineures incarcérées bénéficient-elles d'un traitement adapté à leurs besoins spécifiques? `Metrics:` Proportion filles/garçons incarcérés, nombre de plaintes de filles, accès à des programmes adaptés. `Granularity:` National et départemental, 2023. `Data:` Ministère de la Justice, data.gouv.fr, Observatoire national de la délinquance. `Axis:` DataQuality, Inequalities.",
+      "keywords": [
+        "filles incarcérées",
+        "justice juvénile",
+        "détention féminine",
+        "statistiques prison",
+        "réinsertion sociale"
+      ],
+      "datasets": [
+        {
+          "title": "Archives L'Est Républicain - 08 octobre 2024",
+          "description": "Retrouvez les articles parus le mardi 8 octobre 2024 dans L'Est Républicain. Parcourez nos archives facilement.",
+          "link": "https://www.estrepublicain.fr/archives/2024/08-10",
+          "source": "www.estrepublicain.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Archives Le Progrès - 01 août 2025",
+          "description": "Vous pouvez exercer en permanence vos droits d’accès, rectification, effacement, limitation, opposition, retirer votre consentement et/ou pour toute question relative au traitement de vos données à caractère personnel en contactant lprventesweb@leprogres.fr ou consulter les liens suivants : Protection des données, CGU du site et Contact. Image 385: Faune, flore, paysages : un concentré des gorges de la Loire à la maison de la Réserve Faune, flore, paysages: un concentré des gorges de la Loire à la maison de la Réserve ------------------------------------------------------------------------------------- Tous les sens sont en éveil pour une découverte de quelques espèces, faune et flore, présentes sur les 350 ...",
+          "link": "https://www.leprogres.fr/archives/2025/01-08",
+          "source": "www.leprogres.fr",
+          "source_url": "https://www.leprogres.fr/archives/2025/01-08",
+          "source_name": "www.leprogres.fr",
+          "validation": {
+            "input_url": "https://www.leprogres.fr/archives/2025/01-08",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.leprogres.fr/archives/2025/01-08",
+            "error": null
+          }
+        },
+        {
+          "title": "Archives Le Dauphiné Libéré - 27 avril 2019",
+          "description": "Retrouvez les articles parus le samedi 27 avril 2019 dans Le Dauphiné Libéré. Parcourez nos archives facilement.",
+          "link": "https://www.ledauphine.com/archives/2019/27-04",
+          "source": "www.ledauphine.com",
+          "source_url": "https://www.ledauphine.com/archives/2019/27-04",
+          "source_name": "www.ledauphine.com",
+          "validation": {
+            "input_url": "https://www.ledauphine.com/archives/2019/27-04",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ledauphine.com/archives/2019/27-04",
+            "error": null
+          }
+        },
+        {
+          "title": "OISE (60) - (14035) groupements d'entraide et de solidarité",
+          "description": "Les associations de : OISE - groupements d'entraide et de solidarité · Commune de Abancourt (60001) · Commune de Allonne (60009) · Commune de Amblainville (60010).",
+          "link": "https://assoce.fr/departement/60/OISE/categorie/14035",
+          "source": "assoce.fr",
+          "source_url": "https://assoce.fr/departement/60/OISE/categorie/14035",
+          "source_name": "assoce.fr",
+          "validation": {
+            "input_url": "https://assoce.fr/departement/60/OISE/categorie/14035",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://assoce.fr/departement/60/OISE/categorie/14035",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Proportion filles/garçons incarcérés (France, 2023)",
+          "chart_type": "bar",
+          "x": "Catégorie",
+          "y": "Proportion (%)",
+          "note": "Source : Ministère de la Justice, données nationales"
+        },
+        {
+          "title": "Nombre de plaintes des filles incarcérées (Bouches-du-Rhône, 2023)",
+          "chart_type": "bar",
+          "x": "Type de plainte",
+          "y": "Nombre de plaintes",
+          "note": "Source : Observatoire national de la délinquance, données départementales"
+        },
+        {
+          "title": "Accès à des programmes adaptés pour filles incarcérées (France, 2023)",
+          "chart_type": "donut",
+          "x": "Accès aux programmes",
+          "y": "Proportion (%)",
+          "note": "Source : data.gouv.fr, données nationales"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5973,
+      "type": "PER",
+      "value": "Dominique Simonnot",
+      "context": null
+    },
+    {
+      "id": 5974,
+      "type": "ORG",
+      "value": "Contrôleure générale",
+      "context": null
+    },
+    {
+      "id": 5975,
+      "type": "ORG",
+      "value": "ministère de la justice",
+      "context": null
+    },
+    {
+      "id": 5976,
+      "type": "LOC",
+      "value": "France",
+      "context": null
+    },
+    {
+      "id": 5977,
+      "type": "LOC",
+      "value": "Marseille",
+      "context": null
+    },
+    {
+      "id": 5978,
+      "type": "DATE",
+      "value": "2023-08-29",
+      "context": null
+    },
+    {
+      "id": 5979,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5980,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5981,
+      "type": "NUM",
+      "value": "1.0",
+      "context": null
+    },
+    {
+      "id": 5982,
+      "type": "NUM",
+      "value": "771.0",
+      "context": null
+    },
+    {
+      "id": 5983,
+      "type": "NUM",
+      "value": "2023.0",
+      "context": null
+    },
+    {
+      "id": 5984,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5985,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5986,
+      "type": "NUM",
+      "value": "80.0",
+      "context": null
+    },
+    {
+      "id": 5987,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5988,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5989,
+      "type": "NUM",
+      "value": "2023.0",
+      "context": null
+    },
+    {
+      "id": 5990,
+      "type": "NUM",
+      "value": "20000.0",
+      "context": null
+    },
+    {
+      "id": 5991,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5992,
+      "type": "NUM",
+      "value": "3000.0",
+      "context": null
+    },
+    {
+      "id": 5993,
+      "type": "NUM",
+      "value": "2023.0",
+      "context": null
+    },
+    {
+      "id": 5994,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5995,
+      "type": "NUM",
+      "value": "46.0",
+      "context": null
+    },
+    {
+      "id": 5996,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    },
+    {
+      "id": 5997,
+      "type": "NUM",
+      "value": "6.0",
+      "context": null
+    },
+    {
+      "id": 5998,
+      "type": "NUM",
+      "value": "None",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 956,
+      "title": "Pourquoi la fermeture de la prison de Marseille est urgente",
+      "description": "La recommandation de fermeture d'une prison pour mineurs à Marseille expose des enjeux graves et urgents pour le département. Marseille, déjà confrontée à des défis sociaux, se montre représentative des carences des établissements réservés aux jeunes. S'attaquer à de tels problèmes pourrait servir d'exemple pour d'autres établissements similaires. Dès lors, il est crucial de comprendre les différences dans les conditions des quartiers pour mineurs et des prisons spécialisées à travers le pays. `Q:` Les prisons spécialisées respectent-elles mieux les droits des mineurs que les quartiers aménagés? `Metrics:` Nombre de plaintes de mineurs, taux de récidive, signalements de la Contrôleure. `Granularity:` Département, annuel 2015–2023. `Data:` Ministère de la Justice, data.gouv.fr, INSEE, Contrôleure générale des lieux de détention. `Axis:` Policy, Geographic.",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 957,
+      "title": "Quel impact des peines sur la récidive des mineurs ?",
+      "description": "Le choix des juges de préférer des mesures éducatives ou des avertissements, alors que les peines de prison ferme sont rares, soulève la question de l'efficacité de ces approches sur la récidive. Cela est particulièrement crucial pour les départements où les taux de criminalité mineure sont élevés. On note un contraste avec la rareté des prisons spécialisées disponibles. `Q:` Les peines alternatives réduisent-elles davantage la récidive que l'incarcération chez les mineurs? `Metrics:` Taux de récidive post-peine, comparaison par type de peine (prison ferme, avertissement, mesures éducatives). `Granularity:` Département, annuel 2010–2023. `Data:` Ministère de la Justice, INSEE, data.gouv.fr. `Axis:` Temporal, Policy.",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 958,
+      "title": "Disparité géographique dans l'incarcération des mineurs",
+      "description": "Bien que les mineurs représentent moins de 1% des détenus en France, leur répartition géographique pourrait révéler des tendances cachées dans le traitement des jeunes délinquants en divers territoires. Par exemple, quel est le taux d'incarcération des mineurs dans les Bouches-du-Rhône comparé à d'autres départements ? Une telle analyse soulève des questions sur les inégalités dans le système pénal pour les jeunes. `Q:` Existe-t-il des inégalités régionales dans les taux d'incarcération des mineurs? `Metrics:` Taux d'incarcération des mineurs par département, taux de condamnations par nature des infractions. `Granularity:` Département, 2022–2023. `Data:` INSEE, Ministère de la Justice, data.gouv.fr. `Axis:` Geographic, Inequalities.",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 959,
+      "title": "Filles incarcérées : une minorité invisible ?",
+      "description": "Les statistiques indiquent qu'il y a très peu de filles mineures en prison, mais qu'en est-il réellement de leur situation et de leurs besoins spécifiques ? Examinons les comparaisons entre les sexes pour identifier des disparités institutionnelles et des besoins spécifiques souvent négligés, notamment en Bouches-du-Rhône où les problèmes de détention sont médiatisés. `Q:` Les filles mineures incarcérées bénéficient-elles d'un traitement adapté à leurs besoins spécifiques? `Metrics:` Proportion filles/garçons incarcérés, nombre de plaintes de filles, accès à des programmes adaptés. `Granularity:` National et départemental, 2023. `Data:` Ministère de la Justice, data.gouv.fr, Observatoire national de la délinquance. `Axis:` DataQuality, Inequalities.",
+      "order": 3,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4509,
+      "title": "Insee La récidive plus fréquente et plus rapide chez les jeunes condamnés − France, portrait social | Insee",
+      "description": "Ce taux de récidive atteint 59 % pour les condamnés présentant des antécédents judiciaires . Environ 40 % des récidivistes retournent devant la Justice pour la même infraction que celle sanctionnée en 2004. La récidive est très fréquente chez les jeunes, voire très jeunes, délinquants",
+      "link": "https://www.insee.fr/fr/statistiques/1288289?sommaire=1288298",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4510,
+      "title": "Sénat Prévenir la délinquance des mineurs - Éviter la récidive - Sénat",
+      "description": "Surtout, tous les mineurs ayant réitéré majeurs ne sont pas pris en compte : le parcours délinquant du jeune n'est donc pas retracé dans son intégralité. Il est donc plus pertinent d'observer le taux de « récidive » au sens large 39 ( * ) des personnes condamnées une première fois",
+      "link": "https://www.senat.fr/rap/r21-885/r21-8857.html",
+      "source": "www.senat.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4511,
+      "title": "data.gouv.fr Télécharger la liste au format CSV",
+      "description": "Données nationales au 1er jour ... ( mineurs /majeurs)). Suite à un regroupement avec la \"\"Statistique mensuelle des personnes écrouées en aménagements de peine \"\", depuis mai 2015, les tableaux concernant les aménagements de peine ont été rajoutés à ce jeu de données.\";\"monthly\";\"Licence Ouverte / Open Licence\";\" 2010 -01-01\";\"2",
+      "link": "https://www.data.gouv.fr/api/1/organizations/ministere-de-la-justice/datasets.csv",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4512,
+      "title": "data.gouv.fr Data",
+      "description": "\"id\";\"title\";\"slug\";\"acronym\";\"url\";\"organization\";\"organization_id\";\"owner\";\"owner_id\";\"description\";\"description_short\";\"frequency\";\"license\";\"temporal_coverage.start\";\"temporal_coverage.end\";\"spatial.granularity\";\"spatial.zones\";\"featured\";\"created_at\";\"last_modified\";\"tags\";\"archived\";",
+      "link": "https://www.data.gouv.fr/api/1/organizations/caisse-nationale-de-lassurance-maladie/datasets.csv",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4513,
+      "title": "data.gouv.fr Statistique mensuelle de la population écrouée et détenue en France",
+      "description": "République Française · Cette statistique contient des données sur la population écrouée au sein des établissements pénitentiaires en France . Elle permet de distinguer le nombre de personnes écrouées détenues (détenu. e .s au sein des établissements pénitentiaires) du nombre de personnes",
+      "link": "https://www.data.gouv.fr/datasets/statistique-mensuelle-de-la-population-ecrouee-et-detenue-en-france",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4514,
+      "title": "data.gouv.fr Les condamnations (statistiques à partir du casier judiciaire national)",
+      "description": "République Française · Les données sur les condamnations sont issues du casier judiciaire national qui est une source riche d’informations. Son exploitation permet de décrire les condamnations par nature d’infraction, de peine mais également de fournir des renseignements démographiques",
+      "link": "https://www.data.gouv.fr/datasets/les-condamnations-statistiques-a-partir-du-casier-judiciaire-national",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4515,
+      "title": "Catalogue des données de data.gouv.fr",
+      "description": "La liste des jeux de données publiés sur data.gouv.fr : pour chaque jeu de données publié, il est notamment indiqué son numéro d'identification, son titre, son url, son rattachement à une organisation (quand il existe), sa description, sa fréquence de mise à jour, sa licence associée, sa couverture temporelle et spatiale, ses dates de création et de dernière mise à jour, son",
+      "link": "https://www.data.gouv.fr/datasets/catalogue-des-donnees-de-data-gouv-fr",
+      "source": "www.data.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4516,
+      "title": "[PDF] Direction de la protection judiciaire de la jeunesse",
+      "description": "Au-delà de ces éléments qui font de l'incarcération une expérience collective, ce rapport montre que les effets de l'incarcération étaient",
+      "link": "https://www.justice.gouv.fr/sites/default/files/2023-12/rapport_recherches_etudes_2023_programmation_2024.pdf",
+      "source": "www.justice.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4517,
+      "title": "Archives L'Est Républicain - 08 octobre 2024",
+      "description": "Retrouvez les articles parus le mardi 8 octobre 2024 dans L'Est Républicain. Parcourez nos archives facilement.",
+      "link": "https://www.estrepublicain.fr/archives/2024/08-10",
+      "source": "www.estrepublicain.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 168191,
+    "entities_count": 26,
+    "angles_count": 4,
+    "datasets_count": 9,
+    "angle_resources_count": 4
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 321,
+  "title": "Près d’Alençon, un match de football interrompu par… un essaim",
+  "content": "Près d’Alençon, un match de football interrompu par… un essaim d’abeilles !\n\nÀ Condé-sur-Sarthe, dimanche 27 avril 2025, le match de football face à La Ferté-Macé/Bagnoles a été interrompu à cause d’un essaim d’abeilles qui virevoltait autour du terrain\n\nSur le terrain de Condé-sur-Sarthe, près d’Alençon (Orne), les joueurs locaux étaient, comme à leurs habitudes, vêtus de vert. Dimanche 27 avril 2025, dans le cadre de la 20e journée de Régional 3, ils recevaient leurs voisins de La Ferté-Macé/Bagnoles et leurs maillots noir et gris.\n\nPourtant, ce sont les jaunes et noires qui ont, un temps, piqué la vedette aux joueurs de football.\nUne interruption de 15 minutes à cause des abeilles\n\nEn seconde période, le match a en effet été interrompu pour une invasion… d’abeilles sauvages !\n\nPlutôt que de butiner les fleurs voisines, les petites bêtes avaient décidé de faire leur sport un peu trop près du rectangle vert condéen. L’essaim d’abeilles, installé sur la main courante qui borde le terrain, étant particulièrement conséquent, l’arbitre de la rencontre a dû prendre la décision d’arrêter la partie, le temps qu’un apiculteur intervienne.\n\nDe quoi donner quelques sueurs froides à l’entraîneur local, dont les joueurs venaient juste d’ouvrir le score. « Heureusement que le match n’a pas été arrêté trop longtemps, sinon il aurait fallu le rejouer ! », souffle Cyrille François.\n\nLes abeilles évacuées, les locaux vainqueurs\n\nFinalement, le match a pu reprendre au bout de 15 minutes et Condé-sur-Sarthe a su maintenir son avance jusqu’au coup de sifflet final, malgré le départ forcé de ses quelques supportrices.\n\nLe héros reste donc l’unique buteur, Enzo Boulanger. « On s’en sort plutôt bien ! », appréciait le coach ornais, en évoquant davantage le contenu du match et ses problèmes d’effectif plutôt que l’interruption de la rencontre.\n\nEn s’imposant à deux journées de la fin de la saison, l’Espérance de Condé-sur-Sarthe, 2e de son groupe, peut encore espérer monter à l’étage supérieur. Souhaitons-leur que cette petite mésaventure leur donne des ailes !",
+  "file": null,
+  "language": "fr",
+  "submitted_at": "2025-08-31T19:18:17.621739+02:00",
+  "_debug": {
+    "section": "ArticlePlaygroundViewSet:create",
+    "path": "/api/playground/articles/?debug=1",
+    "method": "POST",
+    "user": null,
+    "duration_ms": 22
+  }
+}

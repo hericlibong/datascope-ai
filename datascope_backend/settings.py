@@ -250,3 +250,21 @@ HOMEPAGE_SOFT_PENALTY = 0.20  # 0.25–0.30 si tu veux appuyer l'effet
 
 SOURCE_MIN_PER_ANGLE = 3
 DATASETS_MIN_PER_ANGLE = 3
+
+# settings (exemples)
+HOMEPAGE_SOFT_PENALTY = 0.35
+THEME_FILTER_STRICT_FOR_DATASETS = True  # stricte sur la passe datasets
+
+# back-off (utilisé seulement si datasets<3)
+
+SEARCH_BACKOFF_DEPTH = "advanced"
+SEARCH_RESULTS_PER_ANGLE = 7  # donner un peu plus de matière puis couper au reranking
+
+# ranking weights (safe defaults)
+DATASET_FORMAT_BOOST = 0.25
+DATASET_PATH_BOOST = 0.15
+PDF_SOFT_PENALTY = 0.20
+DATASET_ROOT_LISTING_PENALTY = 0.15
+# déjà présent : HOMEPAGE_SOFT_PENALTY (vous l'avez monté à ~0.35)
+
+

@@ -1,0 +1,15 @@
+{
+  "id": 322,
+  "title": "Prisons pour mineurs : combien de jeunes sont incarcérés en",
+  "content": "Prisons pour mineurs : combien de jeunes sont incarcérés en France ?\n\nDans un rapport publié vendredi 29 août, la Contrôleure générale demande la fermeture d'une prison pour mineurs à Marseille en raison d'\"atteintes graves aux droits des adolescents\". \n\nLa recommandation est très rare. La Contrôleure générale des lieux de détention préconise \"la fermeture, au moins partielle\", de l'établissement pénitentiaire pour mineurs de Marseille. Dominique Simonnot dénonce le \"caractère gravissime\" des conditions d'incarcération des adolescents. Dans cet établissement, les jeunes sont une cinquantaine, mais ils sont plusieurs centaines à être emprisonnés en France.\n\nLes mineurs sont une minorité, ils représentent moins de 1% des détenus en France. Précisément on comptait 771 mineurs derrière les barreaux fin 2023, selon les derniers chiffres du ministère de la justice(Nouvelle fenêtre). Un nombre relativement stable depuis une dizaine d'années. La plupart des détenus mineurs ont entre 16 et 18 ans, mais il y en a aussi des plus jeunes. Environ 80 détenus ont entre 13 et 16 ans. Dans l'écrasante majorité des cas, ce sont des garçons. Il y a très peu de filles mineures en prison.\n\nSi le détail des condamnations de ceux qui sont en prison n'est pas connu, on sait que presque les deux tiers des mineurs condamnés en 2023, soit environ 20 000 condamnations, l'ont été pour atteinte aux biens ou aux personnes. Cela correspond par exemple à des vols, du recel, ou encore des coups et violences volontaires. Une minorité, un peu plus de 400, ont été condamnés pour des crimes, très souvent des viols. Il faut aussi savoir que les peines de prison ferme pour mineurs restent assez rares. À peine 3 000 en 2023. La plupart du temps, les juges privilégient plutôt un avertissement ou une mesure éducative.\nPeu de prisons dédiées aux jeunes\n\nUne majorité, les deux tiers, se retrouve dans des quartiers pour mineurs. La France en compte 46. Il s'agit de prisons pour adultes ou une partie du bâtiment est aménagée spécialement pour des adolescents.\n\nLes autres jeunes détenus, un tiers, se retrouvent dans des prisons spécialisées pour mineurs comme c'est le cas à Marseille. Ce type d'établissement est plus rare : il n'y en a que six sur tout le territoire. Ces établissements sont assez récents, ils ont moins d'une dizaine d'années. Ils étaient censés pallier les dysfonctionnements des quartiers pour mineurs.",
+  "file": null,
+  "language": "fr",
+  "submitted_at": "2025-08-31T20:02:14.066568+02:00",
+  "_debug": {
+    "section": "ArticlePlaygroundViewSet:create",
+    "path": "/api/playground/articles/?debug=1",
+    "method": "POST",
+    "user": null,
+    "duration_ms": 22
+  }
+}
