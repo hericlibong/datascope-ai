@@ -32,29 +32,56 @@ def _domain_from_url(url: str) -> str:
 
 def run(angle_result: AngleResult) -> List[List[LLMSourceSuggestion]]:
     """
-    Pour chaque angle :
-      1) génère 3..6 requêtes (LLM)
-      2) exécute la recherche web (provider configuré)
-      3) convertit les résultats en LLMSourceSuggestion (sans split : le pipeline s’en charge)
+    Deux passes par angle :
+      1) génération de 3..6 requêtes (LLM)
+      2) recherche web *par intent* (dataset puis source)
+      3) conversion en LLMSourceSuggestion (le pipeline fera split/ranking/validation)
     Retour: [[LLMSourceSuggestion, ...], ...] aligné sur les angles.
     """
     per_angle_suggestions: List[List[LLMSourceSuggestion]] = []
 
-    # Paramètres légers (bornes) — facultatifs
+    # Bornes souples
     max_keep = int(getattr(settings, "SEARCH_RESULTS_PER_ANGLE", 18) or 18)
     k_per_query = int(getattr(settings, "SEARCH_MAX_RESULTS", 10) or 10)
 
     all_queries = run_llm_queries(angle_result)  # [[QuerySpec,...], ...]
     for idx, angle in enumerate(angle_result.angles):
         queries = all_queries[idx] if idx < len(all_queries) else []
-        # Convertit QuerySpec -> dict pour le provider générique
-        qdicts = [q.model_dump() if hasattr(q, "model_dump") else dict(q) for q in queries]
 
-        raw = search_many(qdicts, k=k_per_query)  # [{url, title, snippet, source_domain, intent, score}, ...]
+        # Split des requêtes par intent
+        ds_q = [q for q in queries if getattr(q, "intent", None) == "dataset"]
+        src_q = [q for q in queries if getattr(q, "intent", None) == "source"]
 
-        # Conversion minimale -> LLMSourceSuggestion (le pipeline fera split + ranking + validation)
+        # Appels provider séparés (datasets d'abord)
+        ds_raw = search_many([q.model_dump() for q in ds_q], k=k_per_query) if ds_q else []
+        src_raw = search_many([q.model_dump() for q in src_q], k=k_per_query) if src_q else []
+
+        # Agrégation avec dé-duplication simple par URL normalisée
+        seen = set()
+
+        def _norm(u: str) -> str:
+            try:
+                from urllib.parse import urlparse
+                p = urlparse(u or "")
+                path = (p.path or "/").rstrip("/")
+                return f"{p.scheme}://{p.netloc}{path}?{p.query}" if p.scheme and p.netloc else (u or "").strip()
+            except Exception:
+                return (u or "").strip()
+
+        merged = []
+        for r in ds_raw + src_raw:
+            url = r.get("url") or ""
+            key = _norm(url).lower()
+            if not url or key in seen:
+                continue
+            seen.add(key)
+            merged.append(r)
+            if len(merged) >= max_keep:
+                break
+
+        # Conversion minimale -> LLMSourceSuggestion
         items: List[LLMSourceSuggestion] = []
-        for r in raw[: max_keep]:
+        for r in merged:
             url = r.get("url") or ""
             title = _fallback_title(url, r.get("title"))
             desc = (r.get("snippet") or "").strip()
@@ -66,7 +93,7 @@ def run(angle_result: AngleResult) -> List[List[LLMSourceSuggestion]]:
                     description=desc,
                     link=url,
                     source=source,
-                    angle_idx=idx,  # requis par le schéma
+                    angle_idx=idx,
                 )
             )
 

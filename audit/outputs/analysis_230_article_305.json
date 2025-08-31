@@ -1,0 +1,1964 @@
+{
+  "id": 230,
+  "article": {
+    "id": 305,
+    "title": "Des intentions d'embauche en baisse, mais des difficultés de recrutement",
+    "content": "Des intentions d'embauche en baisse, mais des difficultés de recrutement dans le bassin d'Alençon\n\nMoins d'un quart des entreprises prévoient de recruter en 2025 dans le bassin d'Alençon. Parmi les 2 355 embauches envisagées, une majorité s'annonce difficile à concrétiser.  \n\nLes entreprises d’Alençon (Orne) et de ses alentours prévoient 2 355 recrutements en 2025. Un chiffre en légère baisse, mais qui cache de fortes disparités selon les métiers et les secteurs. Résultat : les tensions sur le marché de l’emploi local restent vives.\n\nSelon l’enquête annuelle sur les besoins en main-d’œuvre, menée par France Travail Normandie et le Crédoc, 24,7 % des établissements du bassin envisagent de recruter cette année. C’est 1,6 point de moins qu’en 2024. Pourtant, le volume reste conséquent : près de 2 400 projets d’embauche, tous secteurs confondus.\n\n6 recrutements sur 10 jugés difficiles\n\nProblème : 61 % des employeurs déclarent rencontrer des difficultés pour recruter. Le bassin d’Alençon dépasse ici la moyenne régionale de 53 %.\n\nLes profils les plus concernés sont bien connus : agents d’entretien, aides à domicile, travailleurs sociaux, maçons qualifiés et personnels soignants.\n\nDes métiers essentiels, mais souvent pénibles, pas assez valorisés ni rémunérés ou en tension structurelle.\n\nDes besoins dans les services\n\nLes services aux particuliers concentrent 44 % des projets recensés. Viennent ensuite les services aux entreprises (18 %) et le commerce (10 %).\n\nLa construction se démarque avec 11 % des intentions d’embauche, bien au-dessus de la moyenne régionale.\n\nÀ l’inverse, l’industrie manufacturière est peu représentée : 4 % des projets dans le bassin, contre 9 % en Normandie.\n\nL’agriculture et l’agroalimentaire comptent pour 12 %, une part nettement plus élevée que la moyenne régionale.\n\n\nLes TPE en première ligne\n\nLa structure des entreprises locales influe aussi sur les projets de recrutement.\n\nLes très petites entreprises, de moins de 10 salariés, portent à elles seules 45 % des intentions recensées dans le bassin.\n\nLes établissements de taille moyenne, entre 10 et 199 salariés, en génèrent environ un tiers.\n\nLes grandes entreprises, de plus de 200 salariés, comptent pour 19 % des projets.\nQuels métiers ?\n\nEn volume de projets, les métiers les plus demandés sont ceux d’agents d’entretien de locaux, d’agriculteurs, de personnels de ménage chez les particuliers, d’aides de cuisine ou d’employés polyvalents, ainsi que les professionnels de l’animation socioculturelle.\n\nCes fonctions concentrent plusieurs centaines d’offres, souvent peu qualifiées mais essentielles à la vie économique locale.\n\n\nDes postes saisonniers\n\nEnfin, 21 % des projets recensés sont liés à des emplois saisonniers. Cela concerne principalement l’agriculture et la restauration, deux secteurs soumis à des pics d’activité.\nUn bassin sous tension\n\nLe bassin d’Alençon affiche donc une dynamique de recrutement un peu moins soutenue que l’an dernier, mais reste actif dans les services, la santé, le bâtiment et l’agriculture. Le nombre élevé de recrutements jugés difficiles souligne les défis à relever en matière d’attractivité des métiers, de conditions de travail et de formation adaptée.",
+    "file": null,
+    "language": "fr",
+    "submitted_at": "2025-08-30T20:07:44.231338+02:00"
+  },
+  "score": 5.0,
+  "profile_label": "playground",
+  "summary": "# Résultat d’analyse\n\n## Entités extraites\n- **Langue** : fr\n- **Organisations** : France Travail Normandie, Crédoc\n- **Lieux** : Alençon, Orne, Normandie\n- **Valeurs numériques** : un quart (0.25 None), 2 355 (2355.0 None), 24,7 % (24.7 %), 1,6 point (1.6 point), 2 400 (2400.0 None), 6 recrutements sur 10 (0.6 None), 61 % (61.0 %), 53 % (53.0 %), 44 % (44.0 %), 18 % (18.0 %), 10 % (10.0 %), 11 % (11.0 %), 4 % (4.0 %), 9 % (9.0 %), 12 % (12.0 %), 45 % (45.0 %), un tiers (0.33 None), 19 % (19.0 %), 21 % (21.0 %)\n\n## Suggestions d’angles\n\n### 1. Où sont les métiers en tension ?\nLes difficultés de recrutement dans le bassin d'Alençon peuvent éclairer d'autres territoires en France. Alors que 61 % des employeurs ici peinent à embaucher, des tensions similaires pourraient émerger ailleurs, surtout dans les métiers essentiels mais peu valorisés. Q: Les secteurs en tension dans le bassin d'Alençon reflètent-ils une tendance nationale ou régionale ? Metrics: % d'offres non pourvues, temps moyen pour pourvoir un poste, taux de turn-over par secteur. Granularity: Région Alençon vs autres régions, années 2020–2025. Data: INSEE, data.gouv.fr, Pôle emploi, France Travail. Axis: Geographic, Temporal\n\n### 2. Les TPE, sauveuses méconnues du bassin d'Alençon\nPrès de la moitié des projets de recrutement à Alençon proviennent de très petites entreprises (TPE), révélant leur rôle crucial dans le marché de l'emploi local. Cette dynamique particulière questionne l'appui et les politiques qui leur sont dédiées. Q: Les TPE du bassin d'Alençon reçoivent-elles suffisamment de soutien pour développer leurs recrutements ? Metrics: % des embauches par taille d'entreprise, budget d'aide par TPE, comparaison TPE/grandes entreprises. Granularity: Bassin Alençon, données annuelles 2020-2025. Data: INSEE, Statistiques DGE, Eurostat, data.gouv.fr. Axis: Policy, DataQuality\n\n### 3. Recrutement saisonnier : bulle de croissance ou mirage ?\nAvec 21 % des projets liés à des emplois saisonniers, notamment dans l'agriculture, le bassin d'Alençon pourrait dépendre de cycles courts. Ces postes temporaires suffisent-ils à stabiliser le marché local ? Q: Les emplois saisonniers à Alençon offrent-ils une sécurité suffisante aux travailleurs et à l'économie locale ? Metrics: % des emplois saisonniers vs permanents, revenus moyens des travailleurs saisonniers, retour en CDD/CDI après saisonnier. Granularity: Bassin Alençon, par saison/year (2020–2025). Data: Pôle emploi, Ministère du Travail, data.gouv.fr, INSEE. Axis: Inequalities, Temporal\n\n### 4. Pourquoi l'industrie manufacturière décline à Alençon\nAlors que l'industrie manufacturière ne compte que pour 4 % des projets d'embauche à Alençon, cela contraste fortement avec la moyenne régionale. Ce déclin pose la question de son attractivité et de son avenir. Q: Quelles sont les raisons du faible taux d'embauches dans l'industrie manufacturière à Alençon ? Metrics: % d'embauches industrielles, croissance/déclin du secteur, comparaison avec d'autres bassins industriels. Granularity: Bassin Alençon vs Normandie, années 2015-2025. Data: INSEE, Eurostat, Ministère de l'Économie, data.gouv.fr. Axis: Geographic, Policy\n",
+  "created_at": "2025-08-30T20:09:41.250021+02:00",
+  "angle_resources": [
+    {
+      "index": 0,
+      "title": "Où sont les métiers en tension ?",
+      "description": "Les difficultés de recrutement dans le bassin d'Alençon peuvent éclairer d'autres territoires en France. Alors que 61 % des employeurs ici peinent à embaucher, des tensions similaires pourraient émerger ailleurs, surtout dans les métiers essentiels mais peu valorisés. Q: Les secteurs en tension dans le bassin d'Alençon reflètent-ils une tendance nationale ou régionale ? Metrics: % d'offres non pourvues, temps moyen pour pourvoir un poste, taux de turn-over par secteur. Granularity: Région Alençon vs autres régions, années 2020–2025. Data: INSEE, data.gouv.fr, Pôle emploi, France Travail. Axis: Geographic, Temporal",
+      "keywords": [
+        "métiers en tension",
+        "pénurie de main-d'œuvre",
+        "secteurs en demande",
+        "marché du travail",
+        "emplois vacants"
+      ],
+      "datasets": [
+        {
+          "title": "En 2022, 58 % des nouveaux bacheliers quittent leur zone ...",
+          "description": "Lecture : En 2022, 84,5 % des néo-bacheliers résidant dans la zone d'emploi d'Alençon quittent cette zone d'emploi à l'entrée dans l'enseignement supérieur.",
+          "link": "https://www.insee.fr/fr/statistiques/fichier/8324188/ip2031.pdf",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/fichier/8324188/ip2031.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/fichier/8324188/ip2031.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Une forte implantation de l'automobile, notamment dans le nord-est ...",
+          "description": "Dans les Pays de la Loire, les établissements de la filière automobile emploient 32 700 salariés, dont 19 900 sont dédiés à leur activité",
+          "link": "https://www.insee.fr/fr/statistiques/8228982",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/8228982",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/8228982",
+            "error": null
+          }
+        },
+        {
+          "title": "Offre d'emploi Comptable (H/F) - 61 - ALENCON - 196NZLZ",
+          "description": "Offre publiée aujourd'hui - CDD - 5 Mois - 36H/semaine Travail en journée - Salaire : Annuel de 26700.0 Euros à 26800.0 Euros sur 14.0 mois",
+          "link": "https://candidat.francetravail.fr/offres/recherche/detail/196NZLZ",
+          "source": "candidat.francetravail.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://candidat.francetravail.fr/offres/recherche/detail/196NZLZ",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://candidat.francetravail.fr/offres/recherche/detail/196NZLZ",
+            "error": null
+          }
+        },
+        {
+          "title": "Les activités et les emplois saisonniers en Basse-Normandie",
+          "description": "• Les offres d'emploi déposées à l'ANPE. Les données concernant les offres d'emploi déposées à l'ANPE peuvent, en tant que de besoin",
+          "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/a22f7ad7-2c5c-45de-9945-6f060243d67f/610_2618_r_emplois_saisonniers.pdf",
+          "source": "www.datanormandie.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/a22f7ad7-2c5c-45de-9945-6f060243d67f/610_2618_r_emplois_saisonniers.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/a22f7ad7-2c5c-45de-9945-6f060243d67f/610_2618_r_emplois_saisonniers.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Offre n° 196SBRP Chargé(e) d'affaires (H/F) - Espace personnel",
+          "description": "Offre publiée il y a 8 jours - CDI - 37H30/semaine Travail en journée - Salaire : Mensuel de 3200.0 Euros à 3500.0 Euros sur 12.0 mois",
+          "link": "https://candidat.francetravail.fr/offres/recherche/detail/196SBRP",
+          "source": "candidat.francetravail.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://candidat.francetravail.fr/offres/recherche/detail/196SBRP",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://candidat.francetravail.fr/offres/recherche/detail/196SBRP",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Rapport Industrie - data Normandie",
+          "description": "ratio du fait du turn over important affectant ce type de création. Au plan détaillé, c'est-à-dire par secteurs d'activité, il apparaît qu'au plan régional",
+          "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ad9c73bc-e3bb-4884-a1cc-3cfa0e2f24b4/873_2782_rapport_industrie.pdf",
+          "source": "www.datanormandie.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ad9c73bc-e3bb-4884-a1cc-3cfa0e2f24b4/873_2782_rapport_industrie.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ad9c73bc-e3bb-4884-a1cc-3cfa0e2f24b4/873_2782_rapport_industrie.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Pays de la Loire - Urssaf.org",
+          "description": "nouvelle baisse des effectifs salariés de. 0,8 %. Sur un an, ce secteur a perdu plus de 80 000 postes. L'ensemble du territoire national crée à.",
+          "link": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2021/46/Statur_paysdelaoire_046.pdf",
+          "source": "www.urssaf.org",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2021/46/Statur_paysdelaoire_046.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2021/46/Statur_paysdelaoire_046.pdf",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Territoires Alençon - Zone d'emploi | site Statoscope",
+          "description": "Evolution du nombre d'offres d'emploi. contenus données json n°1. Entre le 1er trimestre 2020 et le 1er trimestre 2024, les offres d'emploi ont progressé de 57,",
+          "link": "https://statoscope.cariforefnormandie.fr/territoires/alencon-0",
+          "source": "statoscope.cariforefnormandie.fr",
+          "source_url": "https://statoscope.cariforefnormandie.fr/territoires/alencon-0",
+          "source_name": "statoscope.cariforefnormandie.fr",
+          "validation": {
+            "input_url": "https://statoscope.cariforefnormandie.fr/territoires/alencon-0",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://statoscope.cariforefnormandie.fr/territoires/alencon-0",
+            "error": null
+          }
+        },
+        {
+          "title": "Municipales. Sur le bassin d'Alençon, du chômage et des ...",
+          "description": "Sur le bassin d'Alençon, du chômage et des offres non pourvues. Le taux de chômage est à 8,3 % sur une zone où la population vieillit et où la",
+          "link": "https://www.ouest-france.fr/elections/municipales/municipales-sur-le-bassin-d-alencon-du-chomage-et-des-offres-non-pourvues-6762274",
+          "source": "www.ouest-france.fr",
+          "source_url": "https://www.ouest-france.fr/elections/municipales/municipales-sur-le-bassin-d-alencon-du-chomage-et-des-offres-non-pourvues-6762274",
+          "source_name": "www.ouest-france.fr",
+          "validation": {
+            "input_url": "https://www.ouest-france.fr/elections/municipales/municipales-sur-le-bassin-d-alencon-du-chomage-et-des-offres-non-pourvues-6762274",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ouest-france.fr/elections/municipales/municipales-sur-le-bassin-d-alencon-du-chomage-et-des-offres-non-pourvues-6762274",
+            "error": null
+          }
+        },
+        {
+          "title": "Situation de l'emploi et du marché du travail Orne",
+          "description": "Les 10 principaux métiers recherchés par les entreprises (offres d'emploi diffusées) – 2023 ... Vous pouvez retrouver l'ensemble de ces données et plus d'",
+          "link": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_departement_orne.pdf",
+          "source": "fichiers.cariforefnormandie.fr",
+          "source_url": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_departement_orne.pdf",
+          "source_name": "fichiers.cariforefnormandie.fr",
+          "validation": {
+            "input_url": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_departement_orne.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_departement_orne.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Emploi en Normandie : une nette baisse du nombre de ...",
+          "description": "En Normandie, les entreprises ont déposé 130 000 offres d'emploi en 2021 : « On a même retrouvé le niveau de 2019 avant le Covid. » Les secteurs",
+          "link": "https://www.ouest-france.fr/normandie/emploi-en-normandie-une-nette-baisse-du-nombre-de-personnes-au-chomage-5850f320-a906-11ec-b420-ea50e1a075d7",
+          "source": "www.ouest-france.fr",
+          "source_url": "https://www.ouest-france.fr/normandie/emploi-en-normandie-une-nette-baisse-du-nombre-de-personnes-au-chomage-5850f320-a906-11ec-b420-ea50e1a075d7",
+          "source_name": "www.ouest-france.fr",
+          "validation": {
+            "input_url": "https://www.ouest-france.fr/normandie/emploi-en-normandie-une-nette-baisse-du-nombre-de-personnes-au-chomage-5850f320-a906-11ec-b420-ea50e1a075d7",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ouest-france.fr/normandie/emploi-en-normandie-une-nette-baisse-du-nombre-de-personnes-au-chomage-5850f320-a906-11ec-b420-ea50e1a075d7",
+            "error": null
+          }
+        },
+        {
+          "title": "Postuler",
+          "description": "Connecte-toi sur notre Site Carrières : c'est la porte d'entrée unique pour toutes les candidatures. Tu y trouveras donc l'ensemble des métiers et de nos offres",
+          "link": "https://emplois.lidl.fr/nous-rejoindre/postuler",
+          "source": "emplois.lidl.fr",
+          "source_url": "https://emplois.lidl.fr/nous-rejoindre/postuler",
+          "source_name": "emplois.lidl.fr",
+          "validation": {
+            "input_url": "https://emplois.lidl.fr/nous-rejoindre/postuler",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://emplois.lidl.fr/nous-rejoindre/postuler",
+            "error": null
+          }
+        },
+        {
+          "title": "Emploi et territoires",
+          "description": "Le conseil d'orientation de l'Observatoire a fait le choix de placer la cin- quième édition de son rapport sous le thème « emploi et territoire ». Cet important",
+          "link": "https://www.observatoire-des-territoires.gouv.fr/sites/default/files/2020-02/rapport_2016_-_emploi_et_territoires_-_integral-compresse.pdf",
+          "source": "www.observatoire-des-territoires.gouv.fr",
+          "source_url": "https://www.observatoire-des-territoires.gouv.fr/sites/default/files/2020-02/rapport_2016_-_emploi_et_territoires_-_integral-compresse.pdf",
+          "source_name": "www.observatoire-des-territoires.gouv.fr",
+          "validation": {
+            "input_url": "https://www.observatoire-des-territoires.gouv.fr/sites/default/files/2020-02/rapport_2016_-_emploi_et_territoires_-_integral-compresse.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.observatoire-des-territoires.gouv.fr/sites/default/files/2020-02/rapport_2016_-_emploi_et_territoires_-_integral-compresse.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Le rapport détaillé du 1er semestre 2024 - CMA Normandie",
+          "description": "ce qui indique que ce secteur est sujet à un turn-over important. Les scores moyens par département révèlent une homogénéité avec des valeurs proches de la",
+          "link": "https://cma-normandie.fr/wp-content/uploads/2025/02/Rapport-detaille-Note-Conjoncture-2024_S1-.pdf",
+          "source": "cma-normandie.fr",
+          "source_url": "https://cma-normandie.fr/wp-content/uploads/2025/02/Rapport-detaille-Note-Conjoncture-2024_S1-.pdf",
+          "source_name": "cma-normandie.fr",
+          "validation": {
+            "input_url": "https://cma-normandie.fr/wp-content/uploads/2025/02/Rapport-detaille-Note-Conjoncture-2024_S1-.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://cma-normandie.fr/wp-content/uploads/2025/02/Rapport-detaille-Note-Conjoncture-2024_S1-.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Regard sur 12 ans d'évolution de l'emploi territorial en Normandie",
+          "description": "Le « turnover » est plus marqué dans les CCAS (26%) qui regroupent des métiers à fortes contraintes et en concurrence avec le secteur privé. La fonction",
+          "link": "https://www.cdg76.fr/wp-content/uploads/2025/03/regard-sur-12-ans-de-service-public-web.pdf",
+          "source": "www.cdg76.fr",
+          "source_url": "https://www.cdg76.fr/wp-content/uploads/2025/03/regard-sur-12-ans-de-service-public-web.pdf",
+          "source_name": "www.cdg76.fr",
+          "validation": {
+            "input_url": "https://www.cdg76.fr/wp-content/uploads/2025/03/regard-sur-12-ans-de-service-public-web.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.cdg76.fr/wp-content/uploads/2025/03/regard-sur-12-ans-de-service-public-web.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] rapport_el_khomri_-_plan_metiers_du_grand_age-2.pdf",
+          "description": "Selon les données de la DREES15, les EHPAD connaissent un turn-over élevé, la part du personnel récemment recruté (moins d'un an) atteignant 15%. Par ailleurs,",
+          "link": "https://sante.gouv.fr/IMG/pdf/rapport_el_khomri_-_plan_metiers_du_grand_age-2.pdf",
+          "source": "sante.gouv.fr",
+          "source_url": "https://sante.gouv.fr/IMG/pdf/rapport_el_khomri_-_plan_metiers_du_grand_age-2.pdf",
+          "source_name": "sante.gouv.fr",
+          "validation": {
+            "input_url": "https://sante.gouv.fr/IMG/pdf/rapport_el_khomri_-_plan_metiers_du_grand_age-2.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://sante.gouv.fr/IMG/pdf/rapport_el_khomri_-_plan_metiers_du_grand_age-2.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] 3. LE MILIEU HUMAIN - DREAL Normandie",
+          "description": "Différents taux statistiques peuvent être calculés, notamment le taux d'accidents, le taux de gravité et la densité. Les données de la",
+          "link": "https://www.normandie.developpement-durable.gouv.fr/IMG/pdf/RN12_Dossier_R_tudes_opportunit_R__partie-II-b.pdf",
+          "source": "www.normandie.developpement-durable.gouv.fr",
+          "source_url": "https://www.normandie.developpement-durable.gouv.fr/IMG/pdf/RN12_Dossier_R_tudes_opportunit_R__partie-II-b.pdf",
+          "source_name": "www.normandie.developpement-durable.gouv.fr",
+          "validation": {
+            "input_url": "https://www.normandie.developpement-durable.gouv.fr/IMG/pdf/RN12_Dossier_R_tudes_opportunit_R__partie-II-b.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.normandie.developpement-durable.gouv.fr/IMG/pdf/RN12_Dossier_R_tudes_opportunit_R__partie-II-b.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Documents | Cour des comptes",
+          "description": "en 1998. Le passage du district à la communauté a permis à la ville d'Alençon de devenir majoritaire au sein du. nouvel établissement public de coopération",
+          "link": "https://www.ccomptes.fr/fr/documents/26324",
+          "source": "www.ccomptes.fr",
+          "source_url": "https://www.ccomptes.fr/fr/documents/26324",
+          "source_name": "www.ccomptes.fr",
+          "validation": {
+            "input_url": "https://www.ccomptes.fr/fr/documents/26324",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ccomptes.fr/fr/documents/26324",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Taux d'offres non pourvues par secteur (Alençon vs France)",
+          "chart_type": "bar",
+          "x": "Secteur",
+          "y": "% d'offres non pourvues",
+          "note": "Source : Pôle emploi, données 2020-2025"
+        },
+        {
+          "title": "Temps moyen pour pourvoir un poste (2020-2025)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Temps moyen (jours)",
+          "note": "Comparaison entre Alençon et d'autres régions. Source : France Travail"
+        },
+        {
+          "title": "Taux de turn-over par secteur (Alençon, 2020-2025)",
+          "chart_type": "heatmap",
+          "x": "Année",
+          "y": "Secteur",
+          "note": "Données INSEE et Pôle emploi"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "title": "Les TPE, sauveuses méconnues du bassin d'Alençon",
+      "description": "Près de la moitié des projets de recrutement à Alençon proviennent de très petites entreprises (TPE), révélant leur rôle crucial dans le marché de l'emploi local. Cette dynamique particulière questionne l'appui et les politiques qui leur sont dédiées. Q: Les TPE du bassin d'Alençon reçoivent-elles suffisamment de soutien pour développer leurs recrutements ? Metrics: % des embauches par taille d'entreprise, budget d'aide par TPE, comparaison TPE/grandes entreprises. Granularity: Bassin Alençon, données annuelles 2020-2025. Data: INSEE, Statistiques DGE, Eurostat, data.gouv.fr. Axis: Policy, DataQuality",
+      "keywords": [
+        "TPE Alençon",
+        "économie locale",
+        "emploi TPE",
+        "entreprises locales",
+        "développement régional"
+      ],
+      "datasets": [
+        {
+          "title": "Déclarations d'embauche - Pays de la Loire | Insee - Insee",
+          "description": "Avec 1,35 million de déclarations en 2022, le nombre d'embauches atteint l'un de ses niveaux les plus importants depuis l'an 2000.",
+          "link": "https://www.insee.fr/fr/statistiques/7618703?sommaire=7343471",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/7618703?sommaire=7343471",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/7618703?sommaire=7343471",
+            "error": null
+          }
+        },
+        {
+          "title": "Déclarations d'embauche - Pays de la Loire | - Insee",
+          "description": "tableauFigure 2 – Évolution des embauches par zone d'emploi et par type d'embauche, entre 2022 et 2023 dans les Pays de la Loire ; 3,9, 3,3, -3,0",
+          "link": "https://www.insee.fr/fr/statistiques/8186166?sommaire=7936552",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/8186166?sommaire=7936552",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/8186166?sommaire=7936552",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] LES DÉCLARATIONS PRÉALABLES À L'EMBAUCHE (DPAE) Bilan ...",
+          "description": "Données brutes - Cumul 2023. Bassin d'Alençon. Évolution annuelle. > Par type de contrat. CDI. 3 679. -2,4%. CDD de plus de 6 mois. 1 897. -1,8%. CDD de 1 à 6",
+          "link": "https://www.francetravail.fr/files/live/sites/normandie/files/normandie/plus-dinfos/statistiques/diagnostics/DPAE_Alencon",
+          "source": "www.francetravail.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.francetravail.fr/files/live/sites/normandie/files/normandie/plus-dinfos/statistiques/diagnostics/DPAE_Alencon",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.francetravail.fr/files/live/sites/normandie/files/normandie/plus-dinfos/statistiques/diagnostics/DPAE_Alencon",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Stat'urconjoncture - Urssaf.org",
+          "description": "En France. Au deuxième trimestre 2024, les effectifs salariés du secteur privé diminuent de 0,1 % (- 20 000 postes), après le rebond.",
+          "link": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2024/PDL_Statur_61.pdf",
+          "source": "www.urssaf.org",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2024/PDL_Statur_61.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2024/PDL_Statur_61.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Pays de la Loire - Urssaf.org",
+          "description": "nouvelle baisse des effectifs salariés de. 0,8 %. Sur un an, ce secteur a perdu plus de 80 000 postes. L'ensemble du territoire national crée à.",
+          "link": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2021/46/Statur_paysdelaoire_046.pdf",
+          "source": "www.urssaf.org",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2021/46/Statur_paysdelaoire_046.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2021/46/Statur_paysdelaoire_046.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] TRANSFORMATION ET FONCTION PUBLIQUES - budget.gouv",
+          "description": "Cette annexe au projet de loi de règlement des comptes et rapport de gestion pour l'année 2022 est prévue par l'article.",
+          "link": "https://www.budget.gouv.fr/documentation/file-download/20286",
+          "source": "www.budget.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.budget.gouv.fr/documentation/file-download/20286",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.budget.gouv.fr/documentation/file-download/20286",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Territoires Alençon - Arrondissement | site Statoscope",
+          "description": "Moins d'un quart des entreprises prévoient de recruter en 2025 dans le bassin d'Alençon. Parmi les 2 355 embauches envisagées, une majorité s'",
+          "link": "https://statoscope.cariforefnormandie.fr/territoires/alencon",
+          "source": "statoscope.cariforefnormandie.fr",
+          "source_url": "https://statoscope.cariforefnormandie.fr/territoires/alencon",
+          "source_name": "statoscope.cariforefnormandie.fr",
+          "validation": {
+            "input_url": "https://statoscope.cariforefnormandie.fr/territoires/alencon",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://statoscope.cariforefnormandie.fr/territoires/alencon",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Regard sur 12 ans d'évolution de l'emploi territorial en Normandie",
+          "description": "Missing: embauches TPE",
+          "link": "https://www.cdg76.fr/wp-content/uploads/2025/03/regard-sur-12-ans-de-service-public-web.pdf",
+          "source": "www.cdg76.fr",
+          "source_url": "https://www.cdg76.fr/wp-content/uploads/2025/03/regard-sur-12-ans-de-service-public-web.pdf",
+          "source_name": "www.cdg76.fr",
+          "validation": {
+            "input_url": "https://www.cdg76.fr/wp-content/uploads/2025/03/regard-sur-12-ans-de-service-public-web.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.cdg76.fr/wp-content/uploads/2025/03/regard-sur-12-ans-de-service-public-web.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Données localisées - observatoire emploi pays de la loire",
+          "description": "Répartition par type de contrat ; Emploi durable, 166 530, 2 306 112, 7,2 % ; Emploi temporaire, 85 653, 1 205 241, 7,1 %.",
+          "link": "https://www.observatoire-emploi-paysdelaloire.fr/donnees-localisees/emploi-recrutements/pays-de-la-loire-1/france-metropolitaine-1/202409-F01",
+          "source": "www.observatoire-emploi-paysdelaloire.fr",
+          "source_url": "https://www.observatoire-emploi-paysdelaloire.fr/donnees-localisees/emploi-recrutements/pays-de-la-loire-1/france-metropolitaine-1/202409-F01",
+          "source_name": "www.observatoire-emploi-paysdelaloire.fr",
+          "validation": {
+            "input_url": "https://www.observatoire-emploi-paysdelaloire.fr/donnees-localisees/emploi-recrutements/pays-de-la-loire-1/france-metropolitaine-1/202409-F01",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.observatoire-emploi-paysdelaloire.fr/donnees-localisees/emploi-recrutements/pays-de-la-loire-1/france-metropolitaine-1/202409-F01",
+            "error": null
+          }
+        },
+        {
+          "title": "Panorama de l'emploi pour le département ORNE | Data Emploi",
+          "description": "Retrouvez les indicateurs clés de l'emploi pour aider à décrypter les enjeux et leviers d'action de ce territoire (Dynamisme, Chômage, Demandeurs, Offres…)",
+          "link": "https://dataemploi.francetravail.fr/emploi/panorama/DEP/61?cod=",
+          "source": "dataemploi.francetravail.fr",
+          "source_url": "https://dataemploi.francetravail.fr/emploi/panorama/DEP/61?cod=",
+          "source_name": "dataemploi.francetravail.fr",
+          "validation": {
+            "input_url": "https://dataemploi.francetravail.fr/emploi/panorama/DEP/61?cod=",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://dataemploi.francetravail.fr/emploi/panorama/DEP/61?cod=",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Budget primitif - Conseil régional des Pays de la Loire",
+          "description": "Le budget primitif 2020 illustre la volonté de tenir le cap des engagements pris il y a quatre ans, mais aussi l'exigence de préparer l'avenir.",
+          "link": "https://www.paysdelaloire.fr/sites/default/files/2021-04/bp20_0.pdf",
+          "source": "www.paysdelaloire.fr",
+          "source_url": "https://www.paysdelaloire.fr/sites/default/files/2021-04/bp20_0.pdf",
+          "source_name": "www.paysdelaloire.fr",
+          "validation": {
+            "input_url": "https://www.paysdelaloire.fr/sites/default/files/2021-04/bp20_0.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.paysdelaloire.fr/sites/default/files/2021-04/bp20_0.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] budget primitif 2021 budget principal - CESER Normandie",
+          "description": "Un budget de 2,6 Mds d'euros, qui répond à la crise tout en préservant une trajectoire financière maîtrisée. Le projet de Budget Primitif 2021",
+          "link": "https://www.ceser.normandie.fr/sites/default/files/2020-11/BUDGET%20PRINCIPAL%202021_2.pdf",
+          "source": "www.ceser.normandie.fr",
+          "source_url": "https://www.ceser.normandie.fr/sites/default/files/2020-11/BUDGET%20PRINCIPAL%202021_2.pdf",
+          "source_name": "www.ceser.normandie.fr",
+          "validation": {
+            "input_url": "https://www.ceser.normandie.fr/sites/default/files/2020-11/BUDGET%20PRINCIPAL%202021_2.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ceser.normandie.fr/sites/default/files/2020-11/BUDGET%20PRINCIPAL%202021_2.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Face à la crise, le Département aux côtés des entreprises",
+          "description": "L'Orne Magazine / n°87 Avril-Mai-Juin 2012. 27, boulevard de Strasbourg - BP 528 - 61017 Alençon Cedex - Tél. 02 33 81 60 00 - Fax.",
+          "link": "https://www.orne.fr/sites/default/files/2020-01/om87.pdf",
+          "source": "www.orne.fr",
+          "source_url": "https://www.orne.fr/sites/default/files/2020-01/om87.pdf",
+          "source_name": "www.orne.fr",
+          "validation": {
+            "input_url": "https://www.orne.fr/sites/default/files/2020-01/om87.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.orne.fr/sites/default/files/2020-01/om87.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[XLS] Sheet1 - Aides Territoires",
+          "description": "... aide-livre-lecture-2024, <p><strong>Pour toute question sur l'entrepreneuriat culturel, vous êtes invités à vous adresser à la Direction générale des médias",
+          "link": "https://aides-territoires.beta.gouv.fr/aides/exporter/?text=Acc%C3%A8s%20%C3%A0%20la%20culture",
+          "source": "aides-territoires.beta.gouv.fr",
+          "source_url": "https://aides-territoires.beta.gouv.fr/aides/exporter/?text=Acc%C3%A8s%20%C3%A0%20la%20culture",
+          "source_name": "aides-territoires.beta.gouv.fr",
+          "validation": {
+            "input_url": "https://aides-territoires.beta.gouv.fr/aides/exporter?text=Acc%C3%A8s%20%C3%A0%20la%20culture",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://aides-territoires.beta.gouv.fr/aides/exporter/?text=Acc%C3%A8s%20%C3%A0%20la%20culture",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] DOCUMENT DE MISE EN ŒUVRE (DOMO) FEDER FSE+ FTJ 2021 ...",
+          "description": "L'autorité de gestion du Programme FEDER FSE+ FTJ 2021-2027 est la Région Normandie. Pour la mise en œuvre de ce Programme, un document d'aide à sa mise en",
+          "link": "https://www.europe-en-normandie.eu/sites/default/files/2024-10/20240930-DOMO%20FEDER%20FSE%2B%20FTJ%20Normandie%202021-2027%20V6F.pdf",
+          "source": "www.europe-en-normandie.eu",
+          "source_url": "https://www.europe-en-normandie.eu/sites/default/files/2024-10/20240930-DOMO%20FEDER%20FSE%2B%20FTJ%20Normandie%202021-2027%20V6F.pdf",
+          "source_name": "www.europe-en-normandie.eu",
+          "validation": {
+            "input_url": "https://www.europe-en-normandie.eu/sites/default/files/2024-10/20240930-DOMO%20FEDER%20FSE%2B%20FTJ%20Normandie%202021-2027%20V6F.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.europe-en-normandie.eu/sites/default/files/2024-10/20240930-DOMO%20FEDER%20FSE%2B%20FTJ%20Normandie%202021-2027%20V6F.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Pour une meilleure utilisation des fonds européens, mieux ...",
+          "description": "o aide à la création d'entreprises pour les jeunes pêcheurs o amélioration de la santé et de la sécurité dans le secteur de la pêche o limitation de l",
+          "link": "https://www.ceser.normandie.fr/sites/default/files/2020-02/FESI_Rapport_etape.pdf",
+          "source": "ceser.normandie.fr",
+          "source_url": "https://www.ceser.normandie.fr/sites/default/files/2020-02/FESI_Rapport_etape.pdf",
+          "source_name": "ceser.normandie.fr",
+          "validation": {
+            "input_url": "https://ceser.normandie.fr/sites/default/files/2020-02/FESI_Rapport_etape.pdf",
+            "status": "redirected",
+            "http_status": 200,
+            "final_url": "https://www.ceser.normandie.fr/sites/default/files/2020-02/FESI_Rapport_etape.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Contrat de plan État-Région 2021-2027 pour la Normandie",
+          "description": "Les projets devront permettre d'augmenter les flux d'emballages réemployés, de substituer les emballages à usage unique en vue notamment d'une réduction de 20%",
+          "link": "https://www.prefectures-regions.gouv.fr/irecontenu/telechargement/122958/911891/file/Projet%20de%20contrat%20de%20plan%202021-2027.pdf",
+          "source": "www.prefectures-regions.gouv.fr",
+          "source_url": "https://www.prefectures-regions.gouv.fr/irecontenu/telechargement/122958/911891/file/Projet%20de%20contrat%20de%20plan%202021-2027.pdf",
+          "source_name": "www.prefectures-regions.gouv.fr",
+          "validation": {
+            "input_url": "https://www.prefectures-regions.gouv.fr/irecontenu/telechargement/122958/911891/file/Projet%20de%20contrat%20de%20plan%202021-2027.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.prefectures-regions.gouv.fr/irecontenu/telechargement/122958/911891/file/Projet%20de%20contrat%20de%20plan%202021-2027.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Stratégie de spécialisation intelligente de la Normandie 2021-2027",
+          "description": "Un travail collaboratif de découverte entrepreneuriale a ainsi été amorcé entre octobre 2019 et juillet 2020 avec les acteurs normands pour coconstruire la S3",
+          "link": "https://www.europe-en-normandie.eu/sites/default/files/2021-08/2021-2027%20RIS3%20%20-%20Complet%20VF%2025%2002%2021.pdf",
+          "source": "www.europe-en-normandie.eu",
+          "source_url": "https://www.europe-en-normandie.eu/sites/default/files/2021-08/2021-2027%20RIS3%20%20-%20Complet%20VF%2025%2002%2021.pdf",
+          "source_name": "www.europe-en-normandie.eu",
+          "validation": {
+            "input_url": "https://www.europe-en-normandie.eu/sites/default/files/2021-08/2021-2027%20RIS3%20%20-%20Complet%20VF%2025%2002%2021.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.europe-en-normandie.eu/sites/default/files/2021-08/2021-2027%20RIS3%20%20-%20Complet%20VF%2025%2002%2021.pdf",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Répartition des embauches par taille d'entreprise",
+          "chart_type": "bar",
+          "x": "Taille d'entreprise",
+          "y": "% des embauches",
+          "note": "Source : INSEE, données annuelles 2020-2025, bassin d'Alençon"
+        },
+        {
+          "title": "Budget d'aide moyen par TPE vs grandes entreprises",
+          "chart_type": "donut + bar",
+          "x": "Type d'entreprise",
+          "y": "Budget d'aide moyen (€)",
+          "note": "Source : Statistiques DGE, données 2020-2025"
+        },
+        {
+          "title": "Comparaison des TPE et grandes entreprises dans l'emploi local",
+          "chart_type": "table",
+          "x": "Indicateur",
+          "y": "Valeur",
+          "note": "Inclut % des embauches et soutien financier; données INSEE, 2020-2025"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Recrutement saisonnier : bulle de croissance ou mirage ?",
+      "description": "Avec 21 % des projets liés à des emplois saisonniers, notamment dans l'agriculture, le bassin d'Alençon pourrait dépendre de cycles courts. Ces postes temporaires suffisent-ils à stabiliser le marché local ? Q: Les emplois saisonniers à Alençon offrent-ils une sécurité suffisante aux travailleurs et à l'économie locale ? Metrics: % des emplois saisonniers vs permanents, revenus moyens des travailleurs saisonniers, retour en CDD/CDI après saisonnier. Granularity: Bassin Alençon, par saison/year (2020–2025). Data: Pôle emploi, Ministère du Travail, data.gouv.fr, INSEE. Axis: Inequalities, Temporal",
+      "keywords": [
+        "emploi saisonnier",
+        "marché du travail",
+        "croissance économique",
+        "recrutement temporaire",
+        "travail saisonnier"
+      ],
+      "datasets": [
+        {
+          "title": "Pendant le pic estival, près de 800 000 postes sont occupés ... - Insee",
+          "description": "Même si ces emplois peuvent constituer une opportunité de travail pour les populations locales, 15 % des saisonniers n'habitent pas dans la",
+          "link": "https://www.insee.fr/fr/statistiques/6528835",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/6528835",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/6528835",
+            "error": null
+          }
+        },
+        {
+          "title": "Les emplois saisonniers en lien avec le tourisme sont ...",
+          "description": "Des salaires très faibles, mais un peu plus élevés dans les arts et spectacles. Les salaires des saisonniers sont plus faibles que ceux de l'ensemble des",
+          "link": "https://www.insee.fr/fr/statistiques/7672512",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/7672512",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/7672512",
+            "error": null
+          }
+        },
+        {
+          "title": "Fruits et légumes : six emplois saisonniers agricoles sur dix ...",
+          "description": "Lecture : en 2019, le taux de recours à l'emploi saisonnier agricole dans la zone d'emploi d'Angers est de 9,7 %. Cela correspond à 4 500 postes. · Champ :",
+          "link": "https://www.insee.fr/fr/statistiques/7667080",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/7667080",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/7667080",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Les activités et les emplois saisonniers en Basse-Normandie",
+          "description": "Page 3. CESR de Basse-Normandie. Les activités et les emplois saisonniers en Basse-Normandie. S O M M A I R E. INTRODUCTION .",
+          "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/a22f7ad7-2c5c-45de-9945-6f060243d67f/610_2618_r_emplois_saisonniers.pdf",
+          "source": "www.datanormandie.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/a22f7ad7-2c5c-45de-9945-6f060243d67f/610_2618_r_emplois_saisonniers.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/a22f7ad7-2c5c-45de-9945-6f060243d67f/610_2618_r_emplois_saisonniers.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] INSEE . - data Normandie",
+          "description": "Cet ouvrage décrit la Basse-Normandie et les Bas-Normands en délivra nt des statistiques sur di- vers aspects de leurs modes de vie, de l'emploi et des revenus",
+          "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ede6b433-f3a9-4bff-a910-b0ce8d008b0b/2353_6022_bnoouv00000358.pdf",
+          "source": "www.datanormandie.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ede6b433-f3a9-4bff-a910-b0ce8d008b0b/2353_6022_bnoouv00000358.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ede6b433-f3a9-4bff-a910-b0ce8d008b0b/2353_6022_bnoouv00000358.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Actif'Agri - Agreste",
+          "description": "Leurs savoirs et leurs expertises nous ont été très précieux pour mener à bien ce panorama français de la transformation des emplois et du travail agricoles.",
+          "link": "https://agreste.agriculture.gouv.fr/agreste-web/download/publication/publie/Ouv201901/Cep-actifagri-2019.pdf",
+          "source": "agreste.agriculture.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://agreste.agriculture.gouv.fr/agreste-web/download/publication/publie/Ouv201901/Cep-actifagri-2019.pdf",
+            "status": "error",
+            "http_status": null,
+            "final_url": null,
+            "error": "SSLError"
+          }
+        },
+        {
+          "title": "PANORAMA STATISTIQUE",
+          "description": "Champ : Revenu salarial annuel moyen net de prélèvements par salarié au lieu de résidence. Pauvreté, précarité, exclusion – Revenus salariaux. Page 14. 14.",
+          "link": "https://www.prefectures-regions.gouv.fr/content/download/23899/165264/file/Panorama2015-OK.pdf",
+          "source": "www.prefectures-regions.gouv.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.prefectures-regions.gouv.fr/content/download/23899/165264/file/Panorama2015-OK.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.prefectures-regions.gouv.fr/content/download/23899/165264/file/Panorama2015-OK.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Evolution des métiers et des compétences",
+          "description": "les salariés saisonniers rencontrent souvent quant à eux des difficultés à la fois d'hébergement et de mobilité en saison, et pour les",
+          "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/741e0d9f-fee4-400b-b725-81d9aa54fd7c/1453_4056_tourisme_normandie_etude2018.pdf",
+          "source": "www.datanormandie.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/741e0d9f-fee4-400b-b725-81d9aa54fd7c/1453_4056_tourisme_normandie_etude2018.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/741e0d9f-fee4-400b-b725-81d9aa54fd7c/1453_4056_tourisme_normandie_etude2018.pdf",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "[PDF] Etude prospective regionale - Pays de la Loire - Insee",
+          "description": "avec 17 % de l'emploi total, contre. 20 % en moyenne nationale. □ Les emplois saisonniers et emplois stratégiques. Les emplois liés au tourisme.",
+          "link": "https://www.bnsp.insee.fr/ark:/12148/bc6p06xt078.pdf",
+          "source": "www.bnsp.insee.fr",
+          "source_url": "https://www.bnsp.insee.fr/ark:/12148/bc6p06xt078.pdf",
+          "source_name": "www.bnsp.insee.fr",
+          "validation": {
+            "input_url": "https://www.bnsp.insee.fr/ark:/12148/bc6p06xt078.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.bnsp.insee.fr/ark:/12148/bc6p06xt078.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Tableaux Économiques des Pays de la Loire",
+          "description": "Les chiffres ne se limitent pas aux seuls domaines habituellement investis par l'INSEE, ils proviennent de l'ensemble du système statistique",
+          "link": "https://www.bnsp.insee.fr/ark:/12148/bc6p06xstpx.pdf",
+          "source": "www.bnsp.insee.fr",
+          "source_url": "https://www.bnsp.insee.fr/ark:/12148/bc6p06xstpx.pdf",
+          "source_name": "www.bnsp.insee.fr",
+          "validation": {
+            "input_url": "https://www.bnsp.insee.fr/ark:/12148/bc6p06xstpx.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.bnsp.insee.fr/ark:/12148/bc6p06xstpx.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] MÉMENTO 2020 - DRAAF Pays-de-la-Loire",
+          "description": "Saisonniers, occasionnels, ETA, CUMA. 8 724. 8 000. 9 744. 2,5 %. Total ... Source : Agreste - Statistique agricole annuelle - extraction 09/2020. 1 000",
+          "link": "https://draaf.pays-de-la-loire.agriculture.gouv.fr/IMG/pdf/Memento2020_cle48526e.pdf",
+          "source": "draaf.pays-de-la-loire.agriculture.gouv.fr",
+          "source_url": "https://draaf.pays-de-la-loire.agriculture.gouv.fr/IMG/pdf/Memento2020_cle48526e.pdf",
+          "source_name": "draaf.pays-de-la-loire.agriculture.gouv.fr",
+          "validation": {
+            "input_url": "https://draaf.pays-de-la-loire.agriculture.gouv.fr/IMG/pdf/Memento2020_cle48526e.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://draaf.pays-de-la-loire.agriculture.gouv.fr/IMG/pdf/Memento2020_cle48526e.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Evolution des métiers et des compétences - DREETS de Normandie",
+          "description": "des emplois saisonniers, que seule l'Insee est en capacité de réaliser à l'aide du fichier portant sur les déclarations annuelles de données",
+          "link": "https://normandie.dreets.gouv.fr/sites/normandie.dreets.gouv.fr/IMG/pdf/tourisme-ok-18-12-18.cl.pdf",
+          "source": "normandie.dreets.gouv.fr",
+          "source_url": "https://normandie.dreets.gouv.fr/sites/normandie.dreets.gouv.fr/IMG/pdf/tourisme-ok-18-12-18.cl.pdf",
+          "source_name": "normandie.dreets.gouv.fr",
+          "validation": {
+            "input_url": "https://normandie.dreets.gouv.fr/sites/normandie.dreets.gouv.fr/IMG/pdf/tourisme-ok-18-12-18.cl.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://normandie.dreets.gouv.fr/sites/normandie.dreets.gouv.fr/IMG/pdf/tourisme-ok-18-12-18.cl.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Vivre en Normandie en 2040",
+          "description": "Emploi directement lié au tourisme en pourcentage de l'emploi total dans la destination. B.3.2. Pourcentage d'emplois saisonniers dans le",
+          "link": "https://www.ceser.normandie.fr/sites/default/files/2021-08/rapport_tourisme_vf_web.pdf",
+          "source": "www.ceser.normandie.fr",
+          "source_url": "https://www.ceser.normandie.fr/sites/default/files/2021-08/rapport_tourisme_vf_web.pdf",
+          "source_name": "www.ceser.normandie.fr",
+          "validation": {
+            "input_url": "https://www.ceser.normandie.fr/sites/default/files/2021-08/rapport_tourisme_vf_web.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ceser.normandie.fr/sites/default/files/2021-08/rapport_tourisme_vf_web.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Emploi et territoires",
+          "description": "Ce nouveau rapport met ainsi en évidence la concentration de l'emploi dans les grandes aires urbaines ainsi qu'un décalage croissant entre loca- lisation des",
+          "link": "https://www.observatoire-des-territoires.gouv.fr/sites/default/files/2020-02/rapport_2016_-_emploi_et_territoires_-_integral-compresse.pdf",
+          "source": "www.observatoire-des-territoires.gouv.fr",
+          "source_url": "https://www.observatoire-des-territoires.gouv.fr/sites/default/files/2020-02/rapport_2016_-_emploi_et_territoires_-_integral-compresse.pdf",
+          "source_name": "www.observatoire-des-territoires.gouv.fr",
+          "validation": {
+            "input_url": "https://www.observatoire-des-territoires.gouv.fr/sites/default/files/2020-02/rapport_2016_-_emploi_et_territoires_-_integral-compresse.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.observatoire-des-territoires.gouv.fr/sites/default/files/2020-02/rapport_2016_-_emploi_et_territoires_-_integral-compresse.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Partie 1 Etat des lieux - Conseil régional des Pays de la Loire",
+          "description": "La croissance devrait être surtout marquée sur le littoral et dans l'espace périurbain : la hausse démographique serait très forte dans les",
+          "link": "https://www.paysdelaloire.fr/sites/default/files/2020-02/fonds-europenns2014-2020-diagnostic-et-enjeux.pdf",
+          "source": "www.paysdelaloire.fr",
+          "source_url": "https://www.paysdelaloire.fr/sites/default/files/2020-02/fonds-europenns2014-2020-diagnostic-et-enjeux.pdf",
+          "source_name": "www.paysdelaloire.fr",
+          "validation": {
+            "input_url": "https://www.paysdelaloire.fr/sites/default/files/2020-02/fonds-europenns2014-2020-diagnostic-et-enjeux.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.paysdelaloire.fr/sites/default/files/2020-02/fonds-europenns2014-2020-diagnostic-et-enjeux.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "PLUi – Rapport de présentation – Approbation du 14 ...",
+          "description": "... Alençon, le tissage reste une activité domestique qui procure aux ouvriers ruraux un complément de revenu saisonnier. L'organisation",
+          "link": "https://www.cu-alencon.fr/app/uploads/2025/01/1_RAPPORT_DE_PRESENTATION_1.2.1-1.2.2_Diagnostic_compressed-avec-compression.pdf",
+          "source": "www.cu-alencon.fr",
+          "source_url": "https://www.cu-alencon.fr/app/uploads/2025/01/1_RAPPORT_DE_PRESENTATION_1.2.1-1.2.2_Diagnostic_compressed-avec-compression.pdf",
+          "source_name": "www.cu-alencon.fr",
+          "validation": {
+            "input_url": "https://www.cu-alencon.fr/app/uploads/2025/01/1_RAPPORT_DE_PRESENTATION_1.2.1-1.2.2_Diagnostic_compressed-avec-compression.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.cu-alencon.fr/app/uploads/2025/01/1_RAPPORT_DE_PRESENTATION_1.2.1-1.2.2_Diagnostic_compressed-avec-compression.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Pénurie de logements pour les saisonniers : \"Si je n'ai pas un ...",
+          "description": "Tous les ans, dans la région, ce sont plus de 200 000 emplois saisonniers qui sont pourvus par 152 000 salariés, sans compter les 191 000",
+          "link": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/gironde/bordeaux/penurie-de-logements-pour-les-saisonniers-si-je-n-ai-pas-un-bon-lit-je-n-accepte-meme-pas-le-poste-2757638.html",
+          "source": "france3-regions.franceinfo.fr",
+          "source_url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/gironde/bordeaux/penurie-de-logements-pour-les-saisonniers-si-je-n-ai-pas-un-bon-lit-je-n-accepte-meme-pas-le-poste-2757638.html",
+          "source_name": "france3-regions.franceinfo.fr",
+          "validation": {
+            "input_url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/gironde/bordeaux/penurie-de-logements-pour-les-saisonniers-si-je-n-ai-pas-un-bon-lit-je-n-accepte-meme-pas-le-poste-2757638.html",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/gironde/bordeaux/penurie-de-logements-pour-les-saisonniers-si-je-n-ai-pas-un-bon-lit-je-n-accepte-meme-pas-le-poste-2757638.html",
+            "error": null
+          }
+        },
+        {
+          "title": "Regard sur les zones d'emploi en région Centre",
+          "description": "... salariés (2006). 67 082. 903 537. Taux de chômage. (1T 2009). 7,9 %. 7,8 %. Sources : Population : Insee, RP 2006. Effectifs salariés : Insee, Estimations d'",
+          "link": "https://observationsociale-centre.org/images/publications/pdf/RegardZE.pdf",
+          "source": "observationsociale-centre.org",
+          "source_url": "https://observationsociale-centre.org/images/publications/pdf/RegardZE.pdf",
+          "source_name": "observationsociale-centre.org",
+          "validation": {
+            "input_url": "https://observationsociale-centre.org/images/publications/pdf/RegardZE.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://observationsociale-centre.org/images/publications/pdf/RegardZE.pdf",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Répartition des emplois saisonniers vs permanents (2020-2025)",
+          "chart_type": "bar",
+          "x": "Année",
+          "y": "% des emplois",
+          "note": "Source : Pôle emploi, données annuelles"
+        },
+        {
+          "title": "Revenus moyens des travailleurs saisonniers (2020-2025)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Revenus moyens (€)",
+          "note": "Source : INSEE, données annuelles"
+        },
+        {
+          "title": "Taux de conversion saisonnier vers CDD/CDI (2020-2025)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Taux de conversion (%)",
+          "note": "Source : Ministère du Travail, données annuelles"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Pourquoi l'industrie manufacturière décline à Alençon",
+      "description": "Alors que l'industrie manufacturière ne compte que pour 4 % des projets d'embauche à Alençon, cela contraste fortement avec la moyenne régionale. Ce déclin pose la question de son attractivité et de son avenir. Q: Quelles sont les raisons du faible taux d'embauches dans l'industrie manufacturière à Alençon ? Metrics: % d'embauches industrielles, croissance/déclin du secteur, comparaison avec d'autres bassins industriels. Granularity: Bassin Alençon vs Normandie, années 2015-2025. Data: INSEE, Eurostat, Ministère de l'Économie, data.gouv.fr. Axis: Geographic, Policy",
+      "keywords": [
+        "industrie manufacturière",
+        "déclin économique",
+        "emploi Alençon",
+        "fermeture d'usines",
+        "chômage industriel"
+      ],
+      "datasets": [
+        {
+          "title": "Malgré la baisse de l'emploi, la Normandie maintient son caractère ...",
+          "description": "L'industrie normande, hors intérim, rassemble en 2014 plus de 200 000 salariés. Elle regroupe 18,9 % des emplois salariés de la région, une part",
+          "link": "https://www.insee.fr/fr/statistiques/2570837",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/2570837",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/2570837",
+            "error": null
+          }
+        },
+        {
+          "title": "Insee Analyses Auvergne-Rhône-Alpes - 159",
+          "description": "Les activités industrielles, surreprésentées dans les AAV moyennes (18 % de l'emploi) subissent des pertes d'emplois qui pénalisent certaines d'",
+          "link": "https://www.insee.fr/fr/statistiques/6798978",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/6798978",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/6798978",
+            "error": null
+          }
+        },
+        {
+          "title": "Toujours pas d'embellie économique dans l'Orne",
+          "description": "La crise affecte tous les secteurs économiques dans l'Orne. Dans l'industrie, le recul de l'emploi salarié (- 2,6 %) est plus fort qu'au niveau",
+          "link": "https://www.insee.fr/fr/statistiques/1285543",
+          "source": "www.insee.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.insee.fr/fr/statistiques/1285543",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.insee.fr/fr/statistiques/1285543",
+            "error": null
+          }
+        },
+        {
+          "title": "L'enquête Besoins en Main-d'Œuvre 2025 |France Travail",
+          "description": "**Image 14: Calvados 32 008 projets en  202526,2%** des établissements du département prévoient de recruter en 2025. Avec **32 008 projets** de recrutement émis, le département du Calvados concentre 29% des intentions d'embauche de la région. Image 22: 19 435 projets en 2025**27,4%** des établissements du département prévoient de recruter en 2025. Image 28: Orne : 8 223 projets de recrutement en 2024**21,2%** des établissements du département prévoient de recruter en 2025. Image 35: 14 351 projets en 2025**21,8%** des établissements du département prévoient de recruter en 2025. Image 45: Seine-Maritime: 37 790 projets de recrutement en 2025**23,1%** des établissements du département prévoient de recruter en 2025. Image 64: 50_commerce_bmo18x5455.png (50_commerce_bmo18)**21,8%** des établissements du secteur prévoient de recruter en 2025.",
+          "link": "https://www.francetravail.fr/region/normandie/les-publications-statistiques/les-entreprises-et-lemploi/lenquete-besoins-en-main-doeuvre.html",
+          "source": "www.francetravail.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.francetravail.fr/region/normandie/les-publications-statistiques/les-entreprises-et-lemploi/lenquete-besoins-en-main-doeuvre.html",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.francetravail.fr/region/normandie/les-publications-statistiques/les-entreprises-et-lemploi/lenquete-besoins-en-main-doeuvre.html",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Rapport Industrie - data Normandie",
+          "description": "L'industrie manufacturière en France en 2008 : quelles ruptures ? Note de conjoncture de l'INSEE -. Décembre 2012. Page 13. CESER de Basse-Normandie. L'avenir",
+          "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ad9c73bc-e3bb-4884-a1cc-3cfa0e2f24b4/873_2782_rapport_industrie.pdf",
+          "source": "www.datanormandie.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ad9c73bc-e3bb-4884-a1cc-3cfa0e2f24b4/873_2782_rapport_industrie.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ad9c73bc-e3bb-4884-a1cc-3cfa0e2f24b4/873_2782_rapport_industrie.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Stat'urconjoncture",
+          "description": "En France. Au premier trimestre 2025, les effectifs salariés sont en baisse de 0,1 % sur le territoire national (- 21 000 postes). Cette dimi-.",
+          "link": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2025/PDL_Statur_64.pdf",
+          "source": "www.urssaf.org",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2025/PDL_Statur_64.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2025/PDL_Statur_64.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Stat'urconjoncture",
+          "description": "En France. Au deuxième trimestre 2024, les effectifs salariés du secteur privé diminuent de 0,1 % (- 20 000 postes), après le rebond.",
+          "link": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2024/PDL_Statur_61.pdf",
+          "source": "www.urssaf.org",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2024/PDL_Statur_61.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2024/PDL_Statur_61.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "la situation economique et de l'emploi en basse- ...",
+          "description": "De façon détaillée, il apparaît que cette diminution est surtout imputable à l'intérim dont les effectifs auraient baissé en 2011 de 394 emplois",
+          "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/6aa6f1a1-3bc1-4871-9c0a-9303c9d4fabe/646_2553_rapport_see2012.pdf",
+          "source": "www.datanormandie.fr",
+          "found_by": "LLM",
+          "formats": [],
+          "organisation": null,
+          "licence": null,
+          "last_modified": "",
+          "richness": 0,
+          "validation": {
+            "input_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/6aa6f1a1-3bc1-4871-9c0a-9303c9d4fabe/646_2553_rapport_see2012.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/6aa6f1a1-3bc1-4871-9c0a-9303c9d4fabe/646_2553_rapport_see2012.pdf",
+            "error": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "title": "Contexte national - Bilan économique 2017 - Normandie",
+          "description": "Après quatre années de baisse, 2016 avait marqué une reprise sur le terrain de l'emploi en Normandie, avec un gain de 3 700 salariés,",
+          "link": "https://www.bnsp.insee.fr/ark:/12148/bc6p0713qsf.pdf",
+          "source": "www.bnsp.insee.fr",
+          "source_url": "https://www.bnsp.insee.fr/ark:/12148/bc6p0713qsf.pdf",
+          "source_name": "www.bnsp.insee.fr",
+          "validation": {
+            "input_url": "https://www.bnsp.insee.fr/ark:/12148/bc6p0713qsf.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.bnsp.insee.fr/ark:/12148/bc6p0713qsf.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Des intentions d'embauche en baisse, mais des difficultés ... - Actu.fr",
+          "description": "Les entreprises d'Alençon (Orne) et de ses alentours prévoient 2 355 recrutements en 2025. Un chiffre en légère baisse, mais qui cache de fortes",
+          "link": "https://actu.fr/normandie/alencon_61001/des-intentions-dembauche-en-baisse-mais-des-difficultes-de-recrutement-dans-le-bassin-dalencon_63000777.html",
+          "source": "actu.fr",
+          "source_url": "https://actu.fr/normandie/alencon_61001/des-intentions-dembauche-en-baisse-mais-des-difficultes-de-recrutement-dans-le-bassin-dalencon_63000777.html",
+          "source_name": "actu.fr",
+          "validation": {
+            "input_url": "https://actu.fr/normandie/alencon_61001/des-intentions-dembauche-en-baisse-mais-des-difficultes-de-recrutement-dans-le-bassin-dalencon_63000777.html",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://actu.fr/normandie/alencon_61001/des-intentions-dembauche-en-baisse-mais-des-difficultes-de-recrutement-dans-le-bassin-dalencon_63000777.html",
+            "error": null
+          }
+        },
+        {
+          "title": "Intentions d'embauche en Normandie - Normandie",
+          "description": "25,9% des établissements du département prévoient de recruter en 2021. Avec 19 018 projets de recrutement émis, le département de la Manche concentre 17% des",
+          "link": "https://www.medefnormandie.fr/fr/actualite/intentions-dembauche-en-normandie",
+          "source": "www.medefnormandie.fr",
+          "source_url": "https://www.medefnormandie.fr/fr/actualite/intentions-dembauche-en-normandie",
+          "source_name": "www.medefnormandie.fr",
+          "validation": {
+            "input_url": "https://www.medefnormandie.fr/fr/actualite/intentions-dembauche-en-normandie",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.medefnormandie.fr/fr/actualite/intentions-dembauche-en-normandie",
+            "error": null
+          }
+        },
+        {
+          "title": "Dans l'Orne, plus d'une entreprise sur cinq compte recruter en 2025 ...",
+          "description": "Des niveaux d'avant-Covid. Ainsi, 21,2 % des entreprises du territoire comptent recruter pour l'année 2025 dans l'Orne. Cela représente 8 223",
+          "link": "https://www.ouest-france.fr/economie/entreprises/recrutement/dans-lorne-plus-dune-entreprise-sur-cinq-compte-recruter-en-2025-selon-france-travail-181d19ac-1b70-11f0-a759-74724e64dd56",
+          "source": "www.ouest-france.fr",
+          "source_url": "https://www.ouest-france.fr/economie/entreprises/recrutement/dans-lorne-plus-dune-entreprise-sur-cinq-compte-recruter-en-2025-selon-france-travail-181d19ac-1b70-11f0-a759-74724e64dd56",
+          "source_name": "www.ouest-france.fr",
+          "validation": {
+            "input_url": "https://www.ouest-france.fr/economie/entreprises/recrutement/dans-lorne-plus-dune-entreprise-sur-cinq-compte-recruter-en-2025-selon-france-travail-181d19ac-1b70-11f0-a759-74724e64dd56",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ouest-france.fr/economie/entreprises/recrutement/dans-lorne-plus-dune-entreprise-sur-cinq-compte-recruter-en-2025-selon-france-travail-181d19ac-1b70-11f0-a759-74724e64dd56",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Territoire d'industrie Alençon",
+          "description": "TI Alençon. ÉVOLUTION DE L' EMPLOI SALARIÉ DANS L'INDUSTRIE MANUFACTURIÈRE ENTRE 2008 ET 2021. Source : Insee, CLAP 2008-2015, Flores 2016-2021, SIRUS 2015",
+          "link": "https://anct-site-prod.s3.fr-par.scw.cloud/s3fs-public/2024-10/TI_Normandie_Alen%C3%A7on.pdf",
+          "source": "anct-site-prod.s3.fr-par.scw.cloud",
+          "source_url": "https://anct-site-prod.s3.fr-par.scw.cloud/s3fs-public/2024-10/TI_Normandie_Alen%C3%A7on.pdf",
+          "source_name": "anct-site-prod.s3.fr-par.scw.cloud",
+          "validation": {
+            "input_url": "https://anct-site-prod.s3.fr-par.scw.cloud/s3fs-public/2024-10/TI_Normandie_Alen%C3%A7on.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://anct-site-prod.s3.fr-par.scw.cloud/s3fs-public/2024-10/TI_Normandie_Alen%C3%A7on.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "[PDF] Guide de l'industrie locale - Communauté Urbaine d'Alençon",
+          "description": "Composé d'entreprises innovantes, performantes et qui brillent par leurs savoir-faire, le tissu industriel local comprend environ. 120 entreprises et concentre",
+          "link": "https://www.cu-alencon.fr/app/uploads/2024/11/GUIDE_Octobre_2024.pdf",
+          "source": "www.cu-alencon.fr",
+          "source_url": "https://www.cu-alencon.fr/app/uploads/2024/11/GUIDE_Octobre_2024.pdf",
+          "source_name": "www.cu-alencon.fr",
+          "validation": {
+            "input_url": "https://www.cu-alencon.fr/app/uploads/2024/11/GUIDE_Octobre_2024.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.cu-alencon.fr/app/uploads/2024/11/GUIDE_Octobre_2024.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Panorama de l'emploi pour le département ORNE | Data Emploi",
+          "description": "Retrouvez les indicateurs clés de l'emploi pour aider à décrypter les enjeux et leviers d'action de ce territoire (Dynamisme, Chômage, Demandeurs, Offres…)",
+          "link": "https://dataemploi.francetravail.fr/emploi/panorama/DEP/61?cod=",
+          "source": "dataemploi.francetravail.fr",
+          "source_url": "https://dataemploi.francetravail.fr/emploi/panorama/DEP/61?cod=",
+          "source_name": "dataemploi.francetravail.fr",
+          "validation": {
+            "input_url": "https://dataemploi.francetravail.fr/emploi/panorama/DEP/61?cod=",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://dataemploi.francetravail.fr/emploi/panorama/DEP/61?cod=",
+            "error": null
+          }
+        },
+        {
+          "title": "Arrondissement de Alençon Situation de l'emploi et du ...",
+          "description": "Les 15 principaux établissements par secteur- Extraction janvier 2024. Source : INSEE Sirene - Traitement Carif-Oref de Normandie. Arrondissement de Alençon.",
+          "link": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_arrondissement_alencon.pdf",
+          "source": "fichiers.cariforefnormandie.fr",
+          "source_url": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_arrondissement_alencon.pdf",
+          "source_name": "fichiers.cariforefnormandie.fr",
+          "validation": {
+            "input_url": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_arrondissement_alencon.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_arrondissement_alencon.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "Situation de l'emploi et du marché du travail Orne",
+          "description": "Les secteurs en NAF 5 (emploi total) – 2020. Source : INSEE (Recensement de la Population) - Traitement Carif-Oref de Normandie. Les 10 principaux secteurs d",
+          "link": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_departement_orne.pdf",
+          "source": "fichiers.cariforefnormandie.fr",
+          "source_url": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_departement_orne.pdf",
+          "source_name": "fichiers.cariforefnormandie.fr",
+          "validation": {
+            "input_url": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_departement_orne.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://fichiers.cariforefnormandie.fr/bo/animation_territoriale/situation_emploi_departement_orne.pdf",
+            "error": null
+          }
+        },
+        {
+          "title": "RAPPORT - CESER Normandie",
+          "description": "solidaire (ESS) procurait en Normandie au 1er janvier 2015 selon l'INSEE un emploi à 116 177 salariés et représentait de ce fait 11,0 % de l'emploi salarié",
+          "link": "https://www.ceser.normandie.fr/sites/default/files/imports/publications/pdf/etude/Situation_eco_emploi_Etude.pdf",
+          "source": "www.ceser.normandie.fr",
+          "source_url": "https://www.ceser.normandie.fr/sites/default/files/imports/publications/pdf/etude/Situation_eco_emploi_Etude.pdf",
+          "source_name": "www.ceser.normandie.fr",
+          "validation": {
+            "input_url": "https://www.ceser.normandie.fr/sites/default/files/imports/publications/pdf/etude/Situation_eco_emploi_Etude.pdf",
+            "status": "ok",
+            "http_status": 200,
+            "final_url": "https://www.ceser.normandie.fr/sites/default/files/imports/publications/pdf/etude/Situation_eco_emploi_Etude.pdf",
+            "error": null
+          }
+        }
+      ],
+      "visualizations": [
+        {
+          "title": "Évolution des embauches industrielles à Alençon vs Normandie (2015-2025)",
+          "chart_type": "line",
+          "x": "Année",
+          "y": "Pourcentage d'embauches industrielles",
+          "note": "Source : INSEE, comparaison entre Alençon et la moyenne régionale"
+        },
+        {
+          "title": "Comparaison du déclin industriel : Alençon vs autres bassins (2025)",
+          "chart_type": "bar",
+          "x": "Bassin industriel",
+          "y": "Taux de déclin (%)",
+          "note": "Source : Eurostat, Ministère de l'Économie, données pour l'année 2025"
+        },
+        {
+          "title": "Répartition sectorielle des projets d'embauche à Alençon (2025)",
+          "chart_type": "donut",
+          "x": "Secteur",
+          "y": "Pourcentage des projets d'embauche",
+          "note": "Source : data.gouv.fr, données pour l'année 2025"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": 5904,
+      "type": "ORG",
+      "value": "France Travail Normandie",
+      "context": null
+    },
+    {
+      "id": 5905,
+      "type": "ORG",
+      "value": "Crédoc",
+      "context": null
+    },
+    {
+      "id": 5906,
+      "type": "LOC",
+      "value": "Alençon",
+      "context": null
+    },
+    {
+      "id": 5907,
+      "type": "LOC",
+      "value": "Orne",
+      "context": null
+    },
+    {
+      "id": 5908,
+      "type": "LOC",
+      "value": "Normandie",
+      "context": null
+    },
+    {
+      "id": 5909,
+      "type": "NUM",
+      "value": "0.25",
+      "context": null
+    },
+    {
+      "id": 5910,
+      "type": "NUM",
+      "value": "2355.0",
+      "context": null
+    },
+    {
+      "id": 5911,
+      "type": "NUM",
+      "value": "24.7",
+      "context": null
+    },
+    {
+      "id": 5912,
+      "type": "NUM",
+      "value": "1.6",
+      "context": null
+    },
+    {
+      "id": 5913,
+      "type": "NUM",
+      "value": "2400.0",
+      "context": null
+    },
+    {
+      "id": 5914,
+      "type": "NUM",
+      "value": "0.6",
+      "context": null
+    },
+    {
+      "id": 5915,
+      "type": "NUM",
+      "value": "61.0",
+      "context": null
+    },
+    {
+      "id": 5916,
+      "type": "NUM",
+      "value": "53.0",
+      "context": null
+    },
+    {
+      "id": 5917,
+      "type": "NUM",
+      "value": "44.0",
+      "context": null
+    },
+    {
+      "id": 5918,
+      "type": "NUM",
+      "value": "18.0",
+      "context": null
+    },
+    {
+      "id": 5919,
+      "type": "NUM",
+      "value": "10.0",
+      "context": null
+    },
+    {
+      "id": 5920,
+      "type": "NUM",
+      "value": "11.0",
+      "context": null
+    },
+    {
+      "id": 5921,
+      "type": "NUM",
+      "value": "4.0",
+      "context": null
+    },
+    {
+      "id": 5922,
+      "type": "NUM",
+      "value": "9.0",
+      "context": null
+    },
+    {
+      "id": 5923,
+      "type": "NUM",
+      "value": "12.0",
+      "context": null
+    },
+    {
+      "id": 5924,
+      "type": "NUM",
+      "value": "45.0",
+      "context": null
+    },
+    {
+      "id": 5925,
+      "type": "NUM",
+      "value": "0.33",
+      "context": null
+    },
+    {
+      "id": 5926,
+      "type": "NUM",
+      "value": "19.0",
+      "context": null
+    },
+    {
+      "id": 5927,
+      "type": "NUM",
+      "value": "21.0",
+      "context": null
+    }
+  ],
+  "angles": [
+    {
+      "id": 941,
+      "title": "Où sont les métiers en tension ?",
+      "description": "Les difficultés de recrutement dans le bassin d'Alençon peuvent éclairer d'autres territoires en France. Alors que 61 % des employeurs ici peinent à embaucher, des tensions similaires pourraient émerger ailleurs, surtout dans les métiers essentiels mais peu valorisés. Q: Les secteurs en tension dans le bassin d'Alençon reflètent-ils une tendance nationale ou régionale ? Metrics: % d'offres non pourvues, temps moyen pour pourvoir un poste, taux de turn-over par secteur. Granularity: Région Alençon vs autres régions, années 2020–2025. Data: INSEE, data.gouv.fr, Pôle emploi, France Travail. Axis: Geographic, Temporal",
+      "order": 0,
+      "visualizations": []
+    },
+    {
+      "id": 942,
+      "title": "Les TPE, sauveuses méconnues du bassin d'Alençon",
+      "description": "Près de la moitié des projets de recrutement à Alençon proviennent de très petites entreprises (TPE), révélant leur rôle crucial dans le marché de l'emploi local. Cette dynamique particulière questionne l'appui et les politiques qui leur sont dédiées. Q: Les TPE du bassin d'Alençon reçoivent-elles suffisamment de soutien pour développer leurs recrutements ? Metrics: % des embauches par taille d'entreprise, budget d'aide par TPE, comparaison TPE/grandes entreprises. Granularity: Bassin Alençon, données annuelles 2020-2025. Data: INSEE, Statistiques DGE, Eurostat, data.gouv.fr. Axis: Policy, DataQuality",
+      "order": 1,
+      "visualizations": []
+    },
+    {
+      "id": 943,
+      "title": "Recrutement saisonnier : bulle de croissance ou mirage ?",
+      "description": "Avec 21 % des projets liés à des emplois saisonniers, notamment dans l'agriculture, le bassin d'Alençon pourrait dépendre de cycles courts. Ces postes temporaires suffisent-ils à stabiliser le marché local ? Q: Les emplois saisonniers à Alençon offrent-ils une sécurité suffisante aux travailleurs et à l'économie locale ? Metrics: % des emplois saisonniers vs permanents, revenus moyens des travailleurs saisonniers, retour en CDD/CDI après saisonnier. Granularity: Bassin Alençon, par saison/year (2020–2025). Data: Pôle emploi, Ministère du Travail, data.gouv.fr, INSEE. Axis: Inequalities, Temporal",
+      "order": 2,
+      "visualizations": []
+    },
+    {
+      "id": 944,
+      "title": "Pourquoi l'industrie manufacturière décline à Alençon",
+      "description": "Alors que l'industrie manufacturière ne compte que pour 4 % des projets d'embauche à Alençon, cela contraste fortement avec la moyenne régionale. Ce déclin pose la question de son attractivité et de son avenir. Q: Quelles sont les raisons du faible taux d'embauches dans l'industrie manufacturière à Alençon ? Metrics: % d'embauches industrielles, croissance/déclin du secteur, comparaison avec d'autres bassins industriels. Granularity: Bassin Alençon vs Normandie, années 2015-2025. Data: INSEE, Eurostat, Ministère de l'Économie, data.gouv.fr. Axis: Geographic, Policy",
+      "order": 3,
+      "visualizations": []
+    }
+  ],
+  "datasets": [
+    {
+      "id": 4407,
+      "title": "Fruits et légumes : six emplois saisonniers agricoles sur dix ...",
+      "description": "Lecture : en 2019, le taux de recours à l'emploi saisonnier agricole dans la zone d'emploi d'Angers est de 9,7 %. Cela correspond à 4 500 postes. · Champ :",
+      "link": "https://www.insee.fr/fr/statistiques/7667080",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4408,
+      "title": "[PDF] Les activités et les emplois saisonniers en Basse-Normandie",
+      "description": "Page 3. CESR de Basse-Normandie. Les activités et les emplois saisonniers en Basse-Normandie. S O M M A I R E. INTRODUCTION .",
+      "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/a22f7ad7-2c5c-45de-9945-6f060243d67f/610_2618_r_emplois_saisonniers.pdf",
+      "source": "www.datanormandie.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4409,
+      "title": "[PDF] INSEE . - data Normandie",
+      "description": "Cet ouvrage décrit la Basse-Normandie et les Bas-Normands en délivra nt des statistiques sur di- vers aspects de leurs modes de vie, de l'emploi et des revenus",
+      "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ede6b433-f3a9-4bff-a910-b0ce8d008b0b/2353_6022_bnoouv00000358.pdf",
+      "source": "www.datanormandie.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4392,
+      "title": "En 2022, 58 % des nouveaux bacheliers quittent leur zone ...",
+      "description": "Lecture : En 2022, 84,5 % des néo-bacheliers résidant dans la zone d'emploi d'Alençon quittent cette zone d'emploi à l'entrée dans l'enseignement supérieur.",
+      "link": "https://www.insee.fr/fr/statistiques/fichier/8324188/ip2031.pdf",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4393,
+      "title": "Une forte implantation de l'automobile, notamment dans le nord-est ...",
+      "description": "Dans les Pays de la Loire, les établissements de la filière automobile emploient 32 700 salariés, dont 19 900 sont dédiés à leur activité",
+      "link": "https://www.insee.fr/fr/statistiques/8228982",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4394,
+      "title": "Offre d'emploi Comptable (H/F) - 61 - ALENCON - 196NZLZ",
+      "description": "Offre publiée aujourd'hui - CDD - 5 Mois - 36H/semaine Travail en journée - Salaire : Annuel de 26700.0 Euros à 26800.0 Euros sur 14.0 mois",
+      "link": "https://candidat.francetravail.fr/offres/recherche/detail/196NZLZ",
+      "source": "candidat.francetravail.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4395,
+      "title": "Les activités et les emplois saisonniers en Basse-Normandie",
+      "description": "• Les offres d'emploi déposées à l'ANPE. Les données concernant les offres d'emploi déposées à l'ANPE peuvent, en tant que de besoin",
+      "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/a22f7ad7-2c5c-45de-9945-6f060243d67f/610_2618_r_emplois_saisonniers.pdf",
+      "source": "www.datanormandie.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4396,
+      "title": "Offre n° 196SBRP Chargé(e) d'affaires (H/F) - Espace personnel",
+      "description": "Offre publiée il y a 8 jours - CDI - 37H30/semaine Travail en journée - Salaire : Mensuel de 3200.0 Euros à 3500.0 Euros sur 12.0 mois",
+      "link": "https://candidat.francetravail.fr/offres/recherche/detail/196SBRP",
+      "source": "candidat.francetravail.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4397,
+      "title": "[PDF] Rapport Industrie - data Normandie",
+      "description": "ratio du fait du turn over important affectant ce type de création. Au plan détaillé, c'est-à-dire par secteurs d'activité, il apparaît qu'au plan régional",
+      "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ad9c73bc-e3bb-4884-a1cc-3cfa0e2f24b4/873_2782_rapport_industrie.pdf",
+      "source": "www.datanormandie.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4398,
+      "title": "[PDF] Pays de la Loire - Urssaf.org",
+      "description": "nouvelle baisse des effectifs salariés de. 0,8 %. Sur un an, ce secteur a perdu plus de 80 000 postes. L'ensemble du territoire national crée à.",
+      "link": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2021/46/Statur_paysdelaoire_046.pdf",
+      "source": "www.urssaf.org",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4399,
+      "title": "Déclarations d'embauche - Pays de la Loire | Insee - Insee",
+      "description": "Avec 1,35 million de déclarations en 2022, le nombre d'embauches atteint l'un de ses niveaux les plus importants depuis l'an 2000.",
+      "link": "https://www.insee.fr/fr/statistiques/7618703?sommaire=7343471",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4400,
+      "title": "Déclarations d'embauche - Pays de la Loire | - Insee",
+      "description": "tableauFigure 2 – Évolution des embauches par zone d'emploi et par type d'embauche, entre 2022 et 2023 dans les Pays de la Loire ; 3,9, 3,3, -3,0",
+      "link": "https://www.insee.fr/fr/statistiques/8186166?sommaire=7936552",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4401,
+      "title": "[PDF] LES DÉCLARATIONS PRÉALABLES À L'EMBAUCHE (DPAE) Bilan ...",
+      "description": "Données brutes - Cumul 2023. Bassin d'Alençon. Évolution annuelle. > Par type de contrat. CDI. 3 679. -2,4%. CDD de plus de 6 mois. 1 897. -1,8%. CDD de 1 à 6",
+      "link": "https://www.francetravail.fr/files/live/sites/normandie/files/normandie/plus-dinfos/statistiques/diagnostics/DPAE_Alencon",
+      "source": "www.francetravail.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4402,
+      "title": "[PDF] Stat'urconjoncture - Urssaf.org",
+      "description": "En France. Au deuxième trimestre 2024, les effectifs salariés du secteur privé diminuent de 0,1 % (- 20 000 postes), après le rebond.",
+      "link": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2024/PDL_Statur_61.pdf",
+      "source": "www.urssaf.org",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4403,
+      "title": "[PDF] Pays de la Loire - Urssaf.org",
+      "description": "nouvelle baisse des effectifs salariés de. 0,8 %. Sur un an, ce secteur a perdu plus de 80 000 postes. L'ensemble du territoire national crée à.",
+      "link": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2021/46/Statur_paysdelaoire_046.pdf",
+      "source": "www.urssaf.org",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4404,
+      "title": "[PDF] TRANSFORMATION ET FONCTION PUBLIQUES - budget.gouv",
+      "description": "Cette annexe au projet de loi de règlement des comptes et rapport de gestion pour l'année 2022 est prévue par l'article.",
+      "link": "https://www.budget.gouv.fr/documentation/file-download/20286",
+      "source": "www.budget.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4405,
+      "title": "Pendant le pic estival, près de 800 000 postes sont occupés ... - Insee",
+      "description": "Même si ces emplois peuvent constituer une opportunité de travail pour les populations locales, 15 % des saisonniers n'habitent pas dans la",
+      "link": "https://www.insee.fr/fr/statistiques/6528835",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4406,
+      "title": "Les emplois saisonniers en lien avec le tourisme sont ...",
+      "description": "Des salaires très faibles, mais un peu plus élevés dans les arts et spectacles. Les salaires des saisonniers sont plus faibles que ceux de l'ensemble des",
+      "link": "https://www.insee.fr/fr/statistiques/7672512",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4410,
+      "title": "[PDF] Actif'Agri - Agreste",
+      "description": "Leurs savoirs et leurs expertises nous ont été très précieux pour mener à bien ce panorama français de la transformation des emplois et du travail agricoles.",
+      "link": "https://agreste.agriculture.gouv.fr/agreste-web/download/publication/publie/Ouv201901/Cep-actifagri-2019.pdf",
+      "source": "agreste.agriculture.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4411,
+      "title": "PANORAMA STATISTIQUE",
+      "description": "Champ : Revenu salarial annuel moyen net de prélèvements par salarié au lieu de résidence. Pauvreté, précarité, exclusion – Revenus salariaux. Page 14. 14.",
+      "link": "https://www.prefectures-regions.gouv.fr/content/download/23899/165264/file/Panorama2015-OK.pdf",
+      "source": "www.prefectures-regions.gouv.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4412,
+      "title": "Evolution des métiers et des compétences",
+      "description": "les salariés saisonniers rencontrent souvent quant à eux des difficultés à la fois d'hébergement et de mobilité en saison, et pour les",
+      "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/741e0d9f-fee4-400b-b725-81d9aa54fd7c/1453_4056_tourisme_normandie_etude2018.pdf",
+      "source": "www.datanormandie.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4413,
+      "title": "Malgré la baisse de l'emploi, la Normandie maintient son caractère ...",
+      "description": "L'industrie normande, hors intérim, rassemble en 2014 plus de 200 000 salariés. Elle regroupe 18,9 % des emplois salariés de la région, une part",
+      "link": "https://www.insee.fr/fr/statistiques/2570837",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4414,
+      "title": "Insee Analyses Auvergne-Rhône-Alpes - 159",
+      "description": "Les activités industrielles, surreprésentées dans les AAV moyennes (18 % de l'emploi) subissent des pertes d'emplois qui pénalisent certaines d'",
+      "link": "https://www.insee.fr/fr/statistiques/6798978",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4415,
+      "title": "Toujours pas d'embellie économique dans l'Orne",
+      "description": "La crise affecte tous les secteurs économiques dans l'Orne. Dans l'industrie, le recul de l'emploi salarié (- 2,6 %) est plus fort qu'au niveau",
+      "link": "https://www.insee.fr/fr/statistiques/1285543",
+      "source": "www.insee.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4416,
+      "title": "L'enquête Besoins en Main-d'Œuvre 2025 |France Travail",
+      "description": "**Image 14: Calvados 32 008 projets en  202526,2%** des établissements du département prévoient de recruter en 2025. Avec **32 008 projets** de recrutement émis, le département du Calvados concentre 29% des intentions d'embauche de la région. Image 22: 19 435 projets en 2025**27,4%** des établissements du département prévoient de recruter en 2025. Image 28: Orne : 8 223 projets de recrutement en 2024**21,2%** des établissements du département prévoient de recruter en 2025. Image 35: 14 351 projets en 2025**21,8%** des établissements du département prévoient de recruter en 2025. Image 45: Seine-Maritime: 37 790 projets de recrutement en 2025**23,1%** des établissements du département prévoient de recruter en 2025. Image 64: 50_commerce_bmo18x5455.png (50_commerce_bmo18)**21,8%** des établissements du secteur prévoient de recruter en 2025.",
+      "link": "https://www.francetravail.fr/region/normandie/les-publications-statistiques/les-entreprises-et-lemploi/lenquete-besoins-en-main-doeuvre.html",
+      "source": "www.francetravail.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4417,
+      "title": "[PDF] Rapport Industrie - data Normandie",
+      "description": "L'industrie manufacturière en France en 2008 : quelles ruptures ? Note de conjoncture de l'INSEE -. Décembre 2012. Page 13. CESER de Basse-Normandie. L'avenir",
+      "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/ad9c73bc-e3bb-4884-a1cc-3cfa0e2f24b4/873_2782_rapport_industrie.pdf",
+      "source": "www.datanormandie.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4418,
+      "title": "Stat'urconjoncture",
+      "description": "En France. Au premier trimestre 2025, les effectifs salariés sont en baisse de 0,1 % sur le territoire national (- 21 000 postes). Cette dimi-.",
+      "link": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2025/PDL_Statur_64.pdf",
+      "source": "www.urssaf.org",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4419,
+      "title": "Stat'urconjoncture",
+      "description": "En France. Au deuxième trimestre 2024, les effectifs salariés du secteur privé diminuent de 0,1 % (- 20 000 postes), après le rebond.",
+      "link": "https://www.urssaf.org/files/Statistiques/Nos%20%C3%A9tudes%20et%20analyses/Employeurs/R%C3%A9gionale/Pays%20de%20la%20Loire/2024/PDL_Statur_61.pdf",
+      "source": "www.urssaf.org",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    },
+    {
+      "id": 4420,
+      "title": "la situation economique et de l'emploi en basse- ...",
+      "description": "De façon détaillée, il apparaît que cette diminution est surtout imputable à l'intérim dont les effectifs auraient baissé en 2011 de 394 emplois",
+      "link": "https://www.datanormandie.fr/sites/default/files/dataset/2025/03/21/6aa6f1a1-3bc1-4871-9c0a-9303c9d4fabe/646_2553_rapport_see2012.pdf",
+      "source": "www.datanormandie.fr",
+      "found_by": "LLM",
+      "formats": [],
+      "organisation": null,
+      "licence": null,
+      "last_modified": "",
+      "richness": 0,
+      "validation": null
+    }
+  ],
+  "_debug": {
+    "section": "AnalysisPlaygroundViewSet:create",
+    "path": "/api/playground/analysis/?debug=1",
+    "method": "POST",
+    "user": 13,
+    "duration_ms": 117106,
+    "entities_count": 24,
+    "angles_count": 4,
+    "datasets_count": 29,
+    "angle_resources_count": 4
+  }
+}
